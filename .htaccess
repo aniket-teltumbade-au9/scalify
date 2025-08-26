@@ -1,0 +1,30 @@
+Options +FollowSymLinks -MultiViews
+RewriteEngine On
+
+# Block direct access to specific PHP files
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /+(blogList|blog|service|elements)\.php\ HTTP/
+RewriteRule \.php$ - [F]
+
+# Serve actual files and directories directly
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Exclude common asset extensions from all rewrites
+RewriteCond %{REQUEST_URI} \.(css|js|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|eot|pdf|zip|mp4|webm)$ [NC]
+RewriteRule ^ - [L]
+
+# Services rewrite rule
+RewriteRule ^services/([^/]+)/?$ services.php?service=$1 [L,QSA]
+
+# Blogs rewrite rule
+RewriteRule ^blogs/([^/]+)/?$ blogs.php?slug=$1 [L,QSA]
+
+# Check if the requested file exists as a PHP file and rewrite it
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^([a-zA-Z0-9_-]+)/?$ $1.php [L]
+
+# Forward all other requests to index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [L]

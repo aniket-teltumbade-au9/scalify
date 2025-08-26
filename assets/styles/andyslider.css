@@ -1,0 +1,106 @@
+        /* Custom styles for the continuous flow */
+        #andyslider .carousel-container {
+            /* This is the main visible viewport for the carousel */
+            overflow: hidden;
+            position: relative;
+            box-sizing: border-box;
+            /* Height will be dynamically calculated by JavaScript based on card dimensions */
+            /* No hardcoded height here */
+        }
+
+        #andyslider .carousel-row {
+            display: flex;
+            /* Arrange cards horizontally */
+            white-space: nowrap;
+            /* Prevent cards from wrapping to the next line */
+            position: absolute;
+            /* Allows precise positioning for staggering */
+            top: 0;
+            left: 0;
+            will-change: transform;
+            /* Optimize for smooth animation */
+        }
+
+        #andyslider .location-card {
+            flex-shrink: 0;
+            /* Prevents cards from shrinking */
+            /* Using responsive units (viewport width/height) for card dimensions */
+            width: 24vw;
+            /* Default width: 25% of viewport width */
+            height: 27vh;
+            /* Default height: 20% of viewport height */
+            margin-right: 1.5vw;
+            /* Responsive gap: 1.5% of viewport width */
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            border-radius: 1rem;
+            /* Rounded corners (rem is relative to root font size) */
+            overflow: hidden;
+            display: flex;
+            align-items: flex-end;
+            /* padding: 1rem; */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+            /* Include padding/border in width */
+        }
+
+        /* Responsive adjustments for card dimensions and margins */
+        @media (max-width: 1024px) {
+
+            /* Tablets and smaller desktops */
+            #andyslider .location-card {
+                width: 32vw;
+                height: 18vh;
+                margin-right: 2vw;
+            }
+        }
+
+        @media (max-width: 768px) {
+
+            /* Smaller tablets / landscape phones */
+            #andyslider .location-card {
+                width: 48vw;
+                height: 27vh;
+                margin-right: 2.5vw;
+            }
+        }
+
+        @media (max-width: 640px) {
+
+            /* Mobile breakpoint */
+            #andyslider .location-card {
+                width: 80vw;
+                height: 45vh;
+                margin-right: 3vw;
+            }
+        }
+
+        #andyslider .card-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Semi-transparent dark overlay */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 1rem;
+            border-radius: 1rem;
+            /* Inherit rounded corners */
+        }
+
+        #andyslider .location-text {
+            color: white;
+            font-weight: 600;
+            font-size: 1.125rem;
+            /* Font size relative to root font size */
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Hide navigation buttons (from previous versions if any) */
+        #andyslider .nav-button {
+            display: none !important;
+        }
