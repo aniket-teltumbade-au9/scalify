@@ -512,7 +512,7 @@
                                         </filter>
                                     </defs>
                                 </svg>
-                                <a href="https://maps.app.goo.gl/2rmk5J3Fh5z1YLFPA" target="1"
+                                <a href="https://maps.app.goo.gl/UFvCo7SB2XvFcg4t7" target="1"
                                     class="inline-flex relative group outline-none  | focus:outline-none "
                                     style="filter: url(#buttonFilter);">
                                     <div
@@ -553,7 +553,7 @@
                             class="w-full h-60 relative overflow-hidden transform-gpu rounded-xl mt-10 bg-gray-100 | md:h-80 | dark:bg-grayDark-400 | lg:rounded-2xl lg:mt-0 lg:h-auto lg:w-9/16">
                             <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0"
                                 marginwidth="0"
-                                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=in5%20tech,%20King%20Salman%20Bin%20Abdulaziz%20Al%20Saud%20Street,%20near%20Tram%20Station%20and%20Cordoba%20Residence%20-%20Dubai%20-%20United%20Arab%20Emirates+(Scalify)&amp;t=h&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3612.82198556146!2d55.165219799999996!3d25.107886600000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6d5310a53db1%3A0x70554943640e47f2!2sScalify!5e0!3m2!1sen!2sin!4v1757182018503!5m2!1sen!2sin"></iframe>
                         </div>
                     </div>
                 </div>

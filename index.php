@@ -1,7 +1,10 @@
 <html lang="en" style="--vh: 7.03px;">
 <?php include './elements/meta.php'; ?>
+<?php include './elements/info.php'; ?>
 
 <?php
+$logos = ["amitmarine.png", "Atto.webp", "capt-zack.jpg", "cynestx.avif", "fastmarineboat.jpg", "fitwearz.svg", "fortune-first.png", "host-theatre.svg", "mercury-marine.svg", "modish_ombre.jpg", "pitchmatter.svg"];
+$n = count($logos);
 $locations = [
     (object) [
         "id" => 1,
@@ -38,7 +41,21 @@ $locations = [
         "location" => "United Arab Emirates, Dubai",
         "image" => BASE_URL . "assets/images/slider/cities/dubai.jpg",
     ],
-]; ?>
+];
+$menuListItems = array_filter($services_list, function ($item) {
+    return $item["menu"]["isMenu"] === true;
+});
+usort($menuListItems, function ($a, $b) {
+    $rankA = $a["menu"]["rank"];
+    $rankB = $b["menu"]["rank"];
+
+    if ($rankA == $rankB) {
+        return 0; // The ranks are equal
+    }
+    return ($rankA < $rankB) ? -1 : 1; // Sort in ascending order
+});
+
+?>
 
 <body class="bg-white | dark:bg-grayDark-600" x-data="app()" x-init="baseInit(), gaEvents()">
     <?php include 'elements/header.php'; ?>
@@ -328,8 +345,7 @@ $locations = [
                             <source
                                 src="https://servd-made-byshape.b-cdn.net/production/uploads/videos/showreel-2024-portrait_cropped.mp4"
                                 type="video/mp4" media="(max-width: 1023px)">
-                            <source
-                                src="https://servd-made-byshape.b-cdn.net/production/uploads/videos/shape-showreel-2024_looping-v3.mp4"
+                            <source src="<?php echo BASE_URL . "assets/videos/In5 Dubai - Integra Works.mp4"; ?>"
                                 type="video/mp4" media="(min-width: 1024px)">
                         </video>
                     </div>
@@ -514,13 +530,256 @@ $locations = [
             </div>
         </div>
     </div>
-    <div class="w-full pb-10 | lg:p-16 max-w-full overflow-hidden">
-        <div class="marquee-wrapper">
-            <div class="marquee-content text-6vw m-content-anim">
-                Let's work together to create something amazing!
+
+    <div x-data="logoCarousel" x-init="carousel(28)" class="w-full overflow-hidden">
+        <div class="w-full pb-20 | lg:pb-24 | 2xl:pb-32 | 4xl:pb-40">
+            <div class="px-0">
+                <div
+                    class="px-2 | sm:px-6 | xl:px-12 | 2xl:px-20 | 3xl:px-40 | 4xl:px-60 w-full flex flex-wrap justify-between">
+                    <div class="px-2 | lg:px-3 | xl:px-4 w-full | lg:w-4/16">
+                        <div class="inline-flex items-center space-x-2 mb-2 | lg:mt-4 ">
+                            <div class="bg-gray-600 | dark:bg-grayDark-100 w-1.5 h-1.5 rounded-full"></div>
+                            <div class="font-light text-sm | lg:text-base text-gray-600 | dark:text-grayDark-100">
+                                Who are we?</div>
+                        </div>
+                    </div>
+                    <div class="px-2 | lg:px-3 | xl:px-4 flex flex-col items-start space-y-8 w-full | lg:w-11/16">
+                        <h2
+                            class="text-1xl | md:text-4vw | xl:text-3vw font-sans-primary tracking-tight text-gray-600  | dark:text-grayDark-100 leading-none text-balance lg:indent-48 ">
+                            <p>​Strategy without execution is a daydream. Execution without strategy is a nightmare.
+                                ​We are the team that lives and breathes both. As operators with a track record of
+                                scaling major brands, we provide leaders with what they actually need: a clear strategic
+                                playbook combined with the hands-on expertise to make it happen. Our Dream, Build, Scale
+                                framework is our promise a structured journey to turn your ambition into a
+                                market-defining enterprise. If you need a partner who thinks in the boardroom and
+                                executes on the ground, you've found us. </p>
+                        </h2>
+                        <div class="flex flex-wrap">
+                            <div class="mr-5 mb-3 w-auto | lg:mr-8">
+                                <div class="relative group inline-flex items-center" x-data="{ hover: false }"
+                                    x-on:mouseenter="hover = true" x-on:mouseleave="hover = false">
+                                    <svg width="0" height="0" class="absolute hidden"
+                                        color-interpolation-filters="sRGB">
+                                        <defs>
+                                            <filter id="buttonFilter">
+                                                <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur">
+                                                </feGaussianBlur>
+                                                <feColorMatrix in="blur" mode="matrix"
+                                                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                                                    result="buttonFilter">
+                                                </feColorMatrix>
+                                                <feComposite in="SourceGraphic" in2="buttonFilter" operator="atop">
+                                                </feComposite>
+                                                <feBlend in="SourceGraphic" in2="buttonFilter"></feBlend>
+                                            </filter>
+                                        </defs>
+                                    </svg>
+                                    <a href="<?php echo BASE_URL; ?>about/"
+                                        class="inline-flex relative group outline-none  | focus:outline-none "
+                                        style="filter: url(#buttonFilter);">
+                                        <div
+                                            class="w-auto inline-flex items-center justify-center relative leading-tight shadow-none overflow-hidden rounded-full border-default bg-primary-600 text-gray-600 py-2 px-5">
+                                            <div class="relative inline-flex top-px flex-shrink-0">
+                                                <div>
+                                                    About Scalify</div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="bg-primary-600 flex-shrink-0 overflow-hidden flex items-center justify-center -ml-1 rounded-full transform transition-transform | w-9 h-9 | xl:group-hover:translate-x-3  xl:group-hover:rotate-45 | js-button-icon">
+                                        </div>
+                                    </a>
+                                    <div
+                                        class="w-9 h-9 absolute top-0 right-0 flex items-center justify-center z-20 transition-transform transform w-9 h-9 | xl:group-hover:translate-x-3  xl:group-hover:rotate-45 || js-button-arrow">
+                                        <div class="relative overflow-hidden text-gray-600">
+                                            <div
+                                                class="relative top-0 left-0 transition-transform transform || js-button-arrow-icon-primary ">
+                                                <svg class="w-3 h-3 fill-current" xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 384 512">
+                                                    <path
+                                                        d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                            <div
+                                                class="absolute top-0 left-0 transition-transform transform translate-y-full -translate-x-full || js-button-arrow-icon-secondary ">
+                                                <svg class="w-3 h-3 fill-current" xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 384 512">
+                                                    <path
+                                                        d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3 w-auto | lg:mr-5">
+                                <div class="relative group inline-flex items-center" x-data="{ hover: false }"
+                                    x-on:mouseenter="hover = true" x-on:mouseleave="hover = false">
+                                    <a href="<?php echo BASE_URL; ?>about#ourTeam"
+                                        class="inline-flex relative group outline-none link | focus:outline-none ">
+                                        <div
+                                            class="w-auto inline-flex items-center justify-center relative leading-tight shadow-none overflow-hidden rounded-full border-default text-gray-600 | dark:text-grayDark-100 py-1 mt-1 pr-3">
+                                            <div class="relative inline-flex top-px flex-shrink-0">
+                                                <div>
+                                                    Meet the Team</div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="text-gray-600 | dark:text-grayDark-100 flex-shrink-0 overflow-hidden flex items-center justify-center -ml-1 rounded-full transform transition-transform | mt-1  | js-button-icon">
+                                        </div>
+                                    </a>
+                                    <div
+                                        class="mt-1 flex items-center justify-center z-20 transition-transform transform mt-1  || js-button-arrow">
+                                        <div class="relative overflow-hidden text-gray-600 | dark:text-grayDark-100">
+                                            <div
+                                                class="relative top-0 left-0 transition-transform transform || js-button-arrow-icon-primary xl:group-hover:translate-x-full xl:group-hover:-translate-y-full">
+                                                <svg class="w-3 h-3 fill-current" xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 384 512">
+                                                    <path
+                                                        d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                            <div
+                                                class="absolute top-0 left-0 transition-transform transform translate-y-full -translate-x-full || js-button-arrow-icon-secondary xl:group-hover:translate-x-0 xl:group-hover:translate-y-0">
+                                                <svg class="w-3 h-3 fill-current" xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 384 512">
+                                                    <path
+                                                        d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mx-auto relative w-full | xl:w-15/16" style="--blur: 1; --blurs: 5; max-height: 100px;;">
+                    <div class="blur blur--left">
+                        <div class="" style="--index: 0"></div>
+                        <div class="" style="--index: 1"></div>
+                        <div class="" style="--index: 2"></div>
+                        <div class="" style="--index: 3"></div>
+                        <div class="" style="--index: 4"></div>
+                    </div>
+                    <div class="blur blur--right">
+                        <div class="" style="--index: 0"></div>
+                        <div class="" style="--index: 1"></div>
+                        <div class="" style="--index: 2"></div>
+                        <div class="" style="--index: 3"></div>
+                        <div class="" style="--index: 4"></div>
+                    </div>
+                    <div
+                        class="w-full relative z-0 mt-10 -mb-5 | lg:mt-16 || swiper js-carousel-28 swiper-initialized swiper-horizontal swiper-pointer-events">
+                        <div class="ease-linear || swiper-wrapper"
+                            style="transition-duration: 8000ms; transform: translate3d(-3921.5px, 0px, 0px);">
+                            <?php foreach (array_slice($logos, -4) as $index => $logo): ?>
+                            <div class="px-2 | lg:px-3 xl:px-4 swiper-slide swiper-slide-duplicate"
+                                data-swiper-slide-index="<?php echo $n - 4 - $index; ?>" style="width: 356.5px;">
+                                <div class="w-full flex justify-center items-center || js-logo-28">
+                                    <div class="relative py-5">
+                                        <img src="<?php echo BASE_URL . "assets/images/customers/" . $logo; ?>"
+                                            class="w-32 h-10 | lg:w-36 lg:h-14" />
+                                    </div>
+                                </div>
+                            </div>
+                            <?php endforeach;foreach ($logos as $index => $logo): ?>
+
+                            <div class="px-2 | lg:px-3 xl:px-4 swiper-slide"
+                                data-swiper-slide-index="<?php echo $index; ?>" style="width: 356.5px;">
+                                <div class="w-full flex justify-center items-center || js-logo-28">
+                                    <div class="relative py-5">
+                                        <img src="<?php echo BASE_URL . "assets/images/customers/" . $logo; ?>"
+                                            class="w-32 h-10 | lg:w-36 lg:h-14" />
+
+                                    </div>
+                                </div>
+                            </div>
+                            <?php endforeach;foreach (array_slice($logos, 0, 4) as $index => $logo): ?>
+
+
+                            <div class="px-2 | lg:px-3 xl:px-4 swiper-slide swiper-slide-duplicate"
+                                data-swiper-slide-index="<?php echo $index; ?>" style="width: 356.5px;">
+                                <div class="w-full flex justify-center items-center || js-logo-28">
+                                    <div class="relative py-5">
+                                        <img src="<?php echo BASE_URL . "assets/images/customers/" . $logo; ?>"
+                                            class="w-32 h-10 | lg:w-36 lg:h-14" />
+                                    </div>
+                                </div>
+                            </div>
+                            <?php endforeach; ?>
+
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="marquee-content text-6vw m-content-anim-reverse">
-                Let's work together to create something amazing!
+        </div>
+    </div>
+
+
+    <div x-data="ticker" x-init="carousels(418135, 0.3)" class="w-full overflow-hidden">
+        <div class="w-full pb-20 | lg:pb-24 | 2xl:pb-32 | 4xl:pb-40">
+            <div class="px-0">
+                <div class="w-full || js-cursor-trigger-drag">
+                    <div class="w-full flex  || js-carousel-418135">
+                        <div class="px-2 | lg:px-3 | xl:px-4 inline-flex flex-shrink-0 w-auto"
+                            style="margin-left: -350.7px;">
+                            <a href="<?php echo BASE_URL; ?>contact/" class="inline-flex flex-shrink-0">
+                                <div
+                                    class="text-20vw | md:text-11vw | lg:text-10vw | 4xl:text-8vw font-sans-primary tracking-tight text-gray-600  | dark:text-grayDark-100 leading-tighter text-balance js-heading-418135">
+                                    Let's work together.</div>
+
+                            </a>
+                        </div>
+                        <div class="px-2 | lg:px-3 | xl:px-4 inline-flex flex-shrink-0 w-auto">
+                            <a href="<?php echo BASE_URL; ?>contact/" class="inline-flex flex-shrink-0">
+                                <div
+                                    class="text-20vw | md:text-11vw | lg:text-10vw | 4xl:text-8vw font-sans-primary tracking-tight text-gray-600  | dark:text-grayDark-100 leading-tighter text-balance js-heading-418135">
+                                    Let's work together.</div>
+
+                            </a>
+                        </div>
+                        <div class="px-2 | lg:px-3 | xl:px-4 inline-flex flex-shrink-0 w-auto">
+                            <a href="<?php echo BASE_URL; ?>contact/" class="inline-flex flex-shrink-0">
+                                <div
+                                    class="text-20vw | md:text-11vw | lg:text-10vw | 4xl:text-8vw font-sans-primary tracking-tight text-gray-600  | dark:text-grayDark-100 leading-tighter text-balance js-heading-418135">
+                                    Let's work together.</div>
+
+                            </a>
+                        </div>
+                    </div>
+                    <div class="w-full flex justify-end || js-carousel-418135">
+                        <div class="px-2 | lg:px-3 | xl:px-4 inline-flex flex-shrink-0 w-auto">
+                            <a href="<?php echo BASE_URL; ?>contact/" class="inline-flex flex-shrink-0">
+                                <div
+                                    class="text-20vw | md:text-11vw | lg:text-10vw | 4xl:text-8vw font-sans-primary tracking-tight text-gray-600  | dark:text-grayDark-100 leading-tighter text-balance js-heading-418135">
+                                    Let's work together.</div>
+
+                            </a>
+                        </div>
+                        <div class="px-2 | lg:px-3 | xl:px-4 inline-flex flex-shrink-0 w-auto">
+                            <a href="<?php echo BASE_URL; ?>contact/" class="inline-flex flex-shrink-0">
+                                <div
+                                    class="text-20vw | md:text-11vw | lg:text-10vw | 4xl:text-8vw font-sans-primary tracking-tight text-gray-600  | dark:text-grayDark-100 leading-tighter text-balance js-heading-418135">
+                                    Let's work together.</div>
+
+                            </a>
+                        </div>
+                        <div class="px-2 | lg:px-3 | xl:px-4 inline-flex flex-shrink-0 w-auto"
+                            style="margin-right: -299.7px;">
+                            <a href="<?php echo BASE_URL; ?>contact/" class="inline-flex flex-shrink-0">
+                                <div
+                                    class="text-20vw | md:text-11vw | lg:text-10vw | 4xl:text-8vw font-sans-primary tracking-tight text-gray-600  | dark:text-grayDark-100 leading-tighter text-balance js-heading-418135">
+                                    Let's work together.</div>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -562,9 +821,10 @@ $locations = [
                     <div class="w-full flex flex-wrap justify-between">
                         <div class="px-2 | lg:px-3 xl:px-4 w-full order-1 lg:order-2 lg:w-11/16"
                             x-data="{ active: false }">
+                            <?php foreach ($menuListItems as $item) {?>
                             <div
                                 class="w-full group border-b border-solid border-gray-400 | dark:border-grayDark-300 || js-cursor-trigger-drag">
-                                <a href="<?php echo BASE_URL ?>services/business-setup"
+                                <a href="<?php echo BASE_URL . "services/" . strtolower($item["category"]) . '/' . $item["slug"]; ?>"
                                     class="flex items-center relative w-full transform group py-4 transition-opacity | lg:py-6"
                                     x-data="{ hover: false }" x-on:mouseenter="hover = true, active = 418463"
                                     x-on:mouseleave="hover = false, active = false"
@@ -575,10 +835,10 @@ $locations = [
                                             x-bind:class="{'opacity-100': hover,'opacity-100 lg:opacity-0': !hover}">
                                             <picture>
                                                 <source type="image/webp"
-                                                    srcset="https://images.unsplash.com/photo-1630257574179-966315085420?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 400w"
+                                                    srcset="<?php echo BASE_URL . 'assets/images/services/' . $item['image']; ?>?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 400w"
                                                     sizes="100vw">
                                                 <img src="./images/Bag.jpg"
-                                                    srcset="https://images.unsplash.com/photo-1630257574179-966315085420?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 400w"
+                                                    srcset="<?php echo BASE_URL . 'assets/images/services/' . $item['image']; ?>q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 400w"
                                                     sizes="100vw" alt="Bag"
                                                     class="w-full h-full absolute top-0 left-0 object-cover object-center"
                                                     loading="lazy" width="400" height="300">
@@ -589,134 +849,11 @@ $locations = [
                                         x-bind:class="{ 'translate-x-6 delay-0': hover, 'translate-x-6 | lg:translate-x-0 delay-100': !hover }">
                                         <div
                                             class="text-6vw | lg:text-5vw 4xl:text-4vw font-sans-primary tracking-tight text-white leading-tighter text-balance">
-                                            Business Setup</div>
+                                            <?php echo $item["name"]; ?></div>
                                     </div>
                                 </a>
                             </div>
-                            <div
-                                class="w-full group border-b border-solid border-gray-400 | dark:border-grayDark-300 || js-cursor-trigger-drag">
-                                <a href="<?php echo BASE_URL ?>services/imports-logistics"
-                                    class="flex items-center relative w-full transform group py-4 transition-opacity | lg:py-6"
-                                    x-data="{ hover: false }" x-on:mouseenter="hover = true, active = 418464"
-                                    x-on:mouseleave="hover = false, active = false"
-                                    x-bind:class="{'lg:opacity-30' : active && active !== 418464}" x="">
-                                    <div class="relative flex-shrink-0 rotate-001 duration-700 bg-gray-500 translate-z-0 rounded-xl overflow-hidden inline-flex items-center justify-center transition-all transform-gpu h-16 md:h-28 lg:rounded-2xl lg:w-0 3xl:h-40 dark:bg-grayDark-600 w-20 | md:w-36"
-                                        x-bind:class="{'w-20 | md:w-36': hover,'w-20 | md:w-36 | lg:w-0': !hover}">
-                                        <div class="w-full h-full transition-opacity | lg:opacity-0 opacity-100"
-                                            x-bind:class="{'opacity-100': hover,'opacity-100 lg:opacity-0': !hover}">
-                                            <picture>
-                                                <source type="image/webp"
-                                                    srcset="https://plus.unsplash.com/premium_photo-1723615226915-be44a6d29765?q=80&w=885&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 400w"
-                                                    sizes="100vw">
-                                                <img src="./images/1.jpg"
-                                                    srcset="https://plus.unsplash.com/premium_photo-1723615226915-be44a6d29765?q=80&w=885&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 400w"
-                                                    sizes="100vw" alt="1"
-                                                    class="w-full h-full absolute top-0 left-0 object-cover object-center"
-                                                    loading="lazy" width="400" height="300">
-                                            </picture>
-                                        </div>
-                                    </div>
-                                    <div class="inline-flex relative transition-transform transform | lg:translate-x-0 translate-x-6 delay-100"
-                                        x-bind:class="{'translate-x-6 delay-0': hover,'translate-x-6 | lg:translate-x-0 delay-100': !hover}">
-                                        <div
-                                            class="text-6vw | lg:text-5vw 4xl:text-4vw font-sans-primary tracking-tight text-white leading-tighter text-balance">
-                                            Imports & Logistics</div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div
-                                class="w-full group border-b border-solid border-gray-400 | dark:border-grayDark-300 || js-cursor-trigger-drag">
-                                <a href="<?php echo BASE_URL ?>services/marketplace-management"
-                                    class="flex items-center relative w-full transform group py-4 transition-opacity | lg:py-6"
-                                    x-data="{ hover: false }" x-on:mouseenter="hover = true, active = 418465"
-                                    x-on:mouseleave="hover = false, active = false"
-                                    x-bind:class="{'lg:opacity-30' : active && active !== 418465}" x="">
-                                    <div class="relative flex-shrink-0 rotate-001 duration-700 bg-gray-500 translate-z-0 rounded-xl overflow-hidden inline-flex items-center justify-center transition-all transform-gpu h-16 md:h-28 lg:rounded-2xl lg:w-0 3xl:h-40 dark:bg-grayDark-600 w-20 | md:w-36"
-                                        x-bind:class="{'w-20 | md:w-36': hover,'w-20 | md:w-36 | lg:w-0': !hover}">
-                                        <div class="w-full h-full transition-opacity | lg:opacity-0 opacity-100"
-                                            x-bind:class="{'opacity-100': hover,'opacity-100 lg:opacity-0': !hover}">
-                                            <picture>
-                                                <source type="image/webp"
-                                                    srcset="https://scalify.site/images/retail-distribution.jpg?w=400&h=300&q=80&fm=webp&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5&dm=1706198020&s=28b8a15d782916de99050f012da25cb0 400w"
-                                                    sizes="100vw">
-                                                <img src="./images/5.jpg"
-                                                    srcset="https://scalify.site/images/retail-distribution.jpg?w=400&h=300&q=95&auto=format&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5&dm=1706198020&s=823c642dfff5cf5d73123a94f502584e 400w"
-                                                    sizes="100vw" alt="5"
-                                                    class="w-full h-full absolute top-0 left-0 object-cover object-center"
-                                                    loading="lazy" width="400" height="300">
-                                            </picture>
-                                        </div>
-                                    </div>
-                                    <div class="inline-flex relative transition-transform transform | lg:translate-x-0 translate-x-6 delay-100"
-                                        x-bind:class="{'translate-x-6 delay-0': hover,'translate-x-6 | lg:translate-x-0 delay-100': !hover}">
-                                        <div
-                                            class="text-6vw | lg:text-5vw 4xl:text-4vw font-sans-primary tracking-tight text-white leading-tighter text-balance">
-                                            Market Management</div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div
-                                class="w-full group border-b border-solid border-gray-400 | dark:border-grayDark-300 || js-cursor-trigger-drag">
-                                <a href="<?php echo BASE_URL ?>services/store-management"
-                                    class="flex items-center relative w-full transform group py-4 transition-opacity | lg:py-6"
-                                    x-data="{ hover: false }" x-on:mouseenter="hover = true, active = 418466"
-                                    x-on:mouseleave="hover = false, active = false"
-                                    x-bind:class="{'lg:opacity-30' : active && active !== 418466}" x="">
-                                    <div class="relative flex-shrink-0 rotate-001 duration-700 bg-gray-500 translate-z-0 rounded-xl overflow-hidden inline-flex items-center justify-center transition-all transform-gpu h-16 md:h-28 lg:rounded-2xl lg:w-0 3xl:h-40 dark:bg-grayDark-600 w-20 | md:w-36"
-                                        x-bind:class="{'w-20 | md:w-36': hover,'w-20 | md:w-36 | lg:w-0': !hover}">
-                                        <div class="w-full h-full transition-opacity | lg:opacity-0 opacity-100"
-                                            x-bind:class="{'opacity-100': hover,'opacity-100 lg:opacity-0': !hover}">
-                                            <picture>
-                                                <source type="image/webp"
-                                                    srcset="https://scalify.site/images/accurate.jpg?w=400&h=300&q=80&fm=webp&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5&dm=1706197678&s=654ae790d2f74cac844446332a73aea7 400w"
-                                                    sizes="100vw">
-                                                <img src="./images/Phone-copy.jpg"
-                                                    srcset="https://scalify.site/images/accurate.jpg?w=400&h=300&q=95&auto=format&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5&dm=1706197678&s=200082ec27f7626933e18004a8401dd4 400w"
-                                                    sizes="100vw" alt="Phone copy"
-                                                    class="w-full h-full absolute top-0 left-0 object-cover object-center"
-                                                    loading="lazy" width="400" height="300">
-                                            </picture>
-                                        </div>
-                                    </div>
-                                    <div class="inline-flex relative transition-transform transform | lg:translate-x-0 translate-x-6 delay-100"
-                                        x-bind:class="{'translate-x-6 delay-0': hover,'translate-x-6 | lg:translate-x-0 delay-100': !hover}">
-                                        <div
-                                            class="text-6vw | lg:text-5vw 4xl:text-4vw font-sans-primary tracking-tight text-white leading-tighter text-balance">
-                                            Store Development</div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div
-                                class="w-full group border-b border-solid border-gray-400 | dark:border-grayDark-300 || js-cursor-trigger-drag">
-                                <a href="<?php echo BASE_URL ?>services/ads-marketing"
-                                    class="flex items-center relative w-full transform group py-4 transition-opacity | lg:py-6"
-                                    x-data="{ hover: false }" x-on:mouseenter="hover = true, active = 418467"
-                                    x-on:mouseleave="hover = false, active = false"
-                                    x-bind:class="{'lg:opacity-30' : active && active !== 418467}" x="">
-                                    <div class="relative flex-shrink-0 rotate-001 duration-700 bg-gray-500 translate-z-0 rounded-xl overflow-hidden inline-flex items-center justify-center transition-all transform-gpu h-16 md:h-28 lg:rounded-2xl lg:w-0 3xl:h-40 dark:bg-grayDark-600 w-20 | md:w-36"
-                                        x-bind:class="{'w-20 | md:w-36': hover,'w-20 | md:w-36 | lg:w-0': !hover}">
-                                        <div class="w-full h-full transition-opacity | lg:opacity-0 opacity-100"
-                                            x-bind:class="{'opacity-100': hover,'opacity-100 lg:opacity-0': !hover}">
-                                            <picture>
-                                                <source type="image/webp"
-                                                    srcset="https://scalify.site/images/order.png?w=400&h=300&q=80&fm=webp&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5&dm=1706198262&s=62857864cb56d06fe177397a4f1c74ca 400w"
-                                                    sizes="100vw">
-                                                <img src="./images/Artboard-1-copy-11-2@2x.jpg"
-                                                    srcset="https://scalify.site/images/order.png?w=400&h=300&q=95&auto=format&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5&dm=1706198262&s=65bb85dd7c3f33ed75de196f6b94ae7b 400w"
-                                                    sizes="100vw" alt="Artboard 1 copy 11 2 2x"
-                                                    class="w-full h-full absolute top-0 left-0 object-cover object-center"
-                                                    loading="lazy" width="400" height="300">
-                                            </picture>
-                                        </div>
-                                    </div>
-                                    <div class="inline-flex relative transition-transform transform | lg:translate-x-0 translate-x-6 delay-100"
-                                        x-bind:class="{'translate-x-6 delay-0': hover,'translate-x-6 | lg:translate-x-0 delay-100': !hover}">
-                                        <div
-                                            class="text-6vw | lg:text-5vw 4xl:text-4vw font-sans-primary tracking-tight text-white leading-tighter text-balance">
-                                            Ads & Marketing</div>
-                                    </div>
-                                </a>
-                            </div>
+                            <?php }?>
                         </div>
                     </div>
                 </div>

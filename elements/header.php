@@ -10,7 +10,7 @@ $menuItems = [
             'items' => array_slice(array_map(function ($service) {
                 return [
                     'label' => $service['name'],
-                    'url' => BASE_URL . "services/" . $service['slug'],
+                    'url' => BASE_URL . "services/" . strtolower($service['category']) . '/' . $service['slug'],
                     'description' => $service['tagline_short'],
                 ];
             }, $services_list), 0, 5),

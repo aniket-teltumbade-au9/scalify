@@ -1,19 +1,11 @@
 <?php
+include "repository/blogs.php";
+$execute = getBlogs();
+$response = $execute['response'];
+$ch = $execute['ch'];
+$skip = $execute['skip'];
+$limit = $execute['limit'];
 
-$accessToken = 'uH_05VRef-F_PjhW2BZ-R1mxhYrIMwZHuqZled_rl9Y';
-$spaceId = 'z0gmr7sfomjq';
-$contentTypeId = 'blogPage';
-$limit = 6;
-$page = isset($_GET['page']) && is_numeric($_GET['page']) ? max(1, intval($_GET['page'])) : 1;
-$skip = ($page - 1) * $limit;
-
-$url = "https://cdn.contentful.com/spaces/{$spaceId}/environments/master/entries?content_type={$contentTypeId}&limit={$limit}&skip={$skip}&include=1&select=sys.id,fields.title,fields.readDuration,fields.slug,fields.image,fields.author";
-
-$ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, $url);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($ch, CURLOPT_HTTPHEADER, array("Authorization: Bearer {$accessToken}"));
-curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'GET');
 function findLinkedEntity(array $linkedEntity, array $sourceList): ?array
 {
     // Check if the linked entity and its ID are valid
@@ -32,8 +24,6 @@ function findLinkedEntity(array $linkedEntity, array $sourceList): ?array
 
     return null;
 }
-$response = curl_exec($ch);
-
 if (curl_errno($ch)) {
     echo json_encode(['error' => 'cURL error: ' . curl_error($ch)]);
 } else {
@@ -134,41 +124,98 @@ if (curl_errno($ch)) {
             </div>
             <?php endforeach; ?>
         </div>
+        <?php
+$currentPage = ($skip / $limit) + 1;
+$totalPages = ceil($values['count'] / $limit);
+$blogUrl = BASE_URL . "blogs/";
+
+// Determine the start and end of the pagination range
+$startPage = max(1, $currentPage - 2);
+$endPage = min($totalPages, $currentPage + 2);
+?>
         <div class="flex justify-center">
             <div
                 class="inline-flex justify-center items-center bg-gray-50 rounded-full p-1 | dark:bg-gray-600 | lg:space-x-0.5">
-                <div
-                    class="w-8 h-8  flex justify-center items-center rounded-full bg-gray-600 text-white | dark:bg-grayDark-400">
-                    <div class="mt-px">
-                        1</div>
-                </div><a href="https://madebyshape.co.uk/web-design-blog/p2/"
-                    class="w-8 h-8 flex justify-center items-center rounded-full | xl:hover:bg-white | dark:text-grayDark-100 | lg:dark:hover:bg-grayDark-400">
-                    <div class="mt-px">
-                        2</div>
-                </a>
-                <a href="https://madebyshape.co.uk/web-design-blog/p3/"
-                    class="w-8 h-8 flex justify-center items-center rounded-full | xl:hover:bg-white | dark:text-grayDark-100 | lg:dark:hover:bg-grayDark-400">
-                    <div class="mt-px">
-                        3</div>
-                </a>
-                <div class="w-6 h-8 flex items-center justify-center | dark:text-grayDark-200">
-                    <div class="">
-                        ...</div>
-                </div><a href="https://madebyshape.co.uk/web-design-blog/p25/"
-                    class="w-8 h-8 flex justify-center items-center rounded-full | xl:hover:bg-white | dark:text-grayDark-100 | lg:dark:hover:bg-grayDark-400">
-                    <div class="mt-px">
-                        25</div>
-                </a>
-                <a href="https://madebyshape.co.uk/web-design-blog/p2/"
+                <?php if ($currentPage > 1): ?>
+                <a href="<?php echo $blogUrl; ?><?php echo($currentPage - 1 > 1) ? '?page=' . ($currentPage - 1) : ''; ?>"
                     class="w-8 h-8 text-lg flex justify-center items-center rounded-full | xl:hover:bg-white | lg:dark:hover:bg-grayDark-400">
-                    <div class="sr-only">
-                        Next page</div><svg class="w-3.5 h-3.5 fill-current text-gray-600 | dark:text-grayDark-100"
-                        width="14" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <div class="sr-only">Previous page</div>
+                    <svg class="w-3.5 h-3.5 fill-current text-gray-600 | dark:text-grayDark-100" width="14" height="16"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path
+                            d="M256 66.7L210.8 112 121.4 201.4H448v64H121.4L210.8 354l45.2 45.3-22.6 22.6-144-144-22.6-22.6 22.6-22.6 144-144z">
+                        </path>
+                    </svg>
+                </a>
+                <?php endif; ?>
+
+                <?php
+// Always show the first page
+if ($startPage > 1) {
+    ?>
+                <a href="<?php echo $blogUrl; ?>"
+                    class="w-8 h-8 flex justify-center items-center rounded-full | xl:hover:bg-white | dark:text-grayDark-100 | lg:dark:hover:bg-grayDark-400">
+                    <div class="mt-px">1</div>
+                </a>
+                <?php
+// Add ellipsis if needed
+    if ($startPage > 2) {
+        ?>
+                <div class="w-6 h-8 flex items-center justify-center | dark:text-grayDark-200">
+                    <div>...</div>
+                </div>
+                <?php
+}
+}
+
+// Loop through the main page range
+for ($i = $startPage; $i <= $endPage; $i++) {
+    $url = ($i > 1) ? $blogUrl . '?page=' . $i : $blogUrl;
+    $activeClass = ($i == $currentPage) ? 'bg-gray-600 text-white | dark:bg-grayDark-400' : 'xl:hover:bg-white | dark:text-grayDark-100 | lg:dark:hover:bg-grayDark-400';
+    $element = ($i == $currentPage) ? 'div' : 'a';
+    ?>
+                <<?php echo $element; ?> href="<?php echo $url; ?>"
+                    class="w-8 h-8 flex justify-center items-center rounded-full <?php echo $activeClass; ?>">
+                    <div class="mt-px">
+                        <?php echo $i; ?>
+                    </div>
+                </<?php echo $element; ?>>
+                <?php
+}
+
+// Always show the last page
+if ($endPage < $totalPages) {
+    // Add ellipsis if needed
+    if ($endPage < $totalPages - 1) {
+        ?>
+                <div class="w-6 h-8 flex items-center justify-center | dark:text-grayDark-200">
+                    <div>...</div>
+                </div>
+                <?php
+}
+    ?>
+                <a href="<?php echo $blogUrl; ?>?page=p<?php echo $totalPages; ?>"
+                    class="w-8 h-8 flex justify-center items-center rounded-full | xl:hover:bg-white | dark:text-grayDark-100 | lg:dark:hover:bg-grayDark-400">
+                    <div class="mt-px">
+                        <?php echo $totalPages; ?>
+                    </div>
+                </a>
+                <?php
+}
+?>
+
+                <?php if ($currentPage < $totalPages): ?>
+                <a href="<?php echo $blogUrl; ?>?page=<?php echo $currentPage + 1; ?>"
+                    class="w-8 h-8 text-lg flex justify-center items-center rounded-full | xl:hover:bg-white | lg:dark:hover:bg-grayDark-400">
+                    <div class="sr-only">Next page</div>
+                    <svg class="w-3.5 h-3.5 fill-current text-gray-600 | dark:text-grayDark-100" width="14" height="16"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                         <path
                             d="M422.6 278.6l22.7-22.6-22.6-22.6-144-144L256 66.7 210.8 112l22.6 22.6 89.4 89.4H0v64h322.7l-89.4 89.4-22.5 22.6 45.2 45.3 22.6-22.6 144-144z">
                         </path>
                     </svg>
                 </a>
+                <?php endif; ?>
             </div>
         </div>
     </div>

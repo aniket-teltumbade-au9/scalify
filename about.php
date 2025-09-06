@@ -1,6 +1,21 @@
 <!doctype html>
 <html class="no-js" lang="en">
-<?php include './elements/meta.php'; ?>
+<?php
+include './elements/meta.php';
+$employeeList = [
+    // "Amol Panchsl",
+    ["name" => "Anil Fernandes", "Designation" => "Managing Director"],
+    ["name" => "Dixter Verano", "Designation" => "Operations Executive"],
+    ["name" => "Fazil Iqbal", "Designation" => "Chief Marketing Officer"],
+    ["name" => "Gillian Elizabeth", "Designation" => "Lead Designer"],
+    ["name" => "Harishchandra Ramesh Chadda", "Designation" => "Chief Technical Officer"],
+    ["name" => "Jovin Fernandes", "Designation" => "Chief Operating Officer"],
+    ["name" => "Justin Ebenezer", "Designation" => "Chief People Officer"],
+    ["name" => "Mohamed Sahim", "Designation" => "Director of Sales"],
+    ["name" => "Partha Chaliha", "Designation" => "Managing Director"],
+    // "Yulia Maximovich"
+];
+?>
 
 <body class="bg-white | dark:bg-grayDark-600" x-data="app()" x-init="baseInit(), gaEvents()">
     <?php include './elements/header.php'; ?>
@@ -155,15 +170,11 @@
                     <div
                         class="px-2 | sm:px-6 | xl:px-12 | 2xl:px-20 | 3xl:px-40 | 4xl:px-60 w-full flex flex-wrap justify-center relative z-30 -mb-10 | lg:-mb-14">
                         <div class="px-2 | lg:px-3 | xl:px-4">
-                            <h1 class="
-text-3xl | sm:text-5xl | md:text-6xl | xl:text-8xl | 4xl:text-9xl
-font-sans-primary tracking-tight
-text-gray-600  | dark:text-grayDark-100
-leading-none
-text-balance
-text-center
-">Good design <br />
-                                makes life better.</h1>
+                            <h1
+                                class="text-3xl | sm:text-5xl | md:text-6xl | xl:text-8xl | 4xl:text-9xl font-sans-primary tracking-tight text-gray-600  | dark:text-grayDark-100 leading-none text-balance text-center">
+                                Good design <br />
+                                makes life better.
+                            </h1>
                         </div>
                     </div>
                     <div class="w-full overflow-hidden pt-5 relative pointer-events-none transition-opacity opacity-0 h-70vw"
@@ -489,10 +500,10 @@ text-center
                                     <div class="relative overflow-hidden w-full" style="padding-top: 100%;">
                                         <picture class="w-full absolute top-0 left-0 w-full h-full ">
                                             <source type="image/webp"
-                                                srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/MadeByShape-Studio/Shape-2018-LR-169_200119_175819.jpg?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604326504&amp;s=bf17266e2762cabc752c1a107cfd715b 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/MadeByShape-Studio/Shape-2018-LR-169_200119_175819.jpg?w=800&amp;h=800&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604326504&amp;s=ecfafac1363d4dc0f34f36fdea6a88d3 800w"
+                                                srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Scalify-Studio/Shape-2018-LR-169_200119_175819.jpg?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604326504&amp;s=bf17266e2762cabc752c1a107cfd715b 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/Scalify-Studio/Shape-2018-LR-169_200119_175819.jpg?w=800&amp;h=800&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604326504&amp;s=ecfafac1363d4dc0f34f36fdea6a88d3 800w"
                                                 sizes="100vw">
-                                            <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/MadeByShape-Studio/Shape-2018-LR-169_200119_175819.jpg?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604326504&amp;s=bf17266e2762cabc752c1a107cfd715b"
-                                                srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/MadeByShape-Studio/Shape-2018-LR-169_200119_175819.jpg?w=400&amp;h=400&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604326504&amp;s=1bd00db44f89e71c39091579ba96322d 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/MadeByShape-Studio/Shape-2018-LR-169_200119_175819.jpg?w=800&amp;h=800&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604326504&amp;s=bab246e9dd834bf1f59ae266cd40dd7a 800w"
+                                            <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Scalify-Studio/Shape-2018-LR-169_200119_175819.jpg?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604326504&amp;s=bf17266e2762cabc752c1a107cfd715b"
+                                                srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Scalify-Studio/Shape-2018-LR-169_200119_175819.jpg?w=400&amp;h=400&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604326504&amp;s=1bd00db44f89e71c39091579ba96322d 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/Scalify-Studio/Shape-2018-LR-169_200119_175819.jpg?w=800&amp;h=800&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604326504&amp;s=bab246e9dd834bf1f59ae266cd40dd7a 800w"
                                                 sizes="100vw" alt="Tom on the laptop in the Shape studio"
                                                 class="w-full  w-full h-full object-cover absolute top-0 left-0  rounded-2xl transform-gpu bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl"
                                                 width="800" height="800">
@@ -725,10 +736,10 @@ text-center
                                     <div class="relative overflow-hidden w-full" style="padding-top: 100%;">
                                         <picture class="w-full absolute top-0 left-0 w-full h-full ">
                                             <source type="image/webp"
-                                                srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/MadeByShape-Studio/Shape-2018-LR-169_200119_175819.jpg?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604326504&amp;s=bf17266e2762cabc752c1a107cfd715b 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/MadeByShape-Studio/Shape-2018-LR-169_200119_175819.jpg?w=800&amp;h=800&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604326504&amp;s=ecfafac1363d4dc0f34f36fdea6a88d3 800w"
+                                                srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Scalify-Studio/Shape-2018-LR-169_200119_175819.jpg?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604326504&amp;s=bf17266e2762cabc752c1a107cfd715b 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/Scalify-Studio/Shape-2018-LR-169_200119_175819.jpg?w=800&amp;h=800&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604326504&amp;s=ecfafac1363d4dc0f34f36fdea6a88d3 800w"
                                                 sizes="100vw">
-                                            <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/MadeByShape-Studio/Shape-2018-LR-169_200119_175819.jpg?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604326504&amp;s=bf17266e2762cabc752c1a107cfd715b"
-                                                srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/MadeByShape-Studio/Shape-2018-LR-169_200119_175819.jpg?w=400&amp;h=400&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604326504&amp;s=1bd00db44f89e71c39091579ba96322d 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/MadeByShape-Studio/Shape-2018-LR-169_200119_175819.jpg?w=800&amp;h=800&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604326504&amp;s=bab246e9dd834bf1f59ae266cd40dd7a 800w"
+                                            <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Scalify-Studio/Shape-2018-LR-169_200119_175819.jpg?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604326504&amp;s=bf17266e2762cabc752c1a107cfd715b"
+                                                srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Scalify-Studio/Shape-2018-LR-169_200119_175819.jpg?w=400&amp;h=400&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604326504&amp;s=1bd00db44f89e71c39091579ba96322d 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/Scalify-Studio/Shape-2018-LR-169_200119_175819.jpg?w=800&amp;h=800&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604326504&amp;s=bab246e9dd834bf1f59ae266cd40dd7a 800w"
                                                 sizes="100vw" alt="Tom on the laptop in the Shape studio"
                                                 class="w-full  w-full h-full object-cover absolute top-0 left-0  rounded-2xl transform-gpu bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl"
                                                 width="800" height="800">
@@ -872,8 +883,9 @@ bg-primary-600 text-gray-600 py-2 px-5">
                             <div class="w-full relative xl:indent-48  lg:pr-16">
                                 <h2
                                     class="mb-3 text-pretty tracking-tight text-gray-600 | dark:text-grayDark-100 text-2xl md:text-3xl xl:text-4xl leading-none 4xl:text-5xl">
-                                    Expert web designers and web developers trained in the digital industry who offer a
-                                    bespoke, professional and trustworthy service.</h2>
+                                    We are architects, strategists, and growth partners for brands ready to expand. From
+                                    laying foundations to building operations, and scaling growth, we help visionaries
+                                    make their mark in the GCC.</h2>
                             </div>
                         </div>
                     </div>
@@ -994,7 +1006,7 @@ bg-primary-600 text-gray-600 py-2 px-5">
                                         class="w-full h-full absolute top-0 left-0 object-cover object-center || js-video js-video-312636"
                                         x-bind:class="{'js-video-volumn-on': !muted,'js-video-playing': playing,}">
                                         <source
-                                            src="https://servd-made-byshape.b-cdn.net/production/uploads/videos/shape-showreel-2024_looping-v3.mp4"
+                                            src="<?php echo BASE_URL . "assets/videos/In5 Dubai - Integra Works.mp4"; ?>"
                                             type="video/mp4">
                                     </video></div>
                                 <div
@@ -1119,45 +1131,29 @@ bg-primary-600 text-gray-600 py-2 px-5">
                                             class="font-light text-sm | lg:text-base text-gray-600 | dark:text-grayDark-100">
                                             Our Team</div>
                                     </div>
-                                    <h2 class="
-text-2xl | md:text-3xl | xl:text-4xl | 4xl:text-5xl
-font-sans-primary tracking-tight
-text-gray-600  | dark:text-grayDark-100
-leading-none
-text-balance
-">Multiple personalities,<br />
+                                    <h2
+                                        class="text-2xl | md:text-3xl | xl:text-4xl | 4xl:text-5xl font-sans-primary tracking-tight text-gray-600  | dark:text-grayDark-100 leading-none text-balance">
+                                        Multiple personalities,<br />
                                         No egos.</h2>
                                 </div>
                             </div>
                         </div>
-                        <div class="w-full">
+                        <div class="w-full" id="ourTeam">
                             <div class="w-full || swiper || js-carousel-189">
                                 <div class="ease-linear || swiper-wrapper">
-                                    <div class="px-2 | lg:px-3 | xl:px-4 mt-10 | lg:mt-16 || swiper-slide">
+                                    <?php $pIndex = 0;foreach ($employeeList as $profile) {?>
+                                    <div class="px-2 | lg:px-3 | xl:px-4 | <?php echo $pIndex % 2 === 0 ? "mt:10 lg:mt-16" : ""; ?> || swiper-slide"
+                                        data-swiper-slide-index="<?php echo $pIndex; ?>">
                                         <div class="w-full || js-profile-card-189">
                                             <div x-data="profile" class="w-full flex flex-wrap relative group pl-px"
                                                 x-ref="profile" x-init="profileHover('201')">
-                                                <a href="/about/andy-golpys/"
-                                                    class="w-full h-full absolute top-0 left-0 z-10">
+                                                <a href="#" class="w-full h-full absolute top-0 left-0 z-10">
                                                     <div class="sr-only">
                                                         Andy's profile</div>
                                                 </a>
-                                                <div
+                                                <!-- <div
                                                     class="absolute top-3 right-3 z-20 inline-flex items-center space-x-1.5">
-                                                    <div class="flex items-center space-x-1.5"><a
-                                                            href="https://www.linkedin.com/in/andygolpys"
-                                                            target="_blank" rel="noreferrer"
-                                                            class="inline-flex items-center justify-center bg-primary-600 text-gray-600 translate-z-0 rounded-full w-8 h-8 duration-400 | xl:hover:bg-gray-600 xl:hover:text-white | lg:dark:hover:bg-grayDark-400">
-                                                            <div class="sr-only">
-                                                                MadeByShape</div>
-                                                            <svg class="w-3.5 h-3.5 fill-current"
-                                                                xmlns="http://www.w3.org/2000/svg"
-                                                                viewBox="0 0 448 512">
-                                                                <path
-                                                                    d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
-                                                            </svg>
-                                                        </a></div>
-                                                    <a href="/about/andy-golpys/"
+                                                    <a href="#"
                                                         class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-primary-600 transition-transform transform || xl:group-hover:rotate-90">
                                                         <div class="sr-only">
                                                             Andy's profile</div><svg
@@ -1168,46 +1164,26 @@ text-balance
                                                                 d="M240 64V48h-32v192H16v32h192v192h32V272h192v-32H240V64z" />
                                                         </svg>
                                                     </a>
-                                                </div>
+                                                </div> -->
                                                 <div class="w-full relative">
                                                     <div class="absolute top-0 left-0 w-full h-full rounded-2xl overflow-hidden opacity-0 hidden | lg:rounded-3xl xl:flex || js-profile-images-201"
-                                                        x-ref="profileImages" x-bind:class="{
-'opacity-0' : !hovering,
-'opacity-100' : hovering,
-}">
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/andy/andy-4.png?w=600&amp;q=100&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887804&amp;s=0ab1706115fb5536f8bec13610b3e50c"
+                                                        x-ref="profileImages"
+                                                        x-bind:class="{'opacity-0' : !hovering,'opacity-100' : hovering,}">
+                                                        <img src="<?php echo BASE_URL . "assets/images/employees/" . $profile['name'] . ".png"; ?>?w=600&amp;q=100&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887804&amp;s=0ab1706115fb5536f8bec13610b3e50c"
                                                             class="w-full h-full object-cover object-center absolute top-0 left-0"
                                                             alt="Andy 4" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/andy/andy-5.png?w=600&amp;q=100&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887803&amp;s=542f8cc87631ad1bd8a52811ca00fcea"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="Andy 5" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/andy/andy-6.png?w=600&amp;q=100&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887804&amp;s=024f2fcdf008ed0fb36f5a2bef141a88"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="Andy 6" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/andy/230279f1-e731-4003-a514-38732dba0ea1.JPG?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887804&amp;s=9b227955cbfcc5acc36ad1a8dce92787"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="230279f1 e731 4003 a514 38732dba0ea1" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/andy/king-eric-cantona.jpeg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887805&amp;s=7789a34c952596993035354870add0a2"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="King eric cantona" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/andy/juicy-fat-steak.jpeg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887806&amp;s=d4beb18c4d880ab24c746309fa341a39"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="Juicy fat steak" loading="lazy" />
                                                     </div>
-                                                    <div class="w-full rounded-2xl overflow-hidden bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl"
-                                                        x-bind:class="{
-'xl:opacity-0' : hovering,
-'opacity-100' : !hovering,
-}">
+                                                    <div class="w-full rounded-2xl overflow-hidden bg-gray-50 | lg:rounded-3xl"
+                                                        x-bind:class="{'xl:opacity-0' : hovering,'opacity-100' : !hovering,}">
                                                         <div class="relative overflow-hidden w-full"
                                                             style="padding-top: 133.25%;">
                                                             <picture
                                                                 class="w-full absolute top-0 left-0 w-full h-full ">
                                                                 <source type="image/webp"
-                                                                    srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-461.jpg?w=400&amp;h=533&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050203&amp;s=f4eb0ba70df536ec5c5cc81977e0dca3 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-461.jpg?w=800&amp;h=1067&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050203&amp;s=a6beebc09705dd00fdba9961e67df0ff 800w"
+                                                                    srcset="<?php echo BASE_URL . "assets/images/employees/" . $profile['name'] . ".png"; ?>?w=400&amp;h=533&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050203&amp;s=f4eb0ba70df536ec5c5cc81977e0dca3 400w, <?php echo BASE_URL . "assets/images/employees/" . $profile['name'] . ".png"; ?>?w=800&amp;h=1067&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050203&amp;s=a6beebc09705dd00fdba9961e67df0ff 800w"
                                                                     sizes="100vw">
-                                                                <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-461.jpg?w=400&amp;h=533&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050203&amp;s=f4eb0ba70df536ec5c5cc81977e0dca3"
-                                                                    srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-461.jpg?w=400&amp;h=533&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050203&amp;s=0940deace985b06999187e866834bb9d 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-461.jpg?w=800&amp;h=1067&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050203&amp;s=056c51c100e34c2f2c94eff64e4a7504 800w"
+                                                                <img src="<?php echo BASE_URL . "assets/images/employees/" . $profile['name'] . ".png"; ?>?w=400&amp;h=533&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050203&amp;s=f4eb0ba70df536ec5c5cc81977e0dca3"
+                                                                    srcset="<?php echo BASE_URL . "assets/images/employees/" . $profile['name'] . ".png"; ?>?w=400&amp;h=533&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050203&amp;s=0940deace985b06999187e866834bb9d 400w, <?php echo BASE_URL . "assets/images/employees/" . $profile['name'] . ".png"; ?>?w=800&amp;h=1067&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050203&amp;s=056c51c100e34c2f2c94eff64e4a7504 800w"
                                                                     sizes="100vw" alt="Andy portrait madebyshape"
                                                                     class="w-full " width="800" height="1067">
                                                             </picture>
@@ -1232,1515 +1208,19 @@ text-balance
                                                         </svg>
                                                         <div class="">
                                                             <div class="dark:text-white">
-                                                                Andy</div>
+                                                                <?php echo $profile['name']; ?>
+                                                            </div>
                                                             <div
                                                                 class="font-light text-gray-300 leading-tight text-sm | 4xl:text-base | dark:text-gray-200">
-                                                                Co-Founder</div>
+                                                                <?php echo $profile['Designation']; ?>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4  || swiper-slide">
-                                        <div class="w-full || js-profile-card-189">
-                                            <div x-data="profile" class="w-full flex flex-wrap relative group pl-px"
-                                                x-ref="profile" x-init="profileHover('204')">
-                                                <a href="/about/jason-mayo/"
-                                                    class="w-full h-full absolute top-0 left-0 z-10">
-                                                    <div class="sr-only">
-                                                        Jason's profile</div>
-                                                </a>
-                                                <div
-                                                    class="absolute top-3 right-3 z-20 inline-flex items-center space-x-1.5">
-                                                    <div class="flex items-center space-x-1.5"></div>
-                                                    <a href="/about/jason-mayo/"
-                                                        class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-primary-600 transition-transform transform || xl:group-hover:rotate-90">
-                                                        <div class="sr-only">
-                                                            Jason's profile</div><svg
-                                                            class="w-4 h-4 text-gray-600 fill-current" width="14"
-                                                            height="16" xmlns="http://www.w3.org/2000/svg"
-                                                            viewBox="0 0 448 512">
-                                                            <path
-                                                                d="M240 64V48h-32v192H16v32h192v192h32V272h192v-32H240V64z" />
-                                                        </svg>
-                                                    </a>
-                                                </div>
-                                                <div class="w-full relative">
-                                                    <div class="absolute top-0 left-0 w-full h-full rounded-2xl overflow-hidden opacity-0 hidden | lg:rounded-3xl xl:flex || js-profile-images-204"
-                                                        x-ref="profileImages" x-bind:class="{
-'opacity-0' : !hovering,
-'opacity-100' : hovering,
-}">
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/jason/jason-7.jpg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887811&amp;s=a256d87ef2560e8367d05312312b4a46"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="Jason 7" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/jason/jason-1.png?w=600&amp;q=100&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887811&amp;s=c80f1bbea2f808594db546d22cba7cbd"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="Jason 1" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/jason/jason-2.png?w=600&amp;q=100&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887812&amp;s=c6d6accb3c5381c8a024ba9141b3f9bf"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="Jason 2" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/jason/jason-3.png?w=600&amp;q=100&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887811&amp;s=0713f19e0633a9d1a77fc9f71334cd4f"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="Jason 3" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/jason/jason-4.png?w=600&amp;q=100&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887811&amp;s=b2c9189094756ee43a6b85aab1b89796"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="Jason 4" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/jason/jason-6.png?w=600&amp;q=100&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887811&amp;s=ac695649d16ac22fe88a9a94137a39ec"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="Jason 6" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/jason/jason-5.png?w=600&amp;q=100&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887812&amp;s=761da34b62b4523c0699a3d922ad362a"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="Jason 5" loading="lazy" />
-                                                    </div>
-                                                    <div class="w-full rounded-2xl overflow-hidden bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl"
-                                                        x-bind:class="{
-'xl:opacity-0' : hovering,
-'opacity-100' : !hovering,
-}">
-                                                        <div class="relative overflow-hidden w-full"
-                                                            style="padding-top: 133.25%;">
-                                                            <picture
-                                                                class="w-full absolute top-0 left-0 w-full h-full ">
-                                                                <source type="image/webp"
-                                                                    srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-462.jpg?w=400&amp;h=533&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050194&amp;s=6adcb59253a1139b5f0b12965f74cfaf 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-462.jpg?w=800&amp;h=1067&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050194&amp;s=219eb2e4301653d9f6e70e07db9027e4 800w"
-                                                                    sizes="100vw">
-                                                                <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-462.jpg?w=400&amp;h=533&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050194&amp;s=6adcb59253a1139b5f0b12965f74cfaf"
-                                                                    srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-462.jpg?w=400&amp;h=533&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050194&amp;s=75dd8261b899d11d95192cbaf587de3e 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-462.jpg?w=800&amp;h=1067&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050194&amp;s=0b905a0fc986a95c738cbfdae6f75474 800w"
-                                                                    sizes="100vw" alt="Jason portrait madebyshape"
-                                                                    class="w-full " width="800" height="1067">
-                                                            </picture>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="w-full absolute bottom-0 left-0 pr-14 z-20">
-                                                    <div
-                                                        class="w-auto relative inline-flex flex-wrap rounded-tr-2xl pt-3 pointer-events-none pr-5 | lg:rounded-tr-3xl lg:pr-8 bg-white | dark:bg-grayDark-600">
-                                                        <svg id="Layer_1"
-                                                            class="w-10 h-10 | lg:w-12 lg:h-12 fill-current absolute -bottom-px right-px transform translate-x-full rotate-180 text-white dark:text-grayDark-600"
-                                                            version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
-                                                            viewBox="0 0 100 100" xml:space="preserve">
-                                                            <path
-                                                                d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
-                                                        </svg><svg id="Layer_1"
-                                                            class="w-10 h-10 | lg:w-12 lg:h-12 fill-current absolute top-px left-0 transform -translate-y-full rotate-180 text-white dark:text-grayDark-600"
-                                                            version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
-                                                            viewBox="0 0 100 100" xml:space="preserve">
-                                                            <path
-                                                                d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
-                                                        </svg>
-                                                        <div class="">
-                                                            <div class="dark:text-white">
-                                                                Jason</div>
-                                                            <div
-                                                                class="font-light text-gray-300 leading-tight text-sm | 4xl:text-base | dark:text-gray-200">
-                                                                Co-Founder</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 mt-10 | lg:mt-16 || swiper-slide">
-                                        <div class="w-full || js-profile-card-189">
-                                            <div x-data="profile" class="w-full flex flex-wrap relative group pl-px"
-                                                x-ref="profile" x-init="profileHover('705')">
-                                                <a href="/about/tom-pickering/"
-                                                    class="w-full h-full absolute top-0 left-0 z-10">
-                                                    <div class="sr-only">
-                                                        Tom's profile</div>
-                                                </a>
-                                                <div
-                                                    class="absolute top-3 right-3 z-20 inline-flex items-center space-x-1.5">
-                                                    <div class="flex items-center space-x-1.5"><a
-                                                            href="https://www.linkedin.com/in/tom-pickering-5134a4151/"
-                                                            target="_blank" rel="noreferrer"
-                                                            class="inline-flex items-center justify-center bg-primary-600 text-gray-600 translate-z-0 rounded-full w-8 h-8 duration-400 | xl:hover:bg-gray-600 xl:hover:text-white | lg:dark:hover:bg-grayDark-400">
-                                                            <div class="sr-only">
-                                                                MadeByShape</div>
-                                                            <svg class="w-3.5 h-3.5 fill-current"
-                                                                xmlns="http://www.w3.org/2000/svg"
-                                                                viewBox="0 0 448 512">
-                                                                <path
-                                                                    d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
-                                                            </svg>
-                                                        </a></div>
-                                                    <a href="/about/tom-pickering/"
-                                                        class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-primary-600 transition-transform transform || xl:group-hover:rotate-90">
-                                                        <div class="sr-only">
-                                                            Tom's profile</div><svg
-                                                            class="w-4 h-4 text-gray-600 fill-current" width="14"
-                                                            height="16" xmlns="http://www.w3.org/2000/svg"
-                                                            viewBox="0 0 448 512">
-                                                            <path
-                                                                d="M240 64V48h-32v192H16v32h192v192h32V272h192v-32H240V64z" />
-                                                        </svg>
-                                                    </a>
-                                                </div>
-                                                <div class="w-full relative">
-                                                    <div class="absolute top-0 left-0 w-full h-full rounded-2xl overflow-hidden opacity-0 hidden | lg:rounded-3xl xl:flex || js-profile-images-705"
-                                                        x-ref="profileImages" x-bind:class="{
-'opacity-0' : !hovering,
-'opacity-100' : hovering,
-}">
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/F30DDB5B-0050-440E-B4CE-DC86871BEE31.JPG?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1702994802&amp;s=4e9c7b1130c0a88391f50d5ea51cb13f"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="F30 DDB5 B 0050 440 E B4 CE DC86871 BEE31"
-                                                            loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/9EFE5673-550F-4B55-8B0C-E9914AEE5ED3.JPG?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1702994799&amp;s=2a998524340203b80eba5d76b8072edb"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="9 EFE5673 550 F 4 B55 8 B0 C E9914 AEE5 ED3"
-                                                            loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/9A74D9FD-77F3-470F-B445-DE8E545FD338.JPG?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1702994796&amp;s=544fd656ca4b4537eba0334d1b8f6eaf"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="9 A74 D9 FD 77 F3 470 F B445 DE8 E545 FD338"
-                                                            loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/D712C7B2-BF24-4F80-9592-F108A2216E59.JPG?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1702994794&amp;s=83d02ab5ab5f5c038e9ce505da76b0b2"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="D712 C7 B2 BF24 4 F80 9592 F108 A2216 E59"
-                                                            loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/63DA0AC3-C482-4688-B91E-5A4CD3E72E1C.JPG?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1702994793&amp;s=7caa214733425cfcc91fe1a305ec0a94"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="63 DA0 AC3 C482 4688 B91 E 5 A4 CD3 E72 E1 C"
-                                                            loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/0442DF34-EBC1-4CD2-AD9E-EDA85DE1E582.JPG?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1702994791&amp;s=962571be19a89cf49052bb836483e590"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="0442 DF34 EBC1 4 CD2 AD9 E EDA85 DE1 E582"
-                                                            loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/5B74D208-30B5-4100-B47F-167F4252BB2C.JPG?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1702994788&amp;s=180c7ad5722321ea877141f22e8bd1de"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="5 B74 D208 30 B5 4100 B47 F 167 F4252 BB2 C"
-                                                            loading="lazy" />
-                                                    </div>
-                                                    <div class="w-full rounded-2xl overflow-hidden bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl"
-                                                        x-bind:class="{
-'xl:opacity-0' : hovering,
-'opacity-100' : !hovering,
-}">
-                                                        <div class="relative overflow-hidden w-full"
-                                                            style="padding-top: 133.25%;">
-                                                            <picture
-                                                                class="w-full absolute top-0 left-0 w-full h-full ">
-                                                                <source type="image/webp"
-                                                                    srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-463.jpg?w=400&amp;h=533&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050191&amp;s=c1f205fba057e236bd084792a49dc787 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-463.jpg?w=800&amp;h=1067&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050191&amp;s=45b86736f1508780c82bfae936ec3e22 800w"
-                                                                    sizes="100vw">
-                                                                <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-463.jpg?w=400&amp;h=533&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050191&amp;s=c1f205fba057e236bd084792a49dc787"
-                                                                    srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-463.jpg?w=400&amp;h=533&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050191&amp;s=800305e2c0b5d44008344951b936dc05 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-463.jpg?w=800&amp;h=1067&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050191&amp;s=8d28ab6d73bbba79d4989cbde5c033a9 800w"
-                                                                    sizes="100vw" alt="Tom portrait madebyshape"
-                                                                    class="w-full " width="800" height="1067">
-                                                            </picture>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="w-full absolute bottom-0 left-0 pr-14 z-20">
-                                                    <div
-                                                        class="w-auto relative inline-flex flex-wrap rounded-tr-2xl pt-3 pointer-events-none pr-5 | lg:rounded-tr-3xl lg:pr-8 bg-white | dark:bg-grayDark-600">
-                                                        <svg id="Layer_1"
-                                                            class="w-10 h-10 | lg:w-12 lg:h-12 fill-current absolute -bottom-px right-px transform translate-x-full rotate-180 text-white dark:text-grayDark-600"
-                                                            version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
-                                                            viewBox="0 0 100 100" xml:space="preserve">
-                                                            <path
-                                                                d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
-                                                        </svg><svg id="Layer_1"
-                                                            class="w-10 h-10 | lg:w-12 lg:h-12 fill-current absolute top-px left-0 transform -translate-y-full rotate-180 text-white dark:text-grayDark-600"
-                                                            version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
-                                                            viewBox="0 0 100 100" xml:space="preserve">
-                                                            <path
-                                                                d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
-                                                        </svg>
-                                                        <div class="">
-                                                            <div class="dark:text-white">
-                                                                Tom</div>
-                                                            <div
-                                                                class="font-light text-gray-300 leading-tight text-sm | 4xl:text-base | dark:text-gray-200">
-                                                                Web Developer</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4  || swiper-slide">
-                                        <div class="w-full || js-profile-card-189">
-                                            <div x-data="profile" class="w-full flex flex-wrap relative group pl-px"
-                                                x-ref="profile" x-init="profileHover('87742')">
-                                                <a href="/about/jo-edwards/"
-                                                    class="w-full h-full absolute top-0 left-0 z-10">
-                                                    <div class="sr-only">
-                                                        Jo's profile</div>
-                                                </a>
-                                                <div
-                                                    class="absolute top-3 right-3 z-20 inline-flex items-center space-x-1.5">
-                                                    <div class="flex items-center space-x-1.5"></div>
-                                                    <a href="/about/jo-edwards/"
-                                                        class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-primary-600 transition-transform transform || xl:group-hover:rotate-90">
-                                                        <div class="sr-only">
-                                                            Jo's profile</div><svg
-                                                            class="w-4 h-4 text-gray-600 fill-current" width="14"
-                                                            height="16" xmlns="http://www.w3.org/2000/svg"
-                                                            viewBox="0 0 448 512">
-                                                            <path
-                                                                d="M240 64V48h-32v192H16v32h192v192h32V272h192v-32H240V64z" />
-                                                        </svg>
-                                                    </a>
-                                                </div>
-                                                <div class="w-full relative">
-                                                    <div class="absolute top-0 left-0 w-full h-full rounded-2xl overflow-hidden opacity-0 hidden | lg:rounded-3xl xl:flex || js-profile-images-87742"
-                                                        x-ref="profileImages" x-bind:class="{
-'opacity-0' : !hovering,
-'opacity-100' : hovering,
-}">
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/jo-e/IMG_3602.JPG?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704892410&amp;s=2e777d4f81c7621ed871a1386344faf8"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="IMG 3602" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/jo-e/IMG_3603.JPG?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704892410&amp;s=c79f529ef6b1b5e814a6a98c496b5041"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="IMG 3603" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/jo-e/IMG_2743.jpeg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704892407&amp;s=c294556ef5520719fcae4c419c747ea3"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="IMG 2743" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/jo-e/IMG_1821.jpeg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704892404&amp;s=67cacfa6adadd71640cd199da39a9923"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="IMG 1821" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/jo-e/b1d6b814-9fb9-4030-84e1-629d1f26b22c.jpg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704892402&amp;s=0dd8cb9343c2dffb6d4b6315eef88261"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="B1d6b814 9fb9 4030 84e1 629d1f26b22c" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/jo-e/FB_IMG_1600603637141.jpg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704892401&amp;s=1c05d03019b33515c376e70f361d93e1"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="FB IMG 1600603637141" loading="lazy" />
-                                                    </div>
-                                                    <div class="w-full rounded-2xl overflow-hidden bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl"
-                                                        x-bind:class="{
-'xl:opacity-0' : hovering,
-'opacity-100' : !hovering,
-}">
-                                                        <div class="relative overflow-hidden w-full"
-                                                            style="padding-top: 133.25%;">
-                                                            <picture
-                                                                class="w-full absolute top-0 left-0 w-full h-full ">
-                                                                <source type="image/webp"
-                                                                    srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-458.jpg?w=400&amp;h=533&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050192&amp;s=a7929bffae0364a5b142122abfd0966b 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-458.jpg?w=800&amp;h=1067&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050192&amp;s=2358b038551bdb1d3261a862f4915643 800w"
-                                                                    sizes="100vw">
-                                                                <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-458.jpg?w=400&amp;h=533&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050192&amp;s=a7929bffae0364a5b142122abfd0966b"
-                                                                    srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-458.jpg?w=400&amp;h=533&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050192&amp;s=002f39137ae886903bf4c1abbca20611 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-458.jpg?w=800&amp;h=1067&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050192&amp;s=ba4cef553775df5771ac144c5fbcd923 800w"
-                                                                    sizes="100vw" alt="Jo portrait madebyshape"
-                                                                    class="w-full " width="800" height="1067">
-                                                            </picture>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="w-full absolute bottom-0 left-0 pr-14 z-20">
-                                                    <div
-                                                        class="w-auto relative inline-flex flex-wrap rounded-tr-2xl pt-3 pointer-events-none pr-5 | lg:rounded-tr-3xl lg:pr-8 bg-white | dark:bg-grayDark-600">
-                                                        <svg id="Layer_1"
-                                                            class="w-10 h-10 | lg:w-12 lg:h-12 fill-current absolute -bottom-px right-px transform translate-x-full rotate-180 text-white dark:text-grayDark-600"
-                                                            version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
-                                                            viewBox="0 0 100 100" xml:space="preserve">
-                                                            <path
-                                                                d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
-                                                        </svg><svg id="Layer_1"
-                                                            class="w-10 h-10 | lg:w-12 lg:h-12 fill-current absolute top-px left-0 transform -translate-y-full rotate-180 text-white dark:text-grayDark-600"
-                                                            version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
-                                                            viewBox="0 0 100 100" xml:space="preserve">
-                                                            <path
-                                                                d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
-                                                        </svg>
-                                                        <div class="">
-                                                            <div class="dark:text-white">
-                                                                Jo</div>
-                                                            <div
-                                                                class="font-light text-gray-300 leading-tight text-sm | 4xl:text-base | dark:text-gray-200">
-                                                                Web Developer</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 mt-10 | lg:mt-16 || swiper-slide">
-                                        <div class="w-full || js-profile-card-189">
-                                            <div x-data="profile" class="w-full flex flex-wrap relative group pl-px"
-                                                x-ref="profile" x-init="profileHover('206')">
-                                                <a href="/about/mike-ashurst/"
-                                                    class="w-full h-full absolute top-0 left-0 z-10">
-                                                    <div class="sr-only">
-                                                        Mike's profile</div>
-                                                </a>
-                                                <div
-                                                    class="absolute top-3 right-3 z-20 inline-flex items-center space-x-1.5">
-                                                    <div class="flex items-center space-x-1.5"></div>
-                                                    <a href="/about/mike-ashurst/"
-                                                        class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-primary-600 transition-transform transform || xl:group-hover:rotate-90">
-                                                        <div class="sr-only">
-                                                            Mike's profile</div><svg
-                                                            class="w-4 h-4 text-gray-600 fill-current" width="14"
-                                                            height="16" xmlns="http://www.w3.org/2000/svg"
-                                                            viewBox="0 0 448 512">
-                                                            <path
-                                                                d="M240 64V48h-32v192H16v32h192v192h32V272h192v-32H240V64z" />
-                                                        </svg>
-                                                    </a>
-                                                </div>
-                                                <div class="w-full relative">
-                                                    <div class="absolute top-0 left-0 w-full h-full rounded-2xl overflow-hidden opacity-0 hidden | lg:rounded-3xl xl:flex || js-profile-images-206"
-                                                        x-ref="profileImages" x-bind:class="{
-'opacity-0' : !hovering,
-'opacity-100' : hovering,
-}">
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/mike/IMG_2375.jpeg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704892527&amp;s=579649907c9cd80469be8c843664d2aa"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="IMG 2375" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/mike/IMG_6083.jpeg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704892525&amp;s=bd6c4caf77c585abff33df8e6545fcd2"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="IMG 6083" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/mike/IMG_9061.jpeg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704892521&amp;s=a72ab45729f836b4c59bc5c83f49ff2c"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="IMG 9061" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/mike/IMG_5522.jpeg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704892516&amp;s=0183c3d2d80c735b0556ac72972af71a"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="IMG 5522" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/mike/IMG_5062.jpeg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704892507&amp;s=bbdb2c50e43e54583a6de2a946effafb"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="IMG 5062" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/mike/IMG_1639.jpeg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704892501&amp;s=a20b58a5bee4ddfb86d407810c3c5de5"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="IMG 1639" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/mike/IMG_1041.jpeg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704892497&amp;s=24b32be716166123253a46b1e9c65232"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="IMG 1041" loading="lazy" />
-                                                    </div>
-                                                    <div class="w-full rounded-2xl overflow-hidden bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl"
-                                                        x-bind:class="{
-'xl:opacity-0' : hovering,
-'opacity-100' : !hovering,
-}">
-                                                        <div class="relative overflow-hidden w-full"
-                                                            style="padding-top: 133.25%;">
-                                                            <picture
-                                                                class="w-full absolute top-0 left-0 w-full h-full ">
-                                                                <source type="image/webp"
-                                                                    srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-464.jpg?w=400&amp;h=533&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050258&amp;s=fe7baf44f7b98215c91b3ef68df4b84f 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-464.jpg?w=800&amp;h=1067&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050258&amp;s=6b20325d683f4fb6137739d6a51b1a42 800w"
-                                                                    sizes="100vw">
-                                                                <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-464.jpg?w=400&amp;h=533&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050258&amp;s=fe7baf44f7b98215c91b3ef68df4b84f"
-                                                                    srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-464.jpg?w=400&amp;h=533&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050258&amp;s=9f6f188fc030f6a32ccabdff87b92b63 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-464.jpg?w=800&ampamp;h=1067&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050258&amp;s=7d6dcff8a99b74040eb6daee4ab0072a 800w"
-                                                                    sizes="100vw" alt="Mike portrait madebyshape"
-                                                                    class="w-full " width="800" height="1067">
-                                                            </picture>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="w-full absolute bottom-0 left-0 pr-14 z-20">
-                                                    <div
-                                                        class="w-auto relative inline-flex flex-wrap rounded-tr-2xl pt-3 pointer-events-none pr-5 | lg:rounded-tr-3xl lg:pr-8 bg-white | dark:bg-grayDark-600">
-                                                        <svg id="Layer_1"
-                                                            class="w-10 h-10 | lg:w-12 lg:h-12 fill-current absolute -bottom-px right-px transform translate-x-full rotate-180 text-white dark:text-grayDark-600"
-                                                            version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
-                                                            viewBox="0 0 100 100" xml:space="preserve">
-                                                            <path
-                                                                d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
-                                                        </svg><svg id="Layer_1"
-                                                            class="w-10 h-10 | lg:w-12 lg:h-12 fill-current absolute top-px left-0 transform -translate-y-full rotate-180 text-white dark:text-grayDark-600"
-                                                            version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
-                                                            viewBox="0 0 100 100" xml:space="preserve">
-                                                            <path
-                                                                d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
-                                                        </svg>
-                                                        <div class="">
-                                                            <div class="dark:text-white">
-                                                                Mike</div>
-                                                            <div
-                                                                class="font-light text-gray-300 leading-tight text-sm | 4xl:text-base | dark:text-gray-200">
-                                                                Designer</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4  || swiper-slide">
-                                        <div class="w-full || js-profile-card-189">
-                                            <div x-data="profile" class="w-full flex flex-wrap relative group pl-px"
-                                                x-ref="profile" x-init="profileHover('168639')">
-                                                <a href="/about/ella-dawson/"
-                                                    class="w-full h-full absolute top-0 left-0 z-10">
-                                                    <div class="sr-only">
-                                                        Ella's profile</div>
-                                                </a>
-                                                <div
-                                                    class="absolute top-3 right-3 z-20 inline-flex items-center space-x-1.5">
-                                                    <div class="flex items-center space-x-1.5"><a
-                                                            href="https://www.linkedin.com/in/ella-dawson-732bb519b/"
-                                                            target="_blank" rel="noreferrer"
-                                                            class="inline-flex items-center justify-center bg-primary-600 text-gray-600 translate-z-0 rounded-full w-8 h-8 duration-400 | xl:hover:bg-gray-600 xl:hover:text-white | lg:dark:hover:bg-grayDark-400">
-                                                            <div class="sr-only">
-                                                                MadeByShape</div>
-                                                            <svg class="w-3.5 h-3.5 fill-current"
-                                                                xmlns="http://www.w3.org/2000/svg"
-                                                                viewBox="0 0 448 512">
-                                                                <path
-                                                                    d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
-                                                            </svg>
-                                                        </a></div>
-                                                    <a href="/about/ella-dawson/"
-                                                        class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-primary-600 transition-transform transform || xl:group-hover:rotate-90">
-                                                        <div class="sr-only">
-                                                            Ella's profile</div><svg
-                                                            class="w-4 h-4 text-gray-600 fill-current" width="14"
-                                                            height="16" xmlns="http://www.w3.org/2000/svg"
-                                                            viewBox="0 0 448 512">
-                                                            <path
-                                                                d="M240 64V48h-32v192H16v32h192v192h32V272h192v-32H240V64z" />
-                                                        </svg>
-                                                    </a>
-                                                </div>
-                                                <div class="w-full relative">
-                                                    <div class="absolute top-0 left-0 w-full h-full rounded-2xl overflow-hidden opacity-0 hidden | lg:rounded-3xl xl:flex || js-profile-images-168639"
-                                                        x-ref="profileImages" x-bind:class="{
-'opacity-0' : !hovering,
-'opacity-100' : hovering,
-}">
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/ella/Walking.jpeg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704892051&amp;s=6945ee323d792c76c457f9504cd75d0f"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="Walking" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/ella/Sexy-Food.jpeg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704892070&amp;s=d7068417ab3f4b991e718f2ed13eb42a"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="Sexy Food" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/ella/Rejjie.jpeg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704892011&amp;s=2b35ddc6db82397252f790a2a25a579d"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="Rejjie" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/ella/Piper.jpeg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704892088&amp;s=e7fc19f8df230890bc23985231e517f7"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="Piper" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/ella/New-York.jpeg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704892004&amp;s=32c91685153d9a9b6fb893d3ef08fdc4"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="New York" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/ella/Hiking.JPG?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704891996&amp;s=e0b9057d76190c60d0aee3bf4b2214dd"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="Hiking" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/ella/Fall.jpeg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704892110&amp;s=3b911aac3d8ac3e12ddf41ec586c80b8"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="Fall" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/ella/Lakes.JPG?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704891988&amp;s=e3b3e073c02fde24641fe0b3cd23c701"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="Lakes" loading="lazy" />
-                                                    </div>
-                                                    <div class="w-full rounded-2xl overflow-hidden bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl"
-                                                        x-bind:class="{
-'xl:opacity-0' : hovering,
-'opacity-100' : !hovering,
-}">
-                                                        <div class="relative overflow-hidden w-full"
-                                                            style="padding-top: 133.25%;">
-                                                            <picture
-                                                                class="w-full absolute top-0 left-0 w-full h-full ">
-                                                                <source type="image/webp"
-                                                                    srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-460.jpg?w=400&amp;h=533&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050197&amp;s=cd4e8e7b530392cbd434c11d31100a24 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-460.jpg?w=800&amp;h=1067&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050197&amp;s=6793d06595d3993567c0a0608f2bbe1b 800w"
-                                                                    sizes="100vw">
-                                                                <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-460.jpg?w=400&amp;h=533&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050197&amp;s=cd4e8e7b530392cbd434c11d31100a24"
-                                                                    srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-460.jpg?w=400&amp;h=533&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050197&amp;s=f1eba5a6a35d63ff4ea881097324d8e1 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-460.jpg?w=800&amp;h=1067&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050197&amp;s=cc4880033b77c2223d11d011c853e057 800w"
-                                                                    sizes="100vw" alt="Ella portrait madebyshape"
-                                                                    class="w-full " width="800" height="1067">
-                                                            </picture>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="w-full absolute bottom-0 left-0 pr-14 z-20">
-                                                    <div
-                                                        class="w-auto relative inline-flex flex-wrap rounded-tr-2xl pt-3 pointer-events-none pr-5 | lg:rounded-tr-3xl lg:pr-8 bg-white | dark:bg-grayDark-600">
-                                                        <svg id="Layer_1"
-                                                            class="w-10 h-10 | lg:w-12 lg:h-12 fill-current absolute -bottom-px right-px transform translate-x-full rotate-180 text-white dark:text-grayDark-600"
-                                                            version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
-                                                            viewBox="0 0 100 100" xml:space="preserve">
-                                                            <path
-                                                                d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
-                                                        </svg><svg id="Layer_1"
-                                                            class="w-10 h-10 | lg:w-12 lg:h-12 fill-current absolute top-px left-0 transform -translate-y-full rotate-180 text-white dark:text-grayDark-600"
-                                                            version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
-                                                            viewBox="0 0 100 100" xml:space="preserve">
-                                                            <path
-                                                                d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
-                                                        </svg>
-                                                        <div class="">
-                                                            <div class="dark:text-white">
-                                                                Ella</div>
-                                                            <div
-                                                                class="font-light text-gray-300 leading-tight text-sm | 4xl:text-base | dark:text-gray-200">
-                                                                Brand Designer</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 mt-10 | lg:mt-16 || swiper-slide">
-                                        <div class="w-full || js-profile-card-189">
-                                            <div x-data="profile" class="w-full flex flex-wrap relative group pl-px"
-                                                x-ref="profile">
-                                                <a href="/about/mark-hayes/"
-                                                    class="w-full h-full absolute top-0 left-0 z-10">
-                                                    <div class="sr-only">
-                                                        Mark's profile</div>
-                                                </a>
-                                                <div
-                                                    class="absolute top-3 right-3 z-20 inline-flex items-center space-x-1.5">
-                                                    <div class="flex items-center space-x-1.5"></div>
-                                                    <a href="/about/mark-hayes/"
-                                                        class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-primary-600 transition-transform transform || xl:group-hover:rotate-90">
-                                                        <div class="sr-only">
-                                                            Mark's profile</div><svg
-                                                            class="w-4 h-4 text-gray-600 fill-current" width="14"
-                                                            height="16" xmlns="http://www.w3.org/2000/svg"
-                                                            viewBox="0 0 448 512">
-                                                            <path
-                                                                d="M240 64V48h-32v192H16v32h192v192h32V272h192v-32H240V64z" />
-                                                        </svg>
-                                                    </a>
-                                                </div>
-                                                <div class="w-full relative">
-                                                    <div class="absolute top-0 left-0 w-full h-full rounded-2xl overflow-hidden opacity-0 hidden | lg:rounded-3xl xl:flex || js-profile-images-819"
-                                                        x-ref="profileImages" x-bind:class="{
-'opacity-0' : !hovering,
-'opacity-100' : hovering,
-}"></div>
-                                                    <div
-                                                        class="w-full rounded-2xl overflow-hidden bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl">
-                                                        <div class="relative overflow-hidden w-full"
-                                                            style="padding-top: 133.25%;">
-                                                            <picture
-                                                                class="w-full absolute top-0 left-0 w-full h-full ">
-                                                                <source type="image/webp"
-                                                                    srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/profile-placeholder-male.jpg?w=400&amp;h=533&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050411&amp;s=904d94fdb9e6449b062145600cd3f17d 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/profile-placeholder-male.jpg?w=800&amp;h=1067&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050411&amp;s=ab9d1397fa70a77f622b5f2aad737325 800w"
-                                                                    sizes="100vw">
-                                                                <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/profile-placeholder-male.jpg?w=400&amp;h=533&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050411&amp;s=904d94fdb9e6449b062145600cd3f17d"
-                                                                    srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/profile-placeholder-male.jpg?w=400&amp;h=533&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050411&amp;s=c5b561a90e3c9ac12ad4e018d797bead 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/profile-placeholder-male.jpg?w=800&amp;h=1067&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050411&amp;s=574d344aa2434e8d77811cc08fff7e55 800w"
-                                                                    sizes="100vw" alt="Profile placeholder male"
-                                                                    class="w-full " width="800" height="1067">
-                                                            </picture>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="w-full absolute bottom-0 left-0 pr-14 z-20">
-                                                    <div
-                                                        class="w-auto relative inline-flex flex-wrap rounded-tr-2xl pt-3 pointer-events-none pr-5 | lg:rounded-tr-3xl lg:pr-8 bg-white | dark:bg-grayDark-600">
-                                                        <svg id="Layer_1"
-                                                            class="w-10 h-10 | lg:w-12 lg:h-12 fill-current absolute -bottom-px right-px transform translate-x-full rotate-180 text-white dark:text-grayDark-600"
-                                                            version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
-                                                            viewBox="0 0 100 100" xml:space="preserve">
-                                                            <path
-                                                                d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
-                                                        </svg><svg id="Layer_1"
-                                                            class="w-10 h-10 | lg:w-12 lg:h-12 fill-current absolute top-px left-0 transform -translate-y-full rotate-180 text-white dark:text-grayDark-600"
-                                                            version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
-                                                            viewBox="0 0 100 100" xml:space="preserve">
-                                                            <path
-                                                                d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
-                                                        </svg>
-                                                        <div class="">
-                                                            <div class="dark:text-white">
-                                                                Mark</div>
-                                                            <div
-                                                                class="font-light text-gray-300 leading-tight text-sm | 4xl:text-base | dark:text-gray-200">
-                                                                Search Engine Optimisation</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4  || swiper-slide">
-                                        <div class="w-full || js-profile-card-189">
-                                            <div x-data="profile" class="w-full flex flex-wrap relative group pl-px"
-                                                x-ref="profile" x-init="profileHover('243718')">
-                                                <a href="/about/natasia-rubin/"
-                                                    class="w-full h-full absolute top-0 left-0 z-10">
-                                                    <div class="sr-only">
-                                                        Natasia's profile</div>
-                                                </a>
-                                                <div
-                                                    class="absolute top-3 right-3 z-20 inline-flex items-center space-x-1.5">
-                                                    <div class="flex items-center space-x-1.5"><a
-                                                            href="https://www.linkedin.com/in/natasiarubin/"
-                                                            target="_blank" rel="noreferrer"
-                                                            class="inline-flex items-center justify-center bg-primary-600 text-gray-600 translate-z-0 rounded-full w-8 h-8 duration-400 | xl:hover:bg-gray-600 xl:hover:text-white | lg:dark:hover:bg-grayDark-400">
-                                                            <div class="sr-only">
-                                                                MadeByShape</div>
-                                                            <svg class="w-3.5 h-3.5 fill-current"
-                                                                xmlns="http://www.w3.org/2000/svg"
-                                                                viewBox="0 0 448 512">
-                                                                <path
-                                                                    d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
-                                                            </svg>
-                                                        </a></div>
-                                                    <a href="/about/natasia-rubin/"
-                                                        class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-primary-600 transition-transform transform || xl:group-hover:rotate-90">
-                                                        <div class="sr-only">
-                                                            Natasia's profile</div><svg
-                                                            class="w-4 h-4 text-gray-600 fill-current" width="14"
-                                                            height="16" xmlns="http://www.w3.org/2000/svg"
-                                                            viewBox="0 0 448 512">
-                                                            <path
-                                                                d="M240 64V48h-32v192H16v32h192v192h32V272h192v-32H240V64z" />
-                                                        </svg>
-                                                    </a>
-                                                </div>
-                                                <div class="w-full relative">
-                                                    <div class="absolute top-0 left-0 w-full h-full rounded-2xl overflow-hidden opacity-0 hidden | lg:rounded-3xl xl:flex || js-profile-images-243718"
-                                                        x-ref="profileImages" x-bind:class="{
-'opacity-0' : !hovering,
-'opacity-100' : hovering,
-}">
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/natasia/witches.jpg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704892559&amp;s=51ea64c9b8fa458ca4e4f06d03c47216"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="Witches" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/natasia/misty-mountain.jpg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704892558&amp;s=fe3f38f56110d61f489a4067a9aadcff"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="Misty mountain" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/natasia/howard.jpg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704892557&amp;s=43544490d531714ef06443c5ed629bb5"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="Howard" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/natasia/dad.jpg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704892556&amp;s=5f70ca3647ae7f93470f0798f3fb98e9"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="Dad" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/natasia/cosy-fire.jpg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704892555&amp;s=636cea2865f0646194e0e6e400be9144"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="Cosy fire" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/natasia/food.jpg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704892554&amp;s=be7670ea4fc7cb03c96f2e656c4947e8"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="Food" loading="lazy" />
-                                                    </div>
-                                                    <div class="w-full rounded-2xl overflow-hidden bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl"
-                                                        x-bind:class="{
-'xl:opacity-0' : hovering,
-'opacity-100' : !hovering,
-}">
-                                                        <div class="relative overflow-hidden w-full"
-                                                            style="padding-top: 133.25%;">
-                                                            <picture
-                                                                class="w-full absolute top-0 left-0 w-full h-full ">
-                                                                <source type="image/webp"
-                                                                    srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-448.jpg?w=400&amp;h=533&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050210&amp;s=2ed9ac059a1fcb05278f1715ac9ee551 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-448.jpg?w=800&amp;h=1067&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050210&amp;s=04187aa927dc7c1be3ae9c8ae308ee30 800w"
-                                                                    sizes="100vw">
-                                                                <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-448.jpg?w=400&amp;h=533&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050210&amp;s=2ed9ac059a1fcb05278f1715ac9ee551"
-                                                                    srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-448.jpg?w=400&amp;h=533&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050210&amp;s=83953fa33a748c49b31f5e754a9f4935 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-448.jpg?w=800&amp;h=1067&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050210&amp;s=f1d73a3e7c0eafea48a8d06f6b8bca0b 800w"
-                                                                    sizes="100vw" alt="Natasia portrait madebyshape"
-                                                                    class="w-full " width="800" height="1067">
-                                                            </picture>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="w-full absolute bottom-0 left-0 pr-14 z-20">
-                                                    <div
-                                                        class="w-auto relative inline-flex flex-wrap rounded-tr-2xl pt-3 pointer-events-none pr-5 | lg:rounded-tr-3xl lg:pr-8 bg-white | dark:bg-grayDark-600">
-                                                        <svg id="Layer_1"
-                                                            class="w-10 h-10 | lg:w-12 lg:h-12 fill-current absolute -bottom-px right-px transform translate-x-full rotate-180 text-white dark:text-grayDark-600"
-                                                            version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
-                                                            viewBox="0 0 100 100" xml:space="preserve">
-                                                            <path
-                                                                d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
-                                                        </svg><svg id="Layer_1"
-                                                            class="w-10 h-10 | lg:w-12 lg:h-12 fill-current absolute top-px left-0 transform -translate-y-full rotate-180 text-white dark:text-grayDark-600"
-                                                            version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
-                                                            viewBox="0 0 100 100" xml:space="preserve">
-                                                            <path
-                                                                d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
-                                                        </svg>
-                                                        <div class="">
-                                                            <div class="dark:text-white">
-                                                                Natasia</div>
-                                                            <div
-                                                                class="font-light text-gray-300 leading-tight text-sm | 4xl:text-base | dark:text-gray-200">
-                                                                Content Writer</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 mt-10 | lg:mt-16 || swiper-slide">
-                                        <div class="w-full || js-profile-card-189">
-                                            <div x-data="profile" class="w-full flex flex-wrap relative group pl-px"
-                                                x-ref="profile" x-init="profileHover('349975')">
-                                                <a href="/about/joe-buckley/"
-                                                    class="w-full h-full absolute top-0 left-0 z-10">
-                                                    <div class="sr-only">
-                                                        Joe's profile</div>
-                                                </a>
-                                                <div
-                                                    class="absolute top-3 right-3 z-20 inline-flex items-center space-x-1.5">
-                                                    <div class="flex items-center space-x-1.5"><a
-                                                            href="https://uk.linkedin.com/in/joseph-buckley-a5453659"
-                                                            target="_blank" rel="noreferrer"
-                                                            class="inline-flex items-center justify-center bg-primary-600 text-gray-600 translate-z-0 rounded-full w-8 h-8 duration-400 | xl:hover:bg-gray-600 xl:hover:text-white | lg:dark:hover:bg-grayDark-400">
-                                                            <div class="sr-only">
-                                                                MadeByShape</div>
-                                                            <svg class="w-3.5 h-3.5 fill-current"
-                                                                xmlns="http://www.w3.org/2000/svg"
-                                                                viewBox="0 0 448 512">
-                                                                <path
-                                                                    d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
-                                                            </svg>
-                                                        </a></div>
-                                                    <a href="/about/joe-buckley/"
-                                                        class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-primary-600 transition-transform transform || xl:group-hover:rotate-90">
-                                                        <div class="sr-only">
-                                                            Joe's profile</div><svg
-                                                            class="w-4 h-4 text-gray-600 fill-current" width="14"
-                                                            height="16" xmlns="http://www.w3.org/2000/svg"
-                                                            viewBox="0 0 448 512">
-                                                            <path
-                                                                d="M240 64V48h-32v192H16v32h192v192h32V272h192v-32H240V64z" />
-                                                        </svg>
-                                                    </a>
-                                                </div>
-                                                <div class="w-full relative">
-                                                    <div class="absolute top-0 left-0 w-full h-full rounded-2xl overflow-hidden opacity-0 hidden | lg:rounded-3xl xl:flex || js-profile-images-349975"
-                                                        x-ref="profileImages" x-bind:class="{
-'opacity-0' : !hovering,
-'opacity-100' : hovering,
-}">
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/joe/united.JPG?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704892450&amp;s=ff242d11af66144b609fa173e2a68656"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="United" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/joe/me-and-jess-canada.jpeg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704892448&amp;s=654b38cb41a441f53d91cd34e67075d4"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="Me and jess canada" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/joe/me-and-dave.jpeg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704892445&amp;s=411a78ed5ec6e67815fbdf98642c0f46"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="Me and dave" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/joe/glastonbury.JPG?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704892444&amp;s=8b755e94fcfe98a2923f1268e879eda2"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="Glastonbury" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/joe/cheese.jpeg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704892440&amp;s=5a720f1a841c57a8b30b352ca0070a37"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="Cheese" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/joe/Canada.jpeg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704892437&amp;s=74faa240e7633a2b2d8b3746f64a15ca"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="Canada" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/joe/beer.JPG?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704892436&amp;s=b7419d991bdf04a51e4a1be0b72d44ab"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="Beer" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/joe/football.JPG?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704892435&amp;s=c4e7f5c8438fd274a60989cb67aff76c"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="Football" loading="lazy" />
-                                                    </div>
-                                                    <div class="w-full rounded-2xl overflow-hidden bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl"
-                                                        x-bind:class="{
-'xl:opacity-0' : hovering,
-'opacity-100' : !hovering,
-}">
-                                                        <div class="relative overflow-hidden w-full"
-                                                            style="padding-top: 133.25%;">
-                                                            <picture
-                                                                class="w-full absolute top-0 left-0 w-full h-full ">
-                                                                <source type="image/webp"
-                                                                    srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-457.jpg?w=400&amp;h=533&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050192&amp;s=d2c1ea44507870cc5785ae8dcd19cb8d 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-457.jpg?w=800&amp;h=1067&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050192&amp;s=e96a0131dd51e92a9db242b2e1110a45 800w"
-                                                                    sizes="100vw">
-                                                                <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-457.jpg?w=400&amp;h=533&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050192&amp;s=d2c1ea44507870cc5785ae8dcd19cb8d"
-                                                                    srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-457.jpg?w=400&amp;h=533&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050192&amp;s=59002f72d75df44674e943b4271c473f 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-457.jpg?w=800&amp;h=1067&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050192&amp;s=4dcd892b90894ad1235dcd8078542a63 800w"
-                                                                    sizes="100vw" alt="Joe portrait madebyshape"
-                                                                    class="w-full " width="800" height="1067">
-                                                            </picture>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="w-full absolute bottom-0 left-0 pr-14 z-20">
-                                                    <div
-                                                        class="w-auto relative inline-flex flex-wrap rounded-tr-2xl pt-3 pointer-events-none pr-5 | lg:rounded-tr-3xl lg:pr-8 bg-white | dark:bg-grayDark-600">
-                                                        <svg id="Layer_1"
-                                                            class="w-10 h-10 | lg:w-12 lg:h-12 fill-current absolute -bottom-px right-px transform translate-x-full rotate-180 text-white dark:text-grayDark-600"
-                                                            version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
-                                                            viewBox="0 0 100 100" xml:space="preserve">
-                                                            <path
-                                                                d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
-                                                        </svg><svg id="Layer_1"
-                                                            class="w-10 h-10 | lg:w-12 lg:h-12 fill-current absolute top-px left-0 transform -translate-y-full rotate-180 text-white dark:text-grayDark-600"
-                                                            version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
-                                                            viewBox="0 0 100 100" xml:space="preserve">
-                                                            <path
-                                                                d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
-                                                        </svg>
-                                                        <div class="">
-                                                            <div class="dark:text-white">
-                                                                Joe</div>
-                                                            <div
-                                                                class="font-light text-gray-300 leading-tight text-sm | 4xl:text-base | dark:text-gray-200">
-                                                                Web developer</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4  || swiper-slide">
-                                        <div class="w-full || js-profile-card-189">
-                                            <div x-data="profile" class="w-full flex flex-wrap relative group pl-px"
-                                                x-ref="profile" x-init="profileHover('748')">
-                                                <a href="/about/chris-golpys/"
-                                                    class="w-full h-full absolute top-0 left-0 z-10">
-                                                    <div class="sr-only">
-                                                        Chris's profile</div>
-                                                </a>
-                                                <div
-                                                    class="absolute top-3 right-3 z-20 inline-flex items-center space-x-1.5">
-                                                    <div class="flex items-center space-x-1.5"></div>
-                                                    <a href="/about/chris-golpys/"
-                                                        class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-primary-600 transition-transform transform || xl:group-hover:rotate-90">
-                                                        <div class="sr-only">
-                                                            Chris's profile</div><svg
-                                                            class="w-4 h-4 text-gray-600 fill-current" width="14"
-                                                            height="16" xmlns="http://www.w3.org/2000/svg"
-                                                            viewBox="0 0 448 512">
-                                                            <path
-                                                                d="M240 64V48h-32v192H16v32h192v192h32V272h192v-32H240V64z" />
-                                                        </svg>
-                                                    </a>
-                                                </div>
-                                                <div class="w-full relative">
-                                                    <div class="absolute top-0 left-0 w-full h-full rounded-2xl overflow-hidden opacity-0 hidden | lg:rounded-3xl xl:flex || js-profile-images-748"
-                                                        x-ref="profileImages" x-bind:class="{
-'opacity-0' : !hovering,
-'opacity-100' : hovering,
-}">
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/chris/IMG_4901.jpeg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704892140&amp;s=bbb5311723a8c1f7acd45674f7bba685"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="IMG 4901" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/chris/-.jpeg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704892151&amp;s=d680bc43e47294a9e30463fa1d4fb6f6"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/chris/5be8c4da-4d22-434b-99ef-69f82ca8a52c.JPG?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704891957&amp;s=9dd5c3e874d92114cf9153fa9811e6df"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="5be8c4da 4d22 434b 99ef 69f82ca8a52c" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/roxie-small.jpg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1709633600&amp;s=fba933d6e7b4d70c48ae11a69c39ceea"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="Roxie small" loading="lazy" />
-                                                    </div>
-                                                    <div class="w-full rounded-2xl overflow-hidden bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl"
-                                                        x-bind:class="{
-'xl:opacity-0' : hovering,
-'opacity-100' : !hovering,
-}">
-                                                        <div class="relative overflow-hidden w-full"
-                                                            style="padding-top: 133.25%;">
-                                                            <picture
-                                                                class="w-full absolute top-0 left-0 w-full h-full ">
-                                                                <source type="image/webp"
-                                                                    srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-455.jpg?w=400&amp;h=533&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050198&amp;s=33f31969b6dc67d53f1f4b7b2a57fa41 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-455.jpg?w=800&amp;h=1067&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050198&amp;s=43badf2c099e5d53c71f60787a791eba 800w"
-                                                                    sizes="100vw">
-                                                                <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-455.jpg?w=400&amp;h=533&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050198&amp;s=33f31969b6dc67d53f1f4b7b2a57fa41"
-                                                                    srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-455.jpg?w=400&amp;h=533&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050198&amp;s=11c88a518802252da9a7819429d1ba59 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-455.jpg?w=800&amp;h=1067&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050198&amp;s=c43916a9c4d6715f83a001ae2156af7d 800w"
-                                                                    sizes="100vw" alt="Chris portrait madebyshape"
-                                                                    class="w-full " width="800" height="1067">
-                                                            </picture>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="w-full absolute bottom-0 left-0 pr-14 z-20">
-                                                    <div
-                                                        class="w-auto relative inline-flex flex-wrap rounded-tr-2xl pt-3 pointer-events-none pr-5 | lg:rounded-tr-3xl lg:pr-8 bg-white | dark:bg-grayDark-600">
-                                                        <svg id="Layer_1"
-                                                            class="w-10 h-10 | lg:w-12 lg:h-12 fill-current absolute -bottom-px right-px transform translate-x-full rotate-180 text-white dark:text-grayDark-600"
-                                                            version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
-                                                            viewBox="0 0 100 100" xml:space="preserve">
-                                                            <path
-                                                                d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
-                                                        </svg><svg id="Layer_1"
-                                                            class="w-10 h-10 | lg:w-12 lg:h-12 fill-current absolute top-px left-0 transform -translate-y-full rotate-180 text-white dark:text-grayDark-600"
-                                                            version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
-                                                            viewBox="0 0 100 100" xml:space="preserve">
-                                                            <path
-                                                                d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
-                                                        </svg>
-                                                        <div class="">
-                                                            <div class="dark:text-white">
-                                                                Chris</div>
-                                                            <div
-                                                                class="font-light text-gray-300 leading-tight text-sm | 4xl:text-base | dark:text-gray-200">
-                                                                Accounts &amp; Finance</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 mt-10 | lg:mt-16 || swiper-slide">
-                                        <div class="w-full || js-profile-card-189">
-                                            <div x-data="profile" class="w-full flex flex-wrap relative group pl-px"
-                                                x-ref="profile" x-init="profileHover('828')">
-                                                <a href="/about/ruby-jayne/"
-                                                    class="w-full h-full absolute top-0 left-0 z-10">
-                                                    <div class="sr-only">
-                                                        Ruby's profile</div>
-                                                </a>
-                                                <div
-                                                    class="absolute top-3 right-3 z-20 inline-flex items-center space-x-1.5">
-                                                    <div class="flex items-center space-x-1.5"></div>
-                                                    <a href="/about/ruby-jayne/"
-                                                        class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-primary-600 transition-transform transform || xl:group-hover:rotate-90">
-                                                        <div class="sr-only">
-                                                            Ruby's profile</div><svg
-                                                            class="w-4 h-4 text-gray-600 fill-current" width="14"
-                                                            height="16" xmlns="http://www.w3.org/2000/svg"
-                                                            viewBox="0 0 448 512">
-                                                            <path
-                                                                d="M240 64V48h-32v192H16v32h192v192h32V272h192v-32H240V64z" />
-                                                        </svg>
-                                                    </a>
-                                                </div>
-                                                <div class="w-full relative">
-                                                    <div class="absolute top-0 left-0 w-full h-full rounded-2xl overflow-hidden opacity-0 hidden | lg:rounded-3xl xl:flex || js-profile-images-828"
-                                                        x-ref="profileImages" x-bind:class="{
-'opacity-0' : !hovering,
-'opacity-100' : hovering,
-}">
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/ruby/IMG_7564.jpeg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704892964&amp;s=d2de4b73607c1d294ca339a8ffa4b3bd"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="IMG 7564" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/ruby/IMG_6676.jpeg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704892961&amp;s=7fdb921529e682a53456c1176285d72e"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="IMG 6676" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/ruby/IMG_5962.jpeg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704892958&amp;s=0d721ff3a19c59145b0f804140e19949"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="IMG 5962" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/ruby/IMG_5651.jpeg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704892955&amp;s=afa0765a8785189096c6f4a1bf3233f1"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="IMG 5651" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/ruby/IMG_5631.jpeg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704892952&amp;s=bb5edf4deee17c52bcabf0764a9a6f8c"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="IMG 5631" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/ruby/IMG_2710.jpeg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704892949&amp;s=eec424085ac450ee21f0e47bf8809f7a"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="IMG 2710" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/ruby/IMG_2482.jpeg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704892946&amp;s=3051df09a23ecad9ad3496b3bfb45ac4"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="IMG 2482" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/ruby/IMG_4191.jpeg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704892943&amp;s=f2fe608d2e397291dc30f924c9f580c5"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="IMG 4191" loading="lazy" />
-                                                    </div>
-                                                    <div class="w-full rounded-2xl overflow-hidden bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl"
-                                                        x-bind:class="{
-'xl:opacity-0' : hovering,
-'opacity-100' : !hovering,
-}">
-                                                        <div class="relative overflow-hidden w-full"
-                                                            style="padding-top: 133.25%;">
-                                                            <picture
-                                                                class="w-full absolute top-0 left-0 w-full h-full ">
-                                                                <source type="image/webp"
-                                                                    srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-456.jpg?w=400&amp;h=533&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050201&amp;s=16790fe91bb98c5920eebf04519b208f 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-456.jpg?w=800&amp;h=1067&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050201&amp;s=5651a2738219ac52518e8fb8061bfd81 800w"
-                                                                    sizes="100vw">
-                                                                <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-456.jpg?w=400&amp;h=533&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050201&amp;s=16790fe91bb98c5920eebf04519b208f"
-                                                                    srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-456.jpg?w=400&amp;h=533&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050201&amp;s=e6c2c96d4c0baee9078d62d99ab1b3ea 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-456.jpg?w=800&amp;h=1067&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050201&amp;s=0bf280002e7f7c23aa852c7443deb0af 800w"
-                                                                    sizes="100vw" alt="Ruby portrait madebyshape"
-                                                                    class="w-full " width="800" height="1067">
-                                                            </picture>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="w-full absolute bottom-0 left-0 pr-14 z-20">
-                                                    <div
-                                                        class="w-auto relative inline-flex flex-wrap rounded-tr-2xl pt-3 pointer-events-none pr-5 | lg:rounded-tr-3xl lg:pr-8 bg-white | dark:bg-grayDark-600">
-                                                        <svg id="Layer_1"
-                                                            class="w-10 h-10 | lg:w-12 lg:h-12 fill-current absolute -bottom-px right-px transform translate-x-full rotate-180 text-white dark:text-grayDark-600"
-                                                            version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
-                                                            viewBox="0 0 100 100" xml:space="preserve">
-                                                            <path
-                                                                d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
-                                                        </svg><svg id="Layer_1"
-                                                            class="w-10 h-10 | lg:w-12 lg:h-12 fill-current absolute top-px left-0 transform -translate-y-full rotate-180 text-white dark:text-grayDark-600"
-                                                            version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
-                                                            viewBox="0 0 100 100" xml:space="preserve">
-                                                            <path
-                                                                d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
-                                                        </svg>
-                                                        <div class="">
-                                                            <div class="dark:text-white">
-                                                                Ruby</div>
-                                                            <div
-                                                                class="font-light text-gray-300 leading-tight text-sm | 4xl:text-base | dark:text-gray-200">
-                                                                Design Intern</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4  || swiper-slide">
-                                        <div class="w-full || js-profile-card-189">
-                                            <div x-data="profile" class="w-full flex flex-wrap relative group pl-px"
-                                                x-ref="profile" x-init="profileHover('1206')">
-                                                <a href="/about/dipper/"
-                                                    class="w-full h-full absolute top-0 left-0 z-10">
-                                                    <div class="sr-only">
-                                                        Dipper's profile</div>
-                                                </a>
-                                                <div
-                                                    class="absolute top-3 right-3 z-20 inline-flex items-center space-x-1.5">
-                                                    <div class="flex items-center space-x-1.5"></div>
-                                                    <a href="/about/dipper/"
-                                                        class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-primary-600 transition-transform transform || xl:group-hover:rotate-90">
-                                                        <div class="sr-only">
-                                                            Dipper's profile</div><svg
-                                                            class="w-4 h-4 text-gray-600 fill-current" width="14"
-                                                            height="16" xmlns="http://www.w3.org/2000/svg"
-                                                            viewBox="0 0 448 512">
-                                                            <path
-                                                                d="M240 64V48h-32v192H16v32h192v192h32V272h192v-32H240V64z" />
-                                                        </svg>
-                                                    </a>
-                                                </div>
-                                                <div class="w-full relative">
-                                                    <div class="absolute top-0 left-0 w-full h-full rounded-2xl overflow-hidden opacity-0 hidden | lg:rounded-3xl xl:flex || js-profile-images-1206"
-                                                        x-ref="profileImages" x-bind:class="{
-'opacity-0' : !hovering,
-'opacity-100' : hovering,
-}">
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/dipper/28f469bb-4cc1-43fa-b02b-72f367f1f64e.JPG?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704891872&amp;s=bd615b8108cc24c960a56b3e86a4f7a0"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="28f469bb 4cc1 43fa b02b 72f367f1f64e" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/dipper/IMG_3341.jpeg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704892280&amp;s=80dde2dad2e268e1cf10e78a5f2bc7f6"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="IMG 3341" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/dipper/IMG_3465.jpeg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704892334&amp;s=09ac10450ea92b81d0209232a240c921"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="IMG 3465" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/dipper/IMG_3207.jpeg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704892350&amp;s=b93d6efc28c9baa112e4d4d4924a4221"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="IMG 3207" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/dipper/IMG_3565.jpeg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704892374&amp;s=c58fd66de4d1a414cc012368f70daf54"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="IMG 3565" loading="lazy" />
-                                                    </div>
-                                                    <div class="w-full rounded-2xl overflow-hidden bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl"
-                                                        x-bind:class="{
-'xl:opacity-0' : hovering,
-'opacity-100' : !hovering,
-}">
-                                                        <div class="relative overflow-hidden w-full"
-                                                            style="padding-top: 133.25%;">
-                                                            <picture
-                                                                class="w-full absolute top-0 left-0 w-full h-full ">
-                                                                <source type="image/webp"
-                                                                    srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-451.jpg?w=400&amp;h=533&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050202&amp;s=313c8abddd89c09d8e659ef34a9ed448 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-451.jpg?w=800&amp;h=1067&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050202&amp;s=cd7aaeae5ff3139868cf55edb23e7f42 800w"
-                                                                    sizes="100vw">
-                                                                <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-451.jpg?w=400&amp;h=533&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050202&amp;s=313c8abddd89c09d8e659ef34a9ed448"
-                                                                    srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-451.jpg?w=400&amp;h=533&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050202&amp;s=d528a495f5342c3f04285d79ff67067b 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-451.jpg?w=800&amp;h=1067&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050202&amp;s=30c7979229b7cfe8816bc9d517d2d9d5 800w"
-                                                                    sizes="100vw" alt="Dipper portrait madebyshape"
-                                                                    class="w-full " width="800" height="1067">
-                                                            </picture>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="w-full absolute bottom-0 left-0 pr-14 z-20">
-                                                    <div
-                                                        class="w-auto relative inline-flex flex-wrap rounded-tr-2xl pt-3 pointer-events-none pr-5 | lg:rounded-tr-3xl lg:pr-8 bg-white | dark:bg-grayDark-600">
-                                                        <svg id="Layer_1"
-                                                            class="w-10 h-10 | lg:w-12 lg:h-12 fill-current absolute -bottom-px right-px transform translate-x-full rotate-180 text-white dark:text-grayDark-600"
-                                                            version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
-                                                            viewBox="0 0 100 100" xml:space="preserve">
-                                                            <path
-                                                                d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
-                                                        </svg><svg id="Layer_1"
-                                                            class="w-10 h-10 | lg:w-12 lg:h-12 fill-current absolute top-px left-0 transform -translate-y-full rotate-180 text-white dark:text-grayDark-600"
-                                                            version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
-                                                            viewBox="0 0 100 100" xml:space="preserve">
-                                                            <path
-                                                                d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
-                                                        </svg>
-                                                        <div class="">
-                                                            <div class="dark:text-white">
-                                                                Dipper</div>
-                                                            <div
-                                                                class="font-light text-gray-300 leading-tight text-sm | 4xl:text-base | dark:text-gray-200">
-                                                                Client Relations</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 mt-10 | lg:mt-16 || swiper-slide">
-                                        <div class="w-full || js-profile-card-189">
-                                            <div x-data="profile" class="w-full flex flex-wrap relative group pl-px"
-                                                x-ref="profile" x-init="profileHover('1201')">
-                                                <a href="/about/nick-kingan/"
-                                                    class="w-full h-full absolute top-0 left-0 z-10">
-                                                    <div class="sr-only">
-                                                        Nick's profile</div>
-                                                </a>
-                                                <div
-                                                    class="absolute top-3 right-3 z-20 inline-flex items-center space-x-1.5">
-                                                    <div class="flex items-center space-x-1.5"></div>
-                                                    <a href="/about/nick-kingan/"
-                                                        class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-primary-600 transition-transform transform || xl:group-hover:rotate-90">
-                                                        <div class="sr-only">
-                                                            Nick's profile</div><svg
-                                                            class="w-4 h-4 text-gray-600 fill-current" width="14"
-                                                            height="16" xmlns="http://www.w3.org/2000/svg"
-                                                            viewBox="0 0 448 512">
-                                                            <path
-                                                                d="M240 64V48h-32v192H16v32h192v192h32V272h192v-32H240V64z" />
-                                                        </svg>
-                                                    </a>
-                                                </div>
-                                                <div class="w-full relative">
-                                                    <div class="absolute top-0 left-0 w-full h-full rounded-2xl overflow-hidden opacity-0 hidden | lg:rounded-3xl xl:flex || js-profile-images-1201"
-                                                        x-ref="profileImages" x-bind:class="{
-'opacity-0' : !hovering,
-'opacity-100' : hovering,
-}">
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/nick/playtime.jpeg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704892607&amp;s=47b617839c1dd0c19baacc4321950000"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="Playtime" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/nick/halloween.jpg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704892606&amp;s=015114067e8a2cd065dc46b1c3cd615c"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="Halloween" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/nick/kareoke-wide.jpg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704892605&amp;s=a4b009ef93b1ff894b839e284586739c"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="Kareoke wide" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/nick/mates.jpeg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704892603&amp;s=5556ce4ee26cef0995ab065b31d15fd0"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="Mates" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/nick/music.jpg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704892602&amp;s=2b9c620d1278f0e6cea3e64880d7c359"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="Music" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/nick/family-birthday.jpeg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704892600&amp;s=e525306603b915f0b6b22a2d5b4d2bef"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="Family birthday" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/nick/betty.jpeg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704892597&amp;s=3f823ac05f75aed5a0376d64a2cbf2df"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="Betty" loading="lazy" />
-                                                    </div>
-                                                    <div class="w-full rounded-2xl overflow-hidden bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl"
-                                                        x-bind:class="{
-'xl:opacity-0' : hovering,
-'opacity-100' : !hovering,
-}">
-                                                        <div class="relative overflow-hidden w-full"
-                                                            style="padding-top: 133.25%;">
-                                                            <picture
-                                                                class="w-full absolute top-0 left-0 w-full h-full ">
-                                                                <source type="image/webp"
-                                                                    srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-453.jpg?w=400&amp;h=533&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050194&amp;s=e91c44f1cf11c0773bcaea228086ab7d 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-453.jpg?w=800&amp;h=1067&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050194&amp;s=64a694fcdc84dff7912e7adff9a03f1d 800w"
-                                                                    sizes="100vw">
-                                                                <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-453.jpg?w=400&amp;h=533&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050194&amp;s=e91c44f1cf11c0773bcaea228086ab7d"
-                                                                    srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-453.jpg?w=400&amp;h=533&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050194&amp;s=91c83c56ac087567fbe72a1730287c7c 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-453.jpg?w=800&amp;h=1067&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050194&amp;s=5b2429f99af686db685a16dbcbbea37e 800w"
-                                                                    sizes="100vw" alt="Nick portrait madebyshape"
-                                                                    class="w-full " width="800" height="1067">
-                                                            </picture>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="w-full absolute bottom-0 left-0 pr-14 z-20">
-                                                    <div
-                                                        class="w-auto relative inline-flex flex-wrap rounded-tr-2xl pt-3 pointer-events-none pr-5 | lg:rounded-tr-3xl lg:pr-8 bg-white | dark:bg-grayDark-600">
-                                                        <svg id="Layer_1"
-                                                            class="w-10 h-10 | lg:w-12 lg:h-12 fill-current absolute -bottom-px right-px transform translate-x-full rotate-180 text-white dark:text-grayDark-600"
-                                                            version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
-                                                            viewBox="0 0 100 100" xml:space="preserve">
-                                                            <path
-                                                                d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
-                                                        </svg><svg id="Layer_1"
-                                                            class="w-10 h-10 | lg:w-12 lg:h-12 fill-current absolute top-px left-0 transform -translate-y-full rotate-180 text-white dark:text-grayDark-600"
-                                                            version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
-                                                            viewBox="0 0 100 100" xml:space="preserve">
-                                                            <path
-                                                                d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
-                                                        </svg>
-                                                        <div class="">
-                                                            <div class="dark:text-white">
-                                                                Nick</div>
-                                                            <div
-                                                                class="font-light text-gray-300 leading-tight text-sm | 4xl:text-base | dark:text-gray-200">
-                                                                Web Developer</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4  || swiper-slide">
-                                        <div class="w-full || js-profile-card-189">
-                                            <div x-data="profile" class="w-full flex flex-wrap relative group pl-px"
-                                                x-ref="profile" x-init="profileHover('382612')">
-                                                <a href="/about/roxie-rose/"
-                                                    class="w-full h-full absolute top-0 left-0 z-10">
-                                                    <div class="sr-only">
-                                                        Roxie's profile</div>
-                                                </a>
-                                                <div
-                                                    class="absolute top-3 right-3 z-20 inline-flex items-center space-x-1.5">
-                                                    <div class="flex items-center space-x-1.5"></div>
-                                                    <a href="/about/roxie-rose/"
-                                                        class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-primary-600 transition-transform transform || xl:group-hover:rotate-90">
-                                                        <div class="sr-only">
-                                                            Roxie's profile</div><svg
-                                                            class="w-4 h-4 text-gray-600 fill-current" width="14"
-                                                            height="16" xmlns="http://www.w3.org/2000/svg"
-                                                            viewBox="0 0 448 512">
-                                                            <path
-                                                                d="M240 64V48h-32v192H16v32h192v192h32V272h192v-32H240V64z" />
-                                                        </svg>
-                                                    </a>
-                                                </div>
-                                                <div class="w-full relative">
-                                                    <div class="absolute top-0 left-0 w-full h-full rounded-2xl overflow-hidden opacity-0 hidden | lg:rounded-3xl xl:flex || js-profile-images-382612"
-                                                        x-ref="profileImages" x-bind:class="{
-'opacity-0' : !hovering,
-'opacity-100' : hovering,
-}">
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/roxie/IMG_6148.jpeg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704892868&amp;s=48e682dd65d355c4573cf53eec4b7cbe"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="IMG 6148" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/roxie/IMG_6001.jpeg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704898981&amp;s=7da03f2cf8cdc65b4126cfb54d275629"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="IMG 6001" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/roxie/IMG_5423.jpeg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704899004&amp;s=6a93adb3569baba91f754e2e1cd56e90"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="IMG 5423" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/roxie/IMG_4352.jpg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704892859&amp;s=30e09178bd85f2be1a2a333d9f1b3199"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="IMG 4352" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/roxie/IMG_1226.jpeg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704899027&amp;s=2ec0b43b4ce321a129614d65c454fb35"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="IMG 1226" loading="lazy" />
-                                                    </div>
-                                                    <div class="w-full rounded-2xl overflow-hidden bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl"
-                                                        x-bind:class="{
-'xl:opacity-0' : hovering,
-'opacity-100' : !hovering,
-}">
-                                                        <div class="relative overflow-hidden w-full"
-                                                            style="padding-top: 133.25%;">
-                                                            <picture
-                                                                class="w-full absolute top-0 left-0 w-full h-full ">
-                                                                <source type="image/webp"
-                                                                    srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-450.jpg?w=400&amp;h=533&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050207&amp;s=cc175f76b24c1d096c7f0b14e90ad6ca 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-450.jpg?w=800&amp;h=1067&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050207&amp;s=ec7740cc8dfd7eb0f8c28f613a2b426b 800w"
-                                                                    sizes="100vw">
-                                                                <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-450.jpg?w=400&amp;h=533&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050207&amp;s=cc175f76b24c1d096c7f0b14e90ad6ca"
-                                                                    srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-450.jpg?w=400&amp;h=533&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050207&amp;s=cc2df90b139bc9f9da9b99f1503f30b0 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-450.jpg?w=800&amp;h=1067&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050207&amp;s=eacaaef25fd9a9a24d3eb34126eabbab 800w"
-                                                                    sizes="100vw" alt="Roxie portrait madebyshape"
-                                                                    class="w-full " width="800" height="1067">
-                                                            </picture>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="w-full absolute bottom-0 left-0 pr-14 z-20">
-                                                    <div
-                                                        class="w-auto relative inline-flex flex-wrap rounded-tr-2xl pt-3 pointer-events-none pr-5 | lg:rounded-tr-3xl lg:pr-8 bg-white | dark:bg-grayDark-600">
-                                                        <svg id="Layer_1"
-                                                            class="w-10 h-10 | lg:w-12 lg:h-12 fill-current absolute -bottom-px right-px transform translate-x-full rotate-180 text-white dark:text-grayDark-600"
-                                                            version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
-                                                            viewBox="0 0 100 100" xml:space="preserve">
-                                                            <path
-                                                                d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
-                                                        </svg><svg id="Layer_1"
-                                                            class="w-10 h-10 | lg:w-12 lg:h-12 fill-current absolute top-px left-0 transform -translate-y-full rotate-180 text-white dark:text-grayDark-600"
-                                                            version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
-                                                            viewBox="0 0 100 100" xml:space="preserve">
-                                                            <path
-                                                                d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
-                                                        </svg>
-                                                        <div class="">
-                                                            <div class="dark:text-white">
-                                                                Roxie</div>
-                                                            <div
-                                                                class="font-light text-gray-300 leading-tight text-sm | 4xl:text-base | dark:text-gray-200">
-                                                                Security</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 mt-10 | lg:mt-16 || swiper-slide">
-                                        <div class="w-full || js-profile-card-189">
-                                            <div x-data="profile" class="w-full flex flex-wrap relative group pl-px"
-                                                x-ref="profile" x-init="profileHover('431626')">
-                                                <a href="/about/kerry-hounslea/"
-                                                    class="w-full h-full absolute top-0 left-0 z-10">
-                                                    <div class="sr-only">
-                                                        Kerry's profile</div>
-                                                </a>
-                                                <div
-                                                    class="absolute top-3 right-3 z-20 inline-flex items-center space-x-1.5">
-                                                    <div class="flex items-center space-x-1.5"><a
-                                                            href="https://www.linkedin.com/in/kerry-hounslea/"
-                                                            target="_blank" rel="noreferrer"
-                                                            class="inline-flex items-center justify-center bg-primary-600 text-gray-600 translate-z-0 rounded-full w-8 h-8 duration-400 | xl:hover:bg-gray-600 xl:hover:text-white | lg:dark:hover:bg-grayDark-400">
-                                                            <div class="sr-only">
-                                                                MadeByShape</div>
-                                                            <svg class="w-3.5 h-3.5 fill-current"
-                                                                xmlns="http://www.w3.org/2000/svg"
-                                                                viewBox="0 0 448 512">
-                                                                <path
-                                                                    d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
-                                                            </svg>
-                                                        </a></div>
-                                                    <a href="/about/kerry-hounslea/"
-                                                        class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-primary-600 transition-transform transform || xl:group-hover:rotate-90">
-                                                        <div class="sr-only">
-                                                            Kerry's profile</div><svg
-                                                            class="w-4 h-4 text-gray-600 fill-current" width="14"
-                                                            height="16" xmlns="http://www.w3.org/2000/svg"
-                                                            viewBox="0 0 448 512">
-                                                            <path
-                                                                d="M240 64V48h-32v192H16v32h192v192h32V272h192v-32H240V64z" />
-                                                        </svg>
-                                                    </a>
-                                                </div>
-                                                <div class="w-full relative">
-                                                    <div class="absolute top-0 left-0 w-full h-full rounded-2xl overflow-hidden opacity-0 hidden | lg:rounded-3xl xl:flex || js-profile-images-431626"
-                                                        x-ref="profileImages" x-bind:class="{
-'opacity-0' : !hovering,
-'opacity-100' : hovering,
-}">
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/kerry/IMG_7733.jpg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704898516&amp;s=b82cbaa36d14ecc7218b62728a8274f2"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="IMG 7733" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/kerry/IMG_8324.JPG?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704898513&amp;s=3b842a1843a195cb8838f8326fc9cd97"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="IMG 8324" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/kerry/IMG_6339.jpeg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704898509&amp;s=56d15fb089c3b86b6e48c67edddef197"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="IMG 6339" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/kerry/IMG_3266.jpeg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704898506&amp;s=1e12456b49ca26fc7f2cb00edfab1b5a"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="IMG 3266" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/kerry/IMG_7509-2.jpeg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704898502&amp;s=a4c2daf5cabfca852cd924c15c28d185"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="IMG 7509 2" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/hover-images/kerry/IMG_8531.JPG?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704898501&amp;s=15480b60917bdac16c7f8f03f4dc1c49"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="IMG 8531" loading="lazy" />
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/IMG_6446.jpeg?w=600&amp;q=70&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1706099777&amp;s=a890acff3ec9b00687e6612135ccd92c"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="IMG 6446" loading="lazy" />
-                                                    </div>
-                                                    <div class="w-full rounded-2xl overflow-hidden bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl"
-                                                        x-bind:class="{
-'xl:opacity-0' : hovering,
-'opacity-100' : !hovering,
-}">
-                                                        <div class="relative overflow-hidden w-full"
-                                                            style="padding-top: 133.25%;">
-                                                            <picture
-                                                                class="w-full absolute top-0 left-0 w-full h-full ">
-                                                                <source type="image/webp"
-                                                                    srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-449.jpg?w=400&amp;h=533&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050205&amp;s=dc3a6f651eb740d7d0dc06d4b8c0f04f 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-449.jpg?w=800&amp;h=1067&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050205&amp;s=3f316f45660cefa3c61108c3de3a9dca 800w"
-                                                                    sizes="100vw">
-                                                                <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-449.jpg?w=400&amp;h=533&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050205&amp;s=dc3a6f651eb740d7d0dc06d4b8c0f04f"
-                                                                    srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-449.jpg?w=400&amp;h=533&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050205&amp;s=a67db530676a348d8527e15740c37418 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/portrait/Group-449.jpg?w=800&amp;h=1067&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050205&amp;s=6fcad14fc805b9e84687518e03ae0047 800w"
-                                                                    sizes="100vw" alt="Kerry portrait madebyshape"
-                                                                    class="w-full " width="800" height="1067">
-                                                            </picture>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="w-full absolute bottom-0 left-0 pr-14 z-20">
-                                                    <div
-                                                        class="w-auto relative inline-flex flex-wrap rounded-tr-2xl pt-3 pointer-events-none pr-5 | lg:rounded-tr-3xl lg:pr-8 bg-white | dark:bg-grayDark-600">
-                                                        <svg id="Layer_1"
-                                                            class="w-10 h-10 | lg:w-12 lg:h-12 fill-current absolute -bottom-px right-px transform translate-x-full rotate-180 text-white dark:text-grayDark-600"
-                                                            version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
-                                                            viewBox="0 0 100 100" xml:space="preserve">
-                                                            <path
-                                                                d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
-                                                        </svg><svg id="Layer_1"
-                                                            class="w-10 h-10 | lg:w-12 lg:h-12 fill-current absolute top-px left-0 transform -translate-y-full rotate-180 text-white dark:text-grayDark-600"
-                                                            version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
-                                                            viewBox="0 0 100 100" xml:space="preserve">
-                                                            <path
-                                                                d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
-                                                        </svg>
-                                                        <div class="">
-                                                            <div class="dark:text-white">
-                                                                Kerry</div>
-                                                            <div
-                                                                class="font-light text-gray-300 leading-tight text-sm | 4xl:text-base | dark:text-gray-200">
-                                                                Content Writer</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4  || swiper-slide">
-                                        <div class="w-full || js-profile-card-189">
-                                            <div x-data="profile" class="w-full flex flex-wrap relative group pl-px"
-                                                x-ref="profile">
-                                                <a href="/about/want-to-work-at-madebyshape/"
-                                                    class="w-full h-full absolute top-0 left-0 z-10">
-                                                    <div class="sr-only">
-                                                        You's profile</div>
-                                                </a>
-                                                <div
-                                                    class="absolute top-3 right-3 z-20 inline-flex items-center space-x-1.5">
-                                                    <div class="flex items-center space-x-1.5"></div>
-                                                    <a href="/about/want-to-work-at-madebyshape/"
-                                                        class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-primary-600 transition-transform transform || xl:group-hover:rotate-90">
-                                                        <div class="sr-only">
-                                                            You's profile</div><svg
-                                                            class="w-4 h-4 text-gray-600 fill-current" width="14"
-                                                            height="16" xmlns="http://www.w3.org/2000/svg"
-                                                            viewBox="0 0 448 512">
-                                                            <path
-                                                                d="M240 64V48h-32v192H16v32h192v192h32V272h192v-32H240V64z" />
-                                                        </svg>
-                                                    </a>
-                                                </div>
-                                                <div class="w-full relative">
-                                                    <div class="absolute top-0 left-0 w-full h-full rounded-2xl overflow-hidden opacity-0 hidden | lg:rounded-3xl xl:flex || js-profile-images-231767"
-                                                        x-ref="profileImages" x-bind:class="{
-'opacity-0' : !hovering,
-'opacity-100' : hovering,
-}"></div>
-                                                    <div
-                                                        class="w-full rounded-2xl overflow-hidden bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl">
-                                                        <div class="relative overflow-hidden w-full"
-                                                            style="padding-top: 133.25%;">
-                                                            <picture
-                                                                class="w-full absolute top-0 left-0 w-full h-full ">
-                                                                <source type="image/webp"
-                                                                    srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Male-Profile-Placeholder.jpg?w=400&amp;h=533&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1706004348&amp;s=347928037c7bcb7846e8fd704a321982 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/Male-Profile-Placeholder.jpg?w=800&amp;h=1067&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1706004348&amp;s=d07cec343935a6a158d186cb6abded04 800w"
-                                                                    sizes="100vw">
-                                                                <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Male-Profile-Placeholder.jpg?w=400&amp;h=533&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1706004348&amp;s=347928037c7bcb7846e8fd704a321982"
-                                                                    srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Male-Profile-Placeholder.jpg?w=400&amp;h=533&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1706004348&amp;s=795de4d35b594e1269ea9f751f079163 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/Male-Profile-Placeholder.jpg?w=800&amp;h=1067&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1706004348&amp;s=b6038301a2b9a2b92bda4d9447d427db 800w"
-                                                                    sizes="100vw" alt="Male Profile Placeholder"
-                                                                    class="w-full " width="800" height="1067">
-                                                            </picture>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="w-full absolute bottom-0 left-0 pr-14 z-20">
-                                                    <div
-                                                        class="w-auto relative inline-flex flex-wrap rounded-tr-2xl pt-3 pointer-events-none pr-5 | lg:rounded-tr-3xl lg:pr-8 bg-white | dark:bg-grayDark-600">
-                                                        <svg id="Layer_1"
-                                                            class="w-10 h-10 | lg:w-12 lg:h-12 fill-current absolute -bottom-px right-px transform translate-x-full rotate-180 text-white dark:text-grayDark-600"
-                                                            version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
-                                                            viewBox="0 0 100 100" xml:space="preserve">
-                                                            <path
-                                                                d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
-                                                        </svg><svg id="Layer_1"
-                                                            class="w-10 h-10 | lg:w-12 lg:h-12 fill-current absolute top-px left-0 transform -translate-y-full rotate-180 text-white dark:text-grayDark-600"
-                                                            version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
-                                                            viewBox="0 0 100 100" xml:space="preserve">
-                                                            <path
-                                                                d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
-                                                        </svg>
-                                                        <div class="">
-                                                            <div class="dark:text-white">
-                                                                You</div>
-                                                            <div
-                                                                class="font-light text-gray-300 leading-tight text-sm | 4xl:text-base | dark:text-gray-200">
-                                                                Want to work at Shape?</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <?php $pIndex++;}?>
                                 </div>
                             </div>
                         </div>
@@ -2762,18 +1242,8 @@ text-balance
                                 <a href="/meet-the-team/"
                                     class="inline-flex relative group outline-none  | focus:outline-none "
                                     style="filter: url(#buttonFilter);">
-                                    <div class="
-w-auto
-inline-flex
-items-center
-justify-center
-relative
-leading-tight
-shadow-none
-overflow-hidden
-rounded-full
-border-default
-bg-primary-600 text-gray-600 py-2 px-5">
+                                    <div
+                                        class="w-auto inline-flex items-center justify-center relative leading-tight shadow-none overflow-hidden rounded-full border-default bg-primary-600 text-gray-600 py-2 px-5">
                                         <div class="relative inline-flex top-px flex-shrink-0">
                                             <div>
                                                 Meet the whole Team</div>
@@ -2817,14 +1287,9 @@ bg-primary-600 text-gray-600 py-2 px-5">
                     <div class="w-full || swiper || js-carousel-308025">
                         <div class="ease-linear || swiper-wrapper">
                             <div class="px-2 | lg:px-3 | xl:px-4 w-full || swiper-slide">
-                                <h3 class="
-text-lg | md:text-xl | 4xl:text-1xl
-font-sans-primary tracking-tight
-text-gray-600  | dark:text-grayDark-100
-leading-tighter
-text-balance
-w-full border-b border-solid border-gray-100 pb-5 mb-5 | dark:border-grayDark-300
-">Clients</h3>
+                                <h3
+                                    class="text-lg | md:text-xl | 4xl:text-1xl font-sans-primary tracking-tight text-gray-600  | dark:text-grayDark-100 leading-tighter text-balance w-full border-b border-solid border-gray-100 pb-5 mb-5 | dark:border-grayDark-300">
+                                    Clients</h3>
                                 <div x-data="statistic" x-init="countUp('308025')">
                                     <div class="flex flex-row">
                                         <div class="inline-flex flex-col items-start relative overflow-hidden text-8xl text-gray-600 | dark:text-grayDark-100 leading-none tracking-tight lowercase  || js-statistic-308025"
@@ -3029,14 +1494,9 @@ w-full border-b border-solid border-gray-100 pb-5 mb-5 | dark:border-grayDark-30
                                 </div>
                             </div>
                             <div class="px-2 | lg:px-3 | xl:px-4 w-full || swiper-slide">
-                                <h3 class="
-text-lg | md:text-xl | 4xl:text-1xl
-font-sans-primary tracking-tight
-text-gray-600  | dark:text-grayDark-100
-leading-tighter
-text-balance
-w-full border-b border-solid border-gray-100 pb-5 mb-5 | dark:border-grayDark-300
-">Referrals</h3>
+                                <h3
+                                    class="text-lg | md:text-xl | 4xl:text-1xl font-sans-primary tracking-tight text-gray-600  | dark:text-grayDark-100 leading-tighter text-balance w-full border-b border-solid border-gray-100 pb-5 mb-5 | dark:border-grayDark-300">
+                                    Referrals</h3>
                                 <div x-data="statistic" x-init="countUp('308025')">
                                     <div class="flex flex-row">
                                         <div class="inline-flex flex-col items-start relative overflow-hidden text-8xl text-gray-600 | dark:text-grayDark-100 leading-none tracking-tight lowercase  || js-statistic-308025"
@@ -3193,14 +1653,9 @@ w-full border-b border-solid border-gray-100 pb-5 mb-5 | dark:border-grayDark-30
                                 </div>
                             </div>
                             <div class="px-2 | lg:px-3 | xl:px-4 w-full || swiper-slide">
-                                <h3 class="
-text-lg | md:text-xl | 4xl:text-1xl
-font-sans-primary tracking-tight
-text-gray-600  | dark:text-grayDark-100
-leading-tighter
-text-balance
-w-full border-b border-solid border-gray-100 pb-5 mb-5 | dark:border-grayDark-300
-">Male:Female ratio</h3>
+                                <h3
+                                    class=" text-lg | md:text-xl | 4xl:text-1xl font-sans-primary tracking-tight text-gray-600  | dark:text-grayDark-100 leading-tighter text-balance w-full border-b border-solid border-gray-100 pb-5 mb-5 | dark:border-grayDark-300">
+                                    Male:Female ratio</h3>
                                 <div x-data="statistic" x-init="countUp('308025')">
                                     <div class="flex flex-row">
                                         <div class="inline-flex flex-col items-start relative overflow-hidden text-8xl text-gray-600 | dark:text-grayDark-100 leading-none tracking-tight lowercase  || js-statistic-308025"
@@ -4515,7 +2970,7 @@ font-sans-primary tracking-tight
 text-gray-600  | dark:text-grayDark-100
 leading-tighter
 indent-10 | lg:indent-14
-">Describe working at MadeByShape in three words</h2>
+">Describe working at Scalify in three words</h2>
                                     </div>
                                 </div>
                             </div>
@@ -4954,21 +3409,11 @@ sm:max-w-sm | lg:max-w-none
                                                 </filter>
                                             </defs>
                                         </svg>
-                                        <a href="https://www.google.com/maps/place/MadeByShape/@53.5302612,-2.5068987,17z/data=!3m1!4b1!4m10!1m2!2m1!1sgoogle+madebyshape!3m6!1s0x487b07e652b96f39:0x5975dd3da8b8b001!8m2!3d53.530258!4d-2.50471!9m1!1b1"
+                                        <a href="https://maps.app.goo.gl/ZLQEtimBRxKFQb7T7"
                                             class="inline-flex relative group outline-none  | focus:outline-none "
                                             style="filter: url(#buttonFilter);">
-                                            <div class="
-w-auto
-inline-flex
-items-center
-justify-center
-relative
-leading-tight
-shadow-none
-overflow-hidden
-rounded-full
-border-default
-bg-primary-600 text-gray-600 py-2 px-5">
+                                            <div
+                                                class="w-auto inline-flex items-center justify-center relative leading-tight shadow-none overflow-hidden rounded-full border-default bg-primary-600 text-gray-600 py-2 px-5">
                                                 <div class="relative inline-flex top-px flex-shrink-0">
                                                     <div>
                                                         Read more Reviews</div>
@@ -5069,7 +3514,7 @@ bg-primary-600 text-gray-600 py-2 px-5">
                                                 </div>
                                                 <div
                                                     class="leading-7 text-base font-light | lg:text-md | dark:text-grayDark-200">
-                                                    I’ve been working with Andy and the MadeByShape team for around 12
+                                                    I’ve been working with Andy and the Scalify team for around 12
                                                     months now. They’ve been nothing shy of perfect. The team completely
                                                     designed and rebuilt my website using CraftCMS which has been such a
                                                     positive change against my old website in WordPress. Can’t recommend
@@ -5125,7 +3570,7 @@ bg-primary-600 text-gray-600 py-2 px-5">
                                                 </div>
                                                 <div
                                                     class="leading-7 text-base font-light | lg:text-md | dark:text-grayDark-200">
-                                                    MadeByShape was amazing to work with. They did the branding for my
+                                                    Scalify was amazing to work with. They did the branding for my
                                                     new athleisure shop in Toronto, Canada. They were extremely
                                                     responsive and a pleasure to work with. I didn&#039;t have to give
                                                     them too much direction and they completely nailed it.</div>
@@ -5235,7 +3680,7 @@ bg-primary-600 text-gray-600 py-2 px-5">
                                                 </div>
                                                 <div
                                                     class="leading-7 text-base font-light | lg:text-md | dark:text-grayDark-200">
-                                                    MadeByShape have just completed a website design and build for me
+                                                    Scalify have just completed a website design and build for me
                                                     and it&#039;s been an absolute pleasure. The quality of work has
                                                     been brilliant and communication has always been smooth. I honestly
                                                     can&#039;t fault them! Our new website looks slick and works
@@ -5294,7 +3739,7 @@ bg-primary-600 text-gray-600 py-2 px-5">
                                                     The whole process from development to launch to ongoing support is
                                                     seamless. The team at Shape are super helpful and using Craft CMS is
                                                     a joy after switching from WordPress. I highly recommend
-                                                    MadeByShape.</div>
+                                                    Scalify.</div>
                                             </div>
                                             <div class="flex items-end space-x-2 | lg:space-x-3">
                                                 <div
@@ -5346,10 +3791,10 @@ bg-primary-600 text-gray-600 py-2 px-5">
                                                 </div>
                                                 <div
                                                     class="leading-7 text-base font-light | lg:text-md | dark:text-grayDark-200">
-                                                    MadeByShape is the most professional, responsive, and knowledgeable
+                                                    Scalify is the most professional, responsive, and knowledgeable
                                                     web design agency I have ever worked with. Andy has a great vision
                                                     in understanding first his customers’ needs then directing them to
-                                                    the right answer. I would easily recommend MadeByShape. It is always
+                                                    the right answer. I would easily recommend Scalify. It is always
                                                     a pleasure to work and collaborate with them.</div>
                                             </div>
                                             <div class="flex items-end space-x-2 | lg:space-x-3">
@@ -5513,7 +3958,7 @@ bg-primary-600 text-gray-600 py-2 px-5">
                                                 </div>
                                                 <div
                                                     class="leading-7 text-base font-light | lg:text-md | dark:text-grayDark-200">
-                                                    Having just launched our brand new website with MadeByShape,
+                                                    Having just launched our brand new website with Scalify,
                                                     we&#039;ve already received comments from inbound leads who have
                                                     said how much they like our website. You can&#039;t get much better
                                                     feedback then that! They&#039;re a great team to work with, and
@@ -5683,10 +4128,10 @@ indent-14 p-6
                                                         style="padding-top: 100%;">
                                                         <picture class="w-full absolute top-0 left-0 w-full h-full ">
                                                             <source type="image/webp"
-                                                                srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Andy-MadeByShape.jpg?w=200&amp;h=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704886233&amp;s=ab1df0fc40d6b7fe24aef5df134baec9 200w"
+                                                                srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Andy-Scalify.jpg?w=200&amp;h=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704886233&amp;s=ab1df0fc40d6b7fe24aef5df134baec9 200w"
                                                                 sizes="100vw">
-                                                            <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Andy-MadeByShape.jpg?w=200&amp;h=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704886233&amp;s=ab1df0fc40d6b7fe24aef5df134baec9"
-                                                                srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Andy-MadeByShape.jpg?w=200&amp;h=200&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704886233&amp;s=4b4b1b743a019f0990d313f86541d652 200w"
+                                                            <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Andy-Scalify.jpg?w=200&amp;h=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704886233&amp;s=ab1df0fc40d6b7fe24aef5df134baec9"
+                                                                srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Andy-Scalify.jpg?w=200&amp;h=200&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704886233&amp;s=4b4b1b743a019f0990d313f86541d652 200w"
                                                                 sizes="100vw" alt="Andy"
                                                                 class=" w-full   object-cover object-center w-full h-full absolute top-0 left-0"
                                                                 loading="lazy" width="200" height="200">
@@ -5996,10 +4441,10 @@ bg-primary-600 text-gray-600 py-2 px-5">
                                                     style="padding-top: 133.5%;">
                                                     <picture class="w-full absolute top-0 left-0 w-full h-full ">
                                                         <source type="image/webp"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-MadeByShape-jury.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628684945&amp;s=f660d5c267fcc0e06e23447477e0e8a4 200w"
+                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-Scalify-jury.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628684945&amp;s=f660d5c267fcc0e06e23447477e0e8a4 200w"
                                                             sizes="100vw">
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-MadeByShape-jury.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628684945&amp;s=f660d5c267fcc0e06e23447477e0e8a4"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-MadeByShape-jury.png?w=200&amp;q=100&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628684945&amp;s=45155d0d89f436d6537d915ef14ae84d 200w"
+                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-Scalify-jury.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628684945&amp;s=f660d5c267fcc0e06e23447477e0e8a4"
+                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-Scalify-jury.png?w=200&amp;q=100&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628684945&amp;s=45155d0d89f436d6537d915ef14ae84d 200w"
                                                             sizes="100vw" alt="Certificate Made By Shape jury"
                                                             class=" w-full   absolute top-0 left-0 w-full h-full object-cover object-center"
                                                             loading="lazy" width="200" height="267">
@@ -6016,10 +4461,10 @@ bg-primary-600 text-gray-600 py-2 px-5">
                                                     style="padding-top: 132.5%;">
                                                     <picture class="w-full absolute top-0 left-0 w-full h-full ">
                                                         <source type="image/webp"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/cssda-special-kudos-MadeByShape.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628685021&amp;s=95486a98b0208532d78ff40f9792c6d0 200w"
+                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/cssda-special-kudos-Scalify.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628685021&amp;s=95486a98b0208532d78ff40f9792c6d0 200w"
                                                             sizes="100vw">
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/cssda-special-kudos-MadeByShape.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628685021&amp;s=95486a98b0208532d78ff40f9792c6d0"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/cssda-special-kudos-MadeByShape.png?w=200&amp;q=100&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628685021&amp;s=5dfb998df32f2dfb58a9a8f070b4daa5 200w"
+                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/cssda-special-kudos-Scalify.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628685021&amp;s=95486a98b0208532d78ff40f9792c6d0"
+                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/cssda-special-kudos-Scalify.png?w=200&amp;q=100&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628685021&amp;s=5dfb998df32f2dfb58a9a8f070b4daa5 200w"
                                                             sizes="100vw" alt="Cssda special kudos Made By Shape"
                                                             class=" w-full   absolute top-0 left-0 w-full h-full object-cover object-center"
                                                             loading="lazy" width="200" height="265">
@@ -6095,10 +4540,10 @@ bg-primary-600 text-gray-600 py-2 px-5">
                                                     style="padding-top: 132.5%;">
                                                     <picture class="w-full absolute top-0 left-0 w-full h-full ">
                                                         <source type="image/webp"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/cssda-ux-MadeByShape.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628685026&amp;s=1996548ee4a621921c0498239f69e6a7 200w"
+                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/cssda-ux-Scalify.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628685026&amp;s=1996548ee4a621921c0498239f69e6a7 200w"
                                                             sizes="100vw">
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/cssda-ux-MadeByShape.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628685026&amp;s=1996548ee4a621921c0498239f69e6a7"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/cssda-ux-MadeByShape.png?w=200&amp;q=100&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628685026&amp;s=852ec6efb35e67ca36e67e720c80c1bf 200w"
+                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/cssda-ux-Scalify.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628685026&amp;s=1996548ee4a621921c0498239f69e6a7"
+                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/cssda-ux-Scalify.png?w=200&amp;q=100&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628685026&amp;s=852ec6efb35e67ca36e67e720c80c1bf 200w"
                                                             sizes="100vw" alt="Cssda ux Made By Shape"
                                                             class=" w-full   absolute top-0 left-0 w-full h-full object-cover object-center"
                                                             loading="lazy" width="200" height="265">
@@ -6235,10 +4680,10 @@ bg-primary-600 text-gray-600 py-2 px-5">
                                                     style="padding-top: 132.5%;">
                                                     <picture class="w-full absolute top-0 left-0 w-full h-full ">
                                                         <source type="image/webp"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/cssda-ui-MadeByShape.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628685024&amp;s=2d3c3024b23451c24cd0ea2366113216 200w"
+                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/cssda-ui-Scalify.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628685024&amp;s=2d3c3024b23451c24cd0ea2366113216 200w"
                                                             sizes="100vw">
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/cssda-ui-MadeByShape.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628685024&amp;s=2d3c3024b23451c24cd0ea2366113216"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/cssda-ui-MadeByShape.png?w=200&amp;q=100&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628685024&amp;s=8a905764fc82e492d333f209a5599c06 200w"
+                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/cssda-ui-Scalify.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628685024&amp;s=2d3c3024b23451c24cd0ea2366113216"
+                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/cssda-ui-Scalify.png?w=200&amp;q=100&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628685024&amp;s=8a905764fc82e492d333f209a5599c06 200w"
                                                             sizes="100vw" alt="Cssda ui Made By Shape"
                                                             class=" w-full   absolute top-0 left-0 w-full h-full object-cover object-center"
                                                             loading="lazy" width="200" height="265">
@@ -6618,10 +5063,10 @@ bg-primary-600 text-gray-600 py-2 px-5">
                                                                     <picture
                                                                         class="w-full absolute top-0 left-0 w-full h-full ">
                                                                         <source type="image/webp"
-                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/square/Natasia-MadeByShape.jpg?w=200&amp;h=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887831&amp;s=a5a3a13d003684dc2756d9db436a4788 200w"
+                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/square/Natasia-Scalify.jpg?w=200&amp;h=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887831&amp;s=a5a3a13d003684dc2756d9db436a4788 200w"
                                                                             sizes="100vw">
-                                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/square/Natasia-MadeByShape.jpg?w=200&amp;h=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887831&amp;s=a5a3a13d003684dc2756d9db436a4788"
-                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/square/Natasia-MadeByShape.jpg?w=200&amp;h=200&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887831&amp;s=a1d3888cd94d82bc9484b634af3db1ca 200w"
+                                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/square/Natasia-Scalify.jpg?w=200&amp;h=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887831&amp;s=a5a3a13d003684dc2756d9db436a4788"
+                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/square/Natasia-Scalify.jpg?w=200&amp;h=200&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887831&amp;s=a1d3888cd94d82bc9484b634af3db1ca 200w"
                                                                             sizes="100vw" alt="Natasia Made By Shape"
                                                                             class=" w-full   w-full h-full object-cover absolute top-0 left-0"
                                                                             loading="lazy" width="200" height="200">
@@ -6636,12 +5081,12 @@ bg-primary-600 text-gray-600 py-2 px-5">
                                                                 <div class="w-full aspect-ratio-16/9 relative">
                                                                     <picture>
                                                                         <source type="image/webp"
-                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/MadeByShape-Studio/Shape-2018-LR-94.jpg?w=400&amp;h=225&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604392524&amp;s=606a767bd8af87c33b90c6ad1a8c3ecb 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/MadeByShape-Studio/Shape-2018-LR-94.jpg?w=800&amp;h=450&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604392524&amp;s=4e92a49ab4b59c23bde2a3af3b4da237 800w"
+                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Scalify-Studio/Shape-2018-LR-94.jpg?w=400&amp;h=225&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604392524&amp;s=606a767bd8af87c33b90c6ad1a8c3ecb 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/Scalify-Studio/Shape-2018-LR-94.jpg?w=800&amp;h=450&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604392524&amp;s=4e92a49ab4b59c23bde2a3af3b4da237 800w"
                                                                             sizes="100vw">
-                                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/MadeByShape-Studio/Shape-2018-LR-94.jpg?w=400&amp;h=225&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604392524&amp;s=606a767bd8af87c33b90c6ad1a8c3ecb"
-                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/MadeByShape-Studio/Shape-2018-LR-94.jpg?w=400&amp;h=225&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604392524&amp;s=75a0f01886c1b5f32d33725b31f94e89 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/MadeByShape-Studio/Shape-2018-LR-94.jpg?w=800&amp;h=450&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604392524&amp;s=e0d187142e1945e8a1c81a2e76618b64 800w"
+                                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Scalify-Studio/Shape-2018-LR-94.jpg?w=400&amp;h=225&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604392524&amp;s=606a767bd8af87c33b90c6ad1a8c3ecb"
+                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Scalify-Studio/Shape-2018-LR-94.jpg?w=400&amp;h=225&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604392524&amp;s=75a0f01886c1b5f32d33725b31f94e89 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/Scalify-Studio/Shape-2018-LR-94.jpg?w=800&amp;h=450&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604392524&amp;s=e0d187142e1945e8a1c81a2e76618b64 800w"
                                                                             sizes="100vw"
-                                                                            alt="Close up of the MadeByShape team looking at wireframes"
+                                                                            alt="Close up of the Scalify team looking at wireframes"
                                                                             class=" w-full   w-full h-full object-cover absolute top-0 left-0"
                                                                             loading="lazy" width="800" height="450">
                                                                     </picture>
@@ -6670,7 +5115,7 @@ pr-8 mb-5 | lg:pr-16
                                                     class="font-light line-clamp-2 text-balance text-base | lg:text-md | dark:text-grayDark-200">
                                                     <p>
                                                         In our own words, how important culture, values and studio
-                                                        environment is to us as a web design agency at MadeByShape</p>
+                                                        environment is to us as a web design agency at Scalify</p>
                                                 </div>
                                             </a></div>
                                     </div>
@@ -6703,10 +5148,10 @@ pr-8 mb-5 | lg:pr-16
                                                                     <picture
                                                                         class="w-full absolute top-0 left-0 w-full h-full ">
                                                                         <source type="image/webp"
-                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/square/Andy-MadeByShape.jpg?w=200&amp;h=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887838&amp;s=ae4d9ca6a39b5c1b2fab75687820c86f 200w"
+                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/square/Andy-Scalify.jpg?w=200&amp;h=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887838&amp;s=ae4d9ca6a39b5c1b2fab75687820c86f 200w"
                                                                             sizes="100vw">
-                                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/square/Andy-MadeByShape.jpg?w=200&amp;h=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887838&amp;s=ae4d9ca6a39b5c1b2fab75687820c86f"
-                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/square/Andy-MadeByShape.jpg?w=200&amp;h=200&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887838&amp;s=186a3ce2c2c7dd9479ba03c14cd293b4 200w"
+                                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/square/Andy-Scalify.jpg?w=200&amp;h=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887838&amp;s=ae4d9ca6a39b5c1b2fab75687820c86f"
+                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/square/Andy-Scalify.jpg?w=200&amp;h=200&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887838&amp;s=186a3ce2c2c7dd9479ba03c14cd293b4 200w"
                                                                             sizes="100vw" alt="Andy Made By Shape"
                                                                             class=" w-full   w-full h-full object-cover absolute top-0 left-0"
                                                                             loading="lazy" width="200" height="200">
@@ -6721,12 +5166,12 @@ pr-8 mb-5 | lg:pr-16
                                                                 <div class="w-full aspect-ratio-16/9 relative">
                                                                     <picture>
                                                                         <source type="image/webp"
-                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/MadeByShape-Studio/Shape-2018-LR-112.jpg?w=400&amp;h=225&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604312568&amp;s=543d9374980ef2d48faa922f1094e279 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/MadeByShape-Studio/Shape-2018-LR-112.jpg?w=800&amp;h=450&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604312568&amp;s=aebfb985f5cdf11a3507bf900a56376d 800w"
+                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Scalify-Studio/Shape-2018-LR-112.jpg?w=400&amp;h=225&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604312568&amp;s=543d9374980ef2d48faa922f1094e279 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/Scalify-Studio/Shape-2018-LR-112.jpg?w=800&amp;h=450&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604312568&amp;s=aebfb985f5cdf11a3507bf900a56376d 800w"
                                                                             sizes="100vw">
-                                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/MadeByShape-Studio/Shape-2018-LR-112.jpg?w=400&amp;h=225&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604312568&amp;s=543d9374980ef2d48faa922f1094e279"
-                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/MadeByShape-Studio/Shape-2018-LR-112.jpg?w=400&amp;h=225&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604312568&amp;s=a4abade421f88ef20f5d402974a67516 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/MadeByShape-Studio/Shape-2018-LR-112.jpg?w=800&amp;h=450&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604312568&amp;s=03c3ea039bb99f246de4a774fa1ab6c3 800w"
+                                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Scalify-Studio/Shape-2018-LR-112.jpg?w=400&amp;h=225&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604312568&amp;s=543d9374980ef2d48faa922f1094e279"
+                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Scalify-Studio/Shape-2018-LR-112.jpg?w=400&amp;h=225&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604312568&amp;s=a4abade421f88ef20f5d402974a67516 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/Scalify-Studio/Shape-2018-LR-112.jpg?w=800&amp;h=450&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604312568&amp;s=03c3ea039bb99f246de4a774fa1ab6c3 800w"
                                                                             sizes="100vw"
-                                                                            alt="Andy smiles during a team meeting at the MadeByShape studio"
+                                                                            alt="Andy smiles during a team meeting at the Scalify studio"
                                                                             class=" w-full   w-full h-full object-cover absolute top-0 left-0"
                                                                             loading="lazy" width="800" height="450">
                                                                     </picture>
@@ -6754,7 +5199,7 @@ pr-8 mb-5 | lg:pr-16
                                                 <div
                                                     class="font-light line-clamp-2 text-balance text-base | lg:text-md | dark:text-grayDark-200">
                                                     <p>
-                                                        Co-Founder of MadeByShape, Andy Golpys, explains why we
+                                                        Co-Founder of Scalify, Andy Golpys, explains why we
                                                         haven&#039;t turned our digital agency of 10 staff into 30.</p>
                                                 </div>
                                             </a></div>
@@ -6788,10 +5233,10 @@ pr-8 mb-5 | lg:pr-16
                                                                     <picture
                                                                         class="w-full absolute top-0 left-0 w-full h-full ">
                                                                         <source type="image/webp"
-                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Ella-MadeByShape.jpg?w=200&amp;h=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704886333&amp;s=a42cb88c7f143d46b7fc7fa41b71ce4b 200w"
+                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Ella-Scalify.jpg?w=200&amp;h=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704886333&amp;s=a42cb88c7f143d46b7fc7fa41b71ce4b 200w"
                                                                             sizes="100vw">
-                                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Ella-MadeByShape.jpg?w=200&amp;h=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704886333&amp;s=a42cb88c7f143d46b7fc7fa41b71ce4b"
-                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Ella-MadeByShape.jpg?w=200&amp;h=200&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704886333&amp;s=0c036c7406eb9a79bd9b4f886d7b5e1e 200w"
+                                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Ella-Scalify.jpg?w=200&amp;h=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704886333&amp;s=a42cb88c7f143d46b7fc7fa41b71ce4b"
+                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Ella-Scalify.jpg?w=200&amp;h=200&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704886333&amp;s=0c036c7406eb9a79bd9b4f886d7b5e1e 200w"
                                                                             sizes="100vw" alt="Ellaprofikle"
                                                                             class=" w-full   w-full h-full object-cover absolute top-0 left-0"
                                                                             loading="lazy" width="200" height="200">
@@ -6873,10 +5318,10 @@ pr-8 mb-5 | lg:pr-16
                                                                     <picture
                                                                         class="w-full absolute top-0 left-0 w-full h-full ">
                                                                         <source type="image/webp"
-                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/square/Andy-MadeByShape.jpg?w=200&amp;h=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887838&amp;s=ae4d9ca6a39b5c1b2fab75687820c86f 200w"
+                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/square/Andy-Scalify.jpg?w=200&amp;h=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887838&amp;s=ae4d9ca6a39b5c1b2fab75687820c86f 200w"
                                                                             sizes="100vw">
-                                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/square/Andy-MadeByShape.jpg?w=200&amp;h=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887838&amp;s=ae4d9ca6a39b5c1b2fab75687820c86f"
-                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/square/Andy-MadeByShape.jpg?w=200&amp;h=200&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887838&amp;s=186a3ce2c2c7dd9479ba03c14cd293b4 200w"
+                                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/square/Andy-Scalify.jpg?w=200&amp;h=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887838&amp;s=ae4d9ca6a39b5c1b2fab75687820c86f"
+                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/square/Andy-Scalify.jpg?w=200&amp;h=200&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887838&amp;s=186a3ce2c2c7dd9479ba03c14cd293b4 200w"
                                                                             sizes="100vw" alt="Andy Made By Shape"
                                                                             class=" w-full   w-full h-full object-cover absolute top-0 left-0"
                                                                             loading="lazy" width="200" height="200">
@@ -6896,7 +5341,7 @@ pr-8 mb-5 | lg:pr-16
                                                                         <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images-archive/web-design-manchester-21.jpg?w=400&amp;h=225&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604416875&amp;s=e66445929ca13b68057a02d326b310bc"
                                                                             srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images-archive/web-design-manchester-21.jpg?w=400&amp;h=225&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604416875&amp;s=c719aad3d38141ba1d2d7bfc136d5e1e 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images-archive/web-design-manchester-21.jpg?w=800&amp;h=450&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604416875&amp;s=38b197257b21bc411c103ee065be4bd9 800w"
                                                                             sizes="100vw"
-                                                                            alt="MadeByShape letter S on a desk"
+                                                                            alt="Scalify letter S on a desk"
                                                                             class=" w-full   w-full h-full object-cover absolute top-0 left-0"
                                                                             loading="lazy" width="800" height="450">
                                                                     </picture>
@@ -6925,7 +5370,7 @@ pr-8 mb-5 | lg:pr-16
                                                     class="font-light line-clamp-2 text-balance text-base | lg:text-md | dark:text-grayDark-200">
                                                     <p>
                                                         Hi, I&#039;m Andy Golpys, Co-Founder here at
-                                                        MadeByShape.&amp;nbsp;I started my web career 18 years ago as a
+                                                        Scalify.&amp;nbsp;I started my web career 18 years ago as a
                                                         freelancer, whilst at University. I produced w...</p>
                                                 </div>
                                             </a></div>
@@ -6959,10 +5404,10 @@ pr-8 mb-5 | lg:pr-16
                                                                     <picture
                                                                         class="w-full absolute top-0 left-0 w-full h-full ">
                                                                         <source type="image/webp"
-                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/square/Joe-MadeByShape.jpg?w=200&amp;h=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887835&amp;s=904218bcb9e5773fa64f8c7fe6cb8b27 200w"
+                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/square/Joe-Scalify.jpg?w=200&amp;h=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887835&amp;s=904218bcb9e5773fa64f8c7fe6cb8b27 200w"
                                                                             sizes="100vw">
-                                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/square/Joe-MadeByShape.jpg?w=200&amp;h=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887835&amp;s=904218bcb9e5773fa64f8c7fe6cb8b27"
-                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/square/Joe-MadeByShape.jpg?w=200&amp;h=200&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887835&amp;s=19ce105e2ac78c169dc19b104d01f098 200w"
+                                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/square/Joe-Scalify.jpg?w=200&amp;h=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887835&amp;s=904218bcb9e5773fa64f8c7fe6cb8b27"
+                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/square/Joe-Scalify.jpg?w=200&amp;h=200&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887835&amp;s=19ce105e2ac78c169dc19b104d01f098 200w"
                                                                             sizes="100vw" alt="Joe Made By Shape"
                                                                             class=" w-full   w-full h-full object-cover absolute top-0 left-0"
                                                                             loading="lazy" width="200" height="200">
@@ -7045,10 +5490,10 @@ pr-8 mb-5 | lg:pr-16
                                                                     <picture
                                                                         class="w-full absolute top-0 left-0 w-full h-full ">
                                                                         <source type="image/webp"
-                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/square/Andy-MadeByShape.jpg?w=200&amp;h=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887838&amp;s=ae4d9ca6a39b5c1b2fab75687820c86f 200w"
+                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/square/Andy-Scalify.jpg?w=200&amp;h=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887838&amp;s=ae4d9ca6a39b5c1b2fab75687820c86f 200w"
                                                                             sizes="100vw">
-                                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/square/Andy-MadeByShape.jpg?w=200&amp;h=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887838&amp;s=ae4d9ca6a39b5c1b2fab75687820c86f"
-                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/square/Andy-MadeByShape.jpg?w=200&amp;h=200&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887838&amp;s=186a3ce2c2c7dd9479ba03c14cd293b4 200w"
+                                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/square/Andy-Scalify.jpg?w=200&amp;h=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887838&amp;s=ae4d9ca6a39b5c1b2fab75687820c86f"
+                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/square/Andy-Scalify.jpg?w=200&amp;h=200&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887838&amp;s=186a3ce2c2c7dd9479ba03c14cd293b4 200w"
                                                                             sizes="100vw" alt="Andy Made By Shape"
                                                                             class=" w-full   w-full h-full object-cover absolute top-0 left-0"
                                                                             loading="lazy" width="200" height="200">
@@ -7130,10 +5575,10 @@ pr-8 mb-5 | lg:pr-16
                                                                     <picture
                                                                         class="w-full absolute top-0 left-0 w-full h-full ">
                                                                         <source type="image/webp"
-                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/square/Andy-MadeByShape.jpg?w=200&amp;h=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887838&amp;s=ae4d9ca6a39b5c1b2fab75687820c86f 200w"
+                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/square/Andy-Scalify.jpg?w=200&amp;h=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887838&amp;s=ae4d9ca6a39b5c1b2fab75687820c86f 200w"
                                                                             sizes="100vw">
-                                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/square/Andy-MadeByShape.jpg?w=200&amp;h=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887838&amp;s=ae4d9ca6a39b5c1b2fab75687820c86f"
-                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/square/Andy-MadeByShape.jpg?w=200&amp;h=200&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887838&amp;s=186a3ce2c2c7dd9479ba03c14cd293b4 200w"
+                                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/square/Andy-Scalify.jpg?w=200&amp;h=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887838&amp;s=ae4d9ca6a39b5c1b2fab75687820c86f"
+                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/square/Andy-Scalify.jpg?w=200&amp;h=200&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887838&amp;s=186a3ce2c2c7dd9479ba03c14cd293b4 200w"
                                                                             sizes="100vw" alt="Andy Made By Shape"
                                                                             class=" w-full   w-full h-full object-cover absolute top-0 left-0"
                                                                             loading="lazy" width="200" height="200">
@@ -7181,7 +5626,7 @@ pr-8 mb-5 | lg:pr-16
                                                 <div
                                                     class="font-light line-clamp-2 text-balance text-base | lg:text-md | dark:text-grayDark-200">
                                                     <p>
-                                                        We started MadeByShape in 2010. In this article we look back at
+                                                        We started Scalify in 2010. In this article we look back at
                                                         how the Agency was created.</p>
                                                 </div>
                                             </a></div>
@@ -7213,7 +5658,7 @@ pr-8 mb-5 | lg:pr-16
             },
             "dateModified": "2024-11-04T07:45:13+00:00",
             "datePublished": "2018-07-26T15:00:00+01:00",
-            "description": "MadeByShape are a full service Creative and Digital Design Agency based in Manchester with an outstanding reputation for quality for Branding & Web Design",
+            "description": "Scalify are a full service Creative and Digital Design Agency based in Manchester with an outstanding reputation for quality for Branding & Web Design",
             "headline": "About Digital Agency Manchester",
             "image": {
                 "@type": "ImageObject",
@@ -7251,16 +5696,16 @@ pr-8 mb-5 | lg:pr-16
             "image": {
                 "@type": "ImageObject",
                 "height": "950",
-                "url": "https://assets.madebyshape.co.uk/craft3-uploads/images/logos/MadeByShape-icon.jpg",
+                "url": "https://assets.madebyshape.co.uk/craft3-uploads/images/logos/Scalify-icon.jpg",
                 "width": "950"
             },
             "logo": {
                 "@type": "ImageObject",
                 "height": "60",
-                "url": "https://made-byshape.transforms.svdcdn.com/production/uploads/images/logos/MadeByShape-icon.jpg?w=600&h=60&q=82&fm=png&fit=clip&dm=1597751408&s=1e444e7b3ed4ee85c39ad329e3875b5c",
+                "url": "https://made-byshape.transforms.svdcdn.com/production/uploads/images/logos/Scalify-icon.jpg?w=600&h=60&q=82&fm=png&fit=clip&dm=1597751408&s=1e444e7b3ed4ee85c39ad329e3875b5c",
                 "width": "60"
             },
-            "name": "MadeByShape",
+            "name": "Scalify",
             "priceRange": "$$",
             "sameAs": ["https://www.linkedin.com/company/madebyshape/mycompany/",
                 "https://twitter.com/madebyshape", "https://github.com/madebyshape/",
@@ -7293,16 +5738,16 @@ pr-8 mb-5 | lg:pr-16
             "image": {
                 "@type": "ImageObject",
                 "height": "950",
-                "url": "http://madebyshape.madebyshape.io/uploads/images/MadeByShape-icon.jpg",
+                "url": "http://madebyshape.madebyshape.io/uploads/images/Scalify-icon.jpg",
                 "width": "950"
             },
             "logo": {
                 "@type": "ImageObject",
                 "height": "60",
-                "url": "https://made-byshape.transforms.svdcdn.com/production/uploads/images/MadeByShape-icon.jpg?w=600&h=60&q=82&fm=png&fit=clip&dm=1597751384&s=2f0ce55335397fde8d8b489cc721e250",
+                "url": "https://made-byshape.transforms.svdcdn.com/production/uploads/images/Scalify-icon.jpg?w=600&h=60&q=82&fm=png&fit=clip&dm=1597751384&s=2f0ce55335397fde8d8b489cc721e250",
                 "width": "60"
             },
-            "name": "MadeByShape",
+            "name": "Scalify",
             "priceRange": "$$$",
             "telephone": "01942 894596",
             "url": "https://madebyshape.co.uk/"

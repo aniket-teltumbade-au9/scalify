@@ -182,7 +182,7 @@ if (isset($_GET['service'])) {
         </div>
         <div id="448285"></div>
         <div class="w-full py-20 | lg:py-24 | 2xl:py-32 | 4xl:py-40">
-            <div class="px-2 | sm:px-6 | xl:px-12 | 2xl:px-20 | 3xl:px-40 | 4xl:px-60">
+            <!-- <div class="px-2 | sm:px-6 | xl:px-12 | 2xl:px-20 | 3xl:px-40 | 4xl:px-60">
                 <div class="w-full flex flex-wrap justify-between">
                     <div class="px-2 | lg:px-3 | xl:px-4 relative w-full mb-10 | lg:mb-0 lg:w-9/16 | 3xl:w-10/16">
                         <div class="flex flex-col space-y-3 | lg:space-y-5 items-start">
@@ -282,7 +282,7 @@ if (isset($_GET['service'])) {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
     <?php
