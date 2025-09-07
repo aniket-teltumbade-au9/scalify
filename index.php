@@ -876,7 +876,7 @@ Our Dream. Build. Scale. framework is how you stay dangerous and stay ahead.</p>
                             </div>
                             <div class="partner-tiles snipcss0-6-6-10">
                                 <div class="tile-box snipcss0-7-10-11" data-aos="fade-up" data-aos-duration="800">
-                                    <a href="https://www.greenhonchos.com/eretail-consulting" class="snipcss0-8-11-12">
+                                    <a href="<?php echo BASE_URL . "services/"; ?>" class="snipcss0-8-11-12">
                                         <img decoding="async"
                                             src="https://www.greenhonchos.com/wp-content/uploads/2024/04/Consulting-1.png"
                                             width="100%" class="snipcss0-9-12-13">
@@ -893,8 +893,7 @@ Our Dream. Build. Scale. framework is how you stay dangerous and stay ahead.</p>
                                     </a>
                                 </div>
                                 <div class="tile-box snipcss0-7-10-18" data-aos="fade-up" data-aos-duration="800">
-                                    <a href="https://www.greenhonchos.com/ecommerce-technology"
-                                        class="snipcss0-8-18-19">
+                                    <a href="<?php echo BASE_URL . "services/"; ?>" class="snipcss0-8-18-19">
                                         <img decoding="async"
                                             src="https://www.greenhonchos.com/wp-content/uploads/2024/04/Technology-1.png"
                                             width="100%" class="snipcss0-9-19-20">
@@ -912,7 +911,7 @@ Our Dream. Build. Scale. framework is how you stay dangerous and stay ahead.</p>
                                     </a>
                                 </div>
                                 <div class="tile-box snipcss0-7-10-25" data-aos="fade-up" data-aos-duration="800">
-                                    <a href="https://www.greenhonchos.com/digital-commerce" class="snipcss0-8-25-26">
+                                    <a href="<?php echo BASE_URL . "services/"; ?>" class="snipcss0-8-25-26">
                                         <img decoding="async"
                                             src="https://www.greenhonchos.com/wp-content/uploads/2024/04/Commerce.png"
                                             width="100%" class="snipcss0-9-26-27">
@@ -931,7 +930,7 @@ Our Dream. Build. Scale. framework is how you stay dangerous and stay ahead.</p>
                                     </a>
                                 </div>
                                 <div class="tile-box snipcss0-7-10-32" data-aos="fade-up" data-aos-duration="800">
-                                    <a href="https://www.greenhonchos.com/data-analytics" class="snipcss0-8-32-33">
+                                    <a href="<?php echo BASE_URL . "services/"; ?>" class="snipcss0-8-32-33">
                                         <img decoding="async"
                                             src="https://www.greenhonchos.com/wp-content/uploads/2024/04/Data-analytics.png"
                                             width="100%" class="snipcss0-9-33-34">

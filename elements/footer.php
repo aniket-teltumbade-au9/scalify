@@ -153,43 +153,13 @@
                 Learn</div>
             <ul class="space-y-1">
                 <li class="flex items-center space-x-2">
-                    <a href="https://scalify.co.uk/about/"
+                    <a href="<?php echo BASE_URL; ?>about/"
                         class="text-white relative link text-sm | md:text-base |  | dark:text-gray-200 lg:dark:hover:text-gray-100 || group">
                         About
                     </a>
                 </li>
                 <li class="flex items-center space-x-2">
-                    <a href="https://scalify.co.uk/culture/"
-                        class="text-white relative link text-sm | md:text-base |  | dark:text-gray-200 lg:dark:hover:text-gray-100 || group">
-                        Culture
-                    </a>
-                </li>
-                <li class="flex items-center space-x-2">
-                    <a href="https://scalify.co.uk/testimonials/"
-                        class="text-white relative link text-sm | md:text-base |  | dark:text-gray-200 lg:dark:hover:text-gray-100 || group">
-                        Testimonials
-                    </a>
-                </li>
-                <li class="flex items-center space-x-2">
-                    <a href="https://scalify.co.uk/processes/"
-                        class="text-white relative link text-sm | md:text-base |  | dark:text-gray-200 lg:dark:hover:text-gray-100 || group">
-                        Processes
-                    </a>
-                </li>
-                <li class="flex items-center space-x-2">
-                    <a href="https://scalify.co.uk/frequently-asked-questions/"
-                        class="text-white relative link text-sm | md:text-base |  | dark:text-gray-200 lg:dark:hover:text-gray-100 || group">
-                        FAQs
-                    </a>
-                </li>
-                <li class="flex items-center space-x-2">
-                    <a href="https://scalify.co.uk/branding-faqs/"
-                        class="text-white relative link text-sm | md:text-base |  | dark:text-gray-200 lg:dark:hover:text-gray-100 || group">
-                        Branding FAQs
-                    </a>
-                </li>
-                <li class="flex items-center space-x-2">
-                    <a href="https://scalify.co.uk/web-design-blog/"
+                    <a href="<?php echo BASE_URL; ?>blogs/"
                         class="text-white relative link text-sm | md:text-base |  | dark:text-gray-200 lg:dark:hover:text-gray-100 || group">
                         Blog
                     </a>
@@ -201,46 +171,28 @@
                 Explore</div>
             <ul class="space-y-1">
                 <li class="flex items-center space-x-2">
-                    <a href="https://scalify.co.uk/"
+                    <a href="<?php echo BASE_URL; ?>"
                         class="text-white relative link text-sm | md:text-base |  | dark:text-gray-200 lg:dark:hover:text-gray-100 || group">
                         Home
                     </a>
                 </li>
-                <li class="flex items-center space-x-2">
-                    <a href="https://scalify.co.uk/work/"
+                <!-- <li class="flex items-center space-x-2">
+                    <a href="<?php echo BASE_URL; ?>work/"
                         class="text-white relative link text-sm | md:text-base |  | dark:text-gray-200 lg:dark:hover:text-gray-100 || group">
                         Work
                     </a>
                     <div
                         class="-mt-0.5 uppercase pointer-events-none rounded-full z-20 bg-primary-600 text-gray-600 text-xs pt-0.5 pb-px px-2 leading-tighter tracking-tight">
                         New</div>
-                </li>
+                </li> -->
                 <li class="flex items-center space-x-2">
-                    <a href="https://scalify.co.uk/services/"
+                    <a href="<?php echo BASE_URL; ?>services/"
                         class="text-white relative link text-sm | md:text-base |  | dark:text-gray-200 lg:dark:hover:text-gray-100 || group">
                         Services
                     </a>
                 </li>
                 <li class="flex items-center space-x-2">
-                    <a href="https://scalify.co.uk/careers/"
-                        class="text-white relative link text-sm | md:text-base |  | dark:text-gray-200 lg:dark:hover:text-gray-100 || group">
-                        Careers
-                    </a>
-                </li>
-                <li class="flex items-center space-x-2">
-                    <a href="https://scalify.co.uk/sectors/"
-                        class="text-white relative link text-sm | md:text-base |  | dark:text-gray-200 lg:dark:hover:text-gray-100 || group">
-                        Sectors
-                    </a>
-                </li>
-                <li class="flex items-center space-x-2">
-                    <a href="https://scalify.co.uk/hex-test/" target="_blank"
-                        class="text-white relative link text-sm | md:text-base |  | dark:text-gray-200 lg:dark:hover:text-gray-100 || group">
-                        Hex Test
-                    </a>
-                </li>
-                <li class="flex items-center space-x-2">
-                    <a href="https://scalify.co.uk/contact/"
+                    <a href="<?php echo BASE_URL; ?>contact/"
                         class="text-white relative link text-sm | md:text-base |  | dark:text-gray-200 lg:dark:hover:text-gray-100 || group">
                         Contact
                     </a>
@@ -252,7 +204,7 @@
             <div class="flex flex-col items-start">
                 <div class="text-gray-200 font-light mb-3 text-sm | md:text-base | dark:text-grayDark-100">
                     Get in touch</div>
-                <a href="tel:01942894596" target="_blank"
+                <a href="tel:971544351608" target="_blank"
                     class="inline-flex items-center space-x-4 mb-1 text-white text-sm | lg:text-base | lg:dark:hover:text-grayDark-100 | dark:text-grayDark-200">
                     <svg id="svg-ani-8" class="w-3 h-3 fill-current | 4xl:w-3.5 4xl:h-3.5" width="16" height="16"
                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -261,7 +213,7 @@
                         </path>
                     </svg>
                     <div class="link text-sm | md:text-base">
-                        01942 894 596</div>
+                        97 15443 51608</div>
                 </a><a href="mailto:hello@scalify.co.uk" target="_blank"
                     class="inline-flex items-center space-x-4 text-white | lg:dark:hover:text-grayDark-100 | dark:text-grayDark-200">
                     <svg id="svg-ani-9" class="w-3 h-3 fill-current | 4xl:w-3.5 4xl:h-3.5" width="16" height="16"
@@ -271,7 +223,7 @@
                         </path>
                     </svg>
                     <div class="link text-sm | md:text-base">
-                        hello@scalify.co.uk</div>
+                        sales@scalify.ae</div>
                 </a>
                 <div class="flex space-x-4 mt-6 mb-1 | lg:mb-2">
                     <svg id="svg-ani-10"
@@ -285,7 +237,7 @@
                         <p
                             class="text-sm | md:text-base text-white dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7  mb-6">
                             Scalify
-                            <br>Cordoba Residence
+                            <br>in5 Tech
                             <br>Dubai
                             <br>United Arab Emirates
                     </div>
@@ -330,7 +282,7 @@
         </div>
         <div
             class="inline-flex flex-row text-gray-200 w-auto text-1xs | md:text-xs | lg:text-sm | dark:text-grayDark-200">
-            <a href="https://scalify.co.uk/" class="link | xl:hover:text-white | lg:dark:hover:text-grayDark-100">
+            <a href="<?php echo BASE_URL; ?>" class="link | xl:hover:text-white | lg:dark:hover:text-grayDark-100">
                 Warehousing Services UAE
             </a>
             <div class="mx-2 | lg:mx-5">
@@ -353,129 +305,6 @@
 <script type="text/javascript" src="<?php echo BASE_URL; ?>assets/javascript/andyslider/script.js"></script>
 <script src="https://player.vimeo.com/api/player.js"></script>
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@graph": [{
-        "@type": "CreativeWork",
-        "author": {
-            "@id": "https://madebyshape.co.uk/#identity"
-        },
-        "copyrightHolder": {
-            "@id": "https://madebyshape.co.uk/#identity"
-        },
-        "copyrightYear": "2018",
-        "creator": {
-            "@id": "https://madebyshape.co.uk/#creator"
-        },
-        "dateModified": "2025-08-07T10:56:56+01:00",
-        "datePublished": "2018-07-25T14:08:00+01:00",
-        "description": "An award-winning Web Design Agency in Manchester, UK who specialise in Branding, Web Design, Craft CMS, eCommerce and Organic SEO.",
-        "headline": "Web Design Manchester | Web Design Agency",
-        "image": {
-            "@type": "ImageObject",
-            "url": "https://made-byshape.transforms.svdcdn.com/production/uploads/images/Open-Graph/madebyshape-home.jpg?w=1200&h=630&q=82&auto=format&fit=crop&dm=1722518913&s=e456c7a65aa7feded9f0be73391573f6"
-        },
-        "inLanguage": "en-gb",
-        "mainEntityOfPage": "https://madebyshape.co.uk/",
-        "name": "Web Design Manchester | Web Design Agency",
-        "publisher": {
-            "@id": "https://madebyshape.co.uk/#creator"
-        },
-        "url": "https://madebyshape.co.uk/"
-    }, {
-        "@id": "https://madebyshape.co.uk/#identity",
-        "@type": "ProfessionalService",
-        "address": {
-            "@type": "PostalAddress",
-            "addressCountry": "United Kingdom",
-            "addressLocality": "Atherton",
-            "addressRegion": "Manchester",
-            "postalCode": "M46 0SU",
-            "streetAddress": "Gibfield Enterprise Centre, 1 Gibfield Park Avenue"
-        },
-        "alternateName": "Shape",
-        "description": "An award-winning Web Design Agency in Manchester who specialise in Website Design, Craft CMS Web Development, eCommerce and Organic SEO.",
-        "email": "hello@madebyshape.co.uk",
-        "founder": "Andy Golpys",
-        "foundingDate": "2010-03-01",
-        "foundingLocation": "Manchester",
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": "53.530291",
-            "longitude": "-2.504812"
-        },
-        "image": {
-            "@type": "ImageObject",
-            "height": "950",
-            "url": "https://assets.madebyshape.co.uk/craft3-uploads/images/logos/MadeByShape-icon.jpg",
-            "width": "950"
-        },
-        "logo": {
-            "@type": "ImageObject",
-            "height": "60",
-            "url": "https://made-byshape.transforms.svdcdn.com/production/uploads/images/logos/MadeByShape-icon.jpg?w=600&h=60&q=82&fm=png&fit=clip&dm=1597751408&s=1e444e7b3ed4ee85c39ad329e3875b5c",
-            "width": "60"
-        },
-        "name": "MadeByShape",
-        "priceRange": "$$",
-        "sameAs": ["https://www.linkedin.com/company/madebyshape/mycompany/", "https://twitter.com/madebyshape",
-            "https://github.com/madebyshape/", "https://instagram.com/madebyshape",
-            "https://www.behance.net/madebyshape"
-        ],
-        "telephone": "01942 894596",
-        "url": "https://madebyshape.co.uk/"
-    }, {
-        "@id": "https://madebyshape.co.uk/#creator",
-        "@type": "ProfessionalService",
-        "address": {
-            "@type": "PostalAddress",
-            "addressCountry": "United Kingdom",
-            "addressLocality": "Atherton",
-            "addressRegion": "Manchester",
-            "postalCode": "M46 0SU",
-            "streetAddress": "Gibfield Enterprise Centre, 1 Gibfield Park Avenue"
-        },
-        "alternateName": "Shape",
-        "description": "An award-winning Web Design Agency based in Manchester who also offer eCommerce and Organic SEO. We are a Digital Studio with Industry Experience.",
-        "email": "hello@madebyshape.co.uk",
-        "founder": "Andy Golpys",
-        "foundingDate": "2010-03-01",
-        "foundingLocation": "Manchester",
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": "53.530258",
-            "longitude": "-2.50471"
-        },
-        "image": {
-            "@type": "ImageObject",
-            "height": "950",
-            "url": "http://madebyshape.madebyshape.io/uploads/images/MadeByShape-icon.jpg",
-            "width": "950"
-        },
-        "logo": {
-            "@type": "ImageObject",
-            "height": "60",
-            "url": "https://made-byshape.transforms.svdcdn.com/production/uploads/images/MadeByShape-icon.jpg?w=600&h=60&q=82&fm=png&fit=clip&dm=1597751384&s=2f0ce55335397fde8d8b489cc721e250",
-            "width": "60"
-        },
-        "name": "MadeByShape",
-        "priceRange": "$$$",
-        "telephone": "01942 894596",
-        "url": "https://madebyshape.co.uk/"
-    }, {
-        "@type": "BreadcrumbList",
-        "description": "Breadcrumbs list",
-        "itemListElement": [{
-            "@type": "ListItem",
-            "item": "https://madebyshape.co.uk/",
-            "name": "Home",
-            "position": 1
-        }],
-        "name": "Breadcrumbs"
-    }]
-}
-</script>
 <script src="https://player.vimeo.com/api/player.js"></script>
 <script>
 window.SERVD_CSRF_TOKEN_NAME = "CRAFT_CSRF_TOKEN";
