@@ -347,7 +347,7 @@ usort($menuListItems, function ($a, $b) {
                 <div class="px-2 | lg:px-3 xl:px-4 w-full relative">
                     <div
                         class="w-full relative rounded-2xl transform-gpu overflow-hidden aspect-ratio-9/16 bg-gray-50 | md:aspect-ratio-1/1 dark:bg-grayDark-500 lg:rounded-3xl lg:aspect-ratio-16/9">
-                        <video class="w-full h-full absolute top-0 left-0 object-cover" playsinline autoplay loop muted
+                        <video class="w-full h-full absolute top-0 left-0 object-cover" playsinline autoplay loop muted preload="auto"
                             loading="lazy">
                             <source
                                 src="https://servd-made-byshape.b-cdn.net/production/uploads/videos/showreel-2024-portrait_cropped.mp4"

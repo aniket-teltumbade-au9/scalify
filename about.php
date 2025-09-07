@@ -960,7 +960,7 @@ bg-primary-600 text-gray-600 py-2 px-5">
                             <div class="w-full relative">
                                 <div class="w-full rounded-2xl overflow-hidden relative z-10 aspect-ratio-4/3 | lg:rounded-3xl lg:aspect-ratio-16/9 || js-cursor-trigger-drag"
                                     data-icon="volume-on" x-on:click="toggleSound('312636')"
-                                    x-bind:data-icon="muted ? 'volume-off' : 'volume-on'"><video muted autoplay
+                                    x-bind:data-icon="muted ? 'volume-off' : 'volume-on'"><video muted autoplay preload="auto"
                                         playsinline loop loading="lazy"
                                         controlslist="nodownload nofullscreen noremoteplayback"
                                         class="w-full h-full absolute top-0 left-0 object-cover object-center || js-video js-video-312636"
