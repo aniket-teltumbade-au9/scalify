@@ -332,8 +332,8 @@ include './elements/footer.php';
                 "addressCountry": "United Kingdom",
                 "addressLocality": "Atherton",
                 "addressRegion": "Manchester",
-                "postalCode": "M46 0SU",
-                "streetAddress": "Gibfield Enterprise Centre, 1 Gibfield Park Avenue"
+                "postalCode": "00000",
+                "streetAddress": "In5 Tech, Dubai Internet City, Dubai"
             },
             "alternateName": "Scalify",
             "description": "An award-winning Web Design Agency in Manchester who specialise in Website Design, Craft CMS Web Development, eCommerce and Organic SEO.",
@@ -374,8 +374,8 @@ include './elements/footer.php';
                 "addressCountry": "United Kingdom",
                 "addressLocality": "Atherton",
                 "addressRegion": "Manchester",
-                "postalCode": "M46 0SU",
-                "streetAddress": "Gibfield Enterprise Centre, 1 Gibfield Park Avenue"
+                "postalCode": "00000",
+                "streetAddress": "In5 Tech, Dubai Internet City, Dubai"
             },
             "alternateName": "Scalify",
             "description": "An award-winning Web Design Agency based in Manchester who also offer eCommerce and Organic SEO. We are a Digital Studio with Industry Experience.",

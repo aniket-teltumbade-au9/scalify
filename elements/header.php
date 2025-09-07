@@ -19,9 +19,9 @@ $menuItems = [
                 'url' => BASE_URL . 'services',
                 'description' => 'We don’t stop there, check out all the services we offer here at Scalify',
                 'image' => [
-                    'webp_srcset' => BASE_URL . 'assets/images/Scalify-April-2022-HR-219.webp?w=400&h=300&q=80&fm=webp&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5&dm=1651143506&s=eacf3302cbf0f702c339077ed95bce06 400w, ' . BASE_URL . 'assets/images/Scalify-April-2022-HR-219.webp?w=800&h=600&q=80&fm=webp&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5&dm=1651143506&s=94bdc666dd26f4e52f73acab1f096c71 800w, ' . BASE_URL . 'assets/images/Scalify-April-2022-HR-219.webp?w=1200&h=900&q=80&fm=webp&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5&dm=1651143506&s=2deedf480c9c24ba1cd12e009d8a1b0c 1200w',
-                    'jpg_src' => BASE_URL . 'assets/images/Scalify-April-2022-HR-219.webp',
-                    'jpg_srcset' => BASE_URL . 'assets/images/Scalify-April-2022-HR-219.webp?w=400&h=300&q=95&auto=format&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5&dm=1651143506&s=dc95888b2b42d691958ba44d6f14cfa4 400w, ' . BASE_URL . 'assets/images/Scalify-April-2022-HR-219.webp?w=800&h=600&q=95&auto=format&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5&dm=1651143506&s=2a9e8afe599b77eea7f6ef6b2291dd0b 800w,' . BASE_URL . 'assets/images/Scalify-April-2022-HR-219.webp?w=1200&h=900&q=95&auto=format&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5&dm=1651143506&s=47408998810adbb0b9bdcc96a13b1ac1 1200w',
+                    'webp_srcset' => BASE_URL . 'assets/images/scalify_Hr.jpeg?w=400&h=300&q=80&fm=webp&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5&dm=1651143506&s=eacf3302cbf0f702c339077ed95bce06 400w, ' . BASE_URL . 'assets/images/scalify_Hr.jpeg?w=800&h=600&q=80&fm=webp&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5&dm=1651143506&s=94bdc666dd26f4e52f73acab1f096c71 800w, ' . BASE_URL . 'assets/images/scalify_Hr.jpeg?w=1200&h=900&q=80&fm=webp&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5&dm=1651143506&s=2deedf480c9c24ba1cd12e009d8a1b0c 1200w',
+                    'jpg_src' => BASE_URL . 'assets/images/scalify_Hr.jpeg',
+                    'jpg_srcset' => BASE_URL . 'assets/images/scalify_Hr.jpeg?w=400&h=300&q=95&auto=format&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5&dm=1651143506&s=dc95888b2b42d691958ba44d6f14cfa4 400w, ' . BASE_URL . 'assets/images/scalify_Hr.jpeg?w=800&h=600&q=95&auto=format&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5&dm=1651143506&s=2a9e8afe599b77eea7f6ef6b2291dd0b 800w,' . BASE_URL . 'assets/images/scalify_Hr.jpeg?w=1200&h=900&q=95&auto=format&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5&dm=1651143506&s=47408998810adbb0b9bdcc96a13b1ac1 1200w',
                     'alt' => 'Scalify April 2022 HR 219',
                     'width' => '1200',
                     'height' => '900',
@@ -33,10 +33,10 @@ $menuItems = [
         'label' => 'About',
         'url' => BASE_URL . 'about',
     ],
-    [
-        'label' => 'Blogs',
-        'url' => BASE_URL . 'blogs',
-    ],
+    // [
+    //     'label' => 'Blogs',
+    //     'url' => BASE_URL . 'blogs',
+    // ],
     [
         'label' => 'Contact',
         'url' => BASE_URL . 'contact',

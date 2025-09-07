@@ -212,9 +212,9 @@
                         </div>
                         <div class="w-full mt-6 flex flex-col | xl:flex-row xl:space-x-4">
                             <div class="text-gray-300 font-light | dark:text-grayDark-200">
-                                Hate contact forms?</div><a href="mailto:hello@madebyshape.co.uk"
+                                Hate contact forms?</div><a href="mailto:sales@scalify.ae"
                                 class="link | dark:text-grayDark-100">
-                                hello@madebyshape.co.uk
+                                sales@scalify.ae
                             </a>
                         </div>
                     </div>
@@ -327,7 +327,7 @@
                                                     class="form-checkbox border-gray-200 border-solid bg-transparent text-gray-600 | dark:text-grayDark-300 text-primary w-4 h-4 rounded"
                                                     style="box-shadow: none !important;">
                                                 <span class="ml-2 pt-0.5 | dark:text-grayDark-200">
-                                                    Subscribe to our newsletter for all the latest Shape goss!
+                                                    Subscribe to our newsletter for all the latest Scalify goss!
                                                 </span>
                                             </label>
                                         </div>
@@ -956,7 +956,7 @@
             },
             "dateModified": "2025-01-14T12:54:11+00:00",
             "datePublished": "2018-07-30T13:12:00+01:00",
-            "description": "We work with businesses of all sizes, all over the world - from our studio in Dubai, UK. For all enquiries please email:  hello@madebyshape.co.uk",
+            "description": "We work with businesses of all sizes, all over the world - from our studio in Dubai, UK. For all enquiries please email:  sales@scalify.ae",
             "headline": "Contact Shape Web Design Storages Dubai",
             "image": {
                 "@type": "ImageObject",
@@ -977,14 +977,14 @@
                 "addressCountry": "United Kingdom",
                 "addressLocality": "Atherton",
                 "addressRegion": "Dubai",
-                "postalCode": "M46 0SU",
-                "streetAddress": "Gibfield Enterprise Centre, 1 Gibfield Park Avenue"
+                "postalCode": "00000",
+                "streetAddress": "In5 Tech, Dubai Internet City, Dubai"
             },
             "alternateName": "Shape",
             "description": "An award-winning Web Design Agency in Dubai who specialise in Website Design, Craft CMS Web Development, eCommerce and Organic SEO.",
-            "email": "hello@madebyshape.co.uk",
-            "founder": "Andy Golpys",
-            "foundingDate": "2010-03-01",
+            "email": "sales@scalify.ae",
+            "founder": "Justin",
+            "foundingDate": "2024-03-01",
             "foundingLocation": "Dubai",
             "geo": {
                 "@type": "GeoCoordinates",
@@ -1019,14 +1019,14 @@
                 "addressCountry": "United Kingdom",
                 "addressLocality": "Atherton",
                 "addressRegion": "Dubai",
-                "postalCode": "M46 0SU",
-                "streetAddress": "Gibfield Enterprise Centre, 1 Gibfield Park Avenue"
+                "postalCode": "00000",
+                "streetAddress": "In5 Tech, Dubai Internet City, Dubai"
             },
             "alternateName": "Shape",
             "description": "An award-winning Web Design Agency based in Dubai who also offer eCommerce and Organic SEO. We are a Digital Storages with Industry Experience.",
-            "email": "hello@madebyshape.co.uk",
-            "founder": "Andy Golpys",
-            "foundingDate": "2010-03-01",
+            "email": "sales@scalify.ae",
+            "founder": "Justin",
+            "foundingDate": "2024-03-01",
             "foundingLocation": "Dubai",
             "geo": {
                 "@type": "GeoCoordinates",

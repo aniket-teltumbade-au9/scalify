@@ -10,38 +10,43 @@ $n = count($logos);
 $locations = [
     (object) [
         "id" => 1,
-        "location" => "United Arab Emirates, Abu Dhabi",
-        "image" => BASE_URL . "assets/images/slider/cities/abudhabi.jpg",
+        "location" => "United Arab Emirates",
+        "image" => BASE_URL . "assets/images/slider/cities/uae.jpeg",
     ],
     (object) [
         "id" => 2,
-        "location" => "Qatar, Doha",
+        "location" => "Qatar",
         "image" => BASE_URL . "assets/images/slider/cities/doha.jpg",
     ],
     (object) [
         "id" => 3,
-        "location" => "Kuwait, Kuwait City",
+        "location" => "Kuwait",
         "image" => BASE_URL . "assets/images/slider/cities/kuwait.jpg",
     ],
     (object) [
         "id" => 4,
-        "location" => "Bahrain, Manama",
+        "location" => "Bahrain",
         "image" => BASE_URL . "assets/images/slider/cities/manama.jpg",
     ],
     (object) [
         "id" => 5,
-        "location" => "Oman, Muscat",
+        "location" => "Oman",
         "image" => BASE_URL . "assets/images/slider/cities/muscat.jpg",
     ],
     (object) [
         "id" => 6,
-        "location" => "Saudi Arabia, Riyadh",
+        "location" => "Saudi Arabia",
         "image" => BASE_URL . "assets/images/slider/cities/riyadh.jpg",
     ],
     (object) [
         "id" => 7,
-        "location" => "United Arab Emirates, Dubai",
-        "image" => BASE_URL . "assets/images/slider/cities/dubai.jpg",
+        "location" => "India",
+        "image" => BASE_URL . "assets/images/slider/cities/mumbai.jpeg",
+    ],
+     (object) [
+        "id" => 8,
+        "location" => "Ireland",
+        "image" => BASE_URL . "assets/images/slider/cities/ireland.jpeg",
     ],
 ];
 $menuListItems = array_filter($services_list, function ($item) {
@@ -780,6 +785,10 @@ usort($menuListItems, function ($a, $b) {
             </div>
         </div>
     </div>
+
+    <h2 class="text-4xl font-sans-primary text-center justify-center text-gray-600 dark:text-gray-100">
+        We Expand Your Digital Presence Globally
+    </h2>
     <div class=" w-full pb-10 px-2 | lg:p-16 max-w-full overflow-hidden">
 
         <!-- Start AndySlider.com BODY section -->

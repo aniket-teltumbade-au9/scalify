@@ -3,17 +3,15 @@
 <?php
 include './elements/meta.php';
 $employeeList = [
-    // "Amol Panchsl",
     ["name" => "Anil Fernandes", "Designation" => "Managing Director"],
     ["name" => "Dixter Verano", "Designation" => "Operations Executive"],
     ["name" => "Fazil Iqbal", "Designation" => "Chief Marketing Officer"],
     ["name" => "Gillian Elizabeth", "Designation" => "Lead Designer"],
     ["name" => "Harishchandra Ramesh Chadda", "Designation" => "Chief Technical Officer"],
-    ["name" => "Jovin Fernandes", "Designation" => "Chief Operating Officer"],
+    // ["name" => "Jovin Fernandes", "Designation" => "Chief Operating Officer"],
     ["name" => "Justin Ebenezer", "Designation" => "Chief People Officer"],
     ["name" => "Mohamed Sahim", "Designation" => "Director of Sales"],
     ["name" => "Partha Chaliha", "Designation" => "Managing Director"],
-    // "Yulia Maximovich"
 ];
 ?>
 
@@ -248,14 +246,83 @@ $employeeList = [
                                             <source type="image/webp"
                                                 srcset="<?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143487&amp;s=19b949fe09dfe3e0161a0a345a83f057 400w, <?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=800&amp;h=800&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143487&amp;s=083c410dd6a37b3a508401c79979d435 800w"
                                                 sizes="100vw">
+<<<<<<< Updated upstream
                                             <img src="<?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143487&amp;s=19b949fe09dfe3e0161a0a345a83f057"
                                                 srcset="<?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=400&amp;h=400&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143487&amp;s=3999d2aa676d2e2e3a05f639e37652ff 400w, <?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=800&amp;h=800&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143487&amp;s=6d1b202ff3a48ce53ba59977efcc2626 800w"
                                                 sizes="100vw" alt="Shape April 2022 HR 208"
+=======
+                                            <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/People-in-Studio/Shape-April-2022-HR-208.jpg?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143487&amp;s=19b949fe09dfe3e0161a0a345a83f057"
+                                                srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/People-in-Studio/Shape-April-2022-HR-208.jpg?w=400&amp;h=400&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143487&amp;s=3999d2aa676d2e2e3a05f639e37652ff 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/People-in-Studio/Shape-April-2022-HR-208.jpg?w=800&amp;h=800&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143487&amp;s=6d1b202ff3a48ce53ba59977efcc2626 800w"
+                                                sizes="100vw" alt="Scalify April 2022 HR 208"
+>>>>>>> Stashed changes
                                                 class="w-full  w-full h-full object-cover absolute top-0 left-0  rounded-2xl transform-gpu bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl"
                                                 width="800" height="800">
                                         </picture>
                                     </div>
                                 </div>
+<<<<<<< Updated upstream
+=======
+                                <div class="absolute top-0 left-1/2 h-1/2 origin-bottom-left w-40vw || js-arched-image-419251-mobile"
+                                    data-index="5">
+                                    <div class="relative overflow-hidden w-full" style="padding-top: 100%;">
+                                        <picture class="w-full absolute top-0 left-0 w-full h-full ">
+                                            <source type="image/webp"
+                                                srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/MadeByShape-Studio/Shape-2018-LR-169_200119_175819.jpg?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604326504&amp;s=bf17266e2762cabc752c1a107cfd715b 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/MadeByShape-Studio/Shape-2018-LR-169_200119_175819.jpg?w=800&amp;h=800&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604326504&amp;s=ecfafac1363d4dc0f34f36fdea6a88d3 800w"
+                                                sizes="100vw">
+                                            <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/MadeByShape-Studio/Shape-2018-LR-169_200119_175819.jpg?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604326504&amp;s=bf17266e2762cabc752c1a107cfd715b"
+                                                srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/MadeByShape-Studio/Shape-2018-LR-169_200119_175819.jpg?w=400&amp;h=400&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604326504&amp;s=1bd00db44f89e71c39091579ba96322d 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/MadeByShape-Studio/Shape-2018-LR-169_200119_175819.jpg?w=800&amp;h=800&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604326504&amp;s=bab246e9dd834bf1f59ae266cd40dd7a 800w"
+                                                sizes="100vw" alt="Tom on the laptop in the Scalify office"
+                                                class="w-full  w-full h-full object-cover absolute top-0 left-0  rounded-2xl transform-gpu bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl"
+                                                width="800" height="800">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="absolute top-0 left-1/2 h-1/2 origin-bottom-left w-40vw || js-arched-image-419251-mobile"
+                                    data-index="6">
+                                    <div class="relative overflow-hidden w-full" style="padding-top: 100%;">
+                                        <picture class="w-full absolute top-0 left-0 w-full h-full ">
+                                            <source type="image/webp"
+                                                srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/Individuals-Black-Wall/Shape-April-2022-HR-101.jpg?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143071&amp;s=3a162be72d42e6e50308ae56a152957e 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/Individuals-Black-Wall/Shape-April-2022-HR-101.jpg?w=800&amp;h=800&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143071&amp;s=00dd25bfb79d75bd6eaf42228484484f 800w"
+                                                sizes="100vw">
+                                            <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/Individuals-Black-Wall/Shape-April-2022-HR-101.jpg?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143071&amp;s=3a162be72d42e6e50308ae56a152957e"
+                                                srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/Individuals-Black-Wall/Shape-April-2022-HR-101.jpg?w=400&amp;h=400&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143071&amp;s=fd1ecec79935bea0e772846c74dda7ad 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/Individuals-Black-Wall/Shape-April-2022-HR-101.jpg?w=800&amp;h=800&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143071&amp;s=aad441cbee1ad44e0cad1996af707e94 800w"
+                                                sizes="100vw" alt="Scalify April 2022 HR 101"
+                                                class="w-full  w-full h-full object-cover absolute top-0 left-0  rounded-2xl transform-gpu bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl"
+                                                width="800" height="800">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="absolute top-0 left-1/2 h-1/2 origin-bottom-left w-40vw || js-arched-image-419251-mobile"
+                                    data-index="7">
+                                    <div class="relative overflow-hidden w-full" style="padding-top: 100%;">
+                                        <picture class="w-full absolute top-0 left-0 w-full h-full ">
+                                            <source type="image/webp"
+                                                srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/Chillout-Area/Shape-April-2022-HR-175.jpg?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1706011832&amp;s=e19014f3eb901418311caf1ce06e12c5 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/Chillout-Area/Shape-April-2022-HR-175.jpg?w=800&amp;h=800&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1706011832&amp;s=f9d4bc6e87af0f0dc0e3dac3313b1471 800w"
+                                                sizes="100vw">
+                                            <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/Chillout-Area/Shape-April-2022-HR-175.jpg?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1706011832&amp;s=e19014f3eb901418311caf1ce06e12c5"
+                                                srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/Chillout-Area/Shape-April-2022-HR-175.jpg?w=400&amp;h=400&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1706011832&amp;s=10d4106f7d0b7087a8cac102ae91b71b 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/Chillout-Area/Shape-April-2022-HR-175.jpg?w=800&amp;h=800&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1706011832&amp;s=72da9c38f8865f3391bca32f64e34eed 800w"
+                                                sizes="100vw" alt="Scalify April 2022 HR 175"
+                                                class="w-full  w-full h-full object-cover absolute top-0 left-0  rounded-2xl transform-gpu bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl"
+                                                width="800" height="800">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="absolute top-0 left-1/2 h-1/2 origin-bottom-left w-40vw || js-arched-image-419251-mobile"
+                                    data-index="8">
+                                    <div class="relative overflow-hidden w-full" style="padding-top: 100%;">
+                                        <picture class="w-full absolute top-0 left-0 w-full h-full ">
+                                            <source type="image/webp"
+                                                srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/People-in-Studio/Shape-April-2022-HR-215.jpg?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143498&amp;s=2b69f2b4d69766ef9557bfde462cb117 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/People-in-Studio/Shape-April-2022-HR-215.jpg?w=800&amp;h=800&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143498&amp;s=d9d35528c208fe72345f7718d22e3882 800w"
+                                                sizes="100vw">
+                                            <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/People-in-Studio/Shape-April-2022-HR-215.jpg?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143498&amp;s=2b69f2b4d69766ef9557bfde462cb117"
+                                                srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/People-in-Studio/Shape-April-2022-HR-215.jpg?w=400&amp;h=400&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143498&amp;s=e16d9f97faa966598a2b255aaff25bfe 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/People-in-Studio/Shape-April-2022-HR-215.jpg?w=800&amp;h=800&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143498&amp;s=5db7424f83e52cb4e7d0d93a3f680672 800w"
+                                                sizes="100vw" alt="Shape April 2022 HR 215"
+                                                class="w-full  w-full h-full object-cover absolute top-0 left-0  rounded-2xl transform-gpu bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl"
+                                                width="800" height="800">
+                                        </picture>
+                                    </div>
+                                </div>
+>>>>>>> Stashed changes
                             </div>
                         </div>
                     </div>
@@ -1109,10 +1176,10 @@ bg-primary-600 text-gray-600 py-2 px-5">
                                         <div class="w-full || js-profile-card-189">
                                             <div x-data="profile" class="w-full flex flex-wrap relative group pl-px"
                                                 x-ref="profile" x-init="profileHover('201')">
-                                                <a href="#" class="w-full h-full absolute top-0 left-0 z-10">
+                                                <!-- <a href="#" class="w-full h-full absolute top-0 left-0 z-10">
                                                     <div class="sr-only">
                                                         Andy's profile</div>
-                                                </a>
+                                                </a> -->
                                                 <!-- <div
                                                     class="absolute top-3 right-3 z-20 inline-flex items-center space-x-1.5">
                                                     <a href="#"
@@ -1451,7 +1518,7 @@ bg-primary-600 text-gray-600 py-2 px-5">
                                 <div class="w-full relative mt-3">
                                     <p
                                         class="text-sm | md:text-base text-gray-600 dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7  mb-6">
-                                        With over a decade of experience, Shape is an energetic, fresh and vibrant team
+                                        With over a decade of experience, Scalify is an energetic, fresh and vibrant team
                                         offering creative talent and industry knowledge.</p>
                                 </div>
                             </div>
@@ -1866,7 +1933,7 @@ bg-primary-600 text-gray-600 py-2 px-5">
                                     <p
                                         class="text-sm | md:text-base text-gray-600 dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7  mb-6">
                                         In a male-dominated industry, we are proud to say we’re striving for equal
-                                        gender roles at Shape.</p>
+                                        gender roles at Scalify.</p>
                                 </div>
                             </div>
                             <div class="px-2 | lg:px-3 | xl:px-4 w-full || swiper-slide">
@@ -2783,7 +2850,7 @@ bg-primary-600 text-gray-600 py-2 px-5">
             </div>
         </div>
         <div id="420757"></div>
-        <div x-data="videoQuoteColumns" x-init="carousel('420757')">
+        <!-- <div x-data="videoQuoteColumns" x-init="carousel('420757')">
             <div class="w-full pb-20 | lg:pb-24 | 2xl:pb-32 | 4xl:pb-40">
                 <div class="pl-2 | sm:pl-6 | xl:pl-12 | 2xl:pl-20 | 3xl:pl-40 | 4xl:pl-60">
                     <div
@@ -3303,7 +3370,7 @@ indent-10 | lg:indent-14
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div id="345540"></div>
         <div x-data="reviews" x-init="carousel('345540')">
             <div class="w-full pb-20 | lg:pb-24 | 2xl:pb-32 | 4xl:pb-40">
@@ -3466,11 +3533,11 @@ sm:max-w-sm | lg:max-w-none
                                                 </div>
                                                 <div
                                                     class="leading-7 text-base font-light | lg:text-md | dark:text-grayDark-200">
-                                                    I’ve been working with Andy and the Scalify team for around 12
+                                                    I’ve been working with the Scalify team for around 12
                                                     months now. They’ve been nothing shy of perfect. The team completely
-                                                    designed and rebuilt my website using CraftCMS which has been such a
-                                                    positive change against my old website in WordPress. Can’t recommend
-                                                    Shape enough</div>
+                                                    designed and store up, which has been such a
+                                                    positive change for my business growth. Can’t recommend
+                                                    Scalify enough</div>
                                             </div>
                                             <div class="flex items-end space-x-2 | lg:space-x-3">
                                                 <div
@@ -3578,9 +3645,9 @@ sm:max-w-sm | lg:max-w-none
                                                 <div
                                                     class="leading-7 text-base font-light | lg:text-md | dark:text-grayDark-200">
                                                     For anyone needing a team that can capture a brand’s essence and
-                                                    translate it into an effective digital presence, Andy and the Shape
+                                                    translate it into an effective digital presence, the Scalify
                                                     team are a great choice. Their work speaks for itself – clear,
-                                                    effective, and true to Skew&#039;s brand.</div>
+                                                    effective, and true to Scalify's brand.</div>
                                             </div>
                                             <div class="flex items-end space-x-2 | lg:space-x-3">
                                                 <div
@@ -3689,7 +3756,7 @@ sm:max-w-sm | lg:max-w-none
                                                 <div
                                                     class="leading-7 text-base font-light | lg:text-md | dark:text-grayDark-200">
                                                     The whole process from development to launch to ongoing support is
-                                                    seamless. The team at Shape are super helpful and using Craft CMS is
+                                                    seamless. The team at Scalify are super helpful and using Craft CMS is
                                                     a joy after switching from WordPress. I highly recommend
                                                     Scalify.</div>
                                             </div>
@@ -4045,14 +4112,13 @@ font-sans-primary tracking-tight
 text-gray-600  | dark:text-grayDark-100
 leading-none
 text-balance
-">We’ve created an environment where everyone feels comfortable and open, but we can have a laugh along the way</h2>
+">We’ve created an space where everyone feels at ease, open to share, and can have fun along the way.</h2>
                             </div>
                             <div class="w-full relative ">
                                 <p
                                     class="text-base | xl:text-md text-gray-600 dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7  mb-6">
-                                    We produce good work for good people, and with the idea that staff and the client
-                                    will be happy throughout the full process. This in return will bring more work our
-                                    way, whether that's via recommendation or further work from that client.</p>
+                                We create meaningful work for great people, ensuring both our team and clients enjoy the process. 
+                                This approach builds lasting relationships and brings new opportunities through referrals and repeat business.</p>
                             </div>
                             <div class="w-full relative">
                                 <div class="w-full bg-primary-600 rounded-2xl relative">
@@ -4074,7 +4140,7 @@ indent-14 p-6
                                         class="w-full flex flex-col items-start | lg:flex-row lg:justify-end lg:items-end">
                                         <div class="flex-shrink-0 px-6 pb-4 | lg:flex-1">
                                             <div class="flex items-end space-x-2 | lg:space-x-3">
-                                                <div
+                                                <!-- <div
                                                     class="w-9 h-9 rounded-md | lg:w-12 lg:h-12 lg:rounded-lg inline-flex overflow-hidden relative">
                                                     <div class="relative overflow-hidden w-full"
                                                         style="padding-top: 100%;">
@@ -4089,13 +4155,13 @@ indent-14 p-6
                                                                 loading="lazy" width="200" height="200">
                                                         </picture>
                                                     </div>
-                                                </div>
+                                                </div> -->
                                                 <div class="leading-tight tracking-tight">
                                                     <div class="text-gray-600 | dark:text-grayDark-600">
-                                                        Andy Golpys</div>
+                                                        By Team</div>
                                                     <div
                                                         class="font-light text-xs | lg:text-sm text-gray-400 | dark:text-grayDark-300">
-                                                        Co-Founder</div>
+                                                        Scalify</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -4254,8 +4320,8 @@ bg-gray-600 text-white | dark:bg-grayDark-400 dark:text-grayDark-100 py-2 px-5">
                 </div>
             </div>
         </div>
-        <div id="260625"></div>
-        <div x-data="headingImageCarousel" x-init="carousel('260625')">
+        <!-- <div id="260625"></div> -->
+        <!-- <div x-data="headingImageCarousel" x-init="carousel('260625')">
             <div class="w-full pb-20 | lg:pb-24 | 2xl:pb-32 | 4xl:pb-40">
                 <div class="px-0">
                     <div class="w-full flex flex-wrap">
@@ -4870,8 +4936,8 @@ bg-primary-600 text-gray-600 py-2 px-5">
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="195"></div>
+        </div> -->
+        <!-- <div id="195"></div>
         <div x-data="pageLinksCarousel" x-init="carousel('195')">
             <div class="w-full pb-20 | lg:pb-24 | 2xl:pb-32 | 4xl:pb-40">
                 <div class="pl-2 | sm:pl-6 | xl:pl-12 | 2xl:pl-20 | 3xl:pl-40 | 4xl:pl-60">
@@ -5590,7 +5656,7 @@ pr-8 mb-5 | lg:pr-16
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <?php include './elements/footer.php'; ?>
 
     <script type="application/ld+json">
@@ -5610,15 +5676,15 @@ pr-8 mb-5 | lg:pr-16
             },
             "dateModified": "2024-11-04T07:45:13+00:00",
             "datePublished": "2018-07-26T15:00:00+01:00",
-            "description": "Scalify are a full service Creative and Digital Design Agency based in Manchester with an outstanding reputation for quality for Branding & Web Design",
-            "headline": "About Digital Agency Manchester",
+            "description": "Scalify are a full service Creative and Digital Design Agency based in Abu Dhabi with an outstanding reputation for quality for Branding & Web Design",
+            "headline": "About Digital Agency Abu Dhabi",
             "image": {
                 "@type": "ImageObject",
                 "url": "https://made-byshape.transforms.svdcdn.com/production/uploads/images/Open-Graph/madebyshape-home.jpg?w=1200&h=630&q=82&auto=format&fit=crop&dm=1722518913&s=e456c7a65aa7feded9f0be73391573f6"
             },
             "inLanguage": "en-gb",
             "mainEntityOfPage": "https://madebyshape.co.uk/about/",
-            "name": "About Digital Agency Manchester",
+            "name": "About Digital Agency Abu Dhabi",
             "publisher": {
                 "@id": "https://madebyshape.co.uk/#creator"
             },
@@ -5630,16 +5696,16 @@ pr-8 mb-5 | lg:pr-16
                 "@type": "PostalAddress",
                 "addressCountry": "United Kingdom",
                 "addressLocality": "Atherton",
-                "addressRegion": "Manchester",
-                "postalCode": "M46 0SU",
-                "streetAddress": "Gibfield Enterprise Centre, 1 Gibfield Park Avenue"
+                "addressRegion": "Abbu Dhabi",
+                "postalCode": "00000",
+                "streetAddress": "In5 Tech, Dubai Internet City, Dubai"
             },
             "alternateName": "Shape",
-            "description": "An award-winning Web Design Agency in Manchester who specialise in Website Design, Craft CMS Web Development, eCommerce and Organic SEO.",
-            "email": "hello@madebyshape.co.uk",
-            "founder": "Andy Golpys",
-            "foundingDate": "2010-03-01",
-            "foundingLocation": "Manchester",
+            "description": "An award-winning Web Design Agency in Abbu Dhabi who specialise in Website Design, Craft CMS Web Development, eCommerce and Organic SEO.",
+            "email": "sales@scalify.ae",
+            "founder": "Justin",
+            "foundingDate": "2024-03-01",
+            "foundingLocation": "Abu Dhabi",
             "geo": {
                 "@type": "GeoCoordinates",
                 "latitude": "53.530291",
@@ -5672,16 +5738,16 @@ pr-8 mb-5 | lg:pr-16
                 "@type": "PostalAddress",
                 "addressCountry": "United Kingdom",
                 "addressLocality": "Atherton",
-                "addressRegion": "Manchester",
-                "postalCode": "M46 0SU",
-                "streetAddress": "Gibfield Enterprise Centre, 1 Gibfield Park Avenue"
+                "addressRegion": "Abbu Dhabi",
+                "postalCode": "00000",
+                "streetAddress": "In5 Tech, Dubai Internet City, Dubai"
             },
-            "alternateName": "Shape",
-            "description": "An award-winning Web Design Agency based in Manchester who also offer eCommerce and Organic SEO. We are a Digital Studio with Industry Experience.",
-            "email": "hello@madebyshape.co.uk",
-            "founder": "Andy Golpys",
-            "foundingDate": "2010-03-01",
-            "foundingLocation": "Manchester",
+            "alternateName": "Scalify",
+            "description": "An award-winning Web Design Agency based in Abu Dhabi who also offer eCommerce and Organic SEO. We are a Digital Studio with Industry Experience.",
+            "email": "sales@scalify.ae",
+            "founder": "Justin",
+            "foundingDate": "2024-03-01",
+            "foundingLocation": "Abu Dhabi",
             "geo": {
                 "@type": "GeoCoordinates",
                 "latitude": "53.530258",

@@ -274,10 +274,10 @@
                 class="inline-flex flex-row text-gray-200 w-auto text-1xs | md:text-xs | lg:text-sm | dark:text-grayDark-200">
                 <div>
                     © Scalify Ltd 2025</div>
-                <div class="mx-2 | lg:mx-5">
+                <!-- <div class="mx-2 | lg:mx-5">
                     |</div>
                 <div>
-                    Company Reg Number 10529058</div>
+                    Company Reg Number 10529058</div> -->
             </div>
         </div>
         <div

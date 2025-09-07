@@ -2,13 +2,13 @@
 $services_list = [
 
     [
-        "name" => "Consulting & Strategy",
-        "tagline_short" => "Expert guidance to navigate challenges and achieve your goals.",
+        "name" => "Vision & Strategy",
+        "tagline_short" => "Goals, positioning, roadmap",
         "slug" => "consulting",
         "image" => "consulting.jfif",
         "menu" => ["isMenu" => true, "rank" => 1],
         "tagline_long" => "Providing strategic business consulting and expert advisory services to help you navigate complex challenges and achieve your long-term goals.",
-        "brief_description" => "Every business faces unique challenges and opportunities. Our Consulting service provides expert guidance and strategic advice to help you overcome obstacles and achieve your objectives. We offer an objective, third-party perspective, working closely with your team to analyze your current operations, identify inefficiencies, and develop a clear, actionable plan. Our consultants bring a wealth of industry knowledge to the table, helping you optimize workflows, improve performance, and implement new technologies. We are your trusted partner in transformation, providing the support and expertise needed to drive sustainable growth and long-term success.",
+        "brief_description" => "We crystallize your ambition into a powerful market position. Together, we define your mission, pinpoint your ideal customer, and chart a strategic roadmap that transforms your goals into a clear, actionable plan. We don't just create a vision; we architect a competitive advantage.",
         "category" => "Dream",
         "capabilities" => [
             [
@@ -35,11 +35,11 @@ $services_list = [
     ],
     [
         'name' => 'Business Setup',
-        'tagline_short' => 'Your foundation for success starts here.',
+        'tagline_short' => 'Legal structure, registrations.',
         'slug' => 'business-setup',
         "image" => "business-setup.jfif",
-        "menu" => ["isMenu" => true, "rank" => 2],
-        'brief_description' => 'Setting up a business in today’s competitive market requires meticulous planning, legal compliance, and strategic foresight. Our Business Setup service is designed to guide you through every step of launching your warehouse operations efficiently and effectively. From company registration, regulatory approvals, and infrastructure planning to workforce recruitment and financial structuring, we cover all the essentials to help you establish a robust and scalable business foundation. Our experts leverage industry best practices and local market insights to tailor solutions that align with your goals, ensuring your business is compliant, optimized, and ready to operate smoothly. Whether you are a startup or expanding your existing operations, our Business Setup service empowers you with the tools and knowledge necessary to thrive in the warehousing sector.',
+        "menu" => ["isMenu" => false],
+        'brief_description' => 'A brilliant idea requires an unimpeachable foundation. We navigate the complexities of legal structuring and registrations, establishing a sound operational framework for your business in the UAE. This is meticulous, essential work that protects your vision and prepares you for seamless growth.',
         'category' => 'Dream',
         'capabilities' => [
             [
@@ -66,13 +66,13 @@ $services_list = [
         'tagline_long' => 'Building your warehouse business from the ground up with expert guidance and tailored solutions that ensure compliance, efficiency, and scalable growth.',
     ],
     [
-        "name" => "E-commerce & offline distribution",
-        "tagline_short" => "Expand your reach with powerful online retail solutions.",
+        "name" => "E-commerce & Marketplace",
+        "tagline_short" => "D2C website, Amazon/Noon",
         "slug" => "e-commerce",
         "image" => "e-commerce.jpg",
         "menu" => ["isMenu" => true, "rank" => 3],
         "tagline_long" => "Building your digital storefront and managing online operations to drive sales, enhance customer experience, and achieve sustainable e-commerce growth.",
-        "brief_description" => "In today's digital landscape, a strong e-commerce presence is vital for business growth. Our E-commerce service provides end-to-end solutions to build, manage, and scale your online store. From designing a user-friendly website and integrating secure payment gateways to managing product catalogs and optimizing the checkout process, we cover every detail to ensure a seamless shopping experience for your customers. We leverage platforms and strategies that are tailored to your business, helping you reach new markets and increase sales conversions. Whether you're a new business or looking to migrate to a more robust platform, we provide the technical and strategic support you need to thrive in the online marketplace.",
+        "brief_description" => "We build your digital flagships. Whether it's a direct-to-consumer (D2C) website that offers a pure brand experience or a dominant presence on marketplaces like Amazon and Noon, we engineer seamless, conversion-optimized online channels that turn browsers into buyers.",
         "category" => "Build",
         "capabilities" => [
             [
@@ -98,12 +98,12 @@ $services_list = [
         ],
     ],
     [
-        'name' => 'Ads & Marketing',
-        'tagline_short' => 'Drive targeted traffic and grow your warehouse business.',
+        'name' => 'Retail & Distribution',
+        'tagline_short' => 'Offline presence, partnerships',
         'slug' => 'ads-marketing',
         'image' => 'ads-marketing.jpg',
         "menu" => ["isMenu" => true, "rank" => 4],
-        'brief_description' => 'Maximizing visibility through effective advertising is essential in a competitive warehouse market. Our Ads & Marketing service focuses on creating high-impact advertising campaigns that target your ideal audience across digital and traditional channels. We design eye-catching creatives, optimize ad spend, and use advanced targeting techniques to ensure maximum return on investment. From pay-per-click (PPC) campaigns to social media ads and retargeting strategies, our approach is data-driven and results-oriented. We continuously monitor campaign performance and adjust tactics to improve click-through rates, conversions, and brand engagement. Partner with us to amplify your marketing efforts, generate qualified leads, and accelerate business growth.',
+        'brief_description' => 'We bridge the gap between digital and physical worlds. Our team forges strategic retail partnerships and establishes offline distribution networks that place your product directly in the hands of your customers. We build an omnichannel presence, ensuring your brand is visible and available wherever your audience shops.',
         'category' => 'Scale',
         'capabilities' => [
             [
@@ -130,13 +130,13 @@ $services_list = [
         'tagline_long' => 'Empowering your warehouse business with strategic advertising and marketing campaigns that deliver measurable growth and enhanced customer engagement.',
     ],
     [
-        "name" => "AI & Automation",
-        "tagline_short" => "Leverage artificial intelligence for smarter, faster operations.",
+        "name" => "Technology & Tools",
+        "tagline_short" => "CRM, automation, AI",
         "slug" => "ai",
         "image" => "ai.jpg",
         "menu" => ["isMenu" => true, "rank" => 6],
         "tagline_long" => "Implementing intelligent, AI-driven solutions that automate your processes, enhance decision-making, and unlock new opportunities for growth and innovation.",
-        "brief_description" => "Artificial Intelligence is transforming the way businesses operate, offering unprecedented opportunities for efficiency and innovation. Our AI service helps you integrate AI-powered solutions into your workflows to automate tasks, analyze data, and enhance decision-making. We specialize in developing and implementing custom AI models, from predictive analytics and natural language processing to intelligent automation. Our experts work with you to identify areas where AI can provide the most value, ensuring a seamless implementation that improves productivity, reduces costs, and gives you a competitive edge.",
+        "brief_description" => "We design your company's central nervous system. By implementing and integrating a bespoke stack of technology—from CRM and automation to AI-powered tools—we create a seamless flow of data and intelligence across your organization. This is the infrastructure that unlocks efficiency and enables data-driven decision-making.",
         "category" => "Build",
         "capabilities" => [
             [
@@ -194,11 +194,11 @@ $services_list = [
         ],
     ],
     [
-        'name' => 'Marketing Management',
-        'tagline_short' => 'Amplify your warehouse brand and reach.',
-        'slug' => 'marketing-management',
-        "menu" => ["isMenu" => false],
-        'brief_description' => 'In the warehouse industry, visibility and brand reputation are key to attracting clients and partners. Our Marketing Management service offers comprehensive strategies to enhance your market presence and drive demand for your warehousing solutions. We combine digital marketing, content creation, SEO, and analytics to craft campaigns that resonate with your target audience. Our team monitors market trends and competitor activities to adapt your marketing efforts dynamically, ensuring you stay ahead in a competitive landscape. From lead generation to customer engagement, we provide end-to-end management that increases your brand equity and business opportunities. Whether launching a new service or expanding your market share, our marketing expertise is your asset in building lasting customer relationships.',
+        'name' => 'Brand Identity',
+        'tagline_short' => 'Logo, design, voice, messaging',
+        'slug' => 'brand-identity',
+        "menu" => ["isMenu" => true, "rank" => 2],
+        'brief_description' => 'We move beyond logos to build a living, breathing brand. Through a deep dive into your ethos, we craft a compelling brand voice, a resonant messaging strategy, and a visual identity that commands attention. This is where your company finds its soul and learns to speak to its audience.',
         'category' => 'Dream',
         'capabilities' => [
             [
@@ -354,12 +354,12 @@ $services_list = [
         ],
     ],
     [
-        "name" => "Branding",
-        "tagline_short" => "Define your identity and build a brand that resonates.",
-        "slug" => "branding",
+        "name" => "Go-to-Market",
+        "tagline_short" => "Early marketing & distribution.",
+        "slug" => "go-to-market",
         "menu" => ["isMenu" => false],
-        "tagline_long" => "Creating a distinctive brand identity, from strategy to visual design, that builds recognition, trust, and a strong emotional connection with your audience.",
-        "brief_description" => "Your brand is more than just a logo; it's the essence of your business. Our Branding service helps you define and build a cohesive brand identity that sets you apart from the competition. We work with you to establish your brand's purpose, values, and personality, translating them into a visual and verbal identity that speaks directly to your target audience. From logo design and color palettes to messaging and brand guidelines, we ensure every touchpoint is consistent and memorable. We help you create a powerful brand that not only attracts customers but also fosters loyalty and trust.",
+        // "tagline_long" => "Creating a distinctive brand identity, from strategy to visual design, that builds recognition, trust, and a strong emotional connection with your audience.",
+        "brief_description" => "A launch isn't a single moment; it's a meticulously orchestrated campaign. We architect your market entry, establishing early distribution channels and executing foundational marketing initiatives. Our goal is to ensure you don't just launch, you arrive—capturing immediate traction and setting the stage for what's to come.",
         "image" => "branding-hero.jpg",
         "category" => "Dream",
         "capabilities" => [
