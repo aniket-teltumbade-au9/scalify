@@ -966,7 +966,7 @@ bg-primary-600 text-gray-600 py-2 px-5">
                                         class="w-full h-full absolute top-0 left-0 object-cover object-center || js-video js-video-312636"
                                         x-bind:class="{'js-video-volumn-on': !muted,'js-video-playing': playing,}">
                                         <source
-                                            src="<?php echo BASE_URL . "assets/videos/git - Integra Works.mp4"; ?>"
+                                            src="<?php echo BASE_URL . "assets/videos/In5 Dubai - Integra Works.mp4"; ?>"
                                             type="video/mp4">
                                     </video></div>
                                 <div
@@ -2484,9 +2484,12 @@ bg-primary-600 text-gray-600 py-2 px-5">
                     <div class="w-full flex justify-center">
                         <div class="w-15/16 relative rounded-2xl overflow-hidden group | lg:rounded-3xl">
                             <div class="w-full aspect-ratio-16/9 rounded-2xl overflow-hidden relative | lg:rounded-3xl">
-                                <video class="w-full h-full absolute top-0 left-0 object-cover object-center || js-modal-video js-modal-video-428063" autoplay muted loop playsinline controlslist="nodownload nofullscreen noremoteplayback">
-                                    <source src="<?php echo BASE_URL . 'assets/videos/In5 Dubai - Integra Works.mp4'; ?>" type="video/mp4">
-                                </video>
+                                <iframe
+                                    src="https://player.vimeo.com/video/1116618878?autoplay=0&loop=1&autopause=0&mute=1&controls=0"
+                                    class="w-full h-full absolute top-0 left-0 || js-modal-video js-modal-video-428063"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
                             </div>
                             <div class="absolute top-0 left-0 w-full h-full z-20 || js-cursor-trigger-drag"
                                 data-icon="xmark" x-on:click.prevent="closeModal('428063')"></div>
