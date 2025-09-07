@@ -402,13 +402,13 @@ usort($menuListItems, function ($a, $b) {
                                     <span
                                         class="flex-shrink-0 truncate inline relative pl-3 | lg:pl-5 || js-cross-browser"
                                         style="z-index: 1">
-                                        Brand Globally&#160;&#160;<br>
+                                        Brand Identity&#160;&#160;<br>
                                     </span>
-                                    <!-- <span
+                                    <span
                                         class="flex-shrink-0 truncate inline relative pl-3 | lg:pl-5 || js-cross-browser"
                                         style="z-index: 0">
-                                        globally&#160;&#160;<br>
-                                    </span> -->
+                                        Across the Globe&#160;&#160;<br>
+                                    </span>
                                 </h1>
                                 <svg width="0" height="0" class="absolute hidden" color-interpolation-filters="sRGB">
                                     <defs>
@@ -553,8 +553,10 @@ usort($menuListItems, function ($a, $b) {
                     <div class="px-2 | lg:px-3 | xl:px-4 flex flex-col items-start space-y-8 w-full | lg:w-11/16">
                         <h2
                             class="text-1xl | md:text-4vw | xl:text-3vw font-sans-primary tracking-tight text-gray-600  | dark:text-grayDark-100 leading-none text-balance lg:indent-48 ">
-                            <p>Your competition is sharper, faster, and hungrier. Are you?
-                                Our Dream. Build. Scale. framework is how you stay dangerous and stay ahead.</p>
+                            <p> Strategy without execution is a day dream. Execution without strategy is a nightmare.
+                                ​We are the team that lives and breathes both. Our Dream, Build, Scale
+                                framework is our promise to turn your ambition into a reality.</p>
+</p>
                         </h2>
                         <div class="flex flex-wrap">
                             <div class="mr-5 mb-3 w-auto | lg:mr-8">
@@ -660,7 +662,7 @@ usort($menuListItems, function ($a, $b) {
                     </div>
                 </div>
 
-                <div class="mx-auto relative w-full | xl:w-15/16" style="--blur: 1; --blurs: 5; max-height: 200px;;">
+                <!-- <div class="mx-auto relative w-full | xl:w-15/16" style="--blur: 1; --blurs: 5; max-height: 200px;;">
                     <div class="blur blur--left">
                         <div class="" style="--index: 0"></div>
                         <div class="" style="--index: 1"></div>
@@ -717,78 +719,15 @@ usort($menuListItems, function ($a, $b) {
 
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
 
-
-    <div x-data="ticker" x-init="carousels(418135, 0.3)" class="w-full overflow-hidden">
-        <div class="w-full pb-20 | lg:pb-24 | 2xl:pb-32 | 4xl:pb-40">
-            <div class="px-0">
-                <div class="w-full || js-cursor-trigger-drag">
-                    <div class="w-full flex  || js-carousel-418135">
-                        <div class="px-2 | lg:px-3 | xl:px-4 inline-flex flex-shrink-0 w-auto"
-                            style="margin-left: -350.7px;">
-                            <a href="<?php echo BASE_URL; ?>contact/" class="inline-flex flex-shrink-0">
-                                <div
-                                    class="text-20vw | md:text-11vw | lg:text-10vw | 4xl:text-8vw font-sans-primary tracking-tight text-gray-600  | dark:text-grayDark-100 leading-tighter text-balance js-heading-418135">
-                                    Let's work together.</div>
-
-                            </a>
-                        </div>
-                        <div class="px-2 | lg:px-3 | xl:px-4 inline-flex flex-shrink-0 w-auto">
-                            <a href="<?php echo BASE_URL; ?>contact/" class="inline-flex flex-shrink-0">
-                                <div
-                                    class="text-20vw | md:text-11vw | lg:text-10vw | 4xl:text-8vw font-sans-primary tracking-tight text-gray-600  | dark:text-grayDark-100 leading-tighter text-balance js-heading-418135">
-                                    Let's work together.</div>
-
-                            </a>
-                        </div>
-                        <div class="px-2 | lg:px-3 | xl:px-4 inline-flex flex-shrink-0 w-auto">
-                            <a href="<?php echo BASE_URL; ?>contact/" class="inline-flex flex-shrink-0">
-                                <div
-                                    class="text-20vw | md:text-11vw | lg:text-10vw | 4xl:text-8vw font-sans-primary tracking-tight text-gray-600  | dark:text-grayDark-100 leading-tighter text-balance js-heading-418135">
-                                    Let's work together.</div>
-
-                            </a>
-                        </div>
-                    </div>
-                    <div class="w-full flex justify-end || js-carousel-418135">
-                        <div class="px-2 | lg:px-3 | xl:px-4 inline-flex flex-shrink-0 w-auto">
-                            <a href="<?php echo BASE_URL; ?>contact/" class="inline-flex flex-shrink-0">
-                                <div
-                                    class="text-20vw | md:text-11vw | lg:text-10vw | 4xl:text-8vw font-sans-primary tracking-tight text-gray-600  | dark:text-grayDark-100 leading-tighter text-balance js-heading-418135">
-                                    Let's work together.</div>
-
-                            </a>
-                        </div>
-                        <div class="px-2 | lg:px-3 | xl:px-4 inline-flex flex-shrink-0 w-auto">
-                            <a href="<?php echo BASE_URL; ?>contact/" class="inline-flex flex-shrink-0">
-                                <div
-                                    class="text-20vw | md:text-11vw | lg:text-10vw | 4xl:text-8vw font-sans-primary tracking-tight text-gray-600  | dark:text-grayDark-100 leading-tighter text-balance js-heading-418135">
-                                    Let's work together.</div>
-
-                            </a>
-                        </div>
-                        <div class="px-2 | lg:px-3 | xl:px-4 inline-flex flex-shrink-0 w-auto"
-                            style="margin-right: -299.7px;">
-                            <a href="<?php echo BASE_URL; ?>contact/" class="inline-flex flex-shrink-0">
-                                <div
-                                    class="text-20vw | md:text-11vw | lg:text-10vw | 4xl:text-8vw font-sans-primary tracking-tight text-gray-600  | dark:text-grayDark-100 leading-tighter text-balance js-heading-418135">
-                                    Let's work together.</div>
-
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
+<!-- 
     <h2 class="text-4xl font-sans-primary text-center justify-center text-gray-600 dark:text-gray-100">
         We Expand Your Digital Presence Globally
-    </h2>
+    </h2> -->
     <div class=" w-full pb-10 px-2 | lg:p-16 max-w-full overflow-hidden">
 
         <!-- Start AndySlider.com BODY section -->
@@ -866,10 +805,7 @@ usort($menuListItems, function ($a, $b) {
             </div>
         </div>
     </div>
-
-
-
-    <section
+    <!-- <section
         class="elementor-section elementor-top-section elementor-element elementor-element-c189273 elementor-section-full_width elementor-section-height-default snipcss0-0-0-1 snipcss-GPk2D"
         data-id="c189273" data-element_type="section" id="one-stop-wrapper"
         data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
@@ -882,7 +818,6 @@ usort($menuListItems, function ($a, $b) {
                         <div class="elementor-widget-container snipcss0-5-5-6">
                             <div class="digital-transformation-heading snipcss0-6-6-7 text-gray-600 dark:text-gray-100"
                                 data-aos="fade-up" data-aos-duration="800">
-                                <!-- <h3 class="snipcss0-7-7-8">Your One-Stop Digital </h3> -->
                                 <h3 class="text-gray-600 dark:text-gray-100">Case Studies</h3>
                             </div>
                             <div class="partner-tiles snipcss0-6-6-10">
@@ -964,7 +899,68 @@ usort($menuListItems, function ($a, $b) {
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
+    <div x-data="ticker" x-init="carousels(418135, 0.3)" class="w-full overflow-hidden" style="margin-top: 3rem;">
+        <div class="w-full pb-20 | lg:pb-24 | 2xl:pb-32 | 4xl:pb-40">
+            <div class="px-0">
+                <div class="w-full || js-cursor-trigger-drag">
+                    <div class="w-full flex  || js-carousel-418135">
+                        <div class="px-2 | lg:px-3 | xl:px-4 inline-flex flex-shrink-0 w-auto"
+                            style="margin-left: -350.7px;">
+                            <a href="<?php echo BASE_URL; ?>contact/" class="inline-flex flex-shrink-0">
+                                <div
+                                    class="text-14vw | md:text-8vw | lg:text-7vw | 4xl:text-6vw font-sans-primary tracking-tight text-gray-600  | dark:text-grayDark-100 leading-tighter text-balance js-heading-418135">
+                                    Let's work together.</div>
+                            </a>
+                        </div>
+                        <div class="px-2 | lg:px-3 | xl:px-4 inline-flex flex-shrink-0 w-auto">
+                            <a href="<?php echo BASE_URL; ?>contact/" class="inline-flex flex-shrink-0">
+                                <div
+                                    class="text-14vw | md:text-8vw | lg:text-7vw | 4xl:text-6vw font-sans-primary tracking-tight text-gray-600  | dark:text-grayDark-100 leading-tighter text-balance js-heading-418135">
+                                    Let's work together.</div>
+
+                            </a>
+                        </div>
+                        <div class="px-2 | lg:px-3 | xl:px-4 inline-flex flex-shrink-0 w-auto">
+                            <a href="<?php echo BASE_URL; ?>contact/" class="inline-flex flex-shrink-0">
+                                <div
+                                    class="text-14vw | md:text-8vw | lg:text-7vw | 4xl:text-6vw font-sans-primary tracking-tight text-gray-600  | dark:text-grayDark-100 leading-tighter text-balance js-heading-418135">
+                                    Let's work together.</div>
+
+                            </a>
+                        </div>
+                    </div>
+                    <div class="w-full flex justify-end || js-carousel-418135">
+                        <div class="px-2 | lg:px-3 | xl:px-4 inline-flex flex-shrink-0 w-auto">
+                            <a href="<?php echo BASE_URL; ?>contact/" class="inline-flex flex-shrink-0">
+                                <div
+                                    class="text-14vw | md:text-8vw | lg:text-7vw | 4xl:text-6vw font-sans-primary tracking-tight text-gray-600  | dark:text-grayDark-100 leading-tighter text-balance js-heading-418135">
+                                    Let's work together.</div>
+
+                            </a>
+                        </div>
+                        <div class="px-2 | lg:px-3 | xl:px-4 inline-flex flex-shrink-0 w-auto">
+                            <a href="<?php echo BASE_URL; ?>contact/" class="inline-flex flex-shrink-0">
+                                <div
+                                    class="text-14vw | md:text-8vw | lg:text-7vw | 4xl:text-6vw font-sans-primary tracking-tight text-gray-600  | dark:text-grayDark-100 leading-tighter text-balance js-heading-418135">
+                                    Let's work together.</div>
+
+                            </a>
+                        </div>
+                        <div class="px-2 | lg:px-3 | xl:px-4 inline-flex flex-shrink-0 w-auto"
+                            style="margin-right: -299.7px;">
+                            <a href="<?php echo BASE_URL; ?>contact/" class="inline-flex flex-shrink-0">
+                                <div
+                                    class="text-14vw | md:text-8vw | lg:text-7vw | 4xl:text-6vw font-sans-primary tracking-tight text-gray-600  | dark:text-grayDark-100 leading-tighter text-balance js-heading-418135">
+                                    Let's work together.</div>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
     <?php include './elements/footer.php'; ?>
     </script>

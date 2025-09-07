@@ -246,83 +246,14 @@ $employeeList = [
                                             <source type="image/webp"
                                                 srcset="<?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143487&amp;s=19b949fe09dfe3e0161a0a345a83f057 400w, <?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=800&amp;h=800&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143487&amp;s=083c410dd6a37b3a508401c79979d435 800w"
                                                 sizes="100vw">
-<<<<<<< Updated upstream
                                             <img src="<?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143487&amp;s=19b949fe09dfe3e0161a0a345a83f057"
                                                 srcset="<?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=400&amp;h=400&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143487&amp;s=3999d2aa676d2e2e3a05f639e37652ff 400w, <?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=800&amp;h=800&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143487&amp;s=6d1b202ff3a48ce53ba59977efcc2626 800w"
                                                 sizes="100vw" alt="Shape April 2022 HR 208"
-=======
-                                            <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/People-in-Studio/Shape-April-2022-HR-208.jpg?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143487&amp;s=19b949fe09dfe3e0161a0a345a83f057"
-                                                srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/People-in-Studio/Shape-April-2022-HR-208.jpg?w=400&amp;h=400&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143487&amp;s=3999d2aa676d2e2e3a05f639e37652ff 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/People-in-Studio/Shape-April-2022-HR-208.jpg?w=800&amp;h=800&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143487&amp;s=6d1b202ff3a48ce53ba59977efcc2626 800w"
-                                                sizes="100vw" alt="Scalify April 2022 HR 208"
->>>>>>> Stashed changes
                                                 class="w-full  w-full h-full object-cover absolute top-0 left-0  rounded-2xl transform-gpu bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl"
                                                 width="800" height="800">
                                         </picture>
                                     </div>
                                 </div>
-<<<<<<< Updated upstream
-=======
-                                <div class="absolute top-0 left-1/2 h-1/2 origin-bottom-left w-40vw || js-arched-image-419251-mobile"
-                                    data-index="5">
-                                    <div class="relative overflow-hidden w-full" style="padding-top: 100%;">
-                                        <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                            <source type="image/webp"
-                                                srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/MadeByShape-Studio/Shape-2018-LR-169_200119_175819.jpg?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604326504&amp;s=bf17266e2762cabc752c1a107cfd715b 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/MadeByShape-Studio/Shape-2018-LR-169_200119_175819.jpg?w=800&amp;h=800&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604326504&amp;s=ecfafac1363d4dc0f34f36fdea6a88d3 800w"
-                                                sizes="100vw">
-                                            <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/MadeByShape-Studio/Shape-2018-LR-169_200119_175819.jpg?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604326504&amp;s=bf17266e2762cabc752c1a107cfd715b"
-                                                srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/MadeByShape-Studio/Shape-2018-LR-169_200119_175819.jpg?w=400&amp;h=400&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604326504&amp;s=1bd00db44f89e71c39091579ba96322d 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/MadeByShape-Studio/Shape-2018-LR-169_200119_175819.jpg?w=800&amp;h=800&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604326504&amp;s=bab246e9dd834bf1f59ae266cd40dd7a 800w"
-                                                sizes="100vw" alt="Tom on the laptop in the Scalify office"
-                                                class="w-full  w-full h-full object-cover absolute top-0 left-0  rounded-2xl transform-gpu bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl"
-                                                width="800" height="800">
-                                        </picture>
-                                    </div>
-                                </div>
-                                <div class="absolute top-0 left-1/2 h-1/2 origin-bottom-left w-40vw || js-arched-image-419251-mobile"
-                                    data-index="6">
-                                    <div class="relative overflow-hidden w-full" style="padding-top: 100%;">
-                                        <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                            <source type="image/webp"
-                                                srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/Individuals-Black-Wall/Shape-April-2022-HR-101.jpg?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143071&amp;s=3a162be72d42e6e50308ae56a152957e 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/Individuals-Black-Wall/Shape-April-2022-HR-101.jpg?w=800&amp;h=800&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143071&amp;s=00dd25bfb79d75bd6eaf42228484484f 800w"
-                                                sizes="100vw">
-                                            <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/Individuals-Black-Wall/Shape-April-2022-HR-101.jpg?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143071&amp;s=3a162be72d42e6e50308ae56a152957e"
-                                                srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/Individuals-Black-Wall/Shape-April-2022-HR-101.jpg?w=400&amp;h=400&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143071&amp;s=fd1ecec79935bea0e772846c74dda7ad 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/Individuals-Black-Wall/Shape-April-2022-HR-101.jpg?w=800&amp;h=800&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143071&amp;s=aad441cbee1ad44e0cad1996af707e94 800w"
-                                                sizes="100vw" alt="Scalify April 2022 HR 101"
-                                                class="w-full  w-full h-full object-cover absolute top-0 left-0  rounded-2xl transform-gpu bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl"
-                                                width="800" height="800">
-                                        </picture>
-                                    </div>
-                                </div>
-                                <div class="absolute top-0 left-1/2 h-1/2 origin-bottom-left w-40vw || js-arched-image-419251-mobile"
-                                    data-index="7">
-                                    <div class="relative overflow-hidden w-full" style="padding-top: 100%;">
-                                        <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                            <source type="image/webp"
-                                                srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/Chillout-Area/Shape-April-2022-HR-175.jpg?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1706011832&amp;s=e19014f3eb901418311caf1ce06e12c5 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/Chillout-Area/Shape-April-2022-HR-175.jpg?w=800&amp;h=800&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1706011832&amp;s=f9d4bc6e87af0f0dc0e3dac3313b1471 800w"
-                                                sizes="100vw">
-                                            <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/Chillout-Area/Shape-April-2022-HR-175.jpg?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1706011832&amp;s=e19014f3eb901418311caf1ce06e12c5"
-                                                srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/Chillout-Area/Shape-April-2022-HR-175.jpg?w=400&amp;h=400&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1706011832&amp;s=10d4106f7d0b7087a8cac102ae91b71b 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/Chillout-Area/Shape-April-2022-HR-175.jpg?w=800&amp;h=800&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1706011832&amp;s=72da9c38f8865f3391bca32f64e34eed 800w"
-                                                sizes="100vw" alt="Scalify April 2022 HR 175"
-                                                class="w-full  w-full h-full object-cover absolute top-0 left-0  rounded-2xl transform-gpu bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl"
-                                                width="800" height="800">
-                                        </picture>
-                                    </div>
-                                </div>
-                                <div class="absolute top-0 left-1/2 h-1/2 origin-bottom-left w-40vw || js-arched-image-419251-mobile"
-                                    data-index="8">
-                                    <div class="relative overflow-hidden w-full" style="padding-top: 100%;">
-                                        <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                            <source type="image/webp"
-                                                srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/People-in-Studio/Shape-April-2022-HR-215.jpg?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143498&amp;s=2b69f2b4d69766ef9557bfde462cb117 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/People-in-Studio/Shape-April-2022-HR-215.jpg?w=800&amp;h=800&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143498&amp;s=d9d35528c208fe72345f7718d22e3882 800w"
-                                                sizes="100vw">
-                                            <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/People-in-Studio/Shape-April-2022-HR-215.jpg?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143498&amp;s=2b69f2b4d69766ef9557bfde462cb117"
-                                                srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/People-in-Studio/Shape-April-2022-HR-215.jpg?w=400&amp;h=400&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143498&amp;s=e16d9f97faa966598a2b255aaff25bfe 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/People-in-Studio/Shape-April-2022-HR-215.jpg?w=800&amp;h=800&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143498&amp;s=5db7424f83e52cb4e7d0d93a3f680672 800w"
-                                                sizes="100vw" alt="Shape April 2022 HR 215"
-                                                class="w-full  w-full h-full object-cover absolute top-0 left-0  rounded-2xl transform-gpu bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl"
-                                                width="800" height="800">
-                                        </picture>
-                                    </div>
-                                </div>
->>>>>>> Stashed changes
                             </div>
                         </div>
                     </div>
@@ -1035,7 +966,7 @@ bg-primary-600 text-gray-600 py-2 px-5">
                                         class="w-full h-full absolute top-0 left-0 object-cover object-center || js-video js-video-312636"
                                         x-bind:class="{'js-video-volumn-on': !muted,'js-video-playing': playing,}">
                                         <source
-                                            src="<?php echo BASE_URL . "assets/videos/In5 Dubai - Integra Works.mp4"; ?>"
+                                            src="<?php echo BASE_URL . "assets/videos/git - Integra Works.mp4"; ?>"
                                             type="video/mp4">
                                     </video></div>
                                 <div
@@ -2533,6 +2464,7 @@ bg-primary-600 text-gray-600 py-2 px-5">
                 </div>
             </div>
         </div>
+        <!-- kkl -->
         <div id="428063"></div>
         <div x-data="modal428063" x-init="setupModal('428063')" x-on:keydown.escape.window=closeModal('428063')
             @component-modal.window="visible = false; if ($event.detail.visible == '428063') visible = '428063'"
@@ -2552,12 +2484,9 @@ bg-primary-600 text-gray-600 py-2 px-5">
                     <div class="w-full flex justify-center">
                         <div class="w-15/16 relative rounded-2xl overflow-hidden group | lg:rounded-3xl">
                             <div class="w-full aspect-ratio-16/9 rounded-2xl overflow-hidden relative | lg:rounded-3xl">
-                                <iframe
-                                    src="https://player.vimeo.com/video/1116586175?autoplay=0&loop=1&autopause=0&mute=1&controls=0"
-                                    class="w-full h-full absolute top-0 left-0 || js-modal-video js-modal-video-428063"
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
+                                <video class="w-full h-full absolute top-0 left-0 object-cover object-center || js-modal-video js-modal-video-428063" autoplay muted loop playsinline controlslist="nodownload nofullscreen noremoteplayback">
+                                    <source src="<?php echo BASE_URL . 'assets/videos/In5 Dubai - Integra Works.mp4'; ?>" type="video/mp4">
+                                </video>
                             </div>
                             <div class="absolute top-0 left-0 w-full h-full z-20 || js-cursor-trigger-drag"
                                 data-icon="xmark" x-on:click.prevent="closeModal('428063')"></div>
@@ -4085,10 +4014,10 @@ sm:max-w-sm | lg:max-w-none
                                 class="w-full h-full rounded-2xl transform-gpu overflow-hidden absolute top-0 left-0 bg-gray-50 | dark:bg-grayDark-500 | lg:rounded-3xl">
                                 <picture>
                                     <source type="image/webp"
-                                        srcset="<?php echo BASE_URL . 'assets/images/WhatsApp Image 2025-09-07 at 23.49.52.jpeg'; ?>?w=400&amp;h=300&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143449&amp;s=140822e688c006ab145e4d32aa5097a5 400w, <?php echo BASE_URL . 'assets/images/WhatsApp Image 2025-09-07 at 23.49.52.jpeg'; ?>?w=800&amp;h=600&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143449&amp;s=c938c2596f87cc0dc499f2dbcf1438b9 800w, <?php echo BASE_URL . 'assets/images/WhatsApp Image 2025-09-07 at 23.49.52.jpeg'; ?>?w=1200&amp;h=900&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143449&amp;s=411b4c6b25daf8dce6a23d707aa21458 1200w"
+                                        srcset="<?php echo BASE_URL . 'assets/images/work_culture.jpeg'; ?>?w=400&amp;h=300&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143449&amp;s=140822e688c006ab145e4d32aa5097a5 400w, <?php echo BASE_URL . 'assets/images/work_culture.jpeg'; ?>?w=800&amp;h=600&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143449&amp;s=c938c2596f87cc0dc499f2dbcf1438b9 800w, <?php echo BASE_URL . 'assets/images/work_culture.jpeg'; ?>?w=1200&amp;h=900&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143449&amp;s=411b4c6b25daf8dce6a23d707aa21458 1200w"
                                         sizes="100vw">
-                                    <img src="<?php echo BASE_URL . 'assets/images/WhatsApp Image 2025-09-07 at 23.49.52.jpeg'; ?>?w=400&amp;h=300&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143449&amp;s=140822e688c006ab145e4d32aa5097a5"
-                                        srcset="<?php echo BASE_URL . 'assets/images/WhatsApp Image 2025-09-07 at 23.49.52.jpeg'; ?>?w=400&amp;h=300&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143449&amp;s=f9fc8ed3820083e6745a5e2ad8dcc4df 400w, <?php echo BASE_URL . 'assets/images/WhatsApp Image 2025-09-07 at 23.49.52.jpeg'; ?>?w=800&amp;h=600&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143449&amp;s=2f5c29358bb8de66d802ee9af5343cda 800w, <?php echo BASE_URL . 'assets/images/WhatsApp Image 2025-09-07 at 23.49.52.jpeg'; ?>?w=1200&amp;h=900&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143449&amp;s=041f41cc22c90891d62f6383e6330ce5 1200w"
+                                    <img src="<?php echo BASE_URL . 'assets/images/work_culture.jpeg'; ?>?w=400&amp;h=300&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143449&amp;s=140822e688c006ab145e4d32aa5097a5"
+                                        srcset="<?php echo BASE_URL . 'assets/images/work_culture.jpeg'; ?>?w=400&amp;h=300&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143449&amp;s=f9fc8ed3820083e6745a5e2ad8dcc4df 400w, <?php echo BASE_URL . 'assets/images/work_culture.jpeg'; ?>?w=800&amp;h=600&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143449&amp;s=2f5c29358bb8de66d802ee9af5343cda 800w, <?php echo BASE_URL . 'assets/images/work_culture.jpeg'; ?>?w=1200&amp;h=900&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143449&amp;s=041f41cc22c90891d62f6383e6330ce5 1200w"
                                         sizes="100vw" alt="Shape April 2022 HR 48"
                                         class=" w-full   object-cover absolute top-0 left-0 w-full h-full"
                                         loading="lazy" width="1200" height="900">
@@ -4112,7 +4041,7 @@ font-sans-primary tracking-tight
 text-gray-600  | dark:text-grayDark-100
 leading-none
 text-balance
-">We’ve created an space where everyone feels at ease, open to share, and can have fun along the way.</h2>
+">We’ve created an space where everyone feels comfortable, open to share, and can have fun along the way.</h2>
                             </div>
                             <div class="w-full relative ">
                                 <p
