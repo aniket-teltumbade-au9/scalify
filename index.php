@@ -3,7 +3,9 @@
 <?php include './elements/info.php'; ?>
 
 <?php
-$logos = ["amitmarine.png", "Atto.webp", "capt-zack.jpg", "cynestx.avif", "fastmarineboat.jpg", "fitwearz.svg", "fortune-first.png", "host-theatre.svg", "mercury-marine.svg", "modish_ombre.jpg", "pitchmatter.svg"];
+// Use glob() with a wildcard to match all files and directories
+$logos = glob('assets/images/customer-list/*');
+
 $n = count($logos);
 $locations = [
     (object) [
@@ -547,7 +549,7 @@ usort($menuListItems, function ($a, $b) {
                         <h2
                             class="text-1xl | md:text-4vw | xl:text-3vw font-sans-primary tracking-tight text-gray-600  | dark:text-grayDark-100 leading-none text-balance lg:indent-48 ">
                             <p>Your competition is sharper, faster, and hungrier. Are you?
-Our Dream. Build. Scale. framework is how you stay dangerous and stay ahead.</p>
+                                Our Dream. Build. Scale. framework is how you stay dangerous and stay ahead.</p>
                         </h2>
                         <div class="flex flex-wrap">
                             <div class="mr-5 mb-3 w-auto | lg:mr-8">
@@ -653,7 +655,7 @@ Our Dream. Build. Scale. framework is how you stay dangerous and stay ahead.</p>
                     </div>
                 </div>
 
-                <div class="mx-auto relative w-full | xl:w-15/16" style="--blur: 1; --blurs: 5; max-height: 100px;;">
+                <div class="mx-auto relative w-full | xl:w-15/16" style="--blur: 1; --blurs: 5; max-height: 200px;;">
                     <div class="blur blur--left">
                         <div class="" style="--index: 0"></div>
                         <div class="" style="--index: 1"></div>
@@ -677,8 +679,8 @@ Our Dream. Build. Scale. framework is how you stay dangerous and stay ahead.</p>
                                 data-swiper-slide-index="<?php echo $n - 4 - $index; ?>" style="width: 356.5px;">
                                 <div class="w-full flex justify-center items-center || js-logo-28">
                                     <div class="relative py-5">
-                                        <img src="<?php echo BASE_URL . "assets/images/customers/" . $logo; ?>"
-                                            class="w-32 h-10 | lg:w-36 lg:h-14" />
+                                        <img src="<?php echo BASE_URL . $logo; ?>"
+                                            class="w-176 h-40 | lg:w-144 lg:h-50" />
                                     </div>
                                 </div>
                             </div>
@@ -688,8 +690,8 @@ Our Dream. Build. Scale. framework is how you stay dangerous and stay ahead.</p>
                                 data-swiper-slide-index="<?php echo $index; ?>" style="width: 356.5px;">
                                 <div class="w-full flex justify-center items-center || js-logo-28">
                                     <div class="relative py-5">
-                                        <img src="<?php echo BASE_URL . "assets/images/customers/" . $logo; ?>"
-                                            class="w-32 h-10 | lg:w-36 lg:h-14" />
+                                        <img src="<?php echo BASE_URL . $logo; ?>"
+                                            class="w-176 h-40 | lg:w-144 lg:h-50" />
 
                                     </div>
                                 </div>
@@ -701,8 +703,8 @@ Our Dream. Build. Scale. framework is how you stay dangerous and stay ahead.</p>
                                 data-swiper-slide-index="<?php echo $index; ?>" style="width: 356.5px;">
                                 <div class="w-full flex justify-center items-center || js-logo-28">
                                     <div class="relative py-5">
-                                        <img src="<?php echo BASE_URL . "assets/images/customers/" . $logo; ?>"
-                                            class="w-32 h-10 | lg:w-36 lg:h-14" />
+                                        <img src="<?php echo BASE_URL . $logo; ?>"
+                                            class="w-176 h-40 | lg:w-144 lg:h-50" />
                                     </div>
                                 </div>
                             </div>

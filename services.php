@@ -360,7 +360,7 @@ include './elements/footer.php';
             },
             "name": "Scalify",
             "priceRange": "$$",
-            "sameAs": ["https://www.linkedin.com/company/madebyScalify/mycompany/",
+            "sameAs": ["https://www.linkedin.com/company/scalifyuae/mycompany",
                 "https://twitter.com/madebyScalify", "https://github.com/madebyScalify/",
                 "https://instagram.com/madebyScalify", "https://www.behance.net/madebyScalify"
             ],

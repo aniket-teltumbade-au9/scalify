@@ -446,55 +446,16 @@
                                 <div class="flex-1">
                                     <div class="text-gray-400 font-light mb-2 | dark:text-grayDark-100">
                                         Follow us</div>
-                                    <div class="flex items-center space-x-1.5"><a
-                                            href="https://www.youtube.com/c/scalify" target="_blank" rel="noreferrer"
+                                    <div class="flex items-center space-x-1.5">
+                                        <?php foreach ($socialLinksLogos as $social): ?>
+
+                                        <a href="<?php echo $social["url"]; ?>" target="_blank" rel="noreferrer"
                                             class="inline-flex items-center justify-center bg-primary-600 text-gray-600 translate-z-0 rounded-full w-8 h-8 duration-400 | xl:hover:bg-gray-600 xl:hover:text-white | lg:dark:hover:bg-grayDark-400">
                                             <div class="sr-only">
                                                 Scalify</div>
-                                            <svg class="w-3.5 h-3.5 fill-current" xmlns="http://www.w3.org/2000/svg"
-                                                width="16" height="16" fill="currentColor" class="bi bi-youtube"
-                                                viewBox="0 0 16 16">
-                                                <path
-                                                    d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.104-.022.26-.01.104c-.048.519-.119 1.022-.22 1.402a2.01 2.01 0 0 1-1.415 1.42c-1.123.302-5.32                                             .333-6.11.335h-.089c-.822-.003-4.987-.033-6.11-.335a2.01 2.01 0 0 1-1.415-1.42c-.101-.38-.172-.883-.22-1.402l-.01-.104-.022-.26-.008-.104c-.065-.914-.073-1.77-.074-1.957v-.075c.001-.194.01-1.108.082-2.06l.008-.104.022-.26.01-.104c.048-.519.119-1.022.22-1.402a2.01 2.01 0 0 1 1.415-1.42c1.123-.302 5.32-.333 6.11-.335zM8 10.5V5.5L13 8l-5 2.5z" />
-                                            </svg>
+                                            <?php echo $social["icon"]('w-3.5 h-3.5 fill-current'); ?>
                                         </a>
-                                        <a href="https://twitter.com/scalify" target="_blank" rel="noreferrer"
-                                            class="inline-flex items-center justify-center bg-primary-600 text-gray-600 translate-z-0 rounded-full w-8 h-8 duration-400 | xl:hover:bg-gray-600 xl:hover:text-white | lg:dark:hover:bg-grayDark-400">
-                                            <div class="sr-only">
-                                                Scalify</div>
-                                            <svg class="w-3.5 h-3.5 fill-current" xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 512 512">
-                                                <path
-                                                    d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9L389.2 48zm-24.8 373.8h39.1L151.1 88h-42l255.3 333.8z" />
-                                            </svg>
-                                        </a>
-                                        <a href="https://www.instagram.com/scalify.uae/" target="_blank"
-                                            rel="noreferrer"
-                                            class="inline-flex items-center justify-center bg-primary-600 text-gray-600 translate-z-0 rounded-full w-8 h-8 duration-400 | xl:hover:bg-gray-600 xl:hover:text-white | lg:dark:hover:bg-grayDark-400">
-                                            <div class="sr-only">
-                                                Scalify</div>
-                                            <svg class="w-3.5 h-3.5 fill-current" xmlns="http://www.w3.org/2000/svg"
-                                                width="16" height="16" fill="currentColor" class="bi bi-instagram"
-                                                viewBox="0 0 16 16">
-                                                <path
-                                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.206.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.991 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.298a3.9 3.9 0 0 0-.372-1.943 3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.173 0 8 0zm0 1.5a6.5 6.5 0 1 1 0 13 6.5 6.5 0 0 1 0-13z" />
-                                                <path
-                                                    d="M12.915 2.502a1.499 1.499 0 0 1 2.455 1.703l-1.925 1.637A4.5 4.5 0 0 0 8 10.5a4.5 4.5 0 0 0-3.445 1.638L2.63 9.471a4.502 4.502 0 0 0 1.464-1.127l.006-.006a4.5 4.5 0 0 0 1.13-1.465l1.638-1.925A1.499 1.499 0 0 1 12.915 2.502zM8 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8z" />
-                                                <circle cx="8" cy="8" r="3.25" />
-                                                <circle cx="12.915" cy="3.25" r="1.25" />
-                                            </svg>
-                                        </a>
-                                        <a href="https://www.facebook.com/scalifyuae" target="_blank" rel="noreferrer"
-                                            class="inline-flex items-center justify-center bg-primary-600 text-gray-600 translate-z-0 rounded-full w-8 h-8 duration-400 | xl:hover:bg-gray-600 xl:hover:text-white | lg:dark:hover:bg-grayDark-400">
-                                            <div class="sr-only">
-                                                Scalify</div>
-                                            <svg class="w-3.5 h-3.5 fill-current" xmlns="http://www.w3.org/2000/svg"
-                                                width="16" height="16" fill="currentColor" class="bi bi-facebook"
-                                                viewBox="0 0 16 16">
-                                                <path
-                                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                                            </svg>
-                                        </a>
+                                        <?php endforeach; ?>
                                     </div>
                                 </div>
                             </div>
@@ -978,7 +939,7 @@
 
     <?php include './elements/footer.php'; ?>
 
-    <script type="application/ld+json">
+    <!-- <script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@graph": [{
@@ -1105,7 +1066,7 @@
             "name": "Breadcrumbs"
         }]
     }
-    </script>
+    </script> -->
     <script src="https://madebyshape.co.uk/freeform/plugin.js?v=12f0405efbbc6fa07563112b0f3f4e8e74702bfc"></script>
     <script src="https://player.vimeo.com/api/player.js"></script>
     <script>

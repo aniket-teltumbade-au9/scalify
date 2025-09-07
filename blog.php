@@ -3,7 +3,7 @@ $accessToken = 'uH_05VRef-F_PjhW2BZ-R1mxhYrIMwZHuqZled_rl9Y';
 $spaceId = 'z0gmr7sfomjq';
 $contentTypeId = 'blogPage';
 $slug = $_GET['slug'];
-
+$encodedUrl = urlencode(BASE_URL . 'blogs/' . $slug);
 $url = "https://cdn.contentful.com/spaces/$spaceId/environments/master/entries?&limit=1&content_type=$contentTypeId&fields.slug[match]={$slug}&include=1&select=sys.id,fields.title,fields.body,fields.readDuration,fields.slug,fields.image,fields.author";
 
 $ch = curl_init();
@@ -327,10 +327,10 @@ if (isset($value)) {?>
                             Share</div>
                         <div class="inline-flex flex-col items-start space-y-1.5">
                             <div class="" x-data="shareLink">
-                                <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fmadebyshape.co.uk%2Fweb-design-blog%2Fdesigning-research-portals-how-to-make-academic-content-more-accessible%2F%3Ftoken%3DkVDjDfrz9l7IokykLQO3Lw72q2D0wHhH&amp;title=Designing Research Portals: How to Make Academic Content More Accessible"
+                                <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=<?php echo $encodedUrl; ?>&amp;title=Designing Research Portals: How to Make Academic Content More Accessible"
                                     target="_blank" rel="noopener noreferrer"
                                     class="inline-flex items-center justify-center bg-primary-600 text-gray-600 translate-z-0 rounded-full w-8 h-8 duration-400 | xl:hover:bg-gray-600 xl:hover:text-white | lg:dark:hover:bg-grayDark-400"
-                                    onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fmadebyshape.co.uk%2Fweb-design-blog%2Fdesigning-research-portals-how-to-make-academic-content-more-accessible%2F%3Ftoken%3DkVDjDfrz9l7IokykLQO3Lw72q2D0wHhH&amp;title=Designing Research Portals: How to Make Academic Content More Accessible', 'Share', 'width=600,height=400')">
+                                    onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&amp;url=<?php echo $encodedUrl; ?>&amp;title=Designing Research Portals: How to Make Academic Content More Accessible', 'Share', 'width=600,height=400')">
                                     <div class="sr-only">
                                         Share on LinkedIn</div><svg class="w-3.5 h-3.5 fill-current"
                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -341,10 +341,10 @@ if (isset($value)) {?>
                                 </a>
                             </div>
                             <div class="" x-data="shareLink">
-                                <a href="https://twitter.com/intent/tweet?text=Designing Research Portals: How to Make Academic Content More Accessible - https%3A%2F%2Fmadebyshape.co.uk%2Fweb-design-blog%2Fdesigning-research-portals-how-to-make-academic-content-more-accessible%2F%3Ftoken%3DkVDjDfrz9l7IokykLQO3Lw72q2D0wHhH"
+                                <a href="https://twitter.com/intent/tweet?text=Scalify Blog - <?php echo $encodedUrl; ?>%2F%3Ftoken%3DkVDjDfrz9l7IokykLQO3Lw72q2D0wHhH"
                                     target="_blank" rel="noopener noreferrer"
                                     class="inline-flex items-center justify-center bg-primary-600 text-gray-600 translate-z-0 rounded-full w-8 h-8 duration-400 | xl:hover:bg-gray-600 xl:hover:text-white | lg:dark:hover:bg-grayDark-400"
-                                    onclick="window.open('https://twitter.com/intent/tweet?text=Designing Research Portals: How to Make Academic Content More Accessible - https%3A%2F%2Fmadebyshape.co.uk%2Fweb-design-blog%2Fdesigning-research-portals-how-to-make-academic-content-more-accessible%2F%3Ftoken%3DkVDjDfrz9l7IokykLQO3Lw72q2D0wHhH', 'Share', 'width=600,height=400')">
+                                    onclick="window.open('https://twitter.com/intent/tweet?text=Scalify Blog - <?php echo $encodedUrl; ?>%2F%3Ftoken%3DkVDjDfrz9l7IokykLQO3Lw72q2D0wHhH', 'Share', 'width=600,height=400')">
                                     <div class="sr-only">
                                         Share on Twitter</div><svg class="w-3.5 h-3.5 fill-current"
                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -355,10 +355,10 @@ if (isset($value)) {?>
                                 </a>
                             </div>
                             <div class="" x-data="shareLink">
-                                <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmadebyshape.co.uk%2Fweb-design-blog%2Fdesigning-research-portals-how-to-make-academic-content-more-accessible%2F%3Ftoken%3DkVDjDfrz9l7IokykLQO3Lw72q2D0wHhH"
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $encodedUrl; ?>%2F%3Ftoken%3DkVDjDfrz9l7IokykLQO3Lw72q2D0wHhH"
                                     target="_blank" rel="noopener noreferrer"
                                     class="inline-flex items-center justify-center bg-primary-600 text-gray-600 translate-z-0 rounded-full w-8 h-8 duration-400 | xl:hover:bg-gray-600 xl:hover:text-white | lg:dark:hover:bg-grayDark-400"
-                                    onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmadebyshape.co.uk%2Fweb-design-blog%2Fdesigning-research-portals-how-to-make-academic-content-more-accessible%2F%3Ftoken%3DkVDjDfrz9l7IokykLQO3Lw72q2D0wHhH', 'Share', 'width=600,height=400')">
+                                    onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=<?php echo $encodedUrl; ?>%2F%3Ftoken%3DkVDjDfrz9l7IokykLQO3Lw72q2D0wHhH', 'Share', 'width=600,height=400')">
                                     <div class="sr-only">
                                         Share on Facebook</div><svg class="w-3.5 h-3.5 fill-current"
                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">

@@ -15,7 +15,8 @@ RewriteCond %{REQUEST_URI} \.(css|js|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|eot
 RewriteRule ^ - [L]
 
 # Services rewrite rule
-RewriteRule ^services/([^/]+)/?$ services.php?service=$1 [L,QSA]
+RewriteRule ^services/([^/]+)/([^/]+)/?$ services.php?category=$1&service=$2 [L,QSA]
+RewriteRule ^services/([^/]+)/?$ services.php?category=$1 [L,QSA]
 
 # Blogs rewrite rule
 RewriteRule ^blogs/([^/]+)/?$ blogs.php?slug=$1 [L,QSA]
