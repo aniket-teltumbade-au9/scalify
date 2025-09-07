@@ -891,7 +891,7 @@ bg-primary-600 text-gray-600 py-2 px-5">
                     </div>
                     <div class="px-2 | lg:px-3 | xl:px-4 w-full | lg:w-7/16">
                         <div class="w-full relative  xl:pr-10">
-                            <p
+                            <!-- <p
                                 class="text-base | xl:text-md text-gray-600 dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7  mb-6">
                                 We are an Award-Winning <a href="/branding/" target="_blank" rel="noreferrer noopener"
                                     class="underline duration-500 bg-transparent rounded-md py-0.5 px-1 | bg-gray-50 xl:hover:bg-primary-600 dark:bg-grayDark-400 dark:text-grayDark-100 xl:dark:hover:bg-primary-600 xl:dark:hover:text-grayDark-600">Branding</a>
@@ -918,7 +918,12 @@ bg-primary-600 text-gray-600 py-2 px-5">
                                     href="https://madebyshape.co.uk/craft-cms/" target="_blank"
                                     rel="noreferrer noopener"
                                     class="underline duration-500 bg-transparent rounded-md py-0.5 px-1 | bg-gray-50 xl:hover:bg-primary-600 dark:bg-grayDark-400 dark:text-grayDark-100 xl:dark:hover:bg-primary-600 xl:dark:hover:text-grayDark-600">Craft
-                                    CMS</a>.</p>
+                                    CMS</a>.
+                            </p> -->
+                            <p  class="text-base | xl:text-md text-gray-600 dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7  mb-6">
+                                Our team is a unique fusion of high-level e-commerce operations and luxury brand strategy. This allows us to offer a platform built not on theory, but on deep, real-world insights from scaling major global brands.
+                                We empower businesses of all sizes, from visionary start-ups making their first sale to market leaders managing complex operations. Our goal is to provide a single, unified platform that adapts to your unique challenges and becomes your engine for growth.
+                            </p>
                         </div>
                     </div>
                 </div>

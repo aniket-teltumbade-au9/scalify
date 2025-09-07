@@ -395,13 +395,13 @@ usort($menuListItems, function ($a, $b) {
                                     <span
                                         class="flex-shrink-0 truncate inline relative pl-3 | lg:pl-5 || js-cross-browser"
                                         style="z-index: 1">
-                                        eCommerce Brand&#160;&#160;<br>
+                                        Brand Globally&#160;&#160;<br>
                                     </span>
-                                    <span
+                                    <!-- <span
                                         class="flex-shrink-0 truncate inline relative pl-3 | lg:pl-5 || js-cross-browser"
                                         style="z-index: 0">
-                                        in the UAE & GCC&#160;&#160;<br>
-                                    </span>
+                                        globally&#160;&#160;<br>
+                                    </span> -->
                                 </h1>
                                 <svg width="0" height="0" class="absolute hidden" color-interpolation-filters="sRGB">
                                     <defs>
@@ -546,13 +546,8 @@ usort($menuListItems, function ($a, $b) {
                     <div class="px-2 | lg:px-3 | xl:px-4 flex flex-col items-start space-y-8 w-full | lg:w-11/16">
                         <h2
                             class="text-1xl | md:text-4vw | xl:text-3vw font-sans-primary tracking-tight text-gray-600  | dark:text-grayDark-100 leading-none text-balance lg:indent-48 ">
-                            <p>​Strategy without execution is a daydream. Execution without strategy is a nightmare.
-                                ​We are the team that lives and breathes both. As operators with a track record of
-                                scaling major brands, we provide leaders with what they actually need: a clear strategic
-                                playbook combined with the hands-on expertise to make it happen. Our Dream, Build, Scale
-                                framework is our promise a structured journey to turn your ambition into a
-                                market-defining enterprise. If you need a partner who thinks in the boardroom and
-                                executes on the ground, you've found us. </p>
+                            <p>Your competition is sharper, faster, and hungrier. Are you?
+Our Dream. Build. Scale. framework is how you stay dangerous and stay ahead.</p>
                         </h2>
                         <div class="flex flex-wrap">
                             <div class="mr-5 mb-3 w-auto | lg:mr-8">
