@@ -4,7 +4,7 @@
 
 <?php
 // Use glob() with a wildcard to match all files and directories
-$logos = glob('assets/images/customer-list/*');
+$logos = glob('assets/images/customer1/*');
 
 $n = count($logos);
 $locations = [
@@ -947,7 +947,7 @@ usort($menuListItems, function ($a, $b) {
         </div>
     </div>
 
-    <!-- 
+    <!--
     <h2 class="text-4xl font-sans-primary text-center justify-center text-gray-600 dark:text-gray-100">
         We Expand Your Digital Presence Globally
     </h2> -->
