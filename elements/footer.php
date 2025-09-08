@@ -1098,70 +1098,159 @@ document.addEventListener('alpine:init', () => {
         }
     }))
 });
+// document.addEventListener('alpine:init', () => {
+//     Alpine.data('logoCarousel', () => ({
+//         carousel(id) {
+
+//             const swiper = new Swiper(`.js-carousel-${id}`, {
+//                 slidesPerView: 2,
+//                 loop: true,
+//                 speed: 8000,
+//                 autoplay: {
+//                     delay: 0,
+//                 },
+//                 breakpoints: {
+//                     640: {
+//                         slidesPerView: 3,
+//                     },
+//                     768: {
+//                         slidesPerView: 3.5,
+//                     },
+//                     1024: {
+//                         slidesPerView: 3.5,
+//                     },
+//                     1280: {
+//                         slidesPerView: 4,
+//                     },
+//                     1400: {
+//                         slidesPerView: 4,
+//                     },
+//                     1600: {
+//                         slidesPerView: 5,
+//                     },
+//                 }
+//             });
+
+//             window.addEventListener('resize', () => {
+
+//                 clearTimeout(window.resizedFinished);
+
+//                 window.resizedFinished = setTimeout(function() {
+
+//                     swiper.update();
+//                     swiper.autoplay.start();
+
+//                 }, 50);
+
+//             });
+
+//             const logos = document.querySelectorAll(`.js-logo-${id}`);
+
+//             // ScrollTrigger.matchMedia({
+//             //     '(min-width: 1280px)': () => {
+
+//             //         gsap.to(logos, {
+//             //             scrollTrigger: {
+//             //                 trigger: logos,
+//             //                 scrub: true,
+//             //                 start: 'top 110%',
+//             //                 end: 'bottom top'
+//             //             },
+//             //             x: -200,
+//             //             ease: 'none',
+//             //         });
+
+//             //     }
+//             // });
+
+//         }
+//     }));
+// });
 document.addEventListener('alpine:init', () => {
-    Alpine.data('logoCarousel', () => ({
+    Alpine.data('logosDoubleCarousel', () => ({
         carousel(id) {
 
-            const swiper = new Swiper(`.js-carousel-${id}`, {
-                slidesPerView: 2,
-                loop: true,
-                speed: 8000,
-                autoplay: {
-                    delay: 0,
-                },
-                breakpoints: {
-                    640: {
-                        slidesPerView: 3,
-                    },
-                    768: {
-                        slidesPerView: 3.5,
-                    },
-                    1024: {
-                        slidesPerView: 3.5,
-                    },
-                    1280: {
-                        slidesPerView: 4,
-                    },
-                    1400: {
-                        slidesPerView: 4,
-                    },
-                    1600: {
-                        slidesPerView: 5,
-                    },
-                }
-            });
+            const carousels = document.querySelectorAll(`.js-carousel-${id}`);
 
-            window.addEventListener('resize', () => {
+            carousels.forEach((carousel, index) => {
 
-                clearTimeout(window.resizedFinished);
+                const swiper = new Swiper(carousel, {
+                    slidesPerView: 2,
+                    spaceBetween: 0,
+                    loop: true,
+                    allowTouchMove: false,
+                    autoplay: {
+                        delay: 0,
+                        disableOnInteraction: false,
+                        reverseDirection: index % 2 === 0 ? false : true,
+                    },
+                    speed: 10000,
+                    grabCursor: false,
+                    mousewheelControl: false,
+                    keyboardControl: false,
+                    breakpoints: {
+                        640: {
+                            slidesPerView: 3,
+                        },
+                        768: {
+                            slidesPerView: 3.5,
+                        },
+                        1024: {
+                            slidesPerView: 4,
+                        },
+                        1280: {
+                            slidesPerView: 4,
+                        },
+                        1400: {
+                            slidesPerView: 5,
+                        },
+                        2100: {
+                            slidesPerView: 6,
+                        },
+                    }
+                });
 
-                window.resizedFinished = setTimeout(function() {
+                setTimeout(() => {
 
                     swiper.update();
                     swiper.autoplay.start();
 
-                }, 50);
+                }, 1000);
+
+                window.addEventListener('resize', () => {
+
+                    clearTimeout(window.resizedFinished);
+
+                    window.resizedFinished = setTimeout(function() {
+
+                        swiper.update();
+                        swiper.autoplay.start();
+
+                    }, 50);
+
+                });
+
+                const logos = carousel.querySelectorAll(`.js-logo-${id}`);
+
+                // ScrollTrigger.matchMedia({
+                //     '(min-width: 1280px)': () => {
+
+                //         gsap.to(logos, {
+                //             scrollTrigger: {
+                //                 trigger: logos,
+                //                 scrub: true,
+                //                 start: 'top 110%',
+                //                 end: 'bottom top'
+                //             },
+                //             x: index % 2 === 0 ? 100 : -100,
+                //             ease: 'none',
+                //         });
+
+                //     }
+                // });
+
 
             });
-
-            const logos = document.querySelectorAll(`.js-logo-${id}`);
-
-            // ScrollTrigger.matchMedia({
-            //     '(min-width: 1280px)': () => {
-
-            //         gsap.to(logos, {
-            //             scrollTrigger: {
-            //                 trigger: logos,
-            //                 scrub: true,
-            //                 start: 'top 110%',
-            //                 end: 'bottom top'
-            //             },
-            //             x: -200,
-            //             ease: 'none',
-            //         });
-
-            //     }
-            // });
 
         }
     }));
