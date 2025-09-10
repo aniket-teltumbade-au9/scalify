@@ -225,23 +225,7 @@
                     <div class="link text-sm | md:text-base">
                         sales@scalify.ae</div>
                 </a>
-                <div class="flex space-x-4 mt-6 mb-1 | lg:mb-2">
-                    <svg id="svg-ani-10"
-                        class="w-3 h-3 fill-current text-white mt-1 | dark:text-grayDark-200 4xl:w-3.5 4xl:h-3.5"
-                        width="12" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                        <path
-                            d="M192 512s192-208 192-320C384 86 298 0 192 0S0 86 0 192c0 112 192 320 192 320zm0-384a64 64 0 110 128 64 64 0 110-128z">
-                        </path>
-                    </svg>
-                    <div class="w-full relative ">
-                        <p
-                            class="text-sm | md:text-base text-white dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7  mb-6">
-                            Scalify
-                            <br>in5 Tech
-                            <br>Dubai
-                            <br>United Arab Emirates
-                    </div>
-                </div><a href="https://what3words.com/cutter.banquets.ballooned" target="_blank"
+                <a href="https://what3words.com/cutter.banquets.ballooned" target="_blank"
                     class="inline-flex items-center space-x-4 text-white | lg:dark:hover:text-grayDark-100 | dark:text-grayDark-200">
                     <svg id="svg-ani-11" class="w-3 h-3 fill-current | 4xl:w-3.5 4xl:h-3.5" viewBox="0 0 11 11"
                         fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -253,6 +237,64 @@
                         ///cutter.banquets.ballooned</div>
                 </a>
             </div>
+        </div>
+    </div>
+    <div class="max-w-6xl flex flex-wrap lg:flex-nowrap lg:gap-100 mx-auto justify-center p-8">
+        <div class="w-full lg:w-fit flex space-x-4 mt-6 mb-1 lg:mb-2">
+            <svg id="svg-ani-10" class="w-3 h-3 fill-current text-white mt-1 dark:text-grayDark-200 4xl:w-3.5 4xl:h-3.5"
+                width="12" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                <path
+                    d="M192 512s192-208 192-320C384 86 298 0 192 0S0 86 0 192c0 112 192 320 192 320zm0-384a64 64 0 110 128 64 64 0 110-128z">
+                </path>
+            </svg>
+            <a href="https://maps.app.goo.gl/FjqEXznQmrjtbtEJ7" class="w-full relative">
+                <p
+                    class="text-sm md:text-base text-white dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7 mb-6">
+                    <strong>Dubai Office</strong>
+                    <br>in5 Tech,,
+                    <br>Dubai Internet City
+                    <br>Dubai
+                    <br>United Arab Emirates
+                </p>
+            </a>
+        </div>
+        <div class="w-full lg:w-fit flex space-x-4 mt-6 mb-1 lg:mb-2">
+            <svg id="svg-ani-10" class="w-3 h-3 fill-current text-white mt-1 dark:text-grayDark-200 4xl:w-3.5 4xl:h-3.5"
+                width="12" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                <path
+                    d="M192 512s192-208 192-320C384 86 298 0 192 0S0 86 0 192c0 112 192 320 192 320zm0-384a64 64 0 110 128 64 64 0 110-128z">
+                </path>
+            </svg>
+            <a href="https://maps.app.goo.gl/yGb4podxY4uAskx4A" class="w-full relative ">
+                <p
+                    class="text-sm md:text-base text-white dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7 mb-6">
+                    <strong>India Office</strong>
+                    <br />B/15 NEW PRINCE REGENCY CHS
+                    <br />KANAKIA
+                    <br />BEVERLY PARK
+                    <br />MUMBAI
+                    <br />INDIA
+                </p>
+            </a>
+        </div>
+        <div class="w-full lg:w-fit flex space-x-4 mt-6 mb-1 lg:mb-2">
+            <svg id="svg-ani-10" class="w-3 h-3 fill-current text-white mt-1 dark:text-grayDark-200 4xl:w-3.5 4xl:h-3.5"
+                width="12" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                <path
+                    d="M192 512s192-208 192-320C384 86 298 0 192 0S0 86 0 192c0 112 192 320 192 320zm0-384a64 64 0 110 128 64 64 0 110-128z">
+                </path>
+            </svg>
+            <a href="https://maps.app.goo.gl/stt2tKX3cTVJFMMm6" class="w-full relative ">
+                <p
+                    class="text-sm md:text-base text-white dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7 mb-6">
+                    <strong>Ireland Office</strong>
+                    <br /> C/O Cynestx Ireland
+                    <br /> Cullentragh Centre
+                    <br /> Glenfarne
+                    <br /> Co Leitrim
+                    <br /> Ireland
+                </p>
+            </a>
         </div>
     </div>
     <div class="w-full justify-center mb-10 hidden | lg:flex lg:mb-5">
@@ -477,7 +519,8 @@ document.addEventListener('alpine:init', () => {
 
                         player.getVolume().then(function(volume) {
 
-                            if (videoVolumeOnIcon.classList.contains('hidden')) {
+                            if (videoVolumeOnIcon.classList.contains(
+                                    'hidden')) {
 
                                 player.setVolume(1);
                                 videoVolumeOnIcon.classList.remove('hidden');
@@ -593,17 +636,20 @@ document.addEventListener('alpine:init', () => {
 
                                 if (videoProgress) {
 
-                                    player.getCurrentTime().then(function(seconds) {
+                                    player.getCurrentTime().then(function(
+                                        seconds) {
 
-                                        player.getDuration().then(function(
-                                            duration) {
+                                        player.getDuration().then(
+                                            function(
+                                                duration) {
 
-                                            videoProgress.style
-                                                .width = (seconds /
-                                                    duration) *
-                                                100 + '%';
+                                                videoProgress.style
+                                                    .width = (
+                                                        seconds /
+                                                        duration) *
+                                                    100 + '%';
 
-                                        });
+                                            });
 
                                     });
 
@@ -624,7 +670,8 @@ document.addEventListener('alpine:init', () => {
 
                                 if (videoProgress) {
 
-                                    videoProgress.style.width = (video.currentTime /
+                                    videoProgress.style.width = (video
+                                        .currentTime /
                                         video.duration) * 100 + '%';
 
                                 }
@@ -904,7 +951,8 @@ document.addEventListener('alpine:init', () => {
 
                         player.getVolume().then(function(volume) {
 
-                            if (videoVolumeOnIcon.classList.contains('hidden')) {
+                            if (videoVolumeOnIcon.classList.contains(
+                                    'hidden')) {
 
                                 player.setVolume(1);
                                 videoVolumeOnIcon.classList.remove('hidden');
@@ -1020,17 +1068,20 @@ document.addEventListener('alpine:init', () => {
 
                                 if (videoProgress) {
 
-                                    player.getCurrentTime().then(function(seconds) {
+                                    player.getCurrentTime().then(function(
+                                        seconds) {
 
-                                        player.getDuration().then(function(
-                                            duration) {
+                                        player.getDuration().then(
+                                            function(
+                                                duration) {
 
-                                            videoProgress.style
-                                                .width = (seconds /
-                                                    duration) *
-                                                100 + '%';
+                                                videoProgress.style
+                                                    .width = (
+                                                        seconds /
+                                                        duration) *
+                                                    100 + '%';
 
-                                        });
+                                            });
 
                                     });
 
@@ -1051,7 +1102,8 @@ document.addEventListener('alpine:init', () => {
 
                                 if (videoProgress) {
 
-                                    videoProgress.style.width = (video.currentTime /
+                                    videoProgress.style.width = (video
+                                        .currentTime /
                                         video.duration) * 100 + '%';
 
                                 }
@@ -1210,7 +1262,8 @@ document.addEventListener('alpine:init', () => {
 
                         player.getVolume().then(function(volume) {
 
-                            if (videoVolumeOnIcon.classList.contains('hidden')) {
+                            if (videoVolumeOnIcon.classList.contains(
+                                    'hidden')) {
 
                                 player.setVolume(1);
                                 videoVolumeOnIcon.classList.remove('hidden');
@@ -1326,17 +1379,20 @@ document.addEventListener('alpine:init', () => {
 
                                 if (videoProgress) {
 
-                                    player.getCurrentTime().then(function(seconds) {
+                                    player.getCurrentTime().then(function(
+                                        seconds) {
 
-                                        player.getDuration().then(function(
-                                            duration) {
+                                        player.getDuration().then(
+                                            function(
+                                                duration) {
 
-                                            videoProgress.style
-                                                .width = (seconds /
-                                                    duration) *
-                                                100 + '%';
+                                                videoProgress.style
+                                                    .width = (
+                                                        seconds /
+                                                        duration) *
+                                                    100 + '%';
 
-                                        });
+                                            });
 
                                     });
 
@@ -1357,7 +1413,8 @@ document.addEventListener('alpine:init', () => {
 
                                 if (videoProgress) {
 
-                                    videoProgress.style.width = (video.currentTime /
+                                    videoProgress.style.width = (video
+                                        .currentTime /
                                         video.duration) * 100 + '%';
 
                                 }
@@ -1448,7 +1505,8 @@ document.addEventListener('alpine:init', () => {
 
                         player.getVolume().then(function(volume) {
 
-                            if (videoVolumeOnIcon.classList.contains('hidden')) {
+                            if (videoVolumeOnIcon.classList.contains(
+                                    'hidden')) {
 
                                 player.setVolume(1);
                                 videoVolumeOnIcon.classList.remove('hidden');
@@ -1564,17 +1622,20 @@ document.addEventListener('alpine:init', () => {
 
                                 if (videoProgress) {
 
-                                    player.getCurrentTime().then(function(seconds) {
+                                    player.getCurrentTime().then(function(
+                                        seconds) {
 
-                                        player.getDuration().then(function(
-                                            duration) {
+                                        player.getDuration().then(
+                                            function(
+                                                duration) {
 
-                                            videoProgress.style
-                                                .width = (seconds /
-                                                    duration) *
-                                                100 + '%';
+                                                videoProgress.style
+                                                    .width = (
+                                                        seconds /
+                                                        duration) *
+                                                    100 + '%';
 
-                                        });
+                                            });
 
                                     });
 
@@ -1595,7 +1656,8 @@ document.addEventListener('alpine:init', () => {
 
                                 if (videoProgress) {
 
-                                    videoProgress.style.width = (video.currentTime /
+                                    videoProgress.style.width = (video
+                                        .currentTime /
                                         video.duration) * 100 + '%';
 
                                 }
@@ -1655,9 +1717,11 @@ document.addEventListener('alpine:init', () => {
 
                 if (isWindows) {
 
-                    const windowsRemove = element.getAttribute('data-windows-remove').split(
+                    const windowsRemove = element.getAttribute('data-windows-remove')
+                        .split(
+                            '|');
+                    const windowsAdd = element.getAttribute('data-windows-add').split(
                         '|');
-                    const windowsAdd = element.getAttribute('data-windows-add').split('|');
 
                     element.classList.remove(...windowsRemove);
                     element.classList.add(...windowsAdd);
@@ -1666,9 +1730,11 @@ document.addEventListener('alpine:init', () => {
 
                 if (isAndroid) {
 
-                    const androidRemove = element.getAttribute('data-android-remove').split(
+                    const androidRemove = element.getAttribute('data-android-remove')
+                        .split(
+                            '|');
+                    const androidAdd = element.getAttribute('data-android-add').split(
                         '|');
-                    const androidAdd = element.getAttribute('data-android-add').split('|');
 
                     element.classList.remove(...androidRemove);
                     element.classList.add(...androidAdd);
@@ -1697,7 +1763,8 @@ document.addEventListener('alpine:init', () => {
                 const clone = parentSelector.innerHTML;
 
                 const firstElement = parentSelector.children[0];
-                const lastElement = parentSelector.children[parentSelector.children.length -
+                const lastElement = parentSelector.children[parentSelector.children
+                    .length -
                     1];
 
                 let i = 0;
@@ -1835,6 +1902,95 @@ document.addEventListener('alpine:init', () => {
 
         }
     }))
+});
+document.addEventListener('alpine:init', () => {
+    Alpine.data('logosDoubleCarousel', () => ({
+        carousel(id) {
+
+            const carousels = document.querySelectorAll(`.js-carousel-${id}`);
+
+            carousels.forEach((carousel, index) => {
+
+                const swiper = new Swiper(carousel, {
+                    slidesPerView: 2,
+                    spaceBetween: 0,
+                    loop: true,
+                    allowTouchMove: false,
+                    autoplay: {
+                        delay: 0,
+                        disableOnInteraction: false,
+                        reverseDirection: index % 2 === 0 ? false : true,
+                    },
+                    speed: 10000,
+                    grabCursor: false,
+                    mousewheelControl: false,
+                    keyboardControl: false,
+                    breakpoints: {
+                        640: {
+                            slidesPerView: 3,
+                        },
+                        768: {
+                            slidesPerView: 3.5,
+                        },
+                        1024: {
+                            slidesPerView: 4,
+                        },
+                        1280: {
+                            slidesPerView: 4,
+                        },
+                        1400: {
+                            slidesPerView: 5,
+                        },
+                        2100: {
+                            slidesPerView: 6,
+                        },
+                    }
+                });
+
+                setTimeout(() => {
+
+                    swiper.update();
+                    swiper.autoplay.start();
+
+                }, 1000);
+
+                window.addEventListener('resize', () => {
+
+                    clearTimeout(window.resizedFinished);
+
+                    window.resizedFinished = setTimeout(function() {
+
+                        swiper.update();
+                        swiper.autoplay.start();
+
+                    }, 50);
+
+                });
+
+                const logos = carousel.querySelectorAll(`.js-logo-${id}`);
+
+                // ScrollTrigger.matchMedia({
+                //     '(min-width: 1280px)': () => {
+
+                //         gsap.to(logos, {
+                //             scrollTrigger: {
+                //                 trigger: logos,
+                //                 scrub: true,
+                //                 start: 'top 110%',
+                //                 end: 'bottom top'
+                //             },
+                //             x: index % 2 === 0 ? 100 : -100,
+                //             ease: 'none',
+                //         });
+
+                //     }
+                // });
+
+
+            });
+
+        }
+    }));
 });
 </script>
 <script src="https://cdn.jsdelivr.net/npm/@figmania/loader/build/index.umd.js"></script>
