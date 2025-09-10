@@ -249,7 +249,7 @@ usort($menuListItems, function ($a, $b) {
                     <div class="w-15/16 relative rounded-2xl overflow-hidden group | lg:rounded-3xl">
                         <div class="w-full aspect-ratio-16/9 rounded-2xl overflow-hidden relative | lg:rounded-3xl">
                             <iframe
-                                src="https://player.vimeo.com/video/822986690?autoplay=0&loop=1&autopause=0&mute=1&controls=0"
+                                src="https://player.vimeo.com/video/1117179380?autoplay=0&loop=1&autopause=0&mute=1&controls=0"
                                 class="w-full h-full absolute top-0 left-0 || js-modal-video js-modal-video-430895"
                                 frameborder="0"
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -348,11 +348,14 @@ usort($menuListItems, function ($a, $b) {
                     <div
                         class="w-full relative rounded-2xl transform-gpu overflow-hidden aspect-ratio-9/16 bg-gray-50 | md:aspect-ratio-1/1 dark:bg-grayDark-500 lg:rounded-3xl lg:aspect-ratio-16/9">
                         <video class="w-full h-full absolute top-0 left-0 object-cover" playsinline autoplay loop muted preload="auto"
-                            loading="lazy">
+                            loading="lazy" poster="<?php echo BASE_URL . "assets/images/vlcsnap-2025-09-07-23h49m03s206.png"; ?>">
                             <source
-                                src="https://servd-made-byshape.b-cdn.net/production/uploads/videos/showreel-2024-portrait_cropped.mp4"
+                                src="https://cdn.jsdelivr.net/gh/vinaykm2912/scalifyVideos@main/scalifyIn5.mp4"
                                 type="video/mp4" media="(max-width: 1023px)">
-                            <source src="<?php echo BASE_URL . "assets/videos/In5 Dubai - Integra Works.mp4"; ?>"
+                            <!-- <source
+                                src="https://https://player.vimeo.com/video/1117179380?autoplay=0&loop=1&autopause=0&mute=1&controls=0"
+                                type="video/mp4" media="(max-width: 1023px)"> -->
+                            <source src="<?php echo BASE_URL . "assets/videos/In5 Dubai.mp4"; ?>"
                                 type="video/mp4" media="(min-width: 1024px)">
                         </video>
                     </div>
@@ -661,6 +664,224 @@ usort($menuListItems, function ($a, $b) {
                         </div>
                     </div>
                 </div>
+                    <div x-data="logosDoubleCarousel" x-init="carousel(127732)">
+        <div class="w-full pb-20 | lg:pb-24 | 2xl:pb-32 | 4xl:pb-40 px-2 | lg:px-3 | xl:px-4">
+            <div class="px-2 | sm:px-6 | xl:px-12 | 2xl:px-20 | 3xl:px-40 | 4xl:px-60">
+                <div
+                    class="w-full py-20 | lg:py-24 | 2xl:py-32 | 4xl:py-40 bg-gray-600 relative overflow-hidden rounded-tl-none rounded-2xl transform-gpu | lg:rounded-tl-none lg:rounded-3xl | dark:bg-grayDark-500">
+                    <div class="px-0">
+                        <div
+                            class="bg-white absolute top-0 left-0 rounded-br-2xl w-5/16 h-12 | lg:rounded-br-3xl lg:w-3/16 lg:h-20 | dark:bg-grayDark-600">
+                            <svg id="Layer_1"
+                                class="w-10 h-10 | lg:w-12 lg:h-12 text-white fill-current absolute -top-px right-px transform translate-x-full dark:text-grayDark-600"
+                                version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 100 100"
+                                xml:space="preserve">
+                                <path d="M51.9 0v1.9c-27.6 0-50 22.4-50 50H0V0h51.9z"></path>
+                            </svg><svg id="Layer_1"
+                                class="w-10 h-10 | lg:w-12 lg:h-12 text-white fill-current absolute bottom-px -left-px transform translate-y-full dark:text-grayDark-600"
+                                version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 100 100"
+                                xml:space="preserve">
+                                <path d="M51.9 0v1.9c-27.6 0-50 22.4-50 50H0V0h51.9z"></path>
+                            </svg>
+                        </div>
+                        <div
+                            class="px-2 | sm:px-6 | xl:px-12 | 2xl:px-20 | 3xl:px-40 | 4xl:px-60 w-full flex flex-wrap | lg:justify-end">
+                            <div class="px-2 | lg:px-3 | xl:px-4 w-auto flex flex-col items-start">
+                                <div class="flex flex-col space-y-3 | lg:space-y-5 items-start">
+                                    <div class="inline-flex items-center space-x-2  ">
+                                        <div class="bg-white w-1.5 h-1.5 rounded-full"></div>
+                                        <div class="font-light text-sm | lg:text-base text-white">
+                                            Shameful Plug</div>
+                                    </div>
+                                    <h2
+                                        class=" text-2xl | md:text-3xl | xl:text-4xl | 4xl:text-5xl font-sans-primary tracking-tight text-white leading-none text-balance max-w-2xl | xl:max-w-3xl ">
+                                        <p>We work with start-up businesses through to global organisations.</p>
+                                    </h2>
+                                </div>
+                                <div class="flex space-x-5 mt-5">
+                                    <div class="relative group inline-flex items-center" x-data="{ hover: false }"
+                                        x-on:mouseenter="hover = true" x-on:mouseleave="hover = false">
+                                        <svg width="0" height="0" class="absolute hidden"
+                                            color-interpolation-filters="sRGB">
+                                            <defs>
+                                                <filter id="buttonFilter">
+                                                    <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur">
+                                                    </feGaussianBlur>
+                                                    <feColorMatrix in="blur" mode="matrix"
+                                                        values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                                                        result="buttonFilter"></feColorMatrix>
+                                                    <feComposite in="SourceGraphic" in2="buttonFilter" operator="atop">
+                                                    </feComposite>
+                                                    <feBlend in="SourceGraphic" in2="buttonFilter"></feBlend>
+                                                </filter>
+                                            </defs>
+                                        </svg>
+                                        <a href="https://madebyshape.co.uk/contact/"
+                                            class="inline-flex relative group outline-none  | focus:outline-none "
+                                            style="filter: url(#buttonFilter);">
+                                            <div
+                                                class=" w-auto inline-flex items-center justify-center relative leading-tight shadow-none overflow-hidden rounded-full border-default bg-primary-600 text-gray-600 py-2 px-5">
+                                                <div class="relative inline-flex top-px flex-shrink-0">
+                                                    <div>
+                                                        Get in touch today</div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="bg-primary-600 flex-shrink-0 overflow-hidden flex items-center justify-center -ml-1 rounded-full transform transition-transform | w-9 h-9 | xl:group-hover:translate-x-3  xl:group-hover:rotate-45 | js-button-icon">
+                                            </div>
+                                        </a>
+                                        <div
+                                            class="w-9 h-9 absolute top-0 right-0 flex items-center justify-center z-20 transition-transform transform w-9 h-9 | xl:group-hover:translate-x-3  xl:group-hover:rotate-45 || js-button-arrow">
+                                            <div class="relative overflow-hidden text-gray-600">
+                                                <div
+                                                    class="relative top-0 left-0 transition-transform transform || js-button-arrow-icon-primary ">
+                                                    <svg class="w-3 h-3 fill-current" xmlns="http://www.w3.org/2000/svg"
+                                                        viewBox="0 0 384 512">
+                                                        <path
+                                                            d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                                        </path>
+                                                    </svg>
+                                                </div>
+                                                <div
+                                                    class="absolute top-0 left-0 transition-transform transform translate-y-full -translate-x-full || js-button-arrow-icon-secondary ">
+                                                    <svg class="w-3 h-3 fill-current" xmlns="http://www.w3.org/2000/svg"
+                                                        viewBox="0 0 384 512">
+                                                        <path
+                                                            d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                                        </path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mx-auto relative w-full | xl:w-15/16"
+                            style="--blur: 1; --blurs: 5; max-height: 200px;;">
+                            <div class="blur blur--left">
+                                <div class="" style="--index: 0"></div>
+                                <div class="" style="--index: 1"></div>
+                                <div class="" style="--index: 2"></div>
+                                <div class="" style="--index: 3"></div>
+                                <div class="" style="--index: 4"></div>
+                            </div>
+                            <div class="blur blur--right">
+                                <div class="" style="--index: 0"></div>
+                                <div class="" style="--index: 1"></div>
+                                <div class="" style="--index: 2"></div>
+                                <div class="" style="--index: 3"></div>
+                                <div class="" style="--index: 4"></div>
+                            </div>
+                            <div
+                                class="w-full relative z-0 mt-10 -mb-5 | lg:mt-16 || swiper js-carousel-127732 swiper-initialized swiper-horizontal swiper-pointer-events">
+                                <div class="ease-linear || swiper-wrapper"
+                                    style="transition-duration: 8000ms; transform: translate3d(-3921.5px, 0px, 0px);">
+                                    <?php foreach (array_slice($logos, -4) as $index => $logo): ?>
+                                    <div class="px-2 | lg:px-3 xl:px-4 swiper-slide swiper-slide-duplicate"
+                                        data-swiper-slide-index="<?php echo $n - 4 - $index; ?>"
+                                        style="width: 356.5px;">
+                                        <div class="w-full flex justify-center items-center || js-logo-28">
+                                            <div class="relative rounded-xl overflow-hidden">
+                                                <img src="<?php echo BASE_URL . $logo; ?>"
+                                                    class="w-176 h-40 | lg:w-144 lg:h-50" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <?php endforeach;foreach ($logos as $index => $logo): ?>
+
+                                    <div class="px-2 | lg:px-3 xl:px-4 swiper-slide"
+                                        data-swiper-slide-index="<?php echo $index; ?>" style="width: 356.5px;">
+                                        <div class="w-full flex justify-center items-center || js-logo-28">
+                                            <div class="relative rounded-xl overflow-hidden">
+                                                <img src="<?php echo BASE_URL . $logo; ?>"
+                                                    class="w-176 h-40 | lg:w-144 lg:h-50" />
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <?php endforeach;foreach (array_slice($logos, 0, 4) as $index => $logo): ?>
+
+
+                                    <div class="px-2 | lg:px-3 xl:px-4 swiper-slide swiper-slide-duplicate"
+                                        data-swiper-slide-index="<?php echo $index; ?>" style="width: 356.5px;">
+                                        <div class="w-full flex justify-center items-center || js-logo-28">
+                                            <div class="relative rounded-xl overflow-hidden">
+                                                <img src="<?php echo BASE_URL . $logo; ?>"
+                                                    class="w-176 h-40 | lg:w-144 lg:h-50" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <?php endforeach; ?>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mx-auto relative w-full | xl:w-15/16"
+                            style="--blur: 1; --blurs: 5; max-height: 200px;;">
+                            <div class="blur blur--left">
+                                <div class="" style="--index: 0"></div>
+                                <div class="" style="--index: 1"></div>
+                                <div class="" style="--index: 2"></div>
+                                <div class="" style="--index: 3"></div>
+                                <div class="" style="--index: 4"></div>
+                            </div>
+                            <div class="blur blur--right">
+                                <div class="" style="--index: 0"></div>
+                                <div class="" style="--index: 1"></div>
+                                <div class="" style="--index: 2"></div>
+                                <div class="" style="--index: 3"></div>
+                                <div class="" style="--index: 4"></div>
+                            </div>
+                            <div
+                                class="w-full relative z-0 mt-10 -mb-5 | lg:mt-16 || swiper js-carousel-127732 swiper-initialized swiper-horizontal swiper-pointer-events">
+                                <div class="ease-linear || swiper-wrapper"
+                                    style="transition-duration: 8000ms; transform: translate3d(-3921.5px, 0px, 0px);">
+                                    <?php foreach (array_slice($logos, -4) as $index => $logo): ?>
+                                    <div class="px-2 | lg:px-3 xl:px-4 swiper-slide swiper-slide-duplicate"
+                                        data-swiper-slide-index="<?php echo $n - 4 - $index; ?>"
+                                        style="width: 356.5px;">
+                                        <div class="w-full flex justify-center items-center || js-logo-28">
+                                            <div class="relative rounded-xl overflow-hidden">
+                                                <img src="<?php echo BASE_URL . $logo; ?>"
+                                                    class="w-176 h-40 | lg:w-144 lg:h-50" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <?php endforeach;foreach ($logos as $index => $logo): ?>
+
+                                    <div class="px-2 | lg:px-3 xl:px-4 swiper-slide"
+                                        data-swiper-slide-index="<?php echo $index; ?>" style="width: 356.5px;">
+                                        <div class="w-full flex justify-center items-center || js-logo-28">
+                                            <div class="relative rounded-xl overflow-hidden">
+                                                <img src="<?php echo BASE_URL . $logo; ?>"
+                                                    class="w-176 h-40 | lg:w-144 lg:h-50" />
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <?php endforeach;foreach (array_slice($logos, 0, 4) as $index => $logo): ?>
+
+
+                                    <div class="px-2 | lg:px-3 xl:px-4 swiper-slide swiper-slide-duplicate"
+                                        data-swiper-slide-index="<?php echo $index; ?>" style="width: 356.5px;">
+                                        <div class="w-full flex justify-center items-center || js-logo-28">
+                                            <div class="relative rounded-xl overflow-hidden">
+                                                <img src="<?php echo BASE_URL . $logo; ?>"
+                                                    class="w-176 h-40 | lg:w-144 lg:h-50" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <?php endforeach; ?>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
                 <!-- <div class="mx-auto relative w-full | xl:w-15/16" style="--blur: 1; --blurs: 5; max-height: 200px;;">
                     <div class="blur blur--left">
