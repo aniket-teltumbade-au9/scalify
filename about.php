@@ -885,7 +885,7 @@ bg-primary-600 text-gray-600 py-2 px-5">
             </div>
         </div>
         <div id="420830"></div>
-        <div class="w-full py-10 | lg:py-16 | 2xl:py-24">
+        <!-- <div class="w-full py-10 | lg:py-16 | 2xl:py-24">
             <div class="px-2 | sm:px-6 | xl:px-12 | 2xl:px-20 | 3xl:px-40 | 4xl:px-60">
                 <div class="w-full flex flex-wrap justify-center -mb-12 | lg:mb-0 | md:justify-between">
                     <div
@@ -950,7 +950,7 @@ bg-primary-600 text-gray-600 py-2 px-5">
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div id="312636"></div>
         <div class="w-full pb-20 | lg:pb-24 | 2xl:pb-32 | 4xl:pb-40">
             <div class="px-2 | sm:px-6 | xl:px-12 | 2xl:px-20 | 3xl:px-40 | 4xl:px-60">
@@ -2091,9 +2091,9 @@ w-full border-b border-solid border-gray-100 pb-5 mb-5 | dark:border-grayDark-30
                                 <div class="px-2 | lg:px-3 | xl:px-4 w-auto flex flex-col items-start">
                                     <div class="flex flex-col space-y-3 | lg:space-y-5 items-start">
                                         <div class="inline-flex items-center space-x-2  ">
-                                            <div class="bg-white w-1.5 h-1.5 rounded-full"></div>
+                                            <!-- <div class="bg-white w-1.5 h-1.5 rounded-full"></div>
                                             <div class="font-light text-sm | lg:text-base text-white">
-                                                Shameful Plug</div>
+                                                Shameful Plug</div> -->
                                         </div>
                                         <h2 class="
 text-2xl | md:text-3xl | xl:text-4xl | 4xl:text-5xl

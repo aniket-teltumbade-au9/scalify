@@ -416,17 +416,17 @@
                         <div class="w-full | lg:w-6/16 lg:py-12">
                             <h2
                                 class="text-2xl | md:text-3xl | xl:text-4xl | 4xl:text-5xl font-sans-primary tracking-tight text-gray-600  | dark:text-grayDark-100 leading-none text-balance mb-3 ">
-                                Our Dubai Storages</h2>
+                                Our Dubai Address</h2>
                             <div class="w-full relative mb-5 | lg:max-w-sm lg:mb-10">
                                 <p
                                     class="text-base | xl:text-md text-gray-600 dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7  mb-6">
-                                    Just a short drive from Dubai city centre, our Storages is in a very convenient
+                                    Just a short drive from Dubai city centre, our office is in a very convenient
                                     location, near two train stations, a motorway, and the east Lancashire road.</p>
                             </div>
                             <div class="w-full flex flex-col space-y-5 mb-10 | md:space-y-0 md:flex-row md:space-x-5">
                                 <div class="flex-1">
                                     <div class="text-gray-400 font-light mb-2 | dark:text-grayDark-100">
-                                        Dubai Storages Address</div>
+                                        Dubai Office Address</div>
                                     <div class="flex space-x-3">
                                         <div class="flex-shrink-0 pt-1.5"><svg
                                                 class="w-3 h-3 text-gray-600 fill-current | dark:text-grayDark-100"
@@ -436,9 +436,8 @@
                                                     d="M192 512s192-208 192-320C384 86 298 0 192 0S0 86 0 192c0 112 192 320 192 320zm0-384a64 64 0 110 128 64 64 0 110-128z" />
                                             </svg></div>
                                         <div class="dark:text-grayDark-200">
-                                            <p>Scalify<br />in5 Tech
-                                                King Salman Bin <br />Abdulaziz Al Saud Street, <br />near Tram Station
-                                                <br />and Cordoba Residence<br /> - Dubai <br />- United Arab Emirates
+                                            <p>Scalify<br />In5 Tech,<br />
+                                                Dubai Internet City, <br /> - Dubai <br />- United Arab Emirates
                                             </p>
                                         </div>
                                     </div>
@@ -614,12 +613,11 @@
                                         <div class="w-full relative ">
                                             <p
                                                 class="text-base | xl:text-md text-gray-600 dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7  mb-6">
-                                                Timelines depend on the spec of the website project, but here are some
-                                                guidelines...</p>
+                                                Timelines depend on your goals - brand foundations take 4-6 weeks, full market launches take 12-16 weeks, scaling programs are ongoing...</p>
                                             <p
                                                 class="text-base | xl:text-md text-gray-600 dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7  mb-6">
                                                 - <strong class="font-medium"><a
-                                                        href="https://madebyshape.co.uk/shopify/" target="_blank"
+                                                        href="https://www.shopify.com" target="_blank"
                                                         rel="noreferrer noopener"
                                                         class="underline duration-500 bg-transparent rounded-md py-0.5 px-1 | bg-gray-50 xl:hover:bg-primary-600 dark:bg-grayDark-400 dark:text-grayDark-100 xl:dark:hover:bg-primary-600 xl:dark:hover:text-grayDark-600">Shopify</a></strong><strong
                                                     class="font-medium"> </strong>projects usually take around four
@@ -657,7 +655,7 @@
                                     x-on:click="active != 421070 ? active = 421070 : active = false">
                                     <h3
                                         class="text-lg | 4xl:text-xl font-sans-primary tracking-tight text-gray-600  | dark:text-grayDark-100 leading-tighter text-balance pr-10">
-                                        How much does a website cost?</h3>
+                                        How much does growth consulting cost?</h3>
                                     <div class="flex-shrink-0 w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center transition-transform transform | dark:bg-grayDark-400"
                                         x-bind:class="{'rotate-180': active == 421070}">
                                         <svg class="w-3 h-3 text-white fill-current | dark:text-grayDark-100"
@@ -672,13 +670,7 @@
                                         <div class="w-full relative ">
                                             <p
                                                 class="text-base | xl:text-md text-gray-600 dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7  mb-6">
-                                                Unfortunately, we don't have set project prices. Every brief we work on
-                                                has different requirements which alters the spec of the job. So, once
-                                                we've received the brief, we can give you an indication of the cost and
-                                                timescale. We wrote this article about the <a
-                                                    href="https://madebyshape.co.uk/web-design-blog/the-importance-of-a-website-budget/"
-                                                    class="underline duration-500 bg-transparent rounded-md py-0.5 px-1 | bg-gray-50 xl:hover:bg-primary-600 dark:bg-grayDark-400 dark:text-grayDark-100 xl:dark:hover:bg-primary-600 xl:dark:hover:text-grayDark-600">importance
-                                                    of a website budget</a> a while back and it's still relevant.</p>
+                                                We build systems you can control for updates, but leave the strategic growth work to us.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -689,7 +681,7 @@
                                     x-on:click="active != 421071 ? active = 421071 : active = false">
                                     <h3
                                         class="text-lg | 4xl:text-xl `font-sans-primary tracking-tight text-gray-600  | dark:text-grayDark-100 leading-tighter text-balance pr-10 ">
-                                        We have a limited budget, will you still work with us?</h3>
+                                        How easy is it for me to change content myself?</h3>
                                     <div class="flex-shrink-0 w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center transition-transform transform | dark:bg-grayDark-400"
                                         x-bind:class="{'rotate-180': active == 421071}">
                                         <svg class="w-3 h-3 text-white fill-current | dark:text-grayDark-100"
@@ -704,17 +696,7 @@
                                         <div class="w-full relative ">
                                             <p
                                                 class="text-base | xl:text-md text-gray-600 dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7  mb-6">
-                                                We work with a range of clients, from start-up brands to large global
-                                                organisations such as the NHS and Blackberry. Our mindset is that we
-                                                want to work with clients of the same vision. If you want to improve
-                                                your brand online and understand the way we work (and the discussions
-                                                are of mutual understanding) then we want to work with you. In terms of
-                                                budget, the easiest way to find out if a project is possible is to let
-                                                us know what your budget is. That way we can advise the best way of
-                                                spending your money. We wrote this article about the <a
-                                                    href="https://madebyshape.co.uk/web-design-blog/the-importance-of-a-website-budget/"
-                                                    class="underline duration-500 bg-transparent rounded-md py-0.5 px-1 | bg-gray-50 xl:hover:bg-primary-600 dark:bg-grayDark-400 dark:text-grayDark-100 xl:dark:hover:bg-primary-600 xl:dark:hover:text-grayDark-600">importance
-                                                    of a website budget</a> a while back and it's still relevant.</p>
+                                                We build systems you can control for updates, but leave the strategic growth work to us.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -725,7 +707,7 @@
                                     x-on:click="active != 421072 ? active = 421072 : active = false">
                                     <h3
                                         class=" text-lg | 4xl:text-xl font-sans-primary tracking-tight text-gray-600  | dark:text-grayDark-100 leading-tighter text-balance pr-10 ">
-                                        Do you outsource any work?</h3>
+                                        Can I create campaigns myself?</h3>
                                     <div class="flex-shrink-0 w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center transition-transform transform | dark:bg-grayDark-400"
                                         x-bind:class="{'rotate-180': active == 421072}">
                                         <svg class="w-3 h-3 text-white fill-current | dark:text-grayDark-100"
@@ -740,17 +722,8 @@
                                         <div class="w-full relative ">
                                             <p
                                                 class="text-base | xl:text-md text-gray-600 dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7  mb-6">
-                                                The only aspects we outsource (but offer full project management to the
-                                                client on) are:</p>
-                                            <p
-                                                class="text-base | xl:text-md text-gray-600 dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7  mb-6">
-                                                - Photography</p>
-                                            <p
-                                                class="text-base | xl:text-md text-gray-600 dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7  mb-6">
-                                                - Videography</p>
-                                            <p
-                                                class="text-base | xl:text-md text-gray-600 dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7  mb-6">
-                                                - Social Media Campaigns</p>
+                                                You could, but we've cracked what actually converts while most founders are still experimenting.</p>
+
                                         </div>
                                     </div>
                                 </div>
@@ -761,7 +734,7 @@
                                     x-on:click="active != 421073 ? active = 421073 : active = false">
                                     <h3
                                         class=" text-lg | 4xl:text-xl font-sans-primary tracking-tight text-gray-600  | dark:text-grayDark-100 leading-tighter text-balance pr-10 ">
-                                        What services do you offer?</h3>
+                                        We have a limited budget, will you still work with us?</h3>
                                     <div class="flex-shrink-0 w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center transition-transform transform | dark:bg-grayDark-400"
                                         x-bind:class="{'rotate-180': active == 421073}">
                                         <svg class="w-3 h-3 text-white fill-current | dark:text-grayDark-100"
@@ -776,33 +749,7 @@
                                         <div class="w-full relative ">
                                             <p
                                                 class="text-base | xl:text-md text-gray-600 dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7  mb-6">
-                                                We offer a full <a href="/branding/" target="_blank"
-                                                    rel="noreferrer noopener"
-                                                    class="underline duration-500 bg-transparent rounded-md py-0.5 px-1 | bg-gray-50 xl:hover:bg-primary-600 dark:bg-grayDark-400 dark:text-grayDark-100 xl:dark:hover:bg-primary-600 xl:dark:hover:text-grayDark-600">branding</a>
-                                                service in-house here at Shape. We win awards for our <a
-                                                    href="https://madebyshape.co.uk/web-design/" target="_blank"
-                                                    rel="noreferrer noopener"
-                                                    class="underline duration-500 bg-transparent rounded-md py-0.5 px-1 | bg-gray-50 xl:hover:bg-primary-600 dark:bg-grayDark-400 dark:text-grayDark-100 xl:dark:hover:bg-primary-600 xl:dark:hover:text-grayDark-600">websites</a>,
-                                                and in particular specialise in building websites in <a
-                                                    href="https://madebyshape.co.uk/craft-cms/" target="_blank"
-                                                    rel="noreferrer noopener"
-                                                    class="underline duration-500 bg-transparent rounded-md py-0.5 px-1 | bg-gray-50 xl:hover:bg-primary-600 dark:bg-grayDark-400 dark:text-grayDark-100 xl:dark:hover:bg-primary-600 xl:dark:hover:text-grayDark-600">Craft
-                                                    CMS</a> and <a href="/shopify/" target="_blank"
-                                                    rel="noreferrer noopener"
-                                                    class="underline duration-500 bg-transparent rounded-md py-0.5 px-1 | bg-gray-50 xl:hover:bg-primary-600 dark:bg-grayDark-400 dark:text-grayDark-100 xl:dark:hover:bg-primary-600 xl:dark:hover:text-grayDark-600">Shopify</a>.
-                                                We also offer <a
-                                                    href="https://madebyshape.co.uk/search-engine-optimisation/"
-                                                    target="_blank" rel="noreferrer noopener"
-                                                    class="underline duration-500 bg-transparent rounded-md py-0.5 px-1 | bg-gray-50 xl:hover:bg-primary-600 dark:bg-grayDark-400 dark:text-grayDark-100 xl:dark:hover:bg-primary-600 xl:dark:hover:text-grayDark-600">SEO</a>,
-                                                <a href="/web-hosting/" target="_blank" rel="noreferrer noopener"
-                                                    class="underline duration-500 bg-transparent rounded-md py-0.5 px-1 | bg-gray-50 xl:hover:bg-primary-600 dark:bg-grayDark-400 dark:text-grayDark-100 xl:dark:hover:bg-primary-600 xl:dark:hover:text-grayDark-600">hosting</a>,
-                                                and <a href="/shape-support/" target="_blank" rel="noreferrer noopener"
-                                                    class="underline duration-500 bg-transparent rounded-md py-0.5 px-1 | bg-gray-50 xl:hover:bg-primary-600 dark:bg-grayDark-400 dark:text-grayDark-100 xl:dark:hover:bg-primary-600 xl:dark:hover:text-grayDark-600">Shape
-                                                    Support</a> to look after your site once live. We also have <a
-                                                    href="https://madebyshape.co.uk/content-writing/" target="_blank"
-                                                    rel="noreferrer noopener"
-                                                    class="underline duration-500 bg-transparent rounded-md py-0.5 px-1 | bg-gray-50 xl:hover:bg-primary-600 dark:bg-grayDark-400 dark:text-grayDark-100 xl:dark:hover:bg-primary-600 xl:dark:hover:text-grayDark-600">content
-                                                    writers</a> who understand tone of voice, messaging, and SEO.
+                                                We work with all budgets and create solutions that fit your investment level and growth ambitions.
                                             </p>
                                         </div>
                                     </div>
@@ -814,7 +761,7 @@
                                     x-on:click="active != 421074 ? active = 421074 : active = false">
                                     <h3
                                         class=" text-lg | 4xl:text-xl font-sans-primary tracking-tight text-gray-600  | dark:text-grayDark-100 leading-tighter text-balance pr-10 ">
-                                        We're not based in Dubai, does that matter?</h3>
+                                        Do you outsource any work?</h3>
                                     <div class="flex-shrink-0 w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center transition-transform transform | dark:bg-grayDark-400"
                                         x-bind:class="{'rotate-180': active == 421074}">
                                         <svg class="w-3 h-3 text-white fill-current | dark:text-grayDark-100"
@@ -829,10 +776,7 @@
                                         <div class="w-full relative ">
                                             <p
                                                 class="text-base | xl:text-md text-gray-600 dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7  mb-6">
-                                                We work with clients all over the UK... all over the world in fact. So
-                                                location does not matter. We will guide you through the process and
-                                                communicate clearly at certain stages via email and sometimes Zoom. If
-                                                available, we are happy to have face-to-face meetings.</p>
+                                                We keep strategy in-house but work with trusted specialists for video production, photography, and technical integrations.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -843,7 +787,7 @@
                                     x-on:click="active != 421075 ? active = 421075 : active = false">
                                     <h3
                                         class="text-lg | 4xl:text-xl font-sans-primary tracking-tight text-gray-600  | dark:text-grayDark-100 leading-tighter text-balance pr-10">
-                                        What are your payment terms?</h3>
+                                        How many meetings can we have?</h3>
                                     <div class="flex-shrink-0 w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center transition-transform transform | dark:bg-grayDark-400"
                                         x-bind:class="{'rotate-180': active == 421075}">
                                         <svg class="w-3 h-3 text-white fill-current | dark:text-grayDark-100"
@@ -858,9 +802,7 @@
                                         <div class="w-full relative ">
                                             <p
                                                 class="text-base | xl:text-md text-gray-600 dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7  mb-6">
-                                                We usually do 50% upfront, 25% on design sign-off, and 25% on build. But
-                                                these terms can be discussed if need be. We are flexible. We just want
-                                                to work with the right partner.</p>
+                                                As many as needed - we guide you through each phase with regular check-ins and strategic reviews.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -871,7 +813,7 @@
                                     x-on:click="active != 421076 ? active = 421076 : active = false">
                                     <h3
                                         class="text-lg | 4xl:text-xl font-sans-primary tracking-tight text-gray-600  | dark:text-grayDark-100 leading-tighter text-balance pr-10">
-                                        How many meetings can we have?</h3>
+                                        Do we have a dedicated project manager?</h3>
                                     <div class="flex-shrink-0 w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center transition-transform transform | dark:bg-grayDark-400"
                                         x-bind:class="{'rotate-180': active == 421076}">
                                         <svg class="w-3 h-3 text-white fill-current | dark:text-grayDark-100"
@@ -886,14 +828,7 @@
                                         <div class="w-full relative ">
                                             <p
                                                 class="text-base | xl:text-md text-gray-600 dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7  mb-6">
-                                                As many as you want. But we guide you through this process and ask for
-                                                your feedback at certain stages. We have vast experience in delivering
-                                                <a href="/branding/" target="_blank" rel="noreferrer noopener"
-                                                    class="underline duration-500 bg-transparent rounded-md py-0.5 px-1 | bg-gray-50 xl:hover:bg-primary-600 dark:bg-grayDark-400 dark:text-grayDark-100 xl:dark:hover:bg-primary-600 xl:dark:hover:text-grayDark-600">brand</a>
-                                                + <a href="/web-design/" target="_blank" rel="noreferrer noopener"
-                                                    class="underline duration-500 bg-transparent rounded-md py-0.5 px-1 | bg-gray-50 xl:hover:bg-primary-600 dark:bg-grayDark-400 dark:text-grayDark-100 xl:dark:hover:bg-primary-600 xl:dark:hover:text-grayDark-600">website</a>
-                                                projects. We will go through multiple stages in a hierarchy so that you
-                                                never get to a stage where you don’t feel comfortable with the progress.
+                                                Yes, you get a dedicated growth strategist who owns your success and coordinates everything seamlessly.
                                             </p>
                                         </div>
                                     </div>
@@ -905,7 +840,7 @@
                                     x-on:click="active != 489203 ? active = 489203 : active = false">
                                     <h3
                                         class="text-lg | 4xl:text-xl font-sans-primary tracking-tight text-gray-600  | dark:text-grayDark-100 leading-tighter text-balance pr-10">
-                                        Can we arrange a phone call to discuss?</h3>
+                                       What are your payment terms?</h3>
                                     <div class="flex-shrink-0 w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center transition-transform transform | dark:bg-grayDark-400"
                                         x-bind:class="{'rotate-180': active == 489203}">
                                         <svg class="w-3 h-3 text-white fill-current | dark:text-grayDark-100"
@@ -920,11 +855,33 @@
                                         <div class="w-full relative ">
                                             <p
                                                 class="text-base | xl:text-md text-gray-600 dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7  mb-6">
-                                                Yes of course, we can schedule a traditional phone call or zoom meeting
-                                                into the diary that convenient for both parties. All of our staff work
-                                                from home at the moment, and occasionally go into the studio. So it's
-                                                quicker to email us and organise a time for a discussion, rather than
-                                                just ringing the studio number.</p>
+                                               Monthly retainers paid  upfront - we're flexible for the right partnership and long-term commitments.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                              <div class="w-full rounded-2xl bg-gray-50  | lg:rounded-3xl | dark:bg-grayDark-500">
+                                <button
+                                    class="flex justify-between items-center text-left cursor-pointer w-full p-6 | focus:outline-none"
+                                    x-on:click="active != 489203 ? active = 489203 : active = false">
+                                    <h3
+                                        class="text-lg | 4xl:text-xl font-sans-primary tracking-tight text-gray-600  | dark:text-grayDark-100 leading-tighter text-balance pr-10">
+                                       We're not based in Dubai, does that matter?</h3>
+                                    <div class="flex-shrink-0 w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center transition-transform transform | dark:bg-grayDark-400"
+                                        x-bind:class="{'rotate-180': active == 489203}">
+                                        <svg class="w-3 h-3 text-white fill-current | dark:text-grayDark-100"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                            <path
+                                                d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z" />
+                                        </svg>
+                                    </div>
+                                </button>
+                                <div class="w-full" x-show="active == 489203" x-cloak x-collapse>
+                                    <div class="w-full pl-6 pb-6 pr-6 | lg:pr-28">
+                                        <div class="w-full relative ">
+                                            <p
+                                                class="text-base | xl:text-md text-gray-600 dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7  mb-6">
+                                              Not at all - we work with ambitious brands globally and communicate clearly through every phase.</p>
                                         </div>
                                     </div>
                                 </div>

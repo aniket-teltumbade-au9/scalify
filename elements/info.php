@@ -104,7 +104,7 @@ $services_list = [
         'image' => 'ads-marketing.jpg',
         "menu" => ["isMenu" => true, "rank" => 4],
         'brief_description' => 'We bridge the gap between digital and physical worlds. Our team forges strategic retail partnerships and establishes offline distribution networks that place your product directly in the hands of your customers. We build an omnichannel presence, ensuring your brand is visible and available wherever your audience shops.',
-        'category' => 'Scale',
+        'category' => 'Build',
         'capabilities' => [
             [
                 'short_title' => 'PPC Campaigns',

@@ -495,7 +495,7 @@ usort($menuListItems, function ($a, $b) {
                                     </div>
                                 </div>
                             </div>
-                            <div class="hidden | lg:inline-flex">
+                            <!-- <div class="hidden | lg:inline-flex">
                                 <div class="relative group inline-flex items-center" x-data="{ hover: false }"
                                     x-on:mouseenter="hover = true" x-on:mouseleave="hover = false">
                                     <a href="./html/meet-the-team.html"
@@ -533,7 +533,7 @@ usort($menuListItems, function ($a, $b) {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -1208,5 +1208,4 @@ usort($menuListItems, function ($a, $b) {
     });
     </script>
 </body>
-
 </html>
