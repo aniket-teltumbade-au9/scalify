@@ -380,7 +380,7 @@ usort($menuListItems, function ($a, $b) {
                         <div class="inline-flex items-center space-x-2 relative z-20 mb-3 px-3 mt-px | lg:px-6">
                             <div class="bg-gray-600 | dark:bg-grayDark-100 w-1.5 h-1.5 rounded-full"></div>
                             <div class="font-light text-sm | lg:text-base text-gray-600 dark:text-grayDark-100">
-                                Hi, we’re Scalify</div>
+                                Hiya, we’re Scalify</div>
                             <div class="inline-flex animate-waving dela origin-bottom-right">
                                 👋</div>
                         </div>
@@ -545,7 +545,7 @@ usort($menuListItems, function ($a, $b) {
         <div class="w-full pb-20 | lg:pb-24 | 2xl:pb-32 | 4xl:pb-40">
             <div class="px-0">
                 <div
-                    class="px-2 | sm:px-6 | xl:px-12 | 2xl:px-20 | 3xl:px-40 | 4xl:px-60 w-full flex flex-wrap justify-between">
+                    class="px-2 | sm:px-6 | xl:px-12 | 2xl:px-20 | 3xl:px-40 | 4xl:px-60 w-full flex flex-wrap justify-end">
                     <div class="px-2 | lg:px-3 | xl:px-4 w-full | lg:w-4/16">
                         <div class="inline-flex items-center space-x-2 mb-2 | lg:mt-4 ">
                             <div class="bg-gray-600 | dark:bg-grayDark-100 w-1.5 h-1.5 rounded-full"></div>
@@ -556,9 +556,9 @@ usort($menuListItems, function ($a, $b) {
                     <div class="px-2 | lg:px-3 | xl:px-4 flex flex-col items-start space-y-8 w-full | lg:w-11/16">
                         <h2
                             class="text-1xl | md:text-4vw | xl:text-3vw font-sans-primary tracking-tight text-gray-600  | dark:text-grayDark-100 leading-none text-balance lg:indent-48 ">
-                                                        <div class="scalify-headline">
-                                                            Growth strategists who help brands go from “promising startup” → “category leader.”
-                                                        </div>
+                            <div class="scalify-headline">
+                                Growth strategists who help brands go from “promising startup” → “category leader.”
+                            </div>
                         </h2>
                         <div class="flex flex-wrap">
                             <div class="mr-5 mb-3 w-auto | lg:mr-8">
@@ -687,11 +687,11 @@ usort($menuListItems, function ($a, $b) {
                                         class="px-2 | sm:px-6 | xl:px-12 | 2xl:px-20 | 3xl:px-40 | 4xl:px-60 w-full flex flex-wrap | lg:justify-end">
                                         <div class="px-2 | lg:px-3 | xl:px-4 w-auto flex flex-col items-start">
                                             <div class="flex flex-col space-y-3 | lg:space-y-5 items-start">
-                                                <div class="inline-flex items-center space-x-2  ">
+                                                <!-- <div class="inline-flex items-center space-x-2  ">
                                                     <div class="bg-white w-1.5 h-1.5 rounded-full"></div>
-                                                    <!-- <div class="font-light text-sm | lg:text-base text-white">
-                                                        Shameful Plug</div> -->
-                                                </div>
+                                                    <div class="font-light text-sm | lg:text-base text-white">
+                                                        Shameful Plug</div>
+                                                </div> -->
                                                 <h2
                                                     class=" text-2xl | md:text-3xl | xl:text-4xl | 4xl:text-5xl font-sans-primary tracking-tight text-white leading-none text-balance max-w-2xl | xl:max-w-3xl ">
                                                     <p>We work with start-up businesses through to global organisations.
@@ -784,45 +784,47 @@ usort($menuListItems, function ($a, $b) {
                                             <div class="ease-linear || swiper-wrapper"
                                                 style="transition-duration: 8000ms; transform: translate3d(-3921.5px, 0px, 0px);">
                                                 <?php foreach (array_slice($logos, -4) as $index => $logo): ?>
-                                                <div class="px-2 | lg:px-3 xl:px-4 swiper-slide swiper-slide-duplicate"
-                                                    data-swiper-slide-index="<?php echo $n - 4 - $index; ?>"
-                                                    style="width: 356.5px;">
-                                                    <div
-                                                        class="w-full flex justify-center items-center rounded-xl bg-gray-100 || js-logo-28 ">
-                                                        <div class="relative rounded-xl overflow-hidden">
-                                                            <img src="<?php echo BASE_URL . $logo; ?>"
-                                                                class="w-176 h-40 | lg:w-144 lg:h-50" />
+                                                    <div class="px-2 | lg:px-3 xl:px-4 swiper-slide swiper-slide-duplicate"
+                                                        data-swiper-slide-index="<?php echo $n - 4 - $index; ?>"
+                                                        style="width: 356.5px;">
+                                                        <div
+                                                            class="w-full flex justify-center items-center rounded-xl bg-gray-100 || js-logo-28 ">
+                                                            <div class="relative rounded-xl overflow-hidden">
+                                                                <img src="<?php echo BASE_URL . $logo; ?>"
+                                                                    class="w-176 h-40 | lg:w-144 lg:h-50" />
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <?php endforeach;foreach ($logos as $index => $logo): ?>
+                                                <?php endforeach;
+                                                foreach ($logos as $index => $logo): ?>
 
-                                                <div class="px-2 | lg:px-3 xl:px-4 swiper-slide"
-                                                    data-swiper-slide-index="<?php echo $index; ?>"
-                                                    style="width: 356.5px;">
-                                                    <div
-                                                        class="w-full flex justify-center items-center rounded-xl bg-gray-100 || js-logo-28 ">
-                                                        <div class="relative rounded-xl overflow-hidden">
-                                                            <img src="<?php echo BASE_URL . $logo; ?>"
-                                                                class="w-176 h-40 | lg:w-144 lg:h-50" />
+                                                    <div class="px-2 | lg:px-3 xl:px-4 swiper-slide"
+                                                        data-swiper-slide-index="<?php echo $index; ?>"
+                                                        style="width: 356.5px;">
+                                                        <div
+                                                            class="w-full flex justify-center items-center rounded-xl bg-gray-100 || js-logo-28 ">
+                                                            <div class="relative rounded-xl overflow-hidden">
+                                                                <img src="<?php echo BASE_URL . $logo; ?>"
+                                                                    class="w-176 h-40 | lg:w-144 lg:h-50" />
 
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <?php endforeach;foreach (array_slice($logos, 0, 4) as $index => $logo): ?>
+                                                <?php endforeach;
+                                                foreach (array_slice($logos, 0, 4) as $index => $logo): ?>
 
 
-                                                <div class="px-2 | lg:px-3 xl:px-4 swiper-slide swiper-slide-duplicate"
-                                                    data-swiper-slide-index="<?php echo $index; ?>"
-                                                    style="width: 356.5px;">
-                                                    <div
-                                                        class="w-full flex justify-center items-center rounded-xl bg-gray-100 || js-logo-28 ">
-                                                        <div class="relative rounded-xl overflow-hidden">
-                                                            <img src="<?php echo BASE_URL . $logo; ?>"
-                                                                class="w-176 h-40 | lg:w-144 lg:h-50" />
+                                                    <div class="px-2 | lg:px-3 xl:px-4 swiper-slide swiper-slide-duplicate"
+                                                        data-swiper-slide-index="<?php echo $index; ?>"
+                                                        style="width: 356.5px;">
+                                                        <div
+                                                            class="w-full flex justify-center items-center rounded-xl bg-gray-100 || js-logo-28 ">
+                                                            <div class="relative rounded-xl overflow-hidden">
+                                                                <img src="<?php echo BASE_URL . $logo; ?>"
+                                                                    class="w-176 h-40 | lg:w-144 lg:h-50" />
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
                                                 <?php endforeach; ?>
 
                                             </div>
@@ -849,45 +851,47 @@ usort($menuListItems, function ($a, $b) {
                                             <div class="ease-linear || swiper-wrapper"
                                                 style="transition-duration: 8000ms; transform: translate3d(-3921.5px, 0px, 0px);">
                                                 <?php foreach (array_slice($logos, -4) as $index => $logo): ?>
-                                                <div class="px-2 | lg:px-3 xl:px-4 swiper-slide swiper-slide-duplicate"
-                                                    data-swiper-slide-index="<?php echo $n - 4 - $index; ?>"
-                                                    style="width: 356.5px;">
-                                                    <div
-                                                        class="w-full flex justify-center items-center rounded-xl bg-gray-100 || js-logo-28 ">
-                                                        <div class="relative rounded-xl overflow-hidden">
-                                                            <img src="<?php echo BASE_URL . $logo; ?>"
-                                                                class="w-176 h-40 | lg:w-144 lg:h-50" />
+                                                    <div class="px-2 | lg:px-3 xl:px-4 swiper-slide swiper-slide-duplicate"
+                                                        data-swiper-slide-index="<?php echo $n - 4 - $index; ?>"
+                                                        style="width: 356.5px;">
+                                                        <div
+                                                            class="w-full flex justify-center items-center rounded-xl bg-gray-100 || js-logo-28 ">
+                                                            <div class="relative rounded-xl overflow-hidden">
+                                                                <img src="<?php echo BASE_URL . $logo; ?>"
+                                                                    class="w-176 h-40 | lg:w-144 lg:h-50" />
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <?php endforeach;foreach ($logos as $index => $logo): ?>
+                                                <?php endforeach;
+                                                foreach ($logos as $index => $logo): ?>
 
-                                                <div class="px-2 | lg:px-3 xl:px-4 swiper-slide"
-                                                    data-swiper-slide-index="<?php echo $index; ?>"
-                                                    style="width: 356.5px;">
-                                                    <div
-                                                        class="w-full flex justify-center items-center rounded-xl bg-gray-100 || js-logo-28 ">
-                                                        <div class="relative rounded-xl overflow-hidden">
-                                                            <img src="<?php echo BASE_URL . $logo; ?>"
-                                                                class="w-176 h-40 | lg:w-144 lg:h-50" />
+                                                    <div class="px-2 | lg:px-3 xl:px-4 swiper-slide"
+                                                        data-swiper-slide-index="<?php echo $index; ?>"
+                                                        style="width: 356.5px;">
+                                                        <div
+                                                            class="w-full flex justify-center items-center rounded-xl bg-gray-100 || js-logo-28 ">
+                                                            <div class="relative rounded-xl overflow-hidden">
+                                                                <img src="<?php echo BASE_URL . $logo; ?>"
+                                                                    class="w-176 h-40 | lg:w-144 lg:h-50" />
 
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <?php endforeach;foreach (array_slice($logos, 0, 4) as $index => $logo): ?>
+                                                <?php endforeach;
+                                                foreach (array_slice($logos, 0, 4) as $index => $logo): ?>
 
 
-                                                <div class="px-2 | lg:px-3 xl:px-4 swiper-slide swiper-slide-duplicate"
-                                                    data-swiper-slide-index="<?php echo $index; ?>"
-                                                    style="width: 356.5px;">
-                                                    <div
-                                                        class="w-full flex justify-center items-center rounded-xl bg-gray-100 || js-logo-28 ">
-                                                        <div class="relative rounded-xl overflow-hidden">
-                                                            <img src="<?php echo BASE_URL . $logo; ?>"
-                                                                class="w-176 h-40 | lg:w-144 lg:h-50" />
+                                                    <div class="px-2 | lg:px-3 xl:px-4 swiper-slide swiper-slide-duplicate"
+                                                        data-swiper-slide-index="<?php echo $index; ?>"
+                                                        style="width: 356.5px;">
+                                                        <div
+                                                            class="w-full flex justify-center items-center rounded-xl bg-gray-100 || js-logo-28 ">
+                                                            <div class="relative rounded-xl overflow-hidden">
+                                                                <img src="<?php echo BASE_URL . $logo; ?>"
+                                                                    class="w-176 h-40 | lg:w-144 lg:h-50" />
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
                                                 <?php endforeach; ?>
 
                                             </div>
@@ -927,7 +931,8 @@ usort($menuListItems, function ($a, $b) {
                                     </div>
                                 </div>
                             </div>
-                            <?php endforeach;foreach ($logos as $index => $logo): ?>
+                            <?php endforeach;
+                            foreach ($logos as $index => $logo): ?>
 
                             <div class="px-2 | lg:px-3 xl:px-4 swiper-slide"
                                 data-swiper-slide-index="<?php echo $index; ?>" style="width: 356.5px;">
@@ -939,7 +944,8 @@ usort($menuListItems, function ($a, $b) {
                                     </div>
                                 </div>
                             </div>
-                            <?php endforeach;foreach (array_slice($logos, 0, 4) as $index => $logo): ?>
+                            <?php endforeach;
+                            foreach (array_slice($logos, 0, 4) as $index => $logo): ?>
 
 
                             <div class="px-2 | lg:px-3 xl:px-4 swiper-slide swiper-slide-duplicate"
@@ -992,39 +998,39 @@ usort($menuListItems, function ($a, $b) {
                     <div class="w-full flex flex-wrap justify-between">
                         <div class="px-2 | lg:px-3 xl:px-4 w-full order-1 lg:order-2 lg:w-11/16"
                             x-data="{ active: false }">
-                            <?php foreach ($menuListItems as $item) {?>
-                            <div
-                                class="w-full group border-b border-solid border-gray-400 | dark:border-grayDark-300 || js-cursor-trigger-drag">
-                                <a href="<?php echo BASE_URL . "services/" . strtolower($item["category"]) . '/' . $item["slug"]; ?>"
-                                    class="flex items-center relative w-full transform group py-4 transition-opacity | lg:py-6"
-                                    x-data="{ hover: false }" x-on:mouseenter="hover = true, active = 418463"
-                                    x-on:mouseleave="hover = false, active = false"
-                                    x-bind:class="{'lg:opacity-30' : active && active !== 418463}" x="">
-                                    <div class="relative flex-shrink-0 rotate-001 duration-700 bg-gray-500 translate-z-0 rounded-xl overflow-hidden inline-flex items-center justify-center transition-all transform-gpu h-16 md:h-28 lg:rounded-2xl lg:w-0 3xl:h-40 dark:bg-grayDark-600 w-20 | md:w-36"
-                                        x-bind:class="{'w-20 | md:w-36': hover,'w-20 | md:w-36 | lg:w-0': !hover}">
-                                        <div class="w-full h-full transition-opacity | lg:opacity-0 opacity-100"
-                                            x-bind:class="{'opacity-100': hover,'opacity-100 lg:opacity-0': !hover}">
-                                            <picture>
-                                                <source type="image/webp"
-                                                    srcset="<?php echo BASE_URL . 'assets/images/services/' . $item['image']; ?>?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 400w"
-                                                    sizes="100vw">
-                                                <img src="./images/Bag.jpg"
-                                                    srcset="<?php echo BASE_URL . 'assets/images/services/' . $item['image']; ?>q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 400w"
-                                                    sizes="100vw" alt="Bag"
-                                                    class="w-full h-full absolute top-0 left-0 object-cover object-center"
-                                                    loading="lazy" width="400" height="300">
-                                            </picture>
+                            <?php foreach ($menuListItems as $item) { ?>
+                                <div
+                                    class="w-full group border-b border-solid border-gray-400 | dark:border-grayDark-300 || js-cursor-trigger-drag">
+                                    <a href="<?php echo BASE_URL . "services/" . strtolower($item["category"]) . '/' . $item["slug"]; ?>"
+                                        class="flex items-center relative w-full transform group py-4 transition-opacity | lg:py-6"
+                                        x-data="{ hover: false }" x-on:mouseenter="hover = true, active = 418463"
+                                        x-on:mouseleave="hover = false, active = false"
+                                        x-bind:class="{'lg:opacity-30' : active && active !== 418463}" x="">
+                                        <div class="relative flex-shrink-0 rotate-001 duration-700 bg-gray-500 translate-z-0 rounded-xl overflow-hidden inline-flex items-center justify-center transition-all transform-gpu h-16 md:h-28 lg:rounded-2xl lg:w-0 3xl:h-40 dark:bg-grayDark-600 w-20 | md:w-36"
+                                            x-bind:class="{'w-20 | md:w-36': hover,'w-20 | md:w-36 | lg:w-0': !hover}">
+                                            <div class="w-full h-full transition-opacity | lg:opacity-0 opacity-100"
+                                                x-bind:class="{'opacity-100': hover,'opacity-100 lg:opacity-0': !hover}">
+                                                <picture>
+                                                    <source type="image/webp"
+                                                        srcset="<?php echo BASE_URL . 'assets/images/services/' . $item['image']; ?>?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 400w"
+                                                        sizes="100vw">
+                                                    <img src="./images/Bag.jpg"
+                                                        srcset="<?php echo BASE_URL . 'assets/images/services/' . $item['image']; ?>q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 400w"
+                                                        sizes="100vw" alt="Bag"
+                                                        class="w-full h-full absolute top-0 left-0 object-cover object-center"
+                                                        loading="lazy" width="400" height="300">
+                                                </picture>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="inline-flex relative transition-transform transform | lg:translate-x-0 translate-x-6 delay-100"
-                                        x-bind:class="{ 'translate-x-6 delay-0': hover, 'translate-x-6 | lg:translate-x-0 delay-100': !hover }">
-                                        <div
-                                            class="text-6vw | lg:text-5vw 4xl:text-4vw font-sans-primary tracking-tight text-white leading-tighter text-balance">
-                                            <?php echo $item["name"]; ?></div>
-                                    </div>
-                                </a>
-                            </div>
-                            <?php }?>
+                                        <div class="inline-flex relative transition-transform transform | lg:translate-x-0 translate-x-6 delay-100"
+                                            x-bind:class="{ 'translate-x-6 delay-0': hover, 'translate-x-6 | lg:translate-x-0 delay-100': !hover }">
+                                            <div
+                                                class="text-6vw | lg:text-5vw 4xl:text-4vw font-sans-primary tracking-tight text-white leading-tighter text-balance">
+                                                <?php echo $item["name"]; ?></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            <?php } ?>
                         </div>
                     </div>
                 </div>
@@ -1191,9 +1197,10 @@ usort($menuListItems, function ($a, $b) {
     <?php include './elements/footer.php'; ?>
     </script>
     <script>
-    document.addEventListener('DOMContentLoaded', () => {
-        initLocationCarousel(<?php echo json_encode($locations); ?>);
-    });
+        document.addEventListener('DOMContentLoaded', () => {
+            initLocationCarousel(<?php echo json_encode($locations); ?>);
+        });
     </script>
 </body>
+
 </html>

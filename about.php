@@ -7,12 +7,15 @@ $employeeList = [
     ["name" => "Dixter Verano", "Designation" => "Operations Executive"],
     ["name" => "Fazil Iqbal", "Designation" => "Chief Marketing Officer"],
     ["name" => "Gillian Elizabeth", "Designation" => "Lead Designer"],
-    ["name" => "Harishchandra Ramesh Chadda", "Designation" => "Chief Technical Officer"],
+    // ["name" => "Harishchandra Ramesh Chadda", "Designation" => "Chief Technical Officer"],
     // ["name" => "Jovin Fernandes", "Designation" => "Chief Operating Officer"],
     ["name" => "Justin Ebenezer", "Designation" => "Chief People Officer"],
     ["name" => "Mohamed Sahim", "Designation" => "Director of Sales"],
     ["name" => "Partha Chaliha", "Designation" => "Managing Director"],
 ];
+// Add this to populate $logos for the logosDoubleCarousel
+$logos = glob('assets/images/customer-list/*.{jpg,jpeg,png,svg,webp,avif}', GLOB_BRACE);
+$n = count($logos);
 ?>
 
 <body class="bg-white | dark:bg-grayDark-600" x-data="app()" x-init="baseInit(), gaEvents()">
@@ -276,7 +279,7 @@ $employeeList = [
                                     <div class="absolute top-0 left-1/2 h-1/2 origin-bottom-left w-25vw || js-arched-image-419251-tablet" data-index="<?= $index ?>">
                                         <div class="relative overflow-hidden w-full" style="padding-top: 100%;">
                                             <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                              <img src="<?php echo BASE_URL . $img; ?>" alt="About Image <?= $index ?>" class="w-full h-full object-cover absolute top-0 left-0 rounded-2xl transform-gpu bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl" width="800" height="800">
+                                                <img src="<?php echo BASE_URL . $img; ?>" alt="About Image <?= $index ?>" class="w-full h-full object-cover absolute top-0 left-0 rounded-2xl transform-gpu bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl" width="800" height="800">
                                             </picture>
                                         </div>
                                     </div>
@@ -368,7 +371,7 @@ $employeeList = [
                                     <div class="absolute top-0 left-1/2 h-1/2 origin-bottom-left w-20vw || js-arched-image-419251-desktop" data-index="<?= $index ?>">
                                         <div class="relative overflow-hidden w-full" style="padding-top: 100%;">
                                             <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                              <img src="<?php echo BASE_URL . $img; ?>" alt="About Image <?= $index ?>" class="w-full h-full object-cover absolute top-0 left-0 rounded-2xl transform-gpu bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl" width="800" height="800">
+                                                <img src="<?php echo BASE_URL . $img; ?>" alt="About Image <?= $index ?>" class="w-full h-full object-cover absolute top-0 left-0 rounded-2xl transform-gpu bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl" width="800" height="800">
                                             </picture>
                                         </div>
                                     </div>
@@ -1073,7 +1076,7 @@ $employeeList = [
                                 <div class="w-full relative mt-3">
                                     <p
                                         class="text-sm | md:text-base text-gray-600 dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7  mb-6">
-                                        With over a decade of experience, Scalify is an energetic, fresh and vibrant team
+                                        Scalify is an energetic, fresh and vibrant team
                                         offering creative talent and industry knowledge.</p>
                                 </div>
                             </div>
@@ -1232,16 +1235,15 @@ $employeeList = [
                                 <div class="w-full relative mt-3">
                                     <p
                                         class="text-sm | md:text-base text-gray-600 dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7  mb-6">
-                                        Over 55% of our projects are referrals from clients already with us. Our clients
-                                        love to spread the love far and wide.</p>
+                                        55% of our projects are client referrals, a clear reflection of the trust and satisfaction we build with every partnership.</p>
                                 </div>
                             </div>
                             <div class="px-2 | lg:px-3 | xl:px-4 w-full || swiper-slide">
                                 <h3
                                     class=" text-lg | md:text-xl | 4xl:text-1xl font-sans-primary tracking-tight text-gray-600  | dark:text-grayDark-100 leading-tighter text-balance w-full border-b border-solid border-gray-100 pb-5 mb-5 | dark:border-grayDark-300">
-                                    Male:Female ratio</h3>
+                                    On-time Delivery</h3>
                                 <div x-data="statistic" x-init="countUp('308025')">
-                                    <div class="flex flex-row">
+                                    <!-- <div class="flex flex-row">
                                         <div class="inline-flex flex-col items-start relative overflow-hidden text-8xl text-gray-600 | dark:text-grayDark-100 leading-none tracking-tight lowercase  || js-statistic-308025"
                                             data-character="5" data-delay="0">
                                             <div class="opacity-0 relative">
@@ -1291,7 +1293,7 @@ $employeeList = [
                                             </div>
                                         </div>
                                         <div class="inline-flex flex-col items-start relative overflow-hidden text-8xl text-gray-600 | dark:text-grayDark-100 leading-none tracking-tight lowercase  || js-statistic-308025"
-                                            data-character="6" data-delay="0">
+                                            data-character="5" data-delay="0">
                                             <div class="opacity-0 relative">
                                                 -</div>
                                             <div
@@ -1339,7 +1341,7 @@ $employeeList = [
                                             </div>
                                         </div>
                                         <div class="inline-flex flex-col items-start relative overflow-hidden text-8xl text-gray-600 | dark:text-grayDark-100 leading-none tracking-tight lowercase  || js-statistic-308025"
-                                            data-character=":" data-delay="0">
+                                            data-character="%" data-delay="0">
                                             <div class="opacity-0 relative">
                                                 -</div>
                                             <div
@@ -1386,8 +1388,10 @@ $employeeList = [
                                                     K</div>
                                             </div>
                                         </div>
-                                        <div class="inline-flex flex-col items-start relative overflow-hidden text-8xl text-gray-600 | dark:text-grayDark-100 leading-none tracking-tight lowercase  || js-statistic-308025"
-                                            data-character="4" data-delay="0">
+                                    </div> -->
+                                    <div class="flex flex-row">
+                                        <div class="inline-flex flex-col items-start relative overflow-hidden text-8xl text-gray-600 | dark:text-grayDark-100 leading-none tracking-tight lowercase  || js-statistic-308025"
+                                            data-character="9" data-delay="0">
                                             <div class="opacity-0 relative">
                                                 -</div>
                                             <div
@@ -1434,8 +1438,56 @@ $employeeList = [
                                                     K</div>
                                             </div>
                                         </div>
-                                        <div class="inline-flex flex-col items-start relative overflow-hidden text-8xl text-gray-600 | dark:text-grayDark-100 leading-none tracking-tight lowercase  || js-statistic-308025"
-                                            data-character="4" data-delay="0">
+                                        <div class="inline-flex flex-col items-start relative overflow-hidden text-8xl text-gray-600 | dark:text-grayDark-100 leading-none tracking-tight lowercase  || js-statistic-308025"
+                                            data-character="5" data-delay="0">
+                                            <div class="opacity-0 relative">
+                                                -</div>
+                                            <div
+                                                class="absolute top-0 left-0 flex flex-col items-start || js-statistic-308025-characters">
+                                                <div class="text-transparent">
+                                                    -</div>
+                                                <div class="js-statistic-308025-character" data-character="0">
+                                                    0</div>
+                                                <div class="js-statistic-308025-character" data-character="1">
+                                                    1</div>
+                                                <div class="js-statistic-308025-character" data-character="2">
+                                                    2</div>
+                                                <div class="js-statistic-308025-character" data-character="3">
+                                                    3</div>
+                                                <div class="js-statistic-308025-character" data-character="4">
+                                                    4</div>
+                                                <div class="js-statistic-308025-character" data-character="5">
+                                                    5</div>
+                                                <div class="js-statistic-308025-character" data-character="6">
+                                                    6</div>
+                                                <div class="js-statistic-308025-character" data-character="7">
+                                                    7</div>
+                                                <div class="js-statistic-308025-character" data-character="8">
+                                                    8</div>
+                                                <div class="js-statistic-308025-character" data-character="9">
+                                                    9</div>
+                                                <div class="js-statistic-308025-character" data-character=":">
+                                                    :</div>
+                                                <div class="js-statistic-308025-character" data-character="%">
+                                                    %</div>
+                                                <div class="js-statistic-308025-character" data-character=".">
+                                                    .</div>
+                                                <div class="js-statistic-308025-character" data-character="+">
+                                                    +</div>
+                                                <div class="js-statistic-308025-character" data-character=",">
+                                                    ,</div>
+                                                <div class="js-statistic-308025-character" data-character="£">
+                                                    £</div>
+                                                <div class="js-statistic-308025-character" data-character="M">
+                                                    M</div>
+                                                <div class="js-statistic-308025-character" data-character="B">
+                                                    B</div>
+                                                <div class="js-statistic-308025-character" data-character="K">
+                                                    K</div>
+                                            </div>
+                                        </div>
+                                        <div class="inline-flex flex-col items-start relative overflow-hidden text-8xl text-gray-600 | dark:text-grayDark-100 leading-none tracking-tight lowercase  || js-statistic-308025"
+                                            data-character="%" data-delay="0">
                                             <div class="opacity-0 relative">
                                                 -</div>
                                             <div
@@ -1487,8 +1539,7 @@ $employeeList = [
                                 <div class="w-full relative mt-3">
                                     <p
                                         class="text-sm | md:text-base text-gray-600 dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7  mb-6">
-                                        In a male-dominated industry, we are proud to say we’re striving for equal
-                                        gender roles at Scalify.</p>
+                                        95% of projects delivered on or before deadlines.</p>
                                 </div>
                             </div>
                             <div class="px-2 | lg:px-3 | xl:px-4 w-full || swiper-slide">
@@ -1499,7 +1550,7 @@ text-gray-600  | dark:text-grayDark-100
 leading-tighter
 text-balance
 w-full border-b border-solid border-gray-100 pb-5 mb-5 | dark:border-grayDark-300
-">Burritos consumed</h3>
+">City Love</h3>
                                 <div x-data="statistic" x-init="countUp('308025')">
                                     <div class="flex flex-row">
                                         <div class="inline-flex flex-col items-start relative overflow-hidden text-8xl text-gray-600 | dark:text-grayDark-100 leading-none tracking-tight lowercase  || js-statistic-308025"
@@ -1651,8 +1702,7 @@ w-full border-b border-solid border-gray-100 pb-5 mb-5 | dark:border-grayDark-30
                                 <div class="w-full relative mt-3">
                                     <p
                                         class="text-sm | md:text-base text-gray-600 dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7  mb-6">
-                                        We’re not lying. We love a burrito and know a good one when we try it. Our
-                                        favourite spot is Panchos (not an ad, we wish)</p>
+                                        We’re not lying. We love Dubai. The skyline, the food, the vibe—this city never does anything halfway</p>
                                 </div>
                             </div>
                         </div>
@@ -1690,7 +1740,7 @@ w-full border-b border-solid border-gray-100 pb-5 mb-5 | dark:border-grayDark-30
         </div>
         <div id="127732"></div>
         <div x-data="logosDoubleCarousel" x-init="carousel(127732)">
-            <div class="w-full pb-20 | lg:pb-24 | 2xl:pb-32 | 4xl:pb-40 px-2 | lg:px-3 | xl:px-4">
+            <div class="w-full pb-8 | lg:pb-10 | 2xl:pb-16 | 4xl:pb-20 px-2 | lg:px-3 | xl:px-4">
                 <div class="px-2 | sm:px-6 | xl:px-12 | 2xl:px-20 | 3xl:px-40 | 4xl:px-60">
                     <div
                         class="w-full py-20 | lg:py-24 | 2xl:py-32 | 4xl:py-40 bg-gray-600 relative overflow-hidden rounded-tl-none rounded-2xl transform-gpu | lg:rounded-tl-none lg:rounded-3xl | dark:bg-grayDark-500">
@@ -1699,69 +1749,58 @@ w-full border-b border-solid border-gray-100 pb-5 mb-5 | dark:border-grayDark-30
                                 class="bg-white absolute top-0 left-0 rounded-br-2xl w-5/16 h-12 | lg:rounded-br-3xl lg:w-3/16 lg:h-20 | dark:bg-grayDark-600">
                                 <svg id="Layer_1"
                                     class="w-10 h-10 | lg:w-12 lg:h-12 text-white fill-current absolute -top-px right-px transform translate-x-full dark:text-grayDark-600"
-                                    version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 100 100"
-                                    xml:space="preserve">
-                                    <path d="M51.9 0v1.9c-27.6 0-50 22.4-50 50H0V0h51.9z" />
+                                    version="1.1" xmlns="https://www.w3.org/2000/svg" x="0" y="0"
+                                    viewBox="0 0 100 100" xml:space="preserve">
+                                    <path d="M51.9 0v1.9c-27.6 0-50 22.4-50 50H0V0h51.9z"></path>
                                 </svg><svg id="Layer_1"
                                     class="w-10 h-10 | lg:w-12 lg:h-12 text-white fill-current absolute bottom-px -left-px transform translate-y-full dark:text-grayDark-600"
-                                    version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 100 100"
-                                    xml:space="preserve">
-                                    <path d="M51.9 0v1.9c-27.6 0-50 22.4-50 50H0V0h51.9z" />
+                                    version="1.1" xmlns="https://www.w3.org/2000/svg" x="0" y="0"
+                                    viewBox="0 0 100 100" xml:space="preserve">
+                                    <path d="M51.9 0v1.9c-27.6 0-50 22.4-50 50H0V0h51.9z"></path>
                                 </svg>
                             </div>
                             <div
                                 class="px-2 | sm:px-6 | xl:px-12 | 2xl:px-20 | 3xl:px-40 | 4xl:px-60 w-full flex flex-wrap | lg:justify-end">
                                 <div class="px-2 | lg:px-3 | xl:px-4 w-auto flex flex-col items-start">
                                     <div class="flex flex-col space-y-3 | lg:space-y-5 items-start">
-                                        <div class="inline-flex items-center space-x-2  ">
-                                            <!-- <div class="bg-white w-1.5 h-1.5 rounded-full"></div>
+                                        <!-- <div class="inline-flex items-center space-x-2  ">
+                                            <div class="bg-white w-1.5 h-1.5 rounded-full"></div>
                                             <div class="font-light text-sm | lg:text-base text-white">
-                                                Shameful Plug</div> -->
-                                        </div>
-                                        <h2 class="
-text-2xl | md:text-3xl | xl:text-4xl | 4xl:text-5xl
-font-sans-primary tracking-tight
-text-white
-leading-none
-text-balance
-max-w-2xl | xl:max-w-3xl
-">
-                                            <p>We work with start-up businesses through to global organisations.</p>
+                                                        Shameful Plug</div>
+                                        </div> -->
+                                        <h2
+                                            class=" text-2xl | md:text-3xl | xl:text-4xl | 4xl:text-5xl font-sans-primary tracking-tight text-white leading-none text-balance max-w-2xl | xl:max-w-3xl ">
+                                            <p>We work with start-up businesses through to global organisations.
+                                            </p>
                                         </h2>
                                     </div>
                                     <div class="flex space-x-5 mt-5">
-                                        <div class="relative group inline-flex items-center" x-data="{ hover: false }"
-                                            x-on:mouseenter="hover = true" x-on:mouseleave="hover = false">
+                                        <div class="relative group inline-flex items-center"
+                                            x-data="{ hover: false }" x-on:mouseenter="hover = true"
+                                            x-on:mouseleave="hover = false">
                                             <svg width="0" height="0" class="absolute hidden"
                                                 color-interpolation-filters="sRGB">
                                                 <defs>
                                                     <filter id="buttonFilter">
                                                         <feGaussianBlur in="SourceGraphic" stdDeviation="5"
-                                                            result="blur" />
+                                                            result="blur">
+                                                        </feGaussianBlur>
                                                         <feColorMatrix in="blur" mode="matrix"
                                                             values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
-                                                            result="buttonFilter" />
+                                                            result="buttonFilter"></feColorMatrix>
                                                         <feComposite in="SourceGraphic" in2="buttonFilter"
-                                                            operator="atop" />
-                                                        <feBlend in="SourceGraphic" in2="buttonFilter" />
+                                                            operator="atop">
+                                                        </feComposite>
+                                                        <feBlend in="SourceGraphic" in2="buttonFilter">
+                                                        </feBlend>
                                                     </filter>
                                                 </defs>
                                             </svg>
-                                            <a href="/contact/"
+                                            <a href="https://madebyshape.co.uk/contact/"
                                                 class="inline-flex relative group outline-none  | focus:outline-none "
                                                 style="filter: url(#buttonFilter);">
-                                                <div class="
-w-auto
-inline-flex
-items-center
-justify-center
-relative
-leading-tight
-shadow-none
-overflow-hidden
-rounded-full
-border-default
-bg-primary-600 text-gray-600 py-2 px-5">
+                                                <div
+                                                    class=" w-auto inline-flex items-center justify-center relative leading-tight shadow-none overflow-hidden rounded-full border-default bg-primary-600 text-gray-600 py-2 px-5">
                                                     <div class="relative inline-flex top-px flex-shrink-0">
                                                         <div>
                                                             Get in touch today</div>
@@ -1777,17 +1816,21 @@ bg-primary-600 text-gray-600 py-2 px-5">
                                                     <div
                                                         class="relative top-0 left-0 transition-transform transform || js-button-arrow-icon-primary ">
                                                         <svg class="w-3 h-3 fill-current"
-                                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            viewBox="0 0 384 512">
                                                             <path
-                                                                d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z" />
+                                                                d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                                            </path>
                                                         </svg>
                                                     </div>
                                                     <div
                                                         class="absolute top-0 left-0 transition-transform transform translate-y-full -translate-x-full || js-button-arrow-icon-secondary ">
                                                         <svg class="w-3 h-3 fill-current"
-                                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            viewBox="0 0 384 512">
                                                             <path
-                                                                d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z" />
+                                                                d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                                            </path>
                                                         </svg>
                                                     </div>
                                                 </div>
@@ -1796,290 +1839,137 @@ bg-primary-600 text-gray-600 py-2 px-5">
                                     </div>
                                 </div>
                             </div>
-                            <div class="w-full  mt-10 | lg:mt-16 || swiper || js-carousel-127732">
-                                <div class="ease-linear || swiper-wrapper">
-                                    <div class="px-2 | lg:px-3 | xl:px-4 swiper-slide">
-                                        <div
-                                            class="w-full flex items-center justify-center overflow-hidden  rounded-2xl transform-gpu bg-white h-28 | lg:rounded-3xl lg:h-40 | 4xl:h-44 | dark:bg-grayDark-600 || js-logo-127732">
-                                            <div class="w-full h-full flex items-center justify-center">
+                            <div class="mx-auto relative w-full | xl:w-15/16"
+                                style="--blur: 1; --blurs: 5; max-height: 200px;;">
+                                <div class="blur blur--left">
+                                    <div class="" style="--index: 0"></div>
+                                    <div class="" style="--index: 1"></div>
+                                    <div class="" style="--index: 2"></div>
+                                    <div class="" style="--index: 3"></div>
+                                    <div class="" style="--index: 4"></div>
+                                </div>
+                                <div class="blur blur--right">
+                                    <div class="" style="--index: 0"></div>
+                                    <div class="" style="--index: 1"></div>
+                                    <div class="" style="--index: 2"></div>
+                                    <div class="" style="--index: 3"></div>
+                                    <div class="" style="--index: 4"></div>
+                                </div>
+                                <div
+                                    class="w-full relative z-0 mt-10 -mb-5 | lg:mt-16 || swiper js-carousel-127732 swiper-initialized swiper-horizontal swiper-pointer-events">
+                                    <div class="ease-linear || swiper-wrapper"
+                                        style="transition-duration: 8000ms; transform: translate3d(-3921.5px, 0px, 0px);">
+                                        <?php foreach (array_slice($logos, -4) as $index => $logo): ?>
+                                            <div class="px-2 | lg:px-3 xl:px-4 swiper-slide swiper-slide-duplicate"
+                                                data-swiper-slide-index="<?php echo $n - 4 - $index; ?>"
+                                                style="width: 356.5px;">
                                                 <div
-                                                    class="w-full h-12 relative px-8 | md:h-12 md:px-14 | lg:px-14 | 4xl:px-16 4xl:h-14">
-                                                    <svg class="w-full h-full text-gray-600 fill-current | dark:text-white"
-                                                        width="1705" height="111" xmlns="http://www.w3.org/2000/svg"
-                                                        viewBox="0 0 1705 111" f="none">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                                            d="M113.457 48.293V108.309H101.02L98.1504 98.5586C92.9185 102.656 87.268 105.738 81.2289 107.832C75.1599 109.922 67.7456 111 58.9261 111C50.1066 111 42.6923 109.715 35.4872 107.172C28.2821 104.629 22.0637 100.953 16.8318 96.168C11.5999 91.3828 7.47415 85.5508 4.4845 78.6445C1.49484 71.7656 0 64.0234 0 55.5C0 46.9766 1.52472 39.2344 4.54428 32.3555C7.56381 25.4766 11.7494 19.6172 17.0709 14.832C22.3925 10.0469 28.6708 6.37109 35.8759 3.82812C43.0809 1.28516 50.8241 0 59.1354 0C71.1239 0 81.3186 2.15234 89.7495 6.39844C98.1803 10.6758 105.296 17.0156 111.185 25.4492L95.8782 34.2383C91.4236 28.6172 86.3412 24.4922 80.6609 21.8008C74.9806 19.1094 67.626 17.793 58.5674 17.793C52.5581 17.793 47.1768 18.6875 42.3933 20.4844C37.6099 22.2773 33.514 24.7891 30.1357 28.0508C26.7574 31.3086 24.1265 35.2539 22.3028 39.9219C20.4492 44.5859 19.5225 49.7891 19.5225 55.5312C19.5225 61.2695 20.4791 66.4453 22.3925 71.0195C24.3059 75.625 26.9667 79.5703 30.4048 82.8906C33.8429 86.2109 37.9387 88.7539 42.7222 90.5469C47.5056 92.3398 52.7375 93.2383 58.4777 93.2383C66.9982 93.2383 74.0537 92.2227 79.6743 90.1875C85.265 88.1523 90.2876 85.0156 94.7422 80.7969V65.3086L66.8188 64.1719V48.293H113.457ZM248.171 2.45312L293.135 108.281H272.656L265.391 91.625H193.251L185.986 108.281H165.118L211.428 2.45312H248.171ZM200.516 74.2188H257.529L235.345 19.8555H223.297L200.516 74.2188ZM423.574 5.41406C418.313 3.44141 412.632 2.45312 406.504 2.45312H344.229V108.25H363.751V83.7578H409.553L422.977 108.25H444.263L427.61 78.9766C434.247 75.7734 439.569 71.1719 443.605 65.1016C447.641 59.0586 449.644 51.8242 449.644 43.3906C449.644 37.2617 448.538 31.6992 446.296 26.6445C444.054 21.6211 441.004 17.3164 437.177 13.7266C433.351 10.168 428.806 7.38672 423.574 5.41406ZM405.636 65.9961H363.722V20.2461H405.636C412.901 20.2461 418.791 22.3086 423.335 26.375C427.85 30.4727 430.122 36.2734 430.122 43.4219C430.122 50.5664 427.85 56.1289 423.335 60.0781C418.791 64.0234 412.901 65.9961 405.636 65.9961ZM514.699 2.45312L551.83 62.5586H554.132L590.098 2.45312H612.281L561.965 81.875V108.281H542.832V81.875L492.516 2.45312H514.699ZM845.146 81.0977L774.918 2.45312H755.396V108.281H774.53V29.2461L844.906 108.281H864.668V2.45312H845.146V81.0977ZM1014.09 2.45312V19.8867H938.901V45.5117H1006.65V62.918H938.901V90.4883H1016.96V108.281H919.379V2.45312H1014.09ZM1124.68 90.668L1087.37 2.45312H1065.93L1112.42 108.281H1144.17L1190.87 2.45312H1169.64L1132.33 90.668H1124.68ZM1260.92 2.45312V108.281H1241.39V2.45312H1260.92ZM1335.33 90.875V2.45312H1315.81V108.281H1411.48V90.875H1335.33ZM1481.13 2.45312V90.875H1557.28V108.281H1461.61V2.45312H1481.13ZM1702.13 19.8867V2.45312H1607.42V108.281H1705V90.4883H1626.94V62.918H1694.69V45.5117H1626.94V19.8867H1702.13Z"
-                                                            f="black"></path>
-                                                    </svg>
+                                                    class="w-full flex justify-center items-center rounded-xl bg-gray-100 || js-logo-28 ">
+                                                    <div class="relative rounded-xl overflow-hidden">
+                                                        <img src="<?php echo BASE_URL . $logo; ?>"
+                                                            class="w-176 h-40 | lg:w-144 lg:h-50" />
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 swiper-slide">
-                                        <div
-                                            class="w-full flex items-center justify-center overflow-hidden  rounded-2xl transform-gpu bg-white h-28 | lg:rounded-3xl lg:h-40 | 4xl:h-44 | dark:bg-grayDark-600 || js-logo-127732">
-                                            <div class="w-full h-full flex items-center justify-center">
+                                        <?php endforeach;
+                                        foreach ($logos as $index => $logo): ?>
+
+                                            <div class="px-2 | lg:px-3 xl:px-4 swiper-slide"
+                                                data-swiper-slide-index="<?php echo $index; ?>"
+                                                style="width: 356.5px;">
                                                 <div
-                                                    class="w-full h-12 relative px-8 | md:h-12 md:px-14 | lg:px-14 | 4xl:px-16 4xl:h-14">
-                                                    <svg class="w-full h-full text-gray-600 fill-current | dark:text-white"
-                                                        width="178" height="30" xmlns="http://www.w3.org/2000/svg"
-                                                        viewBox="0 0 178 30" f="none">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                                            d="M0 22.0145V19.7559L6.85409 18.4641V22.0516C6.85409 23.7836 7.41772 24.915 8.78771 24.915C10.1577 24.915 10.6432 23.8659 10.6432 22.7386V21.4879C10.6432 20.1179 10.3593 19.3897 8.82885 18.4641L4.23341 15.7241C1.25069 13.9509 0.242729 11.8939 0.242729 8.75069V7.22024C0.242729 2.13933 4.27455 0 8.79182 0C13.9921 0 17.5014 1.8966 17.5014 7.61931V9.7175L10.7666 10.927V7.45886C10.7666 6.08886 10.2811 4.92046 8.79182 4.92046C7.62342 4.92046 6.97751 5.80911 6.97751 6.89523V8.10477C6.97751 9.27318 7.70159 10.24 8.79182 10.8859L13.3503 13.5889C16.6168 15.5225 17.5014 17.3779 17.5014 20.3236V22.9855C17.5014 26.898 14.4775 30 8.75069 30C3.02386 30 0 26.7334 0 22.0145ZM29.5928 23.4261H24.8739L24.0675 29.3134H17.3328L22.7798 0.6875H31.691L37.1751 29.3134H30.3991L29.5928 23.4261ZM28.9469 18.6702L27.7785 10.08C27.7254 9.65287 27.6724 9.25275 27.6192 8.8515L27.6191 8.85132C27.5114 8.03903 27.4031 7.22213 27.293 6.16748H27.1737C27.0918 7.24611 26.9712 8.07862 26.8503 8.91241C26.7951 9.29346 26.7398 9.67478 26.6882 10.08L25.5198 18.6702H28.9469ZM37.0104 9.23204V21.0066H37.0022C37.0022 27.0584 40.1454 30 46.0738 30C51.6813 30 55.0672 27.0954 55.0672 21.6525V18.4682L48.2131 17.1393V21.6566C48.2131 23.7095 47.489 24.7998 46.0779 24.7998C44.6668 24.7998 43.9427 23.5902 43.9427 21.2534V8.71366C43.9427 6.37685 44.6668 5.16731 46.119 5.16731C47.489 5.16731 48.1761 6.17526 48.1761 8.15003V12.5027L55.1125 11.2521V7.98546C55.1125 2.7441 52.1297 0 46.2425 0C40.3552 0 37.0104 3.18431 37.0104 9.23204ZM74.7531 29.3134H68.0183V17.3373H63.8261V29.3134H57.0913V0.6875H63.8261V12.2193H68.0183V0.6875H74.7531V29.3134ZM83.7794 23.4261H88.4983H88.5024L89.3088 29.3134H96.0806L90.5965 0.6875H81.6853L76.2383 29.3134H82.9731L83.7794 23.4261ZM86.684 10.08L87.8524 18.6702H84.4253L85.5937 10.08C85.6454 9.6748 85.7006 9.2935 85.7558 8.91247C85.8767 8.07866 85.9973 7.24614 86.0792 6.16748H86.1985C86.3087 7.22217 86.417 8.03909 86.5247 8.85141C86.5779 9.25269 86.6309 9.65284 86.684 10.08ZM105.132 0.6875H111.866V23.5084H118.762V29.3134H105.132V0.6875ZM119.083 9.43363V20.5623C119.083 26.61 122.629 29.9959 128.438 29.9959C134.247 29.9959 137.793 26.61 137.793 20.5623V9.43363C137.793 3.3859 134.243 0 128.438 0C122.633 0 119.083 3.3859 119.083 9.43363ZM130.857 8.5491V21.4509C130.857 23.6684 129.968 24.8368 128.438 24.8368C126.908 24.8368 126.019 23.6684 126.019 21.4509V8.5491C126.019 6.3316 126.908 5.16319 128.438 5.16319C129.968 5.16319 130.857 6.3316 130.857 8.5491ZM148.235 17.942H146.622V29.3134H139.887V0.6875H148.276C154.809 0.6875 157.348 3.71136 157.348 8.63182V9.80023C157.348 13.0668 156.138 15.165 154.122 16.2923L157.952 29.3175H150.938L148.235 17.9461V17.942ZM147.791 13.8279C149.765 13.8279 150.411 12.7007 150.411 10.2404V8.22453C150.411 5.96589 149.724 5.15952 147.791 5.15952H146.622V13.8279H147.791ZM167.547 0.6875H159.24V29.3175H167.505C173.837 29.3175 177.264 25.8905 177.264 19.6V10.043C177.264 4.03226 173.755 0.6875 167.547 0.6875ZM170.332 20.0032C170.332 22.7843 169.324 24.5575 167.386 24.5575V24.5616H165.975V5.44751H167.386C169.484 5.44751 170.332 6.81751 170.332 9.68092V20.0032Z"
-                                                            f="black"></path>
-                                                    </svg>
+                                                    class="w-full flex justify-center items-center rounded-xl bg-gray-100 || js-logo-28 ">
+                                                    <div class="relative rounded-xl overflow-hidden">
+                                                        <img src="<?php echo BASE_URL . $logo; ?>"
+                                                            class="w-176 h-40 | lg:w-144 lg:h-50" />
+
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 swiper-slide">
-                                        <div
-                                            class="w-full flex items-center justify-center overflow-hidden  rounded-2xl transform-gpu bg-white h-28 | lg:rounded-3xl lg:h-40 | 4xl:h-44 | dark:bg-grayDark-600 || js-logo-127732">
-                                            <div class="w-full h-full flex items-center justify-center">
+                                        <?php endforeach;
+                                        foreach (array_slice($logos, 0, 4) as $index => $logo): ?>
+
+
+                                            <div class="px-2 | lg:px-3 xl:px-4 swiper-slide swiper-slide-duplicate"
+                                                data-swiper-slide-index="<?php echo $index; ?>"
+                                                style="width: 356.5px;">
                                                 <div
-                                                    class="w-full h-12 relative px-8 | md:h-12 md:px-14 | lg:px-14 | 4xl:px-16 4xl:h-14">
-                                                    <svg class="w-full h-full text-gray-600 fill-current | dark:text-white"
-                                                        width="924" height="391" xmlns="http://www.w3.org/2000/svg"
-                                                        viewBox="0 0 924 391" f="none">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                                            d="M0.279999 0V286.53H922.79V0H0.279999ZM653.84 85.02H713.07L714.77 100.89H712.79C711.09 90.69 708.82 89.55 704.29 89.55H688.42V146.8C688.42 153.04 690.4 155.3 697.49 155.3H700.04V157.57H666.88V155.3H669.43C676.52 155.3 678.5 153.03 678.5 146.8V89.55H662.63C658.1 89.55 656.11 90.68 654.41 100.89H652.43L653.84 85.02ZM602.82 101.46C602.82 91.82 612.17 83.6 624.93 83.6C633.15 83.6 642.5 86.43 646.75 88.42L648.45 100.89H646.47C642.79 92.67 634.85 87 626.06 87C617.56 87 611.89 90.97 611.89 97.49C611.89 105.186 620.647 110.086 630.021 115.331C640.671 121.289 652.117 127.694 652.42 139.15C652.42 150.2 641.65 159.84 626.91 159.84C619.82 159.84 611.04 157.57 604.52 155.87L601.97 138.58H604.24C606.79 149.92 615.86 155.87 625.78 155.87C634 155.87 643.07 151.9 643.07 142.83C643.07 134.863 633.92 129.662 624.345 124.22C613.838 118.249 602.82 111.987 602.82 101.46ZM527.43 154.74C538.48 154.46 539.33 153.04 539.33 144.54V83.61C539.33 75.11 538.48 73.41 527.43 73.41V70.86H593.75L594.88 88.15H592.33V87.87C590.63 76.25 586.95 75.4 582.13 75.4H550.95V109.41H575.32C580.42 109.41 582.69 108.84 583.54 100.62H586.09V124.14H583.54C582.47 114.747 580.127 114.759 574.821 114.787C574.523 114.788 574.216 114.79 573.9 114.79H550.94V144.55C550.94 151.07 553.77 152.2 559.16 152.2H580.13C589.77 152.2 592.88 150.22 596.28 138.31H598.83L596.56 157.3H527.41V154.74H527.43ZM342.93 73.12C332.44 73.12 331.88 75.1 331.88 80.49V158.43H328.2L263.3 82.76V142.84C263.3 153.04 263.87 155.03 275.77 155.03V157.58H218.8V155.03H220.78C228.72 155.03 231.55 154.18 231.55 150.21C231.55 148.06 230.788 146.171 230.223 144.77L230.13 144.54L221.06 122.72H183.94L176.29 141.14C175.16 143.69 173.46 147.94 173.46 149.93C173.46 153.61 177.14 155.03 184.8 155.03H185.37V157.58H131.52V155.03C138.04 155.03 144.56 153.05 143.99 145.68L140.02 83.05H139.74L108 157.59H104.88L72.29 83.05H72.01L68.33 145.97C67.76 153.34 73.15 154.76 79.38 155.04V157.59H50.19V155.04C60.39 155.04 61.81 152.77 62.38 140.02L66.06 80.5C66.06 74.83 64.36 73.13 53.87 73.13V70.58H78.53L109.42 141.15L140.03 70.58H163.55V73.13C153.06 73.13 151.36 75.11 151.36 80.5L155.61 142C156.18 151.35 157.31 154.47 160.99 154.47C164.045 154.47 164.923 152.572 170.009 141.585L170.009 141.585L170.34 140.87L200.38 70.58H210.3L242.89 145.68C243.021 145.961 243.151 146.242 243.28 146.522C245.104 150.474 246.814 154.18 250.26 154.18C255.08 154.18 257.06 150.5 257.06 145.11V76.52C253.66 74.25 251.11 73.12 246.29 73.12V70.57H267.26L325.64 138.87V83.32C325.64 74.82 324.79 73.4 313.74 73.12V70.57H342.93V73.12ZM420.59 150.78C419.607 151.255 418.644 151.738 417.683 152.22C410.606 155.769 403.604 159.28 389.13 159.28C360.79 159.28 343.78 140.57 343.78 114.78C343.78 88.14 361.07 68.58 390.26 68.58C404.684 68.58 415.307 73.1958 421.865 76.0455L422.29 76.23L423.42 93.52H420.87C416.34 80.48 406.7 71.98 391.4 71.98C368.16 71.98 356.54 90.12 356.54 113.36C356.54 138.58 371.84 155.59 393.1 155.59C399.34 155.59 415.49 151.34 424.84 134.33H427.39L420.59 150.78ZM451.48 115.07V144.54C451.48 153.04 452.33 154.46 463.38 154.74V157.29H428.8V154.74C439.29 154.74 439.85 153.04 439.85 147.37V80.48C439.85 75.1 439.28 73.11 428.8 73.11V70.56H463.38V73.11C452.33 73.39 451.48 74.81 451.48 83.31V109.38H502.78V82.17C502.78 74.8 501.36 73.38 490.88 73.1V70.55H525.46V73.1C514.97 73.1 514.41 74.8 514.41 80.47V147.36C514.41 153.03 514.98 154.73 525.46 154.73V157.28H490.88V154.73C501.37 154.45 502.78 153.03 502.78 145.66V115.05H451.48V115.07ZM559.18 243.17H528.29V240.9C538.78 240.9 539.34 239.2 539.34 233.53V181.95C535.66 185.07 529.14 189.04 524.89 191.02L524.04 189.32C530.84 185.07 540.48 176.57 543.31 172.88H547.28V231.83C547.28 238.92 548.7 240.33 559.18 240.62V243.17ZM586.67 244.87C573.63 244.87 563.15 236.65 563.15 226.73C563.15 219.08 569.1 212.56 581.01 208.31C569.67 203.78 564.01 198.11 564.01 190.74C564.01 181.1 574.21 172.88 586.12 172.88C598.02 172.88 607.94 179.97 607.94 188.75C608.22 195.55 602.84 200.94 592.07 204.9C604.82 210 610.49 215.67 610.49 224.46C610.47 236.08 599.99 244.87 586.67 244.87ZM658.94 236.65L658.09 243.45H614.16V240.33C614.526 239.965 615.383 239.24 616.598 238.211L616.6 238.21C624.8 231.276 649.3 210.557 649.3 193.28C649.3 185.06 643.06 178.54 634.85 178.54C627.2 178.54 620.11 184.49 617.56 193.56H615.86C617.28 180.81 626.35 172.3 638.25 172.3C649.87 172.3 658.37 180.8 658.37 191.86C658.37 206.549 641.961 220.582 628.563 232.04C626.711 233.624 624.916 235.159 623.23 236.64H649.3C654.97 236.64 656.95 234.94 658.37 228.14H660.35L658.94 236.65ZM709.09 223.9H700.03V243.74H692.09V223.9H661.48V223.62V221.07L696.62 173.17H700.02V218.23H709.09V223.9ZM779.39 157.01H710.24V154.46C721.29 154.18 722.14 152.76 722.14 144.26V83.33C722.14 74.83 721.29 73.41 710.24 73.13V70.58H776.56L777.69 87.87V88.15H775.14C773.44 76.53 769.76 75.68 764.94 75.68H733.76V109.69H758.13C763.23 109.69 765.78 109.12 766.35 100.9H768.9V124.42H766.35C765.28 115.025 762.676 115.039 757.586 115.067C757.458 115.068 757.329 115.068 757.198 115.069C757.037 115.07 756.875 115.07 756.71 115.07H733.75V144.26C733.75 150.78 736.87 151.91 741.97 151.91H762.94C772.58 151.91 775.69 149.93 779.09 138.02H781.64L779.39 157.01ZM888.79 157.58C866.307 158.623 861.911 154.362 851.353 144.133L851.352 144.132C850.466 143.273 849.537 142.373 848.55 141.43C847.315 140.333 845.898 138.953 844.305 137.403L844.305 137.403L844.304 137.402C839.319 132.55 832.622 126.031 824.46 121.31C821.06 121.59 818.79 121.59 815.11 121.59C811.99 121.59 810.29 121.59 808.02 121.31V144.55C808.02 153.05 811.42 155.04 819.36 155.04H822.48V157.59H782.8V155.04H785.07C793.57 155.04 796.41 152.77 796.41 143.42V84.75C796.41 75.96 794.14 73.41 785.92 73.41H782.8V70.86C784.94 70.86 789.741 70.5919 794.376 70.3332C796.5 70.2146 798.588 70.098 800.37 70.01C806.04 69.44 808.87 69.44 817.94 69.44C844.01 69.44 855.63 79.93 855.63 94.38C855.63 104.87 848.54 113.65 836.92 117.05C837.456 117.467 837.983 117.875 838.504 118.279C842.939 121.714 846.956 124.824 852.79 130.65L863.84 141.14C872.06 149.64 877.73 154.18 888.78 155.03V157.58H888.79ZM807.44 72.8308C810 72.5508 811.7 72.5508 814.53 72.5508C836.07 72.5508 842.02 82.1908 842.02 95.2208C842.3 111.941 831.82 117.891 816.23 117.891C813.11 117.891 810.84 117.891 807.44 117.611V72.8308ZM218.51 117.05L202.64 79.0703L186.77 117.05H218.51ZM583.27 209.16C575.05 213.13 569.95 219.08 569.95 226.16C569.95 235.51 577.32 241.75 586.67 241.75C595.74 241.75 603.39 235.8 603.39 227.3C603.39 219.93 597.44 214.83 583.27 209.16ZM586.1 175.148C594.6 175.148 601.4 180.248 601.4 188.188C601.4 194.418 596.59 199.238 589.78 203.208C573.91 196.968 570.51 193.008 570.51 186.768C570.51 179.968 577.6 175.148 586.1 175.148ZM692.1 218.231V183.941L667.16 218.231H692.1ZM21.26 370.698V323.938H36.84V318.838H0V323.938H15.59V370.698H21.26ZM68.3 346.038V370.698L68.29 371.268H74.24V344.628C74.24 337.818 71.69 332.438 62.9 332.438C56.39 332.438 51.57 335.838 49.3 341.508H49.02C49.31 339.528 49.59 336.408 49.59 333.858V315.148H43.92V370.978H49.59V352.558C49.59 343.488 54.41 336.688 61.21 336.688C66.6 336.688 68.3 340.088 68.3 346.038ZM89 346.328C90.13 340.378 93.82 336.408 99.2 336.408C105.15 336.408 108.55 340.378 108.27 346.328H89ZM88.71 350.578H114.22C114.5 349.448 114.5 348.308 114.5 347.458C114.5 339.238 110.25 331.868 99.76 331.868C89.28 331.868 83.04 340.368 83.04 351.708C83.04 365.028 88.99 371.268 100.61 371.268C105.14 371.268 109.68 370.418 113.08 368.998L112.51 364.178C109.68 365.598 105.43 366.728 101.46 366.728C92.96 366.728 88.43 361.918 88.71 350.578ZM138.87 353.408C138.87 362.198 141.71 371.268 157.86 371.268C171.47 371.268 178.27 364.468 178.26 350.858V318.828H172.59V351.418C172.59 362.468 168.06 366.438 158.42 366.438C147.37 366.438 144.82 360.208 144.82 352.838V318.828H138.87V353.408ZM213.98 346.038V370.698L213.97 370.978H219.92V344.338C219.92 337.528 217.37 332.148 208.58 332.148C202.07 332.148 197.25 336.118 194.98 341.498H194.7C194.99 339.238 195.27 335.548 195.27 332.998H189.6V370.978H195.27V352.558C195.27 343.488 200.09 336.688 206.89 336.688C212.28 336.688 213.98 340.088 213.98 346.038ZM230.7 332.728V370.698V370.708H236.37V332.728H230.7ZM229.56 321.668C229.56 323.938 231.26 325.638 233.53 325.638C235.8 325.638 237.79 323.938 237.5 321.668C237.5 319.398 235.8 317.698 233.53 317.698C231.26 317.698 229.56 319.398 229.56 321.668ZM257.06 370.698H263.01L277.76 332.718H271.24L262.17 357.938C261.829 359.321 261.38 360.705 260.952 362.023C260.678 362.867 260.413 363.685 260.19 364.458C259.765 363.323 259.41 362.191 259.055 361.058C258.7 359.926 258.345 358.793 257.92 357.658L249.13 332.718H242.61L257.06 370.698ZM285.4 346.328C286.53 340.378 290.22 336.408 295.6 336.408C301.55 336.408 304.95 340.378 304.67 346.328H285.4ZM285.11 350.578H310.62C310.91 349.448 310.91 348.308 310.9 347.458C310.9 339.238 306.64 331.868 296.16 331.868C285.68 331.868 279.44 340.368 279.44 351.708C279.44 365.028 285.39 371.268 297.01 371.268C301.54 371.268 306.08 370.418 309.48 368.998L308.91 364.178C306.08 365.598 301.83 366.728 297.86 366.728C289.36 366.728 284.83 361.918 285.11 350.578ZM325.64 355.408C325.64 342.648 329.61 336.128 338.11 337.548L338.39 331.878C330.17 331.028 326.21 336.698 324.79 342.368C325.36 338.968 325.64 335.278 325.64 332.728H319.97V370.708H325.64V355.408ZM343.49 370.418C345.76 370.988 348.6 371.268 351.43 371.268C361.35 371.268 367.31 366.168 367.58 359.078C367.58 351.975 362.019 350.259 356.961 348.699C352.741 347.397 348.87 346.204 348.87 342.078C348.87 338.398 351.42 336.128 357.09 336.128C359.65 336.128 362.48 336.698 365.03 337.548L365.31 332.448C363.04 331.878 360.21 331.598 357.94 331.598C348.3 331.598 343.2 336.408 343.2 342.648C343.2 350.134 348.781 351.782 353.8 353.263C357.898 354.472 361.62 355.571 361.62 359.648C361.62 363.618 357.65 366.168 352.27 366.168C349.15 366.168 346.32 365.608 343.77 365.038L343.49 370.418ZM376.09 332.728V370.698V370.708H381.76V332.728H376.09ZM375.24 321.668C375.24 323.938 376.94 325.638 379.21 325.638C381.19 325.638 383.18 323.938 383.18 321.668C383.18 319.398 381.48 317.698 379.21 317.698C376.94 317.698 375.24 319.398 375.24 321.668ZM395.65 359.928C395.65 367.868 397.92 371.268 405.57 371.268C408.12 371.268 410.67 370.988 412.37 370.418V365.318C410.96 365.608 408.97 365.888 406.99 365.888C402.45 365.888 401.32 364.188 401.32 357.388V336.978H412.37V332.448H401.32V318.278L395.65 319.978V332.728H387.43V337.258H395.65V359.928ZM417.47 390.258C425.68 390.258 429.09 386.288 433.62 374.668L449.51 332.738H443.27L436.47 352.008C434.77 356.538 433.07 361.078 432.5 363.628L432.433 363.405C431.605 360.649 430.77 357.869 429.67 354.558L421.73 332.738H415.21L429.66 370.718L427.96 375.248C424.84 383.178 422.57 385.448 418.04 385.448C416.34 385.448 414.64 385.168 413.22 384.598L412.65 389.978C413.36 389.978 414.21 390.048 415.06 390.118C415.91 390.188 416.76 390.258 417.47 390.258ZM473.3 351.428C473.3 341.218 478.97 336.688 484.92 336.688C492.29 336.688 496.26 342.078 496.26 351.428C496.26 361.918 490.87 366.448 484.92 366.448C477.55 366.448 473.3 361.068 473.3 351.428ZM467.35 351.708C467.35 365.028 473.87 371.268 484.07 371.268C495.12 371.268 502.21 362.488 502.49 350.858C502.49 336.968 494.84 331.868 485.49 331.868C474.15 331.868 467.35 340.938 467.35 351.708ZM527.15 319.118C529.13 319.118 531.12 319.398 533.1 319.968L533.67 315.148C531.68 314.858 529.7 314.578 527.43 314.578C518.36 314.578 512.98 319.398 512.98 330.168V332.718H504.76V337.248H512.98V370.688H518.65V337.248H529.99V332.718H518.65V329.888C518.65 322.518 521.2 319.118 527.15 319.118ZM597.72 338.668L602.25 370.698V370.128H608.2L600.55 318.268H592.9L580.71 353.698C579.456 356.98 578.866 359.36 578.154 362.238C578.065 362.596 577.974 362.962 577.88 363.338H577.6C577.04 360.508 576.19 357.098 574.77 353.418L562.87 318.558H555.5L548.13 370.418H554.08L557.76 339.238C557.952 337.426 558.144 335.773 558.325 334.216C558.681 331.151 558.994 328.456 559.18 325.638C559.239 325.854 559.299 326.075 559.361 326.302C560.188 329.337 561.259 333.264 562.58 336.688L574.2 370.698H581L593.19 334.418C594.32 330.728 595.17 327.898 595.74 325.628H596.02C596.245 327.915 596.659 330.929 597.255 335.274C597.4 336.325 597.555 337.453 597.72 338.668ZM620.96 361.068C620.96 357.378 623.8 352.848 638.25 352.848V353.418C638.25 359.938 634 366.738 627.2 366.738C623.51 366.738 620.96 364.468 620.96 361.068ZM638.81 362.758C638.53 364.748 638.53 367.868 638.53 370.698V370.708H644.18C643.9 367.308 643.9 363.048 643.9 359.368V344.348C643.9 336.978 640.79 331.878 630.3 331.878C624.92 331.878 620.66 333.008 616.98 334.708L617.55 339.808C620.95 337.538 625.49 336.408 629.17 336.408C635.98 336.408 637.96 339.808 637.96 345.478V348.598C622.94 348.598 614.72 354.258 614.72 362.198C614.72 368.428 619.26 371.548 625.21 371.548C631.73 371.548 636.83 367.578 638.53 362.758H638.81ZM679.63 346.038V370.698L679.62 370.978H685.57V344.338C685.57 337.528 683.02 332.148 674.23 332.148C667.72 332.148 662.9 336.118 660.63 341.498H660.35C660.64 339.238 660.92 335.548 660.92 332.998H655.25V370.978H660.92V352.558C660.92 343.488 665.74 336.688 672.54 336.688C677.93 336.688 679.63 340.088 679.63 346.038ZM694.08 353.128C694.08 367.588 702.02 371.268 710.52 371.268C715.34 371.268 719.3 370.138 722.14 369.278L721.57 364.178C719.02 365.598 715.33 366.448 711.93 366.448C702.86 366.448 700.31 360.218 700.31 352.278C700.31 342.928 704.28 336.978 712.5 336.978C715.91 336.978 718.74 337.548 721.29 338.678L721.86 333.578C719.03 332.728 715.91 332.158 712.79 332.158C700.32 332.158 694.08 340.658 694.08 353.128ZM754.45 346.038V370.698L754.44 371.268H760.39V344.628C760.39 337.818 757.84 332.438 749.05 332.438C742.54 332.438 737.72 335.838 735.45 341.508H735.17C735.46 339.528 735.74 336.408 735.74 333.858V315.148H730.07V370.978H735.74V352.558C735.74 343.488 740.56 336.688 747.36 336.688C752.75 336.688 754.45 340.088 754.45 346.038ZM775.14 346.328C776.27 340.378 779.96 336.408 785.34 336.408C791.29 336.408 794.69 340.378 794.41 346.328H775.14ZM774.85 350.578H800.36C800.64 349.448 800.64 348.309 800.64 347.459V347.458C800.64 339.238 796.39 331.868 785.9 331.868C775.42 331.868 769.18 340.368 769.18 351.708C769.18 365.028 775.13 371.268 786.75 371.268C791.28 371.268 795.82 370.418 799.22 368.998L798.65 364.178C795.82 365.598 791.57 366.728 787.6 366.728C779.1 366.728 774.57 361.918 774.85 350.578ZM807.72 370.418C809.99 370.988 812.83 371.268 815.66 371.268C825.58 371.268 831.54 366.168 831.81 359.078C831.81 351.975 826.249 350.259 821.191 348.699C816.971 347.397 813.1 346.204 813.1 342.078C813.1 338.398 815.65 336.128 821.32 336.128C823.88 336.128 826.71 336.698 829.26 337.548L829.54 332.448C827.27 331.878 824.44 331.598 822.17 331.598C812.53 331.598 807.43 336.408 807.43 342.648C807.43 350.134 813.011 351.782 818.03 353.263C822.128 354.472 825.85 355.571 825.85 359.648C825.85 363.618 821.88 366.168 816.5 366.168C813.38 366.168 810.55 365.608 808 365.038L807.72 370.418ZM842.59 359.928C842.59 367.868 844.86 371.268 852.51 371.268C854.78 371.268 857.61 370.988 859.31 370.418V365.318C857.9 365.608 855.91 365.888 853.93 365.888C849.39 365.888 848.26 364.188 848.26 357.388V336.978H859.31V332.448H848.26V318.278L842.59 319.978V332.728H834.37V337.258H842.59V359.928ZM870.65 346.328C871.78 340.378 875.47 336.408 880.85 336.408C886.52 336.408 890.2 340.378 889.92 346.328H870.65ZM870.36 350.578H895.87C895.87 349.448 895.87 348.308 896.15 347.458C896.15 339.238 891.9 331.868 881.41 331.868C870.93 331.868 864.69 340.368 864.69 351.708C864.69 365.028 870.64 371.268 882.26 371.268C886.79 371.268 891.33 370.418 894.73 368.998L894.16 364.178C891.33 365.598 887.08 366.728 883.11 366.728C874.61 366.728 870.08 361.918 870.36 350.578ZM910.32 355.408C910.32 342.648 914.29 336.128 922.79 337.548L923.07 331.878C914.85 331.028 910.89 336.698 909.47 342.368C910.04 338.968 910.32 335.278 910.32 332.728H904.65V370.708H910.32V355.408Z"
-                                                            f="black"></path>
-                                                    </svg>
+                                                    class="w-full flex justify-center items-center rounded-xl bg-gray-100 || js-logo-28 ">
+                                                    <div class="relative rounded-xl overflow-hidden">
+                                                        <img src="<?php echo BASE_URL . $logo; ?>"
+                                                            class="w-176 h-40 | lg:w-144 lg:h-50" />
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 swiper-slide">
-                                        <div
-                                            class="w-full flex items-center justify-center overflow-hidden  rounded-2xl transform-gpu bg-white h-28 | lg:rounded-3xl lg:h-40 | 4xl:h-44 | dark:bg-grayDark-600 || js-logo-127732">
-                                            <div class="w-full h-full flex items-center justify-center">
-                                                <div
-                                                    class="w-full h-12 relative px-8 | md:h-12 md:px-14 | lg:px-14 | 4xl:px-16 4xl:h-14">
-                                                    <svg class="w-full h-full text-gray-600 fill-current | dark:text-white"
-                                                        width="1015" height="160" xmlns="http://www.w3.org/2000/svg"
-                                                        viewBox="0 0 1015 160" f="none">
-                                                        <path
-                                                            d="M37.0573 159.074C9.19133 159.074 1.26442 135.707 1.26442 111.707H26.1394C26.1394 118.345 26.9906 135.488 38.1515 135.488C46.5161 135.488 50.7957 127.974 50.7957 120.704C50.7957 93.6888 0 86.6129 0 41.8232C0 19.5256 12.012 0.0242746 36.0117 0.0242746C63.6588 0.0242746 71.1723 23.3918 71.5857 46.7593H46.7107C46.7107 40.1211 46.0785 23.6106 35.3551 23.6106C27.647 23.6106 24.8508 31.0999 24.8508 37.5436C24.8508 63.2697 75.6465 72.9231 75.6465 116.862C75.6465 140.424 61.908 159.074 37.0573 159.074ZM86.1509 156.059V3.01518H149.372V26.6015H114.017V65.8229H140.156V90.698H114.017V132.497H150.88V156.083H86.1509V156.059ZM162.016 156.059V3.01518H189.882V132.473H225.675V156.059H162.016ZM262.538 26.6015V67.5493H288.045V92.4244H262.538V156.083H234.672V3.01518H297.042V26.6015H262.538ZM356.008 156.059L342.926 90.2603H336.288V156.059H308.203V3.01518H339.716C368.871 3.01518 383.874 16.7293 383.874 46.5161C383.874 60.0114 380.226 76.303 367.582 83.8166L384.093 156.059H356.008ZM340.567 25.3128H336.288V67.9626H341.856C352.993 67.9626 356.008 55.7561 356.008 46.7349C356.008 35.8172 353.649 25.3128 340.567 25.3128ZM396.931 156.059V3.01518H425.016V156.059H396.931ZM469.806 156.059H441.089V3.01518H465.307C515.471 3.01518 516.76 40.0968 516.76 79.537C516.76 115.135 516.76 156.059 469.806 156.059ZM468.955 132.497C490.596 132.497 487.605 109.129 487.605 82.3333C487.605 58.747 493.392 26.6015 468.955 26.6015V132.497ZM604.637 156.059H592.844L588.978 145.992C584.041 153.287 575.896 159.074 566.68 159.074C528.091 159.074 527.021 108.278 527.021 80.6312C527.021 54.4917 530.887 0.0486205 566.68 0.0486205C601.622 0.0486205 603.543 30.492 603.543 57.7014H578.473L578.692 48.0481C578.692 41.4098 577.841 23.6106 568.187 23.6106C554.692 23.6106 556.175 70.3456 556.175 80.8501C556.175 103.561 554.668 135.512 569.452 135.512C581.464 135.512 581.026 114.941 580.807 107.014H570.522V84.7163H604.612V156.059H604.637ZM619.421 156.059V3.01518H682.642V26.6015H647.262V65.8229H673.232V90.698H647.287V132.497H684.15V156.083H619.421V156.059ZM725.316 159.074C697.45 159.074 689.305 135.707 689.523 111.707H714.398C714.398 120.071 715.25 135.488 726.411 135.488C734.775 135.488 738.836 127.974 738.836 120.704C738.836 93.6888 688.259 86.6129 688.259 41.8232C688.259 19.5256 700.271 0.0242746 724.271 0.0242746C751.918 0.0242746 759.212 23.3918 759.845 46.7593H734.751C734.751 41.191 735.821 23.6106 723.614 23.6106C715.906 23.6106 713.11 31.0999 713.11 37.5436C713.11 63.2697 763.905 72.9231 763.905 116.862C763.905 140.424 750.167 159.074 725.316 159.074ZM863.357 156.059C851.564 156.059 842.348 152.849 834.859 144.922C827.783 153.287 817.498 159.074 805.923 159.074C782.142 159.074 771.419 137.652 771.419 120.485C771.419 102.686 780.416 87.2694 793.717 72.4611C787.297 59.1604 782.142 47.8049 782.142 32.5832C782.142 12.8631 795.638 0 814.726 0C834.446 0 845.169 16.0727 845.169 31.9266C845.169 51.6467 835.734 59.5737 824.379 72.8745C827.175 80.5825 831.455 87.6585 835.321 94.9532C837.461 87.6585 838.75 80.5825 839.601 73.0933L861.023 77.8106C859.102 92.5946 855.868 107.379 849.448 121.117C853.315 127.123 858.032 129.701 865.084 131.184V156.059H863.357ZM861.631 133.98C854.141 132.059 849.424 127.755 845.777 121.336C851.783 108.254 855.211 94.5398 857.351 80.3881L842.567 77.1783C841.278 86.3941 838.92 94.9776 836.148 103.537C830.798 93.2511 824.355 83.3789 820.488 72.2422C831.625 59.1604 841.716 51.2334 841.716 31.951C841.716 17.5803 832.063 3.45284 814.701 3.45284C797.34 3.45284 785.547 14.8083 785.547 32.6075C785.547 48.0481 791.115 59.4035 797.559 73.1176C785.547 86.4184 774.848 101.616 774.848 120.485C774.848 136.776 784.695 155.645 805.923 155.645C818.349 155.645 827.564 149.007 834.64 139.573C842.348 148.57 849.643 152.436 861.655 152.655V133.98H861.631ZM824.987 126.904C822.19 131.184 817.692 135.901 811.905 135.901C801.182 135.901 795.832 121.117 795.832 112.315C795.832 102.88 799.261 97.5307 805.486 91.087L824.987 126.904ZM799.261 112.339C799.261 121.336 803.321 132.497 812.343 132.497C817.06 132.497 818.981 129.068 820.926 126.491L804.853 96.704C801.182 100.984 799.261 105.895 799.261 112.339ZM814.482 20.1578C822.19 20.1578 824.33 27.2337 824.33 33.8719C824.33 43.9387 818.324 51.0145 812.756 58.5281C809.327 50.6012 805.242 41.1667 805.242 32.5832C805.264 27.0392 807.188 20.1578 814.482 20.1578ZM821.121 33.8962C821.121 27.4768 818.981 23.6106 814.482 23.6106C810.422 23.6106 808.695 27.258 808.695 32.6075C808.695 38.3946 811.054 46.1027 813.412 52.1088C817.473 46.7593 821.121 40.9721 821.121 33.8962ZM917.144 58.3336C917.144 53.3975 917.995 26.407 908.779 26.407C897.642 26.407 898.907 73.1419 898.907 78.0537C898.907 124.789 902.968 132.716 908.341 132.716C919.478 132.716 918.846 104.631 918.846 97.555H945.204V99.2571C945.423 123.913 942.408 159.05 907.904 159.05C867.831 159.05 867.394 103.974 867.394 78.0294C867.394 54.0297 870.822 0 907.904 0C942.408 0 944.985 33.653 944.766 58.3093V60.0357H917.119V58.3336H917.144ZM941.581 56.6072C941.362 31.5376 937.934 3.45284 907.928 3.45284C874.907 3.45284 870.846 52.3276 870.846 78.0537C870.846 105.92 871.916 155.645 907.928 155.645C937.934 155.645 941.8 126.077 942.019 100.984H922.299C922.08 109.98 922.08 135.925 908.366 135.925C898.931 135.925 895.503 121.555 895.503 78.0537C895.503 67.3304 894.214 23.173 908.803 23.173C921.229 23.173 920.597 49.3125 920.597 56.6072H941.581ZM983.38 0.437655C1009.74 0.437655 1014.46 26.796 1014.46 47.8049C1014.46 68.5949 1009.74 94.9532 983.38 94.9532C957.022 94.9532 952.304 68.5949 952.304 47.8049C952.304 26.8203 957.022 0.437655 983.38 0.437655ZM988.948 125.421C979.1 125.421 974.797 116.837 967.502 116.837C963.636 116.837 960.207 119.196 957.654 122.406L953.374 116.181C958.943 107.403 966.651 99.8894 976.523 99.8894C986.371 99.8894 990.456 108.473 997.945 108.473C1001.81 108.473 1005.02 106.114 1007.6 102.904L1011.88 109.129C1006.53 117.689 998.602 125.421 988.948 125.421ZM983.38 91.549C1007.38 91.549 1011.03 66.4794 1011.03 47.8292C1011.03 28.9601 1007.38 3.89049 983.38 3.89049C959.161 3.89049 955.733 28.9601 955.733 47.8292C955.733 66.4551 959.161 91.549 983.38 91.549ZM1007.38 107.622C1004.8 110.199 1001.37 111.901 997.945 111.901C989.362 111.901 985.52 103.318 976.523 103.318C968.596 103.318 961.739 109.105 957.022 116.181L957.873 117.689C960.45 115.111 963.879 113.409 967.526 113.409C975.891 113.409 979.951 121.992 988.973 121.992C996.9 121.992 1003.76 115.986 1008.26 109.129L1007.38 107.622ZM991.745 47.8292C991.745 75.2574 988.754 79.5613 983.38 79.5613C978.663 79.5613 975.015 75.2817 975.015 47.8292C975.015 34.9662 975.453 27.0392 976.523 22.3219C978.03 16.7536 980.803 15.9025 983.38 15.9025C989.167 15.8812 991.745 22.9541 991.745 47.8292ZM983.38 76.1085C985.957 76.1085 988.316 73.3122 988.316 47.8049C988.316 39.0269 988.098 19.3067 983.38 19.3067C978.882 19.3067 978.444 29.179 978.444 47.8049C978.444 71.61 980.803 76.1085 983.38 76.1085Z"
-                                                            f="black"></path>
-                                                    </svg>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 swiper-slide">
-                                        <div
-                                            class="w-full flex items-center justify-center overflow-hidden  rounded-2xl transform-gpu bg-white h-28 | lg:rounded-3xl lg:h-40 | 4xl:h-44 | dark:bg-grayDark-600 || js-logo-127732">
-                                            <div class="w-full h-full flex items-center justify-center">
-                                                <div
-                                                    class="w-full h-12 relative px-8 | md:h-12 md:px-14 | lg:px-14 | 4xl:px-16 4xl:h-14">
-                                                    <svg class="w-full h-full text-gray-600 fill-current | dark:text-white"
-                                                        width="292" height="184" xmlns="http://www.w3.org/2000/svg"
-                                                        viewBox="0 0 292 184" f="none">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                                            d="M0.9 127.5C6.5 130.5 12.8 131.8 18.8 131.8C33.1 131.8 45.5 127 45.3 110.7C45.3 98.7731 35.1081 94.183 26.4691 90.2922C20.1144 87.4303 14.6 84.9468 14.6 80.2C14.6 74 21.3 72.6 28.1 72.9C31.8 73.1 35.4 74 40.4 75.7H40.6L41.3 75.1L42.4 67.6V67.4L41.8 66.6C38.7 65.2 31.9 63.2 26 63.2C14.1 63.2 0 65.8 0 80.8C0 92.6608 9.31267 96.9741 17.663 100.842C24.4493 103.985 30.6 106.834 30.6 113.2C30.6 120.3 23 122.2 16 121.9C11 121.6 8.5 121 1 117.8C0.4 117.6 0.1 118.3 0.1 118.8L0.200001 126.5C0.200001 127.081 0.38746 127.193 0.853126 127.472L0.9 127.5ZM82 103.6C82.7 103.6 82.9 103.8 82.9 104.4V120.5C82.9 121.2 82.7 121.5 81.9 121.5H75.4C68.6 121.5 64.8 119.3 64.8 112.1C64.8 105.4 68.5 103.6 75.4 103.6H82ZM96.2 129.6C97 129.4 97.2 128.9 97.2 128.2H97.1V95C97.1 79.4 88.2 73.9 74.3 73.9C68.7 73.9 61.1 74.5 56.6 75.1L55.9 75.9V76.1L56.7 83.1C56.9 83.7 57.1 84 57.7 84H58C58.3058 83.9752 58.6177 83.9497 58.9346 83.9239C62.4515 83.6366 66.5727 83.3 69.6 83.3C79.6 83.3 82.7 86.9 82.7 95.6C79.9 95.2 74.2 94.5 70.8 94.5C59.7 94.5 50.1 98 50.1 112.6C50.1 127.5 60 131.7 73.8 131.7C80.8647 131.7 88.6391 130.635 95.034 129.759C95.4281 129.706 95.8169 129.652 96.2 129.6ZM106.4 130.5H119.2C119.9 130.5 120 130.3 120.1 129.5V55.7C120.1 55 119.7 54.7 119.1 54.7L106.4 55.7C105.8 55.9 105.6 56.2 105.6 56.8V129.5C105.6 130.2 105.8 130.5 106.4 130.5ZM170.7 103.2C170.7 88.3 173.7 82.9 182 82.9C190.2 82.9 193.2 88.3 193.2 103.2C193.2 117.1 190.2 122.5 182 122.5C173.9 122.5 170.7 117.3 170.7 103.2ZM156.1 103.3C156.1 122.1 165.8 131.6 182 131.6C198.2 131.6 207.7 122 207.8 103.3C207.8 82.7 197.6 74.1 182 74.1C166.3 74.1 156.1 82.9 156.1 103.3ZM273.755 84.0612C273.903 84.0741 274.051 84.0871 274.2 84.1C274.7 84.2 274.9 84.6 274.8 85.2V119.9L274.1 121C272.4 121.3 269.9 121.6 267.9 121.6C259.3 121.6 254.4 115.9 254.4 102.7C254.4 89.3 258.9 83.7 267.1 83.7C269.625 83.7 271.625 83.8749 273.755 84.0612ZM268 131.7C275.7 131.7 282.1 130.6 288.3 129.5C289.1 129.4 289.4 128.7 289.4 127.9V56.2C289.4 55.6 289.1 55 288.4 54.9L276.1 55.9C275.4 56.1 275.1 56.5 275.1 57.2V74.2L274.5 75H274.3C273.909 74.9588 273.357 74.8923 272.695 74.8125C270.143 74.5046 265.959 74 263.1 74C250.7 74 239.6 80.5 239.6 101.9C239.6 124.1 251.5 131.7 268 131.7ZM231.249 84.0666C233.837 83.8558 236.075 83.6737 238.8 83.6C239.4 83.6 239.7 83.2 239.7 82.8V75.6C239.7 75 239.4 74.6 238.9 74.6C231.9 74.9 219.7 75.9 213.8 76.8C213.2 77 212.9 77.4 212.9 78.1V129.6C212.9 130.3 213.3 130.6 213.8 130.6H226.6C227.2 130.6 227.5 130.3 227.5 129.5V85.2L228.3 84.3C229.354 84.221 230.324 84.142 231.249 84.0666ZM149.7 42.8C152.5 44.2 155.6 44.9 158.6 44.9C165.7 44.9 171.4 42.5 171.3 34.4C171.3 28.6766 166.01 26.574 161.385 24.7355C157.767 23.2975 154.556 22.0211 154.6 19.3C154.7 15.7 159.6 15.3 163.3 15.6C165.4 15.7 166.4 15.9 168.9 16.7L169.2 16.4L169.7 12.7V12.6L169.4 12.2C167.9 11.5 165.1 10.9 162.2 10.9C156.3 10.9 149.3 12.2 149.3 19.6C149.3 25.2723 154.082 27.1647 158.528 28.9242C162.391 30.4527 166 31.881 166 35.6C166 39.7 160.3 40.2 157.2 40C154.7 39.9 153.5 39.6 149.8 38L149.4 38.5V42.3L149.7 42.8ZM14 44.9C22.4 44.9 28 39.8 28 30L28.1 5.5L27.5 4.90002H23L22.5 5.5V29.5C22.5 36.8 19.6 39.7 14.2 39.7C8.3 39.7 5.6 36.9 5.6 29.5V5.5L5.1 4.90002H0.6L0.1 5.5V30.1C0.1 39.7 5.5 44.9 14 44.9ZM54.5 44.4H59L59.6 43.8V23.6C59.6 13.8 54.4 11 45.8 11C42.9 11 38.2 11.6 34 12.3L33.4 13V43.8L33.9 44.4H38.4L38.9 43.8V16.8L39.4 16.2C41.1 16 43.7 15.8 45.5 15.8C51.1 15.8 54 17.6 54 24V43.8L54.5 44.4ZM65.8 44.4H70.3L70.7 43.8V11.7L70.2 11.2H65.8L65.3 11.8V43.8L65.8 44.4ZM70.3 7.10001L70.8 6.5V1.70001L70.3 1.10001H65.8L65.3 1.70001V6.5L65.8 7.10001H70.3ZM96.1 11.2H100.6L101.2 11.7V11.9L91.8 43.9L91.1 44.5H85L84.4 43.9L74.9 11.7L74.8 11.5L75.3 11.2H80.2L80.7 11.7L87.7 39.3L88 39.6L88.3 39.2L95.6 11.6L96.1 11.2ZM107.2 25.3C107.2 18.8 110.5 15.7 115.6 15.7C120.8 15.7 124.3 18.8 124.5 25.4L123.9 25.9H107.7L107.2 25.3ZM107.8 30.4H129.6L130.2 29.7C130.2 16.8 125.7 10.9 116.1 10.9C108.3 10.9 101.8 15.1 101.8 27.6C101.8 40.6 107.8 44.7 116.7 44.7C120 44.7 123.1 44.3 125.7 43.9L126.3 43.4L126.8 39.9V39.8L126.3 39.4C123.5 39.7 120.8 39.9 118.4 39.9C111.9 39.9 107.5 38.3 107.3 31L107.8 30.4ZM176.6 44.4H181.1L181.5 43.8V11.7L181 11.2H176.6L176.1 11.8V43.8L176.6 44.4ZM181.1 7.10001L181.6 6.5V1.70001L181.1 1.10001H176.6L176.1 1.70001V6.5L176.6 7.10001H181.1ZM203.2 44.2L203.8 43.7L204.3 40.3L203.8 39.7H200.6C196.7 39.7 196.2 38.3 196.2 34.9V15.8L196.7 15.2H202.3L202.8 14.7V11.9L202.3 11.3H196.7L196.2 10.7V2.5L195.6 1.90002L191.2 2.40002L190.7 3.10001V10.7L190.2 11.3H186.6L186.1 11.8V14.6L186.6 15.2H190.1L190.6 15.8V36.4C190.6 42.2 192.8 44.7 197.8 44.7C199.537 44.7 200.902 44.5137 202.972 44.2311L203.2 44.2ZM141.17 16.0951C142.92 15.9356 144.407 15.8 146.3 15.8L146.8 15.4V11.6L146.3 11C142.647 11.085 139.138 11.603 136.018 12.0636C135.466 12.1451 134.926 12.2248 134.4 12.3L133.9 13.1V43.9L134.4 44.5H138.9L139.4 43.9V16.8L140 16.2C140.407 16.1647 140.794 16.1293 141.17 16.0951ZM229 11.2H233.6L233.9 11.5V11.6L227.3 37.1C225.8 42.8 222.9 50.4 218.7 55.1L218 55.5H213.1L212.7 55.1L212.8 54.8C214.1 53.4 217.6 49.2 218.7 46.1C219.1 45.2 219.1 44.8 219.1 44.8L218.7 44.3H218.6C218.1 44.3 216.6 43.9 216.1 42.3L207.1 11.6V11.5L207.6 11.2H212.5L213.1 11.6L220.9 39.1L221.3 39.6L221.6 39.2L228.5 11.6L229 11.2ZM133.2 74C134.9 55 150.8 53 153.4 53L154.7 53.9L157.3 59.2L157.4 59.4L157.5 60V60.1L157.4 60.2L157.3 60.3L157.2 60.4L156.9 60.5C151.8 62.7 147.9 67.5 147.1 74C147.1 74.8 147.2 75.1 148 75.1H155.2C155.9 75.1 156.2 75.5 156.2 76.1V82.8C156.2 83.4 155.9 83.8 155.3 83.8H148.2C147.6 83.8 147.3 84.1 147.3 84.9V129.5C147.3 130.3 147 130.7 146.4 130.7H133.7C133 130.7 132.7 130.3 132.7 129.5V84.9C132.7 84.2 132.5 83.7 131.8 83.7L126.2 83.8C125.5 83.8 125.3 83.5 125.3 82.8V76.1C125.3 75.4 125.5 75.1 126.1 75.1H132.1C132.8 75.1 133.1 74.8 133.2 74ZM247.6 28.2C247.6 18.6 251.9 15.5 257.1 15.5C262.5 15.5 266.9 18.6 266.8 28.2C266.8 36.4 262.9 40.1 257.2 40.1C251.5 40.1 247.6 36.5 247.6 28.2ZM242.1 28.2C242.1 39.6 249.4 45 257.1 45C265.3 45 272.3 39.4 272.3 28.2C272.3 16.3 265.8 11 257.2 11C248.6 11 242.1 16.4 242.1 28.2ZM277.8 10.6C278.5 2.20001 286.6 0 288.1 0L288.5 0.200012L289.6 2.40002L289.5 2.90002C286.3 4.10002 283.6 6.80001 283 10.6L283.5 11.2H288.8L289.4 11.8V14.5L288.9 15.1H283.5L283 15.7V43.7L282.5 44.4H278L277.4 43.7V15.9L276.9 15.2H273.6L273.1 14.6V11.8L273.6 11.2H277.2L277.8 10.6ZM26.2 160.201V182.901V183.001H30.7V147.901H25L17.5999 163.601C17.5232 163.765 17.4453 163.932 17.3664 164.101C16.7257 165.472 16.0232 166.976 15.4 168.401H15.2999C14.9499 167.651 14.5999 166.851 14.25 166.051C13.9 165.251 13.55 164.451 13.2 163.701L5.89995 147.901H0.199951V183.001H4.49995V160.201C4.49995 158.157 4.43816 156.793 4.36314 155.137C4.34273 154.686 4.32134 154.214 4.29995 153.701H4.39995C4.79995 154.601 5.22495 155.501 5.64995 156.401C6.07495 157.301 6.49995 158.201 6.89995 159.101L13.5 173.301H17.0999L23.7999 159.101C24.6999 157.301 25.5 155.601 26.2999 153.701H26.4C26.3796 154.188 26.3593 154.643 26.3398 155.079C26.2634 156.788 26.2 158.209 26.2 160.201ZM50.0999 151.601C50.5 153.601 50.9 155.401 51.5 157.301L54.9 167.501H44.9L48.1999 157.301C48.7999 155.501 49.1999 153.701 49.5999 151.601H50.0999ZM56.0999 171.401L59.6999 182.901H64.5L53 147.801H47L35.5 182.901H39.9L43.5999 171.401H56.0999ZM75.3 157.701L87.7 182.901V182.801H93.8V147.701H89.5999V170.501C89.5999 172.701 89.6 175.401 89.8 178.201H89.7C89.127 176.84 88.349 175.223 87.6596 173.79C87.3864 173.222 87.127 172.683 86.8999 172.201L74.7 147.701H68.5V182.801H72.5999V159.001C72.5999 156.601 72.4999 154.001 72.3999 151.701H72.5C73.4 153.801 74.4 156.001 75.3 157.701ZM99.8 168.301C99.8 180.601 106 183.601 114 183.601C117.2 183.601 120.7 183.001 122.1 182.701V179.201C119.9 179.401 116.6 179.601 114 179.601C107.4 179.601 104.2 176.801 104.2 168.201V162.401C104.2 153.801 107.4 151.101 114 151.101C116.6 151.101 119.9 151.401 122.1 151.601H122.1V148.101C121.917 148.075 121.697 148.042 121.447 148.004C119.789 147.754 116.781 147.301 114 147.301C105.9 147.301 99.8 150.201 99.8 162.501V168.301ZM149.2 166.301V182.901H153.5V147.801H149.2V162.401H131.6V147.801H127.3V182.901H131.6V166.301H149.2ZM160.6 147.801V182.801H181.4V179.001H165V166.601H180.4V162.701H165V151.701H181.4V147.801H160.6ZM225 182.901V151.701H235.9V147.801H209.9V151.701H220.7V182.901H225ZM239.8 147.801V182.801H260.6V179.001H244.2V166.601H259.6V162.701H244.2V151.701H260.6V147.801H239.8ZM270.9 151.701H274.8C281.6 151.701 285 152.701 285.1 158.501C285.1 164.001 281.8 165.401 275 165.401H270.9V151.701ZM278.2 169.201L286.5 182.901V182.801H291.6L282.8 168.201C286.9 166.801 289.4 164.001 289.4 158.401C289.4 149.401 282.9 147.701 274.8 147.701H266.5V182.801H270.8V169.201H274.9H278.2ZM195.2 161.701L201.2 164.301C206.1 166.501 208.5 169.201 208.4 174.101C208.4 180.201 204.5 183.601 196.8 183.601C192.6 183.601 188.1 182.901 186.8 182.601V179.201C189.6 179.501 192.8 179.801 196.8 179.801C201.6 179.801 204 178.201 204 174.101C204 171.301 202.9 169.701 199.2 168.001L193.2 165.301C188.5 163.201 186 160.701 186 155.801C186 150.001 189.8 147.301 197.5 147.301C200.7 147.301 203.9 147.701 205.8 148.001V151.601L205.572 151.58C203.383 151.381 200.308 151.101 197.7 151.101C193.1 151.101 190.5 152.201 190.5 155.801C190.5 158.501 191.5 160.001 195.2 161.701Z"
-                                                            f="black"></path>
-                                                    </svg>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 swiper-slide">
-                                        <div
-                                            class="w-full flex items-center justify-center overflow-hidden  rounded-2xl transform-gpu bg-white h-28 | lg:rounded-3xl lg:h-40 | 4xl:h-44 | dark:bg-grayDark-600 || js-logo-127732">
-                                            <div class="w-full h-full flex items-center justify-center">
-                                                <div
-                                                    class="w-full h-12 relative px-8 | md:h-12 md:px-14 | lg:px-14 | 4xl:px-16 4xl:h-14">
-                                                    <svg class="w-full h-full text-gray-600 fill-current | dark:text-white"
-                                                        width="134" height="23" xmlns="http://www.w3.org/2000/svg"
-                                                        viewBox="0 0 134 23" f="none">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                                            d="M6.34298 12.2605C6.34298 12.9741 6.33704 13.6894 6.3311 14.4056C6.31663 16.1485 6.30212 17.897 6.37299 19.6405C6.42024 20.8217 7.45857 20.8867 8.32369 20.941L8.32451 20.941L8.32547 20.9411C8.3753 20.9442 8.42454 20.9473 8.47299 20.9505C9.27299 21.0105 9.44299 21.3305 9.22299 22.0905H0.102991C-0.0770095 21.4605 -0.117013 21.0505 0.802987 20.9505C2.69299 20.7505 2.96299 20.3905 2.96299 18.5105V3.63055C2.96299 1.83055 2.76299 1.63054 1.02299 1.20054C0.769532 1.13889 0.544232 0.941149 0.321371 0.745551C0.218897 0.655613 0.116938 0.566127 0.0129942 0.490531C0.131948 0.440446 0.250901 0.377622 0.370161 0.314636C0.631878 0.176413 0.895072 0.0374096 1.16299 0.03054C4.32299 -0.00946002 7.48298 -0.00945453 10.643 0.0205455C11.473 0.0305455 12.323 0.140538 13.123 0.340538C15.263 0.880538 16.833 2.10054 17.143 4.41054C17.463 6.78054 16.713 8.77053 14.573 10.0405C14.0235 10.3662 13.4372 10.6274 12.8203 10.9022L12.8202 10.9022L12.8202 10.9022L12.8202 10.9022C12.5278 11.0325 12.2285 11.1658 11.923 11.3105C12.4881 12.0649 13.0462 12.8217 13.6032 13.5768C15.047 15.5344 16.4832 17.4815 18.013 19.3505C18.5528 20.0018 19.4671 20.3887 20.3218 20.7503C20.4645 20.8107 20.6056 20.8704 20.743 20.9305C20.8211 20.9642 20.8912 20.9929 20.9541 21.0186C21.471 21.2301 21.5008 21.2423 21.483 22.1605C21.0285 22.1605 20.5733 22.1624 20.1177 22.1643H20.1175C18.7488 22.1699 17.3759 22.1756 16.003 22.1305C15.713 22.1205 15.383 21.7105 15.173 21.4205C14.3626 20.2703 13.5598 19.1125 12.7564 17.9538C11.7157 16.4529 10.6739 14.9503 9.61298 13.4605C8.4867 11.8995 8.42434 11.91 6.41719 12.248L6.34298 12.2605ZM6.31298 10.6005C9.39298 11.0405 11.493 10.2905 12.653 8.39054C13.653 6.74054 13.613 4.30054 12.503 2.84054C11.1972 1.13118 9.47814 1.21294 7.71743 1.29668C7.25324 1.31876 6.78616 1.34097 6.32299 1.33054C6.31299 4.48054 6.31298 7.50053 6.31298 10.6005ZM77.613 21.8503C77.7003 21.7759 77.7844 21.6838 77.8681 21.5922C78.0434 21.4003 78.2167 21.2106 78.413 21.1903C79.793 21.0203 80.123 20.2403 80.103 18.9503C80.043 15.1103 80.043 11.2703 80.103 7.44026C80.123 6.26026 79.623 5.67026 78.543 5.39026C78.3178 5.33063 78.1188 5.18761 77.9172 5.04261C77.8145 4.96875 77.711 4.89438 77.603 4.83026C77.633 4.77526 77.6605 4.71776 77.688 4.66026C77.7155 4.60275 77.743 4.54525 77.773 4.49025C78.7437 4.49025 79.7153 4.47784 80.6872 4.46542C82.9795 4.43614 85.2737 4.40683 87.563 4.54025C89.593 4.66025 90.933 6.11026 91.113 7.72026C91.323 9.64026 90.443 11.1003 88.523 12.0003C88.2872 12.1116 88.0471 12.2101 87.7493 12.3323L87.7487 12.3325C87.5921 12.3968 87.4194 12.4676 87.223 12.5503C87.883 12.7603 88.353 12.9103 88.823 13.0703C90.843 13.7803 92.023 15.2203 92.083 17.0603C92.153 19.1103 91.133 20.6903 89.103 21.5203C88.413 21.8003 87.643 22.0603 86.913 22.0703C84.641 22.1152 82.369 22.1096 80.0927 22.104C79.3334 22.1021 78.5735 22.1003 77.813 22.1003C77.743 22.0203 77.673 21.9303 77.613 21.8503ZM82.7139 15.038V15.0383C82.7021 16.5339 82.6907 17.9773 82.763 19.4103C82.783 19.8903 83.243 20.5903 83.673 20.7703C85.073 21.3403 86.513 21.2803 87.733 20.2603C89.163 19.0603 89.273 17.4003 88.903 15.7503C88.583 14.3303 87.493 13.5103 86.083 13.3303C85.3558 13.2342 84.6191 13.2558 83.8342 13.2789C83.4751 13.2894 83.106 13.3003 82.723 13.3003C82.723 13.8882 82.7184 14.4662 82.7139 15.0367V15.037V15.0373V15.0377V15.038ZM82.823 5.37026V12.2503C83.1038 12.2409 83.3856 12.241 83.6654 12.2412C85.1789 12.2419 86.6331 12.2425 87.553 10.7403C88.353 9.43025 88.423 7.93027 87.603 6.63027C86.7293 5.2507 85.415 5.3044 84.0609 5.35974C83.6482 5.3766 83.2318 5.39361 82.823 5.37026ZM116.463 21.5803C116.383 21.6518 116.304 21.7228 116.223 21.7821C116.323 21.9121 116.413 22.0321 116.513 22.1721C117.206 22.1721 117.899 22.1738 118.593 22.1754H118.594H118.595H118.596H118.597H118.597H118.597H118.597H118.598C120.336 22.1795 122.077 22.1836 123.813 22.1621C124.43 22.1529 125.055 22.059 125.673 21.9661L125.833 21.9421C130.143 21.2821 133.133 18.1121 133.323 14.0121C133.543 9.16213 131.203 5.54213 126.643 4.76213C124.34 4.36903 121.974 4.35642 119.61 4.34382C118.545 4.33814 117.481 4.33247 116.423 4.29213C116.393 4.37713 116.363 4.46463 116.333 4.55213C116.303 4.63963 116.273 4.72713 116.243 4.81213C116.33 4.86982 116.415 4.94085 116.501 5.0124C116.684 5.16412 116.869 5.31815 117.073 5.35213C118.333 5.57212 118.763 6.27213 118.743 7.53213C118.707 10.3531 118.713 13.1687 118.719 15.9868V15.9878C118.721 17.0455 118.723 18.1034 118.723 19.1621C118.723 20.7521 118.593 20.8621 117.023 21.2221C116.817 21.2634 116.639 21.4229 116.463 21.5803ZM121.389 8.59777V8.59304V8.58831V8.58358V8.57885C121.391 7.54585 121.393 6.51047 121.393 5.47214C124.323 5.19214 126.853 5.52213 128.673 7.92213C130.723 10.6121 130.883 15.9121 128.973 18.7121C127.673 20.6221 124.903 21.6621 122.723 20.8921C122.173 20.7021 121.463 19.9321 121.453 19.4121C121.375 15.8212 121.382 12.2243 121.389 8.59777ZM40.573 13.0192C40.573 18.1492 37.613 21.8992 33.333 22.4492C28.753 23.0392 25.053 20.5492 23.903 16.0592C23.093 12.8792 23.453 9.85919 25.463 7.17919C27.533 4.41919 31.123 3.28919 34.473 4.25919C37.693 5.18919 40.093 8.1192 40.483 11.6092C40.525 11.9939 40.5425 12.3835 40.5561 12.6856C40.5619 12.8154 40.567 12.929 40.573 13.0192ZM26.273 13.2492C26.3956 13.7633 26.5038 14.2757 26.6111 14.7836C26.8628 15.9748 27.1094 17.1415 27.523 18.2492C28.263 20.2592 29.853 21.4092 32.033 21.3992C34.143 21.3992 35.713 20.3392 36.543 18.3992C38.033 14.9292 38.013 11.4092 36.473 7.95919C35.613 6.03919 34.063 5.0592 31.903 5.1092C29.773 5.1492 28.293 6.2592 27.573 8.1292C27.1462 9.24453 26.8947 10.4215 26.6391 11.6176L26.6391 11.6177L26.6391 11.6177L26.639 11.6178C26.5234 12.159 26.4069 12.7041 26.273 13.2492ZM73.3155 5.40638C73.3143 5.10022 73.313 4.78924 73.313 4.47182H59.623C59.563 4.59181 59.503 4.70181 59.443 4.81181C59.5485 4.87646 59.6505 4.95269 59.7522 5.02867C59.9493 5.17601 60.1453 5.32244 60.363 5.38182C61.893 5.81182 62.093 6.03181 62.093 7.61181V18.8818C62.093 20.7296 62.0832 20.732 60.3175 21.1756L60.253 21.1918C60.0423 21.241 59.8613 21.4232 59.6821 21.6036C59.6061 21.6801 59.5304 21.7563 59.453 21.8218C59.488 21.8768 59.523 21.9343 59.558 21.9918C59.593 22.0493 59.628 22.1068 59.663 22.1618H66.963H74.303C74.413 20.3718 74.523 18.7118 74.633 17.0518L74.363 16.8118C74.263 16.8885 74.1508 16.9574 74.0385 17.0263C73.8141 17.164 73.5896 17.3018 73.463 17.5018C73.268 17.8046 73.1075 18.135 72.9471 18.465L72.947 18.4651C72.7208 18.9307 72.4948 19.3956 72.173 19.7818C71.723 20.3118 71.003 20.8418 70.353 20.9318C69.2867 21.0719 68.1963 21.0424 67.1098 21.013C66.8003 21.0046 66.4912 20.9962 66.183 20.9918C65.393 20.9818 64.843 20.5118 64.823 19.7418C64.7801 18.2699 64.7883 16.7979 64.7965 15.3296C64.7997 14.743 64.803 14.157 64.803 13.5718C68.143 13.1918 68.253 13.2618 69.613 16.0418C69.6846 16.185 69.8706 16.2689 70.1269 16.3845C70.2643 16.4465 70.4219 16.5176 70.593 16.6118C70.593 16.0404 70.5943 15.4873 70.5956 14.9479C70.5993 13.3824 70.6027 11.9321 70.573 10.4818C70.573 10.2618 70.4406 10.0465 70.3091 9.83262C70.2494 9.73548 70.1899 9.63864 70.143 9.54181C70.0736 9.62698 69.9962 9.70818 69.9191 9.78916L69.919 9.78922C69.7516 9.96492 69.5851 10.1396 69.503 10.3518L69.475 10.4242C69.1444 11.2822 68.8039 12.1654 67.773 12.2918C67.0951 12.3757 66.4075 12.357 65.7135 12.3381C65.4144 12.33 65.1142 12.3218 64.813 12.3218V5.40181C65.0162 5.40181 65.2103 5.40584 65.3983 5.40975C65.8023 5.41814 66.1776 5.42594 66.553 5.39181C69.073 5.15181 71.283 5.50181 72.253 8.32181C72.313 8.49181 72.723 8.66181 72.923 8.62181C73.083 8.59181 73.283 8.24182 73.293 8.02182C73.3228 7.16396 73.3193 6.3061 73.3155 5.40674V5.40638ZM45.6168 21.5468L45.6167 21.5468C45.521 21.6875 45.4324 21.8177 45.313 21.8907C45.103 22.0307 44.793 22.1707 44.583 22.1107C44.403 22.0507 44.193 21.7206 44.183 21.5106C44.1592 20.1229 44.1605 18.7289 44.1621 17.1142C44.1625 16.6927 44.163 16.2561 44.163 15.8007C44.3381 15.9657 44.4963 16.1024 44.6366 16.2237C44.9129 16.4625 45.1203 16.6418 45.253 16.8607C45.4751 17.2322 45.6711 17.62 45.8667 18.0069C46.1554 18.5783 46.4433 19.1479 46.813 19.6607C47.683 20.8707 49.003 21.3807 50.463 21.4107C52.093 21.4407 53.293 20.6507 53.663 19.3807C54.113 17.8507 53.573 16.2207 52.233 15.3807C51.7051 15.0525 51.1213 14.816 50.5396 14.5803C50.3058 14.4856 50.0723 14.391 49.843 14.2906C49.5332 14.1568 49.2205 14.0332 48.9082 13.9097C48.404 13.7104 47.9008 13.5115 47.413 13.2707C45.073 12.1107 44.113 10.1806 44.613 7.76065C45.033 5.72065 47.143 3.93065 49.443 3.98065C50.913 4.01065 52.373 4.48066 53.733 4.94066C53.9148 4.859 54.0953 4.77735 54.2883 4.69006L54.2903 4.68913L54.2908 4.68891C54.617 4.54134 54.9788 4.37763 55.443 4.17065V7.24064V10.0607C54.863 10.4207 54.533 10.2207 54.293 9.52066C54.013 8.69066 53.713 7.85065 53.273 7.10065C52.553 5.85065 51.463 5.10065 49.953 5.10065C48.553 5.09065 47.503 5.71066 47.083 6.83066C46.633 8.00066 47.033 9.46065 48.143 10.2507C48.7141 10.6598 49.3797 10.9527 50.0345 11.2409C50.1478 11.2908 50.2608 11.3405 50.373 11.3907C50.7716 11.573 51.181 11.7356 51.5905 11.8982C52.1467 12.119 52.7031 12.34 53.233 12.6107C55.583 13.8007 56.513 15.5006 56.153 17.8206C55.803 20.1506 54.043 21.9407 51.683 22.3807C49.793 22.7607 48.533 22.5407 45.773 21.3307C45.7157 21.4013 45.6653 21.4754 45.6168 21.5468ZM96.8955 4.41012C96.4717 4.41052 96.0475 4.41092 95.623 4.41092C95.5871 4.45084 95.5496 4.48916 95.5124 4.52717C95.4564 4.58436 95.4011 4.64083 95.353 4.70091C95.4231 4.77098 95.4891 4.8522 95.5552 4.93359C95.6968 5.10778 95.839 5.28275 96.023 5.35091C97.673 5.95091 97.773 6.04091 97.773 7.85091C97.773 8.75416 97.7746 9.65741 97.7763 10.5607C97.7804 12.8174 97.7844 15.0742 97.763 17.3309C97.753 18.8909 98.283 20.1909 99.533 21.0809C102.053 22.8709 104.833 23.0409 107.613 21.8409C110.183 20.7309 110.963 18.5409 110.853 15.8509C110.767 13.9415 110.791 12.032 110.815 10.1226C110.822 9.59202 110.829 9.06147 110.833 8.53091C110.853 6.29091 111.083 6.02091 113.183 5.32091C113.337 5.26974 113.453 5.10403 113.606 4.88658C113.693 4.76404 113.79 4.62507 113.913 4.48091H106.563C106.538 4.52591 106.511 4.57091 106.483 4.61591C106.456 4.66091 106.428 4.70591 106.403 4.75092C106.47 4.81226 106.536 4.88213 106.601 4.95231C106.761 5.12239 106.922 5.29427 107.113 5.35091C109.173 5.97091 109.513 6.29092 109.573 8.41092C109.653 11.2109 109.683 14.0109 109.593 16.8109C109.503 19.5409 107.573 21.1809 104.723 21.1209C101.903 21.0709 100.443 19.5609 100.433 16.6509C100.43 15.5868 100.435 14.5227 100.44 13.4587C100.449 11.4827 100.459 9.50683 100.413 7.53091C100.383 6.25091 100.673 5.43091 102.103 5.34091C102.247 5.33405 102.382 5.17187 102.517 5.00936C102.578 4.935 102.64 4.86057 102.703 4.80092C102.629 4.76084 102.555 4.71031 102.481 4.65958C102.314 4.54575 102.146 4.43091 101.973 4.43091C100.278 4.40692 98.5885 4.40851 96.8955 4.41012Z"
-                                                            f="black"></path>
-                                                    </svg>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 swiper-slide">
-                                        <div
-                                            class="w-full flex items-center justify-center overflow-hidden  rounded-2xl transform-gpu bg-white h-28 | lg:rounded-3xl lg:h-40 | 4xl:h-44 | dark:bg-grayDark-600 || js-logo-127732">
-                                            <div class="w-full h-full flex items-center justify-center">
-                                                <div
-                                                    class="w-full h-12 relative px-8 | md:h-12 md:px-14 | lg:px-14 | 4xl:px-16 4xl:h-14">
-                                                    <svg class="w-full h-full text-gray-600 fill-current | dark:text-white"
-                                                        width="617" height="133" xmlns="http://www.w3.org/2000/svg"
-                                                        viewBox="0 0 617 133" f="none">
-                                                        <path
-                                                            d="M568.682 72.4432C568.682 83.3962 567.749 83.7122 562.89 84.2237L559.076 84.6375C558.339 85.3672 558.444 87.2177 559.279 87.6315C563.92 87.4208 570.232 87.3231 574.783 87.3231H586.564C598.66 87.3231 607.544 87.4208 612.081 87.6315C613.532 84.8406 615.804 76.9945 616.429 72.6464C615.804 71.6082 614.051 71.3073 613.119 72.022C609.5 80.4022 607.236 83.3962 594.101 83.1856C585.42 83.1856 583.667 82.3581 582.419 80.9213C580.884 79.161 580.673 75.4373 580.673 70.1639V57.0444C580.673 54.4641 580.771 54.2534 583.148 54.2534H588.113C597.103 54.2534 598.863 54.4641 599.593 58.7971L600.307 62.9346C601.143 63.5514 603.083 63.5515 603.61 62.8368C603.505 59.5268 603.302 55.9009 603.302 51.9891C603.302 48.1525 603.505 44.4288 603.61 41.6379C603.083 40.818 601.143 40.818 600.307 41.5476L599.593 45.0532C598.863 49.5066 597.103 49.6044 588.113 49.6044H583.148C580.771 49.6044 580.673 49.5066 580.673 46.8135V29.3383C580.673 23.4556 580.673 23.245 585.112 23.245H592.04C594.831 23.245 597.923 23.4556 600.307 24.1778C603.61 25.0053 605.16 27.5855 606.815 33.5811C607.642 34.2055 609.696 34.0024 610.117 33.1674C609.5 28.729 608.883 20.5669 608.47 18.8066C607.131 19.0097 601.143 19.1151 594.515 19.1151H574.783C570.232 19.1151 565.38 19.0097 561.445 18.8066C560.618 19.2128 560.513 21.0784 561.235 21.8006L562.89 22.0038C567.749 22.7259 568.682 23.0419 568.682 34.0024V72.4432ZM545.762 45.0547C545.762 36.8926 545.762 27.903 547.214 24.6984C547.936 23.0434 549.689 22.6221 551.637 22.3212L554.037 21.8022C554.857 21.0725 554.646 19.3272 553.826 18.8081C550.11 19.0037 547.417 19.1091 542.971 19.1091C538.939 19.1091 535.11 19.0038 531.093 18.8081C530.055 19.109 529.95 21.0725 530.882 21.8022L533.26 22.1106C535.847 22.5168 537.495 23.1412 538.42 24.6984C540.286 27.7977 540.391 37.2989 540.391 45.0547V65.2079C540.391 66.8554 540.391 67.382 540.083 67.6904C539.044 67.0661 529.431 56.1055 525.097 51.3587L514.754 40.2026C511.135 36.2758 499.874 23.2465 498.121 18.8081C495.631 19.0037 493.164 19.1091 490.99 19.1091C488.402 19.1091 482.722 19.2143 478.795 18.8081C477.765 19.109 477.66 21.1853 478.374 21.8022L479.924 22.1106C481.383 22.4265 484.272 23.2465 485.415 24.1718C488.921 27.1734 488.816 28.8283 488.816 36.8926V61.3864C488.816 69.5485 488.816 78.5456 487.477 81.7427C486.754 83.3977 484.896 83.8115 482.925 84.1124L480.654 84.639C479.826 85.3612 480.029 87.1139 480.857 87.633C484.468 87.4224 487.273 87.3171 491.614 87.3171C495.541 87.3171 499.581 87.4223 503.395 87.633C504.425 87.317 504.53 85.3612 503.598 84.639L501.318 84.3306C498.746 83.9168 496.985 83.2924 496.052 81.7427C494.3 78.6434 494.194 69.1348 494.194 61.3864V41.2332C494.194 35.7492 494.194 34.6208 494.503 34.6208C496.256 36.1705 499.581 40.0973 506.283 47.6425L530.469 75.2357C537.909 83.7137 540.91 87.2193 542.558 89.3933C543.806 89.4986 545.251 89.0849 546.071 87.949C545.762 85.5643 545.762 72.8585 545.762 69.7516V45.0547ZM446.255 62.0056C449.144 62.0056 449.46 62.0056 450.491 64.7889L455.35 78.8488C456.697 83.2947 456.388 83.919 452.657 84.3253L450.393 84.6337C449.769 85.2581 449.874 87.1162 450.701 87.6353C454.32 87.5375 458.863 87.3193 463.309 87.3193C468.673 87.3193 472.502 87.4246 476.745 87.6353C477.459 87.1162 477.459 85.3634 476.64 84.6337L475.09 84.3253C469.824 83.4 469.297 82.6703 466.92 75.7495L452.04 32.4565C450.393 27.8 449.046 22.9404 447.399 18.2914C446.97 17.7723 446.459 17.4638 445.631 17.4638C445.428 17.4638 442.02 21.6991 438.402 22.4213C438.71 24.1741 437.777 26.649 436.431 29.9665L422.273 66.7599C420.114 72.3342 418.452 76.6822 417.21 79.3603C415.668 82.7681 414.532 83.7084 411.531 84.1146L408.432 84.6337C407.709 85.5665 407.807 87.1162 408.537 87.6353C412.148 87.4246 415.36 87.3193 418.76 87.3193C423.003 87.4245 426.418 87.4246 429.713 87.6353C430.548 87.2215 430.661 85.3634 429.924 84.6337L426.93 84.1146C423.101 83.6031 422.687 83.2947 424.763 77.1938L428.991 64.7889C429.924 62.0056 429.819 62.0056 432.512 62.0056H446.255ZM434.167 57.349C431.684 57.349 431.376 57.349 432.512 54.3625L436.86 42.2585C438.71 37.4064 439.538 34.8262 439.944 34.0965H440.162C440.666 34.8262 441.306 36.782 443.051 42.2585L447.399 54.671C448.226 57.1459 447.798 57.349 444.909 57.349H434.167ZM379.731 72.4432C379.731 83.3962 378.806 83.7122 373.939 84.1184L369.613 84.6375C368.868 85.1565 368.981 87.2177 369.816 87.6315C376.414 87.4208 381.273 87.3231 385.832 87.3231C390.376 87.3231 395.025 87.4208 401.02 87.6315C401.848 87.2177 401.953 85.3672 401.223 84.6375L397.507 84.2237C392.655 83.7122 391.722 83.3962 391.722 72.4432V27.7962C391.722 23.4557 391.827 23.245 394.506 23.245H400.396C411.462 23.245 413.425 25.216 414.764 33.2727C415.697 34.0024 417.457 33.7918 417.976 32.9643C417.66 29.6543 418.488 20.7701 419.526 16.5273C419.308 16.2188 418.796 16.0157 418.179 16.0157C417.773 16.0157 417.337 16.2189 416.931 16.422C415.697 18.8067 414.147 19.1151 409.084 19.1151H366.912C359.894 19.1151 358.434 19.0097 357.93 16.422C357.72 16.1211 357.313 16.0157 356.885 16.0157C356.373 16.0157 355.959 16.121 355.749 16.422C355.027 20.0404 353.477 26.4497 351.717 32.0315C352.13 33.0621 354.297 33.378 355.027 32.7537C358.863 24.3885 361.647 23.245 371.155 23.245H376.933C379.626 23.245 379.731 23.4557 379.731 27.7962V72.4432ZM337.515 34.0017C337.515 23.0412 338.447 22.7252 343.299 22.1083L345.579 21.7999C346.309 21.0777 346.196 19.2196 345.368 18.8059C340.825 19.009 336.168 19.1143 331.617 19.1143C326.862 19.1143 322.229 19.0091 317.677 18.8059C316.835 19.2196 316.744 21.0777 317.459 21.7999L319.746 22.1083C324.598 22.7252 325.523 23.0412 325.523 34.0017V72.4425C325.523 83.3955 324.598 83.7114 319.746 84.3283L317.459 84.6367C316.744 85.3664 316.835 87.217 317.677 87.6307C322.229 87.4276 327.081 87.3223 331.617 87.3223C336.168 87.3223 340.825 87.4276 345.368 87.6307C346.196 87.217 346.309 85.3664 345.579 84.6367L343.299 84.3283C338.447 83.7114 337.515 83.3955 337.515 72.4425V34.0017ZM308.203 20.351C307.262 20.1479 306.548 20.0426 305.306 19.7267C300.454 18.493 293.323 17.4699 287.425 17.4699C276.991 17.4699 266.542 20.4564 258.899 26.2413C251.248 32.1315 245.877 41.5424 245.877 53.6313C245.877 67.1721 252.174 76.583 260.554 82.0444C267.994 86.9041 276.78 88.9803 287.004 88.9803C293.729 88.9803 300.86 87.22 303.132 86.4903C304.268 86.1819 305.509 85.7756 306.751 85.565C308.203 83.6016 310.986 76.7785 311.716 69.8577C311.197 68.9249 309.534 68.5187 308.609 69.444C305.72 76.1692 300.025 84.8428 287.004 84.8428C273.681 84.8428 259.937 74.0855 259.937 52.0817C259.937 30.8903 273.169 21.5923 286.281 21.5923C299.935 21.5923 304.577 30.1681 306.344 36.6827C307.059 37.4124 308.917 37.2996 309.632 36.4796C308.609 28.8291 308.406 22.7282 308.203 20.351ZM236.504 20.351C235.579 20.1479 234.849 20.0426 233.608 19.7267C228.756 18.493 221.624 17.4699 215.734 17.4699C205.3 17.4699 194.859 20.4564 187.216 26.2413C179.557 32.1315 174.186 41.5424 174.186 53.6313C174.186 67.1721 180.49 76.583 188.863 82.0444C196.303 86.9041 205.089 88.9803 215.328 88.9803C222.038 88.9803 229.169 87.22 231.441 86.4903C232.585 86.1819 233.818 85.7756 235.067 85.565C236.504 83.6016 239.287 76.7785 240.017 69.8577C239.498 68.9249 237.851 68.5187 236.91 69.444C234.029 76.1692 228.342 84.8428 215.328 84.8428C201.983 84.8428 188.246 74.0855 188.246 52.0817C188.246 30.8903 201.471 21.5923 214.598 21.5923C228.237 21.5923 232.893 30.1681 234.646 36.6827C235.361 37.4124 237.226 37.2996 237.956 36.4796C236.91 28.8291 236.722 22.7282 236.504 20.351ZM120.711 89.3918C145.648 89.3918 165.538 70.3971 165.538 44.3085C165.538 21.575 150.561 0 120.711 0C94.103 0 74.7247 19.762 74.7247 45.5948C74.7247 68.8474 92.0418 89.3918 120.711 89.3918ZM122.388 85.3822C96.9541 85.3822 87.6486 60.58 87.6486 41.4724C87.6486 13.1797 105.094 4.00955 118.522 4.00955C143.196 4.00955 152.622 26.9913 152.622 48.3105C152.622 73.7597 137.892 85.3822 122.388 85.3822ZM53.8387 14.9769C49.1897 14.9769 47.9485 18.0837 47.9485 19.8365C47.9485 22.1083 49.5959 23.3496 51.1531 23.5527C53.6281 23.8687 56.735 25.5236 56.735 28.9239C56.735 33.4751 52.8006 36.4841 48.3547 38.3347C48.0463 39.1697 48.257 40.4035 49.0919 41.0278C56.2159 39.2675 63.2421 33.4751 63.2421 25.6214C63.2421 19.9493 58.9015 14.9769 53.8387 14.9769ZM21.4469 34.0017C21.4469 23.2443 22.3797 22.9358 27.2318 22.2137L29.5112 21.7999C30.3312 21.2808 30.2334 19.2196 29.3081 18.8059C24.7644 19.009 20.1003 19.1143 15.5642 19.1143C10.8023 19.1143 6.1458 19.0091 0.985265 18.8059C0.0599775 19.2196 0.0599798 21.2808 0.782155 21.7999L3.67085 22.2137C8.53049 22.9358 9.4633 23.2443 9.4633 34.0017V72.4425C9.4633 83.1849 8.53049 83.4933 3.67085 84.1177L0.563988 84.6367C-0.368824 85.1558 -0.0378202 87.217 0.782155 87.6307C5.12273 87.4276 10.2833 87.3223 15.5642 87.3223H26.3141C37.8764 87.3223 46.7682 87.4276 51.1088 87.6307C52.3425 84.8398 54.6294 76.9937 55.4493 72.6456C54.9378 71.8181 53.2828 71.5096 52.2522 72.0212C47.4828 82.6733 45.8354 83.1849 34.3633 83.1849C26.1034 83.1849 24.4409 82.3649 23.2072 80.9205C21.6651 79.1602 21.4469 75.4365 21.4469 70.2759V34.0017ZM484.939 126.891C484.939 130.795 484.601 130.9 482.87 131.081L481.509 131.224C481.261 131.487 481.283 132.157 481.584 132.3C483.232 132.224 485.481 132.179 487.098 132.179H491.296C495.599 132.179 498.766 132.224 500.383 132.3C500.895 131.307 501.707 128.508 501.925 126.958C501.707 126.597 501.075 126.492 500.752 126.74C499.473 129.719 498.646 130.795 493.982 130.712C490.897 130.712 490.265 130.419 489.829 129.907C489.272 129.275 489.19 127.951 489.19 126.078V121.407C489.19 120.489 489.235 120.421 490.085 120.421H491.845C495.042 120.421 495.659 120.489 495.93 122.039L496.193 123.506C496.479 123.731 497.179 123.731 497.359 123.468C497.322 122.287 497.246 121.001 497.246 119.601C497.246 118.24 497.322 116.923 497.359 115.923C497.179 115.629 496.479 115.629 496.193 115.885L495.93 117.141C495.659 118.721 495.042 118.759 491.845 118.759H490.085C489.235 118.759 489.19 118.721 489.19 117.766V111.545C489.19 109.446 489.19 109.378 490.784 109.378H493.244C494.237 109.378 495.343 109.446 496.193 109.717C497.359 110.01 497.916 110.928 498.503 113.064C498.796 113.275 499.541 113.2 499.676 112.906C499.473 111.326 499.24 108.423 499.097 107.798C498.623 107.873 496.479 107.911 494.124 107.911H487.098C485.481 107.911 483.758 107.874 482.352 107.798C482.058 107.941 482.02 108.603 482.276 108.867L482.87 108.942C484.601 109.197 484.939 109.31 484.939 113.2V126.891ZM465.231 108.356C464.893 108.28 464.63 108.243 464.193 108.13C462.478 107.686 459.92 107.318 457.829 107.318C454.12 107.318 450.404 108.378 447.666 110.447C444.958 112.546 443.047 115.886 443.047 120.189C443.047 125.011 445.289 128.358 448.268 130.307C450.916 132.037 454.038 132.774 457.679 132.774C460.071 132.774 462.606 132.15 463.426 131.902C463.832 131.774 464.268 131.631 464.705 131.556C465.231 130.863 466.224 128.434 466.48 125.974C466.292 125.635 465.705 125.492 465.374 125.823C464.336 128.216 462.32 131.307 457.679 131.307C452.932 131.307 448.05 127.478 448.05 119.647C448.05 112.102 452.759 108.792 457.423 108.792C462.282 108.792 463.93 111.839 464.569 114.163C464.818 114.411 465.48 114.381 465.735 114.088C465.374 111.372 465.299 109.198 465.231 108.356ZM423.885 117.144C423.885 114.233 423.885 111.029 424.404 109.9C424.668 109.313 425.284 109.155 425.999 109.05L426.827 108.87C427.128 108.599 427.052 107.982 426.759 107.801C425.427 107.869 424.472 107.914 422.907 107.914C421.463 107.914 420.109 107.869 418.665 107.801C418.288 107.914 418.258 108.599 418.597 108.87L419.447 108.975C420.357 109.125 420.951 109.343 421.275 109.9C421.944 110.998 421.975 114.384 421.975 117.144V124.313C421.975 124.908 421.975 125.081 421.862 125.201C421.508 124.975 418.085 121.079 416.543 119.386L412.857 115.407C411.563 114.015 407.561 109.373 406.929 107.801C406.041 107.869 405.169 107.914 404.394 107.914C403.469 107.914 401.453 107.937 400.053 107.801C399.685 107.914 399.662 108.644 399.903 108.869L400.467 108.975C400.971 109.088 402.009 109.373 402.408 109.712C403.657 110.773 403.619 111.367 403.619 114.233V122.952C403.619 125.863 403.619 129.053 403.145 130.204C402.889 130.79 402.227 130.941 401.528 131.031L400.723 131.227C400.422 131.483 400.497 132.114 400.791 132.302C402.07 132.227 403.078 132.182 404.62 132.182C406.011 132.182 407.448 132.227 408.817 132.302C409.171 132.182 409.216 131.483 408.885 131.227L408.08 131.114C407.155 130.971 406.523 130.745 406.2 130.204C405.575 129.09 405.538 125.705 405.538 122.952V115.775C405.538 113.834 405.538 113.428 405.635 113.428C406.275 113.985 407.448 115.376 409.833 118.062L418.439 127.879C421.094 130.896 422.17 132.152 422.742 132.927C423.193 132.957 423.712 132.806 424.006 132.4C423.885 131.558 423.885 127.037 423.885 125.931L423.885 117.144ZM368.793 126.891C368.793 130.795 368.47 130.9 366.739 131.081L365.378 131.224C365.122 131.487 365.152 132.157 365.446 132.3C367.108 132.224 369.342 132.179 370.967 132.179H375.165C379.468 132.179 382.627 132.224 384.245 132.3C384.764 131.307 385.569 128.508 385.794 126.958C385.569 126.597 384.944 126.492 384.613 126.74C383.319 129.719 382.522 130.795 377.843 130.712C374.759 130.712 374.119 130.419 373.698 129.907C373.134 129.276 373.066 127.952 373.066 126.078V121.407C373.066 120.489 373.096 120.421 373.954 120.421H375.714C378.919 120.421 379.543 120.489 379.791 122.039L380.055 123.506C380.356 123.731 381.048 123.731 381.228 123.468C381.191 122.287 381.115 121.001 381.115 119.601C381.115 118.24 381.19 116.923 381.228 115.923C381.048 115.629 380.356 115.629 380.055 115.885L379.791 117.141C379.543 118.721 378.919 118.759 375.714 118.759H373.954C373.096 118.759 373.066 118.721 373.066 117.766V111.545C373.066 109.446 373.066 109.378 374.653 109.378H377.113C378.106 109.378 379.205 109.446 380.055 109.717C381.228 110.01 381.777 110.928 382.372 113.064C382.665 113.275 383.402 113.2 383.545 112.906C383.319 111.326 383.109 108.423 382.958 107.798C382.477 107.874 380.356 107.911 377.986 107.911H370.967C369.342 107.911 367.62 107.874 366.22 107.798C365.92 107.941 365.897 108.603 366.145 108.867L366.74 108.942C368.47 109.198 368.793 109.31 368.793 113.2L368.793 126.891ZM345.565 118.502C347.212 114.786 348.273 112.319 349.318 110.558C349.935 109.49 350.74 109.227 351.59 109.054L352.523 108.866C352.696 108.572 352.726 107.978 352.433 107.798C351.41 107.873 350.199 107.91 348.867 107.91C347.693 107.91 346.445 107.873 344.933 107.798C344.639 107.978 344.609 108.572 344.857 108.866L345.933 109.122C347.031 109.377 347.137 109.671 346.557 111.145C344.609 116.148 342.39 121.225 340.411 125.859C340.043 125.009 339.05 122.843 338.38 121.188L335.732 114.636C334.22 110.882 333.942 110.077 333.942 109.738C333.942 109.445 334.22 109.272 335.033 109.091L335.958 108.866C336.297 108.602 336.244 108.016 335.92 107.798C333.972 107.873 332.723 107.91 331.061 107.91C329.624 107.91 328.052 107.873 326.607 107.798C326.246 107.91 326.246 108.572 326.51 108.828L327.39 109.009C328.864 109.31 329.188 109.821 330.218 112.281L336.658 127.778C337.32 129.312 337.914 131.118 338.35 132.585C338.531 132.698 338.779 132.773 339.05 132.773C339.298 132.773 339.599 132.697 339.667 132.585C340.299 130.712 342.029 126.409 343.503 123.069L345.565 118.502ZM299.9 107.32C292.189 107.32 286.728 112.872 286.728 120.379C286.728 126.924 291.504 132.777 299.832 132.777C307.257 132.777 312.786 127.368 312.786 120.123C312.786 113.428 308.408 107.32 299.9 107.32ZM299.433 108.794C305.278 108.794 307.784 115.226 307.784 120.785C307.784 128.18 304.383 131.302 300.201 131.302C293.912 131.302 291.738 124.389 291.738 119.303C291.738 111.472 295.747 108.794 299.433 108.794ZM253.243 126.891C253.243 130.795 252.912 130.9 251.181 131.111L250.377 131.224C250.038 131.487 250.151 132.157 250.452 132.3C252.144 132.224 253.792 132.179 255.417 132.179C257.034 132.179 258.689 132.224 260.307 132.3C260.6 132.157 260.638 131.487 260.382 131.224L259.569 131.111C257.847 130.9 257.516 130.795 257.516 126.891V122.182C257.516 121.407 257.538 121.362 258.652 121.362C259.863 121.362 260.269 121.527 260.931 122.625C261.819 124.062 262.849 126.078 263.835 127.62C266.084 131.036 267.995 132.473 271.53 132.473C272.817 132.473 273.509 132.367 273.945 132.254C274.065 132.074 274.065 131.675 273.885 131.517C273.434 131.487 272.365 131.269 271.342 130.381C269.62 128.952 267.769 125.823 264.828 120.865C264.685 120.639 264.602 120.339 264.828 120.233C266.633 119.496 269.236 117.796 269.236 114.411C269.236 111.77 267.889 110.04 266.001 109.055C264.391 108.167 261.886 107.798 259.02 107.798C255.989 107.798 252.867 107.911 250.565 108.129C250.264 108.31 250.264 108.897 250.535 109.16L251.475 109.273C253.213 109.446 253.243 109.897 253.243 113.425L253.243 126.891ZM257.516 111.071C257.516 109.378 257.538 109.273 259.464 109.273C262.661 109.273 264.534 111.8 264.534 114.712C264.534 118.21 262.887 119.977 259.268 119.977C257.516 119.977 257.516 119.895 257.516 118.721V111.071ZM218.085 126.891C218.085 130.795 217.746 130.9 216.016 131.156L215.437 131.224C215.174 131.487 215.211 132.157 215.497 132.3C216.971 132.224 218.634 132.179 220.251 132.179C221.876 132.179 223.524 132.224 225.698 132.3C225.961 132.157 225.984 131.487 225.773 131.224L224.404 131.081C222.681 130.901 222.358 130.795 222.358 126.891V110.807C222.358 109.378 222.388 109.273 224.223 109.273C227.571 109.273 229.482 111.883 229.482 114.862C229.482 117.879 228.27 120.309 224.915 120.971C224.735 121.189 224.78 121.663 225.036 121.896C225.322 121.926 225.615 121.926 225.961 121.926C228.865 121.926 234.191 120.376 234.191 114.787C234.191 112.35 232.972 110.409 231.061 109.273C229.406 108.31 226.871 107.798 223.373 107.798C220.033 107.798 217.822 107.836 215.249 108.129C214.955 108.28 214.955 108.897 215.211 109.16L216.505 109.31C218.04 109.521 218.085 110.078 218.085 113.425L218.085 126.891ZM173.186 117.144C173.186 114.233 173.186 111.029 173.705 109.9C173.968 109.313 174.577 109.155 175.285 109.05L176.135 108.87C176.421 108.599 176.353 107.982 176.052 107.801C174.735 107.869 173.772 107.914 172.193 107.914C170.763 107.914 169.402 107.869 167.965 107.801C167.596 107.914 167.559 108.599 167.882 108.87L168.732 108.975C169.658 109.125 170.252 109.343 170.575 109.9C171.237 110.998 171.275 114.384 171.275 117.144V124.313C171.275 124.908 171.275 125.081 171.155 125.201C170.793 124.975 167.371 121.079 165.828 119.386L162.157 115.407C160.864 114.015 156.854 109.373 156.23 107.801C155.357 107.869 154.477 107.914 153.694 107.914C152.769 107.914 150.753 107.937 149.346 107.801C148.985 107.914 148.955 108.644 149.211 108.869L149.768 108.975C150.279 109.088 151.302 109.373 151.708 109.712C152.957 110.773 152.92 111.367 152.92 114.233V122.952C152.92 125.863 152.92 129.053 152.446 130.204C152.182 130.79 151.528 130.941 150.821 131.031L150.008 131.227C149.722 131.483 149.79 132.114 150.091 132.302C151.378 132.227 152.371 132.182 153.92 132.182C155.319 132.182 156.749 132.227 158.11 132.302C158.471 132.182 158.517 131.483 158.186 131.227L157.373 131.114C156.455 130.971 155.831 130.745 155.5 130.204C154.868 129.09 154.83 125.705 154.83 122.952V115.775C154.83 113.834 154.83 113.428 154.936 113.428C155.568 113.985 156.749 115.376 159.141 118.062L167.747 127.879C170.395 130.896 171.463 132.152 172.042 132.927C172.494 132.957 173.013 132.806 173.291 132.4C173.186 131.558 173.186 127.037 173.186 125.931L173.186 117.144ZM118.1 126.891C118.1 130.795 117.769 130.9 116.038 131.081L114.669 131.224C114.413 131.487 114.451 132.157 114.752 132.3C116.407 132.224 118.649 132.179 120.266 132.179H124.464C128.774 132.179 131.934 132.224 133.544 132.3C134.07 131.307 134.875 128.508 135.093 126.958C134.875 126.597 134.243 126.492 133.912 126.74C132.626 129.719 131.821 130.795 127.149 130.712C124.058 130.712 123.426 130.419 122.989 129.907C122.433 129.276 122.372 127.952 122.372 126.078V121.407C122.372 120.489 122.403 120.421 123.253 120.421H125.013C128.218 120.421 128.842 120.489 129.105 122.039L129.354 123.506C129.654 123.731 130.339 123.731 130.527 123.468C130.489 122.287 130.422 121.001 130.422 119.601C130.422 118.24 130.49 116.923 130.527 115.923C130.339 115.629 129.654 115.629 129.354 115.885L129.105 117.141C128.842 118.721 128.218 118.759 125.013 118.759H123.253C122.403 118.759 122.372 118.721 122.372 117.766V111.545C122.372 109.446 122.373 109.378 123.952 109.378H126.412C127.398 109.378 128.511 109.446 129.354 109.717C130.527 110.01 131.084 110.928 131.663 113.064C131.964 113.275 132.709 113.2 132.844 112.906C132.626 111.326 132.408 108.423 132.257 107.798C131.783 107.874 129.654 107.911 127.3 107.911H120.266C118.649 107.911 116.919 107.874 115.519 107.798C115.226 107.941 115.188 108.603 115.452 108.867L116.038 108.942C117.769 109.198 118.1 109.31 118.1 113.2L118.1 126.891Z"
-                                                            f="black"></path>
-                                                    </svg>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 swiper-slide">
-                                        <div
-                                            class="w-full flex items-center justify-center overflow-hidden  rounded-2xl transform-gpu bg-white h-28 | lg:rounded-3xl lg:h-40 | 4xl:h-44 | dark:bg-grayDark-600 || js-logo-127732">
-                                            <div class="w-full h-full flex items-center justify-center">
-                                                <div
-                                                    class="w-full h-12 relative px-8 | md:h-12 md:px-14 | lg:px-14 | 4xl:px-16 4xl:h-14">
-                                                    <svg id="lamggjoxwd-Layer_1"
-                                                        class="w-full h-full text-gray-600 fill-current | dark:text-white"
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px"
-                                                        y="0px" viewBox="0 0 371 150"
-                                                        style="enable-background: new 0 0 371 150;"
-                                                        xml:space="preserve">
-                                                        <style type="text/css">
-                                                            .lamggjoxwd-st0 {
-                                                                fill-rule: evenodd;
-                                                                clip-rule: evenodd
-                                                            }
-                                                        </style>
-                                                        <path class="lamggjoxwd-st0"
-                                                            d="M35.8,14.5h299.1v121H35.8V14.5z M97.5,26.2H65l-20.8,97.4h24.6l13.5-67.4h0.3l20.4,67.4h32.4L156,26.2h-24.6  l-13.7,67.6h-0.3L97.5,26.2z M165.6,26.2h26.1l-7.7,37.3h30.9l7.7-37.3h26.1l-20.2,97.4h-26.3l8.7-41.7h-30.7l-8.7,41.7h-26.1  L165.6,26.2z M296,43.7c7.4-0.1,14.7,1.4,21.4,4.5l6.2-19.4c-6.6-3.1-17.8-4.3-29.9-4.3c-21.4,0-43.4,7.6-43.4,32.7  c0,15.7,12.3,20.5,22.9,24.7c8,3.1,15,5.9,15,12.6c0,10-12.3,11.6-20.8,11.6c-8.5,0-18.8-2.2-24-5.6l-6.1,19.8  c9.8,3.1,20,4.8,30.3,5c22.6,0,47.6-7,47.6-33.9c0-17.6-13.3-22.9-24.2-27.2c-7.4-2.9-13.6-5.4-13.6-11  C277.3,45.3,285.7,43.7,296,43.7z">
-                                                        </path>
-                                                    </svg>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <?php endforeach; ?>
+
                                     </div>
                                 </div>
                             </div>
-                            <div class="w-full mt-6 | lg:mt-8 || swiper || js-carousel-127732">
-                                <div class="ease-linear || swiper-wrapper">
-                                    <div class="px-2 | lg:px-3 | xl:px-4 swiper-slide">
-                                        <div
-                                            class="w-full flex items-center justify-center overflow-hidden  rounded-2xl transform-gpu bg-white h-28 | lg:rounded-3xl lg:h-40 | 4xl:h-44 | dark:bg-grayDark-600 || js-logo-127732">
-                                            <div class="w-full h-full flex items-center justify-center">
+                            <div class="mx-auto relative w-full | xl:w-15/16"
+                                style="--blur: 1; --blurs: 5; max-height: 200px;;">
+                                <div class="blur blur--left">
+                                    <div class="" style="--index: 0"></div>
+                                    <div class="" style="--index: 1"></div>
+                                    <div class="" style="--index: 2"></div>
+                                    <div class="" style="--index: 3"></div>
+                                    <div class="" style="--index: 4"></div>
+                                </div>
+                                <div class="blur blur--right">
+                                    <div class="" style="--index: 0"></div>
+                                    <div class="" style="--index: 1"></div>
+                                    <div class="" style="--index: 2"></div>
+                                    <div class="" style="--index: 3"></div>
+                                    <div class="" style="--index: 4"></div>
+                                </div>
+                                <div
+                                    class="w-full relative z-0 mt-10 -mb-5 | lg:mt-16 || swiper js-carousel-127732 swiper-initialized swiper-horizontal swiper-pointer-events">
+                                    <div class="ease-linear || swiper-wrapper"
+                                        style="transition-duration: 8000ms; transform: translate3d(-3921.5px, 0px, 0px);">
+                                        <?php foreach (array_slice($logos, -4) as $index => $logo): ?>
+                                            <div class="px-2 | lg:px-3 xl:px-4 swiper-slide swiper-slide-duplicate"
+                                                data-swiper-slide-index="<?php echo $n - 4 - $index; ?>"
+                                                style="width: 356.5px;">
                                                 <div
-                                                    class="w-full h-12 relative px-8 | md:h-12 md:px-14 | lg:px-14 | 4xl:px-16 4xl:h-14">
-                                                    <svg id="tcmkxnaqvb-Layer_1"
-                                                        class="w-full h-full text-gray-600 fill-current | dark:text-white"
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px"
-                                                        y="0px" viewBox="0 0 533 292"
-                                                        style="enable-background: new 0 0 533 292;"
-                                                        xml:space="preserve">
-                                                        <style type="text/css">
-                                                            .tcmkxnaqvb-st0 {
-                                                                fill-rule: evenodd;
-                                                                clip-rule: evenodd
-                                                            }
-                                                        </style>
-                                                        <path class="tcmkxnaqvb-st0"
-                                                            d="M138.1,28.4h218.7v234.5h-2.4H140.6c-2.6,0-2.6,0-2.6-2.6v-0.2c0-76.4,0-152.8,0-229.1c0-0.5,0-1,0.1-1.6v0v0v0  v0v0v0C138.1,29.1,138.1,28.7,138.1,28.4z M292.9,196.1v9.4v9.5c-0.2-0.1-0.4-0.3-0.6-0.4l-0.4-0.3l0,0l0,0  c-0.6-0.4-1.1-0.8-1.6-1.1c-7.5-5.1-17.7-3.3-22.3,4.2c-5.3,8.8-5.7,17.9-0.8,27c5.1,9.5,15.6,11.6,24.3,5.2c0.3-0.2,0.6-0.4,1-0.6  c0.2-0.1,0.4-0.2,0.5-0.3c0.7,3.5,0.7,3.5,4.3,3.5c0,0,0,0,0.1,0h0h0c0,0,0.1,0,0.1,0c1.7,0.2,2.5-0.7,2.6-2.3c0.1-0.7,0.1-1.3,0-2  v0c0-0.1,0-0.3,0-0.4v-38.8c0-0.9,0-1.8,0-2.6v0v0v0c0-2.8,0-5.6-0.1-8.4c0-0.5-0.6-1.5-1-1.5c-1.5-0.1-2.9-0.1-4.5-0.1  C294.1,196.1,293.5,196.1,292.9,196.1z M346.1,233.7c0-0.8,0-1.5,0-2.2c0-1.5,0.1-2.9-0.1-4.3c-0.6-7.5-5.6-13.9-12.5-15.9  c-8.5-2.5-16.2-0.3-21.1,6.3c-4.5,6.1-5.1,13.1-4,20.3c0.9,5.5,3.6,9.9,8.6,12.8c5.5,3.1,11.4,3.7,17.5,1.9  c5.4-1.6,9.2-5.1,10.9-10.6c0.4-1.4,0.1-1.9-1.3-2.2c-3.7-0.8-5.1-0.3-7,3c-1.5,2.6-3.6,4.2-6.4,4.7c-7.6,1.4-14.1-3.6-14.8-11.3  c-0.2-1.7,0.2-2.4,2.1-2.4c4.6,0.1,9.2,0.1,13.9,0.1h0l0,0h0l0,0h0c1.8,0,3.6,0,5.4,0H346.1z M207.3,240.1c0.5,4.7,2.4,8.5,5.5,10.2  c7.3,4.1,14.9,4.7,22.4,0.4c4.8-2.7,6.5-7,5.9-12.2c-0.5-4.7-3.6-7.1-7.8-8.4c-1.5-0.5-3-0.9-4.6-1.4l0,0l0,0l0,0l0,0l0,0h0  c-2.8-0.8-5.7-1.7-8.5-2.6c-1.4-0.5-2.7-1.5-3.8-2.5c-1.6-1.6-1.5-2.8,0-4.4c2.6-2.7,6-3.5,9.6-2.8c3,0.6,4.8,2.9,6.5,5.2l0.1,0.1  c0.4,0.6,1.3,1.2,2,1.1c1.1-0.1,2.2-0.3,3.3-0.5c0.4-0.1,0.9-0.2,1.3-0.3c0.3-4.4-2.9-9-7-9.9c-5.2-1.1-10.4-1.3-15.6-0.5  c-3.5,0.5-6,2.5-7.5,5.7c-2.9,6.6-0.2,12.9,6.6,15.2c2.7,0.9,5.5,1.7,8.3,2.5v0h0c2,0.6,4,1.1,5.9,1.7c1.8,0.6,3.6,1.4,3.8,3.7  c0.2,2.4-0.6,4.4-2.8,5.5c-5.5,2.9-11.9,2.6-15.7-3.8c-0.1-0.2-0.2-0.4-0.3-0.6c-0.2-0.5-0.5-0.9-0.8-1.3c-0.3-0.4-0.8-0.9-1.2-0.9  c-1.4,0.1-2.7,0.3-4.1,0.5h0v0h0h0h0l0,0h0h0l0,0C208.3,239.9,207.8,240,207.3,240.1z M166.1,211.7v2.3v33c0,2.5,0,3.8,0.6,4.4  c0.6,0.6,1.8,0.6,4.3,0.7l0.2,0c1.5,0,1.8-0.5,1.8-1.8l0-0.7c0-5.3-0.1-10.6,0.1-15.8c0.1-3.3,0.3-6.6,0.9-9.8  c1-4.9,5.4-7.9,10.4-7.5c5,0.4,7.3,3.1,7.6,8.9c0,0.5,0,1.1,0,1.6c0,2.3,0,4.6,0,6.9c0,4.6,0,9.2,0.1,13.8c0,0.8,0,1.4,0,2  c0,1.2,0,1.8,0.3,2.2c0.3,0.3,1,0.3,2.3,0.3h0h0h0h0c0.6,0,1.2,0,2.1,0c1.6,0,2.2-0.5,2.2-2.2c-0.1-4.5-0.1-9-0.1-13.5v0v0v0v0l0,0  v0c0-5.4-0.1-10.8-0.2-16.2c-0.1-3.8-2-6.6-5.4-8.1c-6.7-2.8-13.1-2.5-18.9,2.3l-0.8,0.7l-0.4,0.3l-0.6,0.5  C171.6,211,171.6,211,166.1,211.7z M249.9,252.2c0.5,0,1.1,0,1.6,0h0c1.1,0,2.1,0,3.1,0c1.3,0.1,1.7-0.5,1.7-1.8c0-4.1,0-8.3,0-12.4  v0v0c0-1.2,0-2.5,0-3.7c0-1.2,0-2.3,0-3.5l0,0c0-5.8,0-11.6,0-17.4c0-0.6-0.5-1.8-0.8-1.8c-1.4-0.1-2.7-0.1-4.1-0.1  c-0.5,0-0.9,0-1.4,0V252.2z M148.8,211.6V252h6.2v-40.3H148.8z M256.2,203.4c0-0.8,0-1.5,0-2.1v0l0,0l0,0v0l0,0c0-1.4,0-2.7,0-4  c0.1-1.6-1.1-1.7-2-1.4c-0.5,0.2-1.2,0-1.8-0.1c-1.2-0.3-2.4-0.5-2.8,1.4c-0.3,1.3-0.2,2.7-0.1,4.1c0,0.2,0,0.3,0,0.5l0,0.1l0,0.1  c0,0.5,0.5,1.2,0.8,1.3c1.4,0.1,2.8,0.1,4.3,0.1C255.2,203.4,255.7,203.4,256.2,203.4z M155.3,203.2v-6.9h-6.4v6.9H155.3z   M94.7,262.8H51.9V28.7c0.2,0,0.5,0,0.7,0l0,0c0.5,0,0.9-0.1,1.3-0.1c3.9,0,7.7,0,11.6,0h0c9,0,18,0,27.1,0c1.8,0,2.3,0.5,2.3,2.3  c0,63.9,0,127.7,0,191.6v0v0v0v0c0,12.8,0,25.5,0,38.3c0,0.5,0,0.9-0.1,1.5C94.7,262.4,94.7,262.6,94.7,262.8z M408.3,246.6  c3.5-4.3,4-9.5,4.2-15.7c0-0.2,0-0.3,0-0.5c0-0.1,0-0.3,0-0.5v0v0c-0.1-1-0.2-2.4-0.4-3.8c-1.5-9.2-8-15.1-17.7-16.2  c-7.8-0.9-15.4,4.2-18.6,12.2c-1.8,4.6-2,9.4-1.5,14.3c0.8,7.8,5.8,14.2,12.8,16.2C394.5,255,403.7,252.3,408.3,246.6z M381.9,233.6  L381.9,233.6L381.9,233.6c-0.1-0.7-0.1-1.5-0.2-2.2c0.1-0.7,0.1-1.4,0.2-2.1l0,0c0.1-1.6,0.2-3.1,0.5-4.6c0.8-4.5,4.8-7.9,9.7-8.3  c5.1-0.5,9.6,2.2,11.5,7c2.2,5.7,2.1,11.4-0.1,17.1c-1.8,4.7-6.6,7.4-11.6,6.8c-5.3-0.6-8.4-3.5-9.3-9  C382.3,236.8,382.1,235.2,381.9,233.6L381.9,233.6z M447,211.6h6.7c0,0.2,0,0.3,0,0.5l0,0.2c0,0.5,0.1,1,0.1,1.5c0,3.8,0,7.6,0,11.4  v0.1c0,8.3,0,16.5,0,24.8c0,1.7-0.5,2.4-2.1,2.2c0,0-0.1,0-0.1,0c0,0,0,0,0,0c0,0,0,0,0,0c-3.3,0.1-3.3,0.1-3.9-3.2  c0-0.3-0.1-0.5-0.2-0.8c0-0.1-0.1-0.2-0.2-0.4c-0.4,0.3-0.9,0.6-1.3,0.9c-0.9,0.7-1.8,1.4-2.8,2c-5.9,3.7-11.8,3.4-17.7,0.1  c-3-1.7-4.9-4.4-5-7.8c-0.2-7.5-0.2-15-0.2-22.5c0-2.8,0-5.5,0-8.3c0-0.1,0-0.2,0.1-0.4c0-0.1,0.1-0.3,0.2-0.4c0.5,0,0.9,0,1.4,0  l0,0h0l0,0c1.1,0,2.3,0,3.5,0c1.4,0,1.8,0.5,1.8,1.9c-0.1,7.3,0,14.6,0,21.9v0c0,1.5,0,3,0.3,4.4c1.2,6.9,7.7,9.8,13.8,6.2  c3.8-2.3,5.1-5.9,5.2-10c0.2-5.2,0.2-10.3,0.3-15.5c0-2.2,0.1-4.3,0.1-6.5c0-0.5,0-0.9,0-1.4v0v0v0c0-0.2,0-0.4,0-0.6V211.6z   M477.7,216.6c0.5,0,1-0.1,1.6-0.1c0-0.4,0-0.8,0-1.1c0-0.9,0-1.7,0-2.6c0.1-1.3-0.4-1.8-1.7-1.8c-1.1,0-2.3,0-3.5,0h0l0,0  c-0.6,0-1.1,0-1.7,0v-13c-4.2,0.1-6.5,2.2-6.8,6.1c-0.1,1.6-0.2,3.2-0.2,4.8v0l0,0l0,0c0,0.7-0.1,1.3-0.1,2  c-1.3,0.2-2.4,0.3-3.5,0.5l-0.3,0c-0.3,0-0.7,0.1-1,0.2c0,0.4,0,0.7,0,1v0c0,0.7,0,1.2,0,1.8c-0.2,1.8,0.6,2.3,2.3,2.4  c2.8,0,2.8,0.1,2.8,2.9v0c0,0.9,0,1.7,0,2.6l0,3c0,6.6,0,13.1,0.1,19.7c0,2.7,0.6,5.4,3.3,6.6c2.6,1.2,5.3,1.1,8.1,1.1  c1.1,0,2.3,0,3.4,0c-0.1-0.5-0.2-0.9-0.3-1.3l0,0v0c-0.2-0.8-0.4-1.5-0.4-2.2c0-2.4-1.1-3.3-3.5-3.5c-3.1-0.2-3.8-0.9-3.8-4  c-0.1-4.6-0.1-9.1-0.1-13.7c0-3.2,0-6.4,0-9.6c0-1.1,0.5-1.6,1.5-1.6C475.2,216.8,476.4,216.7,477.7,216.6L477.7,216.6L477.7,216.6z   M270.8,231.8c0.3-1.1,0.6-2.1,0.8-3.2v0c0.6-2.4,1.2-4.7,2-6.9c1.4-3.4,4.3-5.2,8-5.4c4-0.2,7.4,1.1,9.3,4.8  c3.4,6.7,3.8,13.6,0.8,20.5c-1.8,4-5.1,5.8-9.3,5.7c-4.1,0-7.2-2-8.7-5.7c-0.9-2.1-1.5-4.4-2.1-6.7h0  C271.3,233.9,271.1,232.9,270.8,231.8z M325.3,216.5c-5.4,0.9-9.6,5.9-9,10.8c0,0,0.1,0,0.1,0.1c0.1,0,0.2,0.1,0.2,0.1  c2.6,0,5.2,0.1,7.8,0.1c4.3,0,8.6,0.1,12.9,0.2c1.6,0,1.4-0.9,1.2-1.8c0-0.1,0-0.1,0-0.2C337.4,219,332.1,215.4,325.3,216.5z">
-                                                        </path>
-                                                    </svg>
+                                                    class="w-full flex justify-center items-center rounded-xl bg-gray-100 || js-logo-28 ">
+                                                    <div class="relative rounded-xl overflow-hidden">
+                                                        <img src="<?php echo BASE_URL . $logo; ?>"
+                                                            class="w-176 h-40 | lg:w-144 lg:h-50" />
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 swiper-slide">
-                                        <div
-                                            class="w-full flex items-center justify-center overflow-hidden  rounded-2xl transform-gpu bg-white h-28 | lg:rounded-3xl lg:h-40 | 4xl:h-44 | dark:bg-grayDark-600 || js-logo-127732">
-                                            <div class="w-full h-full flex items-center justify-center">
+                                        <?php endforeach;
+                                        foreach ($logos as $index => $logo): ?>
+
+                                            <div class="px-2 | lg:px-3 xl:px-4 swiper-slide"
+                                                data-swiper-slide-index="<?php echo $index; ?>"
+                                                style="width: 356.5px;">
                                                 <div
-                                                    class="w-full h-12 relative px-8 | md:h-12 md:px-14 | lg:px-14 | 4xl:px-16 4xl:h-14">
-                                                    <svg class="w-full h-full text-gray-600 fill-current | dark:text-white"
-                                                        width="1186" height="135" xmlns="http://www.w3.org/2000/svg"
-                                                        viewBox="0 0 1186 135" f="none">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                                            d="M603.544 69.7282C603.502 65.629 603.46 61.5295 603.46 57.431C603.74 57.431 604.02 57.431 604.28 57.441C604.28 53.3278 604.258 49.2145 604.236 45.1016V45.1008V45.1V45.0992V45.0984V45.0976V45.0968C604.184 35.3923 604.132 25.6892 604.37 15.991C604.58 7.22099 606.35 5.78099 614.76 4.18099C615.689 4.00348 616.524 3.36915 617.362 2.73311C617.751 2.43755 618.141 2.14162 618.54 1.89099C618.121 1.69845 617.701 1.45509 617.281 1.21156C616.37 0.683543 615.457 0.154673 614.54 0.140986C606.471 0.0332977 598.403 0.0439519 590.334 0.054606C587.913 0.0578028 585.492 0.0609995 583.07 0.0609995C582.458 0.0609995 581.844 0.0457367 581.229 0.0304648C579.674 -0.00814759 578.117 -0.0468179 576.59 0.16099C575.883 0.257191 575.232 0.783072 574.579 1.31035L574.578 1.31105V1.31111C574.281 1.55092 573.984 1.79098 573.68 1.99099C573.967 2.203 574.248 2.42304 574.529 2.64285L574.53 2.64309L574.53 2.64317C575.19 3.15936 575.848 3.67427 576.57 4.08099C576.924 4.28108 577.384 4.29434 577.847 4.30768C578.079 4.31434 578.311 4.32102 578.53 4.35099C586.73 5.44099 589 7.481 589.31 15.841C589.74 27.151 589.76 38.481 589.68 49.801C589.669 51.4298 589.659 53.0585 589.648 54.6873V54.6924C589.544 70.7118 589.44 86.7296 588.85 102.731C588.42 114.231 584.56 124.261 573.49 130.091C572.726 130.493 572.223 131.394 571.72 132.294L571.719 132.295C571.485 132.714 571.251 133.133 570.99 133.501C571.497 133.571 572.028 133.704 572.558 133.836C573.704 134.123 574.848 134.409 575.75 134.061C592.54 127.601 602.6 115.711 603.35 97.381C603.731 88.1733 603.637 78.9513 603.544 69.7282ZM53.1645 56.2134C55.593 56.2069 58.0217 56.2004 60.4504 56.2004C62.9392 56.1974 65.4288 56.2149 67.9178 56.2325C73.7595 56.2736 79.5972 56.3148 85.4104 56.0904C89.5004 55.9404 90.5404 57.4404 90.4604 61.2604C90.3461 66.883 90.3592 72.5057 90.3723 78.1284C90.3833 82.8357 90.3942 87.543 90.3304 92.2504C90.1804 103.81 88.4404 105.68 77.2804 107.71C76.4978 107.853 75.7985 108.455 75.0976 109.058C74.7685 109.341 74.4391 109.624 74.1004 109.86C74.4758 110.058 74.8491 110.307 75.2217 110.557C76.0205 111.091 76.8158 111.624 77.6204 111.63C90.4504 111.76 103.28 111.77 116.11 111.62C116.997 111.614 117.88 111.02 118.76 110.428C119.171 110.152 119.58 109.876 119.99 109.66C119.647 109.444 119.311 109.19 118.974 108.937L118.974 108.936L118.974 108.936L118.974 108.936L118.974 108.936L118.974 108.936L118.974 108.936L118.973 108.936L118.973 108.936L118.973 108.936L118.973 108.936C118.221 108.368 117.466 107.799 116.63 107.64C106.91 105.79 104.84 103.83 104.76 93.7404C104.55 68.5904 104.55 43.4304 104.72 18.2704C104.79 8.01037 106.89 6.07038 117.07 4.40038C117.863 4.27058 118.571 3.65073 119.279 3.03185C119.607 2.74482 119.935 2.458 120.27 2.22037C119.914 2.02342 119.557 1.77466 119.199 1.52545C118.411 0.977481 117.621 0.427256 116.83 0.420382C104.17 0.290382 91.5004 0.290376 78.8404 0.430376C78.0562 0.444014 77.2814 1.00632 76.5063 1.56878C76.1447 1.83118 75.7831 2.0936 75.4204 2.30037C75.7746 2.53651 76.1197 2.81848 76.4643 3.10013C77.1997 3.70108 77.9334 4.30058 78.7504 4.45038C87.9204 6.15038 89.9304 8.15038 90.2104 17.6204C90.3618 22.6662 90.3583 27.712 90.3547 32.7578C90.3516 37.042 90.3486 41.3262 90.4404 45.6104C90.5104 48.8304 89.0904 49.5404 86.2404 49.5304C69.0804 49.4804 51.9204 49.4804 34.7604 49.6104C31.6004 49.6304 30.7004 48.3204 30.7704 45.4304C30.8542 41.6251 30.8916 37.8184 30.929 34.0119V34.0119V34.0119V34.0118V34.0118V34.0118V34.0117V34.0117V34.0117V34.0116L30.929 34.0111V34.0111V34.0111V34.011V34.011V34.011V34.0109V34.0109V34.0109V34.0108V34.0108C30.9897 27.8244 31.0504 21.6386 31.3104 15.4604C31.6404 7.73038 33.7904 5.85037 41.5604 4.53037C42.5084 4.36551 43.3856 3.78541 44.2633 3.20496L44.2633 3.20492C44.6633 2.94039 45.0634 2.67578 45.4704 2.45038C45.0266 2.22688 44.5837 1.94591 44.1412 1.66518C43.178 1.05408 42.2166 0.444081 41.2504 0.430376C31.4713 0.319341 21.6923 0.352979 11.9132 0.386616L11.9132 0.386616L11.9131 0.386616L11.9131 0.386617L11.9131 0.386617L11.9131 0.386617L11.9131 0.386617L11.913 0.386617L11.913 0.386617L11.913 0.386617L11.913 0.386617C9.36212 0.395391 6.81126 0.404166 4.2604 0.410372C4.06376 0.412741 3.86094 0.406691 3.65674 0.4006C2.99903 0.38098 2.32694 0.360932 1.80041 0.620379C1.05041 0.990379 0.300401 1.75038 0.0104012 2.51038C-0.109599 2.83038 0.830423 3.84037 1.47042 4.11037C2.12445 4.38227 2.87028 4.44356 3.61268 4.50457C3.88053 4.52658 4.14794 4.54855 4.41043 4.58037C13.5804 5.66037 16.0604 7.56037 16.1804 16.7504C16.5304 43.0604 16.5304 69.3804 16.2404 95.7004C16.1504 104.42 13.9204 106.08 5.25042 107.66C4.33315 107.83 3.49435 108.411 2.65562 108.992L2.65557 108.992C2.25991 109.266 1.86427 109.54 1.46041 109.77C1.92306 109.976 2.38571 110.238 2.84867 110.499C3.84672 111.062 4.84624 111.627 5.85043 111.64C17.8504 111.8 29.8504 111.8 41.8404 111.64C42.8306 111.627 43.8115 111.03 44.7926 110.433C45.2482 110.156 45.7038 109.879 46.1604 109.66C45.7493 109.439 45.3462 109.18 44.9436 108.921C44.0728 108.36 43.204 107.801 42.2604 107.63C33.6004 106.06 31.6104 104.28 31.3104 95.6504C31.0615 88.4744 31.0006 81.2911 30.9396 74.1094C30.9002 69.4616 30.8608 64.8144 30.7704 60.1704C30.7104 57.1004 32.0004 56.1204 34.9604 56.1604C41.0246 56.2461 47.0938 56.2298 53.1645 56.2134ZM892.377 119.165C888.523 116.737 884.63 114.283 880.67 111.79C882.366 110.724 883.975 109.776 885.502 108.876L885.504 108.874C888.633 107.03 891.418 105.389 893.89 103.36C908.34 91.4999 911.96 68.1799 902.21 51.4399C892.95 35.5399 871.8 28.5399 853.15 35.2199C835.15 41.6599 825.03 58.3199 826.76 78.6499C828.21 95.5999 841.43 109.13 859.34 112.28C861.85 112.73 864.3 114.03 866.57 115.3C869.283 116.815 871.95 118.436 874.616 120.056C879.921 123.279 885.223 126.501 890.88 128.89C895.095 130.669 899.808 131.283 904.519 131.898C906.615 132.171 908.71 132.444 910.76 132.82C910.793 132.689 910.825 132.559 910.857 132.428C910.899 132.258 910.94 132.088 910.981 131.917C911.01 131.797 911.039 131.676 911.069 131.555L911.112 131.375L911.158 131.19L911.2 131.02C905.006 127.123 898.816 123.223 892.519 119.255L892.432 119.2L892.377 119.165ZM883.63 46.9299C890.33 55.4499 892.16 65.5299 892.58 79.4299C892.383 80.2452 892.185 81.284 891.956 82.4777L891.956 82.4812L891.955 82.4829L891.955 82.4838C891.279 86.0194 890.343 90.9118 888.43 95.3799C887.235 98.1884 884.788 100.471 882.351 102.746C881.343 103.686 880.336 104.626 879.42 105.6C879.027 106.021 878.344 106.215 877.742 106.385L877.62 106.42C877.38 106.488 877.118 106.581 876.851 106.677C876.062 106.957 875.229 107.254 874.78 106.97C872.064 105.279 869.04 105.819 866.024 106.358C862.334 107.017 858.657 107.673 855.57 104.24C854.685 103.255 853.711 102.315 852.738 101.375C850.68 99.3871 848.623 97.4006 847.4 94.9899C840.27 80.9199 839.35 66.1199 845.48 51.5499C852.42 35.0799 872.55 32.8399 883.63 46.9299ZM390.32 75.0701C392.939 78.4967 395.255 82.0946 397.547 85.6573C403.203 94.4466 408.721 103.022 418.32 108.28C418.875 108.588 419.219 109.291 419.561 109.989L419.561 109.99C419.718 110.31 419.874 110.63 420.05 110.91C419.749 111.055 419.448 111.235 419.147 111.415L419.147 111.415C418.49 111.809 417.832 112.203 417.16 112.23C406.55 112.63 397.38 109.79 391.35 100.27C390.38 98.7386 389.394 97.2152 388.408 95.6915C385.776 91.624 383.143 87.5541 380.8 83.3201C378.06 78.3501 373.75 78.2701 369.21 78.7901C368.33 78.8901 367.02 80.7401 366.98 81.8201C366.852 85.7159 366.912 89.6219 366.971 93.5272V93.5285V93.5297V93.531V93.5322V93.5335V93.5347V93.536V93.5373V93.5385V93.5392V93.5398V93.5405V93.5412V93.5418V93.5425C366.995 95.1254 367.019 96.7082 367.03 98.2901C367.08 103.9 369.89 106.81 375.48 107.42C376.255 107.502 376.973 108.153 377.689 108.802L377.69 108.802C378.019 109.1 378.347 109.398 378.68 109.64C378.3 109.829 377.921 110.066 377.542 110.303L377.541 110.303C376.714 110.82 375.887 111.336 375.05 111.35C365.23 111.53 355.41 111.58 345.59 111.45C344.703 111.436 343.821 110.836 342.94 110.237C342.53 109.958 342.12 109.679 341.71 109.46C342.08 109.237 342.44 108.979 342.801 108.72L342.801 108.72C343.572 108.167 344.342 107.614 345.2 107.41C352.38 105.68 353.68 104.41 353.73 96.8901C353.85 81.2401 353.85 65.5901 353.71 49.9501C353.64 42.1301 352.7 41.2801 345.01 39.0901C344.321 38.8901 343.745 38.2763 343.172 37.6652L343.172 37.6649C342.914 37.3901 342.657 37.1159 342.39 36.8801C342.714 36.6898 343.038 36.4462 343.363 36.2026C344.062 35.678 344.761 35.1533 345.45 35.1601C348.815 35.1907 352.183 35.2013 355.551 35.212H355.551C366.495 35.2466 377.446 35.2813 388.35 36.0001C399.16 36.7101 405.32 42.6401 406.7 51.2901C408.22 60.8401 404.16 67.9801 394.37 72.9401C393.676 73.2804 392.996 73.6439 391.989 74.1818L391.981 74.186C391.51 74.4375 390.968 74.727 390.32 75.0701ZM366.88 57.0601H366.86C366.86 57.8569 366.858 58.6538 366.855 59.4509V59.4517V59.4525V59.4533C366.849 61.3163 366.842 63.1807 366.87 65.0501C366.89 66.4147 366.873 67.5715 366.859 68.5511V68.5519V68.5526V68.5532V68.5538V68.5544V68.5549V68.5554V68.5558C366.823 71.0883 366.803 72.4371 367.467 73.1378C368.224 73.9363 369.869 73.8932 373.387 73.8011L373.388 73.8011C374.186 73.7802 375.079 73.7568 376.08 73.7401C383.05 73.6301 388.9 71.4301 391.37 64.1201C393.56 57.6501 393.74 51.2501 389.16 45.6801C384.25 39.7201 377.36 39.2701 370.43 40.2301C369.07 40.4201 367.24 42.9801 367.05 44.6101C366.693 47.5423 366.76 50.5205 366.827 53.5009V53.5012V53.5016V53.502V53.5023V53.5027V53.5031V53.5034V53.5038V53.5042L366.827 53.5072C366.854 54.6921 366.88 55.8773 366.88 57.0601ZM300.961 77.1856V77.186V77.1863V77.1867V77.1871V77.1874V77.1878V77.1882V77.1885C300.946 81.2835 300.93 85.3784 300.93 89.4725C300.54 90.0025 300.15 90.5325 299.76 91.0325C299.549 90.6094 299.362 90.1623 299.175 89.7146C298.77 88.7445 298.364 87.7715 297.7 87.0325C289.6 78.0459 281.456 69.0949 273.312 60.1438L273.269 60.0966L273.243 60.0686C269.194 55.6181 265.144 51.1675 261.1 46.7125L260.992 46.5936C250.19 34.6822 250.147 34.6344 234.03 35.1925C233.06 35.2264 232.108 35.6886 231.156 36.1509C230.705 36.3699 230.254 36.589 229.8 36.7625C230.21 37.046 230.608 37.375 231.007 37.7041C231.874 38.42 232.741 39.1359 233.72 39.3825C241.26 41.2825 243.65 43.6325 243.73 51.4125C243.88 66.5625 243.79 81.7225 243.51 96.8725C243.38 103.863 241.7 105.493 235.15 107.413C234.295 107.661 233.53 108.233 232.767 108.803C232.424 109.06 232.081 109.316 231.73 109.543C232.133 109.759 232.535 110.033 232.938 110.306C233.817 110.903 234.699 111.502 235.59 111.523C243.58 111.683 251.58 111.633 259.57 111.443C260.512 111.415 261.444 110.918 262.377 110.42C262.811 110.189 263.245 109.957 263.68 109.773C263.303 109.515 262.935 109.215 262.567 108.914C261.776 108.268 260.984 107.621 260.09 107.403C252.16 105.443 250.89 104.223 250.66 95.8325C250.388 86.1251 250.285 76.4117 250.182 66.6969V66.6967V66.6965V66.6964V66.6962V66.6961V66.6959V66.6957V66.6956L250.182 66.6931L250.182 66.6904L250.182 66.6877L250.182 66.6849L250.182 66.682L250.182 66.679L250.182 66.6758L250.182 66.6723C250.153 63.9058 250.124 61.1392 250.09 58.3725C250.084 57.8003 250.211 57.2281 250.392 56.4142L250.392 56.414L250.392 56.4134L250.392 56.4133L250.392 56.4131L250.392 56.4128L250.392 56.412L250.393 56.4103C250.496 55.945 250.617 55.4008 250.74 54.7325C251.329 55.363 251.847 55.9134 252.318 56.4133C253.199 57.3485 253.913 58.107 254.61 58.8825C257.988 62.6443 261.362 66.4087 264.736 70.1729C276.368 83.1495 287.999 96.1251 299.75 108.993C300.919 110.27 302.629 111.053 304.339 111.836C305.131 112.198 305.923 112.561 306.66 112.973L307.96 111.703L307.96 111.177L307.959 110.533L307.958 109.922V109.921C307.956 108.731 307.954 107.54 307.96 106.353C308.008 100.799 308.039 95.2463 308.071 89.6935C308.146 76.4272 308.221 63.1624 308.51 49.9025C308.67 42.3425 310.11 41.1925 317.16 39.1525C317.948 38.9265 318.614 38.2924 319.279 37.6582C319.586 37.3664 319.892 37.0746 320.21 36.8225C319.824 36.6468 319.438 36.4257 319.052 36.2045C318.207 35.7208 317.361 35.2362 316.51 35.2225C308.52 35.0825 300.52 35.0525 292.53 35.2325C291.493 35.253 290.47 35.7761 289.446 36.3002L289.445 36.3003C288.968 36.5444 288.49 36.7887 288.01 36.9825C288.437 37.2309 288.855 37.5104 289.274 37.79C290.222 38.4221 291.17 39.0552 292.21 39.3325C292.539 39.4198 292.871 39.5047 293.205 39.5899L293.206 39.5902C296.89 40.5308 300.739 41.5135 300.83 46.1525C301.038 56.4903 301 66.8383 300.961 77.1856ZM174.09 111.631C171.758 111.631 169.425 111.636 167.093 111.641H167.092H167.092H167.091H167.091H167.09H167.09H167.09C160.094 111.656 153.099 111.671 146.11 111.551C145.204 111.538 144.307 110.987 143.41 110.435C143.001 110.184 142.591 109.932 142.18 109.731C142.572 109.498 142.956 109.223 143.34 108.948C144.17 108.354 145.001 107.759 145.91 107.581C153.23 106.141 154.73 104.721 154.78 97.3914C154.89 81.4014 154.88 65.4114 154.78 49.4214C154.74 42.1014 153.61 40.9914 146.56 39.2314C145.781 39.0399 145.113 38.4041 144.446 37.7686C144.138 37.4748 143.83 37.1811 143.51 36.9314C143.891 36.7553 144.271 36.5317 144.652 36.3079L144.653 36.3077C145.483 35.82 146.314 35.3314 147.15 35.3314C156.69 35.255 166.23 35.2322 175.77 35.2094C183.72 35.1904 191.67 35.1714 199.62 35.1214C202.25 35.1014 203.61 35.7714 203.7 38.6814C203.763 40.6848 203.944 42.6835 204.125 44.6809L204.125 44.6812C204.319 46.8314 204.514 48.98 204.56 51.1314C204.574 51.897 204.022 52.6768 203.471 53.4545C203.223 53.8044 202.976 54.1539 202.78 54.5014C202.507 54.247 202.192 54.0087 201.877 53.7702C201.201 53.2589 200.523 52.7465 200.25 52.0714C195.96 41.6314 194.21 40.3814 182.91 40.2414C181.41 40.2242 179.91 40.2347 178.41 40.2451H178.41H178.41H178.41H178.41H178.409H178.409H178.409C176.411 40.2589 174.414 40.2728 172.42 40.2214C169.53 40.1514 168.03 41.3814 168.03 44.3214C168.03 46.1417 168.021 47.9626 168.011 49.7836C167.983 55.1257 167.954 60.4691 168.17 65.8014C168.22 66.9214 170.15 68.7914 171.34 68.8914C173.945 69.1247 176.573 69.0797 179.202 69.0346H179.202C180.743 69.0082 182.284 68.9818 183.82 69.0114C188.94 69.1114 193.17 68.2314 193.92 61.9514C193.988 61.3805 194.772 60.8974 195.556 60.4141C195.926 60.1863 196.296 59.9585 196.59 59.7214C196.771 59.9956 196.997 60.2698 197.224 60.5443L197.224 60.5444C197.725 61.1508 198.227 61.7587 198.24 62.3714C198.39 68.8614 198.39 75.3614 198.26 81.8514C198.247 82.4698 197.765 83.0788 197.284 83.6881C197.065 83.9655 196.846 84.243 196.67 84.5214C196.372 84.296 196.024 84.0907 195.677 83.8857C194.93 83.4452 194.186 83.0061 193.94 82.3714L193.863 82.1723C190.981 74.7909 190.969 74.761 182.98 74.7214C181.66 74.7142 180.339 74.7239 179.018 74.7336H179.017H179.016H179.016H179.015H179.014H179.014H179.013C176.672 74.7508 174.329 74.7681 171.99 74.6914C169.36 74.6114 167.91 75.3614 167.99 78.3114C168.063 80.8649 168.071 83.4233 168.078 85.982C168.089 89.7561 168.1 93.5309 168.32 97.2914C168.74 104.301 170.66 106.011 177.59 106.321C179.396 106.403 181.207 106.393 183.019 106.383H183.02H183.02H183.02H183.02H183.021H183.021H183.021H183.022C184.541 106.374 186.062 106.366 187.58 106.411C196.43 106.691 202.58 103.091 205.65 94.4814C205.95 93.6359 206.952 93.0368 207.956 92.4368C208.424 92.1569 208.893 91.8768 209.29 91.5714C209.391 92.0288 209.54 92.4951 209.689 92.9616C210.012 93.974 210.335 94.9872 210.17 95.9114C207.362 111.611 207.31 111.611 191.61 111.611H191.58C185.75 111.631 179.92 111.631 174.09 111.631ZM1071.19 110.851C1068.86 110.851 1066.53 110.855 1064.2 110.86C1057.21 110.873 1050.21 110.886 1043.22 110.781C1042.26 110.767 1041.31 110.304 1040.35 109.84C1039.91 109.626 1039.47 109.411 1039.03 109.241C1039.41 108.982 1039.78 108.676 1040.15 108.369C1040.95 107.704 1041.76 107.036 1042.66 106.851C1050.21 105.321 1051.62 103.981 1051.67 96.301C1051.78 80.651 1051.75 65.001 1051.67 49.351C1051.64 43.031 1050.44 38.841 1042.9 38.671C1042.29 38.6574 1041.69 38.0127 1041.09 37.3659C1040.81 37.0632 1040.52 36.7601 1040.24 36.521C1040.55 36.331 1040.86 36.09 1041.17 35.8492C1041.84 35.3294 1042.5 34.811 1043.17 34.811C1061.15 34.691 1079.14 34.641 1097.12 34.821C1098.25 34.831 1100.15 36.631 1100.35 37.821C1101.04 41.911 1101.27 46.091 1101.35 50.251C1101.36 51.032 1100.83 51.8177 1100.3 52.6049C1100.06 52.9667 1099.81 53.3288 1099.62 53.691C1099.33 53.4429 1098.97 53.2059 1098.62 52.9688C1097.85 52.4605 1097.08 51.9515 1096.98 51.331C1095.27 41.181 1088.01 39.561 1079.53 39.661C1076.03 39.701 1072.54 39.701 1069.04 39.691C1066.18 39.681 1064.75 40.961 1064.77 43.911C1064.82 50.901 1064.85 57.901 1064.74 64.891C1064.69 67.871 1066.23 68.581 1068.79 68.501C1073.61 68.351 1078.44 68.281 1083.27 68.221C1087.36 68.171 1089.67 66.221 1090.61 62.171C1090.8 61.3631 1091.59 60.7005 1092.39 60.0355C1092.75 59.7293 1093.12 59.4226 1093.43 59.101C1093.6 59.4916 1093.81 59.8801 1094.03 60.2682C1094.48 61.0924 1094.93 61.9147 1094.96 62.751C1095.16 68.571 1095.22 74.401 1095.08 80.231C1095.06 81.0543 1094.53 81.8683 1094 82.6792C1093.76 83.0502 1093.52 83.4206 1093.33 83.791C1093.04 83.5024 1092.69 83.2227 1092.33 82.9428C1091.56 82.3306 1090.79 81.7179 1090.69 81.011C1089.96 75.751 1086.72 74.121 1081.96 74.161C1080.49 74.1741 1079.02 74.1508 1077.55 74.1275C1074.52 74.0797 1071.49 74.0318 1068.49 74.301C1067.17 74.421 1065 76.371 1064.95 77.551C1064.69 84.191 1064.86 90.861 1065.09 97.511C1065.27 102.581 1067.84 105.581 1073.18 105.671C1074.32 105.691 1075.46 105.714 1076.59 105.737C1079.45 105.796 1082.3 105.854 1085.16 105.861C1093.58 105.881 1099.4 102.211 1102.35 94.071C1102.69 93.1522 1103.66 92.4638 1104.64 91.7768L1104.64 91.7762C1105.08 91.4615 1105.53 91.1471 1105.91 90.811C1106.02 91.2888 1106.18 91.7735 1106.33 92.2583L1106.33 92.2596L1106.33 92.2608L1106.33 92.262C1106.67 93.3282 1107.01 94.395 1106.87 95.391C1106.58 97.4577 1106.12 99.5004 1105.65 101.544L1105.65 101.545L1105.65 101.547L1105.65 101.548L1105.65 101.549L1105.65 101.551C1105.27 103.242 1104.89 104.934 1104.6 106.641C1104.06 109.881 1102.43 110.991 1099.16 110.931C1092.34 110.792 1085.52 110.814 1078.7 110.835C1076.2 110.843 1073.69 110.851 1071.19 110.851ZM941.874 60.9758V60.9822V60.9887C941.877 63.2206 941.88 65.5471 941.88 68.0115C941.97 69.8755 942.032 71.8675 942.098 73.9474V73.9496C942.252 78.8429 942.422 84.2219 942.99 89.5615C944.18 100.701 949.95 108.681 961.18 111.381C966.29 112.601 971.78 113.171 977 112.761C994.16 111.421 1004.23 101.071 1005.79 83.8615C1006 81.5639 1006.03 79.2567 1006.07 76.9499V76.9472C1006.08 75.9216 1006.1 74.8961 1006.13 73.8715C1006.21 71.271 1006.27 68.6696 1006.33 66.0684V66.0667V66.065V66.0633V66.0615V66.059C1006.46 60.1709 1006.59 54.284 1006.97 48.4115C1007.41 41.5115 1008.82 40.3715 1015.48 38.7615C1016.27 38.5759 1016.95 37.9272 1017.63 37.28C1017.94 36.9856 1018.25 36.6915 1018.57 36.4415C1018.2 36.2615 1017.83 36.0348 1017.45 35.8081C1016.65 35.3165 1015.84 34.8252 1015.03 34.8115C1006.7 34.6615 998.37 34.6515 990.04 34.8115C989.15 34.8252 988.269 35.3597 987.387 35.8944L987.387 35.8948C986.981 36.1405 986.576 36.3863 986.17 36.5815C986.549 36.8203 986.92 37.1023 987.292 37.3848C988.12 38.013 988.95 38.6428 989.86 38.8015C997.21 40.0815 999.05 41.6315 999.52 49.0515C1000.03 57.1915 1000.42 65.3715 1000.11 73.5115C999.87 79.7615 999.2 86.1915 997.43 92.1615C994.59 101.731 987.07 106.351 976.81 106.171C967.26 106.001 960.49 101.041 957.57 91.6515C956.54 88.3515 955.78 84.8215 955.7 81.3815C955.44 70.2215 955.44 59.0615 955.59 47.9015C955.68 41.4215 957.25 40.0415 963.8 38.8015C964.611 38.6447 965.344 38.0698 966.076 37.4948L966.076 37.4943C966.418 37.2258 966.76 36.9574 967.11 36.7315C966.714 36.5223 966.318 36.2568 965.921 35.9911C965.067 35.4186 964.211 34.8451 963.35 34.8315C953.85 34.6815 944.35 34.6815 934.86 34.8715C933.754 34.8921 932.662 35.4604 931.571 36.0282L931.57 36.0287C931.073 36.287 930.577 36.5451 930.08 36.7515C930.525 36.9816 930.964 37.2542 931.403 37.527L931.403 37.5274C932.376 38.1318 933.35 38.7368 934.39 38.8815C939.29 39.5715 941.92 42.0315 941.89 47.1115C941.863 51.5686 941.868 56.0211 941.874 60.9299V60.9408V60.9521V60.9637V60.9758ZM699.3 111.131C697.966 111.128 696.631 111.135 695.297 111.142C691.963 111.159 688.631 111.176 685.31 111.041C684.642 111.013 683.997 110.461 683.353 109.909C683.053 109.651 682.753 109.394 682.45 109.191C682.7 108.979 682.939 108.736 683.179 108.492C683.699 107.963 684.221 107.433 684.85 107.221C690.63 105.221 691.1 104.371 689.08 98.7107L689.059 98.65C683.49 83.0905 683.469 83.0308 666.99 83.1207C665.616 83.1294 664.476 83.1046 663.522 83.0838H663.521C661.178 83.0328 659.953 83.0061 659.11 83.5602C658.187 84.1666 657.722 85.4688 656.746 88.1963C656.477 88.9504 656.168 89.8133 655.8 90.8007C654.7 93.7607 653.63 96.7407 652.7 99.7607C651.2 104.591 652.11 105.891 657.09 107.091C658.057 107.325 658.943 107.904 659.83 108.483C660.227 108.742 660.625 109.002 661.03 109.231C660.561 109.432 660.093 109.685 659.626 109.937C658.61 110.485 657.594 111.033 656.56 111.061C649.23 111.251 641.9 111.211 634.57 111.041C633.9 111.027 633.239 110.466 632.578 109.905L632.577 109.904C632.272 109.645 631.967 109.386 631.66 109.181C631.917 108.959 632.165 108.689 632.413 108.42C632.949 107.839 633.482 107.26 634.09 107.171C641.37 106.091 644.03 100.471 646.47 94.7207C652.005 81.66 657.499 68.5788 662.993 55.4992L663.037 55.3944C665.201 50.2424 667.364 45.0908 669.53 39.9407C669.651 39.6549 669.754 39.3537 669.857 39.0526C670.085 38.3844 670.313 37.717 670.74 37.2207C671.578 36.2362 672.533 35.3493 673.489 34.4612L673.493 34.4571C673.905 34.0745 674.317 33.6917 674.72 33.3007C675.069 33.7167 675.461 34.1141 675.853 34.5112C676.675 35.3452 677.497 36.178 677.91 37.1807C682.778 49.0346 687.589 60.9168 692.4 72.7991C695.15 79.5914 697.9 86.3837 700.66 93.1707C700.915 93.7948 701.155 94.4403 701.396 95.0892C702.225 97.3203 703.07 99.5926 704.58 101.181C706.18 102.862 708.272 104.07 710.369 105.281C711.366 105.856 712.363 106.433 713.31 107.061C714.044 107.547 714.733 108.096 715.422 108.645C715.766 108.92 716.11 109.194 716.46 109.461C716.081 109.636 715.702 109.854 715.323 110.072L715.323 110.073C714.493 110.55 713.661 111.029 712.81 111.071C709.481 111.211 706.158 111.182 702.836 111.154H702.835H702.834H702.834C701.656 111.143 700.478 111.133 699.3 111.131ZM670.99 52.5307C670.51 52.5907 670.03 52.6507 669.54 52.7207C667.103 59.4511 664.665 66.1743 662.15 73.1125L662.017 73.4799L661.758 74.1927L660.74 77.0007H680.34C678.828 73.0424 677.373 69.2352 675.95 65.5109C674.266 61.1059 672.627 56.8168 670.99 52.5307ZM784.304 33.2138L784.296 33.2127C781.995 32.9046 779.564 32.5793 776.94 32.2303C775.306 32.5668 773.518 32.866 771.638 33.1807C767.201 33.9231 762.248 34.7521 757.57 36.3603C740.99 42.0903 731.01 56.2303 730.74 73.0003C730.471 89.8203 739.4 103.31 755.12 109.56C769.1 115.12 783.29 113.29 797.44 110.37C798.53 110.14 799.93 108.98 800.27 107.95C802.1 102.43 803.71 96.8203 805.19 91.1903C805.4 90.4103 804.63 88.7603 803.95 88.5103C803.21 88.2403 801.74 88.8903 801.14 89.6003C800.422 90.4403 799.906 91.4547 799.39 92.4694C799.144 92.9526 798.898 93.4358 798.63 93.9003C794.67 100.8 789.58 106.37 781.29 107.74C767.49 110.02 755.24 103.3 749.62 90.4703C745.54 81.1503 744.97 71.3703 746.92 61.5503C749.65 47.7903 758.781 39.3903 771.86 37.9103C784.901 36.4403 791.88 40.7103 798.37 53.9603C798.685 54.6098 799.415 55.0583 800.146 55.5072C800.485 55.7148 800.823 55.9226 801.12 56.1503C801.293 55.7868 801.515 55.4204 801.737 55.0541C802.225 54.2514 802.712 53.4494 802.67 52.6803C802.536 50.3697 802.272 48.0645 802.007 45.759L802.007 45.7564C801.759 43.5927 801.511 41.4289 801.37 39.2603C801.18 36.3003 799.581 35.2303 796.96 34.8903C792.91 34.3657 788.859 33.8235 784.304 33.2138ZM1161.8 32.6002C1161.91 32.6002 1162.02 32.5991 1162.13 32.598C1162.36 32.5958 1162.58 32.5935 1162.8 32.6002C1177.64 33.0502 1181.67 37.3202 1181.15 52.1602C1181.13 52.709 1180.78 53.2483 1180.43 53.7879C1180.27 54.035 1180.11 54.2821 1179.98 54.5302C1179.65 54.3589 1179.28 54.2128 1178.9 54.0666C1178.08 53.7433 1177.25 53.4192 1176.88 52.8202C1176.2 51.7111 1175.67 50.5072 1175.14 49.3045C1174.53 47.9156 1173.92 46.5282 1173.08 45.2902C1168.38 38.3102 1160.1 35.7302 1152.96 38.7502C1144.57 42.3002 1142.73 53.1502 1149.91 58.7102C1152.47 60.6874 1155.51 62.0585 1158.54 63.4197L1158.54 63.4207C1159.48 63.8422 1160.41 64.2628 1161.33 64.7002C1162.81 65.4065 1164.34 66.0257 1165.87 66.6445L1165.87 66.6452C1167.73 67.4016 1169.6 68.1573 1171.38 69.0702C1181.89 74.4402 1186.29 81.7702 1185.15 91.6602C1184.05 101.3 1176.68 109.15 1166.12 111.7C1156.57 114 1147.19 113.15 1138.4 108.8C1136.38 107.8 1134.57 105.23 1133.84 103C1132.71 99.5712 1132.2 95.9357 1131.68 92.3212C1131.61 91.8035 1131.54 91.2863 1131.46 90.7702C1131.36 90.0442 1131.66 89.256 1131.96 88.4685L1131.96 88.4669C1132.1 88.116 1132.23 87.7653 1132.33 87.4202C1132.7 87.6132 1133.11 87.7781 1133.53 87.9433C1134.44 88.3086 1135.36 88.6753 1135.83 89.3502C1136.91 90.8892 1137.88 92.5197 1138.85 94.1482L1138.85 94.1495C1140.35 96.6579 1141.84 99.1618 1143.73 101.32C1148.1 106.32 1153.95 108.73 1160.77 107.71C1166.42 106.87 1170.8 104.21 1172.55 98.3702C1174.33 92.4402 1172.74 87.3202 1167.88 83.7102C1165.36 81.8297 1162.47 80.4206 1159.6 79.017C1158.73 78.5918 1157.86 78.1672 1157 77.7302C1155.38 76.9009 1153.7 76.1496 1152.03 75.3986C1148.98 74.0305 1145.94 72.6637 1143.21 70.8302C1131.1 62.7002 1131.03 45.6302 1143.43 37.8602C1147.06 35.5879 1151.33 34.3445 1155.6 33.1015C1157.54 32.5394 1159.47 31.9773 1161.34 31.3202C1161.5 31.7402 1161.65 32.1702 1161.8 32.6002ZM475.835 62.0878C474.412 64.965 472.99 67.8422 471.57 70.7205C471.03 70.7705 470.49 70.8305 469.95 70.9005C468.613 68.6197 467.272 66.3406 465.931 64.0614C462.58 58.3663 459.23 52.6712 455.93 46.9505C452.61 41.1905 452.89 40.7805 459.25 39.1105C460.013 38.9129 460.66 38.2558 461.308 37.5978C461.612 37.2899 461.915 36.9819 462.23 36.7205C461.89 36.5373 461.551 36.3035 461.213 36.0702C460.5 35.5776 459.79 35.0873 459.07 35.0805C449.91 34.9805 440.75 35.0005 431.59 35.1605C430.873 35.1742 430.161 35.6635 429.447 36.154C429.115 36.3817 428.783 36.6098 428.45 36.7905C428.761 37.0507 429.062 37.3638 429.364 37.6771C430.024 38.3634 430.685 39.0501 431.44 39.1805C435.79 39.9205 438.54 42.5005 440.68 46.1105C441.752 47.9147 442.799 49.7391 443.846 51.5643C446.617 56.3958 449.391 61.2323 452.65 65.7105C459.29 74.8405 461.31 84.7605 460.45 95.8105C459.76 104.641 459.32 105.601 450.75 107.391C449.916 107.568 449.161 108.134 448.409 108.698C448.061 108.959 447.714 109.219 447.36 109.441C447.768 109.652 448.174 109.918 448.58 110.184C449.459 110.761 450.338 111.337 451.22 111.351C461.71 111.511 472.21 111.521 482.7 111.361C483.737 111.347 484.764 110.791 485.789 110.237C486.256 109.984 486.723 109.731 487.19 109.531C486.738 109.284 486.294 108.995 485.85 108.707C484.89 108.083 483.93 107.459 482.89 107.261C475.31 105.811 474.41 104.571 473.65 96.7705C472.42 84.2305 474.24 72.6505 482.21 62.3905C484.298 59.7005 486.067 56.7621 487.835 53.8255C488.65 52.472 489.465 51.1188 490.31 49.7905C493.66 44.5205 497.01 39.3005 504.23 38.8905C504.89 38.8505 505.97 37.6805 505.97 37.0405C505.98 36.3705 504.9 35.1405 504.29 35.1305C495.63 35.0105 486.97 35.0205 478.31 35.1505C477.65 35.1605 476.54 36.2905 476.5 36.9505C476.46 37.5905 477.41 38.5705 478.15 38.9105C479.012 39.3076 480.024 39.4192 481.016 39.5287C481.199 39.5488 481.38 39.5688 481.56 39.5905C484.98 40.0205 485.79 41.8505 484.35 44.8005C481.53 50.5689 478.682 56.3283 475.835 62.0878Z"
-                                                            f="black"></path>
-                                                    </svg>
+                                                    class="w-full flex justify-center items-center rounded-xl bg-gray-100 || js-logo-28 ">
+                                                    <div class="relative rounded-xl overflow-hidden">
+                                                        <img src="<?php echo BASE_URL . $logo; ?>"
+                                                            class="w-176 h-40 | lg:w-144 lg:h-50" />
+
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 swiper-slide">
-                                        <div
-                                            class="w-full flex items-center justify-center overflow-hidden  rounded-2xl transform-gpu bg-white h-28 | lg:rounded-3xl lg:h-40 | 4xl:h-44 | dark:bg-grayDark-600 || js-logo-127732">
-                                            <div class="w-full h-full flex items-center justify-center">
+                                        <?php endforeach;
+                                        foreach (array_slice($logos, 0, 4) as $index => $logo): ?>
+
+
+                                            <div class="px-2 | lg:px-3 xl:px-4 swiper-slide swiper-slide-duplicate"
+                                                data-swiper-slide-index="<?php echo $index; ?>"
+                                                style="width: 356.5px;">
                                                 <div
-                                                    class="w-full h-12 relative px-8 | md:h-12 md:px-14 | lg:px-14 | 4xl:px-16 4xl:h-14">
-                                                    <svg class="w-full h-full text-gray-600 fill-current | dark:text-white"
-                                                        width="601" height="55" xmlns="http://www.w3.org/2000/svg"
-                                                        viewBox="0 0 601 55" f="none">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                                            d="M318.8 53H314.4L308.1 44.1C300.8 51.9 297.5 53.8 292.1 53.8C283.4 53.8 276.5 46.7 276.5 37.9C276.5 31.1 279.8 27 290.5 20.5C285.9 14.4 285.3 13 285.3 9.70001C285.3 4.30001 289.9 0 295.6 0C301.2 0 305.5 4.09999 305.5 9.39999C305.5 13.5 303.6 16.5 298.5 19.9L296.2 21.4L308.2 38C310.048 36.0401 311.112 34.9268 312.34 33.6417L312.347 33.6348L312.351 33.6301L312.353 33.6288L312.364 33.6165C313.323 32.6134 314.385 31.5018 316 29.8L318.9 32.6C316.328 35.1093 315.173 36.2805 313.681 37.7925L313.679 37.7947C312.794 38.6924 311.79 39.7105 310.3 41.2L318.8 53ZM292.7 23.7L292.7 23.7003C292.1 24.1002 291.5 24.5001 291 24.9C286 28.2 284.2 29.8 282.8 31.7C281.4 33.9 280.6 36 280.6 38.4C280.6 44.6 285.6 49.8 291.7 49.8C294.3 49.8 297.1 48.8 299.2 47.1C300.7 45.9 301.7 44.9 305.5 40.9L292.7 23.7ZM301 9.70001C301 6.30001 298.8 4.20001 295.3 4.20001C291.8 4.20001 289.4 6.39999 289.4 9.79999C289.4 12.2 290.1 13.8 292.2 16.5C292.5 17 293 17.7 293.7 18.6C299.8 14.7 301 13.2 301 9.70001ZM25.9 54.0984C33.6 54.0984 39.1 51.9985 45.3 46.6985L37.9 38.1985C35.2 41.1985 32 42.5984 27.6 42.5984C18.9 42.5984 12.8 36.2985 12.8 27.0984C12.8 18.1985 18.6 12.0984 26.9 12.0984C30.9 12.0984 34.4 13.5984 38 16.7984L46.1 8.29843C43 5.39843 41.3 4.19844 38.7 2.99844C35 1.29844 30.7 0.398438 26.4 0.398438C19.4 0.398438 13.8 2.29846 9.2 6.19846C3.4 11.1985 0 18.9984 0 27.3984C0 34.4984 2.6 41.3984 7 46.2984C11.7 51.4984 18 54.0984 25.9 54.0984ZM450.8 1.29919V53.0992H438.2L419.3 23.5992V53.0992H406.7V3.69922C406.7 2.39922 407.8 1.29919 409.1 1.29919H419.3L438.2 30.3992V3.59921C438.2 2.29921 439.3 1.19922 440.6 1.19922H450.8V1.29919ZM101 3.70081C101 2.40081 102.1 1.30078 103.4 1.30078H118.7C131 1.30078 138 7.50078 138 18.3008C138 29.2008 130.8 36.2008 119.5 36.2008H113.5V53.0008H100.9V3.70081H101ZM117 25.9008C122.2 25.9008 125.2 23.3008 125.2 18.8008C125.2 14.5008 122.3 11.7008 117.8 11.7008H113.5V26.0008C113.5 25.9008 117 25.9008 117 25.9008ZM346.9 54.0984C354.6 54.0984 360.1 51.9985 366.3 46.6985L359 38.1985C356.3 41.1985 353.1 42.5984 348.7 42.5984C340 42.5984 333.9 36.2985 333.9 27.0984C333.9 18.1985 339.6 12.0984 347.9 12.0984C351.9 12.0984 355.4 13.5984 359 16.7984L367.1 8.29843C364 5.39843 362.3 4.19844 359.7 2.99844C356 1.29844 351.7 0.398438 347.4 0.398438C340.4 0.398438 334.8 2.29846 330.2 6.19846C324.4 11.1985 321 18.9984 321 27.3984C321 34.4984 323.6 41.3984 328 46.2984C332.7 51.4984 339 54.0984 346.9 54.0984ZM494.5 3.70081C494.5 2.40081 495.6 1.30078 496.9 1.30078H511.3C518.1 1.30078 523.1 2.50081 526.5 5.20081C530.1 8.00081 532.1 12.7008 532.1 18.3008C532.1 26.1008 528.8 31.4008 522.1 34.1008L533.5 53.1008H518.4L507.1 33.1008V53.1008H494.5V3.70081ZM511.1 26.0008C516.3 26.0008 519.3 23.4008 519.3 18.9008C519.3 14.6008 516.4 11.7008 511.8 11.7008H507V26.0008H511.1ZM579.9 54.0984C587.6 54.0984 593.1 51.9985 599.3 46.6985L592 38.1985C589.3 41.1985 586.1 42.5984 581.7 42.5984C573 42.5984 566.9 36.2985 566.9 27.0984C566.9 18.1985 572.6 12.0984 580.9 12.0984C584.9 12.0984 588.4 13.5984 592 16.7984L600.1 8.29843C597 5.39843 595.3 4.19844 592.7 2.99844C589 1.29844 584.7 0.398438 580.4 0.398438C573.4 0.398438 567.8 2.29846 563.2 6.19846C557.4 11.1985 554 18.9984 554 27.3984C554 34.4984 556.6 41.3984 561 46.2984C565.7 51.4984 572 54.0984 579.9 54.0984ZM144 1.30078C142.7 1.30078 141.6 2.40081 141.6 3.70081V53.1008H154.2V1.30078H144ZM536.9 3.70081C536.9 2.40081 538 1.30078 539.3 1.30078H549.5V53.1008H536.9V3.70081ZM246.6 1.30078C245.3 1.30078 244.2 2.40081 244.2 3.70081V53.1008H273.7V42.9008H256.9V1.30078H246.6ZM158.4 3.70081C158.4 2.40081 159.5 1.30078 160.8 1.30078H194.9V11.5008H183V53.1008H170.4V11.5008H158.4V3.70081ZM456.2 1.30078C454.9 1.30078 453.8 2.40081 453.8 3.70081V11.5008H465.8V53.1008H478.4V11.5008H490.3V1.30078H456.2ZM370.7 3.69922C370.7 2.39922 371.8 1.29919 373.1 1.29919L400.4 1.19922V11.3992H383.3V21.9992H400.4V32.1992H383.3V42.8992H400.4V53.0992H370.7V3.69922ZM240.2 53.0984H226.4L224.1 45.5984H205.8L203.5 53.0984H190.1C190.1 53.0984 206.4 3.49844 206.8 2.49844C207.2 1.39844 208.4 1.39844 208.4 1.39844H222C222 1.39844 223.2 1.49844 223.6 2.49844L240.2 53.0984ZM208.9 35.4984H221L214.9 16.1985L208.9 35.4984ZM83.1 53.0984H96.9L80.3 2.49844C79.9 1.49844 78.7 1.39844 78.7 1.39844H65.1C65.1 1.39844 63.9 1.39844 63.5 2.49844C63.1 3.49844 46.8 53.0984 46.8 53.0984H60.2L62.5 45.5984H80.8L83.1 53.0984ZM77.7 35.4984H65.6L71.6 16.1985L77.7 35.4984Z"
-                                                            f="black"></path>
-                                                    </svg>
+                                                    class="w-full flex justify-center items-center rounded-xl bg-gray-100 || js-logo-28 ">
+                                                    <div class="relative rounded-xl overflow-hidden">
+                                                        <img src="<?php echo BASE_URL . $logo; ?>"
+                                                            class="w-176 h-40 | lg:w-144 lg:h-50" />
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 swiper-slide">
-                                        <div
-                                            class="w-full flex items-center justify-center overflow-hidden  rounded-2xl transform-gpu bg-white h-28 | lg:rounded-3xl lg:h-40 | 4xl:h-44 | dark:bg-grayDark-600 || js-logo-127732">
-                                            <div class="w-full h-full flex items-center justify-center">
-                                                <div
-                                                    class="w-full h-12 relative px-8 | md:h-12 md:px-14 | lg:px-14 | 4xl:px-16 4xl:h-14">
-                                                    <svg class="w-full h-full text-gray-600 fill-current | dark:text-white"
-                                                        width="230" height="41" xmlns="http://www.w3.org/2000/svg"
-                                                        viewBox="0 0 230 41" f="none">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                                            d="M8.24001 0C11.493 0 12.267 1.6 12.267 2.864C12.267 4.658 11.106 6.588 7.02901 6.588H1.80701L3.23101 0H8.24001ZM134.92 11.7273L125.998 19.7613L129.005 5.86328H123.989L118.294 32.2303H123.306L124.691 25.8233L127.775 23.3683L132.039 32.2303H137.619L131.568 20.3613L141.867 11.7273H134.92ZM71.495 24.4083C71.222 25.6403 71.14 26.2263 71.14 26.5363C71.14 27.5693 71.718 28.3553 73.569 28.3543C74.1853 28.3543 74.7193 28.316 74.8547 28.3062L74.867 28.3053C74.829 28.4623 74.048 32.0493 73.966 32.4673C73.9337 32.4716 73.8868 32.4786 73.8273 32.4876C73.4911 32.5382 72.7527 32.6493 71.966 32.6493C69.379 32.6493 66.147 31.4213 66.147 27.2433C66.147 26.5453 66.222 25.7553 66.396 24.9543L70.528 5.90234H75.508C75.508 5.90234 71.759 23.1733 71.495 24.4083ZM107.635 27.7522C110.5 27.7522 111.644 25.5462 111.863 25.0592H117.459C117.203 26.5502 115.112 32.6252 107.367 32.6252C101.153 32.6252 97.8 28.4882 97.8 23.1232C97.8 16.5662 102.714 11.6602 108.856 11.6602C117.253 11.6602 118.827 17.7262 118.509 19.7102H113.203C113.12 19.2232 112.26 16.5362 108.652 16.5362C105.3 16.5362 103.023 19.5742 103.023 22.9552C103.023 25.0002 104.317 27.7522 107.635 27.7522ZM47.715 5.87109C47.715 5.87109 44.182 22.1901 43.765 24.0801C42.762 28.6171 45.591 32.2341 50.859 32.2331H53.72C59.993 32.2331 64.039 28.5561 64.039 24.1671C64.039 20.1331 60.89 18.8851 60.337 18.7031L60.3894 18.6869C61.1706 18.4467 65.783 17.0287 65.783 12.0201C65.783 9.6981 64.089 5.87109 57.204 5.87109H47.715ZM54.281 20.9461C57.824 20.9461 58.622 22.5181 58.622 23.7571C58.622 25.8041 56.882 27.3231 53.511 27.3231H48.302L49.68 20.9461H54.281ZM56.963 10.7481C59.353 10.7481 60.329 11.8511 60.329 13.1331C60.329 14.6951 58.874 16.0701 56.025 16.0711H50.735L51.886 10.7481H56.963ZM139.582 24.0801C140 22.1901 143.532 5.87109 143.532 5.87109H153.025C159.91 5.87109 161.605 9.6981 161.605 12.0201C161.605 17.0303 156.99 18.4477 156.21 18.6871L156.158 18.7031C156.703 18.8851 159.861 20.1331 159.861 24.1671C159.861 28.5561 155.81 32.2331 149.537 32.2331H146.678C141.408 32.2341 138.578 28.6171 139.582 24.0801ZM154.439 23.7571C154.439 22.5181 153.64 20.9461 150.099 20.9461H145.495L144.118 27.3231H149.329C152.699 27.3231 154.439 25.8041 154.439 23.7571ZM156.145 13.1331C156.145 11.8511 155.173 10.7481 152.777 10.7481H147.702L146.553 16.0711H151.844C154.691 16.0701 156.145 14.6951 156.145 13.1331ZM185.893 20.7853C187.111 14.8833 190.725 11.7383 196.039 11.7383C197.105 11.7383 197.956 11.8463 198.495 11.9153C198.448 12.1346 198.358 12.5457 198.251 13.038L198.25 13.0441C197.979 14.2862 197.596 16.0416 197.498 16.5443L197.445 16.5366L197.402 16.5302C197.12 16.4882 196.637 16.4163 195.923 16.4163C193.44 16.4163 191.593 17.6023 190.833 21.0953C190.253 23.7603 188.419 32.2403 188.419 32.2403H183.442C183.442 32.2403 185.369 23.3223 185.893 20.7853ZM212.974 40.0847L229.678 11.7387H224.302L216.626 25.0787L214.833 11.7227H209.081C202.493 11.7227 199.079 14.7357 197.868 20.5007C197.261 23.3777 195.331 32.2407 195.331 32.2407H200.31C200.31 32.2407 202.137 23.8227 202.864 20.4257C203.567 17.1277 206.013 16.1197 208.651 16.6817L209.7 11.8427C210.477 16.4387 212.853 31.1217 212.853 31.1217L207.641 40.0847H212.974ZM88.2322 23.0855L88.2321 23.0855C87.2122 23.2413 86.0831 23.4138 85.517 23.4975C82.108 24.0015 81.248 25.1125 81.247 26.0505C81.247 27.1865 82.285 28.1425 84.062 28.1425C86.847 28.1425 89.372 26.5505 89.951 24.0715C90.046 23.6675 90.175 23.1205 90.257 22.7785C90.0457 22.8085 89.1869 22.9397 88.2322 23.0855ZM88.249 15.9805C85.058 15.9805 83.777 17.9555 83.654 18.1585V18.1595H78.032L78.0476 18.1225C78.4569 17.147 80.748 11.6875 88.446 11.6875C94.514 11.6875 96.882 14.7375 96.001 19.0525C95.538 21.3335 94.63 25.4665 94.307 26.9045C93.709 29.5775 94.0488 31.2695 94.2304 32.1737L94.242 32.2315H89.096C89.038 31.5785 88.968 30.7685 88.951 30.2275C88.9429 30.2356 88.9308 30.2483 88.9149 30.2652C88.5908 30.6072 86.6517 32.6535 83.095 32.6535C78.603 32.6535 76.074 29.6855 76.074 26.6395C76.074 22.3415 79.835 20.4945 85.786 19.6345C89.25 19.1385 91.25 18.8165 91.25 17.5805C91.25 16.7045 90.233 15.9805 88.249 15.9805ZM176.119 26.0901C175.937 26.4911 174.726 28.1811 172.019 28.1811C168.121 28.1811 167.234 24.8761 167.324 23.9701H182.508L182.526 23.8931C182.635 23.4371 182.938 22.164 182.938 20.8591C182.938 16.0561 179.682 11.6641 173.115 11.6641C167.11 11.6641 162.292 16.7141 162.292 22.7111C162.292 28.5131 165.776 32.6291 171.937 32.6291C179.55 32.6291 181.601 26.6661 181.798 26.0911C180.441 26.0901 176.119 26.0901 176.119 26.0901ZM173.168 16.2171C176.52 16.2171 177.801 18.2631 177.664 19.9041H168.076C168.324 18.8621 169.923 16.2171 173.168 16.2171ZM25.76 2.864C25.76 1.6 24.988 0 21.736 0H16.726L15.303 6.587H20.522C24.601 6.588 25.76 4.658 25.76 2.864ZM6.433 9.91016C9.686 9.91016 10.46 11.5142 10.46 12.7782C10.46 14.5672 9.298 16.5022 5.22 16.5022H0L1.424 9.91016H6.433ZM23.953 12.7782C23.953 11.5142 23.178 9.91016 19.928 9.91016H14.919L13.493 16.5022H18.715C22.794 16.5022 23.953 14.5672 23.953 12.7782ZM34.045 5.89062C37.295 5.89062 38.07 7.49363 38.07 8.75863C38.07 10.5516 36.909 12.4816 32.83 12.4816H27.61L29.036 5.89062H34.045ZM36.124 19.0828C36.124 17.8178 35.351 16.2188 32.099 16.2188H27.09L25.666 22.8067H30.886C34.964 22.8067 36.124 20.8717 36.124 19.0828ZM17.992 20.2305C21.242 20.2305 22.014 21.8335 22.014 23.1035C22.014 24.8925 20.855 26.8225 16.776 26.8215H11.556L12.98 20.2305H17.992Z"
-                                                            f="black"></path>
-                                                    </svg>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 swiper-slide">
-                                        <div
-                                            class="w-full flex items-center justify-center overflow-hidden  rounded-2xl transform-gpu bg-white h-28 | lg:rounded-3xl lg:h-40 | 4xl:h-44 | dark:bg-grayDark-600 || js-logo-127732">
-                                            <div class="w-full h-full flex items-center justify-center">
-                                                <div
-                                                    class="w-full h-12 relative px-8 | md:h-12 md:px-14 | lg:px-14 | 4xl:px-16 4xl:h-14">
-                                                    <svg id="svllfrbrio-Layer_1"
-                                                        class="w-full h-full text-gray-600 fill-current | dark:text-white"
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px"
-                                                        y="0px" viewBox="0 0 1000 286"
-                                                        style="enable-background: new 0 0 1000 286;"
-                                                        xml:space="preserve">
-                                                        <path
-                                                            d="M530,172.5c0,22.2-27.7,20.9-27.7,20.9h-27.7v-40.2h27.7C530.8,153,530,172.5,530,172.5z M474.7,91.9h21.1  c21.9,1.2,21.1,17.5,21.1,17.5c0,20.3-24.2,20.6-24.2,20.6h-18V91.9z M524.9,137.8c0,0,18.9-8.1,18.8-29.5c0,0,2.9-35.1-43.6-39.4  h-51.6v147.2h59.2c0,0,49.4,0.1,49.4-41.5C557,174.6,558.2,146.2,524.9,137.8z M391.4,40.1h217.3v204.7H391.4V40.1z M279.5,172.5  c0,22.2-27.7,20.9-27.7,20.9h-27.7v-40.2h27.7C280.3,153,279.5,172.5,279.5,172.5z M224.1,91.9h21.1c21.9,1.2,21.1,17.5,21.1,17.5  c0,20.3-24.2,20.6-24.2,20.6h-18V91.9z M274.4,137.8c0,0,19-8.1,18.8-29.5c0,0,2.9-35.1-43.6-39.4h-51.6v147.2h59.2  c0,0,49.4,0.1,49.4-41.5C306.5,174.6,307.7,146.2,274.4,137.8z M140.8,40.1h217.3v204.7H140.8V40.1z M814.8,79.5v27.2  c0,0-26.5-16.3-55.9-16.6c0,0-54.7-1.1-57.2,52.4c0,0-2,49.2,56.5,52c0,0,24.5,3,57.8-18.3v28.2c0,0-44.7,26.5-96.4,6.1  c0,0-43.5-15.9-45.1-68c0,0-1.8-53.6,56.2-71.4c0,0,15.5-5.9,43.3-3.3C774.1,67.8,790.8,69.5,814.8,79.5z M641.9,244.9h217.3V40.1  H641.9V244.9z">
-                                                        </path>
-                                                    </svg>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 swiper-slide">
-                                        <div
-                                            class="w-full flex items-center justify-center overflow-hidden  rounded-2xl transform-gpu bg-white h-28 | lg:rounded-3xl lg:h-40 | 4xl:h-44 | dark:bg-grayDark-600 || js-logo-127732">
-                                            <div class="w-full h-full flex items-center justify-center">
-                                                <div
-                                                    class="w-full h-12 relative px-8 | md:h-12 md:px-14 | lg:px-14 | 4xl:px-16 4xl:h-14">
-                                                    <svg class="w-full h-full text-gray-600 fill-current | dark:text-white"
-                                                        width="1000" height="822" xmlns="http://www.w3.org/2000/svg"
-                                                        viewBox="0 0 1000 822" f="none">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                                            d="M98.2371 578.341C99.2424 587.407 93.1993 597.986 83.6252 603.023C77.0771 606.046 69.5207 608.062 61.9626 606.046C49.3684 602.017 40.3017 589.926 39.294 576.827C40.8044 573.806 38.2858 568.263 42.8203 566.753L98.2371 578.341ZM957.183 544.587C958.691 557.181 954.154 569.271 943.075 576.325C936.528 579.346 928.467 581.865 920.906 579.851C911.336 576.325 900.252 567.256 899.751 556.678V554.159C919.398 552.143 937.536 547.106 957.183 544.587ZM681.109 175.317L705.288 169.772V192.448L681.61 198.995V255.418L659.447 260.958V158.693L681.109 153.148V175.317ZM530.983 114.863C496.726 107.809 468.01 126.448 445.844 151.64C430.732 169.772 425.187 197.987 434.762 220.156C442.317 234.758 456.927 243.326 471.536 247.858C508.312 253.904 541.561 235.265 561.714 204.534C574.307 185.394 575.822 154.663 561.714 135.517C553.653 124.433 542.569 118.387 530.983 114.863ZM85.1385 764.233L134.507 757.684C134.507 757.684 128.967 753.655 119.395 742.067C109.822 729.976 102.769 707.308 114.358 684.637C125.44 661.966 144.082 648.867 170.78 644.838L801.512 570.279L911.843 611.589V600.003C912.344 595.972 916.876 596.475 919.398 594.459C932.492 593.453 955.668 590.429 956.676 601.009V716.878L1000 721.915V1.5139H880.099L893.705 134.008C893.705 134.008 934.006 525.946 934.507 530.985C935.014 537.533 932.492 540.555 926.952 541.563C921.413 542.571 916.876 541.06 914.86 537.028L893.198 444.837L797.481 407.559L697.232 502.772V503.78C723.927 519.9 777.333 553.654 777.333 553.654L700.249 563.729L656.424 539.549L619.146 573.806C619.146 573.806 567.76 581.362 542.068 582.873C564.231 560.707 589.423 537.533 612.593 515.871C577.831 495.216 542.569 476.074 507.809 455.922C492.191 458.44 475.566 459.951 460.956 463.478C478.59 464.486 493.702 471.034 508.312 478.59C529.976 491.186 551.638 512.847 547.607 540.555C544.584 558.691 531.484 576.827 514.357 586.4C458.94 592.948 403.527 602.52 347.607 606.046C332.998 600.506 316.372 589.926 310.327 573.806C300.754 546.098 315.869 520.405 336.021 501.766C322.418 497.232 307.808 493.202 294.206 488.165V521.916L218.135 535.012V563.226L288.161 552.143V585.895L218.135 595.972V621.664L169.774 627.71V520.405L154.157 514.36L154.659 493.202L798.995 380.859L886.651 416.123L858.943 295.72C838.79 285.142 823.174 278.589 801.512 269.52L758.187 337.028V374.312L724.94 380.859V341.059L705.794 319.397C693.201 316.374 673.555 307.305 661.963 304.789C670.025 307.812 682.117 317.883 684.633 328.466C687.155 341.56 680.602 353.652 670.025 360.706C681.109 368.26 704.286 383.882 704.286 383.882L664.992 390.43L633.248 368.767V396.979L602.016 402.016V334.005L576.323 323.428C576.323 323.428 577.33 365.744 576.323 385.391C574.307 396.979 570.277 405.04 563.223 409.069L520.908 416.628C511.839 416.123 506.801 407.056 504.282 394.965C501.764 376.829 503.275 353.151 502.771 341.059L488.665 337.028V361.213L467.002 365.744V426.198L441.31 430.732V370.783L418.639 375.821L419.144 358.69L405.543 354.159L405.038 437.283L377.329 442.32L343.575 408.566V448.868L317.883 452.898L318.388 380.353L299.747 373.806V392.949L267.506 400.505V416.123L297.228 410.077V425.695L268.011 432.243L268.514 446.853L300.754 440.807V455.922L241.811 467.005V410.077C233.752 407.559 229.723 404.535 208.06 401.008C218.135 403.529 224.181 406.045 227.707 416.628C221.159 421.16 216.119 423.679 209.57 428.214C206.044 423.679 200.504 422.671 194.458 423.176C189.421 425.695 185.892 429.221 183.376 434.259C180.855 439.799 181.862 447.358 183.878 452.898C186.397 458.943 192.947 461.965 199.496 461.965C206.549 460.959 211.081 452.898 214.106 447.86C221.159 450.379 227.204 453.401 233.752 456.424C230.225 464.486 225.693 468.515 219.645 471.034C207.052 474.056 189.421 477.079 176.322 479.093C167.253 474.056 161.21 463.981 158.689 454.411C156.17 439.296 158.186 422.671 170.78 412.093C164.734 409.069 160.705 407.559 154.157 405.04V386.905L657.933 274.564C705.288 263.981 800.504 242.319 800.504 242.319L850.882 264.488L831.235 180.856C831.235 180.856 796.98 166.248 781.865 159.701C790.427 164.233 787.404 209.065 787.911 231.741L765.742 237.28V181.864C765.742 181.864 767.257 177.332 761.711 174.81C755.671 172.294 750.633 178.34 747.61 182.371V241.311L724.94 246.349V139.047C682.117 120.408 639.294 101.262 595.969 83.1238C611.085 96.7245 622.67 113.354 627.708 131.993C641.816 192.948 610.077 247.858 560.2 283.127L465.492 305.29C437.783 304.789 411.082 294.205 392.443 271.535C369.27 242.82 366.248 194.463 380.856 160.202C370.781 155.164 360.201 148.617 350.628 145.087C392.947 212.595 313.35 258.942 278.589 308.819C306.802 301.766 364.23 289.674 364.23 289.674L363.728 328.466L173.801 370.783V348.113L250.883 260.958C269.017 239.797 289.672 220.657 303.779 197.48C305.289 190.426 304.784 182.371 297.733 177.833C291.183 172.294 280.099 173.302 271.535 174.309C254.91 179.348 237.279 193.956 236.774 212.595L174.812 226.703C180.855 183.379 215.616 136.525 258.437 122.924C306.802 102.77 360.703 143.072 384.888 152.647L397.984 130.479C432.243 82.6228 483.122 52.3926 543.576 59.9531C577.831 64.4847 672.541 110.325 725.441 132.494V89.6708L747.61 85.6459L816.12 116.878L790.427 1.5139H187.91L103.274 453.906L85.1385 550.632L81.6116 556.678C79.093 559.196 74.5585 560.202 71.0317 558.692C67.5071 557.181 63.4753 553.151 63.9803 548.617L84.6353 -0.000583627H0.502671L0 777.332L42.3176 770.783V631.739C41.8126 623.175 55.9195 622.169 63.4753 621.664C71.0317 621.161 84.6352 622.169 85.1385 631.739V764.233ZM747.61 91.1852V164.74C747.61 164.74 746.602 162.718 754.157 155.67C762.218 149.118 764.734 149.624 771.287 149.118L829.726 174.81L817.128 122.417L747.61 91.1852ZM801.011 592.445L289.169 647.356L911.843 712.345V633.25L801.011 592.445ZM714.357 290.681L741.057 319.904L751.134 304.282L714.357 290.681ZM549.116 340.051L528.968 333.504C528.968 333.504 528.461 384.89 529.475 389.422C530.983 393.954 535.515 396.979 540.553 395.97C545.091 394.46 548.114 389.928 549.116 385.898V340.051ZM641.816 328.466C635.77 328.967 632.24 329.474 632.24 329.474V349.12C632.24 349.12 640.301 348.614 646.848 346.097C653.401 343.575 653.401 338.543 652.894 335.52C652.894 332.998 650.879 327.458 641.816 328.466ZM342.064 367.759L380.856 410.58V378.844L342.064 367.759ZM592.947 439.799L654.91 477.585L687.656 448.363L592.947 439.799ZM421.157 503.277C396.978 507.809 367.254 518.389 361.208 546.098C361.208 553.151 365.741 558.691 371.286 562.218C400.505 578.341 441.812 573.806 468.515 555.165C478.085 547.608 487.154 537.028 484.633 524.435C471.536 502.269 444.837 503.78 421.157 503.277ZM243.827 656.426C216.624 654.915 174.307 654.915 152.141 669.525C134.507 682.118 123.929 698.744 128.967 720.909C132.493 734.008 145.593 746.602 157.683 753.152C167.758 758.19 178.841 761.716 189.924 765.743C123.929 774.813 66.4971 784.89 0 792.949V820.657L1000 821.16V740.051L243.827 656.426Z"
-                                                            f="black"></path>
-                                                    </svg>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 swiper-slide">
-                                        <div
-                                            class="w-full flex items-center justify-center overflow-hidden  rounded-2xl transform-gpu bg-white h-28 | lg:rounded-3xl lg:h-40 | 4xl:h-44 | dark:bg-grayDark-600 || js-logo-127732">
-                                            <div class="w-full h-full flex items-center justify-center">
-                                                <div
-                                                    class="w-full h-12 relative px-8 | md:h-12 md:px-14 | lg:px-14 | 4xl:px-16 4xl:h-14">
-                                                    <svg class="w-full h-full text-gray-600 fill-current | dark:text-white"
-                                                        width="326" height="277" xmlns="http://www.w3.org/2000/svg"
-                                                        viewBox="0 0 326 277" f="none">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                                            d="M185.35 13.3C180.28 6.21 174.23 0.390006 164.75 0.0300064C165.217 0.17983 165.686 0.32577 166.154 0.471249C166.747 0.655911 167.338 0.83983 167.92 1.03001C172.4 2.57001 175.11 6.03 177.28 9.95C181.88 18.23 184.06 27.33 185.19 36.59C185.995 43.171 186.423 49.801 186.851 56.432L186.851 56.4352L186.851 56.4384C187.034 59.2767 187.217 62.1151 187.43 64.95C187.449 65.2553 187.444 65.5607 187.438 65.9603V65.9604V65.9606V65.9607V65.9609V65.9611V65.9613V65.9615V65.9617V65.962V65.9623V65.9626V65.963V65.9633V65.9638V65.9643C187.434 66.2051 187.43 66.4801 187.43 66.81C187.065 66.702 186.73 66.6106 186.417 66.525C185.889 66.3809 185.422 66.2532 184.97 66.09C177.98 63.56 170.88 62.21 163.41 63.51C162.604 63.6542 161.758 63.5361 160.908 63.4175C160.167 63.314 159.422 63.2101 158.7 63.28C154.361 63.681 150.045 64.2169 145.725 64.7534L144.52 64.903L144.14 64.95C143.561 65.0232 142.991 65.1849 142.307 65.3792C141.962 65.4769 141.588 65.5829 141.17 65.69C141.246 64.2631 141.311 62.8733 141.375 61.5087V61.5084V61.5081C141.504 58.7415 141.629 56.0785 141.83 53.42C142.75 41.36 144.23 29.39 148.35 17.93C149.39 15.05 150.72 12.25 152.14 9.53001C154.82 4.39001 158.97 1.06 164.79 0C158.61 0.06 153.62 2.82 149.18 6.86C143.86 11.71 140.02 17.64 136.96 24.07C130.09 38.53 127.14 53.88 126.9 69.8C126.87 71.69 126.29 72.79 124.67 73.81C102.66 87.7 86.63 106.73 76.65 130.73C72.29 141.2 69.66 152.12 71.48 163.6C73.17 174.22 79.25 181.52 91.65 181.68C103.08 181.82 113.12 177.73 122.65 171.97C134.98 164.52 145.4 154.89 154.44 143.74C155.55 142.37 156.48 142.18 158.22 142.56C161.01 143.18 163.96 143.47 166.81 143.31C168.61 143.21 169.67 143.46 170.8 144.87C178.69 154.78 187.82 163.37 198.42 170.35C208.57 177.04 219.37 182.08 231.77 182.44C243.45 182.78 251.23 178.22 253.95 166.1C256.02 156.86 254.5 147.81 251.58 139.06C242.65 112.27 225.84 91.41 202.82 75.36C201.43 74.39 200.93 73.44 200.84 71.76C200.765 70.3993 200.697 69.0371 200.629 67.6746V67.6744C200.346 61.9675 200.061 56.2546 199.23 50.62C197.27 37.25 193.33 24.46 185.35 13.3ZM155.01 68.36C159.93 64.48 165.12 64.86 170.44 67.38C170.629 67.38 170.83 67.3589 171.032 67.3378L171.032 67.3378C171.481 67.2907 171.929 67.2437 172.24 67.43C176.99 70.17 181.7 72.96 186.37 75.82C186.89 76.14 187.38 77.01 187.36 77.61C186.74 94.96 185.46 112.2 178.76 128.52C178.607 128.896 178.402 129.255 178.144 129.707C177.996 129.964 177.832 130.252 177.65 130.59C177.047 129.77 176.45 128.966 175.861 128.173L175.851 128.16L175.84 128.145L175.839 128.144L175.839 128.143C173.965 125.621 172.169 123.203 170.5 120.7C170.1 120.1 170.39 118.79 170.75 117.99C174.25 110.21 177.08 102.23 177.99 93.71C178.81 86.02 178.82 78.38 174.29 71.55C173.987 71.0847 173.61 70.6694 173.235 70.255L173.235 70.2548L173.235 70.2547C173.053 70.0548 172.872 69.855 172.7 69.65C176.02 75.15 175.52 80.96 173.93 86.77C171.72 94.84 167.91 102.18 163.53 109.19C163.407 109.165 163.299 109.151 163.21 109.14C163.053 109.12 162.952 109.107 162.92 109.05C157.63 100.35 153.02 91.36 151.6 81.1C150.951 76.3892 151.757 72.027 155.011 68.3515L155.01 68.36ZM155.012 68.3397C155.204 66.5818 154.216 67.1791 153.608 67.5468C153.523 67.598 153.446 67.6447 153.38 67.68L152.708 68.0351C149.409 69.7766 146.096 71.5256 142.95 73.52C142.06 74.08 141.31 75.62 141.31 76.71C141.25 88.39 142.08 100.02 144.42 111.46C145.23 115.417 146.338 119.313 147.445 123.209L147.445 123.21L147.445 123.211L147.445 123.212L147.446 123.212L147.446 123.213L147.446 123.214L147.446 123.215L147.446 123.215C147.964 125.038 148.482 126.861 148.97 128.69C149.28 128.7 149.6 128.71 149.91 128.72C150.345 128.145 150.774 127.566 151.204 126.986L151.204 126.986L151.204 126.986L151.204 126.986L151.204 126.985L151.204 126.985L151.204 126.985L151.204 126.985L151.205 126.985L151.205 126.984L151.205 126.984L151.205 126.984L151.205 126.984L151.205 126.984L151.205 126.984L151.206 126.983L151.206 126.983C152.248 125.576 153.292 124.168 154.41 122.83C155.48 121.55 155.35 120.45 154.8 118.97C154.456 118.042 154.108 117.115 153.759 116.187L153.759 116.186C152.091 111.746 150.419 107.296 149.22 102.73C147.04 94.44 146.26 85.98 148.88 77.6C150.008 73.9758 151.346 70.3417 155.012 68.3397ZM126.318 86.9355C126.595 86.69 126.892 86.4259 127.22 86.13C127.561 87.8556 127.879 89.5442 128.191 91.2044L128.191 91.2057C128.866 94.7982 129.516 98.2575 130.33 101.67C133.04 112.96 137.39 123.5 144.7 132.68C145.1 133.17 145.16 134.51 144.78 134.96C132.33 149.7 119.28 163.82 102.48 173.81C97.95 176.5 93.14 178.65 87.75 178.83C80.64 179.07 75.59 174.25 75.26 167.1C74.94 160.15 76.92 153.64 80.1 147.7C84.6 139.28 89.41 130.96 94.81 123.1C103.55 110.37 113.83 98.87 124.97 88.16C125.388 87.761 125.819 87.3786 126.318 86.9355ZM181.35 134.93C192.87 121.47 197.46 105.21 199.99 88.07C200.954 88.986 201.921 89.8743 202.879 90.754L202.879 90.7542C204.912 92.621 206.902 94.4489 208.73 96.42C221.29 110.05 232.72 124.54 241.67 140.85C245.21 147.29 248.31 153.94 249.52 161.25C249.96 163.92 250.12 166.76 249.76 169.43C248.83 176.25 242.97 180.15 235.86 179.01C229.8 178.04 224.53 175.23 219.52 171.88C205.95 162.82 194.88 151.08 184.36 138.76C183.604 137.882 182.87 136.981 182.139 136.084L182.139 136.083L181.81 135.68C181.712 135.555 181.63 135.413 181.529 135.237L181.529 135.237C181.477 135.145 181.419 135.043 181.35 134.93ZM164.46 136.362L164.478 136.389C165.551 137.946 166.602 139.471 167.7 141.06C164.06 142.41 161.09 141.99 157.76 139.66C158.595 138.463 159.433 137.267 160.314 136.008C160.943 135.111 161.593 134.182 162.28 133.2C163.03 134.287 163.75 135.332 164.46 136.362ZM200.021 224.386C199.923 221.865 199.823 219.311 199.72 216.711C201.975 219.017 204.145 221.252 206.268 223.438L206.277 223.447C209.876 227.153 213.338 230.717 216.84 234.251C217.828 235.242 218.811 236.239 219.794 237.236L219.796 237.238L219.797 237.239L219.799 237.241L219.799 237.241L219.799 237.241L219.799 237.241L219.799 237.241L219.799 237.241L219.799 237.241L219.799 237.241L219.799 237.241L219.8 237.242L219.8 237.242L219.8 237.242L219.8 237.242L219.8 237.242L219.8 237.242L219.8 237.242L219.8 237.242C224.369 241.875 228.945 246.517 234.07 250.671C234.6 249.351 234.78 248.311 234.8 247.271C234.89 242.024 234.974 236.78 235.059 231.536C235.172 224.535 235.284 217.534 235.41 210.531C235.48 206.751 235.93 206.281 239.5 205.631C239.697 205.598 239.868 205.436 240.104 205.212L240.104 205.212C240.228 205.095 240.368 204.961 240.54 204.821H224.78C224.97 205.381 225.21 205.601 225.48 205.641C230.24 206.371 230.44 206.511 230.59 211.401C230.748 216.81 230.837 222.226 230.926 227.643L230.926 227.647L230.926 227.652L230.959 229.622L230.98 230.891C231.008 232.466 231.002 234.041 230.996 235.765V235.766V235.766V235.766V235.767V235.767V235.767V235.768V235.768V235.769V235.769V235.77V235.77V235.771V235.771V235.772V235.772L230.996 235.782C230.993 236.559 230.99 237.368 230.99 238.221C224.433 231.503 217.958 224.875 211.52 218.283L211.417 218.178L211.3 218.059C206.56 213.206 201.839 208.373 197.12 203.541C196.963 203.63 196.81 203.714 196.659 203.797L196.451 203.91L196.451 203.91L196.45 203.911C196.422 204.199 196.391 204.488 196.359 204.777C196.277 205.528 196.194 206.279 196.18 207.031C196.103 211.659 196.032 216.287 195.96 220.915L195.96 220.953V220.953V220.954V220.954V220.954V220.954V220.955V220.955V220.955V220.956V220.956V220.956V220.957V220.957V220.957V220.958V220.958C195.864 227.146 195.769 233.333 195.66 239.521C195.62 241.6 195.48 243.68 195.34 245.76L195.34 245.761C195.23 247.351 194.47 248.371 192.79 248.661C188.26 249.451 185.48 248.131 183.36 244.011C182.79 242.901 182.3 241.751 181.83 240.601C180.467 237.268 179.104 233.935 177.742 230.602C174.447 222.541 171.151 214.478 167.84 206.421C167.573 205.769 167.204 205.156 166.725 204.359L166.724 204.359L166.724 204.359C166.468 203.933 166.18 203.455 165.86 202.891C165.537 203.559 165.248 204.133 164.988 204.648L164.987 204.649L164.987 204.649L164.987 204.65C164.532 205.553 164.165 206.28 163.86 207.031C161.42 213.041 158.988 219.056 156.555 225.071C154.123 231.086 151.69 237.101 149.25 243.111C147.27 247.981 145.99 248.811 140.79 248.741C136.67 248.691 135.9 248.041 135.87 243.981C135.79 233.071 135.76 222.151 135.79 211.241C135.81 206.632 135.889 206.611 140.182 205.464L140.27 205.441C140.328 205.428 140.357 205.319 140.394 205.18C140.415 205.103 140.438 205.016 140.47 204.931H123.11L123.211 204.97C127.961 206.811 128.06 206.849 128.07 212.321C128.09 222.981 128.04 233.651 127.9 244.311C127.85 248.121 127.65 248.171 123.83 248.831C123.681 248.857 123.549 248.995 123.369 249.185C123.27 249.288 123.158 249.407 123.02 249.531H156.85C156.62 248.941 156.36 248.771 156.08 248.731C152.87 248.301 152.43 247.811 153.41 244.761C154.38 241.761 155.57 238.821 156.84 235.931C157.11 235.311 158.14 234.681 158.85 234.651C160.784 234.564 162.724 234.554 164.665 234.543H164.665H164.666H164.666H164.667H164.667H164.667H164.668H164.668H164.669H164.669H164.67H164.67H164.671H164.671H164.672H164.672C166.312 234.534 167.952 234.526 169.59 234.471C171.01 234.421 171.66 234.991 172.12 236.271C172.618 237.644 173.156 239.004 173.694 240.365C174.411 242.175 175.128 243.987 175.75 245.831C175.978 246.501 175.923 247.27 175.862 248.123L175.862 248.123C175.832 248.543 175.8 248.982 175.8 249.441H206.32C205.78 248.851 205.23 248.731 204.67 248.711C202.26 248.641 200.95 247.391 200.85 245.011C200.564 238.243 200.299 231.48 200.024 224.458L200.023 224.434L200.023 224.417L200.022 224.404L200.022 224.398L200.022 224.389L200.021 224.386ZM164.41 215.621C166.46 221.221 168.25 226.111 170.13 231.251H158.57C159.855 227.803 161.096 224.485 162.406 220.982L163.195 218.872C163.591 217.812 163.995 216.731 164.41 215.621ZM287.25 217.208C287.101 217.076 286.977 216.98 286.881 216.906C286.737 216.796 286.656 216.734 286.65 216.668C286.19 209.988 281.61 207.738 275.93 206.948C273.48 206.608 270.92 206.618 268.46 206.898C263.88 207.418 260.37 209.818 258.02 213.788C253.79 220.918 253.47 236.448 264.1 243.698C269.41 247.318 275.18 247.968 281.26 246.238C284.02 245.448 285.72 243.448 286.77 240.848C286.813 240.743 286.854 240.638 286.895 240.533C287.134 239.925 287.373 239.315 287.91 238.778C288.43 242.178 287.86 245.408 286.61 248.528C286.46 248.898 285.85 249.188 285.39 249.298C274.99 251.738 264.74 251.798 255.72 245.268C247.47 239.298 245.21 230.648 247.46 221.048C249.67 211.598 256.15 206.138 265.59 204.318C272.83 202.918 280.02 203.888 287.15 205.308C287.6 205.398 288.27 206.148 288.26 206.588C288.19 209.828 287.99 213.067 287.79 216.306L287.79 216.308C287.784 216.476 287.657 216.643 287.506 216.842C287.423 216.953 287.332 217.073 287.25 217.208ZM25.4109 204.302L25.4107 204.302L25.4095 204.3C25.1747 203.9 24.9064 203.443 24.6 202.891C24.3136 203.436 24.0591 203.899 23.8332 204.31L23.8323 204.312L23.832 204.312C23.388 205.119 23.0551 205.725 22.81 206.361C20.7079 211.518 18.6141 216.681 16.5201 221.845L16.5162 221.855L16.5155 221.857C14.0188 228.014 11.5218 234.172 9.00999 240.321C8.79959 240.836 8.60204 241.366 8.40424 241.896C7.04153 245.547 5.66739 249.23 0 248.741C0.075 248.851 0.152498 248.961 0.229996 249.071C0.307494 249.181 0.384991 249.291 0.459991 249.401H15.57C11.5 248.131 11.04 247.601 12.13 244.401C13.12 241.491 14.25 238.621 15.52 235.821C15.79 235.221 16.88 234.671 17.61 234.651C21.19 234.541 24.78 234.531 28.35 234.711C29.16 234.751 30.31 235.531 30.65 236.271C31.93 239.061 33.05 241.931 34.02 244.851C34.3355 245.818 34.4299 246.86 34.5259 247.92L34.5259 247.92L34.5259 247.92L34.5259 247.92L34.5259 247.921L34.5259 247.921L34.5259 247.921L34.5259 247.921L34.526 247.921L34.526 247.921L34.526 247.921L34.526 247.921L34.526 247.922L34.526 247.922L34.526 247.922C34.5699 248.406 34.6141 248.894 34.68 249.381H49.2C49.265 249.241 49.3275 249.103 49.39 248.966C49.4525 248.828 49.515 248.691 49.58 248.551C44.32 249.301 42.64 245.761 41.01 242.171C40.8789 241.878 40.7597 241.584 40.6386 241.287L40.5711 241.121L40.53 241.021L38.7528 236.632C34.6349 226.463 30.5151 216.289 26.38 206.131C26.1485 205.558 25.8343 205.023 25.4109 204.302ZM28.81 231.281H17.24C19.17 226.081 21.01 221.141 23.07 215.651C24.2178 218.768 25.297 221.71 26.3712 224.638C27.1781 226.837 27.9821 229.029 28.81 231.281ZM295.49 204.621H323.89L323.685 206.817C323.499 208.805 323.297 210.961 323.08 213.301C322.844 213.103 322.655 212.963 322.509 212.854C322.272 212.678 322.147 212.585 322.11 212.461C320.84 208.271 320.5 207.971 316.15 207.831C314.58 207.777 313.01 207.791 311.384 207.807C310.608 207.814 309.818 207.821 309.01 207.821V224.091C310.428 223.949 311.855 223.993 313.287 224.036C316.5 224.134 319.74 224.233 322.97 222.241C322.7 225.691 322.45 228.881 322.19 232.131C322.021 232.091 321.88 232.065 321.768 232.044C321.57 232.006 321.463 231.986 321.45 231.941L321.447 231.933C320 227.281 319.997 227.271 314.89 227.201C313.637 227.181 312.383 227.188 311.076 227.194C310.401 227.198 309.711 227.201 309 227.201C309 228.608 308.992 230.006 308.985 231.398V231.398V231.398V231.399V231.399V231.399V231.4V231.4V231.4V231.401V231.401V231.401V231.402V231.402C308.962 235.55 308.94 239.641 309.12 243.721C309.16 244.621 310.74 246.091 311.72 246.181C314.74 246.471 317.85 246.461 320.86 246.061C321.821 245.928 322.727 244.709 323.486 243.688C323.58 243.562 323.671 243.439 323.76 243.321C324.102 242.863 324.243 242.255 324.397 241.59L324.397 241.59C324.468 241.283 324.542 240.963 324.64 240.641C325.62 242.331 325.29 248.221 324.18 249.231C323.75 249.631 322.99 249.851 322.39 249.851C313.98 249.831 305.57 249.761 297.15 249.681C296.949 249.681 296.753 249.571 296.561 249.463C296.512 249.435 296.462 249.407 296.413 249.381C296.379 249.363 296.344 249.346 296.31 249.331C296.322 249.294 296.332 249.257 296.341 249.221C296.356 249.161 296.367 249.104 296.378 249.053C296.406 248.92 296.427 248.823 296.47 248.811L296.617 248.774C300.685 247.74 300.891 247.688 300.96 243.231C301.13 232.491 301.16 221.741 301.1 211.001C301.07 206.48 300.902 206.451 296.259 205.666L296.17 205.651C295.983 205.617 295.816 205.505 295.648 205.394C295.572 205.344 295.497 205.294 295.42 205.251C295.431 205.135 295.444 205.025 295.457 204.917C295.469 204.818 295.481 204.721 295.49 204.621ZM81.2394 242.997L81.2395 242.997L81.2395 242.997L81.2395 242.996L81.2396 242.996L81.2396 242.996L81.2397 242.995L81.2397 242.995L81.2398 242.995L81.2398 242.994L81.2399 242.994L81.2399 242.994C81.3393 242.275 81.4387 241.556 81.55 240.84C81.4453 240.821 81.342 240.801 81.2396 240.781C81.0681 240.748 80.899 240.715 80.73 240.69C80.681 240.745 80.6237 240.798 80.5665 240.851C80.4367 240.971 80.3077 241.091 80.28 241.23C79.43 245.71 77.25 246.69 72.43 246.66C72.281 246.659 72.1318 246.658 71.9825 246.657C70.7182 246.65 69.4421 246.643 68.19 246.5C64.32 246.06 63.44 245.22 63.41 241.24C63.3513 234.34 63.3564 227.44 63.3615 220.54C63.3642 216.86 63.3669 213.18 63.36 209.5C63.35 207.11 64.25 205.67 66.84 205.65C67.2863 205.643 67.7375 205.514 68.1868 205.386L68.187 205.386C68.3819 205.33 68.5764 205.275 68.77 205.23C68.74 205.04 68.71 204.86 68.68 204.68H50.09C50.4 205.26 50.75 205.49 51.12 205.55C55.27 206.26 55.47 206.32 55.49 210.64C55.54 221.55 55.5 232.46 55.38 243.37C55.3303 247.849 55.2017 247.879 50.9389 248.898L50.85 248.92C50.8149 248.926 50.7969 249.017 50.7602 249.203C50.734 249.336 50.6982 249.517 50.64 249.75C50.9415 249.75 51.2302 249.748 51.5107 249.747H51.5133C52.0505 249.745 52.5581 249.743 53.07 249.75C54.7914 249.763 56.514 249.775 58.2369 249.787L58.2491 249.788C61.6865 249.812 65.1255 249.836 68.56 249.87C69.537 249.883 70.5141 249.911 71.4908 249.938L71.4918 249.938C73.5137 249.996 75.5341 250.054 77.55 249.98C78.49 249.94 80.05 249.36 80.21 248.74C80.7052 246.861 80.9724 244.929 81.2394 242.997L81.2394 242.997ZM117.71 240.88C117.607 241.572 117.515 242.267 117.423 242.962C117.164 244.908 116.906 246.854 116.42 248.74C116.26 249.36 114.7 249.96 113.77 249.98C111.581 250.03 109.388 249.974 107.194 249.917H107.193H107.193H107.192H107.192H107.191H107.191H107.191H107.19H107.19H107.189H107.189H107.189H107.188H107.188H107.188H107.187H107.187H107.186H107.186H107.186H107.185H107.185C105.884 249.884 104.582 249.851 103.28 249.84C100.694 249.812 98.1052 249.799 95.5166 249.787H95.5158H95.5149H95.5141H95.5133H95.5125H95.5116H95.5108H95.51H95.5092H95.5083H95.5075C93.4342 249.777 91.3611 249.767 89.29 249.75C88.7719 249.743 88.2494 249.704 87.7101 249.665L87.7097 249.665C87.4475 249.645 87.1814 249.626 86.91 249.61C86.959 249.447 86.9924 249.311 87.0187 249.203L87.0189 249.202L87.0189 249.202C87.0622 249.025 87.0864 248.926 87.13 248.92C87.6587 248.818 88.1234 248.743 88.5322 248.676C91.2165 248.242 91.4898 248.198 91.62 243.59C91.8612 234.995 91.824 226.389 91.7867 217.789V217.789C91.7746 214.981 91.7624 212.175 91.76 209.37C91.76 206.98 90.56 205.66 88.08 205.62C87.54 205.61 87 205.42 86.48 204.77H104.8C104.815 204.84 104.832 204.91 104.85 204.98C104.867 205.05 104.885 205.12 104.9 205.19C104.732 205.235 104.564 205.287 104.397 205.338L104.397 205.338C104.018 205.455 103.642 205.571 103.26 205.62C100.11 206 99.58 206.49 99.47 209.66C99.3887 211.959 99.3933 214.258 99.3979 216.558C99.3989 217.088 99.4 217.619 99.4 218.15V218.156C99.41 225.064 99.42 231.982 99.48 238.89C99.4869 239.859 99.5977 240.828 99.7086 241.798C99.759 242.238 99.8093 242.679 99.85 243.12C100.02 244.96 101.04 246.08 102.84 246.23C105.4 246.45 107.99 246.67 110.55 246.57C114.13 246.42 115.3 245.32 116.33 241.82C116.399 241.586 116.489 241.361 116.578 241.136C116.63 241.004 116.682 240.873 116.73 240.74C116.971 240.761 117.207 240.799 117.446 240.838L117.534 240.852C117.592 240.861 117.651 240.871 117.71 240.88ZM187.822 266.031L187.821 265.34C187.82 264.974 187.82 264.614 187.82 264.26C187.9 264.552 187.982 264.85 188.065 265.154L188.358 266.224L188.359 266.226C189.001 268.573 189.716 271.182 190.46 273.78C190.498 273.914 190.533 274.057 190.568 274.203C190.792 275.123 191.042 276.152 192.38 275.72C193.11 275.48 193.91 274.63 194.15 273.88C194.952 271.414 195.653 268.915 196.421 266.175C196.678 265.26 196.942 264.317 197.22 263.34V275.64H199.28V260.26C196.8 259.42 195.83 260.45 195.32 262.66C194.751 265.123 194.044 267.556 193.331 270.013L193.331 270.013L193.331 270.013L193.331 270.014L193.33 270.014L193.33 270.014L193.33 270.014L193.33 270.015L193.33 270.015L193.33 270.015L193.33 270.016C193.042 271.009 192.752 272.006 192.47 273.01C192.186 271.981 191.89 270.953 191.594 269.924C190.868 267.402 190.141 264.874 189.58 262.31C189.06 259.92 187.85 259.67 185.84 260.29V275.54C187.74 275.59 187.79 275.59 187.81 274.05C187.832 271.586 187.827 269.123 187.823 266.825L187.822 266.031ZM40.1078 275.579L40.1074 275.579C39.431 275.146 38.7516 274.711 38.4 274.091C37.0483 271.711 35.8102 269.268 34.5558 266.794L34.5556 266.794L34.5543 266.791L34.5523 266.787L34.5503 266.783C34.062 265.82 33.5711 264.852 33.07 263.881V275.541C32.9744 275.616 32.8762 275.694 32.778 275.772L32.583 275.927L32.49 276.001C32.3302 275.838 32.1282 275.675 31.9258 275.511C31.4823 275.154 31.0369 274.794 31.03 274.431C30.9374 270.839 30.9461 267.247 30.9549 263.637C30.9574 262.573 30.96 261.508 30.96 260.441C32.77 259.621 33.82 259.991 34.64 261.721C35.745 264.043 36.9341 266.321 38.1272 268.606C38.6294 269.568 39.1324 270.532 39.63 271.501C39.63 270.693 39.625 269.881 39.6199 269.067C39.6061 266.849 39.5922 264.612 39.68 262.381C39.7006 261.845 40.0181 261.324 40.3349 260.804L40.3351 260.803C40.4797 260.566 40.6241 260.329 40.74 260.091C40.848 260.334 40.9816 260.578 41.1154 260.822C41.4154 261.369 41.7162 261.917 41.73 262.471C41.805 265.71 41.7957 268.944 41.7863 272.181L41.7863 272.184C41.7832 273.263 41.78 274.341 41.78 275.421C41.51 275.671 41.25 275.921 40.99 276.181C40.7177 275.97 40.4147 275.776 40.111 275.582L40.1106 275.581L40.1102 275.581L40.1098 275.581L40.1094 275.581L40.109 275.58L40.1086 275.58L40.1082 275.58L40.1078 275.579ZM259.17 274.051C259.92 275.611 260.87 276.171 262.78 275.471C262.78 274.335 262.782 273.203 262.785 272.075L262.785 272.046V272.043V272.041V272.039V272.036V272.034V272.032V272.029V272.027C262.793 268.636 262.8 265.281 262.74 261.931C262.726 261.498 262.424 261.069 262.122 260.642C261.986 260.448 261.849 260.255 261.74 260.061C261.608 260.263 261.441 260.464 261.275 260.664C260.914 261.1 260.554 261.536 260.54 261.981C260.443 264.454 260.457 266.927 260.471 269.237L260.471 269.247L260.474 269.842C260.478 270.414 260.48 270.974 260.48 271.521C260.058 270.691 259.617 269.837 259.167 268.964L259.166 268.963C257.996 266.696 256.761 264.305 255.62 261.871C254.84 260.201 253.84 259.581 251.87 260.361C251.87 261.333 251.868 262.308 251.866 263.287V263.288V263.288V263.289V263.289V263.29V263.29V263.291V263.292C251.86 266.978 251.853 270.713 251.94 274.441C251.947 274.798 252.378 275.146 252.809 275.494C253.006 275.652 253.203 275.811 253.36 275.971C253.501 275.869 253.638 275.762 253.773 275.657C253.849 275.598 253.924 275.539 254 275.481V263.941C254.546 265.003 255.091 266.045 255.631 267.076L255.631 267.078L255.632 267.079C256.86 269.427 258.059 271.717 259.17 274.051ZM224.22 266.752C224.652 266.752 225.068 266.747 225.472 266.742H225.472C226.505 266.731 227.458 266.72 228.4 266.792C228.651 266.813 228.887 267.042 229.122 267.271C229.225 267.371 229.327 267.47 229.43 267.552C229.323 267.672 229.219 267.823 229.117 267.974C228.904 268.286 228.693 268.595 228.45 268.622C227.513 268.715 226.565 268.7 225.534 268.684C225.124 268.678 224.701 268.672 224.26 268.672V273.412L224.923 273.513L225.166 273.55C227.029 273.833 228.905 274.118 230.78 274.462C230.827 274.468 230.815 274.788 230.803 275.145C230.797 275.323 230.79 275.509 230.79 275.672H221.71V260.022C222.351 260.022 222.988 260.019 223.621 260.017C225.506 260.009 227.361 260.002 229.21 260.062C229.483 260.069 229.747 260.336 230.01 260.604C230.133 260.729 230.256 260.853 230.38 260.952C230.246 261.064 230.114 261.202 229.982 261.341L229.981 261.341C229.689 261.647 229.397 261.954 229.08 261.982C227.959 262.075 226.833 262.06 225.643 262.044C225.177 262.038 224.7 262.032 224.21 262.032C224.22 263.662 224.22 265.032 224.22 266.752ZM321.142 261.93C321.703 261.988 322.319 262.053 323.01 262.1C322.759 261.776 322.557 261.461 322.377 261.181C322.04 260.659 321.782 260.257 321.43 260.14C320.35 259.8 319.15 259.69 318.01 259.75C315.81 259.87 314.19 260.85 313.82 263.23C313.39 265.97 314.29 267.62 316.74 268.57C317.047 268.689 317.39 268.765 317.73 268.841C318.333 268.974 318.926 269.106 319.29 269.47C320.05 270.23 320.76 271.41 320.76 272.41C320.76 273 319.39 274.01 318.56 274.1C317.597 274.202 316.601 274.037 315.389 273.836L315.389 273.835C314.814 273.74 314.191 273.637 313.5 273.55C313.714 273.872 313.882 274.184 314.031 274.461L314.031 274.462C314.308 274.975 314.518 275.366 314.83 275.47C315.99 275.87 317.25 276.13 318.47 276.13C321.28 276.13 322.98 274.76 323.36 272.46C323.82 269.7 322.73 267.92 319.94 266.92C319.643 266.813 319.322 266.738 319.003 266.664L319.002 266.664L319.002 266.663L319.002 266.663L319.001 266.663L319.001 266.663L319.001 266.663L319 266.663C318.396 266.522 317.798 266.383 317.38 266.03C316.73 265.48 316.06 264.39 316.17 263.66C316.28 262.95 317.3 261.99 318.05 261.86C318.967 261.703 319.926 261.803 321.141 261.93H321.142H321.142ZM134.04 262.109C133.465 262.061 132.94 261.991 132.454 261.927C131.429 261.79 130.577 261.676 129.79 261.839C128.94 262.019 127.76 262.919 127.64 263.639C127.52 264.389 128.33 265.529 129.05 266.109C129.511 266.482 130.135 266.639 130.765 266.798C131.132 266.89 131.501 266.983 131.84 267.119C134.22 268.079 135.18 269.719 134.85 272.219C134.53 274.669 132.96 275.919 130.65 276.069C129.27 276.159 127.83 275.909 126.49 275.549C126.147 275.459 125.884 275.064 125.522 274.52L125.522 274.52L125.522 274.519C125.324 274.222 125.096 273.88 124.81 273.519C125.568 273.615 126.237 273.725 126.843 273.824C128.132 274.034 129.137 274.198 130.11 274.089C130.93 273.999 132.19 272.999 132.25 272.309C132.33 271.409 131.6 270.269 130.9 269.529C130.555 269.163 129.961 269.031 129.367 268.898L129.366 268.898C129.1 268.839 128.834 268.78 128.59 268.699C126.71 268.089 125.35 267.039 125.24 264.859C125.15 263.009 125.32 260.959 127.24 260.449C128.807 260.036 130.532 260.154 132.229 260.269L132.229 260.269C132.666 260.299 133.1 260.329 133.53 260.349C133.648 260.363 133.745 260.813 133.855 261.322C133.911 261.586 133.972 261.867 134.04 262.109ZM97.7365 260.017H97.7332H97.7298H97.7264C97.1078 260.019 96.483 260.022 95.85 260.022V275.652H104.8C104.8 275.55 104.802 275.44 104.805 275.329C104.806 275.254 104.808 275.178 104.811 275.104L104.811 275.103C104.821 274.729 104.83 274.398 104.79 274.392C102.809 274.066 100.829 273.801 98.7594 273.525L98.29 273.462V268.682C98.6995 268.682 99.097 268.69 99.485 268.699C100.424 268.719 101.307 268.738 102.17 268.632C102.489 268.597 102.784 268.293 103.078 267.99C103.208 267.856 103.338 267.722 103.47 267.612C103.345 267.523 103.221 267.416 103.097 267.309C102.813 267.065 102.529 266.82 102.23 266.792C101.312 266.713 100.378 266.727 99.4253 266.741H99.4251H99.4248H99.4246H99.4234L99.42 266.741C99.0463 266.746 98.6697 266.752 98.29 266.752V262.032C98.7897 262.032 99.2754 262.039 99.7509 262.046H99.7514H99.7519H99.7524H99.7529C100.932 262.064 102.049 262.082 103.16 261.982C103.459 261.955 103.73 261.632 104.002 261.309C104.13 261.156 104.259 261.004 104.39 260.882C104.266 260.794 104.141 260.684 104.016 260.575C103.729 260.323 103.439 260.069 103.14 260.062C101.363 260.002 99.5807 260.009 97.7428 260.017H97.7419H97.7409H97.74H97.7365ZM62.62 260.39C64.38 259.69 65.15 260.11 65.58 261.71C66.2932 264.335 67.093 266.933 67.9394 269.683L67.9395 269.683L67.9427 269.693C68.2464 270.68 68.5561 271.686 68.87 272.72C69.2475 271.463 69.6209 270.241 69.9873 269.043L69.9876 269.042L69.9883 269.04L69.9887 269.038L69.9894 269.036C70.7675 266.491 71.5137 264.05 72.2 261.59C72.61 260.13 73.3 259.66 74.85 260.39C74.717 260.811 74.5842 261.232 74.4514 261.653L74.1381 262.647C72.879 266.641 71.6228 270.626 70.31 274.59C70.15 275.08 69.48 275.64 68.99 275.71C68.49 275.78 67.55 275.41 67.42 275.02C66.0188 270.983 64.7149 266.918 63.404 262.832L63.4035 262.83C63.1429 262.017 62.882 261.204 62.62 260.39ZM157.386 262.038C157.7 262.028 158.033 262.018 158.39 262.018V275.808C159.37 275.708 160.06 275.638 160.94 275.558V262.008C161.27 262.008 161.582 262.017 161.882 262.025L161.885 262.025H161.885C162.594 262.046 163.229 262.063 163.84 261.958C164.25 261.888 164.67 261.358 164.87 260.938C164.93 260.798 164.33 260.078 164.02 260.068C161.11 259.998 158.2 259.998 155.3 260.068C154.99 260.078 154.38 260.778 154.44 260.928C154.62 261.358 155.04 261.898 155.44 261.968C156.044 262.079 156.668 262.06 157.385 262.038H157.386ZM288.122 275.691L288.117 275.691C287.886 275.677 287.653 275.663 287.4 275.648V262.188C287.064 262.171 286.744 262.163 286.436 262.155C285.671 262.136 284.983 262.118 284.32 261.968C284.052 261.914 283.846 261.599 283.639 261.285C283.545 261.141 283.45 260.998 283.35 260.878C283.451 260.793 283.552 260.685 283.654 260.578C283.884 260.333 284.117 260.085 284.36 260.078C287.18 260.008 290.01 259.998 292.83 260.088C293.079 260.095 293.324 260.4 293.567 260.703C293.675 260.837 293.783 260.971 293.89 261.078C293.824 261.134 293.758 261.196 293.693 261.261C293.644 261.31 293.595 261.36 293.546 261.411C293.288 261.676 293.028 261.943 292.73 261.998C292.182 262.101 291.616 262.082 290.957 262.06L290.954 262.06C290.651 262.049 290.329 262.038 289.98 262.038C289.97 266.615 289.97 271.032 289.97 275.755V275.798C289.206 275.756 288.668 275.724 288.122 275.691ZM6.52002 275.689H8.87003C8.87003 274.266 8.86835 272.867 8.8667 271.485C8.86264 268.091 8.8587 264.803 8.88002 261.519C8.88909 259.75 7.93544 259.94 6.85504 260.155C6.7444 260.177 6.63242 260.199 6.52002 260.219V275.689Z"
-                                                            f="black"></path>
-                                                    </svg>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <?php endforeach; ?>
+
                                     </div>
                                 </div>
                             </div>
@@ -2088,77 +1978,77 @@ bg-primary-600 text-gray-600 py-2 px-5">
                 </div>
             </div>
         </div>
-        <!-- kkl -->
-        <div id="428063"></div>
-        <div x-data="modal428063" x-init="setupModal('428063')" x-on:keydown.escape.window=closeModal('428063')
-            @component-modal.window="visible = false; if ($event.detail.visible == '428063') visible = '428063'"
-            class="fixed top-0 left-0 w-screen h-screen  flex justify-center items-center opacity-0 pointer-events-none"
-            x-bind:class="{
+    </div>
+    <!-- kkl -->
+    <div id="428063"></div>
+    <div x-data="modal428063" x-init="setupModal('428063')" x-on:keydown.escape.window=closeModal('428063')
+        @component-modal.window="visible = false; if ($event.detail.visible == '428063') visible = '428063'"
+        class="fixed top-0 left-0 w-screen h-screen  flex justify-center items-center opacity-0 pointer-events-none"
+        x-bind:class="{
 'opacity-0 pointer-events-none transition-all duration-300 z-hidden' : visible != '428063',
 'opacity-100 pointer-events-auto z-modal' : visible == '428063'
 }">
-            <div class="absolute top-0 left-0 w-full h-full z-10 duration-300 transition-all modal-background"
-                x-on:click.prevent=closeModal('428063')></div>
-            <div class="relative z-20 transition-opacity opacity-0 w-15/16 flex items-center justify-center max-w-6xl | 3xl:max-w-7xl | 4xl:max-w-9xl"
-                x-bind:class="{
+        <div class="absolute top-0 left-0 w-full h-full z-10 duration-300 transition-all modal-background"
+            x-on:click.prevent=closeModal('428063')></div>
+        <div class="relative z-20 transition-opacity opacity-0 w-15/16 flex items-center justify-center max-w-6xl | 3xl:max-w-7xl | 4xl:max-w-9xl"
+            x-bind:class="{
 'opacity-100' : visible == '428063',
 'opacity-0' : visible != '428063',
 }">
-                <div class="relative w-full">
-                    <div class="w-full flex justify-center">
-                        <div class="w-15/16 relative rounded-2xl overflow-hidden group | lg:rounded-3xl">
-                            <div class="w-full aspect-ratio-16/9 rounded-2xl overflow-hidden relative | lg:rounded-3xl">
-                                <iframe
-                                    src="https://player.vimeo.com/video/1117179380?autoplay=0&loop=1&autopause=0&mute=1&controls=0"
-                                    class="w-full h-full absolute top-0 left-0 || js-modal-video js-modal-video-428063"
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
-                            </div>
-                            <div class="absolute top-0 left-0 w-full h-full z-20 || js-cursor-trigger-drag"
-                                data-icon="xmark" x-on:click.prevent="closeModal('428063')"></div>
-                            <a href="#"
-                                class="absolute top-4 right-4 z-20 w-10 h-10 bg-gray-600 bg-opacity-70 text-white rounded-full flex items-center justify-center || xl:hidden"
-                                x-on:click.prevent="closeModal('428063')">
+            <div class="relative w-full">
+                <div class="w-full flex justify-center">
+                    <div class="w-15/16 relative rounded-2xl overflow-hidden group | lg:rounded-3xl">
+                        <div class="w-full aspect-ratio-16/9 rounded-2xl overflow-hidden relative | lg:rounded-3xl">
+                            <iframe
+                                src="https://player.vimeo.com/video/1117179380?autoplay=0&loop=1&autopause=0&mute=1&controls=0"
+                                class="w-full h-full absolute top-0 left-0 || js-modal-video js-modal-video-428063"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="absolute top-0 left-0 w-full h-full z-20 || js-cursor-trigger-drag"
+                            data-icon="xmark" x-on:click.prevent="closeModal('428063')"></div>
+                        <a href="#"
+                            class="absolute top-4 right-4 z-20 w-10 h-10 bg-gray-600 bg-opacity-70 text-white rounded-full flex items-center justify-center || xl:hidden"
+                            x-on:click.prevent="closeModal('428063')">
+                            <div class="sr-only">
+                                Close modal</div>
+                            <svg class="w-3 h-3 fill-current text-white" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 384 512">
+                                <path
+                                    d="M326.6 166.6l22.7-22.6L304 98.7l-22.6 22.6-89.4 89.4-89.4-89.4L80 98.7 34.7 144l22.6 22.6 89.4 89.4-89.3 89.4L34.7 368 80 413.3l22.6-22.6 89.4-89.4 89.4 89.4 22.6 22.6 45.3-45.3-22.6-22.6-89.4-89.4 89.4-89.4z" />
+                            </svg>
+                        </a>
+                        <div class="transition-opacity relative z-20 | xl:opacity-0 xl:group-hover:opacity-100">
+                            <a href=""
+                                class="absolute bottom-6 left-4 z-20 w-10 h-10 bg-gray-600 bg-opacity-70 text-white rounded-full flex items-center justify-center || js-modal-video-play-pause-428063">
                                 <div class="sr-only">
-                                    Close modal</div>
-                                <svg class="w-3 h-3 fill-current text-white" xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 384 512">
+                                    Play/Pause video</div>
+                                <svg class="w-3 h-3 fill-current text-white hidden || js-modal-video-play-icon-428063"
+                                    width="12" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                    <path d="M384 256L0 32v448l384-224z" />
+                                </svg><svg
+                                    class="w-3 h-3 fill-current text-white || js-modal-video-pause-icon-428063"
+                                    width="10" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path d="M128 64H0v384h128V64zm192 0H192v384h128V64z" />
+                                </svg>
+                            </a><a href=""
+                                class="absolute bottom-6 right-4 z-20 w-10 h-10 bg-gray-600 bg-opacity-70 text-white rounded-full flex items-center justify-center || js-modal-video-sound-428063">
+                                <div class="sr-only">
+                                    Mute/Unmute video</div>
+                                <svg class="w-3 h-3 fill-current text-white || js-modal-video-volume-on-icon-428063"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
                                     <path
-                                        d="M326.6 166.6l22.7-22.6L304 98.7l-22.6 22.6-89.4 89.4-89.4-89.4L80 98.7 34.7 144l22.6 22.6 89.4 89.4-89.3 89.4L34.7 368 80 413.3l22.6-22.6 89.4-89.4 89.4 89.4 22.6 22.6 45.3-45.3-22.6-22.6-89.4-89.4 89.4-89.4z" />
+                                        d="M592 256c0 78.5-37.7 148.2-96 192l28.8 38.4C594.7 433.9 640 350.3 640 256.1v-.2c0-94.2-45.3-177.8-115.2-230.3L496 64c58.3 43.8 96 113.5 96 192zM438.4 371.2l28.8 38.4c46.6-35 76.8-90.8 76.8-153.6s-30.2-118.6-76.8-153.6l-28.8 38.4c35 26.3 57.6 68.1 57.6 115.2s-22.6 88.9-57.6 115.2zM400 256c0 15.7-7.5 29.6-19.2 38.4l28.8 38.4c23.3-17.5 38.4-45.4 38.4-76.8s-15.1-59.3-38.4-76.8l-28.8 38.4c11.7 8.8 19.2 22.7 19.2 38.4zM0 160v192h128l144 128h48V32h-48L128 160H0z" />
+                                </svg><svg
+                                    class="w-3 h-3 fill-current text-white hidden || js-modal-video-volume-off-icon-428063"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                    <path
+                                        d="M48.4 14.8L29.4.1 0 38l19 14.7 572.5 444.5 19 14.7 29.4-37.9-19-14.7-95.1-73.8C557 351.3 576 305.9 576 256c0-62.8-30.2-118.6-76.8-153.6l-28.8 38.4c35 26.3 57.6 68.1 57.6 115.2 0 38.8-15.3 74-40.3 99.9l-38.2-29.7c18.8-17.5 30.5-42.5 30.5-70.2 0-31.4-15.1-59.3-38.4-76.8l-28.8 38.4c11.7 8.8 19.2 22.7 19.2 38.4s-7.5 29.6-19.2 38.4l5.9 7.9-66.7-51.8V32h-48l-108.8 96.7L48.4 14.8zM352 373.3L81.2 160H32v192h128l144 128h48V373.3z" />
                                 </svg>
                             </a>
-                            <div class="transition-opacity relative z-20 | xl:opacity-0 xl:group-hover:opacity-100">
-                                <a href=""
-                                    class="absolute bottom-6 left-4 z-20 w-10 h-10 bg-gray-600 bg-opacity-70 text-white rounded-full flex items-center justify-center || js-modal-video-play-pause-428063">
-                                    <div class="sr-only">
-                                        Play/Pause video</div>
-                                    <svg class="w-3 h-3 fill-current text-white hidden || js-modal-video-play-icon-428063"
-                                        width="12" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                        <path d="M384 256L0 32v448l384-224z" />
-                                    </svg><svg
-                                        class="w-3 h-3 fill-current text-white || js-modal-video-pause-icon-428063"
-                                        width="10" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                                        <path d="M128 64H0v384h128V64zm192 0H192v384h128V64z" />
-                                    </svg>
-                                </a><a href=""
-                                    class="absolute bottom-6 right-4 z-20 w-10 h-10 bg-gray-600 bg-opacity-70 text-white rounded-full flex items-center justify-center || js-modal-video-sound-428063">
-                                    <div class="sr-only">
-                                        Mute/Unmute video</div>
-                                    <svg class="w-3 h-3 fill-current text-white || js-modal-video-volume-on-icon-428063"
-                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
-                                        <path
-                                            d="M592 256c0 78.5-37.7 148.2-96 192l28.8 38.4C594.7 433.9 640 350.3 640 256.1v-.2c0-94.2-45.3-177.8-115.2-230.3L496 64c58.3 43.8 96 113.5 96 192zM438.4 371.2l28.8 38.4c46.6-35 76.8-90.8 76.8-153.6s-30.2-118.6-76.8-153.6l-28.8 38.4c35 26.3 57.6 68.1 57.6 115.2s-22.6 88.9-57.6 115.2zM400 256c0 15.7-7.5 29.6-19.2 38.4l28.8 38.4c23.3-17.5 38.4-45.4 38.4-76.8s-15.1-59.3-38.4-76.8l-28.8 38.4c11.7 8.8 19.2 22.7 19.2 38.4zM0 160v192h128l144 128h48V32h-48L128 160H0z" />
-                                    </svg><svg
-                                        class="w-3 h-3 fill-current text-white hidden || js-modal-video-volume-off-icon-428063"
-                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
-                                        <path
-                                            d="M48.4 14.8L29.4.1 0 38l19 14.7 572.5 444.5 19 14.7 29.4-37.9-19-14.7-95.1-73.8C557 351.3 576 305.9 576 256c0-62.8-30.2-118.6-76.8-153.6l-28.8 38.4c35 26.3 57.6 68.1 57.6 115.2 0 38.8-15.3 74-40.3 99.9l-38.2-29.7c18.8-17.5 30.5-42.5 30.5-70.2 0-31.4-15.1-59.3-38.4-76.8l-28.8 38.4c11.7 8.8 19.2 22.7 19.2 38.4s-7.5 29.6-19.2 38.4l5.9 7.9-66.7-51.8V32h-48l-108.8 96.7L48.4 14.8zM352 373.3L81.2 160H32v192h128l144 128h48V373.3z" />
-                                    </svg>
-                                </a>
-                                <div class="absolute bottom-0 left-0 z-20 h-1.5 w-full bg-white bg-opacity-20">
-                                    <div class="h-1.5 bg-primary-600 w-0 transition || js-modal-video-progress-428063">
-                                    </div>
+                            <div class="absolute bottom-0 left-0 z-20 h-1.5 w-full bg-white bg-opacity-20">
+                                <div class="h-1.5 bg-primary-600 w-0 transition || js-modal-video-progress-428063">
                                 </div>
                             </div>
                         </div>
@@ -2166,180 +2056,115 @@ bg-primary-600 text-gray-600 py-2 px-5">
                 </div>
             </div>
         </div>
-        <div x-data="featureQuote" x-init="crossBrowserClasses('428063')" class="w-full relative">
-            <div class="w-full pb-20 | lg:pb-24 | 2xl:pb-32 | 4xl:pb-40">
-                <div class="px-2 | sm:px-6 | xl:px-12 | 2xl:px-20 | 3xl:px-40 | 4xl:px-60">
-                    <div class="w-full flex flex-wrap">
-                        <div class="px-2 | lg:px-3 | xl:px-4 w-full relative">
-                            <div
-                                class="flex flex-wrap w-full relative cursor-pointer h-screen-fix-60 | md:h-screen-fix-40 | lg:h-screen-fix-60 lg:min-h-120">
-                                <a href="#" class="absolute top-0 left-0 w-full h-full z-20 group" x-on:click.prevent="
+    </div>
+    <div x-data="featureQuote" x-init="crossBrowserClasses('428063')" class="w-full relative">
+        <div class="w-full pb-20 | lg:pb-24 | 2xl:pb-32 | 4xl:pb-40">
+            <div class="px-2 | sm:px-6 | xl:px-12 | 2xl:px-20 | 3xl:px-40 | 4xl:px-60">
+                <div class="w-full flex flex-wrap">
+                    <div class="px-2 | lg:px-3 | xl:px-4 w-full relative">
+                        <div
+                            class="flex flex-wrap w-full relative cursor-pointer h-screen-fix-60 | md:h-screen-fix-40 | lg:h-screen-fix-60 lg:min-h-120">
+                            <a href="#" class="absolute top-0 left-0 w-full h-full z-20 group" x-on:click.prevent="
 $dispatch('component-modal', { visible: '428063' });
 ">
-                                    <div class="sr-only">
-                                        Play video</div>
+                                <div class="sr-only">
+                                    Play video</div>
+                                <div
+                                    class="absolute top-0 left-0 w-full h-full flex p-6 | lg:p-10 items-end justify-start ">
                                     <div
-                                        class="absolute top-0 left-0 w-full h-full flex p-6 | lg:p-10 items-end justify-start ">
-                                        <div
-                                            class="flex-shrink-0 rounded-full bg-primary-600 flex items-center justify-center transition-transform transform | xl:group-hover:scale-110 w-14 h-14 | md:w-16 md:h-16">
-                                            <svg class="w-3 h-3 | md:w-4 md:h-4" width="12" height="16"
-                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                                <path d="M384 256L0 32v448l384-224z" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </a>
-                                <div
-                                    class="w-full h-full absolute top-0 left-0 rounded-2xl transform-gpu bg-gray-50 overflow-hidden | dark:bg-grayDark-400 | lg:rounded-3xl">
-                                    <picture>
-                                        <source type="image/webp"
-                                            srcset="<?php echo BASE_URL . 'assets/images/vlcsnap-2025-09-07-23h49m03s206.png'; ?>?w=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1683035197&amp;s=ff925c5d9b2dffdd6e6012976c214adf 400w, <?php echo BASE_URL . 'assets/images/vlcsnap-2025-09-07-23h49m03s206.png'; ?>?w=800&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1683035197&amp;s=7d6c33823360bcb9116dae0c43df3536 800w, <?php echo BASE_URL . 'assets/images/vlcsnap-2025-09-07-23h49m03s206.png'; ?>?w=1200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1683035197&amp;s=0c09bdef74557ff384154f5de3455b9e 1200w, <?php echo BASE_URL . 'assets/images/vlcsnap-2025-09-07-23h49m03s206.png'; ?>?w=1600&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1683035197&amp;s=165ee7bf6c189d0463ddda603c3f48e2 1600w"
-                                            sizes="100vw">
-                                        <img src="<?php echo BASE_URL . 'assets/images/vlcsnap-2025-09-07-23h49m03s206.png'; ?>?w=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1683035197&amp;s=ff925c5d9b2dffdd6e6012976c214adf"
-                                            srcset="<?php echo BASE_URL . 'assets/images/vlcsnap-2025-09-07-23h49m03s206.png'; ?>?w=400&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1683035197&amp;s=4d416c5ba63785bb2d2ddc71a0f3872b 400w, <?php echo BASE_URL . 'assets/images/vlcsnap-2025-09-07-23h49m03s206.png'; ?>?w=800&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1683035197&amp;s=7c6a8ec73272577a523cf64491c4aff7 800w, <?php echo BASE_URL . 'assets/images/vlcsnap-2025-09-07-23h49m03s206.png'; ?>?w=1200&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1683035197&amp;s=907366e875fa98e5998364e7717ae58f 1200w, <?php echo BASE_URL . 'assets/images/vlcsnap-2025-09-07-23h49m03s206.png'; ?>?w=1600&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1683035197&amp;s=6e9a6770cdc853d2a52fcd7016e6e8e3 1600w"
-                                            sizes="100vw" alt="4 O2 A8545"
-                                            class=" w-full   w-full h-full absolute top-0 left-0 object-cover object-center"
-                                            loading="lazy" width="1600" height="1067">
-                                    </picture>
-                                </div>
-                                <div
-                                    class="flex flex-col items-start absolute top-0 left-0 rounded-2xl transform-gpu z-20  pointer-events-none m-3 | md:m-6 | lg:rounded-3xl lg:m-10">
-                                    <div class="relative || ">
-                                        <div class="w-full relative z-10  mb-2 | lg:mb-3.5 || js-cross-browser"
-                                            data-windows-remove="mb-2|lg:mb-3.5" data-windows-add="mb-2|lg:mb-3">
-                                            <div
-                                                class="w-3 h-7 bg-white absolute bottom-0 left-0 z-20 transform translate-y-1/2 | dark:bg-grayDark-600">
-                                            </div>
-                                            <div
-                                                class="w-auto inline-flex pt-1 px-4 rounded-xl rounded-b-none relative | lg:pt-2 lg:rounded-xl lg:rounded-b-none || bg-white | dark:bg-grayDark-650">
-                                                <div class="inline-flex items-center space-x-2  ">
-                                                    <div
-                                                        class="bg-gray-600 | dark:bg-grayDark-100 w-1.5 h-1.5 rounded-full">
-                                                    </div>
-                                                    <div
-                                                        class="font-light text-sm | lg:text-base text-gray-600 | dark:text-grayDark-100">
-                                                        Behind the scenes</div>
-                                                </div>
-                                                <svg id="Layer_1"
-                                                    class="w-6 h-6 text-white fill-current absolute bottom-0.5 right-0 transform translate-x-full rotate-180 | lg:w-6 lg:h-6 dark:text-grayDark-600 || js-cross-browser"
-                                                    version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
-                                                    viewBox="0 0 100 100" xml:space="preserve"
-                                                    data-windows-remove="bottom-0.5" data-windows-add="-bottom-px"
-                                                    data-android-remove="bottom-0.5" data-android-add="-bottom-px">
-                                                    <path d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
-                                                </svg>
-                                            </div>
-                                        </div>
-                                        <h2 class="text-2xl | md:text-2xl | lg:text-4xl | 2xl:text-5xl | 4xl:text-6xl leading-none tracking-tight text-gray-600 | dark:text-grayDark-100 bg-white | dark:bg-grayDark-650 py-2 | lg:py-3  js-cross-browser || -mt-4.5 || gooey-content"
-                                            data-firefox-safari-remove=""
-                                            data-firefox-safari-add="rounded-r-2xl|rounded-bl-2xl|-mt-2.5|lg:-mt-4">
-                                            <span
-                                                class=" flex-shrink-0 truncate inline relative pl-3 | lg:pl-5 || js-cross-browser"
-                                                style="z-index: 0">
-                                                Our team workation&nbsp;&nbsp;<br>
-                                            </span>
-                                            <div class="text-gray-300 | dark:text-grayDark-200 flex-shrink-0 truncate inline relative px-3 | lg:px-5"
-                                                style="z-index: 0">
-                                                Watch now</div>
-                                        </h2>
-                                        <svg width="0" height="0" class="absolute hidden"
-                                            color-interpolation-filters="sRGB">
-                                            <defs>
-                                                <filter id="goo">
-                                                    <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur" />
-                                                    <feColorMatrix in="blur" mode="matrix"
-                                                        values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
-                                                        result="goo" />
-                                                    <feComposite in="SourceGraphic" in2="goo" operator="atop" />
-                                                </filter>
-                                            </defs>
+                                        class="flex-shrink-0 rounded-full bg-primary-600 flex items-center justify-center transition-transform transform | xl:group-hover:scale-110 w-14 h-14 | md:w-16 md:h-16">
+                                        <svg class="w-3 h-3 | md:w-4 md:h-4" width="12" height="16"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                            <path d="M384 256L0 32v448l384-224z" />
                                         </svg>
                                     </div>
                                 </div>
-                                <div
-                                    class="absolute bottom-0 right-0 z-30 pl-4 pt-4 flex-shrink-0 rounded-tl-2xl bg-white | lg:rounded-tl-3xl | dark:bg-grayDark-600">
-                                    <svg id="Layer_1"
-                                        class="w-10 h-10 | lg:w-12 lg:h-12 text-white fill-current absolute -bottom-px left-px transform -translate-x-full rotate-180 dark:text-grayDark-600"
-                                        version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
-                                        viewBox="0 0 100 100" xml:space="preserve">
-                                        <path d="M51.9 0v1.9c-27.6 0-50 22.4-50 50H0V0h51.9z" />
-                                    </svg><svg id="Layer_1"
-                                        class="w-10 h-10 | lg:w-12 lg:h-12 text-white fill-current absolute top-px -right-px transform -translate-y-full rotate-180 dark:text-grayDark-600"
-                                        version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
-                                        viewBox="0 0 100 100" xml:space="preserve">
-                                        <path d="M51.9 0v1.9c-27.6 0-50 22.4-50 50H0V0h51.9z" />
-                                    </svg>
-                                    <div class="inline-flex flex-col items-start  | lg:flex-row  lg:space-x-6">
-                                        <div class="hidden | lg:inline-flex">
-                                            <div class="relative group inline-flex items-center"
-                                                x-data="{ hover: false }" x-on:mouseenter="hover = true"
-                                                x-on:mouseleave="hover = false">
-                                                <svg width="0" height="0" class="absolute hidden"
-                                                    color-interpolation-filters="sRGB">
-                                                    <defs>
-                                                        <filter id="buttonFilter">
-                                                            <feGaussianBlur in="SourceGraphic" stdDeviation="5"
-                                                                result="blur" />
-                                                            <feColorMatrix in="blur" mode="matrix"
-                                                                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
-                                                                result="buttonFilter" />
-                                                            <feComposite in="SourceGraphic" in2="buttonFilter"
-                                                                operator="atop" />
-                                                            <feBlend in="SourceGraphic" in2="buttonFilter" />
-                                                        </filter>
-                                                    </defs>
-                                                </svg>
-                                                <a href=""
-                                                    class="inline-flex relative group outline-none  | focus:outline-none "
-                                                    style="filter: url(#buttonFilter);" x-on:click.prevent="
-$dispatch('component-modal', { visible: '428063' });
-">
-                                                    <div class="
-w-auto
-inline-flex
-items-center
-justify-center
-relative
-leading-tight
-shadow-none
-overflow-hidden
-rounded-full
-border-default
-bg-primary-600 text-gray-600 py-2 px-5">
-                                                        <div class="relative inline-flex top-px flex-shrink-0">
-                                                            <div>
-                                                                Play video</div>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="bg-primary-600 flex-shrink-0 overflow-hidden flex items-center justify-center -ml-1 rounded-full transform transition-transform | w-9 h-9 | xl:group-hover:translate-x-3   | js-button-icon">
-                                                    </div>
-                                                </a>
-                                                <div
-                                                    class="w-9 h-9 absolute top-0 right-0 flex items-center justify-center z-20 transition-transform transform w-9 h-9 | xl:group-hover:translate-x-3   || js-button-arrow">
-                                                    <div class="relative overflow-hidden text-gray-600">
-                                                        <div
-                                                            class="relative top-0 left-0 transition-transform transform || js-button-arrow-icon-primary ">
-                                                            <svg class="w-3 h-3 fill-current" width="12" height="16"
-                                                                xmlns="http://www.w3.org/2000/svg"
-                                                                viewBox="0 0 384 512">
-                                                                <path d="M384 256L0 32v448l384-224z" />
-                                                            </svg>
-                                                        </div>
-                                                        <div
-                                                            class="absolute top-0 left-0 transition-transform transform translate-y-full -translate-x-full || js-button-arrow-icon-secondary ">
-                                                            <svg class="w-3 h-3 fill-current" width="12" height="16"
-                                                                xmlns="http://www.w3.org/2000/svg"
-                                                                viewBox="0 0 384 512">
-                                                                <path d="M384 256L0 32v448l384-224z" />
-                                                            </svg>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                            </a>
+                            <div
+                                class="w-full h-full absolute top-0 left-0 rounded-2xl transform-gpu bg-gray-50 overflow-hidden | dark:bg-grayDark-400 | lg:rounded-3xl">
+                                <picture>
+                                    <source type="image/webp"
+                                        srcset="<?php echo BASE_URL . 'assets/images/vlcsnap-2025-09-07-23h49m03s206.png'; ?>?w=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1683035197&amp;s=ff925c5d9b2dffdd6e6012976c214adf 400w, <?php echo BASE_URL . 'assets/images/vlcsnap-2025-09-07-23h49m03s206.png'; ?>?w=800&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1683035197&amp;s=7d6c33823360bcb9116dae0c43df3536 800w, <?php echo BASE_URL . 'assets/images/vlcsnap-2025-09-07-23h49m03s206.png'; ?>?w=1200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1683035197&amp;s=0c09bdef74557ff384154f5de3455b9e 1200w, <?php echo BASE_URL . 'assets/images/vlcsnap-2025-09-07-23h49m03s206.png'; ?>?w=1600&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1683035197&amp;s=165ee7bf6c189d0463ddda603c3f48e2 1600w"
+                                        sizes="100vw">
+                                    <img src="<?php echo BASE_URL . 'assets/images/vlcsnap-2025-09-07-23h49m03s206.png'; ?>?w=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1683035197&amp;s=ff925c5d9b2dffdd6e6012976c214adf"
+                                        srcset="<?php echo BASE_URL . 'assets/images/vlcsnap-2025-09-07-23h49m03s206.png'; ?>?w=400&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1683035197&amp;s=4d416c5ba63785bb2d2ddc71a0f3872b 400w, <?php echo BASE_URL . 'assets/images/vlcsnap-2025-09-07-23h49m03s206.png'; ?>?w=800&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1683035197&amp;s=7c6a8ec73272577a523cf64491c4aff7 800w, <?php echo BASE_URL . 'assets/images/vlcsnap-2025-09-07-23h49m03s206.png'; ?>?w=1200&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1683035197&amp;s=907366e875fa98e5998364e7717ae58f 1200w, <?php echo BASE_URL . 'assets/images/vlcsnap-2025-09-07-23h49m03s206.png'; ?>?w=1600&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1683035197&amp;s=6e9a6770cdc853d2a52fcd7016e6e8e3 1600w"
+                                        sizes="100vw" alt="4 O2 A8545"
+                                        class=" w-full   w-full h-full absolute top-0 left-0 object-cover object-center"
+                                        loading="lazy" width="1600" height="1067">
+                                </picture>
+                            </div>
+                            <div
+                                class="flex flex-col items-start absolute top-0 left-0 rounded-2xl transform-gpu z-20  pointer-events-none m-3 | md:m-6 | lg:rounded-3xl lg:m-10">
+                                <div class="relative || ">
+                                    <div class="w-full relative z-10  mb-2 | lg:mb-3.5 || js-cross-browser"
+                                        data-windows-remove="mb-2|lg:mb-3.5" data-windows-add="mb-2|lg:mb-3">
+                                        <div
+                                            class="w-3 h-7 bg-white absolute bottom-0 left-0 z-20 transform translate-y-1/2 | dark:bg-grayDark-600">
                                         </div>
-                                        <div class="relative group inline-flex items-center" x-data="{ hover: false }"
-                                            x-on:mouseenter="hover = true" x-on:mouseleave="hover = false">
+                                        <div
+                                            class="w-auto inline-flex pt-1 px-4 rounded-xl rounded-b-none relative | lg:pt-2 lg:rounded-xl lg:rounded-b-none || bg-white | dark:bg-grayDark-650">
+                                            <div class="inline-flex items-center space-x-2  ">
+                                                <div
+                                                    class="bg-gray-600 | dark:bg-grayDark-100 w-1.5 h-1.5 rounded-full">
+                                                </div>
+                                                <div
+                                                    class="font-light text-sm | lg:text-base text-gray-600 | dark:text-grayDark-100">
+                                                    Behind the scenes</div>
+                                            </div>
+                                            <svg id="Layer_1"
+                                                class="w-6 h-6 text-white fill-current absolute bottom-0.5 right-0 transform translate-x-full rotate-180 | lg:w-6 lg:h-6 dark:text-grayDark-600 || js-cross-browser"
+                                                version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
+                                                viewBox="0 0 100 100" xml:space="preserve"
+                                                data-windows-remove="bottom-0.5" data-windows-add="-bottom-px"
+                                                data-android-remove="bottom-0.5" data-android-add="-bottom-px">
+                                                <path d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <h2 class="text-2xl | md:text-2xl | lg:text-4xl | 2xl:text-5xl | 4xl:text-6xl leading-none tracking-tight text-gray-600 | dark:text-grayDark-100 bg-white | dark:bg-grayDark-650 py-2 | lg:py-3  js-cross-browser || -mt-4.5 || gooey-content"
+                                        data-firefox-safari-remove=""
+                                        data-firefox-safari-add="rounded-r-2xl|rounded-bl-2xl|-mt-2.5|lg:-mt-4">
+                                        <span
+                                            class=" flex-shrink-0 truncate inline relative pl-3 | lg:pl-5 || js-cross-browser"
+                                            style="z-index: 0">
+                                            Our team workation&nbsp;&nbsp;<br>
+                                        </span>
+                                        <div class="text-gray-300 | dark:text-grayDark-200 flex-shrink-0 truncate inline relative px-3 | lg:px-5"
+                                            style="z-index: 0">
+                                            Watch now</div>
+                                    </h2>
+                                    <svg width="0" height="0" class="absolute hidden"
+                                        color-interpolation-filters="sRGB">
+                                        <defs>
+                                            <filter id="goo">
+                                                <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur" />
+                                                <feColorMatrix in="blur" mode="matrix"
+                                                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                                                    result="goo" />
+                                                <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+                                            </filter>
+                                        </defs>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div
+                                class="absolute bottom-0 right-0 z-30 pl-4 pt-4 flex-shrink-0 rounded-tl-2xl bg-white | lg:rounded-tl-3xl | dark:bg-grayDark-600">
+                                <svg id="Layer_1"
+                                    class="w-10 h-10 | lg:w-12 lg:h-12 text-white fill-current absolute -bottom-px left-px transform -translate-x-full rotate-180 dark:text-grayDark-600"
+                                    version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
+                                    viewBox="0 0 100 100" xml:space="preserve">
+                                    <path d="M51.9 0v1.9c-27.6 0-50 22.4-50 50H0V0h51.9z" />
+                                </svg><svg id="Layer_1"
+                                    class="w-10 h-10 | lg:w-12 lg:h-12 text-white fill-current absolute top-px -right-px transform -translate-y-full rotate-180 dark:text-grayDark-600"
+                                    version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
+                                    viewBox="0 0 100 100" xml:space="preserve">
+                                    <path d="M51.9 0v1.9c-27.6 0-50 22.4-50 50H0V0h51.9z" />
+                                </svg>
+                                <div class="inline-flex flex-col items-start  | lg:flex-row  lg:space-x-6">
+                                    <div class="hidden | lg:inline-flex">
+                                        <div class="relative group inline-flex items-center"
+                                            x-data="{ hover: false }" x-on:mouseenter="hover = true"
+                                            x-on:mouseleave="hover = false">
                                             <svg width="0" height="0" class="absolute hidden"
                                                 color-interpolation-filters="sRGB">
                                                 <defs>
@@ -2355,45 +2180,110 @@ bg-primary-600 text-gray-600 py-2 px-5">
                                                     </filter>
                                                 </defs>
                                             </svg>
-                                            <a href="https://www.linkedin.com/company/scalifyuae/" target="1"
+                                            <a href=""
                                                 class="inline-flex relative group outline-none  | focus:outline-none "
-                                                style="filter: url(#buttonFilter);">
-                                                <div
-                                                    class="w-auto inline-flex items-center justify-center relative leading-tight shadow-none overflow-hidden rounded-full border-default bg-gray-600 text-white | dark:bg-grayDark-400 dark:text-grayDark-100 py-2 px-5">
+                                                style="filter: url(#buttonFilter);" x-on:click.prevent="
+$dispatch('component-modal', { visible: '428063' });
+">
+                                                <div class="
+w-auto
+inline-flex
+items-center
+justify-center
+relative
+leading-tight
+shadow-none
+overflow-hidden
+rounded-full
+border-default
+bg-primary-600 text-gray-600 py-2 px-5">
                                                     <div class="relative inline-flex top-px flex-shrink-0">
                                                         <div>
-                                                            Follow Scalify on</div>
-                                                        <svg class="w-4 h-4 ml-2 fill-current"
-                                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                                            <path
-                                                                d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
-                                                        </svg>
+                                                            Play video</div>
                                                     </div>
                                                 </div>
                                                 <div
-                                                    class="bg-gray-600 | dark:bg-grayDark-400 flex-shrink-0 overflow-hidden flex items-center justify-center -ml-1 rounded-full transform transition-transform | w-9 h-9 | xl:group-hover:translate-x-3  xl:group-hover:rotate-45 | js-button-icon">
+                                                    class="bg-primary-600 flex-shrink-0 overflow-hidden flex items-center justify-center -ml-1 rounded-full transform transition-transform | w-9 h-9 | xl:group-hover:translate-x-3   | js-button-icon">
                                                 </div>
                                             </a>
                                             <div
-                                                class="w-9 h-9 absolute top-0 right-0 flex items-center justify-center z-20 transition-transform transform w-9 h-9 | xl:group-hover:translate-x-3  xl:group-hover:rotate-45 || js-button-arrow">
-                                                <div
-                                                    class="relative overflow-hidden text-white | dark:text-grayDark-100">
+                                                class="w-9 h-9 absolute top-0 right-0 flex items-center justify-center z-20 transition-transform transform w-9 h-9 | xl:group-hover:translate-x-3   || js-button-arrow">
+                                                <div class="relative overflow-hidden text-gray-600">
                                                     <div
                                                         class="relative top-0 left-0 transition-transform transform || js-button-arrow-icon-primary ">
-                                                        <svg class="w-3 h-3 fill-current"
-                                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                                            <path
-                                                                d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z" />
+                                                        <svg class="w-3 h-3 fill-current" width="12" height="16"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            viewBox="0 0 384 512">
+                                                            <path d="M384 256L0 32v448l384-224z" />
                                                         </svg>
                                                     </div>
                                                     <div
                                                         class="absolute top-0 left-0 transition-transform transform translate-y-full -translate-x-full || js-button-arrow-icon-secondary ">
-                                                        <svg class="w-3 h-3 fill-current"
-                                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                                            <path
-                                                                d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z" />
+                                                        <svg class="w-3 h-3 fill-current" width="12" height="16"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            viewBox="0 0 384 512">
+                                                            <path d="M384 256L0 32v448l384-224z" />
                                                         </svg>
                                                     </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="relative group inline-flex items-center" x-data="{ hover: false }"
+                                        x-on:mouseenter="hover = true" x-on:mouseleave="hover = false">
+                                        <svg width="0" height="0" class="absolute hidden"
+                                            color-interpolation-filters="sRGB">
+                                            <defs>
+                                                <filter id="buttonFilter">
+                                                    <feGaussianBlur in="SourceGraphic" stdDeviation="5"
+                                                        result="blur" />
+                                                    <feColorMatrix in="blur" mode="matrix"
+                                                        values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                                                        result="buttonFilter" />
+                                                    <feComposite in="SourceGraphic" in2="buttonFilter"
+                                                        operator="atop" />
+                                                    <feBlend in="SourceGraphic" in2="buttonFilter" />
+                                                </filter>
+                                            </defs>
+                                        </svg>
+                                        <a href="https://www.linkedin.com/company/scalifyuae/" target="1"
+                                            class="inline-flex relative group outline-none  | focus:outline-none "
+                                            style="filter: url(#buttonFilter);">
+                                            <div
+                                                class="w-auto inline-flex items-center justify-center relative leading-tight shadow-none overflow-hidden rounded-full border-default bg-gray-600 text-white | dark:bg-grayDark-400 dark:text-grayDark-100 py-2 px-5">
+                                                <div class="relative inline-flex top-px flex-shrink-0">
+                                                    <div>
+                                                        Follow Scalify on</div>
+                                                    <svg class="w-4 h-4 ml-2 fill-current"
+                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                                        <path
+                                                            d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="bg-gray-600 | dark:bg-grayDark-400 flex-shrink-0 overflow-hidden flex items-center justify-center -ml-1 rounded-full transform transition-transform | w-9 h-9 | xl:group-hover:translate-x-3  xl:group-hover:rotate-45 | js-button-icon">
+                                            </div>
+                                        </a>
+                                        <div
+                                            class="w-9 h-9 absolute top-0 right-0 flex items-center justify-center z-20 transition-transform transform w-9 h-9 | xl:group-hover:translate-x-3  xl:group-hover:rotate-45 || js-button-arrow">
+                                            <div
+                                                class="relative overflow-hidden text-white | dark:text-grayDark-100">
+                                                <div
+                                                    class="relative top-0 left-0 transition-transform transform || js-button-arrow-icon-primary ">
+                                                    <svg class="w-3 h-3 fill-current"
+                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                                        <path
+                                                            d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z" />
+                                                    </svg>
+                                                </div>
+                                                <div
+                                                    class="absolute top-0 left-0 transition-transform transform translate-y-full -translate-x-full || js-button-arrow-icon-secondary ">
+                                                    <svg class="w-3 h-3 fill-current"
+                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                                        <path
+                                                            d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z" />
+                                                    </svg>
                                                 </div>
                                             </div>
                                         </div>
@@ -2405,8 +2295,9 @@ bg-primary-600 text-gray-600 py-2 px-5">
                 </div>
             </div>
         </div>
-        <div id="420757"></div>
-        <!-- <div x-data="videoQuoteColumns" x-init="carousel('420757')">
+    </div>
+    <div id="420757"></div>
+    <!-- <div x-data="videoQuoteColumns" x-init="carousel('420757')">
             <div class="w-full pb-20 | lg:pb-24 | 2xl:pb-32 | 4xl:pb-40">
                 <div class="pl-2 | sm:pl-6 | xl:pl-12 | 2xl:pl-20 | 3xl:pl-40 | 4xl:pl-60">
                     <div
@@ -2927,40 +2818,40 @@ indent-10 | lg:indent-14
                 </div>
             </div>
         </div> -->
-        <div id="345540"></div>
-        <div x-data="reviews" x-init="carousel('345540')">
-            <div class="w-full pb-20 | lg:pb-24 | 2xl:pb-32 | 4xl:pb-40">
-                <div class="pl-2 | sm:pl-6 | xl:pl-12 | 2xl:pl-20 | 3xl:pl-40 | 4xl:pl-60">
-                    <div class="w-full flex flex-wrap">
-                        <div
-                            class="px-2 | lg:px-3 | xl:px-4 inline-flex flex-row justify-between items-end w-full mb-10 md:pr-6 | lg:pr-0 lg:mb-0 lg:w-4/16 lg:flex-col lg:justify-between lg:items-start">
-                            <div class="w-full">
-                                <div class="w-full mb-3 | lg:mb-5">
-                                    <div class="w-56 | dark:hidden">
-                                        <picture>
-                                            <source type="image/webp"
-                                                srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Google-Review-Badge-Alt-Black.png?w=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1730706291&amp;s=ae6f561a5930b62e50456bae8387eb0b 400w"
-                                                sizes="100vw">
-                                            <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Google-Review-Badge-Alt-Black.png?w=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1730706291&amp;s=ae6f561a5930b62e50456bae8387eb0b"
-                                                srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Google-Review-Badge-Alt-Black.png?w=400&amp;q=100&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1730706291&amp;s=a7cbafbd25120f69edbdbe67854ac924 400w"
-                                                sizes="100vw" alt="Google Review Badge Alt Black" class=" w-full  "
-                                                loading="lazy" width="400" height="35">
-                                        </picture>
-                                    </div>
-                                    <div class="w-56 hidden | dark:block">
-                                        <picture>
-                                            <source type="image/webp"
-                                                srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Google-Review-Badge-Alt-White.png?w=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1730706292&amp;s=43c12f508a6e32f13f825ad0387cdb92 400w"
-                                                sizes="100vw">
-                                            <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Google-Review-Badge-Alt-White.png?w=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1730706292&amp;s=43c12f508a6e32f13f825ad0387cdb92"
-                                                srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Google-Review-Badge-Alt-White.png?w=400&amp;q=100&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1730706292&amp;s=2ac84fce753617a910ae39be454f5bfd 400w"
-                                                sizes="100vw" alt="Google Review Badge Alt White" class=" w-full  "
-                                                loading="lazy" width="400" height="35">
-                                        </picture>
-                                    </div>
+    <div id="345540"></div>
+    <div x-data="reviews" x-init="carousel('345540')">
+        <div class="w-full pb-20 | lg:pb-24 | 2xl:pb-32 | 4xl:pb-40">
+            <div class="pl-2 | sm:pl-6 | xl:pl-12 | 2xl:pl-20 | 3xl:pl-40 | 4xl:pl-60">
+                <div class="w-full flex flex-wrap">
+                    <div
+                        class="px-2 | lg:px-3 | xl:px-4 inline-flex flex-row justify-between items-end w-full mb-10 md:pr-6 | lg:pr-0 lg:mb-0 lg:w-4/16 lg:flex-col lg:justify-between lg:items-start">
+                        <div class="w-full">
+                            <div class="w-full mb-3 | lg:mb-5">
+                                <div class="w-56 | dark:hidden">
+                                    <picture>
+                                        <source type="image/webp"
+                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Google-Review-Badge-Alt-Black.png?w=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1730706291&amp;s=ae6f561a5930b62e50456bae8387eb0b 400w"
+                                            sizes="100vw">
+                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Google-Review-Badge-Alt-Black.png?w=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1730706291&amp;s=ae6f561a5930b62e50456bae8387eb0b"
+                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Google-Review-Badge-Alt-Black.png?w=400&amp;q=100&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1730706291&amp;s=a7cbafbd25120f69edbdbe67854ac924 400w"
+                                            sizes="100vw" alt="Google Review Badge Alt Black" class=" w-full  "
+                                            loading="lazy" width="400" height="35">
+                                    </picture>
                                 </div>
-                                <div class="flex flex-col space-y-3 | lg:space-y-5 items-start">
-                                    <h2 class="
+                                <div class="w-56 hidden | dark:block">
+                                    <picture>
+                                        <source type="image/webp"
+                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Google-Review-Badge-Alt-White.png?w=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1730706292&amp;s=43c12f508a6e32f13f825ad0387cdb92 400w"
+                                            sizes="100vw">
+                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Google-Review-Badge-Alt-White.png?w=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1730706292&amp;s=43c12f508a6e32f13f825ad0387cdb92"
+                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Google-Review-Badge-Alt-White.png?w=400&amp;q=100&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1730706292&amp;s=2ac84fce753617a910ae39be454f5bfd 400w"
+                                            sizes="100vw" alt="Google Review Badge Alt White" class=" w-full  "
+                                            loading="lazy" width="400" height="35">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="flex flex-col space-y-3 | lg:space-y-5 items-start">
+                                <h2 class="
 text-2xl | md:text-3xl | xl:text-4xl | 4xl:text-5xl
 font-sans-primary tracking-tight
 text-gray-600  | dark:text-grayDark-100
@@ -2968,645 +2859,644 @@ leading-none
 text-balance
 sm:max-w-sm | lg:max-w-none
 ">People love us, and we love them</h2>
-                                    <div class="relative group inline-flex items-center" x-data="{ hover: false }"
-                                        x-on:mouseenter="hover = true" x-on:mouseleave="hover = false">
-                                        <svg width="0" height="0" class="absolute hidden"
-                                            color-interpolation-filters="sRGB">
-                                            <defs>
-                                                <filter id="buttonFilter">
-                                                    <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
-                                                    <feColorMatrix in="blur" mode="matrix"
-                                                        values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
-                                                        result="buttonFilter" />
-                                                    <feComposite in="SourceGraphic" in2="buttonFilter"
-                                                        operator="atop" />
-                                                    <feBlend in="SourceGraphic" in2="buttonFilter" />
-                                                </filter>
-                                            </defs>
-                                        </svg>
-                                        <a href="https://maps.app.goo.gl/ZLQEtimBRxKFQb7T7"
-                                            class="inline-flex relative group outline-none  | focus:outline-none "
-                                            style="filter: url(#buttonFilter);">
-                                            <div
-                                                class="w-auto inline-flex items-center justify-center relative leading-tight shadow-none overflow-hidden rounded-full border-default bg-primary-600 text-gray-600 py-2 px-5">
-                                                <div class="relative inline-flex top-px flex-shrink-0">
-                                                    <div>
-                                                        Read more Reviews</div>
-                                                </div>
-                                            </div>
-                                            <div
-                                                class="bg-primary-600 flex-shrink-0 overflow-hidden flex items-center justify-center -ml-1 rounded-full transform transition-transform | w-9 h-9 | xl:group-hover:translate-x-3  xl:group-hover:rotate-45 | js-button-icon">
-                                            </div>
-                                        </a>
+                                <div class="relative group inline-flex items-center" x-data="{ hover: false }"
+                                    x-on:mouseenter="hover = true" x-on:mouseleave="hover = false">
+                                    <svg width="0" height="0" class="absolute hidden"
+                                        color-interpolation-filters="sRGB">
+                                        <defs>
+                                            <filter id="buttonFilter">
+                                                <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+                                                <feColorMatrix in="blur" mode="matrix"
+                                                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                                                    result="buttonFilter" />
+                                                <feComposite in="SourceGraphic" in2="buttonFilter"
+                                                    operator="atop" />
+                                                <feBlend in="SourceGraphic" in2="buttonFilter" />
+                                            </filter>
+                                        </defs>
+                                    </svg>
+                                    <a href="https://maps.app.goo.gl/ZLQEtimBRxKFQb7T7"
+                                        class="inline-flex relative group outline-none  | focus:outline-none "
+                                        style="filter: url(#buttonFilter);">
                                         <div
-                                            class="w-9 h-9 absolute top-0 right-0 flex items-center justify-center z-20 transition-transform transform w-9 h-9 | xl:group-hover:translate-x-3  xl:group-hover:rotate-45 || js-button-arrow">
-                                            <div class="relative overflow-hidden text-gray-600">
-                                                <div
-                                                    class="relative top-0 left-0 transition-transform transform || js-button-arrow-icon-primary ">
-                                                    <svg class="w-3 h-3 fill-current" xmlns="http://www.w3.org/2000/svg"
-                                                        viewBox="0 0 384 512">
-                                                        <path
-                                                            d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z" />
-                                                    </svg>
-                                                </div>
-                                                <div
-                                                    class="absolute top-0 left-0 transition-transform transform translate-y-full -translate-x-full || js-button-arrow-icon-secondary ">
-                                                    <svg class="w-3 h-3 fill-current" xmlns="http://www.w3.org/2000/svg"
-                                                        viewBox="0 0 384 512">
-                                                        <path
-                                                            d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z" />
-                                                    </svg>
-                                                </div>
+                                            class="w-auto inline-flex items-center justify-center relative leading-tight shadow-none overflow-hidden rounded-full border-default bg-primary-600 text-gray-600 py-2 px-5">
+                                            <div class="relative inline-flex top-px flex-shrink-0">
+                                                <div>
+                                                    Read more Reviews</div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="bg-primary-600 flex-shrink-0 overflow-hidden flex items-center justify-center -ml-1 rounded-full transform transition-transform | w-9 h-9 | xl:group-hover:translate-x-3  xl:group-hover:rotate-45 | js-button-icon">
+                                        </div>
+                                    </a>
+                                    <div
+                                        class="w-9 h-9 absolute top-0 right-0 flex items-center justify-center z-20 transition-transform transform w-9 h-9 | xl:group-hover:translate-x-3  xl:group-hover:rotate-45 || js-button-arrow">
+                                        <div class="relative overflow-hidden text-gray-600">
+                                            <div
+                                                class="relative top-0 left-0 transition-transform transform || js-button-arrow-icon-primary ">
+                                                <svg class="w-3 h-3 fill-current" xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 384 512">
+                                                    <path
+                                                        d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z" />
+                                                </svg>
+                                            </div>
+                                            <div
+                                                class="absolute top-0 left-0 transition-transform transform translate-y-full -translate-x-full || js-button-arrow-icon-secondary ">
+                                                <svg class="w-3 h-3 fill-current" xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 384 512">
+                                                    <path
+                                                        d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z" />
+                                                </svg>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="flex items-center space-x-2">
-                                <a href="#"
-                                    class="w-10 h-10 rounded-full inline-flex items-center justify-center | bg-gray-100 | xl:hover:bg-primary-600 | dark:bg-grayDark-400 dark:text-grayDark-100 dark:bg-grayDark-400 | lg:dark:hover:bg-grayDark-300 || js-carousel-prev-345540"
-                                    x-bind:class="{
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <a href="#"
+                                class="w-10 h-10 rounded-full inline-flex items-center justify-center | bg-gray-100 | xl:hover:bg-primary-600 | dark:bg-grayDark-400 dark:text-grayDark-100 dark:bg-grayDark-400 | lg:dark:hover:bg-grayDark-300 || js-carousel-prev-345540"
+                                x-bind:class="{
 'opacity-30 pointer-events-none' : isStart,
 }">
-                                    <div class="sr-only">
-                                        Previous Slide</div><svg class="w-3 h-3 fill-current" width="14" height="16"
-                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                        <path
-                                            d="M25.4 278.6L2.7 256l22.6-22.6 144-144L192 66.7l45.2 45.3-22.6 22.6-89.4 89.4H448v64H125.3l89.4 89.4 22.5 22.6-45.2 45.3-22.6-22.6-144-144z" />
-                                    </svg>
-                                </a>
-                                <a href="#"
-                                    class="w-10 h-10 rounded-full inline-flex items-center justify-center | bg-gray-100 | xl:hover:bg-primary-600 | dark:bg-grayDark-400 dark:text-grayDark-100 dark:bg-grayDark-400 | lg:dark:hover:bg-grayDark-300 || js-carousel-next-345540"
-                                    x-bind:class="{
+                                <div class="sr-only">
+                                    Previous Slide</div><svg class="w-3 h-3 fill-current" width="14" height="16"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path
+                                        d="M25.4 278.6L2.7 256l22.6-22.6 144-144L192 66.7l45.2 45.3-22.6 22.6-89.4 89.4H448v64H125.3l89.4 89.4 22.5 22.6-45.2 45.3-22.6-22.6-144-144z" />
+                                </svg>
+                            </a>
+                            <a href="#"
+                                class="w-10 h-10 rounded-full inline-flex items-center justify-center | bg-gray-100 | xl:hover:bg-primary-600 | dark:bg-grayDark-400 dark:text-grayDark-100 dark:bg-grayDark-400 | lg:dark:hover:bg-grayDark-300 || js-carousel-next-345540"
+                                x-bind:class="{
 'opacity-30 pointer-events-none' : isEnd,
 }">
-                                    <div class="sr-only">
-                                        Next Slide</div><svg class="w-3 h-3 fill-current" width="14" height="16"
-                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                        <path
-                                            d="M422.6 278.6l22.7-22.6-22.6-22.6-144-144L256 66.7 210.8 112l22.6 22.6 89.4 89.4H0v64h322.7l-89.4 89.4-22.5 22.6 45.2 45.3 22.6-22.6 144-144z" />
-                                    </svg>
-                                </a>
-                            </div>
+                                <div class="sr-only">
+                                    Next Slide</div><svg class="w-3 h-3 fill-current" width="14" height="16"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path
+                                        d="M422.6 278.6l22.7-22.6-22.6-22.6-144-144L256 66.7 210.8 112l22.6 22.6 89.4 89.4H0v64h322.7l-89.4 89.4-22.5 22.6 45.2 45.3 22.6-22.6 144-144z" />
+                                </svg>
+                            </a>
                         </div>
-                        <div class="relative w-full | lg:w-12/16">
-                            <div
-                                class="absolute top-0 left-0 w-20 h-full z-20 bg-gradient-to-r from-white pointer-events-none hidden | lg:block | dark:from-grayDark-600">
-                            </div>
-                            <div class="w-full || swiper || js-carousel-345540">
-                                <div class="swiper-wrapper">
-                                    <div class="px-2 | lg:px-3 | xl:px-4 flex h-auto || swiper-slide">
-                                        <div
-                                            class="bg-gray-50 rounded-2xl w-full flex flex-col items-start justify-between p-6 | lg:rounded-3xl lg:p-10 | dark:bg-grayDark-500">
-                                            <div class="w-full mb-5 | lg:mb-10">
-                                                <div
-                                                    class="mb-5 flex space-x-1 text-gray-600 | lg:mb-10 | dark:text-white">
-                                                    <svg class="w-4 h-4 fill-current" width="18" height="16"
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                                        <path
-                                                            d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
-                                                    </svg>
-                                                    <svg class="w-4 h-4 fill-current" width="18" height="16"
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                                        <path
-                                                            d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
-                                                    </svg>
-                                                    <svg class="w-4 h-4 fill-current" width="18" height="16"
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                                        <path
-                                                            d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
-                                                    </svg>
-                                                    <svg class="w-4 h-4 fill-current" width="18" height="16"
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                                        <path
-                                                            d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
-                                                    </svg>
-                                                    <svg class="w-4 h-4 fill-current" width="18" height="16"
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                                        <path
-                                                            d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
-                                                    </svg>
-                                                </div>
-                                                <div
-                                                    class="leading-7 text-base font-light | lg:text-md | dark:text-grayDark-200">
-                                                    I’ve been working with the Scalify team for around 12
-                                                    months now. They’ve been nothing shy of perfect. The team completely
-                                                    designed and store up, which has been such a
-                                                    positive change for my business growth. Can’t recommend
-                                                    Scalify enough</div>
+                    </div>
+                    <div class="relative w-full | lg:w-12/16">
+                        <div
+                            class="absolute top-0 left-0 w-20 h-full z-20 bg-gradient-to-r from-white pointer-events-none hidden | lg:block | dark:from-grayDark-600">
+                        </div>
+                        <div class="w-full || swiper || js-carousel-345540">
+                            <div class="swiper-wrapper">
+                                <div class="px-2 | lg:px-3 | xl:px-4 flex h-auto || swiper-slide">
+                                    <div
+                                        class="bg-gray-50 rounded-2xl w-full flex flex-col items-start justify-between p-6 | lg:rounded-3xl lg:p-10 | dark:bg-grayDark-500">
+                                        <div class="w-full mb-5 | lg:mb-10">
+                                            <div
+                                                class="mb-5 flex space-x-1 text-gray-600 | lg:mb-10 | dark:text-white">
+                                                <svg class="w-4 h-4 fill-current" width="18" height="16"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                    <path
+                                                        d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
+                                                </svg>
+                                                <svg class="w-4 h-4 fill-current" width="18" height="16"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                    <path
+                                                        d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
+                                                </svg>
+                                                <svg class="w-4 h-4 fill-current" width="18" height="16"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                    <path
+                                                        d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
+                                                </svg>
+                                                <svg class="w-4 h-4 fill-current" width="18" height="16"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                    <path
+                                                        d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
+                                                </svg>
+                                                <svg class="w-4 h-4 fill-current" width="18" height="16"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                    <path
+                                                        d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
+                                                </svg>
                                             </div>
-                                            <div class="flex items-end space-x-2 | lg:space-x-3">
+                                            <div
+                                                class="leading-7 text-base font-light | lg:text-md | dark:text-grayDark-200">
+                                                I’ve been working with the Scalify team for around 12
+                                                months now. They’ve been nothing shy of perfect. The team completely
+                                                designed and store up, which has been such a
+                                                positive change for my business growth. Can’t recommend
+                                                Scalify enough</div>
+                                        </div>
+                                        <div class="flex items-end space-x-2 | lg:space-x-3">
+                                            <div
+                                                class="w-9 h-9 rounded-md | lg:w-12 lg:h-12 lg:rounded-lg overflow-hidden relative bg-primary-600 flex items-center justify-center">
+                                                <div class="text-xl mt-px">
+                                                    D</div>
+                                            </div>
+                                            <div class="leading-tight tracking-tight">
+                                                <div class="text-gray-600 | dark:text-grayDark-100">
+                                                    Daniel Poll</div>
                                                 <div
-                                                    class="w-9 h-9 rounded-md | lg:w-12 lg:h-12 lg:rounded-lg overflow-hidden relative bg-primary-600 flex items-center justify-center">
-                                                    <div class="text-xl mt-px">
-                                                        D</div>
-                                                </div>
-                                                <div class="leading-tight tracking-tight">
-                                                    <div class="text-gray-600 | dark:text-grayDark-100">
-                                                        Daniel Poll</div>
-                                                    <div
-                                                        class="font-light text-xs | lg:text-sm text-gray-400 | dark:text-grayDark-200">
-                                                        Noramble</div>
-                                                </div>
+                                                    class="font-light text-xs | lg:text-sm text-gray-400 | dark:text-grayDark-200">
+                                                    Noramble</div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 flex h-auto || swiper-slide">
-                                        <div
-                                            class="bg-gray-50 rounded-2xl w-full flex flex-col items-start justify-between p-6 | lg:rounded-3xl lg:p-10 | dark:bg-grayDark-500">
-                                            <div class="w-full mb-5 | lg:mb-10">
-                                                <div
-                                                    class="mb-5 flex space-x-1 text-gray-600 | lg:mb-10 | dark:text-white">
-                                                    <svg class="w-4 h-4 fill-current" width="18" height="16"
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                                        <path
-                                                            d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
-                                                    </svg>
-                                                    <svg class="w-4 h-4 fill-current" width="18" height="16"
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                                        <path
-                                                            d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
-                                                    </svg>
-                                                    <svg class="w-4 h-4 fill-current" width="18" height="16"
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                                        <path
-                                                            d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
-                                                    </svg>
-                                                    <svg class="w-4 h-4 fill-current" width="18" height="16"
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                                        <path
-                                                            d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
-                                                    </svg>
-                                                    <svg class="w-4 h-4 fill-current" width="18" height="16"
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                                        <path
-                                                            d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
-                                                    </svg>
-                                                </div>
-                                                <div
-                                                    class="leading-7 text-base font-light | lg:text-md | dark:text-grayDark-200">
-                                                    Scalify was amazing to work with. They did the branding for my
-                                                    new athleisure shop in Toronto, Canada. They were extremely
-                                                    responsive and a pleasure to work with. I didn&#039;t have to give
-                                                    them too much direction and they completely nailed it.</div>
+                                </div>
+                                <div class="px-2 | lg:px-3 | xl:px-4 flex h-auto || swiper-slide">
+                                    <div
+                                        class="bg-gray-50 rounded-2xl w-full flex flex-col items-start justify-between p-6 | lg:rounded-3xl lg:p-10 | dark:bg-grayDark-500">
+                                        <div class="w-full mb-5 | lg:mb-10">
+                                            <div
+                                                class="mb-5 flex space-x-1 text-gray-600 | lg:mb-10 | dark:text-white">
+                                                <svg class="w-4 h-4 fill-current" width="18" height="16"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                    <path
+                                                        d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
+                                                </svg>
+                                                <svg class="w-4 h-4 fill-current" width="18" height="16"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                    <path
+                                                        d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
+                                                </svg>
+                                                <svg class="w-4 h-4 fill-current" width="18" height="16"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                    <path
+                                                        d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
+                                                </svg>
+                                                <svg class="w-4 h-4 fill-current" width="18" height="16"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                    <path
+                                                        d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
+                                                </svg>
+                                                <svg class="w-4 h-4 fill-current" width="18" height="16"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                    <path
+                                                        d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
+                                                </svg>
                                             </div>
-                                            <div class="flex items-end space-x-2 | lg:space-x-3">
+                                            <div
+                                                class="leading-7 text-base font-light | lg:text-md | dark:text-grayDark-200">
+                                                Scalify was amazing to work with. They did the branding for my
+                                                new athleisure shop in Toronto, Canada. They were extremely
+                                                responsive and a pleasure to work with. I didn&#039;t have to give
+                                                them too much direction and they completely nailed it.</div>
+                                        </div>
+                                        <div class="flex items-end space-x-2 | lg:space-x-3">
+                                            <div
+                                                class="w-9 h-9 rounded-md | lg:w-12 lg:h-12 lg:rounded-lg overflow-hidden relative bg-primary-600 flex items-center justify-center">
+                                                <div class="text-xl mt-px">
+                                                    G</div>
+                                            </div>
+                                            <div class="leading-tight tracking-tight">
+                                                <div class="text-gray-600 | dark:text-grayDark-100">
+                                                    Gillian Medina</div>
                                                 <div
-                                                    class="w-9 h-9 rounded-md | lg:w-12 lg:h-12 lg:rounded-lg overflow-hidden relative bg-primary-600 flex items-center justify-center">
-                                                    <div class="text-xl mt-px">
-                                                        G</div>
-                                                </div>
-                                                <div class="leading-tight tracking-tight">
-                                                    <div class="text-gray-600 | dark:text-grayDark-100">
-                                                        Gillian Medina</div>
-                                                    <div
-                                                        class="font-light text-xs | lg:text-sm text-gray-400 | dark:text-grayDark-200">
-                                                        Releve Clothing</div>
-                                                </div>
+                                                    class="font-light text-xs | lg:text-sm text-gray-400 | dark:text-grayDark-200">
+                                                    Releve Clothing</div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 flex h-auto || swiper-slide">
-                                        <div
-                                            class="bg-gray-50 rounded-2xl w-full flex flex-col items-start justify-between p-6 | lg:rounded-3xl lg:p-10 | dark:bg-grayDark-500">
-                                            <div class="w-full mb-5 | lg:mb-10">
-                                                <div
-                                                    class="mb-5 flex space-x-1 text-gray-600 | lg:mb-10 | dark:text-white">
-                                                    <svg class="w-4 h-4 fill-current" width="18" height="16"
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                                        <path
-                                                            d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
-                                                    </svg>
-                                                    <svg class="w-4 h-4 fill-current" width="18" height="16"
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                                        <path
-                                                            d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
-                                                    </svg>
-                                                    <svg class="w-4 h-4 fill-current" width="18" height="16"
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                                        <path
-                                                            d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
-                                                    </svg>
-                                                    <svg class="w-4 h-4 fill-current" width="18" height="16"
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                                        <path
-                                                            d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
-                                                    </svg>
-                                                    <svg class="w-4 h-4 fill-current" width="18" height="16"
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                                        <path
-                                                            d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
-                                                    </svg>
-                                                </div>
-                                                <div
-                                                    class="leading-7 text-base font-light | lg:text-md | dark:text-grayDark-200">
-                                                    For anyone needing a team that can capture a brand’s essence and
-                                                    translate it into an effective digital presence, the Scalify
-                                                    team are a great choice. Their work speaks for itself – clear,
-                                                    effective, and true to Scalify's brand.</div>
+                                </div>
+                                <div class="px-2 | lg:px-3 | xl:px-4 flex h-auto || swiper-slide">
+                                    <div
+                                        class="bg-gray-50 rounded-2xl w-full flex flex-col items-start justify-between p-6 | lg:rounded-3xl lg:p-10 | dark:bg-grayDark-500">
+                                        <div class="w-full mb-5 | lg:mb-10">
+                                            <div
+                                                class="mb-5 flex space-x-1 text-gray-600 | lg:mb-10 | dark:text-white">
+                                                <svg class="w-4 h-4 fill-current" width="18" height="16"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                    <path
+                                                        d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
+                                                </svg>
+                                                <svg class="w-4 h-4 fill-current" width="18" height="16"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                    <path
+                                                        d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
+                                                </svg>
+                                                <svg class="w-4 h-4 fill-current" width="18" height="16"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                    <path
+                                                        d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
+                                                </svg>
+                                                <svg class="w-4 h-4 fill-current" width="18" height="16"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                    <path
+                                                        d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
+                                                </svg>
+                                                <svg class="w-4 h-4 fill-current" width="18" height="16"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                    <path
+                                                        d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
+                                                </svg>
                                             </div>
-                                            <div class="flex items-end space-x-2 | lg:space-x-3">
+                                            <div
+                                                class="leading-7 text-base font-light | lg:text-md | dark:text-grayDark-200">
+                                                For anyone needing a team that can capture a brand’s essence and
+                                                translate it into an effective digital presence, the Scalify
+                                                team are a great choice. Their work speaks for itself – clear,
+                                                effective, and true to Scalify's brand.</div>
+                                        </div>
+                                        <div class="flex items-end space-x-2 | lg:space-x-3">
+                                            <div
+                                                class="w-9 h-9 rounded-md | lg:w-12 lg:h-12 lg:rounded-lg overflow-hidden relative bg-primary-600 flex items-center justify-center">
+                                                <div class="text-xl mt-px">
+                                                    O</div>
+                                            </div>
+                                            <div class="leading-tight tracking-tight">
+                                                <div class="text-gray-600 | dark:text-grayDark-100">
+                                                    Oliver Dyer</div>
                                                 <div
-                                                    class="w-9 h-9 rounded-md | lg:w-12 lg:h-12 lg:rounded-lg overflow-hidden relative bg-primary-600 flex items-center justify-center">
-                                                    <div class="text-xl mt-px">
-                                                        O</div>
-                                                </div>
-                                                <div class="leading-tight tracking-tight">
-                                                    <div class="text-gray-600 | dark:text-grayDark-100">
-                                                        Oliver Dyer</div>
-                                                    <div
-                                                        class="font-light text-xs | lg:text-sm text-gray-400 | dark:text-grayDark-200">
-                                                        Skew Studios</div>
-                                                </div>
+                                                    class="font-light text-xs | lg:text-sm text-gray-400 | dark:text-grayDark-200">
+                                                    Skew Studios</div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 flex h-auto || swiper-slide">
-                                        <div
-                                            class="bg-gray-50 rounded-2xl w-full flex flex-col items-start justify-between p-6 | lg:rounded-3xl lg:p-10 | dark:bg-grayDark-500">
-                                            <div class="w-full mb-5 | lg:mb-10">
-                                                <div
-                                                    class="mb-5 flex space-x-1 text-gray-600 | lg:mb-10 | dark:text-white">
-                                                    <svg class="w-4 h-4 fill-current" width="18" height="16"
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                                        <path
-                                                            d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
-                                                    </svg>
-                                                    <svg class="w-4 h-4 fill-current" width="18" height="16"
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                                        <path
-                                                            d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
-                                                    </svg>
-                                                    <svg class="w-4 h-4 fill-current" width="18" height="16"
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                                        <path
-                                                            d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
-                                                    </svg>
-                                                    <svg class="w-4 h-4 fill-current" width="18" height="16"
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                                        <path
-                                                            d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
-                                                    </svg>
-                                                    <svg class="w-4 h-4 fill-current" width="18" height="16"
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                                        <path
-                                                            d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
-                                                    </svg>
-                                                </div>
-                                                <div
-                                                    class="leading-7 text-base font-light | lg:text-md | dark:text-grayDark-200">
-                                                    Scalify have just completed a website design and build for me
-                                                    and it&#039;s been an absolute pleasure. The quality of work has
-                                                    been brilliant and communication has always been smooth. I honestly
-                                                    can&#039;t fault them! Our new website looks slick and works
-                                                    perfectly. I highly recommend Andy and his team.</div>
+                                </div>
+                                <div class="px-2 | lg:px-3 | xl:px-4 flex h-auto || swiper-slide">
+                                    <div
+                                        class="bg-gray-50 rounded-2xl w-full flex flex-col items-start justify-between p-6 | lg:rounded-3xl lg:p-10 | dark:bg-grayDark-500">
+                                        <div class="w-full mb-5 | lg:mb-10">
+                                            <div
+                                                class="mb-5 flex space-x-1 text-gray-600 | lg:mb-10 | dark:text-white">
+                                                <svg class="w-4 h-4 fill-current" width="18" height="16"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                    <path
+                                                        d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
+                                                </svg>
+                                                <svg class="w-4 h-4 fill-current" width="18" height="16"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                    <path
+                                                        d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
+                                                </svg>
+                                                <svg class="w-4 h-4 fill-current" width="18" height="16"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                    <path
+                                                        d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
+                                                </svg>
+                                                <svg class="w-4 h-4 fill-current" width="18" height="16"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                    <path
+                                                        d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
+                                                </svg>
+                                                <svg class="w-4 h-4 fill-current" width="18" height="16"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                    <path
+                                                        d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
+                                                </svg>
                                             </div>
-                                            <div class="flex items-end space-x-2 | lg:space-x-3">
+                                            <div
+                                                class="leading-7 text-base font-light | lg:text-md | dark:text-grayDark-200">
+                                                Scalify have just completed a website design and build for me
+                                                and it&#039;s been an absolute pleasure. The quality of work has
+                                                been brilliant and communication has always been smooth. I honestly
+                                                can&#039;t fault them! Our new website looks slick and works
+                                                perfectly. I highly recommend Andy and his team.</div>
+                                        </div>
+                                        <div class="flex items-end space-x-2 | lg:space-x-3">
+                                            <div
+                                                class="w-9 h-9 rounded-md | lg:w-12 lg:h-12 lg:rounded-lg overflow-hidden relative bg-primary-600 flex items-center justify-center">
+                                                <div class="text-xl mt-px">
+                                                    F</div>
+                                            </div>
+                                            <div class="leading-tight tracking-tight">
+                                                <div class="text-gray-600 | dark:text-grayDark-100">
+                                                    Fiona King</div>
                                                 <div
-                                                    class="w-9 h-9 rounded-md | lg:w-12 lg:h-12 lg:rounded-lg overflow-hidden relative bg-primary-600 flex items-center justify-center">
-                                                    <div class="text-xl mt-px">
-                                                        F</div>
-                                                </div>
-                                                <div class="leading-tight tracking-tight">
-                                                    <div class="text-gray-600 | dark:text-grayDark-100">
-                                                        Fiona King</div>
-                                                    <div
-                                                        class="font-light text-xs | lg:text-sm text-gray-400 | dark:text-grayDark-200">
-                                                        Three Little Words</div>
-                                                </div>
+                                                    class="font-light text-xs | lg:text-sm text-gray-400 | dark:text-grayDark-200">
+                                                    Three Little Words</div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 flex h-auto || swiper-slide">
-                                        <div
-                                            class="bg-gray-50 rounded-2xl w-full flex flex-col items-start justify-between p-6 | lg:rounded-3xl lg:p-10 | dark:bg-grayDark-500">
-                                            <div class="w-full mb-5 | lg:mb-10">
-                                                <div
-                                                    class="mb-5 flex space-x-1 text-gray-600 | lg:mb-10 | dark:text-white">
-                                                    <svg class="w-4 h-4 fill-current" width="18" height="16"
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                                        <path
-                                                            d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
-                                                    </svg>
-                                                    <svg class="w-4 h-4 fill-current" width="18" height="16"
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                                        <path
-                                                            d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
-                                                    </svg>
-                                                    <svg class="w-4 h-4 fill-current" width="18" height="16"
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                                        <path
-                                                            d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
-                                                    </svg>
-                                                    <svg class="w-4 h-4 fill-current" width="18" height="16"
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                                        <path
-                                                            d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
-                                                    </svg>
-                                                    <svg class="w-4 h-4 fill-current" width="18" height="16"
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                                        <path
-                                                            d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
-                                                    </svg>
-                                                </div>
-                                                <div
-                                                    class="leading-7 text-base font-light | lg:text-md | dark:text-grayDark-200">
-                                                    The whole process from development to launch to ongoing support is
-                                                    seamless. The team at Scalify are super helpful and using Craft CMS is
-                                                    a joy after switching from WordPress. I highly recommend
-                                                    Scalify.</div>
+                                </div>
+                                <div class="px-2 | lg:px-3 | xl:px-4 flex h-auto || swiper-slide">
+                                    <div
+                                        class="bg-gray-50 rounded-2xl w-full flex flex-col items-start justify-between p-6 | lg:rounded-3xl lg:p-10 | dark:bg-grayDark-500">
+                                        <div class="w-full mb-5 | lg:mb-10">
+                                            <div
+                                                class="mb-5 flex space-x-1 text-gray-600 | lg:mb-10 | dark:text-white">
+                                                <svg class="w-4 h-4 fill-current" width="18" height="16"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                    <path
+                                                        d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
+                                                </svg>
+                                                <svg class="w-4 h-4 fill-current" width="18" height="16"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                    <path
+                                                        d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
+                                                </svg>
+                                                <svg class="w-4 h-4 fill-current" width="18" height="16"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                    <path
+                                                        d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
+                                                </svg>
+                                                <svg class="w-4 h-4 fill-current" width="18" height="16"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                    <path
+                                                        d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
+                                                </svg>
+                                                <svg class="w-4 h-4 fill-current" width="18" height="16"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                    <path
+                                                        d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
+                                                </svg>
                                             </div>
-                                            <div class="flex items-end space-x-2 | lg:space-x-3">
+                                            <div
+                                                class="leading-7 text-base font-light | lg:text-md | dark:text-grayDark-200">
+                                                The whole process from development to launch to ongoing support is
+                                                seamless. The team at Scalify are super helpful and using Craft CMS is
+                                                a joy after switching from WordPress. I highly recommend
+                                                Scalify.</div>
+                                        </div>
+                                        <div class="flex items-end space-x-2 | lg:space-x-3">
+                                            <div
+                                                class="w-9 h-9 rounded-md | lg:w-12 lg:h-12 lg:rounded-lg overflow-hidden relative bg-primary-600 flex items-center justify-center">
+                                                <div class="text-xl mt-px">
+                                                    J</div>
+                                            </div>
+                                            <div class="leading-tight tracking-tight">
+                                                <div class="text-gray-600 | dark:text-grayDark-100">
+                                                    John McChrystal</div>
                                                 <div
-                                                    class="w-9 h-9 rounded-md | lg:w-12 lg:h-12 lg:rounded-lg overflow-hidden relative bg-primary-600 flex items-center justify-center">
-                                                    <div class="text-xl mt-px">
-                                                        J</div>
-                                                </div>
-                                                <div class="leading-tight tracking-tight">
-                                                    <div class="text-gray-600 | dark:text-grayDark-100">
-                                                        John McChrystal</div>
-                                                    <div
-                                                        class="font-light text-xs | lg:text-sm text-gray-400 | dark:text-grayDark-200">
-                                                        Crystal Health</div>
-                                                </div>
+                                                    class="font-light text-xs | lg:text-sm text-gray-400 | dark:text-grayDark-200">
+                                                    Crystal Health</div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 flex h-auto || swiper-slide">
-                                        <div
-                                            class="bg-gray-50 rounded-2xl w-full flex flex-col items-start justify-between p-6 | lg:rounded-3xl lg:p-10 | dark:bg-grayDark-500">
-                                            <div class="w-full mb-5 | lg:mb-10">
-                                                <div
-                                                    class="mb-5 flex space-x-1 text-gray-600 | lg:mb-10 | dark:text-white">
-                                                    <svg class="w-4 h-4 fill-current" width="18" height="16"
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                                        <path
-                                                            d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
-                                                    </svg>
-                                                    <svg class="w-4 h-4 fill-current" width="18" height="16"
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                                        <path
-                                                            d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
-                                                    </svg>
-                                                    <svg class="w-4 h-4 fill-current" width="18" height="16"
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                                        <path
-                                                            d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
-                                                    </svg>
-                                                    <svg class="w-4 h-4 fill-current" width="18" height="16"
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                                        <path
-                                                            d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
-                                                    </svg>
-                                                    <svg class="w-4 h-4 fill-current" width="18" height="16"
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                                        <path
-                                                            d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
-                                                    </svg>
-                                                </div>
-                                                <div
-                                                    class="leading-7 text-base font-light | lg:text-md | dark:text-grayDark-200">
-                                                    Scalify is the most professional, responsive, and knowledgeable
-                                                    web design agency I have ever worked with. Andy has a great vision
-                                                    in understanding first his customers’ needs then directing them to
-                                                    the right answer. I would easily recommend Scalify. It is always
-                                                    a pleasure to work and collaborate with them.</div>
+                                </div>
+                                <div class="px-2 | lg:px-3 | xl:px-4 flex h-auto || swiper-slide">
+                                    <div
+                                        class="bg-gray-50 rounded-2xl w-full flex flex-col items-start justify-between p-6 | lg:rounded-3xl lg:p-10 | dark:bg-grayDark-500">
+                                        <div class="w-full mb-5 | lg:mb-10">
+                                            <div
+                                                class="mb-5 flex space-x-1 text-gray-600 | lg:mb-10 | dark:text-white">
+                                                <svg class="w-4 h-4 fill-current" width="18" height="16"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                    <path
+                                                        d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
+                                                </svg>
+                                                <svg class="w-4 h-4 fill-current" width="18" height="16"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                    <path
+                                                        d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
+                                                </svg>
+                                                <svg class="w-4 h-4 fill-current" width="18" height="16"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                    <path
+                                                        d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
+                                                </svg>
+                                                <svg class="w-4 h-4 fill-current" width="18" height="16"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                    <path
+                                                        d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
+                                                </svg>
+                                                <svg class="w-4 h-4 fill-current" width="18" height="16"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                    <path
+                                                        d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
+                                                </svg>
                                             </div>
-                                            <div class="flex items-end space-x-2 | lg:space-x-3">
+                                            <div
+                                                class="leading-7 text-base font-light | lg:text-md | dark:text-grayDark-200">
+                                                Scalify is the most professional, responsive, and knowledgeable
+                                                web design agency I have ever worked with. Andy has a great vision
+                                                in understanding first his customers’ needs then directing them to
+                                                the right answer. I would easily recommend Scalify. It is always
+                                                a pleasure to work and collaborate with them.</div>
+                                        </div>
+                                        <div class="flex items-end space-x-2 | lg:space-x-3">
+                                            <div
+                                                class="w-9 h-9 rounded-md | lg:w-12 lg:h-12 lg:rounded-lg overflow-hidden relative bg-primary-600 flex items-center justify-center">
+                                                <div class="text-xl mt-px">
+                                                    P</div>
+                                            </div>
+                                            <div class="leading-tight tracking-tight">
+                                                <div class="text-gray-600 | dark:text-grayDark-100">
+                                                    Papis Camara</div>
                                                 <div
-                                                    class="w-9 h-9 rounded-md | lg:w-12 lg:h-12 lg:rounded-lg overflow-hidden relative bg-primary-600 flex items-center justify-center">
-                                                    <div class="text-xl mt-px">
-                                                        P</div>
-                                                </div>
-                                                <div class="leading-tight tracking-tight">
-                                                    <div class="text-gray-600 | dark:text-grayDark-100">
-                                                        Papis Camara</div>
-                                                    <div
-                                                        class="font-light text-xs | lg:text-sm text-gray-400 | dark:text-grayDark-200">
-                                                        Papis4Business</div>
-                                                </div>
+                                                    class="font-light text-xs | lg:text-sm text-gray-400 | dark:text-grayDark-200">
+                                                    Papis4Business</div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 flex h-auto || swiper-slide">
-                                        <div
-                                            class="bg-gray-50 rounded-2xl w-full flex flex-col items-start justify-between p-6 | lg:rounded-3xl lg:p-10 | dark:bg-grayDark-500">
-                                            <div class="w-full mb-5 | lg:mb-10">
-                                                <div
-                                                    class="mb-5 flex space-x-1 text-gray-600 | lg:mb-10 | dark:text-white">
-                                                    <svg class="w-4 h-4 fill-current" width="18" height="16"
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                                        <path
-                                                            d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
-                                                    </svg>
-                                                    <svg class="w-4 h-4 fill-current" width="18" height="16"
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                                        <path
-                                                            d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
-                                                    </svg>
-                                                    <svg class="w-4 h-4 fill-current" width="18" height="16"
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                                        <path
-                                                            d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
-                                                    </svg>
-                                                    <svg class="w-4 h-4 fill-current" width="18" height="16"
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                                        <path
-                                                            d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
-                                                    </svg>
-                                                    <svg class="w-4 h-4 fill-current" width="18" height="16"
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                                        <path
-                                                            d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
-                                                    </svg>
-                                                </div>
-                                                <div
-                                                    class="leading-7 text-base font-light | lg:text-md | dark:text-grayDark-200">
-                                                    Andy and the team have done a fantastic job of taking my initial
-                                                    brief and creating our brand design into reality which we are all
-                                                    super proud of! Very professional and theta definitely know what
-                                                    they are doing!</div>
+                                </div>
+                                <div class="px-2 | lg:px-3 | xl:px-4 flex h-auto || swiper-slide">
+                                    <div
+                                        class="bg-gray-50 rounded-2xl w-full flex flex-col items-start justify-between p-6 | lg:rounded-3xl lg:p-10 | dark:bg-grayDark-500">
+                                        <div class="w-full mb-5 | lg:mb-10">
+                                            <div
+                                                class="mb-5 flex space-x-1 text-gray-600 | lg:mb-10 | dark:text-white">
+                                                <svg class="w-4 h-4 fill-current" width="18" height="16"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                    <path
+                                                        d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
+                                                </svg>
+                                                <svg class="w-4 h-4 fill-current" width="18" height="16"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                    <path
+                                                        d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
+                                                </svg>
+                                                <svg class="w-4 h-4 fill-current" width="18" height="16"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                    <path
+                                                        d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
+                                                </svg>
+                                                <svg class="w-4 h-4 fill-current" width="18" height="16"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                    <path
+                                                        d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
+                                                </svg>
+                                                <svg class="w-4 h-4 fill-current" width="18" height="16"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                    <path
+                                                        d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
+                                                </svg>
                                             </div>
-                                            <div class="flex items-end space-x-2 | lg:space-x-3">
+                                            <div
+                                                class="leading-7 text-base font-light | lg:text-md | dark:text-grayDark-200">
+                                                Andy and the team have done a fantastic job of taking my initial
+                                                brief and creating our brand design into reality which we are all
+                                                super proud of! Very professional and theta definitely know what
+                                                they are doing!</div>
+                                        </div>
+                                        <div class="flex items-end space-x-2 | lg:space-x-3">
+                                            <div
+                                                class="w-9 h-9 rounded-md | lg:w-12 lg:h-12 lg:rounded-lg overflow-hidden relative bg-primary-600 flex items-center justify-center">
+                                                <div class="text-xl mt-px">
+                                                    A</div>
+                                            </div>
+                                            <div class="leading-tight tracking-tight">
+                                                <div class="text-gray-600 | dark:text-grayDark-100">
+                                                    Adam Sage</div>
                                                 <div
-                                                    class="w-9 h-9 rounded-md | lg:w-12 lg:h-12 lg:rounded-lg overflow-hidden relative bg-primary-600 flex items-center justify-center">
-                                                    <div class="text-xl mt-px">
-                                                        A</div>
-                                                </div>
-                                                <div class="leading-tight tracking-tight">
-                                                    <div class="text-gray-600 | dark:text-grayDark-100">
-                                                        Adam Sage</div>
-                                                    <div
-                                                        class="font-light text-xs | lg:text-sm text-gray-400 | dark:text-grayDark-200">
-                                                        MiChild Nurseries</div>
-                                                </div>
+                                                    class="font-light text-xs | lg:text-sm text-gray-400 | dark:text-grayDark-200">
+                                                    MiChild Nurseries</div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 flex h-auto || swiper-slide">
-                                        <div
-                                            class="bg-gray-50 rounded-2xl w-full flex flex-col items-start justify-between p-6 | lg:rounded-3xl lg:p-10 | dark:bg-grayDark-500">
-                                            <div class="w-full mb-5 | lg:mb-10">
-                                                <div
-                                                    class="mb-5 flex space-x-1 text-gray-600 | lg:mb-10 | dark:text-white">
-                                                    <svg class="w-4 h-4 fill-current" width="18" height="16"
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                                        <path
-                                                            d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
-                                                    </svg>
-                                                    <svg class="w-4 h-4 fill-current" width="18" height="16"
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                                        <path
-                                                            d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
-                                                    </svg>
-                                                    <svg class="w-4 h-4 fill-current" width="18" height="16"
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                                        <path
-                                                            d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
-                                                    </svg>
-                                                    <svg class="w-4 h-4 fill-current" width="18" height="16"
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                                        <path
-                                                            d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
-                                                    </svg>
-                                                    <svg class="w-4 h-4 fill-current" width="18" height="16"
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                                        <path
-                                                            d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
-                                                    </svg>
-                                                </div>
-                                                <div
-                                                    class="leading-7 text-base font-light | lg:text-md | dark:text-grayDark-200">
-                                                    Andy and the team are fantastic to work with. They are creative and
-                                                    responsive and are not afraid to question and challenge. We are
-                                                    still mid project but are extremely happy with their work so far.
-                                                    They are patient, give great advice and have a nice way of telling
-                                                    you when you need to rethink! Would hugely recommend them.</div>
+                                </div>
+                                <div class="px-2 | lg:px-3 | xl:px-4 flex h-auto || swiper-slide">
+                                    <div
+                                        class="bg-gray-50 rounded-2xl w-full flex flex-col items-start justify-between p-6 | lg:rounded-3xl lg:p-10 | dark:bg-grayDark-500">
+                                        <div class="w-full mb-5 | lg:mb-10">
+                                            <div
+                                                class="mb-5 flex space-x-1 text-gray-600 | lg:mb-10 | dark:text-white">
+                                                <svg class="w-4 h-4 fill-current" width="18" height="16"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                    <path
+                                                        d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
+                                                </svg>
+                                                <svg class="w-4 h-4 fill-current" width="18" height="16"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                    <path
+                                                        d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
+                                                </svg>
+                                                <svg class="w-4 h-4 fill-current" width="18" height="16"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                    <path
+                                                        d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
+                                                </svg>
+                                                <svg class="w-4 h-4 fill-current" width="18" height="16"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                    <path
+                                                        d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
+                                                </svg>
+                                                <svg class="w-4 h-4 fill-current" width="18" height="16"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                    <path
+                                                        d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
+                                                </svg>
                                             </div>
-                                            <div class="flex items-end space-x-2 | lg:space-x-3">
+                                            <div
+                                                class="leading-7 text-base font-light | lg:text-md | dark:text-grayDark-200">
+                                                Andy and the team are fantastic to work with. They are creative and
+                                                responsive and are not afraid to question and challenge. We are
+                                                still mid project but are extremely happy with their work so far.
+                                                They are patient, give great advice and have a nice way of telling
+                                                you when you need to rethink! Would hugely recommend them.</div>
+                                        </div>
+                                        <div class="flex items-end space-x-2 | lg:space-x-3">
+                                            <div
+                                                class="w-9 h-9 rounded-md | lg:w-12 lg:h-12 lg:rounded-lg overflow-hidden relative bg-primary-600 flex items-center justify-center">
+                                                <div class="text-xl mt-px">
+                                                    H</div>
+                                            </div>
+                                            <div class="leading-tight tracking-tight">
+                                                <div class="text-gray-600 | dark:text-grayDark-100">
+                                                    Hayley Sampson</div>
                                                 <div
-                                                    class="w-9 h-9 rounded-md | lg:w-12 lg:h-12 lg:rounded-lg overflow-hidden relative bg-primary-600 flex items-center justify-center">
-                                                    <div class="text-xl mt-px">
-                                                        H</div>
-                                                </div>
-                                                <div class="leading-tight tracking-tight">
-                                                    <div class="text-gray-600 | dark:text-grayDark-100">
-                                                        Hayley Sampson</div>
-                                                    <div
-                                                        class="font-light text-xs | lg:text-sm text-gray-400 | dark:text-grayDark-200">
-                                                        Hayley Sampson</div>
-                                                </div>
+                                                    class="font-light text-xs | lg:text-sm text-gray-400 | dark:text-grayDark-200">
+                                                    Hayley Sampson</div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 flex h-auto || swiper-slide">
-                                        <div
-                                            class="bg-gray-50 rounded-2xl w-full flex flex-col items-start justify-between p-6 | lg:rounded-3xl lg:p-10 | dark:bg-grayDark-500">
-                                            <div class="w-full mb-5 | lg:mb-10">
-                                                <div
-                                                    class="mb-5 flex space-x-1 text-gray-600 | lg:mb-10 | dark:text-white">
-                                                    <svg class="w-4 h-4 fill-current" width="18" height="16"
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                                        <path
-                                                            d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
-                                                    </svg>
-                                                    <svg class="w-4 h-4 fill-current" width="18" height="16"
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                                        <path
-                                                            d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
-                                                    </svg>
-                                                    <svg class="w-4 h-4 fill-current" width="18" height="16"
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                                        <path
-                                                            d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
-                                                    </svg>
-                                                    <svg class="w-4 h-4 fill-current" width="18" height="16"
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                                        <path
-                                                            d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
-                                                    </svg>
-                                                    <svg class="w-4 h-4 fill-current" width="18" height="16"
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                                        <path
-                                                            d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
-                                                    </svg>
-                                                </div>
-                                                <div
-                                                    class="leading-7 text-base font-light | lg:text-md | dark:text-grayDark-200">
-                                                    Having just launched our brand new website with Scalify,
-                                                    we&#039;ve already received comments from inbound leads who have
-                                                    said how much they like our website. You can&#039;t get much better
-                                                    feedback then that! They&#039;re a great team to work with, and
-                                                    communication throughout was spot on.</div>
+                                </div>
+                                <div class="px-2 | lg:px-3 | xl:px-4 flex h-auto || swiper-slide">
+                                    <div
+                                        class="bg-gray-50 rounded-2xl w-full flex flex-col items-start justify-between p-6 | lg:rounded-3xl lg:p-10 | dark:bg-grayDark-500">
+                                        <div class="w-full mb-5 | lg:mb-10">
+                                            <div
+                                                class="mb-5 flex space-x-1 text-gray-600 | lg:mb-10 | dark:text-white">
+                                                <svg class="w-4 h-4 fill-current" width="18" height="16"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                    <path
+                                                        d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
+                                                </svg>
+                                                <svg class="w-4 h-4 fill-current" width="18" height="16"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                    <path
+                                                        d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
+                                                </svg>
+                                                <svg class="w-4 h-4 fill-current" width="18" height="16"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                    <path
+                                                        d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
+                                                </svg>
+                                                <svg class="w-4 h-4 fill-current" width="18" height="16"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                    <path
+                                                        d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
+                                                </svg>
+                                                <svg class="w-4 h-4 fill-current" width="18" height="16"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                    <path
+                                                        d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
+                                                </svg>
                                             </div>
-                                            <div class="flex items-end space-x-2 | lg:space-x-3">
+                                            <div
+                                                class="leading-7 text-base font-light | lg:text-md | dark:text-grayDark-200">
+                                                Having just launched our brand new website with Scalify,
+                                                we&#039;ve already received comments from inbound leads who have
+                                                said how much they like our website. You can&#039;t get much better
+                                                feedback then that! They&#039;re a great team to work with, and
+                                                communication throughout was spot on.</div>
+                                        </div>
+                                        <div class="flex items-end space-x-2 | lg:space-x-3">
+                                            <div
+                                                class="w-9 h-9 rounded-md | lg:w-12 lg:h-12 lg:rounded-lg overflow-hidden relative bg-primary-600 flex items-center justify-center">
+                                                <div class="text-xl mt-px">
+                                                    J</div>
+                                            </div>
+                                            <div class="leading-tight tracking-tight">
+                                                <div class="text-gray-600 | dark:text-grayDark-100">
+                                                    Jack Shepherd</div>
                                                 <div
-                                                    class="w-9 h-9 rounded-md | lg:w-12 lg:h-12 lg:rounded-lg overflow-hidden relative bg-primary-600 flex items-center justify-center">
-                                                    <div class="text-xl mt-px">
-                                                        J</div>
-                                                </div>
-                                                <div class="leading-tight tracking-tight">
-                                                    <div class="text-gray-600 | dark:text-grayDark-100">
-                                                        Jack Shepherd</div>
-                                                    <div
-                                                        class="font-light text-xs | lg:text-sm text-gray-400 | dark:text-grayDark-200">
-                                                        The Social Shepherd</div>
-                                                </div>
+                                                    class="font-light text-xs | lg:text-sm text-gray-400 | dark:text-grayDark-200">
+                                                    The Social Shepherd</div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 flex h-auto || swiper-slide">
-                                        <div
-                                            class="bg-gray-50 rounded-2xl w-full flex flex-col items-start justify-between p-6 | lg:rounded-3xl lg:p-10 | dark:bg-grayDark-500">
-                                            <div class="w-full mb-5 | lg:mb-10">
-                                                <div
-                                                    class="mb-5 flex space-x-1 text-gray-600 | lg:mb-10 | dark:text-white">
-                                                    <svg class="w-4 h-4 fill-current" width="18" height="16"
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                                        <path
-                                                            d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
-                                                    </svg>
-                                                    <svg class="w-4 h-4 fill-current" width="18" height="16"
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                                        <path
-                                                            d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
-                                                    </svg>
-                                                    <svg class="w-4 h-4 fill-current" width="18" height="16"
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                                        <path
-                                                            d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
-                                                    </svg>
-                                                    <svg class="w-4 h-4 fill-current" width="18" height="16"
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                                        <path
-                                                            d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
-                                                    </svg>
-                                                    <svg class="w-4 h-4 fill-current" width="18" height="16"
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                                        <path
-                                                            d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
-                                                    </svg>
-                                                </div>
-                                                <div
-                                                    class="leading-7 text-base font-light | lg:text-md | dark:text-grayDark-200">
-                                                    A brilliant design studio that built my website from scratch. They
-                                                    are friendly and approachable, with lots of great ideas that help
-                                                    with the planning and improvement of any project. Highly recommend!
-                                                </div>
+                                </div>
+                                <div class="px-2 | lg:px-3 | xl:px-4 flex h-auto || swiper-slide">
+                                    <div
+                                        class="bg-gray-50 rounded-2xl w-full flex flex-col items-start justify-between p-6 | lg:rounded-3xl lg:p-10 | dark:bg-grayDark-500">
+                                        <div class="w-full mb-5 | lg:mb-10">
+                                            <div
+                                                class="mb-5 flex space-x-1 text-gray-600 | lg:mb-10 | dark:text-white">
+                                                <svg class="w-4 h-4 fill-current" width="18" height="16"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                    <path
+                                                        d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
+                                                </svg>
+                                                <svg class="w-4 h-4 fill-current" width="18" height="16"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                    <path
+                                                        d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
+                                                </svg>
+                                                <svg class="w-4 h-4 fill-current" width="18" height="16"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                    <path
+                                                        d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
+                                                </svg>
+                                                <svg class="w-4 h-4 fill-current" width="18" height="16"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                    <path
+                                                        d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
+                                                </svg>
+                                                <svg class="w-4 h-4 fill-current" width="18" height="16"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                    <path
+                                                        d="M288.1 0l86.5 164 182.7 31.6L428 328.5 454.4 512l-166.3-81.8L121.7 512l26.4-183.5L18.9 195.6 201.5 164 288.1 0z" />
+                                                </svg>
                                             </div>
-                                            <div class="flex items-end space-x-2 | lg:space-x-3">
+                                            <div
+                                                class="leading-7 text-base font-light | lg:text-md | dark:text-grayDark-200">
+                                                A brilliant design studio that built my website from scratch. They
+                                                are friendly and approachable, with lots of great ideas that help
+                                                with the planning and improvement of any project. Highly recommend!
+                                            </div>
+                                        </div>
+                                        <div class="flex items-end space-x-2 | lg:space-x-3">
+                                            <div
+                                                class="w-9 h-9 rounded-md | lg:w-12 lg:h-12 lg:rounded-lg overflow-hidden relative bg-primary-600 flex items-center justify-center">
+                                                <div class="text-xl mt-px">
+                                                    J</div>
+                                            </div>
+                                            <div class="leading-tight tracking-tight">
+                                                <div class="text-gray-600 | dark:text-grayDark-100">
+                                                    Joe Wood</div>
                                                 <div
-                                                    class="w-9 h-9 rounded-md | lg:w-12 lg:h-12 lg:rounded-lg overflow-hidden relative bg-primary-600 flex items-center justify-center">
-                                                    <div class="text-xl mt-px">
-                                                        J</div>
-                                                </div>
-                                                <div class="leading-tight tracking-tight">
-                                                    <div class="text-gray-600 | dark:text-grayDark-100">
-                                                        Joe Wood</div>
-                                                    <div
-                                                        class="font-light text-xs | lg:text-sm text-gray-400 | dark:text-grayDark-200">
-                                                        Wiseup Networks</div>
-                                                </div>
+                                                    class="font-light text-xs | lg:text-sm text-gray-400 | dark:text-grayDark-200">
+                                                    Wiseup Networks</div>
                                             </div>
                                         </div>
                                     </div>
@@ -3617,86 +3507,86 @@ sm:max-w-sm | lg:max-w-none
                 </div>
             </div>
         </div>
-        <div id="422915"></div>
-        <div class="w-full pb-20 | lg:pb-24 | 2xl:pb-32 | 4xl:pb-40">
-            <div class="px-2 | sm:px-6 | xl:px-12 | 2xl:px-20 | 3xl:px-40 | 4xl:px-60">
-                <div class="w-full flex lg:justify-between flex-col | lg:flex-row" x-data>
-                    <div class="px-2 | lg:px-3 | xl:px-4 relative w-full mb-10  inline-flex | lg:mb-0 lg:w-8/16">
-                        <div class="w-full relative aspect-ratio-1/1 | md:aspect-ratio-16/9 | lg:pb-0 lg:h-full">
-                            <div
-                                class="bg-white rounded-tl-2xl absolute bottom-0 right-0 z-20 w-32 h-14 | lg:rounded-tl-3xl lg:h-20 | dark:bg-grayDark-600">
-                                <svg id="Layer_1"
-                                    class="w-10 h-10 | lg:w-12 lg:h-12 text-white fill-current absolute top-px -right-px transform -translate-y-full rotate-180 dark:text-grayDark-600"
-                                    version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 100 100"
-                                    xml:space="preserve">
-                                    <path d="M51.9 0v1.9c-27.6 0-50 22.4-50 50H0V0h51.9z" />
-                                </svg><svg id="Layer_1"
-                                    class="w-10 h-10 | lg:w-12 lg:h-12 text-white fill-current absolute -bottom-px left-px transform -translate-x-full rotate-180 dark:text-grayDark-600"
-                                    version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 100 100"
-                                    xml:space="preserve">
-                                    <path d="M51.9 0v1.9c-27.6 0-50 22.4-50 50H0V0h51.9z" />
-                                </svg>
-                            </div>
-                            <div
-                                class="w-full h-full rounded-2xl transform-gpu overflow-hidden absolute top-0 left-0 bg-gray-50 | dark:bg-grayDark-500 | lg:rounded-3xl">
-                                <picture>
-                                    <source type="image/webp"
-                                        srcset="<?php echo BASE_URL . 'assets/images/work_culture.jpeg'; ?>?w=400&amp;h=300&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143449&amp;s=140822e688c006ab145e4d32aa5097a5 400w, <?php echo BASE_URL . 'assets/images/work_culture.jpeg'; ?>?w=800&amp;h=600&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143449&amp;s=c938c2596f87cc0dc499f2dbcf1438b9 800w, <?php echo BASE_URL . 'assets/images/work_culture.jpeg'; ?>?w=1200&amp;h=900&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143449&amp;s=411b4c6b25daf8dce6a23d707aa21458 1200w"
-                                        sizes="100vw">
-                                    <img src="<?php echo BASE_URL . 'assets/images/work_culture.jpeg'; ?>?w=400&amp;h=300&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143449&amp;s=140822e688c006ab145e4d32aa5097a5"
-                                        srcset="<?php echo BASE_URL . 'assets/images/work_culture.jpeg'; ?>?w=400&amp;h=300&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143449&amp;s=f9fc8ed3820083e6745a5e2ad8dcc4df 400w, <?php echo BASE_URL . 'assets/images/work_culture.jpeg'; ?>?w=800&amp;h=600&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143449&amp;s=2f5c29358bb8de66d802ee9af5343cda 800w, <?php echo BASE_URL . 'assets/images/work_culture.jpeg'; ?>?w=1200&amp;h=900&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143449&amp;s=041f41cc22c90891d62f6383e6330ce5 1200w"
-                                        sizes="100vw" alt="Shape April 2022 HR 48"
-                                        class=" w-full   object-cover absolute top-0 left-0 w-full h-full"
-                                        loading="lazy" width="1200" height="900">
-                                </picture>
-                            </div>
+    </div>
+    <div id="422915"></div>
+    <div class="w-full pb-20 | lg:pb-24 | 2xl:pb-32 | 4xl:pb-40">
+        <div class="px-2 | sm:px-6 | xl:px-12 | 2xl:px-20 | 3xl:px-40 | 4xl:px-60">
+            <div class="w-full flex lg:justify-between flex-col | lg:flex-row" x-data>
+                <div class="px-2 | lg:px-3 | xl:px-4 relative w-full mb-10  inline-flex | lg:mb-0 lg:w-8/16">
+                    <div class="w-full relative aspect-ratio-1/1 | md:aspect-ratio-16/9 | lg:pb-0 lg:h-full">
+                        <div
+                            class="bg-white rounded-tl-2xl absolute bottom-0 right-0 z-20 w-32 h-14 | lg:rounded-tl-3xl lg:h-20 | dark:bg-grayDark-600">
+                            <svg id="Layer_1"
+                                class="w-10 h-10 | lg:w-12 lg:h-12 text-white fill-current absolute top-px -right-px transform -translate-y-full rotate-180 dark:text-grayDark-600"
+                                version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 100 100"
+                                xml:space="preserve">
+                                <path d="M51.9 0v1.9c-27.6 0-50 22.4-50 50H0V0h51.9z" />
+                            </svg><svg id="Layer_1"
+                                class="w-10 h-10 | lg:w-12 lg:h-12 text-white fill-current absolute -bottom-px left-px transform -translate-x-full rotate-180 dark:text-grayDark-600"
+                                version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 100 100"
+                                xml:space="preserve">
+                                <path d="M51.9 0v1.9c-27.6 0-50 22.4-50 50H0V0h51.9z" />
+                            </svg>
+                        </div>
+                        <div
+                            class="w-full h-full rounded-2xl transform-gpu overflow-hidden absolute top-0 left-0 bg-gray-50 | dark:bg-grayDark-500 | lg:rounded-3xl">
+                            <picture>
+                                <source type="image/webp"
+                                    srcset="<?php echo BASE_URL . 'assets/images/work_culture.jpeg'; ?>?w=400&amp;h=300&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143449&amp;s=140822e688c006ab145e4d32aa5097a5 400w, <?php echo BASE_URL . 'assets/images/work_culture.jpeg'; ?>?w=800&amp;h=600&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143449&amp;s=c938c2596f87cc0dc499f2dbcf1438b9 800w, <?php echo BASE_URL . 'assets/images/work_culture.jpeg'; ?>?w=1200&amp;h=900&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143449&amp;s=411b4c6b25daf8dce6a23d707aa21458 1200w"
+                                    sizes="100vw">
+                                <img src="<?php echo BASE_URL . 'assets/images/work_culture.jpeg'; ?>?w=400&amp;h=300&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143449&amp;s=140822e688c006ab145e4d32aa5097a5"
+                                    srcset="<?php echo BASE_URL . 'assets/images/work_culture.jpeg'; ?>?w=400&amp;h=300&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143449&amp;s=f9fc8ed3820083e6745a5e2ad8dcc4df 400w, <?php echo BASE_URL . 'assets/images/work_culture.jpeg'; ?>?w=800&amp;h=600&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143449&amp;s=2f5c29358bb8de66d802ee9af5343cda 800w, <?php echo BASE_URL . 'assets/images/work_culture.jpeg'; ?>?w=1200&amp;h=900&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143449&amp;s=041f41cc22c90891d62f6383e6330ce5 1200w"
+                                    sizes="100vw" alt="Shape April 2022 HR 48"
+                                    class=" w-full   object-cover absolute top-0 left-0 w-full h-full"
+                                    loading="lazy" width="1200" height="900">
+                            </picture>
                         </div>
                     </div>
-                    <div
-                        class="px-2 | lg:px-3 | xl:px-4 inline-flex items-center w-full | lg:min-h-140 lg:justify-center lg:w-8/16 lg:py-20 | 3xl:min-h-160 |  4xl:w-7/16">
-                        <div class="w-full space-y-8 | lg:max-w-xl | 4xl:max-w-3xl">
-                            <div class="flex flex-col space-y-3 | lg:space-y-5 items-start">
-                                <div class="inline-flex items-center space-x-2  ">
-                                    <div class="bg-gray-600 | dark:bg-grayDark-100 w-1.5 h-1.5 rounded-full"></div>
-                                    <div
-                                        class="font-light text-sm | lg:text-base text-gray-600 | dark:text-grayDark-100">
-                                        Our Culture</div>
-                                </div>
-                                <h2 class="
+                </div>
+                <div
+                    class="px-2 | lg:px-3 | xl:px-4 inline-flex items-center w-full | lg:min-h-140 lg:justify-center lg:w-8/16 lg:py-20 | 3xl:min-h-160 |  4xl:w-7/16">
+                    <div class="w-full space-y-8 | lg:max-w-xl | 4xl:max-w-3xl">
+                        <div class="flex flex-col space-y-3 | lg:space-y-5 items-start">
+                            <div class="inline-flex items-center space-x-2  ">
+                                <div class="bg-gray-600 | dark:bg-grayDark-100 w-1.5 h-1.5 rounded-full"></div>
+                                <div
+                                    class="font-light text-sm | lg:text-base text-gray-600 | dark:text-grayDark-100">
+                                    Our Culture</div>
+                            </div>
+                            <h2 class="
 text-xl | md:text-2-5xl | xl:text-3xl | 4xl:text-4xl
 font-sans-primary tracking-tight
 text-gray-600  | dark:text-grayDark-100
 leading-none
 text-balance
-">We’ve created an space where everyone feels comfortable, open to share, and can have fun along the way.</h2>
-                            </div>
-                            <div class="w-full relative ">
-                                <p
-                                    class="text-base | xl:text-md text-gray-600 dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7  mb-6">
-                                    We create meaningful work for great people, ensuring both our team and clients enjoy the process.
-                                    This approach builds lasting relationships and brings new opportunities through referrals and repeat business.</p>
-                            </div>
-                            <div class="w-full relative">
-                                <div class="w-full bg-primary-600 rounded-2xl relative">
-                                    <svg class="text-gray-600 fill-current absolute top-0 left-0 w-5 h-5 m-6"
-                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 11" fill="none">
-                                        <path
-                                            d="M0 6.646C0 3.107 2.531 1.002 4.11.032c.2-.123.416.133.262.312A8.202 8.202 0 002.92 2.777 4.023 4.023 0 110 6.647zm8.955 0c0-3.539 2.531-5.644 4.11-6.613.2-.123.416.132.263.31a8.202 8.202 0 00-1.454 2.434 4.023 4.023 0 11-2.92 3.87z" />
-                                    </svg>
-                                    <div class="
+">We’ve created a space where everyone feels comfortable, open to share, and can have fun along the way.</h2>
+                        </div>
+                        <div class="w-full relative ">
+                            <p
+                                class="text-base | xl:text-md text-gray-600 dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7  mb-6">
+                                We create meaningful work for great people, ensuring both our team and clients enjoy the process.
+                                This approach builds lasting relationships and brings new opportunities through referrals and repeat business.</p>
+                        </div>
+                        <div class="w-full relative">
+                            <div class="w-full bg-primary-600 rounded-2xl relative">
+                                <svg class="text-gray-600 fill-current absolute top-0 left-0 w-5 h-5 m-6"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 11" fill="none">
+                                    <path
+                                        d="M0 6.646C0 3.107 2.531 1.002 4.11.032c.2-.123.416.133.262.312A8.202 8.202 0 002.92 2.777 4.023 4.023 0 110 6.647zm8.955 0c0-3.539 2.531-5.644 4.11-6.613.2-.123.416.132.263.31a8.202 8.202 0 00-1.454 2.434 4.023 4.023 0 11-2.92 3.87z" />
+                                </svg>
+                                <div class="
 text-lg | md:text-xl | 4xl:text-1xl
 font-sans-primary tracking-tight
 text-gray-600
 leading-tighter
 text-pretty
 indent-14 p-6
-">My vision has always been to look after the clients we work with, but to also look after the staff just as much. That
-                                        will get the best results for everyone.</div>
-                                    <div
-                                        class="w-full flex flex-col items-start | lg:flex-row lg:justify-end lg:items-end">
-                                        <div class="flex-shrink-0 px-6 pb-4 | lg:flex-1">
-                                            <div class="flex items-end space-x-2 | lg:space-x-3">
-                                                <!-- <div
+">The brands that scale don’t get lucky they build systems. Scalify bridges the gap between a great product and a great business.</div>
+                                <div
+                                    class="w-full flex flex-col items-start | lg:flex-row lg:justify-end lg:items-end">
+                                    <div class="flex-shrink-0 px-6 pb-4 | lg:flex-1">
+                                        <div class="flex items-end space-x-2 | lg:space-x-3">
+                                            <!-- <div
                                                     class="w-9 h-9 rounded-md | lg:w-12 lg:h-12 lg:rounded-lg inline-flex overflow-hidden relative">
                                                     <div class="relative overflow-hidden w-full"
                                                         style="padding-top: 100%;">
@@ -3712,51 +3602,51 @@ indent-14 p-6
                                                         </picture>
                                                     </div>
                                                 </div> -->
-                                                <div class="leading-tight tracking-tight">
-                                                    <div class="text-gray-600 | dark:text-grayDark-600">
-                                                        By Team</div>
-                                                    <div
-                                                        class="font-light text-xs | lg:text-sm text-gray-400 | dark:text-grayDark-300">
-                                                        Scalify</div>
-                                                </div>
+                                            <div class="leading-tight tracking-tight">
+                                                <div class="text-gray-600 | dark:text-grayDark-600">
+                                                    Co-Founder</div>
+                                                <div
+                                                    class="font-light text-xs | lg:text-sm text-gray-400 | dark:text-grayDark-300">
+                                                    Scalify</div>
                                             </div>
                                         </div>
-                                        <div
-                                            class="bg-white pl-3 items-end justify-end relative rounded-tl-2xl flex-1 inline-flex w-24 pt-10 -mt-8 ml-auto | lg:w-auto lg:pt-3 lg:flex-none lg:rounded-tl-3xl lg:mt-0 lg:h-auto lg:ml-0 | dark:bg-grayDark-600">
-                                            <svg id="Layer_1"
-                                                class="w-8 h-8 | lg:w-10 lg:h-10 text-white fill-current absolute -bottom-px left-px transform -translate-x-full rotate-180 dark:text-grayDark-600"
-                                                version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
-                                                viewBox="0 0 100 100" xml:space="preserve">
-                                                <path d="M51.9 0v1.9c-27.6 0-50 22.4-50 50H0V0h51.9z" />
-                                            </svg><svg id="Layer_1"
-                                                class="w-8 h-8 | lg:w-10 lg:h-10 text-white fill-current absolute top-px -right-px transform -translate-y-full rotate-180 dark:text-grayDark-600"
-                                                version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
-                                                viewBox="0 0 100 100" xml:space="preserve">
-                                                <path d="M51.9 0v1.9c-27.6 0-50 22.4-50 50H0V0h51.9z" />
-                                            </svg>
-                                            <div class="w-full hidden | lg:block">
-                                                <div class="relative group inline-flex items-center"
-                                                    x-data="{ hover: false }" x-on:mouseenter="hover = true"
-                                                    x-on:mouseleave="hover = false">
-                                                    <svg width="0" height="0" class="absolute hidden"
-                                                        color-interpolation-filters="sRGB">
-                                                        <defs>
-                                                            <filter id="buttonFilter">
-                                                                <feGaussianBlur in="SourceGraphic" stdDeviation="5"
-                                                                    result="blur" />
-                                                                <feColorMatrix in="blur" mode="matrix"
-                                                                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
-                                                                    result="buttonFilter" />
-                                                                <feComposite in="SourceGraphic" in2="buttonFilter"
-                                                                    operator="atop" />
-                                                                <feBlend in="SourceGraphic" in2="buttonFilter" />
-                                                            </filter>
-                                                        </defs>
-                                                    </svg>
-                                                    <a href="/culture/"
-                                                        class="inline-flex relative group outline-none  | focus:outline-none "
-                                                        style="filter: url(#buttonFilter);">
-                                                        <div class="
+                                    </div>
+                                    <div
+                                        class="bg-white pl-3 items-end justify-end relative rounded-tl-2xl flex-1 inline-flex w-24 pt-10 -mt-8 ml-auto | lg:w-auto lg:pt-3 lg:flex-none lg:rounded-tl-3xl lg:mt-0 lg:h-auto lg:ml-0 | dark:bg-grayDark-600">
+                                        <svg id="Layer_1"
+                                            class="w-8 h-8 | lg:w-10 lg:h-10 text-white fill-current absolute -bottom-px left-px transform -translate-x-full rotate-180 dark:text-grayDark-600"
+                                            version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
+                                            viewBox="0 0 100 100" xml:space="preserve">
+                                            <path d="M51.9 0v1.9c-27.6 0-50 22.4-50 50H0V0h51.9z" />
+                                        </svg><svg id="Layer_1"
+                                            class="w-8 h-8 | lg:w-10 lg:h-10 text-white fill-current absolute top-px -right-px transform -translate-y-full rotate-180 dark:text-grayDark-600"
+                                            version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
+                                            viewBox="0 0 100 100" xml:space="preserve">
+                                            <path d="M51.9 0v1.9c-27.6 0-50 22.4-50 50H0V0h51.9z" />
+                                        </svg>
+                                        <div class="w-full hidden | lg:block">
+                                            <div class="relative group inline-flex items-center"
+                                                x-data="{ hover: false }" x-on:mouseenter="hover = true"
+                                                x-on:mouseleave="hover = false">
+                                                <svg width="0" height="0" class="absolute hidden"
+                                                    color-interpolation-filters="sRGB">
+                                                    <defs>
+                                                        <filter id="buttonFilter">
+                                                            <feGaussianBlur in="SourceGraphic" stdDeviation="5"
+                                                                result="blur" />
+                                                            <feColorMatrix in="blur" mode="matrix"
+                                                                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                                                                result="buttonFilter" />
+                                                            <feComposite in="SourceGraphic" in2="buttonFilter"
+                                                                operator="atop" />
+                                                            <feBlend in="SourceGraphic" in2="buttonFilter" />
+                                                        </filter>
+                                                    </defs>
+                                                </svg>
+                                                <a href="/culture/"
+                                                    class="inline-flex relative group outline-none  | focus:outline-none "
+                                                    style="filter: url(#buttonFilter);">
+                                                    <div class="
 w-auto
 inline-flex
 items-center
@@ -3768,37 +3658,36 @@ overflow-hidden
 rounded-full
 border-default
 bg-gray-600 text-white | dark:bg-grayDark-400 dark:text-grayDark-100 py-2 px-5">
-                                                            <div class="relative inline-flex top-px flex-shrink-0">
-                                                                <div>
-                                                                    Learn about our culture</div>
-                                                            </div>
+                                                        <div class="relative inline-flex top-px flex-shrink-0">
+                                                            <div>
+                                                                Learn about our culture</div>
                                                         </div>
-                                                        <div
-                                                            class="bg-gray-600 | dark:bg-grayDark-400 flex-shrink-0 overflow-hidden flex items-center justify-center -ml-1 rounded-full transform transition-transform | w-9 h-9 | xl:group-hover:translate-x-3  xl:group-hover:rotate-45 | js-button-icon">
-                                                        </div>
-                                                    </a>
+                                                    </div>
                                                     <div
-                                                        class="w-9 h-9 absolute top-0 right-0 flex items-center justify-center z-20 transition-transform transform w-9 h-9 | xl:group-hover:translate-x-3  xl:group-hover:rotate-45 || js-button-arrow">
+                                                        class="bg-gray-600 | dark:bg-grayDark-400 flex-shrink-0 overflow-hidden flex items-center justify-center -ml-1 rounded-full transform transition-transform | w-9 h-9 | xl:group-hover:translate-x-3  xl:group-hover:rotate-45 | js-button-icon">
+                                                    </div>
+                                                </a>
+                                                <div
+                                                    class="w-9 h-9 absolute top-0 right-0 flex items-center justify-center z-20 transition-transform transform w-9 h-9 | xl:group-hover:translate-x-3  xl:group-hover:rotate-45 || js-button-arrow">
+                                                    <div
+                                                        class="relative overflow-hidden text-white | dark:text-grayDark-100">
                                                         <div
-                                                            class="relative overflow-hidden text-white | dark:text-grayDark-100">
-                                                            <div
-                                                                class="relative top-0 left-0 transition-transform transform || js-button-arrow-icon-primary ">
-                                                                <svg class="w-3 h-3 fill-current"
-                                                                    xmlns="http://www.w3.org/2000/svg"
-                                                                    viewBox="0 0 384 512">
-                                                                    <path
-                                                                        d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z" />
-                                                                </svg>
-                                                            </div>
-                                                            <div
-                                                                class="absolute top-0 left-0 transition-transform transform translate-y-full -translate-x-full || js-button-arrow-icon-secondary ">
-                                                                <svg class="w-3 h-3 fill-current"
-                                                                    xmlns="http://www.w3.org/2000/svg"
-                                                                    viewBox="0 0 384 512">
-                                                                    <path
-                                                                        d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z" />
-                                                                </svg>
-                                                            </div>
+                                                            class="relative top-0 left-0 transition-transform transform || js-button-arrow-icon-primary ">
+                                                            <svg class="w-3 h-3 fill-current"
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                viewBox="0 0 384 512">
+                                                                <path
+                                                                    d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z" />
+                                                            </svg>
+                                                        </div>
+                                                        <div
+                                                            class="absolute top-0 left-0 transition-transform transform translate-y-full -translate-x-full || js-button-arrow-icon-secondary ">
+                                                            <svg class="w-3 h-3 fill-current"
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                viewBox="0 0 384 512">
+                                                                <path
+                                                                    d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z" />
+                                                            </svg>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -3806,27 +3695,28 @@ bg-gray-600 text-white | dark:bg-grayDark-400 dark:text-grayDark-100 py-2 px-5">
                                         </div>
                                     </div>
                                 </div>
-                                <div class="w-full mt-3 | lg:hidden">
-                                    <div class="relative group inline-flex items-center" x-data="{ hover: false }"
-                                        x-on:mouseenter="hover = true" x-on:mouseleave="hover = false">
-                                        <svg width="0" height="0" class="absolute hidden"
-                                            color-interpolation-filters="sRGB">
-                                            <defs>
-                                                <filter id="buttonFilter">
-                                                    <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
-                                                    <feColorMatrix in="blur" mode="matrix"
-                                                        values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
-                                                        result="buttonFilter" />
-                                                    <feComposite in="SourceGraphic" in2="buttonFilter"
-                                                        operator="atop" />
-                                                    <feBlend in="SourceGraphic" in2="buttonFilter" />
-                                                </filter>
-                                            </defs>
-                                        </svg>
-                                        <a href="/culture/"
-                                            class="inline-flex relative group outline-none  | focus:outline-none "
-                                            style="filter: url(#buttonFilter);">
-                                            <div class="
+                            </div>
+                            <div class="w-full mt-3 | lg:hidden">
+                                <div class="relative group inline-flex items-center" x-data="{ hover: false }"
+                                    x-on:mouseenter="hover = true" x-on:mouseleave="hover = false">
+                                    <svg width="0" height="0" class="absolute hidden"
+                                        color-interpolation-filters="sRGB">
+                                        <defs>
+                                            <filter id="buttonFilter">
+                                                <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+                                                <feColorMatrix in="blur" mode="matrix"
+                                                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                                                    result="buttonFilter" />
+                                                <feComposite in="SourceGraphic" in2="buttonFilter"
+                                                    operator="atop" />
+                                                <feBlend in="SourceGraphic" in2="buttonFilter" />
+                                            </filter>
+                                        </defs>
+                                    </svg>
+                                    <a href="/culture/"
+                                        class="inline-flex relative group outline-none  | focus:outline-none "
+                                        style="filter: url(#buttonFilter);">
+                                        <div class="
 w-auto
 inline-flex
 items-center
@@ -3838,34 +3728,33 @@ overflow-hidden
 rounded-full
 border-default
 bg-gray-600 text-white | dark:bg-grayDark-400 dark:text-grayDark-100 py-2 px-5">
-                                                <div class="relative inline-flex top-px flex-shrink-0">
-                                                    <div>
-                                                        Learn about our culture</div>
-                                                </div>
+                                            <div class="relative inline-flex top-px flex-shrink-0">
+                                                <div>
+                                                    Learn about our culture</div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="bg-gray-600 | dark:bg-grayDark-400 flex-shrink-0 overflow-hidden flex items-center justify-center -ml-1 rounded-full transform transition-transform | w-9 h-9 | xl:group-hover:translate-x-3  xl:group-hover:rotate-45 | js-button-icon">
+                                        </div>
+                                    </a>
+                                    <div
+                                        class="w-9 h-9 absolute top-0 right-0 flex items-center justify-center z-20 transition-transform transform w-9 h-9 | xl:group-hover:translate-x-3  xl:group-hover:rotate-45 || js-button-arrow">
+                                        <div class="relative overflow-hidden text-white | dark:text-grayDark-100">
+                                            <div
+                                                class="relative top-0 left-0 transition-transform transform || js-button-arrow-icon-primary ">
+                                                <svg class="w-3 h-3 fill-current" xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 384 512">
+                                                    <path
+                                                        d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z" />
+                                                </svg>
                                             </div>
                                             <div
-                                                class="bg-gray-600 | dark:bg-grayDark-400 flex-shrink-0 overflow-hidden flex items-center justify-center -ml-1 rounded-full transform transition-transform | w-9 h-9 | xl:group-hover:translate-x-3  xl:group-hover:rotate-45 | js-button-icon">
-                                            </div>
-                                        </a>
-                                        <div
-                                            class="w-9 h-9 absolute top-0 right-0 flex items-center justify-center z-20 transition-transform transform w-9 h-9 | xl:group-hover:translate-x-3  xl:group-hover:rotate-45 || js-button-arrow">
-                                            <div class="relative overflow-hidden text-white | dark:text-grayDark-100">
-                                                <div
-                                                    class="relative top-0 left-0 transition-transform transform || js-button-arrow-icon-primary ">
-                                                    <svg class="w-3 h-3 fill-current" xmlns="http://www.w3.org/2000/svg"
-                                                        viewBox="0 0 384 512">
-                                                        <path
-                                                            d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z" />
-                                                    </svg>
-                                                </div>
-                                                <div
-                                                    class="absolute top-0 left-0 transition-transform transform translate-y-full -translate-x-full || js-button-arrow-icon-secondary ">
-                                                    <svg class="w-3 h-3 fill-current" xmlns="http://www.w3.org/2000/svg"
-                                                        viewBox="0 0 384 512">
-                                                        <path
-                                                            d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z" />
-                                                    </svg>
-                                                </div>
+                                                class="absolute top-0 left-0 transition-transform transform translate-y-full -translate-x-full || js-button-arrow-icon-secondary ">
+                                                <svg class="w-3 h-3 fill-current" xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 384 512">
+                                                    <path
+                                                        d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z" />
+                                                </svg>
                                             </div>
                                         </div>
                                     </div>
@@ -3876,8 +3765,9 @@ bg-gray-600 text-white | dark:bg-grayDark-400 dark:text-grayDark-100 py-2 px-5">
                 </div>
             </div>
         </div>
-        <!-- <div id="260625"></div> -->
-        <!-- <div x-data="headingImageCarousel" x-init="carousel('260625')">
+    </div>
+    <!-- <div id="260625"></div> -->
+    <!-- <div x-data="headingImageCarousel" x-init="carousel('260625')">
             <div class="w-full pb-20 | lg:pb-24 | 2xl:pb-32 | 4xl:pb-40">
                 <div class="px-0">
                     <div class="w-full flex flex-wrap">
@@ -4493,7 +4383,7 @@ bg-primary-600 text-gray-600 py-2 px-5">
                 </div>
             </div>
         </div> -->
-        <!-- <div id="195"></div>
+    <!-- <div id="195"></div>
         <div x-data="pageLinksCarousel" x-init="carousel('195')">
             <div class="w-full pb-20 | lg:pb-24 | 2xl:pb-32 | 4xl:pb-40">
                 <div class="pl-2 | sm:pl-6 | xl:pl-12 | 2xl:pl-20 | 3xl:pl-40 | 4xl:pl-60">
@@ -5213,2232 +5103,1567 @@ pr-8 mb-5 | lg:pr-16
             </div>
         </div>
     </div> -->
-        <?php include './elements/footer.php'; ?>
+    <?php include './elements/footer.php'; ?>
 
-        <script type="application/ld+json">
-            {
-                "@context": "http://schema.org",
-                "@graph": [{
-                    "@type": "CreativeWork",
-                    "author": {
-                        "@id": "https://madebyshape.co.uk/#identity"
-                    },
-                    "copyrightHolder": {
-                        "@id": "https://madebyshape.co.uk/#identity"
-                    },
-                    "copyrightYear": "2018",
-                    "creator": {
-                        "@id": "https://madebyshape.co.uk/#creator"
-                    },
-                    "dateModified": "2024-11-04T07:45:13+00:00",
-                    "datePublished": "2018-07-26T15:00:00+01:00",
-                    "description": "Scalify are a full service Creative and Digital Design Agency based in Abu Dhabi with an outstanding reputation for quality for Branding & Web Design",
-                    "headline": "About Digital Agency Abu Dhabi",
-                    "image": {
-                        "@type": "ImageObject",
-                        "url": "https://made-byshape.transforms.svdcdn.com/production/uploads/images/Open-Graph/madebyshape-home.jpg?w=1200&h=630&q=82&auto=format&fit=crop&dm=1722518913&s=e456c7a65aa7feded9f0be73391573f6"
-                    },
-                    "inLanguage": "en-gb",
-                    "mainEntityOfPage": "https://madebyshape.co.uk/about/",
-                    "name": "About Digital Agency Abu Dhabi",
-                    "publisher": {
-                        "@id": "https://madebyshape.co.uk/#creator"
-                    },
-                    "url": "https://madebyshape.co.uk/about/"
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@graph": [{
+                "@type": "CreativeWork",
+                "author": {
+                    "@id": "https://madebyshape.co.uk/#identity"
+                },
+                "copyrightHolder": {
+                    "@id": "https://madebyshape.co.uk/#identity"
+                },
+                "copyrightYear": "2018",
+                "creator": {
+                    "@id": "https://madebyshape.co.uk/#creator"
+                },
+                "dateModified": "2024-11-04T07:45:13+00:00",
+                "datePublished": "2018-07-26T15:00:00+01:00",
+                "description": "Scalify are a full service Creative and Digital Design Agency based in Abu Dhabi with an outstanding reputation for quality for Branding & Web Design",
+                "headline": "About Digital Agency Abu Dhabi",
+                "image": {
+                    "@type": "ImageObject",
+                    "url": "https://made-byshape.transforms.svdcdn.com/production/uploads/images/Open-Graph/madebyshape-home.jpg?w=1200&h=630&q=82&auto=format&fit=crop&dm=1722518913&s=e456c7a65aa7feded9f0be73391573f6"
+                },
+                "inLanguage": "en-gb",
+                "mainEntityOfPage": "https://madebyshape.co.uk/about/",
+                "name": "About Digital Agency Abu Dhabi",
+                "publisher": {
+                    "@id": "https://madebyshape.co.uk/#creator"
+                },
+                "url": "https://madebyshape.co.uk/about/"
+            }, {
+                "@id": "https://madebyshape.co.uk/#identity",
+                "@type": "ProfessionalService",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressCountry": "United Kingdom",
+                    "addressLocality": "Atherton",
+                    "addressRegion": "Abbu Dhabi",
+                    "postalCode": "00000",
+                    "streetAddress": "In5 Tech, Dubai Internet City, Dubai"
+                },
+                "alternateName": "Shape",
+                "description": "An award-winning Web Design Agency in Abbu Dhabi who specialise in Website Design, Craft CMS Web Development, eCommerce and Organic SEO.",
+                "email": "sales@scalify.ae",
+                "founder": "Justin",
+                "foundingDate": "2024-03-01",
+                "foundingLocation": "Abu Dhabi",
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": "53.530291",
+                    "longitude": "-2.504812"
+                },
+                "image": {
+                    "@type": "ImageObject",
+                    "height": "950",
+                    "url": "https://assets.madebyshape.co.uk/craft3-uploads/images/logos/Scalify-icon.jpg",
+                    "width": "950"
+                },
+                "logo": {
+                    "@type": "ImageObject",
+                    "height": "60",
+                    "url": "https://made-byshape.transforms.svdcdn.com/production/uploads/images/logos/Scalify-icon.jpg?w=600&h=60&q=82&fm=png&fit=clip&dm=1597751408&s=1e444e7b3ed4ee85c39ad329e3875b5c",
+                    "width": "60"
+                },
+                "name": "Scalify",
+                "priceRange": "$$",
+                "sameAs": ["https://www.linkedin.com/company/madebyshape/mycompany/",
+                    "https://twitter.com/madebyshape", "https://github.com/madebyshape/",
+                    "https://instagram.com/madebyshape", "https://www.behance.net/madebyshape"
+                ],
+                "telephone": "01942 894596",
+                "url": "https://madebyshape.co.uk/"
+            }, {
+                "@id": "https://madebyshape.co.uk/#creator",
+                "@type": "ProfessionalService",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressCountry": "United Kingdom",
+                    "addressLocality": "Atherton",
+                    "addressRegion": "Abbu Dhabi",
+                    "postalCode": "00000",
+                    "streetAddress": "In5 Tech, Dubai Internet City, Dubai"
+                },
+                "alternateName": "Scalify",
+                "description": "An award-winning Web Design Agency based in Abu Dhabi who also offer eCommerce and Organic SEO. We are a Digital Studio with Industry Experience.",
+                "email": "sales@scalify.ae",
+                "founder": "Justin",
+                "foundingDate": "2024-03-01",
+                "foundingLocation": "Abu Dhabi",
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": "53.530258",
+                    "longitude": "-2.50471"
+                },
+                "image": {
+                    "@type": "ImageObject",
+                    "height": "950",
+                    "url": "http://madebyshape.madebyshape.io/uploads/images/Scalify-icon.jpg",
+                    "width": "950"
+                },
+                "logo": {
+                    "@type": "ImageObject",
+                    "height": "60",
+                    "url": "https://made-byshape.transforms.svdcdn.com/production/uploads/images/Scalify-icon.jpg?w=600&h=60&q=82&fm=png&fit=clip&dm=1597751384&s=2f0ce55335397fde8d8b489cc721e250",
+                    "width": "60"
+                },
+                "name": "Scalify",
+                "priceRange": "$$$",
+                "telephone": "01942 894596",
+                "url": "https://madebyshape.co.uk/"
+            }, {
+                "@type": "BreadcrumbList",
+                "description": "Breadcrumbs list",
+                "itemListElement": [{
+                    "@type": "ListItem",
+                    "item": "https://madebyshape.co.uk/",
+                    "name": "Home",
+                    "position": 1
                 }, {
-                    "@id": "https://madebyshape.co.uk/#identity",
-                    "@type": "ProfessionalService",
-                    "address": {
-                        "@type": "PostalAddress",
-                        "addressCountry": "United Kingdom",
-                        "addressLocality": "Atherton",
-                        "addressRegion": "Abbu Dhabi",
-                        "postalCode": "00000",
-                        "streetAddress": "In5 Tech, Dubai Internet City, Dubai"
-                    },
-                    "alternateName": "Shape",
-                    "description": "An award-winning Web Design Agency in Abbu Dhabi who specialise in Website Design, Craft CMS Web Development, eCommerce and Organic SEO.",
-                    "email": "sales@scalify.ae",
-                    "founder": "Justin",
-                    "foundingDate": "2024-03-01",
-                    "foundingLocation": "Abu Dhabi",
-                    "geo": {
-                        "@type": "GeoCoordinates",
-                        "latitude": "53.530291",
-                        "longitude": "-2.504812"
-                    },
-                    "image": {
-                        "@type": "ImageObject",
-                        "height": "950",
-                        "url": "https://assets.madebyshape.co.uk/craft3-uploads/images/logos/Scalify-icon.jpg",
-                        "width": "950"
-                    },
-                    "logo": {
-                        "@type": "ImageObject",
-                        "height": "60",
-                        "url": "https://made-byshape.transforms.svdcdn.com/production/uploads/images/logos/Scalify-icon.jpg?w=600&h=60&q=82&fm=png&fit=clip&dm=1597751408&s=1e444e7b3ed4ee85c39ad329e3875b5c",
-                        "width": "60"
-                    },
-                    "name": "Scalify",
-                    "priceRange": "$$",
-                    "sameAs": ["https://www.linkedin.com/company/madebyshape/mycompany/",
-                        "https://twitter.com/madebyshape", "https://github.com/madebyshape/",
-                        "https://instagram.com/madebyshape", "https://www.behance.net/madebyshape"
-                    ],
-                    "telephone": "01942 894596",
-                    "url": "https://madebyshape.co.uk/"
-                }, {
-                    "@id": "https://madebyshape.co.uk/#creator",
-                    "@type": "ProfessionalService",
-                    "address": {
-                        "@type": "PostalAddress",
-                        "addressCountry": "United Kingdom",
-                        "addressLocality": "Atherton",
-                        "addressRegion": "Abbu Dhabi",
-                        "postalCode": "00000",
-                        "streetAddress": "In5 Tech, Dubai Internet City, Dubai"
-                    },
-                    "alternateName": "Scalify",
-                    "description": "An award-winning Web Design Agency based in Abu Dhabi who also offer eCommerce and Organic SEO. We are a Digital Studio with Industry Experience.",
-                    "email": "sales@scalify.ae",
-                    "founder": "Justin",
-                    "foundingDate": "2024-03-01",
-                    "foundingLocation": "Abu Dhabi",
-                    "geo": {
-                        "@type": "GeoCoordinates",
-                        "latitude": "53.530258",
-                        "longitude": "-2.50471"
-                    },
-                    "image": {
-                        "@type": "ImageObject",
-                        "height": "950",
-                        "url": "http://madebyshape.madebyshape.io/uploads/images/Scalify-icon.jpg",
-                        "width": "950"
-                    },
-                    "logo": {
-                        "@type": "ImageObject",
-                        "height": "60",
-                        "url": "https://made-byshape.transforms.svdcdn.com/production/uploads/images/Scalify-icon.jpg?w=600&h=60&q=82&fm=png&fit=clip&dm=1597751384&s=2f0ce55335397fde8d8b489cc721e250",
-                        "width": "60"
-                    },
-                    "name": "Scalify",
-                    "priceRange": "$$$",
-                    "telephone": "01942 894596",
-                    "url": "https://madebyshape.co.uk/"
-                }, {
-                    "@type": "BreadcrumbList",
-                    "description": "Breadcrumbs list",
-                    "itemListElement": [{
-                        "@type": "ListItem",
-                        "item": "https://madebyshape.co.uk/",
-                        "name": "Home",
-                        "position": 1
-                    }, {
-                        "@type": "ListItem",
-                        "item": "https://madebyshape.co.uk/about/",
-                        "name": "About",
-                        "position": 2
-                    }],
-                    "name": "Breadcrumbs"
-                }]
-            }
-        </script>
-        <script src="https://player.vimeo.com/api/player.js"></script>
-        <script>
-            window.SERVD_CSRF_TOKEN_NAME = "CRAFT_CSRF_TOKEN";
+                    "@type": "ListItem",
+                    "item": "https://madebyshape.co.uk/about/",
+                    "name": "About",
+                    "position": 2
+                }],
+                "name": "Breadcrumbs"
+            }]
+        }
+    </script>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <script>
+        window.SERVD_CSRF_TOKEN_NAME = "CRAFT_CSRF_TOKEN";
 
-            function injectCSRF() {
-                var inputs = document.getElementsByName(window.SERVD_CSRF_TOKEN_NAME);
-                var len = inputs.length;
-                if (len > 0) {
-                    var xhr = new XMLHttpRequest();
-                    xhr.onload = function() {
-                        if (xhr.status >= 200 && xhr.status <= 299) {
-                            var tokenInfo = JSON.parse(this.responseText);
-                            window.csrfTokenValue = tokenInfo.token;
-                            window.csrfTokenName = tokenInfo.name;
-                            for (var i = 0; i < len; i++) {
-                                inputs[i].setAttribute("value", tokenInfo.token);
+        function injectCSRF() {
+            var inputs = document.getElementsByName(window.SERVD_CSRF_TOKEN_NAME);
+            var len = inputs.length;
+            if (len > 0) {
+                var xhr = new XMLHttpRequest();
+                xhr.onload = function() {
+                    if (xhr.status >= 200 && xhr.status <= 299) {
+                        var tokenInfo = JSON.parse(this.responseText);
+                        window.csrfTokenValue = tokenInfo.token;
+                        window.csrfTokenName = tokenInfo.name;
+                        for (var i = 0; i < len; i++) {
+                            inputs[i].setAttribute("value", tokenInfo.token);
+                        }
+                        window.dispatchEvent(new CustomEvent("servd.csrfloaded", {
+                            detail: {
+                                token: tokenInfo.token
                             }
-                            window.dispatchEvent(new CustomEvent("servd.csrfloaded", {
-                                detail: {
-                                    token: tokenInfo.token
-                                }
-                            }));
-                        } else {
-                            window.dispatchEvent(new CustomEvent("servd.csrffailed"));
-                        }
+                        }));
+                    } else {
+                        window.dispatchEvent(new CustomEvent("servd.csrffailed"));
+                    }
 
-                    };
-                    xhr.open("GET", "https://madebyshape.co.uk/index.php/actions/servd-asset-storage/csrf-token/get-token/");
-                    xhr.send();
-                }
+                };
+                xhr.open("GET", "https://madebyshape.co.uk/index.php/actions/servd-asset-storage/csrf-token/get-token/");
+                xhr.send();
             }
-            setTimeout(function() {
-                if (!window.SERVD_MANUAL_CSRF_LOAD) {
-                    injectCSRF();
-                }
-            }, 50);
-            document.addEventListener('alpine:init', () => {
-                Alpine.data('cursor', () => ({
-                    icon: 'arrow-up-right',
-                    x: 0,
-                    y: 0,
-                    endX: (window.innerWidth / 2),
-                    endY: (window.innerHeight / 2),
-                    cursorVisible: true,
-                    cursorEnlarged: false,
-                    cursorHovering: false,
-                    cursorDragging: false,
-                    cursor: document.querySelector('.js-cursor'),
-                    dragCursor: document.querySelector('.js-cursor-drag'),
-                    init() {
-
-                        _self = this;
-
-                        _self.dotSize = _self.cursor.offsetWidth;
-
-                        _self.setupEventListeners();
-
-                    },
-                    setupEventListeners() {
-
-                        _self = this;
-
-                        // Drag
-
-                        document.querySelectorAll('.js-cursor-trigger-drag').forEach((element) => {
-
-                            element.addEventListener('mouseover', function() {
-
-                                var icon = element.getAttribute('data-icon');
-
-                                if (icon) {
-                                    _self.icon = icon;
-                                } else {
-                                    _self.icon = 'arrow-up-right';
-                                }
-
-                                _self.cursorDragging = true;
-                                _self.cursorEnlarged = true;
-
-                                _self.toggleCursorDrag();
-
-                            });
-
-                            element.addEventListener('mouseout', function() {
-
-                                _self.cursorDragging = false;
-                                _self.cursorEnlarged = false;
-
-                                _self.toggleCursorDrag();
-
-                            });
-
-                        });
-
-                        // Position
-
-                        document.addEventListener('pointermove', function(event) {
-
-                            _self.endX = event.clientX;
-                            _self.endY = event.clientY;
-
-                            _self.cursor.style.top = _self.endY + 'px';
-                            _self.cursor.style.left = _self.endX + 'px';
-
-                        });
-
-                    },
-                    toggleCursorDrag() {
-
-                        _self = this;
-
-                        if (_self.cursorDragging) {
-
-                            _self.dragCursor.classList.remove('scale-0');
-                            // _self.cursor.classList.remove('opacity-0');
-                            document.body.classList.add('no-cursor');
-
-                        } else {
-
-                            _self.dragCursor.classList.add('scale-0');
-                            // _self.cursor.classList.add('opacity-0');
-                            document.body.classList.remove('no-cursor');
-
-                        }
-
-                    },
-                }))
-            });
-            document.addEventListener('alpine:init', () => {
-                Alpine.data('modal423709', () => ({
-                    visible: false,
-                    setupModal(id) {
-
-                        // Prevent keys from interferring with the video
-
-                        navigator.mediaSession.setActionHandler('play', function() {});
-                        navigator.mediaSession.setActionHandler('pause', function() {});
-                        navigator.mediaSession.setActionHandler('seekbackward', function() {});
-                        navigator.mediaSession.setActionHandler('seekforward', function() {});
-                        navigator.mediaSession.setActionHandler('previoustrack', function() {});
-                        navigator.mediaSession.setActionHandler('nexttrack', function() {});
-
-                        // Get video elements
-
-                        const video = document.querySelector(`.js-modal-video-${id}`);
-                        const videoProgress = document.querySelector(`.js-modal-video-progress-${id}`);
-
-                        const videoPlayPause = document.querySelector(`.js-modal-video-play-pause-${id}`);
-                        const videoSound = document.querySelector(`.js-modal-video-sound-${id}`);
-
-                        const videoPlayIcon = document.querySelector(`.js-modal-video-play-icon-${id}`);
-                        const videoPauseIcon = document.querySelector(`.js-modal-video-pause-icon-${id}`);
-
-                        const videoVolumeOnIcon = document.querySelector(
-                            `.js-modal-video-volume-on-icon-${id}`);
-                        const videoVolumeOffIcon = document.querySelector(
-                            `.js-modal-video-volume-off-icon-${id}`);
-
-                        // Video controls
-
-                        if (video) {
-
-                            if (video.tagName == 'IFRAME') {
-
-                                const player = new Vimeo.Player(video);
-
-                                // Video controls
-
-                                videoSound.addEventListener('click', (event) => {
-
-                                    player.getVolume().then(function(volume) {
-
-                                        if (videoVolumeOnIcon.classList.contains(
-                                                'hidden')) {
-
-                                            player.setVolume(1);
-                                            videoVolumeOnIcon.classList.remove('hidden');
-                                            videoVolumeOffIcon.classList.add('hidden');
-
-                                        } else {
-
-                                            player.setVolume(0);
-                                            videoVolumeOnIcon.classList.add('hidden');
-                                            videoVolumeOffIcon.classList.remove('hidden');
-
-                                        }
-
-                                    });
-
-                                    event.preventDefault();
-
-                                });
-
-                                videoPlayPause.addEventListener('click', (event) => {
-
-                                    player.getPaused().then(function(paused) {
-
-                                        if (paused) {
-
-                                            player.play();
-                                            videoPlayIcon.classList.add('hidden');
-                                            videoPauseIcon.classList.remove('hidden');
-
-                                        } else {
-
-                                            player.pause();
-                                            videoPlayIcon.classList.remove('hidden');
-                                            videoPauseIcon.classList.add('hidden');
-
-                                        }
-
-                                    });
-
-                                    event.preventDefault();
-
-                                });
-
+        }
+        setTimeout(function() {
+            if (!window.SERVD_MANUAL_CSRF_LOAD) {
+                injectCSRF();
+            }
+        }, 50);
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('cursor', () => ({
+                icon: 'arrow-up-right',
+                x: 0,
+                y: 0,
+                endX: (window.innerWidth / 2),
+                endY: (window.innerHeight / 2),
+                cursorVisible: true,
+                cursorEnlarged: false,
+                cursorHovering: false,
+                cursorDragging: false,
+                cursor: document.querySelector('.js-cursor'),
+                dragCursor: document.querySelector('.js-cursor-drag'),
+                init() {
+
+                    _self = this;
+
+                    _self.dotSize = _self.cursor.offsetWidth;
+
+                    _self.setupEventListeners();
+
+                },
+                setupEventListeners() {
+
+                    _self = this;
+
+                    // Drag
+
+                    document.querySelectorAll('.js-cursor-trigger-drag').forEach((element) => {
+
+                        element.addEventListener('mouseover', function() {
+
+                            var icon = element.getAttribute('data-icon');
+
+                            if (icon) {
+                                _self.icon = icon;
                             } else {
+                                _self.icon = 'arrow-up-right';
+                            }
 
-                                videoSound.addEventListener('click', (event) => {
+                            _self.cursorDragging = true;
+                            _self.cursorEnlarged = true;
 
-                                    if (videoVolumeOnIcon.classList.contains('hidden')) {
+                            _self.toggleCursorDrag();
 
-                                        video.muted = false;
+                        });
+
+                        element.addEventListener('mouseout', function() {
+
+                            _self.cursorDragging = false;
+                            _self.cursorEnlarged = false;
+
+                            _self.toggleCursorDrag();
+
+                        });
+
+                    });
+
+                    // Position
+
+                    document.addEventListener('pointermove', function(event) {
+
+                        _self.endX = event.clientX;
+                        _self.endY = event.clientY;
+
+                        _self.cursor.style.top = _self.endY + 'px';
+                        _self.cursor.style.left = _self.endX + 'px';
+
+                    });
+
+                },
+                toggleCursorDrag() {
+
+                    _self = this;
+
+                    if (_self.cursorDragging) {
+
+                        _self.dragCursor.classList.remove('scale-0');
+                        // _self.cursor.classList.remove('opacity-0');
+                        document.body.classList.add('no-cursor');
+
+                    } else {
+
+                        _self.dragCursor.classList.add('scale-0');
+                        // _self.cursor.classList.add('opacity-0');
+                        document.body.classList.remove('no-cursor');
+
+                    }
+
+                },
+            }))
+        });
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('modal423709', () => ({
+                visible: false,
+                setupModal(id) {
+
+                    // Prevent keys from interferring with the video
+
+                    navigator.mediaSession.setActionHandler('play', function() {});
+                    navigator.mediaSession.setActionHandler('pause', function() {});
+                    navigator.mediaSession.setActionHandler('seekbackward', function() {});
+                    navigator.mediaSession.setActionHandler('seekforward', function() {});
+                    navigator.mediaSession.setActionHandler('previoustrack', function() {});
+                    navigator.mediaSession.setActionHandler('nexttrack', function() {});
+
+                    // Get video elements
+
+                    const video = document.querySelector(`.js-modal-video-${id}`);
+                    const videoProgress = document.querySelector(`.js-modal-video-progress-${id}`);
+
+                    const videoPlayPause = document.querySelector(`.js-modal-video-play-pause-${id}`);
+                    const videoSound = document.querySelector(`.js-modal-video-sound-${id}`);
+
+                    const videoPlayIcon = document.querySelector(`.js-modal-video-play-icon-${id}`);
+                    const videoPauseIcon = document.querySelector(`.js-modal-video-pause-icon-${id}`);
+
+                    const videoVolumeOnIcon = document.querySelector(
+                        `.js-modal-video-volume-on-icon-${id}`);
+                    const videoVolumeOffIcon = document.querySelector(
+                        `.js-modal-video-volume-off-icon-${id}`);
+
+                    // Video controls
+
+                    if (video) {
+
+                        if (video.tagName == 'IFRAME') {
+
+                            const player = new Vimeo.Player(video);
+
+                            // Video controls
+
+                            videoSound.addEventListener('click', (event) => {
+
+                                player.getVolume().then(function(volume) {
+
+                                    if (videoVolumeOnIcon.classList.contains(
+                                            'hidden')) {
+
+                                        player.setVolume(1);
                                         videoVolumeOnIcon.classList.remove('hidden');
                                         videoVolumeOffIcon.classList.add('hidden');
 
                                     } else {
 
-                                        video.muted = true;
+                                        player.setVolume(0);
                                         videoVolumeOnIcon.classList.add('hidden');
                                         videoVolumeOffIcon.classList.remove('hidden');
 
                                     }
 
-                                    event.preventDefault();
-
                                 });
 
-                                videoPlayPause.addEventListener('click', (event) => {
+                                event.preventDefault();
 
-                                    if (video.paused) {
+                            });
 
-                                        video.play();
+                            videoPlayPause.addEventListener('click', (event) => {
+
+                                player.getPaused().then(function(paused) {
+
+                                    if (paused) {
+
+                                        player.play();
                                         videoPlayIcon.classList.add('hidden');
                                         videoPauseIcon.classList.remove('hidden');
 
                                     } else {
 
-                                        video.pause();
+                                        player.pause();
                                         videoPlayIcon.classList.remove('hidden');
                                         videoPauseIcon.classList.add('hidden');
 
                                     }
 
-                                    event.preventDefault();
-
                                 });
 
-                            }
+                                event.preventDefault();
 
-                        }
+                            });
 
-                        this.$watch('visible', function(value) {
+                        } else {
 
-                            if (value != false) {
+                            videoSound.addEventListener('click', (event) => {
 
-                                document.body.classList.add('overflow-hidden');
+                                if (videoVolumeOnIcon.classList.contains('hidden')) {
 
-                                // Video (Vimeo)
+                                    video.muted = false;
+                                    videoVolumeOnIcon.classList.remove('hidden');
+                                    videoVolumeOffIcon.classList.add('hidden');
 
-                                if (video) {
+                                } else {
 
-                                    if (video.tagName == 'IFRAME') {
-
-                                        const player = new Vimeo.Player(video);
-
-                                        // Initialise video
-
-                                        player.setCurrentTime(0);
-                                        player.play();
-                                        player.setVolume(1);
-
-                                        // Progress bar
-
-                                        setInterval(() => {
-
-                                            if (videoProgress) {
-
-                                                player.getCurrentTime().then(function(
-                                                    seconds) {
-
-                                                    player.getDuration().then(
-                                                        function(duration) {
-
-                                                            videoProgress.style
-                                                                .width = (
-                                                                    seconds /
-                                                                    duration) *
-                                                                100 + '%';
-
-                                                        });
-
-                                                });
-
-                                            }
-
-                                        }, 100);
-
-                                    } else {
-
-                                        // Initialise video
-
-                                        video.currentTime = 0;
-                                        video.play();
-
-                                        // Progress bar
-
-                                        setInterval(() => {
-
-                                            if (videoProgress) {
-
-                                                videoProgress.style.width = (video
-                                                        .currentTime / video.duration) *
-                                                    100 + '%';
-
-                                            }
-
-                                        }, 100);
-
-                                    }
+                                    video.muted = true;
+                                    videoVolumeOnIcon.classList.add('hidden');
+                                    videoVolumeOffIcon.classList.remove('hidden');
 
                                 }
 
+                                event.preventDefault();
 
-                            } else {
+                            });
 
-                                document.body.classList.remove('overflow-hidden');
-                            }
+                            videoPlayPause.addEventListener('click', (event) => {
 
-                        });
+                                if (video.paused) {
 
-                    },
-                    closeModal(id) {
+                                    video.play();
+                                    videoPlayIcon.classList.add('hidden');
+                                    videoPauseIcon.classList.remove('hidden');
 
-                        this.visible = false;
+                                } else {
 
-                        const video = document.querySelector('.js-modal-video-' + id);
-                        const videoProgress = document.querySelector('.js-modal-video-progress-' + id);
+                                    video.pause();
+                                    videoPlayIcon.classList.remove('hidden');
+                                    videoPauseIcon.classList.add('hidden');
 
-                        if (video) {
+                                }
 
-                            if (video.tagName == 'IFRAME') {
+                                event.preventDefault();
 
-                                const player = new Vimeo.Player(video);
+                            });
 
-                                player.pause();
-
-
-                            } else {
-
-                                video.pause();
-                                videoProgress.style.width = '0%';
-
-                            }
                         }
 
                     }
-                }))
-            });
-            document.addEventListener('alpine:init', () => {
-                Alpine.data('header', () => ({
-                    headerSmall: false,
-                    menu: false,
-                    headerDirection: 'down',
-                    headerPosition: 0,
-                    updatedHeaderPosition: 0,
-                    hideHeader: false,
-                    darkMode: localStorage.darkMode === 'true' ? true : false,
-                    updateHeader() {
 
-                        const header = document.querySelector('.js-header');
+                    this.$watch('visible', function(value) {
 
-                        if (window.scrollY > 10) {
+                        if (value != false) {
 
-                            this.headerSmall = true;
+                            document.body.classList.add('overflow-hidden');
 
-                            this.headerPosition = window.scrollY;
+                            // Video (Vimeo)
 
-                            if (this.headerPosition > this.updatedHeaderPosition) {
+                            if (video) {
 
-                                this.headerDirection = 'down';
+                                if (video.tagName == 'IFRAME') {
 
-                            } else {
+                                    const player = new Vimeo.Player(video);
 
-                                this.headerDirection = 'up';
+                                    // Initialise video
+
+                                    player.setCurrentTime(0);
+                                    player.play();
+                                    player.setVolume(1);
+
+                                    // Progress bar
+
+                                    setInterval(() => {
+
+                                        if (videoProgress) {
+
+                                            player.getCurrentTime().then(function(
+                                                seconds) {
+
+                                                player.getDuration().then(
+                                                    function(duration) {
+
+                                                        videoProgress.style
+                                                            .width = (
+                                                                seconds /
+                                                                duration) *
+                                                            100 + '%';
+
+                                                    });
+
+                                            });
+
+                                        }
+
+                                    }, 100);
+
+                                } else {
+
+                                    // Initialise video
+
+                                    video.currentTime = 0;
+                                    video.play();
+
+                                    // Progress bar
+
+                                    setInterval(() => {
+
+                                        if (videoProgress) {
+
+                                            videoProgress.style.width = (video
+                                                    .currentTime / video.duration) *
+                                                100 + '%';
+
+                                        }
+
+                                    }, 100);
+
+                                }
 
                             }
 
-                            this.updatedHeaderPosition = this.headerPosition;
 
                         } else {
 
-                            this.headerSmall = false;
+                            document.body.classList.remove('overflow-hidden');
+                        }
+
+                    });
+
+                },
+                closeModal(id) {
+
+                    this.visible = false;
+
+                    const video = document.querySelector('.js-modal-video-' + id);
+                    const videoProgress = document.querySelector('.js-modal-video-progress-' + id);
+
+                    if (video) {
+
+                        if (video.tagName == 'IFRAME') {
+
+                            const player = new Vimeo.Player(video);
+
+                            player.pause();
+
+
+                        } else {
+
+                            video.pause();
+                            videoProgress.style.width = '0%';
+
+                        }
+                    }
+
+                }
+            }))
+        });
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('header', () => ({
+                headerSmall: false,
+                menu: false,
+                headerDirection: 'down',
+                headerPosition: 0,
+                updatedHeaderPosition: 0,
+                hideHeader: false,
+                darkMode: localStorage.darkMode === 'true' ? true : false,
+                updateHeader() {
+
+                    const header = document.querySelector('.js-header');
+
+                    if (window.scrollY > 10) {
+
+                        this.headerSmall = true;
+
+                        this.headerPosition = window.scrollY;
+
+                        if (this.headerPosition > this.updatedHeaderPosition) {
+
+                            this.headerDirection = 'down';
+
+                        } else {
+
+                            this.headerDirection = 'up';
 
                         }
 
-                        let headerWidth = '60rem';
-                        let headerWidthWide = '99vw';
+                        this.updatedHeaderPosition = this.headerPosition;
 
-                        ScrollTrigger.matchMedia({
-                            '(min-width: 1024px)': () => {
+                    } else {
 
-                                headerWidth = '60rem';
-                                headerWidthWide = '99vw';
+                        this.headerSmall = false;
 
-                            },
-                            '(max-width: 1023px)': () => {
+                    }
 
-                                headerWidth = '16rem';
-                                headerWidthWide = '99vw';
+                    let headerWidth = '60rem';
+                    let headerWidthWide = '99vw';
 
-                            }
+                    ScrollTrigger.matchMedia({
+                        '(min-width: 1024px)': () => {
+
+                            headerWidth = '60rem';
+                            headerWidthWide = '99vw';
+
+                        },
+                        '(max-width: 1023px)': () => {
+
+                            headerWidth = '16rem';
+                            headerWidthWide = '99vw';
+
+                        }
+                    });
+
+                    if (window.scrollY > 10) {
+
+                        gsap.to(header, {
+                            duration: 0.6,
+                            width: headerWidth,
+                            ease: 'power4.out',
                         });
 
-                        if (window.scrollY > 10) {
+                        header.classList.add('header-background');
+
+
+                    } else {
+
+                        gsap.to(header, {
+                            duration: 0.6,
+                            width: headerWidthWide,
+                            ease: 'power4.out',
+                        });
+
+                        header.classList.remove('header-background');
+
+                    }
+
+                },
+                mobileMenu() {
+
+                    const header = document.querySelector('.js-header');
+                    const mobileMenu = document.querySelector('.js-mobile-menu');
+
+                    let headerWidth = '60rem';
+                    let headerWidthWide = '94vw';
+
+                    ScrollTrigger.matchMedia({
+                        '(min-width: 1024px)': () => {
+
+                            headerWidth = '60rem';
+                            headerWidthWide = '94vw';
+
+                        },
+                        '(max-width: 1023px)': () => {
+
+                            headerWidth = '16rem';
+                            headerWidthWide = '94vw';
+
+                        }
+                    });
+
+                    this.$watch('menu', value => {
+
+                        if (value == 'mobileMenu') {
+
+                            document.body.classList.add('overflow-hidden');
 
                             gsap.to(header, {
-                                duration: 0.6,
-                                width: headerWidth,
-                                ease: 'power4.out',
-                            });
-
-                            header.classList.add('header-background');
-
-
-                        } else {
-
-                            gsap.to(header, {
-                                duration: 0.6,
+                                duration: 0.4,
                                 width: headerWidthWide,
                                 ease: 'power4.out',
                             });
 
-                            header.classList.remove('header-background');
-
-                        }
-
-                    },
-                    mobileMenu() {
-
-                        const header = document.querySelector('.js-header');
-                        const mobileMenu = document.querySelector('.js-mobile-menu');
-
-                        let headerWidth = '60rem';
-                        let headerWidthWide = '94vw';
-
-                        ScrollTrigger.matchMedia({
-                            '(min-width: 1024px)': () => {
-
-                                headerWidth = '60rem';
-                                headerWidthWide = '94vw';
-
-                            },
-                            '(max-width: 1023px)': () => {
-
-                                headerWidth = '16rem';
-                                headerWidthWide = '94vw';
-
-                            }
-                        });
-
-                        this.$watch('menu', value => {
-
-                            if (value == 'mobileMenu') {
-
-                                document.body.classList.add('overflow-hidden');
-
-                                gsap.to(header, {
-                                    duration: 0.4,
-                                    width: headerWidthWide,
-                                    ease: 'power4.out',
-                                });
-
-                                gsap.to(mobileMenu, {
-                                    duration: 0.4,
-                                    delay: window.scrollY > 10 ? 0.2 : 0,
-                                    height: '27.5rem',
-                                    ease: 'power4.out',
-                                });
-
-                                gsap.to(mobileMenu, {
-                                    duration: 1,
-                                    delay: window.scrollY > 10 ? 0.3 : 0.1,
-                                    opacity: 1,
-                                    ease: 'power4.out',
-                                });
-
-
-                                header.classList.add('header-background');
-
-                            } else {
-
-                                document.body.classList.remove('overflow-hidden');
-
-                                setTimeout(() => {
-
-                                    if (window.scrollY > 10) {
-
-                                        header.classList.add('header-background');
-
-                                    } else {
-
-                                        header.classList.remove('header-background');
-
-                                    }
-
-                                }, 400);
-
-                                gsap.to(mobileMenu, {
-                                    duration: 0.6,
-                                    opacity: 0,
-                                    ease: 'power4.out',
-                                });
-
-                                gsap.to(mobileMenu, {
-                                    duration: 0.4,
-                                    height: '0rem',
-                                    delay: 0.2,
-                                    ease: 'power4.out',
-                                });
-
-                                if (window.scrollY > 10) {
-
-                                    gsap.to(header, {
-                                        duration: 0.4,
-                                        delay: 0.4,
-                                        width: headerWidth,
-                                        ease: 'power4.out',
-                                    });
-
-                                } else {
-
-                                    gsap.to(header, {
-                                        duration: 0.4,
-                                        delay: 0.4,
-                                        width: '99vw',
-                                        ease: 'power4.out',
-                                    });
-
-                                }
-
-                            }
-
-                        });
-
-                    }
-                }))
-            });
-            document.addEventListener('alpine:init', () => {
-                Alpine.data('archedImageCarouselMobile', () => ({
-                    active: false,
-                    confetti(id) {
-
-                        emojisplosion({
-                            emojis: ["\ud83d\udcaf", "\u2728", "\ud83c\udf89", "\ud83c\udf8a",
-                                "\ud83c\udf7e", "\ud83c\udf88", "\ud83d\udca5"
-                            ],
-                            emojiCount: 50,
-                            physics: {
-                                fontSize: 40,
-                                rotationDeceleration: 1.001,
-                                initialVelocities: {
-                                    y: {
-                                        max: -70,
-                                        min: -12,
-                                    },
-                                    x: {
-                                        max: 30,
-                                        min: -30,
-                                    }
-                                },
-                            },
-                            position: () => ({
-                                // bottom center of the screen
-                                x: window.innerWidth / 2,
-                                y: window.innerHeight + 100,
-                            }),
-                            process(element) {
-                                element.style.zIndex = 1000;
-
-                            },
-                        });
-
-                    },
-                    rotateArchedImages(id) {
-
-                        const container = document.querySelector(`.js-arched-image-container-${id}`);
-                        const innerContainer = document.querySelector(
-                            `.js-arched-image-inner-container-${id}`);
-                        const images = document.querySelectorAll(`.js-arched-image-${id}`);
-
-                        var config = {
-                            duration: 150,
-                            repeatDelay: 8,
-                            rotationMultiply: 18,
-                            rotationOffset: 55
-                        }
-
-                        images.forEach((image, index) => {
-                            image.style.transform =
-                                `rotate(${(index * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
-                            image.style.webkitTransform =
-                                `rotate(${(index * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
-                        });
-
-                        // Infinite rotation
-
-                        gsap.to(container, {
-                            duration: config.duration,
-                            rotation: -360,
-                            ease: 'none',
-                            repeat: -1
-                        });
-
-                        // Rotate inner container
-
-                        ScrollTrigger.matchMedia({
-                            '(min-width: 1280px)': () => {
-
-                                gsap.to(innerContainer, {
-                                    scrollTrigger: {
-                                        trigger: container,
-                                        scrub: true,
-                                        start: 'top center',
-                                        end: 'bottom bottom'
-                                    },
-                                    rotation: -40,
-                                    ease: 'none',
-                                });
-
-                            }
-                        });
-
-                        // Move first child to end of container
-
-                        const interval = new TimelineMax({
-                            repeat: -1,
-                            repeatDelay: config.repeatDelay,
-                        }).call(function() {
-
-                            // Get first and last child
-
-                            const firstChild = innerContainer.firstElementChild;
-                            const lastChild = innerContainer.lastElementChild;
-
-                            // Get index of last child
-
-                            const index = parseInt(lastChild.getAttribute('data-index'));
-
-                            // Set index of first child to index of last child + 1
-
-                            firstChild.setAttribute('data-index', index + 1);
-
-                            // Get new index of first child
-
-                            const newIndex = parseInt(firstChild.getAttribute('data-index'));
-
-                            // ${(newIndex * config.rotationMultiply) - config.rotationOffset}deg
-                            // Set rotation of first child with transform rotate and webkit transform rotate
-
-                            firstChild.style.transform =
-                                `rotate(${(newIndex * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
-                            firstChild.style.webkitTransform =
-                                `rotate(${(newIndex * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
-
-                            // Append first child to end of container
-
-                            innerContainer.appendChild(firstChild);
-
-                        });
-
-                        setTimeout(() => {
-
-                            this.active = true;
-
-                        }, 300);
-
-                    }
-                }));
-            });
-            document.addEventListener('alpine:init', () => {
-                Alpine.data('archedImageCarouseTablet', () => ({
-                    active: false,
-                    confetti(id) {
-
-                        emojisplosion({
-                            emojis: ["\ud83d\udcaf", "\u2728", "\ud83c\udf89", "\ud83c\udf8a",
-                                "\ud83c\udf7e", "\ud83c\udf88", "\ud83d\udca5"
-                            ],
-                            emojiCount: 50,
-                            physics: {
-                                fontSize: 40,
-                                rotationDeceleration: 1.001,
-                                initialVelocities: {
-                                    y: {
-                                        max: -70,
-                                        min: -12,
-                                    },
-                                    x: {
-                                        max: 30,
-                                        min: -30,
-                                    }
-                                },
-                            },
-                            position: () => ({
-                                // bottom center of the screen
-                                x: window.innerWidth / 2,
-                                y: window.innerHeight + 100,
-                            }),
-                            process(element) {
-                                element.style.zIndex = 1000;
-
-                            },
-                        });
-
-                    },
-                    rotateArchedImages(id) {
-
-                        const container = document.querySelector(`.js-arched-image-container-${id}`);
-                        const innerContainer = document.querySelector(
-                            `.js-arched-image-inner-container-${id}`);
-                        const images = document.querySelectorAll(`.js-arched-image-${id}`);
-
-                        var config = {
-                            duration: 200,
-                            repeatDelay: 9.5,
-                            rotationMultiply: 15,
-                            rotationOffset: 55
-                        }
-
-                        images.forEach((image, index) => {
-                            image.style.transform =
-                                `rotate(${(index * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
-                            image.style.webkitTransform =
-                                `rotate(${(index * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
-                        });
-
-                        // Infinite rotation
-
-                        gsap.to(container, {
-                            duration: config.duration,
-                            rotation: -360,
-                            ease: 'none',
-                            repeat: -1
-                        });
-
-                        // Rotate inner container
-
-                        ScrollTrigger.matchMedia({
-                            '(min-width: 1280px)': () => {
-
-                                gsap.to(innerContainer, {
-                                    scrollTrigger: {
-                                        trigger: container,
-                                        scrub: true,
-                                        start: 'top center',
-                                        end: 'bottom bottom'
-                                    },
-                                    rotation: -40,
-                                    ease: 'none',
-                                });
-
-                            }
-                        });
-
-                        // Move first child to end of container
-
-                        const interval = new TimelineMax({
-                            repeat: -1,
-                            repeatDelay: config.repeatDelay,
-                        }).call(function() {
-
-                            // Get first and last child
-
-                            const firstChild = innerContainer.firstElementChild;
-                            const lastChild = innerContainer.lastElementChild;
-
-                            // Get index of last child
-
-                            const index = parseInt(lastChild.getAttribute('data-index'));
-
-                            // Set index of first child to index of last child + 1
-
-                            firstChild.setAttribute('data-index', index + 1);
-
-                            // Get new index of first child
-
-                            const newIndex = parseInt(firstChild.getAttribute('data-index'));
-
-                            // ${(newIndex * config.rotationMultiply) - config.rotationOffset}deg
-                            // Set rotation of first child with transform rotate and webkit transform rotate
-
-                            firstChild.style.transform =
-                                `rotate(${(newIndex * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
-                            firstChild.style.webkitTransform =
-                                `rotate(${(newIndex * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
-
-                            // Append first child to end of container
-
-                            innerContainer.appendChild(firstChild);
-
-                        });
-
-                        setTimeout(() => {
-
-                            this.active = true;
-
-                        }, 300);
-
-                    }
-                }));
-            });
-            document.addEventListener('alpine:init', () => {
-                Alpine.data('archedImageCarouselDesktop', () => ({
-                    active: false,
-                    confetti(id) {
-
-                        emojisplosion({
-                            emojis: ["\ud83d\udcaf", "\u2728", "\ud83c\udf89", "\ud83c\udf8a",
-                                "\ud83c\udf7e", "\ud83c\udf88", "\ud83d\udca5"
-                            ],
-                            emojiCount: 50,
-                            physics: {
-                                fontSize: 40,
-                                rotationDeceleration: 1.001,
-                                initialVelocities: {
-                                    y: {
-                                        max: -70,
-                                        min: -12,
-                                    },
-                                    x: {
-                                        max: 30,
-                                        min: -30,
-                                    }
-                                },
-                            },
-                            position: () => ({
-                                // bottom center of the screen
-                                x: window.innerWidth / 2,
-                                y: window.innerHeight + 100,
-                            }),
-                            process(element) {
-                                element.style.zIndex = 1000;
-
-                            },
-                        });
-
-                    },
-                    rotateArchedImages(id) {
-
-                        const container = document.querySelector(`.js-arched-image-container-${id}`);
-                        const innerContainer = document.querySelector(
-                            `.js-arched-image-inner-container-${id}`);
-                        const images = document.querySelectorAll(`.js-arched-image-${id}`);
-
-                        var config = {
-                            duration: 300,
-                            repeatDelay: 10,
-                            rotationMultiply: 12,
-                            rotationOffset: 55
-                        }
-
-                        images.forEach((image, index) => {
-                            image.style.transform =
-                                `rotate(${(index * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
-                            image.style.webkitTransform =
-                                `rotate(${(index * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
-                        });
-
-                        // Infinite rotation
-
-                        gsap.to(container, {
-                            duration: config.duration,
-                            rotation: -360,
-                            ease: 'none',
-                            repeat: -1
-                        });
-
-                        // Rotate inner container
-
-                        ScrollTrigger.matchMedia({
-                            '(min-width: 1280px)': () => {
-
-                                gsap.to(innerContainer, {
-                                    scrollTrigger: {
-                                        trigger: container,
-                                        scrub: true,
-                                        start: 'top center',
-                                        end: 'bottom bottom'
-                                    },
-                                    rotation: -40,
-                                    ease: 'none',
-                                });
-
-                            }
-                        });
-
-                        // Move first child to end of container
-
-                        const interval = new TimelineMax({
-                            repeat: -1,
-                            repeatDelay: config.repeatDelay,
-                        }).call(function() {
-
-                            // Get first and last child
-
-                            const firstChild = innerContainer.firstElementChild;
-                            const lastChild = innerContainer.lastElementChild;
-
-                            // Get index of last child
-
-                            const index = parseInt(lastChild.getAttribute('data-index'));
-
-                            // Set index of first child to index of last child + 1
-
-                            firstChild.setAttribute('data-index', index + 1);
-
-                            // Get new index of first child
-
-                            const newIndex = parseInt(firstChild.getAttribute('data-index'));
-
-                            // ${(newIndex * config.rotationMultiply) - config.rotationOffset}deg
-                            // Set rotation of first child with transform rotate and webkit transform rotate
-
-                            firstChild.style.transform =
-                                `rotate(${(newIndex * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
-                            firstChild.style.webkitTransform =
-                                `rotate(${(newIndex * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
-
-                            // Append first child to end of container
-
-                            innerContainer.appendChild(firstChild);
-
-                        });
-
-                        setTimeout(() => {
-
-                            this.active = true;
-
-                        }, 300);
-
-                    }
-                }));
-            });
-            document.addEventListener('alpine:init', () => {
-                Alpine.data('videoFile', () => ({
-                    playing: true,
-                    muted: true,
-                    hovering: false,
-                    paused: false,
-                    initVideoFile(id) {
-
-                        // Get elements
-
-                        const video = document.querySelector(`.js-video-${id}`);
-                        const videoProgress = document.querySelector(`.js-video-progress-${id}`);
-                        const videoTimer = document.querySelector(`.js-video-timer-${id}`);
-
-
-                        // Set initial state
-
-
-
-                        // Set video progress + timer
-
-                        setInterval(() => {
-
-                            if (videoProgress) {
-
-                                videoProgress.style.width = (video.currentTime / video.duration) *
-                                    100 + '%';
-
-                            }
-
-                            if (videoTimer) {
-
-                                const minutes = Math.floor(video.currentTime / 60);
-                                const seconds = Math.floor(video.currentTime - minutes * 60);
-                                const minuteValue = minutes >= 10 ? minutes : '0' + minutes;
-                                const secondValue = seconds >= 10 ? seconds : '0' + seconds;
-
-                                videoTimer.innerHTML = minuteValue + ':' + secondValue;
-
-                            }
-
-                        }, 10);
-
-                        // Check to see if video is playing or muted
-
-                        setInterval(() => {
-
-                            if (video.paused) {
-
-                                if (video.muted) {
-                                    this.playing = false;
-                                    this.paused = false;
-                                } else {
-                                    this.playing = false;
-                                    this.paused = true;
-                                }
-
-                            } else {
-                                if (!this.hovering) {
-                                    this.playing = true;
-                                }
-                            }
-
-                            if (video.muted) {
-                                this.muted = true;
-                            } else {
-                                this.muted = false;
-                            }
-
-                        }, 100);
-
-
-                        window.addEventListener('scroll', (e) => {
-
-                            if (video) {
-
-                                const videoTop = video.getBoundingClientRect().top;
-                                const videoBottom = video.getBoundingClientRect().bottom;
-
-                                if (video.classList.contains('js-video-with-sound')) {
-
-                                    if (videoTop > window.innerHeight || videoBottom < 0) {
-                                        video.pause();
-                                        video.muted = true;
-                                    }
-
-                                }
-
-                            }
-
-                        });
-
-
-
-                        video.addEventListener('ended', () => {
-
-                            if (!video.hasAttribute('loop')) {
-
-                                video.currentTime = 0;
-                                video.muted = true;
-                                videoProgress.style.width = 0;
-                                video.pause();
-
-                            }
-
-
-                        });
-
-
-
-                    },
-                    toggleSound(id) {
-
-                        const video = document.querySelector('.js-video-' + id);
-                        const videos = document.querySelectorAll('.js-video');
-
-                        if (this.muted) {
-
-                            videos.forEach(video => {
-                                video.pause();
-                                video.muted = true;
+                            gsap.to(mobileMenu, {
+                                duration: 0.4,
+                                delay: window.scrollY > 10 ? 0.2 : 0,
+                                height: '27.5rem',
+                                ease: 'power4.out',
                             });
 
-                            video.play();
-
-                            video.muted = false;
-                            this.muted = false;
-
-                            this.$dispatch('component-cursor', {
-                                icon: 'volume-on'
+                            gsap.to(mobileMenu, {
+                                duration: 1,
+                                delay: window.scrollY > 10 ? 0.3 : 0.1,
+                                opacity: 1,
+                                ease: 'power4.out',
                             });
+
+
+                            header.classList.add('header-background');
 
                         } else {
 
-                            video.muted = true;
-                            this.muted = true;
-
-                            this.$dispatch('component-cursor', {
-                                icon: 'volume-off'
-                            });
-
-                        }
-
-
-                    },
-                    togglePreview(id, status) {
-
-                        this.hovering = status;
-
-                        const video = document.querySelector('.js-video-' + id);
-
-                        if (this.hovering && this.muted) {
-
-                            video.currentTime = 0;
-                            video.play();
-
-                        }
-
-                        if (!this.hovering && this.muted) {
-
-                            video.pause();
-                            video.currentTime = 0;
-
-                        }
-
-
-                    },
-                    togglePause(id) {
-
-                        const video = document.querySelector('.js-video-' + id);
-                        const videos = document.querySelectorAll('.js-video');
-
-                        if (this.paused) {
-
-                            videos.forEach(video => {
-                                video.pause();
-                            });
-
-                            video.play();
-                            this.paused = false;
-                            this.playing = true;
-
-                        } else {
-
-                            video.pause();
-                            this.paused = true;
-                            this.playing = false;
-
-                        }
-
-                    },
-                    toggleVideo(id) {
-
-                        const video = document.querySelector('.js-video-' + id);
-                        const videos = document.querySelectorAll('.js-video');
-                        const videosWithVolumeControls = document.querySelectorAll(
-                            '.js-video-with-volume-controls');
-                        const videosPlaying = document.querySelectorAll('.js-video-playing');
-
-                        videosPlaying.forEach(video => {
-                            if (!video.muted && !video.classList.contains('js-video-with-sound')) {
-                                video.muted = true;
-                            } else {
-                                video.pause();
-                                video.muted = true;
-                                video.currentTime = 0;
-                            }
-                        });
-
-                        if (this.playing) {
-
-                            video.pause();
-                            video.muted = true;
-                            this.playing = false;
-                            this.hovering = false;
-
-                        } else {
-
-                            videosWithVolumeControls.forEach(video => {
-                                video.pause();
-                            });
-
-                            video.currentTime = 0;
-                            video.muted = false;
-                            video.play();
-                            this.playing = true;
-                            this.hovering = false;
-
-                        }
-
-                    }
-                }))
-            });
-            document.addEventListener('alpine:init', () => {
-                Alpine.data('profile', () => ({
-                    hovering: false,
-                    profileHover(id) {
-
-                        const profile = this.$refs.profile;
-                        const images = this.$refs.profileImages.querySelectorAll('img');
-
-                        let index = 0;
-                        let interval;
-
-                        function flickThroughImages() {
-
-                            interval = setInterval(() => {
-
-                                images.forEach((image, i) => {
-
-                                    if (i == index) {
-                                        image.classList.remove('hidden');
-                                    } else {
-                                        image.classList.add('hidden');
-                                    }
-
-                                })
-
-                                index++;
-
-                                if (index >= images.length) {
-                                    index = 0;
-                                }
-
-                            }, 200);
-
-                        }
-
-                        clearInterval(interval);
-                        setTimeout(flickThroughImages(), 200);
-
-                        profile.addEventListener('mouseenter', () => {
-
-                            this.hovering = true;
-                            clearInterval(interval);
-                            setTimeout(flickThroughImages(), 200);
-
-                            // setTimeout(() => {
-                            //    this.hovering = false;
-                            //    clearInterval(interval);
-                            // }, 1000);
-
-                        });
-
-                        profile.addEventListener('mouseleave', () => {
-
-                            this.hovering = false;
-                            clearInterval(interval);
-
-                        });
-
-                    }
-                }))
-            });
-            document.addEventListener('alpine:init', () => {
-                Alpine.data('entriesProfiles', () => ({
-                    carousel(id) {
-
-                        const profileCards = document.querySelectorAll('.js-profile-card-' + id);
-
-                        const carousel = new Swiper('.js-carousel-' + id, {
-                            slidesPerView: 1.6,
-                            loop: true,
-                            speed: 10000,
-                            autoplay: {
-                                delay: 0,
-                            },
-                            breakpoints: {
-                                640: {
-                                    speed: 10000,
-                                    slidesPerView: 2,
-                                },
-                                768: {
-                                    speed: 20000,
-                                    slidesPerView: 2.5,
-                                },
-                                1024: {
-                                    speed: 20000,
-                                    slidesPerView: 3.5,
-                                },
-                                1280: {
-                                    speed: 20000,
-                                    slidesPerView: 4,
-                                },
-                                2100: {
-                                    speed: 20000,
-                                    slidesPerView: 5,
-                                },
-                            },
-
-                        });
-
-                    }
-                }));
-            });
-            document.addEventListener('alpine:init', () => {
-                Alpine.data('statistic', () => ({
-                    countUp(id) {
-
-                        const statistics = document.querySelectorAll(`.js-statistic-${id}`);
-
-                        statistics.forEach(statistic => {
-
-                            const character = statistic.dataset.character;
-                            const delay = statistic.dataset.delay;
-
-                            let goToCharacterPosition = statistic.querySelector(
-                                    `.js-statistic-${id}-character[data-character="${character}"]`)
-                                .offsetTop;
-                            let goToCharacterWidth = statistic.querySelector(
-                                    `.js-statistic-${id}-character[data-character="${character}"]`)
-                                .offsetWidth;
-
-                            this.animate(id, statistic, goToCharacterWidth, goToCharacterPosition);
-
-                            // window.addEventListener('resize', () => {
-
-                            //     goToCharacterWidth = statistic.querySelector(`.js-statistic-${id}-character[data-character="${character}"]`).offsetWidth;
-                            //     goToCharacterPosition = statistic.querySelector(`.js-statistic-${id}-character[data-character="${character}"]`).offsetTop;
-
-                            //     this.animate(id, statistic, goToCharacterWidth, goToCharacterPosition);
-
-                            // });
-
-
-                        });
-
-                    },
-                    animate(id, statistic, goToCharacterWidth, goToCharacterPosition) {
-
-                        gsap.to(statistic.querySelectorAll(`.js-statistic-${id}-characters > div`), {
-                            duration: 1.5,
-                            y: -goToCharacterPosition,
-                            ease: 'power4.inOut',
-                            scrollTrigger: {
-                                trigger: statistic,
-                                start: 'top 90%',
-                            }
-                        });
-
-                        gsap.to(statistic, {
-                            duration: 0.5,
-                            width: goToCharacterWidth,
-                            ease: 'power1.out',
-                            scrollTrigger: {
-                                trigger: statistic,
-                                start: 'top 90%',
-                            }
-                        });
-
-                    }
-                }))
-            });
-            document.addEventListener('alpine:init', () => {
-                Alpine.data('statistics', () => ({
-                    isStart: true,
-                    isEnd: false,
-                    carousel(id) {
-
-                        const carousel = new Swiper(`.js-carousel-${id}`, {
-                            slidesPerView: 1,
-                            navigation: {
-                                nextEl: '.js-carousel-next-' + id,
-                                prevEl: '.js-carousel-prev-' + id,
-                            },
-                            breakpoints: {
-                                768: {
-                                    slidesPerView: 2,
-                                },
-                                1024: {
-                                    slidesPerView: 3,
-                                },
-                                1280: {
-                                    slidesPerView: 4,
-                                },
-                            },
-                        });
-
-                        carousel.on('slideChange', () => {
-                            this.isStart = carousel.isBeginning;
-                            this.isEnd = carousel.isEnd;
-                        });
-
-                    }
-                }))
-            });
-            document.addEventListener('alpine:init', () => {
-                Alpine.data('logosDoubleCarousel', () => ({
-                    carousel(id) {
-
-                        const carousels = document.querySelectorAll(`.js-carousel-${id}`);
-
-                        carousels.forEach((carousel, index) => {
-
-                            const swiper = new Swiper(carousel, {
-                                slidesPerView: 2,
-                                spaceBetween: 0,
-                                loop: true,
-                                allowTouchMove: false,
-                                autoplay: {
-                                    delay: 0,
-                                    disableOnInteraction: false,
-                                    reverseDirection: index % 2 === 0 ? false : true,
-                                },
-                                speed: 10000,
-                                grabCursor: false,
-                                mousewheelControl: false,
-                                keyboardControl: false,
-                                breakpoints: {
-                                    640: {
-                                        slidesPerView: 3,
-                                    },
-                                    768: {
-                                        slidesPerView: 3.5,
-                                    },
-                                    1024: {
-                                        slidesPerView: 4,
-                                    },
-                                    1280: {
-                                        slidesPerView: 4,
-                                    },
-                                    1400: {
-                                        slidesPerView: 5,
-                                    },
-                                    2100: {
-                                        slidesPerView: 6,
-                                    },
-                                }
-                            });
+                            document.body.classList.remove('overflow-hidden');
 
                             setTimeout(() => {
 
-                                swiper.update();
-                                swiper.autoplay.start();
+                                if (window.scrollY > 10) {
 
-                            }, 1000);
+                                    header.classList.add('header-background');
 
-                            window.addEventListener('resize', () => {
+                                } else {
 
-                                clearTimeout(window.resizedFinished);
+                                    header.classList.remove('header-background');
 
-                                window.resizedFinished = setTimeout(function() {
+                                }
 
-                                    swiper.update();
-                                    swiper.autoplay.start();
+                            }, 400);
 
-                                }, 50);
-
+                            gsap.to(mobileMenu, {
+                                duration: 0.6,
+                                opacity: 0,
+                                ease: 'power4.out',
                             });
 
-                            const logos = carousel.querySelectorAll(`.js-logo-${id}`);
+                            gsap.to(mobileMenu, {
+                                duration: 0.4,
+                                height: '0rem',
+                                delay: 0.2,
+                                ease: 'power4.out',
+                            });
 
-                            // ScrollTrigger.matchMedia({
-                            //     '(min-width: 1280px)': () => {
+                            if (window.scrollY > 10) {
 
-                            //         gsap.to(logos, {
-                            //             scrollTrigger: {
-                            //                 trigger: logos,
-                            //                 scrub: true,
-                            //                 start: 'top 110%',
-                            //                 end: 'bottom top'
-                            //             },
-                            //             x: index % 2 === 0 ? 100 : -100,
-                            //             ease: 'none',
-                            //         });
-
-                            //     }
-                            // });
-
-
-                        });
-
-                    }
-                }));
-            });
-            document.addEventListener('alpine:init', () => {
-                Alpine.data('modal428063', () => ({
-                    visible: false,
-                    setupModal(id) {
-
-                        // Prevent keys from interferring with the video
-
-                        navigator.mediaSession.setActionHandler('play', function() {});
-                        navigator.mediaSession.setActionHandler('pause', function() {});
-                        navigator.mediaSession.setActionHandler('seekbackward', function() {});
-                        navigator.mediaSession.setActionHandler('seekforward', function() {});
-                        navigator.mediaSession.setActionHandler('previoustrack', function() {});
-                        navigator.mediaSession.setActionHandler('nexttrack', function() {});
-
-                        // Get video elements
-
-                        const video = document.querySelector(`.js-modal-video-${id}`);
-                        const videoProgress = document.querySelector(`.js-modal-video-progress-${id}`);
-
-                        const videoPlayPause = document.querySelector(`.js-modal-video-play-pause-${id}`);
-                        const videoSound = document.querySelector(`.js-modal-video-sound-${id}`);
-
-                        const videoPlayIcon = document.querySelector(`.js-modal-video-play-icon-${id}`);
-                        const videoPauseIcon = document.querySelector(`.js-modal-video-pause-icon-${id}`);
-
-                        const videoVolumeOnIcon = document.querySelector(
-                            `.js-modal-video-volume-on-icon-${id}`);
-                        const videoVolumeOffIcon = document.querySelector(
-                            `.js-modal-video-volume-off-icon-${id}`);
-
-                        // Video controls
-
-                        if (video) {
-
-                            if (video.tagName == 'IFRAME') {
-
-                                const player = new Vimeo.Player(video);
-
-                                // Video controls
-
-                                videoSound.addEventListener('click', (event) => {
-
-                                    player.getVolume().then(function(volume) {
-
-                                        if (videoVolumeOnIcon.classList.contains(
-                                                'hidden')) {
-
-                                            player.setVolume(1);
-                                            videoVolumeOnIcon.classList.remove('hidden');
-                                            videoVolumeOffIcon.classList.add('hidden');
-
-                                        } else {
-
-                                            player.setVolume(0);
-                                            videoVolumeOnIcon.classList.add('hidden');
-                                            videoVolumeOffIcon.classList.remove('hidden');
-
-                                        }
-
-                                    });
-
-                                    event.preventDefault();
-
-                                });
-
-                                videoPlayPause.addEventListener('click', (event) => {
-
-                                    player.getPaused().then(function(paused) {
-
-                                        if (paused) {
-
-                                            player.play();
-                                            videoPlayIcon.classList.add('hidden');
-                                            videoPauseIcon.classList.remove('hidden');
-
-                                        } else {
-
-                                            player.pause();
-                                            videoPlayIcon.classList.remove('hidden');
-                                            videoPauseIcon.classList.add('hidden');
-
-                                        }
-
-                                    });
-
-                                    event.preventDefault();
-
+                                gsap.to(header, {
+                                    duration: 0.4,
+                                    delay: 0.4,
+                                    width: headerWidth,
+                                    ease: 'power4.out',
                                 });
 
                             } else {
 
-                                videoSound.addEventListener('click', (event) => {
-
-                                    if (videoVolumeOnIcon.classList.contains('hidden')) {
-
-                                        video.muted = false;
-                                        videoVolumeOnIcon.classList.remove('hidden');
-                                        videoVolumeOffIcon.classList.add('hidden');
-
-                                    } else {
-
-                                        video.muted = true;
-                                        videoVolumeOnIcon.classList.add('hidden');
-                                        videoVolumeOffIcon.classList.remove('hidden');
-
-                                    }
-
-                                    event.preventDefault();
-
-                                });
-
-                                videoPlayPause.addEventListener('click', (event) => {
-
-                                    if (video.paused) {
-
-                                        video.play();
-                                        videoPlayIcon.classList.add('hidden');
-                                        videoPauseIcon.classList.remove('hidden');
-
-                                    } else {
-
-                                        video.pause();
-                                        videoPlayIcon.classList.remove('hidden');
-                                        videoPauseIcon.classList.add('hidden');
-
-                                    }
-
-                                    event.preventDefault();
-
+                                gsap.to(header, {
+                                    duration: 0.4,
+                                    delay: 0.4,
+                                    width: '99vw',
+                                    ease: 'power4.out',
                                 });
 
                             }
 
                         }
 
-                        this.$watch('visible', function(value) {
+                    });
 
-                            if (value != false) {
+                }
+            }))
+        });
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('archedImageCarouselMobile', () => ({
+                active: false,
+                confetti(id) {
 
-                                document.body.classList.add('overflow-hidden');
-
-                                // Video (Vimeo)
-
-                                if (video) {
-
-                                    if (video.tagName == 'IFRAME') {
-
-                                        const player = new Vimeo.Player(video);
-
-                                        // Initialise video
-
-                                        player.setCurrentTime(0);
-                                        player.play();
-                                        player.setVolume(1);
-
-                                        // Progress bar
-
-                                        setInterval(() => {
-
-                                            if (videoProgress) {
-
-                                                player.getCurrentTime().then(function(
-                                                    seconds) {
-
-                                                    player.getDuration().then(
-                                                        function(duration) {
-
-                                                            videoProgress.style
-                                                                .width = (
-                                                                    seconds /
-                                                                    duration) *
-                                                                100 + '%';
-
-                                                        });
-
-                                                });
-
-                                            }
-
-                                        }, 100);
-
-                                    } else {
-
-                                        // Initialise video
-
-                                        video.currentTime = 0;
-                                        video.play();
-
-                                        // Progress bar
-
-                                        setInterval(() => {
-
-                                            if (videoProgress) {
-
-                                                videoProgress.style.width = (video
-                                                        .currentTime / video.duration) *
-                                                    100 + '%';
-
-                                            }
-
-                                        }, 100);
-
-                                    }
-
+                    emojisplosion({
+                        emojis: ["\ud83d\udcaf", "\u2728", "\ud83c\udf89", "\ud83c\udf8a",
+                            "\ud83c\udf7e", "\ud83c\udf88", "\ud83d\udca5"
+                        ],
+                        emojiCount: 50,
+                        physics: {
+                            fontSize: 40,
+                            rotationDeceleration: 1.001,
+                            initialVelocities: {
+                                y: {
+                                    max: -70,
+                                    min: -12,
+                                },
+                                x: {
+                                    max: 30,
+                                    min: -30,
                                 }
+                            },
+                        },
+                        position: () => ({
+                            // bottom center of the screen
+                            x: window.innerWidth / 2,
+                            y: window.innerHeight + 100,
+                        }),
+                        process(element) {
+                            element.style.zIndex = 1000;
+
+                        },
+                    });
+
+                },
+                rotateArchedImages(id) {
+
+                    const container = document.querySelector(`.js-arched-image-container-${id}`);
+                    const innerContainer = document.querySelector(
+                        `.js-arched-image-inner-container-${id}`);
+                    const images = document.querySelectorAll(`.js-arched-image-${id}`);
+
+                    var config = {
+                        duration: 150,
+                        repeatDelay: 8,
+                        rotationMultiply: 18,
+                        rotationOffset: 55
+                    }
+
+                    images.forEach((image, index) => {
+                        image.style.transform =
+                            `rotate(${(index * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
+                        image.style.webkitTransform =
+                            `rotate(${(index * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
+                    });
+
+                    // Infinite rotation
+
+                    gsap.to(container, {
+                        duration: config.duration,
+                        rotation: -360,
+                        ease: 'none',
+                        repeat: -1
+                    });
+
+                    // Rotate inner container
+
+                    ScrollTrigger.matchMedia({
+                        '(min-width: 1280px)': () => {
+
+                            gsap.to(innerContainer, {
+                                scrollTrigger: {
+                                    trigger: container,
+                                    scrub: true,
+                                    start: 'top center',
+                                    end: 'bottom bottom'
+                                },
+                                rotation: -40,
+                                ease: 'none',
+                            });
+
+                        }
+                    });
+
+                    // Move first child to end of container
+
+                    const interval = new TimelineMax({
+                        repeat: -1,
+                        repeatDelay: config.repeatDelay,
+                    }).call(function() {
+
+                        // Get first and last child
+
+                        const firstChild = innerContainer.firstElementChild;
+                        const lastChild = innerContainer.lastElementChild;
+
+                        // Get index of last child
+
+                        const index = parseInt(lastChild.getAttribute('data-index'));
+
+                        // Set index of first child to index of last child + 1
+
+                        firstChild.setAttribute('data-index', index + 1);
+
+                        // Get new index of first child
+
+                        const newIndex = parseInt(firstChild.getAttribute('data-index'));
+
+                        // ${(newIndex * config.rotationMultiply) - config.rotationOffset}deg
+                        // Set rotation of first child with transform rotate and webkit transform rotate
+
+                        firstChild.style.transform =
+                            `rotate(${(newIndex * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
+                        firstChild.style.webkitTransform =
+                            `rotate(${(newIndex * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
+
+                        // Append first child to end of container
+
+                        innerContainer.appendChild(firstChild);
+
+                    });
+
+                    setTimeout(() => {
+
+                        this.active = true;
+
+                    }, 300);
+
+                }
+            }));
+        });
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('archedImageCarouseTablet', () => ({
+                active: false,
+                confetti(id) {
+
+                    emojisplosion({
+                        emojis: ["\ud83d\udcaf", "\u2728", "\ud83c\udf89", "\ud83c\udf8a",
+                            "\ud83c\udf7e", "\ud83c\udf88", "\ud83d\udca5"
+                        ],
+                        emojiCount: 50,
+                        physics: {
+                            fontSize: 40,
+                            rotationDeceleration: 1.001,
+                            initialVelocities: {
+                                y: {
+                                    max: -70,
+                                    min: -12,
+                                },
+                                x: {
+                                    max: 30,
+                                    min: -30,
+                                }
+                            },
+                        },
+                        position: () => ({
+                            // bottom center of the screen
+                            x: window.innerWidth / 2,
+                            y: window.innerHeight + 100,
+                        }),
+                        process(element) {
+                            element.style.zIndex = 1000;
+
+                        },
+                    });
+
+                },
+                rotateArchedImages(id) {
+
+                    const container = document.querySelector(`.js-arched-image-container-${id}`);
+                    const innerContainer = document.querySelector(
+                        `.js-arched-image-inner-container-${id}`);
+                    const images = document.querySelectorAll(`.js-arched-image-${id}`);
+
+                    var config = {
+                        duration: 200,
+                        repeatDelay: 9.5,
+                        rotationMultiply: 15,
+                        rotationOffset: 55
+                    }
+
+                    images.forEach((image, index) => {
+                        image.style.transform =
+                            `rotate(${(index * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
+                        image.style.webkitTransform =
+                            `rotate(${(index * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
+                    });
+
+                    // Infinite rotation
+
+                    gsap.to(container, {
+                        duration: config.duration,
+                        rotation: -360,
+                        ease: 'none',
+                        repeat: -1
+                    });
+
+                    // Rotate inner container
+
+                    ScrollTrigger.matchMedia({
+                        '(min-width: 1280px)': () => {
+
+                            gsap.to(innerContainer, {
+                                scrollTrigger: {
+                                    trigger: container,
+                                    scrub: true,
+                                    start: 'top center',
+                                    end: 'bottom bottom'
+                                },
+                                rotation: -40,
+                                ease: 'none',
+                            });
+
+                        }
+                    });
+
+                    // Move first child to end of container
+
+                    const interval = new TimelineMax({
+                        repeat: -1,
+                        repeatDelay: config.repeatDelay,
+                    }).call(function() {
+
+                        // Get first and last child
+
+                        const firstChild = innerContainer.firstElementChild;
+                        const lastChild = innerContainer.lastElementChild;
+
+                        // Get index of last child
+
+                        const index = parseInt(lastChild.getAttribute('data-index'));
+
+                        // Set index of first child to index of last child + 1
+
+                        firstChild.setAttribute('data-index', index + 1);
+
+                        // Get new index of first child
+
+                        const newIndex = parseInt(firstChild.getAttribute('data-index'));
+
+                        // ${(newIndex * config.rotationMultiply) - config.rotationOffset}deg
+                        // Set rotation of first child with transform rotate and webkit transform rotate
+
+                        firstChild.style.transform =
+                            `rotate(${(newIndex * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
+                        firstChild.style.webkitTransform =
+                            `rotate(${(newIndex * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
+
+                        // Append first child to end of container
+
+                        innerContainer.appendChild(firstChild);
+
+                    });
+
+                    setTimeout(() => {
+
+                        this.active = true;
+
+                    }, 300);
+
+                }
+            }));
+        });
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('archedImageCarouselDesktop', () => ({
+                active: false,
+                confetti(id) {
+
+                    emojisplosion({
+                        emojis: ["\ud83d\udcaf", "\u2728", "\ud83c\udf89", "\ud83c\udf8a",
+                            "\ud83c\udf7e", "\ud83c\udf88", "\ud83d\udca5"
+                        ],
+                        emojiCount: 50,
+                        physics: {
+                            fontSize: 40,
+                            rotationDeceleration: 1.001,
+                            initialVelocities: {
+                                y: {
+                                    max: -70,
+                                    min: -12,
+                                },
+                                x: {
+                                    max: 30,
+                                    min: -30,
+                                }
+                            },
+                        },
+                        position: () => ({
+                            // bottom center of the screen
+                            x: window.innerWidth / 2,
+                            y: window.innerHeight + 100,
+                        }),
+                        process(element) {
+                            element.style.zIndex = 1000;
+
+                        },
+                    });
+
+                },
+                rotateArchedImages(id) {
+
+                    const container = document.querySelector(`.js-arched-image-container-${id}`);
+                    const innerContainer = document.querySelector(
+                        `.js-arched-image-inner-container-${id}`);
+                    const images = document.querySelectorAll(`.js-arched-image-${id}`);
+
+                    var config = {
+                        duration: 300,
+                        repeatDelay: 10,
+                        rotationMultiply: 12,
+                        rotationOffset: 55
+                    }
+
+                    images.forEach((image, index) => {
+                        image.style.transform =
+                            `rotate(${(index * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
+                        image.style.webkitTransform =
+                            `rotate(${(index * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
+                    });
+
+                    // Infinite rotation
+
+                    gsap.to(container, {
+                        duration: config.duration,
+                        rotation: -360,
+                        ease: 'none',
+                        repeat: -1
+                    });
+
+                    // Rotate inner container
+
+                    ScrollTrigger.matchMedia({
+                        '(min-width: 1280px)': () => {
+
+                            gsap.to(innerContainer, {
+                                scrollTrigger: {
+                                    trigger: container,
+                                    scrub: true,
+                                    start: 'top center',
+                                    end: 'bottom bottom'
+                                },
+                                rotation: -40,
+                                ease: 'none',
+                            });
+
+                        }
+                    });
+
+                    // Move first child to end of container
+
+                    const interval = new TimelineMax({
+                        repeat: -1,
+                        repeatDelay: config.repeatDelay,
+                    }).call(function() {
+
+                        // Get first and last child
+
+                        const firstChild = innerContainer.firstElementChild;
+                        const lastChild = innerContainer.lastElementChild;
+
+                        // Get index of last child
+
+                        const index = parseInt(lastChild.getAttribute('data-index'));
+
+                        // Set index of first child to index of last child + 1
+
+                        firstChild.setAttribute('data-index', index + 1);
+
+                        // Get new index of first child
+
+                        const newIndex = parseInt(firstChild.getAttribute('data-index'));
+
+                        // ${(newIndex * config.rotationMultiply) - config.rotationOffset}deg
+                        // Set rotation of first child with transform rotate and webkit transform rotate
+
+                        firstChild.style.transform =
+                            `rotate(${(newIndex * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
+                        firstChild.style.webkitTransform =
+                            `rotate(${(newIndex * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
+
+                        // Append first child to end of container
+
+                        innerContainer.appendChild(firstChild);
+
+                    });
+
+                    setTimeout(() => {
+
+                        this.active = true;
+
+                    }, 300);
+
+                }
+            }));
+        });
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('videoFile', () => ({
+                playing: true,
+                muted: true,
+                hovering: false,
+                paused: false,
+                initVideoFile(id) {
+
+                    // Get elements
+
+                    const video = document.querySelector(`.js-video-${id}`);
+                    const videoProgress = document.querySelector(`.js-video-progress-${id}`);
+                    const videoTimer = document.querySelector(`.js-video-timer-${id}`);
 
 
-                            } else {
-
-                                document.body.classList.remove('overflow-hidden');
-                            }
-
-                        });
-
-                    },
-                    closeModal(id) {
-
-                        this.visible = false;
-
-                        const video = document.querySelector('.js-modal-video-' + id);
-                        const videoProgress = document.querySelector('.js-modal-video-progress-' + id);
-
-                        if (video) {
-
-                            if (video.tagName == 'IFRAME') {
-
-                                const player = new Vimeo.Player(video);
-
-                                player.pause();
+                    // Set initial state
 
 
-                            } else {
 
-                                video.pause();
-                                videoProgress.style.width = '0%';
+                    // Set video progress + timer
 
-                            }
+                    setInterval(() => {
+
+                        if (videoProgress) {
+
+                            videoProgress.style.width = (video.currentTime / video.duration) *
+                                100 + '%';
+
                         }
 
-                    }
-                }))
-            });
-            document.addEventListener('alpine:init', () => {
-                Alpine.data('featureQuote', () => ({
-                    crossBrowserClasses(id) {
+                        if (videoTimer) {
 
-                        const isWindows = navigator.platform.indexOf('Win') > -1;
-                        const isAndroid = navigator.userAgent.toLowerCase().indexOf("android") > -1;
+                            const minutes = Math.floor(video.currentTime / 60);
+                            const seconds = Math.floor(video.currentTime - minutes * 60);
+                            const minuteValue = minutes >= 10 ? minutes : '0' + minutes;
+                            const secondValue = seconds >= 10 ? seconds : '0' + seconds;
 
-                        const elements = document.querySelectorAll(`.js-cross-browser-${id}`);
+                            videoTimer.innerHTML = minuteValue + ':' + secondValue;
 
-                        elements.forEach(element => {
+                        }
 
-                            if (isWindows) {
+                    }, 10);
 
-                                const windowsRemove = element.getAttribute('data-windows-remove')
-                                    .split('|');
-                                const windowsAdd = element.getAttribute('data-windows-add').split(
-                                    '|');
+                    // Check to see if video is playing or muted
 
-                                element.classList.remove(...windowsRemove);
-                                element.classList.add(...windowsAdd);
+                    setInterval(() => {
 
-                            }
-
-                            if (isAndroid) {
-
-                                const androidRemove = element.getAttribute('data-android-remove')
-                                    .split('|');
-                                const androidAdd = element.getAttribute('data-android-add').split(
-                                    '|');
-
-                                element.classList.remove(...androidRemove);
-                                element.classList.add(...androidAdd);
-
-                            }
-
-                        });
-
-                    }
-                }))
-            });
-            document.addEventListener('alpine:init', () => {
-                Alpine.data('videoFile', () => ({
-                    playing: true,
-                    muted: true,
-                    hovering: false,
-                    paused: false,
-                    initVideoFile(id) {
-
-                        // Get elements
-
-                        const video = document.querySelector(`.js-video-${id}`);
-                        const videoProgress = document.querySelector(`.js-video-progress-${id}`);
-                        const videoTimer = document.querySelector(`.js-video-timer-${id}`);
-
-
-                        // Set initial state
-
-                        this.playing = false;
-                        this.muted = false;
-
-
-                        // Set video progress + timer
-
-                        setInterval(() => {
-
-                            if (videoProgress) {
-
-                                videoProgress.style.width = (video.currentTime / video.duration) *
-                                    100 + '%';
-
-                            }
-
-                            if (videoTimer) {
-
-                                const minutes = Math.floor(video.currentTime / 60);
-                                const seconds = Math.floor(video.currentTime - minutes * 60);
-                                const minuteValue = minutes >= 10 ? minutes : '0' + minutes;
-                                const secondValue = seconds >= 10 ? seconds : '0' + seconds;
-
-                                videoTimer.innerHTML = minuteValue + ':' + secondValue;
-
-                            }
-
-                        }, 10);
-
-                        // Check to see if video is playing or muted
-
-                        setInterval(() => {
-
-                            if (video.paused) {
-
-                                if (video.muted) {
-                                    this.playing = false;
-                                    this.paused = false;
-                                } else {
-                                    this.playing = false;
-                                    this.paused = true;
-                                }
-
-                            } else {
-                                if (!this.hovering) {
-                                    this.playing = true;
-                                }
-                            }
+                        if (video.paused) {
 
                             if (video.muted) {
-                                this.muted = true;
+                                this.playing = false;
+                                this.paused = false;
                             } else {
-                                this.muted = false;
+                                this.playing = false;
+                                this.paused = true;
                             }
 
-                        }, 100);
+                        } else {
+                            if (!this.hovering) {
+                                this.playing = true;
+                            }
+                        }
+
+                        if (video.muted) {
+                            this.muted = true;
+                        } else {
+                            this.muted = false;
+                        }
+
+                    }, 100);
 
 
-                        window.addEventListener('scroll', (e) => {
+                    window.addEventListener('scroll', (e) => {
 
-                            if (video) {
+                        if (video) {
 
-                                const videoTop = video.getBoundingClientRect().top;
-                                const videoBottom = video.getBoundingClientRect().bottom;
+                            const videoTop = video.getBoundingClientRect().top;
+                            const videoBottom = video.getBoundingClientRect().bottom;
 
-                                if (video.classList.contains('js-video-with-sound')) {
+                            if (video.classList.contains('js-video-with-sound')) {
 
-                                    if (videoTop > window.innerHeight || videoBottom < 0) {
-                                        video.pause();
-                                        video.muted = true;
-                                    }
-
+                                if (videoTop > window.innerHeight || videoBottom < 0) {
+                                    video.pause();
+                                    video.muted = true;
                                 }
 
                             }
 
-                        });
+                        }
+
+                    });
 
 
 
-                        video.addEventListener('ended', () => {
+                    video.addEventListener('ended', () => {
 
-                            if (!video.hasAttribute('loop')) {
+                        if (!video.hasAttribute('loop')) {
 
-                                video.currentTime = 0;
-                                video.muted = true;
-                                videoProgress.style.width = 0;
-                                video.pause();
-
-                            }
-
-
-                        });
-
-
-
-                    },
-                    toggleSound(id) {
-
-                        const video = document.querySelector('.js-video-' + id);
-                        const videos = document.querySelectorAll('.js-video');
-
-                        if (this.muted) {
-
-                            videos.forEach(video => {
-                                video.pause();
-                                video.muted = true;
-                            });
-
-                            video.play();
-
-                            video.muted = false;
-                            this.muted = false;
-
-                            this.$dispatch('component-cursor', {
-                                icon: 'volume-on'
-                            });
-
-                        } else {
-
+                            video.currentTime = 0;
                             video.muted = true;
-                            this.muted = true;
-
-                            this.$dispatch('component-cursor', {
-                                icon: 'volume-off'
-                            });
-
-                        }
-
-
-                    },
-                    togglePreview(id, status) {
-
-                        this.hovering = status;
-
-                        const video = document.querySelector('.js-video-' + id);
-
-                        if (this.hovering && this.muted) {
-
-                            video.currentTime = 0;
-                            video.play();
-
-                        }
-
-                        if (!this.hovering && this.muted) {
-
+                            videoProgress.style.width = 0;
                             video.pause();
-                            video.currentTime = 0;
 
                         }
 
 
-                    },
-                    togglePause(id) {
+                    });
 
-                        const video = document.querySelector('.js-video-' + id);
-                        const videos = document.querySelectorAll('.js-video');
 
-                        if (this.paused) {
 
-                            videos.forEach(video => {
-                                video.pause();
-                            });
+                },
+                toggleSound(id) {
 
-                            video.play();
-                            this.paused = false;
-                            this.playing = true;
+                    const video = document.querySelector('.js-video-' + id);
+                    const videos = document.querySelectorAll('.js-video');
 
-                        } else {
+                    if (this.muted) {
 
-                            video.pause();
-                            this.paused = true;
-                            this.playing = false;
-
-                        }
-
-                    },
-                    toggleVideo(id) {
-
-                        const video = document.querySelector('.js-video-' + id);
-                        const videos = document.querySelectorAll('.js-video');
-                        const videosWithVolumeControls = document.querySelectorAll(
-                            '.js-video-with-volume-controls');
-                        const videosPlaying = document.querySelectorAll('.js-video-playing');
-
-                        videosPlaying.forEach(video => {
-                            if (!video.muted && !video.classList.contains('js-video-with-sound')) {
-                                video.muted = true;
-                            } else {
-                                video.pause();
-                                video.muted = true;
-                                video.currentTime = 0;
-                            }
-                        });
-
-                        if (this.playing) {
-
+                        videos.forEach(video => {
                             video.pause();
                             video.muted = true;
-                            this.playing = false;
-                            this.hovering = false;
+                        });
 
-                        } else {
+                        video.play();
 
-                            videosWithVolumeControls.forEach(video => {
-                                video.pause();
-                            });
+                        video.muted = false;
+                        this.muted = false;
 
-                            video.currentTime = 0;
-                            video.muted = false;
-                            video.play();
-                            this.playing = true;
-                            this.hovering = false;
+                        this.$dispatch('component-cursor', {
+                            icon: 'volume-on'
+                        });
 
-                        }
+                    } else {
+
+                        video.muted = true;
+                        this.muted = true;
+
+                        this.$dispatch('component-cursor', {
+                            icon: 'volume-off'
+                        });
 
                     }
-                }))
-            });
-            document.addEventListener('alpine:init', () => {
-                Alpine.data('videoQuoteColumns', () => ({
-                    isStart: true,
-                    isEnd: false,
-                    carousel(id) {
 
-                        const carousel = new Swiper(`.js-carousel-${id}`, {
-                            slidesPerView: 1.5,
-                            cssMode: true,
-                            navigation: {
-                                nextEl: '.js-carousel-next-' + id,
-                                prevEl: '.js-carousel-prev-' + id,
+
+                },
+                togglePreview(id, status) {
+
+                    this.hovering = status;
+
+                    const video = document.querySelector('.js-video-' + id);
+
+                    if (this.hovering && this.muted) {
+
+                        video.currentTime = 0;
+                        video.play();
+
+                    }
+
+                    if (!this.hovering && this.muted) {
+
+                        video.pause();
+                        video.currentTime = 0;
+
+                    }
+
+
+                },
+                togglePause(id) {
+
+                    const video = document.querySelector('.js-video-' + id);
+                    const videos = document.querySelectorAll('.js-video');
+
+                    if (this.paused) {
+
+                        videos.forEach(video => {
+                            video.pause();
+                        });
+
+                        video.play();
+                        this.paused = false;
+                        this.playing = true;
+
+                    } else {
+
+                        video.pause();
+                        this.paused = true;
+                        this.playing = false;
+
+                    }
+
+                },
+                toggleVideo(id) {
+
+                    const video = document.querySelector('.js-video-' + id);
+                    const videos = document.querySelectorAll('.js-video');
+                    const videosWithVolumeControls = document.querySelectorAll(
+                        '.js-video-with-volume-controls');
+                    const videosPlaying = document.querySelectorAll('.js-video-playing');
+
+                    videosPlaying.forEach(video => {
+                        if (!video.muted && !video.classList.contains('js-video-with-sound')) {
+                            video.muted = true;
+                        } else {
+                            video.pause();
+                            video.muted = true;
+                            video.currentTime = 0;
+                        }
+                    });
+
+                    if (this.playing) {
+
+                        video.pause();
+                        video.muted = true;
+                        this.playing = false;
+                        this.hovering = false;
+
+                    } else {
+
+                        videosWithVolumeControls.forEach(video => {
+                            video.pause();
+                        });
+
+                        video.currentTime = 0;
+                        video.muted = false;
+                        video.play();
+                        this.playing = true;
+                        this.hovering = false;
+
+                    }
+
+                }
+            }))
+        });
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('profile', () => ({
+                hovering: false,
+                profileHover(id) {
+
+                    const profile = this.$refs.profile;
+                    const images = this.$refs.profileImages.querySelectorAll('img');
+
+                    let index = 0;
+                    let interval;
+
+                    function flickThroughImages() {
+
+                        interval = setInterval(() => {
+
+                            images.forEach((image, i) => {
+
+                                if (i == index) {
+                                    image.classList.remove('hidden');
+                                } else {
+                                    image.classList.add('hidden');
+                                }
+
+                            })
+
+                            index++;
+
+                            if (index >= images.length) {
+                                index = 0;
+                            }
+
+                        }, 200);
+
+                    }
+
+                    clearInterval(interval);
+                    setTimeout(flickThroughImages(), 200);
+
+                    profile.addEventListener('mouseenter', () => {
+
+                        this.hovering = true;
+                        clearInterval(interval);
+                        setTimeout(flickThroughImages(), 200);
+
+                        // setTimeout(() => {
+                        //    this.hovering = false;
+                        //    clearInterval(interval);
+                        // }, 1000);
+
+                    });
+
+                    profile.addEventListener('mouseleave', () => {
+
+                        this.hovering = false;
+                        clearInterval(interval);
+
+                    });
+
+                }
+            }))
+        });
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('entriesProfiles', () => ({
+                carousel(id) {
+
+                    const profileCards = document.querySelectorAll('.js-profile-card-' + id);
+
+                    const carousel = new Swiper('.js-carousel-' + id, {
+                        slidesPerView: 1.6,
+                        loop: true,
+                        speed: 10000,
+                        autoplay: {
+                            delay: 0,
+                        },
+                        breakpoints: {
+                            640: {
+                                speed: 10000,
+                                slidesPerView: 2,
                             },
+                            768: {
+                                speed: 20000,
+                                slidesPerView: 2.5,
+                            },
+                            1024: {
+                                speed: 20000,
+                                slidesPerView: 3.5,
+                            },
+                            1280: {
+                                speed: 20000,
+                                slidesPerView: 4,
+                            },
+                            2100: {
+                                speed: 20000,
+                                slidesPerView: 5,
+                            },
+                        },
+
+                    });
+
+                }
+            }));
+        });
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('statistic', () => ({
+                countUp(id) {
+
+                    const statistics = document.querySelectorAll(`.js-statistic-${id}`);
+
+                    statistics.forEach(statistic => {
+
+                        const character = statistic.dataset.character;
+                        const delay = statistic.dataset.delay;
+
+                        let goToCharacterPosition = statistic.querySelector(
+                                `.js-statistic-${id}-character[data-character="${character}"]`)
+                            .offsetTop;
+                        let goToCharacterWidth = statistic.querySelector(
+                                `.js-statistic-${id}-character[data-character="${character}"]`)
+                            .offsetWidth;
+
+                        this.animate(id, statistic, goToCharacterWidth, goToCharacterPosition);
+
+                        // window.addEventListener('resize', () => {
+
+                        //     goToCharacterWidth = statistic.querySelector(`.js-statistic-${id}-character[data-character="${character}"]`).offsetWidth;
+                        //     goToCharacterPosition = statistic.querySelector(`.js-statistic-${id}-character[data-character="${character}"]`).offsetTop;
+
+                        //     this.animate(id, statistic, goToCharacterWidth, goToCharacterPosition);
+
+                        // });
+
+
+                    });
+
+                },
+                animate(id, statistic, goToCharacterWidth, goToCharacterPosition) {
+
+                    gsap.to(statistic.querySelectorAll(`.js-statistic-${id}-characters > div`), {
+                        duration: 1.5,
+                        y: -goToCharacterPosition,
+                        ease: 'power4.inOut',
+                        scrollTrigger: {
+                            trigger: statistic,
+                            start: 'top 90%',
+                        }
+                    });
+
+                    gsap.to(statistic, {
+                        duration: 0.5,
+                        width: goToCharacterWidth,
+                        ease: 'power1.out',
+                        scrollTrigger: {
+                            trigger: statistic,
+                            start: 'top 90%',
+                        }
+                    });
+
+                }
+            }))
+        });
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('statistics', () => ({
+                isStart: true,
+                isEnd: false,
+                carousel(id) {
+
+                    const carousel = new Swiper(`.js-carousel-${id}`, {
+                        slidesPerView: 1,
+                        navigation: {
+                            nextEl: '.js-carousel-next-' + id,
+                            prevEl: '.js-carousel-prev-' + id,
+                        },
+                        breakpoints: {
+                            768: {
+                                slidesPerView: 2,
+                            },
+                            1024: {
+                                slidesPerView: 3,
+                            },
+                            1280: {
+                                slidesPerView: 4,
+                            },
+                        },
+                    });
+
+                    carousel.on('slideChange', () => {
+                        this.isStart = carousel.isBeginning;
+                        this.isEnd = carousel.isEnd;
+                    });
+
+                }
+            }))
+        });
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('logosDoubleCarousel', () => ({
+                carousel(id) {
+
+                    const carousels = document.querySelectorAll(`.js-carousel-${id}`);
+
+                    carousels.forEach((carousel, index) => {
+
+                        const swiper = new Swiper(carousel, {
+                            slidesPerView: 2,
+                            spaceBetween: 0,
+                            loop: true,
+                            allowTouchMove: false,
+                            autoplay: {
+                                delay: 0,
+                                disableOnInteraction: false,
+                                reverseDirection: index % 2 === 0 ? false : true,
+                            },
+                            speed: 10000,
+                            grabCursor: false,
+                            mousewheelControl: false,
+                            keyboardControl: false,
                             breakpoints: {
-                                768: {
-                                    slidesPerView: 2.5,
-                                },
-                                960: {
+                                640: {
                                     slidesPerView: 3,
+                                },
+                                768: {
+                                    slidesPerView: 3.5,
                                 },
                                 1024: {
-                                    slidesPerView: 3,
+                                    slidesPerView: 4,
                                 },
                                 1280: {
                                     slidesPerView: 4,
                                 },
-                            },
-                        });
-
-                        carousel.on('slideChange', () => {
-                            this.isStart = carousel.isBeginning;
-                            this.isEnd = carousel.isEnd;
-                        });
-
-                    }
-                }))
-            });
-            document.addEventListener('alpine:init', () => {
-                Alpine.data('reviews', () => ({
-                    isStart: true,
-                    isEnd: false,
-                    carousel(id) {
-
-                        const carousel = new Swiper('.js-carousel-' + id, {
-                            slidesPerView: 1.2,
-                            spaceBetween: 0,
-                            navigation: {
-                                nextEl: '.js-carousel-next-' + id,
-                                prevEl: '.js-carousel-prev-' + id,
-                            },
-                            breakpoints: {
-                                640: {
-                                    slidesPerView: 1.4,
-                                },
-                                768: {
-                                    slidesPerView: 1.7,
-                                },
-                                1024: {
-                                    slidesPerView: 1.7,
-                                    slidesOffsetBefore: 30,
-                                },
-                                1280: {
-                                    slidesPerView: 2.3,
-                                    slidesOffsetBefore: 30,
-                                },
-                                2100: {
-                                    slidesPerView: 3.2,
-                                    slidesOffsetBefore: 30,
-                                }
-                            },
-                        });
-
-                        carousel.on('slideChange', () => {
-                            this.isStart = carousel.isBeginning;
-                            this.isEnd = carousel.isEnd;
-                        });
-
-                    }
-                }));
-            });
-            document.addEventListener('alpine:init', () => {
-                Alpine.data('headingImageCarousel', () => ({
-                    carousel(id) {
-
-                        const images = document.querySelectorAll('.js-image-' + id);
-
-                        const carousel = new Swiper('.js-carousel-' + id, {
-                            slidesPerView: 3,
-                            loop: true,
-                            speed: 10000,
-                            autoplay: {
-                                delay: 0,
-                            },
-                            breakpoints: {
-                                640: {
+                                1400: {
                                     slidesPerView: 5,
                                 },
-                                1024: {
+                                2100: {
                                     slidesPerView: 6,
                                 },
-                                1280: {
-                                    slidesPerView: 8,
-                                },
-                                2100: {
-                                    slidesPerView: 9,
-                                }
-                            },
-
+                            }
                         });
+
+                        setTimeout(() => {
+
+                            swiper.update();
+                            swiper.autoplay.start();
+
+                        }, 1000);
 
                         window.addEventListener('resize', () => {
 
@@ -7446,839 +6671,1504 @@ pr-8 mb-5 | lg:pr-16
 
                             window.resizedFinished = setTimeout(function() {
 
-                                carousel.update();
-                                carousel.autoplay.start();
+                                swiper.update();
+                                swiper.autoplay.start();
 
                             }, 50);
 
                         });
 
-                    }
-                }));
-            });
-            document.addEventListener('alpine:init', () => {
-                Alpine.data('modal414648', () => ({
-                    visible: false,
-                    setupModal(id) {
+                        const logos = carousel.querySelectorAll(`.js-logo-${id}`);
 
-                        // Prevent keys from interferring with the video
+                        // ScrollTrigger.matchMedia({
+                        //     '(min-width: 1280px)': () => {
 
-                        navigator.mediaSession.setActionHandler('play', function() {});
-                        navigator.mediaSession.setActionHandler('pause', function() {});
-                        navigator.mediaSession.setActionHandler('seekbackward', function() {});
-                        navigator.mediaSession.setActionHandler('seekforward', function() {});
-                        navigator.mediaSession.setActionHandler('previoustrack', function() {});
-                        navigator.mediaSession.setActionHandler('nexttrack', function() {});
+                        //         gsap.to(logos, {
+                        //             scrollTrigger: {
+                        //                 trigger: logos,
+                        //                 scrub: true,
+                        //                 start: 'top 110%',
+                        //                 end: 'bottom top'
+                        //             },
+                        //             x: index % 2 === 0 ? 100 : -100,
+                        //             ease: 'none',
+                        //         });
 
-                        // Get video elements
+                        //     }
+                        // });
 
-                        const video = document.querySelector(`.js-modal-video-${id}`);
-                        const videoProgress = document.querySelector(`.js-modal-video-progress-${id}`);
 
-                        const videoPlayPause = document.querySelector(`.js-modal-video-play-pause-${id}`);
-                        const videoSound = document.querySelector(`.js-modal-video-sound-${id}`);
+                    });
 
-                        const videoPlayIcon = document.querySelector(`.js-modal-video-play-icon-${id}`);
-                        const videoPauseIcon = document.querySelector(`.js-modal-video-pause-icon-${id}`);
+                }
+            }));
+        });
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('modal428063', () => ({
+                visible: false,
+                setupModal(id) {
 
-                        const videoVolumeOnIcon = document.querySelector(
-                            `.js-modal-video-volume-on-icon-${id}`);
-                        const videoVolumeOffIcon = document.querySelector(
-                            `.js-modal-video-volume-off-icon-${id}`);
+                    // Prevent keys from interferring with the video
 
-                        // Video controls
+                    navigator.mediaSession.setActionHandler('play', function() {});
+                    navigator.mediaSession.setActionHandler('pause', function() {});
+                    navigator.mediaSession.setActionHandler('seekbackward', function() {});
+                    navigator.mediaSession.setActionHandler('seekforward', function() {});
+                    navigator.mediaSession.setActionHandler('previoustrack', function() {});
+                    navigator.mediaSession.setActionHandler('nexttrack', function() {});
 
-                        if (video) {
+                    // Get video elements
 
-                            if (video.tagName == 'IFRAME') {
+                    const video = document.querySelector(`.js-modal-video-${id}`);
+                    const videoProgress = document.querySelector(`.js-modal-video-progress-${id}`);
 
-                                const player = new Vimeo.Player(video);
+                    const videoPlayPause = document.querySelector(`.js-modal-video-play-pause-${id}`);
+                    const videoSound = document.querySelector(`.js-modal-video-sound-${id}`);
 
-                                // Video controls
+                    const videoPlayIcon = document.querySelector(`.js-modal-video-play-icon-${id}`);
+                    const videoPauseIcon = document.querySelector(`.js-modal-video-pause-icon-${id}`);
 
-                                videoSound.addEventListener('click', (event) => {
+                    const videoVolumeOnIcon = document.querySelector(
+                        `.js-modal-video-volume-on-icon-${id}`);
+                    const videoVolumeOffIcon = document.querySelector(
+                        `.js-modal-video-volume-off-icon-${id}`);
 
-                                    player.getVolume().then(function(volume) {
+                    // Video controls
 
-                                        if (videoVolumeOnIcon.classList.contains(
-                                                'hidden')) {
+                    if (video) {
 
-                                            player.setVolume(1);
-                                            videoVolumeOnIcon.classList.remove('hidden');
-                                            videoVolumeOffIcon.classList.add('hidden');
+                        if (video.tagName == 'IFRAME') {
 
-                                        } else {
+                            const player = new Vimeo.Player(video);
 
-                                            player.setVolume(0);
-                                            videoVolumeOnIcon.classList.add('hidden');
-                                            videoVolumeOffIcon.classList.remove('hidden');
+                            // Video controls
 
-                                        }
+                            videoSound.addEventListener('click', (event) => {
 
-                                    });
+                                player.getVolume().then(function(volume) {
 
-                                    event.preventDefault();
+                                    if (videoVolumeOnIcon.classList.contains(
+                                            'hidden')) {
 
-                                });
-
-                                videoPlayPause.addEventListener('click', (event) => {
-
-                                    player.getPaused().then(function(paused) {
-
-                                        if (paused) {
-
-                                            player.play();
-                                            videoPlayIcon.classList.add('hidden');
-                                            videoPauseIcon.classList.remove('hidden');
-
-                                        } else {
-
-                                            player.pause();
-                                            videoPlayIcon.classList.remove('hidden');
-                                            videoPauseIcon.classList.add('hidden');
-
-                                        }
-
-                                    });
-
-                                    event.preventDefault();
-
-                                });
-
-                            } else {
-
-                                videoSound.addEventListener('click', (event) => {
-
-                                    if (videoVolumeOnIcon.classList.contains('hidden')) {
-
-                                        video.muted = false;
+                                        player.setVolume(1);
                                         videoVolumeOnIcon.classList.remove('hidden');
                                         videoVolumeOffIcon.classList.add('hidden');
 
                                     } else {
 
-                                        video.muted = true;
+                                        player.setVolume(0);
                                         videoVolumeOnIcon.classList.add('hidden');
                                         videoVolumeOffIcon.classList.remove('hidden');
 
                                     }
 
-                                    event.preventDefault();
-
                                 });
 
-                                videoPlayPause.addEventListener('click', (event) => {
+                                event.preventDefault();
 
-                                    if (video.paused) {
+                            });
 
-                                        video.play();
+                            videoPlayPause.addEventListener('click', (event) => {
+
+                                player.getPaused().then(function(paused) {
+
+                                    if (paused) {
+
+                                        player.play();
                                         videoPlayIcon.classList.add('hidden');
                                         videoPauseIcon.classList.remove('hidden');
 
                                     } else {
 
-                                        video.pause();
+                                        player.pause();
                                         videoPlayIcon.classList.remove('hidden');
                                         videoPauseIcon.classList.add('hidden');
 
                                     }
 
-                                    event.preventDefault();
-
                                 });
 
-                            }
+                                event.preventDefault();
 
-                        }
+                            });
 
-                        this.$watch('visible', function(value) {
+                        } else {
 
-                            if (value != false) {
+                            videoSound.addEventListener('click', (event) => {
 
-                                document.body.classList.add('overflow-hidden');
+                                if (videoVolumeOnIcon.classList.contains('hidden')) {
 
-                                // Video (Vimeo)
+                                    video.muted = false;
+                                    videoVolumeOnIcon.classList.remove('hidden');
+                                    videoVolumeOffIcon.classList.add('hidden');
 
-                                if (video) {
+                                } else {
 
-                                    if (video.tagName == 'IFRAME') {
-
-                                        const player = new Vimeo.Player(video);
-
-                                        // Initialise video
-
-                                        player.setCurrentTime(0);
-                                        player.play();
-                                        player.setVolume(1);
-
-                                        // Progress bar
-
-                                        setInterval(() => {
-
-                                            if (videoProgress) {
-
-                                                player.getCurrentTime().then(function(
-                                                    seconds) {
-
-                                                    player.getDuration().then(
-                                                        function(duration) {
-
-                                                            videoProgress.style
-                                                                .width = (
-                                                                    seconds /
-                                                                    duration) *
-                                                                100 + '%';
-
-                                                        });
-
-                                                });
-
-                                            }
-
-                                        }, 100);
-
-                                    } else {
-
-                                        // Initialise video
-
-                                        video.currentTime = 0;
-                                        video.play();
-
-                                        // Progress bar
-
-                                        setInterval(() => {
-
-                                            if (videoProgress) {
-
-                                                videoProgress.style.width = (video
-                                                        .currentTime / video.duration) *
-                                                    100 + '%';
-
-                                            }
-
-                                        }, 100);
-
-                                    }
+                                    video.muted = true;
+                                    videoVolumeOnIcon.classList.add('hidden');
+                                    videoVolumeOffIcon.classList.remove('hidden');
 
                                 }
 
+                                event.preventDefault();
 
-                            } else {
+                            });
 
-                                document.body.classList.remove('overflow-hidden');
-                            }
+                            videoPlayPause.addEventListener('click', (event) => {
 
-                        });
+                                if (video.paused) {
 
-                    },
-                    closeModal(id) {
+                                    video.play();
+                                    videoPlayIcon.classList.add('hidden');
+                                    videoPauseIcon.classList.remove('hidden');
 
-                        this.visible = false;
+                                } else {
 
-                        const video = document.querySelector('.js-modal-video-' + id);
-                        const videoProgress = document.querySelector('.js-modal-video-progress-' + id);
-
-                        if (video) {
-
-                            if (video.tagName == 'IFRAME') {
-
-                                const player = new Vimeo.Player(video);
-
-                                player.pause();
-
-
-                            } else {
-
-                                video.pause();
-                                videoProgress.style.width = '0%';
-
-                            }
-                        }
-
-                    }
-                }))
-            });
-            document.addEventListener('alpine:init', () => {
-                Alpine.data('modal167022', () => ({
-                    visible: false,
-                    setupModal(id) {
-
-                        // Prevent keys from interferring with the video
-
-                        navigator.mediaSession.setActionHandler('play', function() {});
-                        navigator.mediaSession.setActionHandler('pause', function() {});
-                        navigator.mediaSession.setActionHandler('seekbackward', function() {});
-                        navigator.mediaSession.setActionHandler('seekforward', function() {});
-                        navigator.mediaSession.setActionHandler('previoustrack', function() {});
-                        navigator.mediaSession.setActionHandler('nexttrack', function() {});
-
-                        // Get video elements
-
-                        const video = document.querySelector(`.js-modal-video-${id}`);
-                        const videoProgress = document.querySelector(`.js-modal-video-progress-${id}`);
-
-                        const videoPlayPause = document.querySelector(`.js-modal-video-play-pause-${id}`);
-                        const videoSound = document.querySelector(`.js-modal-video-sound-${id}`);
-
-                        const videoPlayIcon = document.querySelector(`.js-modal-video-play-icon-${id}`);
-                        const videoPauseIcon = document.querySelector(`.js-modal-video-pause-icon-${id}`);
-
-                        const videoVolumeOnIcon = document.querySelector(
-                            `.js-modal-video-volume-on-icon-${id}`);
-                        const videoVolumeOffIcon = document.querySelector(
-                            `.js-modal-video-volume-off-icon-${id}`);
-
-                        // Video controls
-
-                        if (video) {
-
-                            if (video.tagName == 'IFRAME') {
-
-                                const player = new Vimeo.Player(video);
-
-                                // Video controls
-
-                                videoSound.addEventListener('click', (event) => {
-
-                                    player.getVolume().then(function(volume) {
-
-                                        if (videoVolumeOnIcon.classList.contains(
-                                                'hidden')) {
-
-                                            player.setVolume(1);
-                                            videoVolumeOnIcon.classList.remove('hidden');
-                                            videoVolumeOffIcon.classList.add('hidden');
-
-                                        } else {
-
-                                            player.setVolume(0);
-                                            videoVolumeOnIcon.classList.add('hidden');
-                                            videoVolumeOffIcon.classList.remove('hidden');
-
-                                        }
-
-                                    });
-
-                                    event.preventDefault();
-
-                                });
-
-                                videoPlayPause.addEventListener('click', (event) => {
-
-                                    player.getPaused().then(function(paused) {
-
-                                        if (paused) {
-
-                                            player.play();
-                                            videoPlayIcon.classList.add('hidden');
-                                            videoPauseIcon.classList.remove('hidden');
-
-                                        } else {
-
-                                            player.pause();
-                                            videoPlayIcon.classList.remove('hidden');
-                                            videoPauseIcon.classList.add('hidden');
-
-                                        }
-
-                                    });
-
-                                    event.preventDefault();
-
-                                });
-
-                            } else {
-
-                                videoSound.addEventListener('click', (event) => {
-
-                                    if (videoVolumeOnIcon.classList.contains('hidden')) {
-
-                                        video.muted = false;
-                                        videoVolumeOnIcon.classList.remove('hidden');
-                                        videoVolumeOffIcon.classList.add('hidden');
-
-                                    } else {
-
-                                        video.muted = true;
-                                        videoVolumeOnIcon.classList.add('hidden');
-                                        videoVolumeOffIcon.classList.remove('hidden');
-
-                                    }
-
-                                    event.preventDefault();
-
-                                });
-
-                                videoPlayPause.addEventListener('click', (event) => {
-
-                                    if (video.paused) {
-
-                                        video.play();
-                                        videoPlayIcon.classList.add('hidden');
-                                        videoPauseIcon.classList.remove('hidden');
-
-                                    } else {
-
-                                        video.pause();
-                                        videoPlayIcon.classList.remove('hidden');
-                                        videoPauseIcon.classList.add('hidden');
-
-                                    }
-
-                                    event.preventDefault();
-
-                                });
-
-                            }
-
-                        }
-
-                        this.$watch('visible', function(value) {
-
-                            if (value != false) {
-
-                                document.body.classList.add('overflow-hidden');
-
-                                // Video (Vimeo)
-
-                                if (video) {
-
-                                    if (video.tagName == 'IFRAME') {
-
-                                        const player = new Vimeo.Player(video);
-
-                                        // Initialise video
-
-                                        player.setCurrentTime(0);
-                                        player.play();
-                                        player.setVolume(1);
-
-                                        // Progress bar
-
-                                        setInterval(() => {
-
-                                            if (videoProgress) {
-
-                                                player.getCurrentTime().then(function(
-                                                    seconds) {
-
-                                                    player.getDuration().then(
-                                                        function(duration) {
-
-                                                            videoProgress.style
-                                                                .width = (
-                                                                    seconds /
-                                                                    duration) *
-                                                                100 + '%';
-
-                                                        });
-
-                                                });
-
-                                            }
-
-                                        }, 100);
-
-                                    } else {
-
-                                        // Initialise video
-
-                                        video.currentTime = 0;
-                                        video.play();
-
-                                        // Progress bar
-
-                                        setInterval(() => {
-
-                                            if (videoProgress) {
-
-                                                videoProgress.style.width = (video
-                                                        .currentTime / video.duration) *
-                                                    100 + '%';
-
-                                            }
-
-                                        }, 100);
-
-                                    }
+                                    video.pause();
+                                    videoPlayIcon.classList.remove('hidden');
+                                    videoPauseIcon.classList.add('hidden');
 
                                 }
 
+                                event.preventDefault();
 
-                            } else {
+                            });
 
-                                document.body.classList.remove('overflow-hidden');
-                            }
-
-                        });
-
-                    },
-                    closeModal(id) {
-
-                        this.visible = false;
-
-                        const video = document.querySelector('.js-modal-video-' + id);
-                        const videoProgress = document.querySelector('.js-modal-video-progress-' + id);
-
-                        if (video) {
-
-                            if (video.tagName == 'IFRAME') {
-
-                                const player = new Vimeo.Player(video);
-
-                                player.pause();
-
-
-                            } else {
-
-                                video.pause();
-                                videoProgress.style.width = '0%';
-
-                            }
                         }
 
                     }
-                }))
-            });
-            document.addEventListener('alpine:init', () => {
-                Alpine.data('modal168396', () => ({
-                    visible: false,
-                    setupModal(id) {
 
-                        // Prevent keys from interferring with the video
+                    this.$watch('visible', function(value) {
 
-                        navigator.mediaSession.setActionHandler('play', function() {});
-                        navigator.mediaSession.setActionHandler('pause', function() {});
-                        navigator.mediaSession.setActionHandler('seekbackward', function() {});
-                        navigator.mediaSession.setActionHandler('seekforward', function() {});
-                        navigator.mediaSession.setActionHandler('previoustrack', function() {});
-                        navigator.mediaSession.setActionHandler('nexttrack', function() {});
+                        if (value != false) {
 
-                        // Get video elements
+                            document.body.classList.add('overflow-hidden');
 
-                        const video = document.querySelector(`.js-modal-video-${id}`);
-                        const videoProgress = document.querySelector(`.js-modal-video-progress-${id}`);
+                            // Video (Vimeo)
 
-                        const videoPlayPause = document.querySelector(`.js-modal-video-play-pause-${id}`);
-                        const videoSound = document.querySelector(`.js-modal-video-sound-${id}`);
+                            if (video) {
 
-                        const videoPlayIcon = document.querySelector(`.js-modal-video-play-icon-${id}`);
-                        const videoPauseIcon = document.querySelector(`.js-modal-video-pause-icon-${id}`);
+                                if (video.tagName == 'IFRAME') {
 
-                        const videoVolumeOnIcon = document.querySelector(
-                            `.js-modal-video-volume-on-icon-${id}`);
-                        const videoVolumeOffIcon = document.querySelector(
-                            `.js-modal-video-volume-off-icon-${id}`);
+                                    const player = new Vimeo.Player(video);
 
-                        // Video controls
+                                    // Initialise video
 
-                        if (video) {
+                                    player.setCurrentTime(0);
+                                    player.play();
+                                    player.setVolume(1);
 
-                            if (video.tagName == 'IFRAME') {
+                                    // Progress bar
 
-                                const player = new Vimeo.Player(video);
+                                    setInterval(() => {
 
-                                // Video controls
+                                        if (videoProgress) {
 
-                                videoSound.addEventListener('click', (event) => {
+                                            player.getCurrentTime().then(function(
+                                                seconds) {
 
-                                    player.getVolume().then(function(volume) {
+                                                player.getDuration().then(
+                                                    function(duration) {
 
-                                        if (videoVolumeOnIcon.classList.contains(
-                                                'hidden')) {
+                                                        videoProgress.style
+                                                            .width = (
+                                                                seconds /
+                                                                duration) *
+                                                            100 + '%';
 
-                                            player.setVolume(1);
-                                            videoVolumeOnIcon.classList.remove('hidden');
-                                            videoVolumeOffIcon.classList.add('hidden');
+                                                    });
 
-                                        } else {
-
-                                            player.setVolume(0);
-                                            videoVolumeOnIcon.classList.add('hidden');
-                                            videoVolumeOffIcon.classList.remove('hidden');
+                                            });
 
                                         }
 
-                                    });
+                                    }, 100);
 
-                                    event.preventDefault();
+                                } else {
 
-                                });
+                                    // Initialise video
 
-                                videoPlayPause.addEventListener('click', (event) => {
+                                    video.currentTime = 0;
+                                    video.play();
 
-                                    player.getPaused().then(function(paused) {
+                                    // Progress bar
 
-                                        if (paused) {
+                                    setInterval(() => {
 
-                                            player.play();
-                                            videoPlayIcon.classList.add('hidden');
-                                            videoPauseIcon.classList.remove('hidden');
+                                        if (videoProgress) {
 
-                                        } else {
-
-                                            player.pause();
-                                            videoPlayIcon.classList.remove('hidden');
-                                            videoPauseIcon.classList.add('hidden');
+                                            videoProgress.style.width = (video
+                                                    .currentTime / video.duration) *
+                                                100 + '%';
 
                                         }
 
-                                    });
-
-                                    event.preventDefault();
-
-                                });
-
-                            } else {
-
-                                videoSound.addEventListener('click', (event) => {
-
-                                    if (videoVolumeOnIcon.classList.contains('hidden')) {
-
-                                        video.muted = false;
-                                        videoVolumeOnIcon.classList.remove('hidden');
-                                        videoVolumeOffIcon.classList.add('hidden');
-
-                                    } else {
-
-                                        video.muted = true;
-                                        videoVolumeOnIcon.classList.add('hidden');
-                                        videoVolumeOffIcon.classList.remove('hidden');
-
-                                    }
-
-                                    event.preventDefault();
-
-                                });
-
-                                videoPlayPause.addEventListener('click', (event) => {
-
-                                    if (video.paused) {
-
-                                        video.play();
-                                        videoPlayIcon.classList.add('hidden');
-                                        videoPauseIcon.classList.remove('hidden');
-
-                                    } else {
-
-                                        video.pause();
-                                        videoPlayIcon.classList.remove('hidden');
-                                        videoPauseIcon.classList.add('hidden');
-
-                                    }
-
-                                    event.preventDefault();
-
-                                });
-
-                            }
-
-                        }
-
-                        this.$watch('visible', function(value) {
-
-                            if (value != false) {
-
-                                document.body.classList.add('overflow-hidden');
-
-                                // Video (Vimeo)
-
-                                if (video) {
-
-                                    if (video.tagName == 'IFRAME') {
-
-                                        const player = new Vimeo.Player(video);
-
-                                        // Initialise video
-
-                                        player.setCurrentTime(0);
-                                        player.play();
-                                        player.setVolume(1);
-
-                                        // Progress bar
-
-                                        setInterval(() => {
-
-                                            if (videoProgress) {
-
-                                                player.getCurrentTime().then(function(
-                                                    seconds) {
-
-                                                    player.getDuration().then(
-                                                        function(duration) {
-
-                                                            videoProgress.style
-                                                                .width = (
-                                                                    seconds /
-                                                                    duration) *
-                                                                100 + '%';
-
-                                                        });
-
-                                                });
-
-                                            }
-
-                                        }, 100);
-
-                                    } else {
-
-                                        // Initialise video
-
-                                        video.currentTime = 0;
-                                        video.play();
-
-                                        // Progress bar
-
-                                        setInterval(() => {
-
-                                            if (videoProgress) {
-
-                                                videoProgress.style.width = (video
-                                                        .currentTime / video.duration) *
-                                                    100 + '%';
-
-                                            }
-
-                                        }, 100);
-
-                                    }
+                                    }, 100);
 
                                 }
 
-
-                            } else {
-
-                                document.body.classList.remove('overflow-hidden');
                             }
 
-                        });
 
-                    },
-                    closeModal(id) {
+                        } else {
 
-                        this.visible = false;
+                            document.body.classList.remove('overflow-hidden');
+                        }
 
-                        const video = document.querySelector('.js-modal-video-' + id);
-                        const videoProgress = document.querySelector('.js-modal-video-progress-' + id);
+                    });
 
-                        if (video) {
+                },
+                closeModal(id) {
 
-                            if (video.tagName == 'IFRAME') {
+                    this.visible = false;
 
-                                const player = new Vimeo.Player(video);
+                    const video = document.querySelector('.js-modal-video-' + id);
+                    const videoProgress = document.querySelector('.js-modal-video-progress-' + id);
 
-                                player.pause();
+                    if (video) {
+
+                        if (video.tagName == 'IFRAME') {
+
+                            const player = new Vimeo.Player(video);
+
+                            player.pause();
 
 
+                        } else {
+
+                            video.pause();
+                            videoProgress.style.width = '0%';
+
+                        }
+                    }
+
+                }
+            }))
+        });
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('featureQuote', () => ({
+                crossBrowserClasses(id) {
+
+                    const isWindows = navigator.platform.indexOf('Win') > -1;
+                    const isAndroid = navigator.userAgent.toLowerCase().indexOf("android") > -1;
+
+                    const elements = document.querySelectorAll(`.js-cross-browser-${id}`);
+
+                    elements.forEach(element => {
+
+                        if (isWindows) {
+
+                            const windowsRemove = element.getAttribute('data-windows-remove')
+                                .split('|');
+                            const windowsAdd = element.getAttribute('data-windows-add').split(
+                                '|');
+
+                            element.classList.remove(...windowsRemove);
+                            element.classList.add(...windowsAdd);
+
+                        }
+
+                        if (isAndroid) {
+
+                            const androidRemove = element.getAttribute('data-android-remove')
+                                .split('|');
+                            const androidAdd = element.getAttribute('data-android-add').split(
+                                '|');
+
+                            element.classList.remove(...androidRemove);
+                            element.classList.add(...androidAdd);
+
+                        }
+
+                    });
+
+                }
+            }))
+        });
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('videoFile', () => ({
+                playing: true,
+                muted: true,
+                hovering: false,
+                paused: false,
+                initVideoFile(id) {
+
+                    // Get elements
+
+                    const video = document.querySelector(`.js-video-${id}`);
+                    const videoProgress = document.querySelector(`.js-video-progress-${id}`);
+                    const videoTimer = document.querySelector(`.js-video-timer-${id}`);
+
+
+                    // Set initial state
+
+                    this.playing = false;
+                    this.muted = false;
+
+
+                    // Set video progress + timer
+
+                    setInterval(() => {
+
+                        if (videoProgress) {
+
+                            videoProgress.style.width = (video.currentTime / video.duration) *
+                                100 + '%';
+
+                        }
+
+                        if (videoTimer) {
+
+                            const minutes = Math.floor(video.currentTime / 60);
+                            const seconds = Math.floor(video.currentTime - minutes * 60);
+                            const minuteValue = minutes >= 10 ? minutes : '0' + minutes;
+                            const secondValue = seconds >= 10 ? seconds : '0' + seconds;
+
+                            videoTimer.innerHTML = minuteValue + ':' + secondValue;
+
+                        }
+
+                    }, 10);
+
+                    // Check to see if video is playing or muted
+
+                    setInterval(() => {
+
+                        if (video.paused) {
+
+                            if (video.muted) {
+                                this.playing = false;
+                                this.paused = false;
                             } else {
+                                this.playing = false;
+                                this.paused = true;
+                            }
 
-                                video.pause();
-                                videoProgress.style.width = '0%';
-
+                        } else {
+                            if (!this.hovering) {
+                                this.playing = true;
                             }
                         }
 
-                    }
-                }))
-            });
-            document.addEventListener('alpine:init', () => {
-                Alpine.data('pageLinksCarousel', () => ({
-                    isStart: true,
-                    isEnd: false,
-                    carousel(id) {
+                        if (video.muted) {
+                            this.muted = true;
+                        } else {
+                            this.muted = false;
+                        }
 
-                        const carousel = new Swiper('.js-carousel-' + id, {
-                            slidesPerView: 1.2,
-                            spaceBetween: 0,
-                            navigation: {
-                                nextEl: '.js-carousel-next-' + id,
-                                prevEl: '.js-carousel-prev-' + id,
+                    }, 100);
+
+
+                    window.addEventListener('scroll', (e) => {
+
+                        if (video) {
+
+                            const videoTop = video.getBoundingClientRect().top;
+                            const videoBottom = video.getBoundingClientRect().bottom;
+
+                            if (video.classList.contains('js-video-with-sound')) {
+
+                                if (videoTop > window.innerHeight || videoBottom < 0) {
+                                    video.pause();
+                                    video.muted = true;
+                                }
+
+                            }
+
+                        }
+
+                    });
+
+
+
+                    video.addEventListener('ended', () => {
+
+                        if (!video.hasAttribute('loop')) {
+
+                            video.currentTime = 0;
+                            video.muted = true;
+                            videoProgress.style.width = 0;
+                            video.pause();
+
+                        }
+
+
+                    });
+
+
+
+                },
+                toggleSound(id) {
+
+                    const video = document.querySelector('.js-video-' + id);
+                    const videos = document.querySelectorAll('.js-video');
+
+                    if (this.muted) {
+
+                        videos.forEach(video => {
+                            video.pause();
+                            video.muted = true;
+                        });
+
+                        video.play();
+
+                        video.muted = false;
+                        this.muted = false;
+
+                        this.$dispatch('component-cursor', {
+                            icon: 'volume-on'
+                        });
+
+                    } else {
+
+                        video.muted = true;
+                        this.muted = true;
+
+                        this.$dispatch('component-cursor', {
+                            icon: 'volume-off'
+                        });
+
+                    }
+
+
+                },
+                togglePreview(id, status) {
+
+                    this.hovering = status;
+
+                    const video = document.querySelector('.js-video-' + id);
+
+                    if (this.hovering && this.muted) {
+
+                        video.currentTime = 0;
+                        video.play();
+
+                    }
+
+                    if (!this.hovering && this.muted) {
+
+                        video.pause();
+                        video.currentTime = 0;
+
+                    }
+
+
+                },
+                togglePause(id) {
+
+                    const video = document.querySelector('.js-video-' + id);
+                    const videos = document.querySelectorAll('.js-video');
+
+                    if (this.paused) {
+
+                        videos.forEach(video => {
+                            video.pause();
+                        });
+
+                        video.play();
+                        this.paused = false;
+                        this.playing = true;
+
+                    } else {
+
+                        video.pause();
+                        this.paused = true;
+                        this.playing = false;
+
+                    }
+
+                },
+                toggleVideo(id) {
+
+                    const video = document.querySelector('.js-video-' + id);
+                    const videos = document.querySelectorAll('.js-video');
+                    const videosWithVolumeControls = document.querySelectorAll(
+                        '.js-video-with-volume-controls');
+                    const videosPlaying = document.querySelectorAll('.js-video-playing');
+
+                    videosPlaying.forEach(video => {
+                        if (!video.muted && !video.classList.contains('js-video-with-sound')) {
+                            video.muted = true;
+                        } else {
+                            video.pause();
+                            video.muted = true;
+                            video.currentTime = 0;
+                        }
+                    });
+
+                    if (this.playing) {
+
+                        video.pause();
+                        video.muted = true;
+                        this.playing = false;
+                        this.hovering = false;
+
+                    } else {
+
+                        videosWithVolumeControls.forEach(video => {
+                            video.pause();
+                        });
+
+                        video.currentTime = 0;
+                        video.muted = false;
+                        video.play();
+                        this.playing = true;
+                        this.hovering = false;
+
+                    }
+
+                }
+            }))
+        });
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('videoQuoteColumns', () => ({
+                isStart: true,
+                isEnd: false,
+                carousel(id) {
+
+                    const carousel = new Swiper(`.js-carousel-${id}`, {
+                        slidesPerView: 1.5,
+                        cssMode: true,
+                        navigation: {
+                            nextEl: '.js-carousel-next-' + id,
+                            prevEl: '.js-carousel-prev-' + id,
+                        },
+                        breakpoints: {
+                            768: {
+                                slidesPerView: 2.5,
                             },
-                            breakpoints: {
-                                640: {
-                                    slidesPerView: 1.7,
-                                },
-                                1024: {
-                                    slidesPerView: 2.2,
-                                },
-                                1800: {
-                                    slidesPerView: 2.5,
-                                }
+                            960: {
+                                slidesPerView: 3,
                             },
-                        });
+                            1024: {
+                                slidesPerView: 3,
+                            },
+                            1280: {
+                                slidesPerView: 4,
+                            },
+                        },
+                    });
 
-                        carousel.on('slideChange', () => {
-                            this.isStart = carousel.isBeginning;
-                            this.isEnd = carousel.isEnd;
-                        });
+                    carousel.on('slideChange', () => {
+                        this.isStart = carousel.isBeginning;
+                        this.isEnd = carousel.isEnd;
+                    });
 
-                    }
-                }));
-            });
-            document.addEventListener('alpine:init', () => {
-                Alpine.data('app', () => ({
-                    viewportHeight: null,
-                    gaEvents() {
+                }
+            }))
+        });
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('reviews', () => ({
+                isStart: true,
+                isEnd: false,
+                carousel(id) {
 
-                        document.querySelectorAll('a[href^="mailto"]')
-                            .forEach(element => {
+                    const carousel = new Swiper('.js-carousel-' + id, {
+                        slidesPerView: 1.2,
+                        spaceBetween: 0,
+                        navigation: {
+                            nextEl: '.js-carousel-next-' + id,
+                            prevEl: '.js-carousel-prev-' + id,
+                        },
+                        breakpoints: {
+                            640: {
+                                slidesPerView: 1.4,
+                            },
+                            768: {
+                                slidesPerView: 1.7,
+                            },
+                            1024: {
+                                slidesPerView: 1.7,
+                                slidesOffsetBefore: 30,
+                            },
+                            1280: {
+                                slidesPerView: 2.3,
+                                slidesOffsetBefore: 30,
+                            },
+                            2100: {
+                                slidesPerView: 3.2,
+                                slidesOffsetBefore: 30,
+                            }
+                        },
+                    });
 
-                                element.addEventListener('click', (event) => {
-                                    window.dataLayer = window.dataLayer || [];
-                                    window.dataLayer.push({
-                                        'event': 'email_lead'
-                                    });
-                                })
+                    carousel.on('slideChange', () => {
+                        this.isStart = carousel.isBeginning;
+                        this.isEnd = carousel.isEnd;
+                    });
+
+                }
+            }));
+        });
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('headingImageCarousel', () => ({
+                carousel(id) {
+
+                    const images = document.querySelectorAll('.js-image-' + id);
+
+                    const carousel = new Swiper('.js-carousel-' + id, {
+                        slidesPerView: 3,
+                        loop: true,
+                        speed: 10000,
+                        autoplay: {
+                            delay: 0,
+                        },
+                        breakpoints: {
+                            640: {
+                                slidesPerView: 5,
+                            },
+                            1024: {
+                                slidesPerView: 6,
+                            },
+                            1280: {
+                                slidesPerView: 8,
+                            },
+                            2100: {
+                                slidesPerView: 9,
+                            }
+                        },
+
+                    });
+
+                    window.addEventListener('resize', () => {
+
+                        clearTimeout(window.resizedFinished);
+
+                        window.resizedFinished = setTimeout(function() {
+
+                            carousel.update();
+                            carousel.autoplay.start();
+
+                        }, 50);
+
+                    });
+
+                }
+            }));
+        });
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('modal414648', () => ({
+                visible: false,
+                setupModal(id) {
+
+                    // Prevent keys from interferring with the video
+
+                    navigator.mediaSession.setActionHandler('play', function() {});
+                    navigator.mediaSession.setActionHandler('pause', function() {});
+                    navigator.mediaSession.setActionHandler('seekbackward', function() {});
+                    navigator.mediaSession.setActionHandler('seekforward', function() {});
+                    navigator.mediaSession.setActionHandler('previoustrack', function() {});
+                    navigator.mediaSession.setActionHandler('nexttrack', function() {});
+
+                    // Get video elements
+
+                    const video = document.querySelector(`.js-modal-video-${id}`);
+                    const videoProgress = document.querySelector(`.js-modal-video-progress-${id}`);
+
+                    const videoPlayPause = document.querySelector(`.js-modal-video-play-pause-${id}`);
+                    const videoSound = document.querySelector(`.js-modal-video-sound-${id}`);
+
+                    const videoPlayIcon = document.querySelector(`.js-modal-video-play-icon-${id}`);
+                    const videoPauseIcon = document.querySelector(`.js-modal-video-pause-icon-${id}`);
+
+                    const videoVolumeOnIcon = document.querySelector(
+                        `.js-modal-video-volume-on-icon-${id}`);
+                    const videoVolumeOffIcon = document.querySelector(
+                        `.js-modal-video-volume-off-icon-${id}`);
+
+                    // Video controls
+
+                    if (video) {
+
+                        if (video.tagName == 'IFRAME') {
+
+                            const player = new Vimeo.Player(video);
+
+                            // Video controls
+
+                            videoSound.addEventListener('click', (event) => {
+
+                                player.getVolume().then(function(volume) {
+
+                                    if (videoVolumeOnIcon.classList.contains(
+                                            'hidden')) {
+
+                                        player.setVolume(1);
+                                        videoVolumeOnIcon.classList.remove('hidden');
+                                        videoVolumeOffIcon.classList.add('hidden');
+
+                                    } else {
+
+                                        player.setVolume(0);
+                                        videoVolumeOnIcon.classList.add('hidden');
+                                        videoVolumeOffIcon.classList.remove('hidden');
+
+                                    }
+
+                                });
+
+                                event.preventDefault();
 
                             });
 
-                        document.querySelectorAll('a[href^="tel:"]')
-                            .forEach(element => {
+                            videoPlayPause.addEventListener('click', (event) => {
 
-                                element.addEventListener('click', (event) => {
-                                    window.dataLayer = window.dataLayer || [];
-                                    window.dataLayer.push({
-                                        'event': 'phone_lead'
-                                    });
-                                })
+                                player.getPaused().then(function(paused) {
+
+                                    if (paused) {
+
+                                        player.play();
+                                        videoPlayIcon.classList.add('hidden');
+                                        videoPauseIcon.classList.remove('hidden');
+
+                                    } else {
+
+                                        player.pause();
+                                        videoPlayIcon.classList.remove('hidden');
+                                        videoPauseIcon.classList.add('hidden');
+
+                                    }
+
+                                });
+
+                                event.preventDefault();
 
                             });
 
-                        document.querySelectorAll('.js-social-link')
-                            .forEach(element => {
+                        } else {
 
-                                element.addEventListener('click', (event) => {
-                                    window.dataLayer = window.dataLayer || [];
-                                    window.dataLayer.push({
-                                        'event': 'social_links'
-                                    });
-                                })
+                            videoSound.addEventListener('click', (event) => {
+
+                                if (videoVolumeOnIcon.classList.contains('hidden')) {
+
+                                    video.muted = false;
+                                    videoVolumeOnIcon.classList.remove('hidden');
+                                    videoVolumeOffIcon.classList.add('hidden');
+
+                                } else {
+
+                                    video.muted = true;
+                                    videoVolumeOnIcon.classList.add('hidden');
+                                    videoVolumeOffIcon.classList.remove('hidden');
+
+                                }
+
+                                event.preventDefault();
 
                             });
 
+                            videoPlayPause.addEventListener('click', (event) => {
 
+                                if (video.paused) {
 
+                                    video.play();
+                                    videoPlayIcon.classList.add('hidden');
+                                    videoPauseIcon.classList.remove('hidden');
 
+                                } else {
 
+                                    video.pause();
+                                    videoPlayIcon.classList.remove('hidden');
+                                    videoPauseIcon.classList.add('hidden');
 
-                    },
-                    baseInit() {
+                                }
 
-                        viewportHeight = window.innerHeight * 0.01;
-                        document.documentElement.style.setProperty('--vh', `${viewportHeight}px`);
+                                event.preventDefault();
 
-                        const darkMode = Cookies.get('darkMode');
+                            });
 
-                        if (darkMode == 'true') {
-                            document.querySelector('html').classList.add('dark');
                         }
 
+                    }
+
+                    this.$watch('visible', function(value) {
+
+                        if (value != false) {
+
+                            document.body.classList.add('overflow-hidden');
+
+                            // Video (Vimeo)
+
+                            if (video) {
+
+                                if (video.tagName == 'IFRAME') {
+
+                                    const player = new Vimeo.Player(video);
+
+                                    // Initialise video
+
+                                    player.setCurrentTime(0);
+                                    player.play();
+                                    player.setVolume(1);
+
+                                    // Progress bar
+
+                                    setInterval(() => {
+
+                                        if (videoProgress) {
+
+                                            player.getCurrentTime().then(function(
+                                                seconds) {
+
+                                                player.getDuration().then(
+                                                    function(duration) {
+
+                                                        videoProgress.style
+                                                            .width = (
+                                                                seconds /
+                                                                duration) *
+                                                            100 + '%';
+
+                                                    });
+
+                                            });
+
+                                        }
+
+                                    }, 100);
+
+                                } else {
+
+                                    // Initialise video
+
+                                    video.currentTime = 0;
+                                    video.play();
+
+                                    // Progress bar
+
+                                    setInterval(() => {
+
+                                        if (videoProgress) {
+
+                                            videoProgress.style.width = (video
+                                                    .currentTime / video.duration) *
+                                                100 + '%';
+
+                                        }
+
+                                    }, 100);
+
+                                }
+
+                            }
+
+
+                        } else {
+
+                            document.body.classList.remove('overflow-hidden');
+                        }
+
+                    });
+
+                },
+                closeModal(id) {
+
+                    this.visible = false;
+
+                    const video = document.querySelector('.js-modal-video-' + id);
+                    const videoProgress = document.querySelector('.js-modal-video-progress-' + id);
+
+                    if (video) {
+
+                        if (video.tagName == 'IFRAME') {
+
+                            const player = new Vimeo.Player(video);
+
+                            player.pause();
+
+
+                        } else {
+
+                            video.pause();
+                            videoProgress.style.width = '0%';
+
+                        }
+                    }
+
+                }
+            }))
+        });
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('modal167022', () => ({
+                visible: false,
+                setupModal(id) {
+
+                    // Prevent keys from interferring with the video
+
+                    navigator.mediaSession.setActionHandler('play', function() {});
+                    navigator.mediaSession.setActionHandler('pause', function() {});
+                    navigator.mediaSession.setActionHandler('seekbackward', function() {});
+                    navigator.mediaSession.setActionHandler('seekforward', function() {});
+                    navigator.mediaSession.setActionHandler('previoustrack', function() {});
+                    navigator.mediaSession.setActionHandler('nexttrack', function() {});
+
+                    // Get video elements
+
+                    const video = document.querySelector(`.js-modal-video-${id}`);
+                    const videoProgress = document.querySelector(`.js-modal-video-progress-${id}`);
+
+                    const videoPlayPause = document.querySelector(`.js-modal-video-play-pause-${id}`);
+                    const videoSound = document.querySelector(`.js-modal-video-sound-${id}`);
+
+                    const videoPlayIcon = document.querySelector(`.js-modal-video-play-icon-${id}`);
+                    const videoPauseIcon = document.querySelector(`.js-modal-video-pause-icon-${id}`);
+
+                    const videoVolumeOnIcon = document.querySelector(
+                        `.js-modal-video-volume-on-icon-${id}`);
+                    const videoVolumeOffIcon = document.querySelector(
+                        `.js-modal-video-volume-off-icon-${id}`);
+
+                    // Video controls
+
+                    if (video) {
+
+                        if (video.tagName == 'IFRAME') {
+
+                            const player = new Vimeo.Player(video);
+
+                            // Video controls
+
+                            videoSound.addEventListener('click', (event) => {
+
+                                player.getVolume().then(function(volume) {
+
+                                    if (videoVolumeOnIcon.classList.contains(
+                                            'hidden')) {
+
+                                        player.setVolume(1);
+                                        videoVolumeOnIcon.classList.remove('hidden');
+                                        videoVolumeOffIcon.classList.add('hidden');
+
+                                    } else {
+
+                                        player.setVolume(0);
+                                        videoVolumeOnIcon.classList.add('hidden');
+                                        videoVolumeOffIcon.classList.remove('hidden');
+
+                                    }
+
+                                });
+
+                                event.preventDefault();
+
+                            });
+
+                            videoPlayPause.addEventListener('click', (event) => {
+
+                                player.getPaused().then(function(paused) {
+
+                                    if (paused) {
+
+                                        player.play();
+                                        videoPlayIcon.classList.add('hidden');
+                                        videoPauseIcon.classList.remove('hidden');
+
+                                    } else {
+
+                                        player.pause();
+                                        videoPlayIcon.classList.remove('hidden');
+                                        videoPauseIcon.classList.add('hidden');
+
+                                    }
+
+                                });
+
+                                event.preventDefault();
+
+                            });
+
+                        } else {
+
+                            videoSound.addEventListener('click', (event) => {
+
+                                if (videoVolumeOnIcon.classList.contains('hidden')) {
+
+                                    video.muted = false;
+                                    videoVolumeOnIcon.classList.remove('hidden');
+                                    videoVolumeOffIcon.classList.add('hidden');
+
+                                } else {
+
+                                    video.muted = true;
+                                    videoVolumeOnIcon.classList.add('hidden');
+                                    videoVolumeOffIcon.classList.remove('hidden');
+
+                                }
+
+                                event.preventDefault();
+
+                            });
+
+                            videoPlayPause.addEventListener('click', (event) => {
+
+                                if (video.paused) {
+
+                                    video.play();
+                                    videoPlayIcon.classList.add('hidden');
+                                    videoPauseIcon.classList.remove('hidden');
+
+                                } else {
+
+                                    video.pause();
+                                    videoPlayIcon.classList.remove('hidden');
+                                    videoPauseIcon.classList.add('hidden');
+
+                                }
+
+                                event.preventDefault();
+
+                            });
+
+                        }
 
                     }
-                }))
-            });
-        </script>
+
+                    this.$watch('visible', function(value) {
+
+                        if (value != false) {
+
+                            document.body.classList.add('overflow-hidden');
+
+                            // Video (Vimeo)
+
+                            if (video) {
+
+                                if (video.tagName == 'IFRAME') {
+
+                                    const player = new Vimeo.Player(video);
+
+                                    // Initialise video
+
+                                    player.setCurrentTime(0);
+                                    player.play();
+                                    player.setVolume(1);
+
+                                    // Progress bar
+
+                                    setInterval(() => {
+
+                                        if (videoProgress) {
+
+                                            player.getCurrentTime().then(function(
+                                                seconds) {
+
+                                                player.getDuration().then(
+                                                    function(duration) {
+
+                                                        videoProgress.style
+                                                            .width = (
+                                                                seconds /
+                                                                duration) *
+                                                            100 + '%';
+
+                                                    });
+
+                                            });
+
+                                        }
+
+                                    }, 100);
+
+                                } else {
+
+                                    // Initialise video
+
+                                    video.currentTime = 0;
+                                    video.play();
+
+                                    // Progress bar
+
+                                    setInterval(() => {
+
+                                        if (videoProgress) {
+
+                                            videoProgress.style.width = (video
+                                                    .currentTime / video.duration) *
+                                                100 + '%';
+
+                                        }
+
+                                    }, 100);
+
+                                }
+
+                            }
+
+
+                        } else {
+
+                            document.body.classList.remove('overflow-hidden');
+                        }
+
+                    });
+
+                },
+                closeModal(id) {
+
+                    this.visible = false;
+
+                    const video = document.querySelector('.js-modal-video-' + id);
+                    const videoProgress = document.querySelector('.js-modal-video-progress-' + id);
+
+                    if (video) {
+
+                        if (video.tagName == 'IFRAME') {
+
+                            const player = new Vimeo.Player(video);
+
+                            player.pause();
+
+
+                        } else {
+
+                            video.pause();
+                            videoProgress.style.width = '0%';
+
+                        }
+                    }
+
+                }
+            }))
+        });
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('modal168396', () => ({
+                visible: false,
+                setupModal(id) {
+
+                    // Prevent keys from interferring with the video
+
+                    navigator.mediaSession.setActionHandler('play', function() {});
+                    navigator.mediaSession.setActionHandler('pause', function() {});
+                    navigator.mediaSession.setActionHandler('seekbackward', function() {});
+                    navigator.mediaSession.setActionHandler('seekforward', function() {});
+                    navigator.mediaSession.setActionHandler('previoustrack', function() {});
+                    navigator.mediaSession.setActionHandler('nexttrack', function() {});
+
+                    // Get video elements
+
+                    const video = document.querySelector(`.js-modal-video-${id}`);
+                    const videoProgress = document.querySelector(`.js-modal-video-progress-${id}`);
+
+                    const videoPlayPause = document.querySelector(`.js-modal-video-play-pause-${id}`);
+                    const videoSound = document.querySelector(`.js-modal-video-sound-${id}`);
+
+                    const videoPlayIcon = document.querySelector(`.js-modal-video-play-icon-${id}`);
+                    const videoPauseIcon = document.querySelector(`.js-modal-video-pause-icon-${id}`);
+
+                    const videoVolumeOnIcon = document.querySelector(
+                        `.js-modal-video-volume-on-icon-${id}`);
+                    const videoVolumeOffIcon = document.querySelector(
+                        `.js-modal-video-volume-off-icon-${id}`);
+
+                    // Video controls
+
+                    if (video) {
+
+                        if (video.tagName == 'IFRAME') {
+
+                            const player = new Vimeo.Player(video);
+
+                            // Video controls
+
+                            videoSound.addEventListener('click', (event) => {
+
+                                player.getVolume().then(function(volume) {
+
+                                    if (videoVolumeOnIcon.classList.contains(
+                                            'hidden')) {
+
+                                        player.setVolume(1);
+                                        videoVolumeOnIcon.classList.remove('hidden');
+                                        videoVolumeOffIcon.classList.add('hidden');
+
+                                    } else {
+
+                                        player.setVolume(0);
+                                        videoVolumeOnIcon.classList.add('hidden');
+                                        videoVolumeOffIcon.classList.remove('hidden');
+
+                                    }
+
+                                });
+
+                                event.preventDefault();
+
+                            });
+
+                            videoPlayPause.addEventListener('click', (event) => {
+
+                                player.getPaused().then(function(paused) {
+
+                                    if (paused) {
+
+                                        player.play();
+                                        videoPlayIcon.classList.add('hidden');
+                                        videoPauseIcon.classList.remove('hidden');
+
+                                    } else {
+
+                                        player.pause();
+                                        videoPlayIcon.classList.remove('hidden');
+                                        videoPauseIcon.classList.add('hidden');
+
+                                    }
+
+                                });
+
+                                event.preventDefault();
+
+                            });
+
+                        } else {
+
+                            videoSound.addEventListener('click', (event) => {
+
+                                if (videoVolumeOnIcon.classList.contains('hidden')) {
+
+                                    video.muted = false;
+                                    videoVolumeOnIcon.classList.remove('hidden');
+                                    videoVolumeOffIcon.classList.add('hidden');
+
+                                } else {
+
+                                    video.muted = true;
+                                    videoVolumeOnIcon.classList.add('hidden');
+                                    videoVolumeOffIcon.classList.remove('hidden');
+
+                                }
+
+                                event.preventDefault();
+
+                            });
+
+                            videoPlayPause.addEventListener('click', (event) => {
+
+                                if (video.paused) {
+
+                                    video.play();
+                                    videoPlayIcon.classList.add('hidden');
+                                    videoPauseIcon.classList.remove('hidden');
+
+                                } else {
+
+                                    video.pause();
+                                    videoPlayIcon.classList.remove('hidden');
+                                    videoPauseIcon.classList.add('hidden');
+
+                                }
+
+                                event.preventDefault();
+
+                            });
+
+                        }
+
+                    }
+
+                    this.$watch('visible', function(value) {
+
+                        if (value != false) {
+
+                            document.body.classList.add('overflow-hidden');
+
+                            // Video (Vimeo)
+
+                            if (video) {
+
+                                if (video.tagName == 'IFRAME') {
+
+                                    const player = new Vimeo.Player(video);
+
+                                    // Initialise video
+
+                                    player.setCurrentTime(0);
+                                    player.play();
+                                    player.setVolume(1);
+
+                                    // Progress bar
+
+                                    setInterval(() => {
+
+                                        if (videoProgress) {
+
+                                            player.getCurrentTime().then(function(
+                                                seconds) {
+
+                                                player.getDuration().then(
+                                                    function(duration) {
+
+                                                        videoProgress.style
+                                                            .width = (
+                                                                seconds /
+                                                                duration) *
+                                                            100 + '%';
+
+                                                    });
+
+                                            });
+
+                                        }
+
+                                    }, 100);
+
+                                } else {
+
+                                    // Initialise video
+
+                                    video.currentTime = 0;
+                                    video.play();
+
+                                    // Progress bar
+
+                                    setInterval(() => {
+
+                                        if (videoProgress) {
+
+                                            videoProgress.style.width = (video
+                                                    .currentTime / video.duration) *
+                                                100 + '%';
+
+                                        }
+
+                                    }, 100);
+
+                                }
+
+                            }
+
+
+                        } else {
+
+                            document.body.classList.remove('overflow-hidden');
+                        }
+
+                    });
+
+                },
+                closeModal(id) {
+
+                    this.visible = false;
+
+                    const video = document.querySelector('.js-modal-video-' + id);
+                    const videoProgress = document.querySelector('.js-modal-video-progress-' + id);
+
+                    if (video) {
+
+                        if (video.tagName == 'IFRAME') {
+
+                            const player = new Vimeo.Player(video);
+
+                            player.pause();
+
+
+                        } else {
+
+                            video.pause();
+                            videoProgress.style.width = '0%';
+
+                        }
+                    }
+
+                }
+            }))
+        });
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('pageLinksCarousel', () => ({
+                isStart: true,
+                isEnd: false,
+                carousel(id) {
+
+                    const carousel = new Swiper('.js-carousel-' + id, {
+                        slidesPerView: 1.2,
+                        spaceBetween: 0,
+                        navigation: {
+                            nextEl: '.js-carousel-next-' + id,
+                            prevEl: '.js-carousel-prev-' + id,
+                        },
+                        breakpoints: {
+                            640: {
+                                slidesPerView: 1.7,
+                            },
+                            1024: {
+                                slidesPerView: 2.2,
+                            },
+                            1800: {
+                                slidesPerView: 2.5,
+                            }
+                        },
+                    });
+
+                    carousel.on('slideChange', () => {
+                        this.isStart = carousel.isBeginning;
+                        this.isEnd = carousel.isEnd;
+                    });
+
+                }
+            }));
+        });
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('app', () => ({
+                viewportHeight: null,
+                gaEvents() {
+
+                    document.querySelectorAll('a[href^="mailto"]')
+                        .forEach(element => {
+
+                            element.addEventListener('click', (event) => {
+                                window.dataLayer = window.dataLayer || [];
+                                window.dataLayer.push({
+                                    'event': 'email_lead'
+                                });
+                            })
+
+                        });
+
+                    document.querySelectorAll('a[href^="tel:"]')
+                        .forEach(element => {
+
+                            element.addEventListener('click', (event) => {
+                                window.dataLayer = window.dataLayer || [];
+                                window.dataLayer.push({
+                                    'event': 'phone_lead'
+                                });
+                            })
+
+                        });
+
+                    document.querySelectorAll('.js-social-link')
+                        .forEach(element => {
+
+                            element.addEventListener('click', (event) => {
+                                window.dataLayer = window.dataLayer || [];
+                                window.dataLayer.push({
+                                    'event': 'social_links'
+                                });
+                            })
+
+                        });
+
+
+
+
+
+
+                },
+                baseInit() {
+
+                    viewportHeight = window.innerHeight * 0.01;
+                    document.documentElement.style.setProperty('--vh', `${viewportHeight}px`);
+
+                    const darkMode = Cookies.get('darkMode');
+
+                    if (darkMode == 'true') {
+                        document.querySelector('html').classList.add('dark');
+                    }
+
+
+                }
+            }))
+        });
+    </script>
 </body>
 
 </html><!-- Cached by Blitz on 2025-08-19T03:01:04+01:00 -->

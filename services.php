@@ -167,14 +167,14 @@ if (isset($_GET['service'])) {
                     <div
                         class="w-full relative z-10 overflow-hidden rounded-2xl transform-gpu bg-gray-50 | dark:bg-grayDark-500 | lg:rounded-3xl h-screen-fix-70">
                         <picture>
-                            <source type="image/webp"
-                                srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/People-in-Studio/Shape-April-2022-HR-194.jpg?w=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143471&amp;s=c22c49698e26b50f380c30e5c01a73b3 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/People-in-Studio/Shape-April-2022-HR-194.jpg?w=800&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143471&amp;s=cb78caff472a6694be1809d836af6dd9 800w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/People-in-Studio/Shape-April-2022-HR-194.jpg?w=1200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143471&amp;s=6ddcde2a670971c7faba65d434e98c94 1200w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/People-in-Studio/Shape-April-2022-HR-194.jpg?w=1600&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143471&amp;s=3ec810f9433c7e3ee79575fdc551add5 1600w"
-                                sizes="100vw">
-                            <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/People-in-Studio/Shape-April-2022-HR-194.jpg?w=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143471&amp;s=c22c49698e26b50f380c30e5c01a73b3"
-                                srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/People-in-Studio/Shape-April-2022-HR-194.jpg?w=400&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143471&amp;s=45921cf40512d10c0030ee184f79852c 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/People-in-Studio/Shape-April-2022-HR-194.jpg?w=800&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143471&amp;s=f0c3edddd3b201e933b86fcac7285543 800w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/People-in-Studio/Shape-April-2022-HR-194.jpg?w=1200&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143471&amp;s=e1fe1a1b32caaf3738c966a4f276b9da 1200w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/People-in-Studio/Shape-April-2022-HR-194.jpg?w=1600&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143471&amp;s=31c2b6e61f5355a58ac1f4eeca4edb77 1600w"
-                                sizes="100vw" alt="Shape April 2022 HR 194"
-                                class=" w-full   absolute top-0 left-0 w-full h-full object-cover" loading="lazy"
-                                width="1600" height="1067">
+                                <?php if (!empty($current_service['image'])): ?>
+                                    <img 
+                                        src="<?php echo BASE_URL . 'assets/images/services/' . htmlspecialchars($current_service['image']); ?>" 
+                                        alt="<?php echo htmlspecialchars($current_service['name']); ?>" 
+                                        class="w-full absolute top-0 left-0 w-full h-full object-cover rounded-2xl"
+                                        loading="lazy"
+                                    >
+                                <?php endif; ?>
                         </picture>
                     </div>
                 </div>
@@ -305,21 +305,21 @@ include './elements/footer.php';
             "copyrightHolder": {
                 "@id": "https://scalify.ae/#identity"
             },
-            "copyrightYear": "2018",
+            "copyrightYear": "2024",
             "creator": {
                 "@id": "https://scalify.ae/#creator"
             },
             "dateModified": "2025-08-07T10:56:56+01:00",
-            "datePublished": "2018-07-25T14:08:00+01:00",
-            "description": "An award-winning Web Design Agency in Manchester, UK who specialise in Branding, Web Design, Craft CMS, eCommerce and Organic SEO.",
-            "headline": "Web Design Manchester | Web Design Agency",
+            "datePublished": "2025-07-25T14:08:00+01:00",
+            "description": "Growth strategists who help brands go from “promising startup” → “category leader”.",
+            "headline": "We Turn Digital-First Brands Into Omnichannel Powerhouses",
             "image": {
                 "@type": "ImageObject",
-                "url": "https://made-byShape.transforms.svdcdn.com/production/uploads/images/Open-Graph/madebyScalify-home.jpg?w=1200&h=630&q=82&auto=format&fit=crop&dm=1722518913&s=e456c7a65aa7feded9f0be73391573f6"
+                "url": "https://cdn.jsdelivr.net/gh/vinaykm2912/scalifyVideos@main/images/saclifylogo.jpeg"
             },
             "inLanguage": "en-gb",
             "mainEntityOfPage": "https://scalify.ae/",
-            "name": "Web Design Manchester | Web Design Agency",
+            "name": "Growth strategists | Business Step-up Agency",
             "publisher": {
                 "@id": "https://scalify.ae/#creator"
             },
@@ -329,18 +329,18 @@ include './elements/footer.php';
             "@type": "ProfessionalService",
             "address": {
                 "@type": "PostalAddress",
-                "addressCountry": "United Kingdom",
-                "addressLocality": "Atherton",
-                "addressRegion": "Manchester",
+                "addressCountry": "United Arab Emirates",
+                "addressLocality": "Dubai",
+                "addressRegion": "Dubai",
                 "postalCode": "00000",
                 "streetAddress": "In5 Tech, Dubai Internet City, Dubai"
             },
             "alternateName": "Scalify",
-            "description": "An award-winning Web Design Agency in Manchester who specialise in Website Design, Craft CMS Web Development, eCommerce and Organic SEO.",
+            "description": ""Growth strategists who help brands go from “promising startup” → “category leader”.",
             "email": "hello@scalify.ae",
             "founder": "Andy Golpys",
             "foundingDate": "2010-03-01",
-            "foundingLocation": "Manchester",
+            "foundingLocation": "Dubai",
             "geo": {
                 "@type": "GeoCoordinates",
                 "latitude": "53.530291",
@@ -355,7 +355,7 @@ include './elements/footer.php';
             "logo": {
                 "@type": "ImageObject",
                 "height": "60",
-                "url": "https://made-byShape.transforms.svdcdn.com/production/uploads/images/logos/Scalify-icon.jpg?w=600&h=60&q=82&fm=png&fit=clip&dm=1597751408&s=1e444e7b3ed4ee85c39ad329e3875b5c",
+                "url": "https://cdn.jsdelivr.net/gh/vinaykm2912/scalifyVideos@main/images/saclifylogo.jpeg",
                 "width": "60"
             },
             "name": "Scalify",
@@ -371,18 +371,18 @@ include './elements/footer.php';
             "@type": "ProfessionalService",
             "address": {
                 "@type": "PostalAddress",
-                "addressCountry": "United Kingdom",
-                "addressLocality": "Atherton",
-                "addressRegion": "Manchester",
+                "addressCountry": "United Arab Emirates",
+                "addressLocality": "Dubai",
+                "addressRegion": "Dubai",
                 "postalCode": "00000",
                 "streetAddress": "In5 Tech, Dubai Internet City, Dubai"
             },
             "alternateName": "Scalify",
-            "description": "An award-winning Web Design Agency based in Manchester who also offer eCommerce and Organic SEO. We are a Digital Studio with Industry Experience.",
+            "description": ""Growth strategists who help brands go from “promising startup” → “category leader”.",
             "email": "hello@scalify.ae",
-            "founder": "Andy Golpys",
+            "founder": "Justin",
             "foundingDate": "2010-03-01",
-            "foundingLocation": "Manchester",
+            "foundingLocation": "Dubai",
             "geo": {
                 "@type": "GeoCoordinates",
                 "latitude": "53.530258",
@@ -391,18 +391,18 @@ include './elements/footer.php';
             "image": {
                 "@type": "ImageObject",
                 "height": "950",
-                "url": "http://madebyScalify.madebyScalify.io/uploads/images/Scalify-icon.jpg",
+                "url": "https://cdn.jsdelivr.net/gh/vinaykm2912/scalifyVideos@main/images/saclifylogo.jpeg",
                 "width": "950"
             },
             "logo": {
                 "@type": "ImageObject",
                 "height": "60",
-                "url": "https://made-byShape.transforms.svdcdn.com/production/uploads/images/Scalify-icon.jpg?w=600&h=60&q=82&fm=png&fit=clip&dm=1597751384&s=2f0ce55335397fde8d8b489cc721e250",
+                "url": "https://cdn.jsdelivr.net/gh/vinaykm2912/scalifyVideos@main/images/saclifylogo.jpeg",
                 "width": "60"
             },
             "name": "Scalify",
             "priceRange": "$$$",
-            "telephone": "01942 894596",
+            "telephone": "97 15443 51608",
             "url": "https://scalify.ae/"
         }, {
             "@type": "BreadcrumbList",

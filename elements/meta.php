@@ -45,7 +45,7 @@
     <meta name="msapplication-TileColor" content="#FFF">
     <meta name="msapplication-TileImage" content="/images/favicon/mstile-144x144.png">
     <meta name="msapplication-config" content="/images/favicon/browserconfig.xml">
-    <title>Web Design Manchester | Web Design Agency | Scalify</title>
+    <title>Growth strategists | Business Step-up Agency | Scalify</title>
     <script type="text/javascript" async src="./scripts/analytics.js"></script>
     <script type="text/javascript" async src="/gtag/js"></script>
     <script type="text/javascript" async src="/gtag/js"></script>
@@ -96,7 +96,7 @@
     <meta content="Scalify" property="og:site_name">
     <meta content="website" property="og:type">
     <meta content="https://scalify.ae/" property="og:url">
-    <meta content="Web Design Manchester | Web Design Agency" property="og:title">
+    <meta content="Growth strategists | Business Step-up Agency" property="og:title">
     <meta
         content="An award-winning Web Design Agency in Manchester, UK who specialise in Branding, Web Design, Craft CMS, eCommerce and Organic SEO."
         property="og:description">
@@ -116,9 +116,9 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@madebyScalify">
     <meta name="twitter:creator" content="@madebyScalify">
-    <meta name="twitter:title" content="Web Design Manchester | Web Design Agency">
+    <meta name="twitter:title" content="Growth strategists | Business Step-up Agency">
     <meta name="twitter:description"
-        content="An award-winning Web Design Agency in Manchester, UK who specialise in Branding, Web Design, Craft CMS, eCommerce and Organic SEO.">
+        content="Growth strategists who help brands go from “promising startup” → “category leader”.">
     <meta name="twitter:image"
         content="https://made-byShape.transforms.svdcdn.com/production/uploads/images/Open-Graph/madebyScalify-home.jpg?w=1200&h=630&q=82&auto=format&fit=crop&dm=1722518913&s=e456c7a65aa7feded9f0be73391573f6">
     <meta name="twitter:image:width" content="800">

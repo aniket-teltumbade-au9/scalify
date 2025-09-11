@@ -54,7 +54,7 @@
             class="inline-flex items-center space-x-1 font-light group transition-none pt-3 pb-1.5 | lg:pt-1.5 lg:pb-3 | dark:text-grayDark-100"
             x-on:click.prevent=" window.scrollTo({ top: 0, behavior: 'smooth' }); ">
             <div class="text-xs | lg:text-base">
-                Sh*t I’ve gone too far, send me back up</div>
+                I’ve gone too far, send me back up</div>
             <div class=" animate-bounce">
                 👆</div>
         </a>
@@ -250,11 +250,10 @@
             <a href="https://maps.app.goo.gl/FjqEXznQmrjtbtEJ7" class="w-full relative">
                 <p
                     class="text-sm md:text-base text-white dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7 mb-6">
-                    <strong>Dubai Office</strong>
-                    <br>in5 Tech,,
+                    <strong style="font-size:2rem;color:#F05223;">Dubai Office</strong>
+                    <br>In5 Tech,
                     <br>Dubai Internet City
-                    <br>Dubai
-                    <br>United Arab Emirates
+                    <br>Dubai, UAE
                 </p>
             </a>
         </div>
@@ -268,12 +267,10 @@
             <a href="https://maps.app.goo.gl/yGb4podxY4uAskx4A" class="w-full relative ">
                 <p
                     class="text-sm md:text-base text-white dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7 mb-6">
-                    <strong>India Office</strong>
-                    <br />B/15 NEW PRINCE REGENCY CHS
-                    <br />KANAKIA
-                    <br />BEVERLY PARK
-                    <br />MUMBAI
-                    <br />INDIA
+                    <strong style="font-size:2rem;color:#F05223;">India Office</strong>
+                    <br />B/15 New Prince Regency CHS
+                    <br />Kanakia, Beverly Park
+                    <br />Mumbai,India
                 </p>
             </a>
         </div>
@@ -286,13 +283,11 @@
             </svg>
             <a href="https://maps.app.goo.gl/stt2tKX3cTVJFMMm6" class="w-full relative ">
                 <p
-                    class="text-sm md:text-base text-white dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7 mb-6">
-                    <strong>Ireland Office</strong>
-                    <br /> C/O Cynestx Ireland
-                    <br /> Cullentragh Centre
-                    <br /> Glenfarne
-                    <br /> Co Leitrim
-                    <br /> Ireland
+                   class="text-sm md:text-base text-white dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7 mb-6">
+                    <strong style="font-size:2rem;color:#F05223;">Ireland Office</strong>
+                    <br /> C/O Cynestx Ireland, 
+                    <br />Cullentragh Centre Glenfarne
+                    <br />Co Leitrim, Ireland
                 </p>
             </a>
         </div>
