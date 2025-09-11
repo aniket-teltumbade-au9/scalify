@@ -225,7 +225,7 @@
                     <div class="link text-sm | md:text-base">
                         sales@scalify.ae</div>
                 </a>
-                <a href="https://what3words.com/cutter.banquets.ballooned" target="_blank"
+                <!-- <a href="https://www.google.com/maps/place/Scalify/@25.1078866,55.1652198,17z/data=!3m1!4b1!4m6!3m5!1s0x3e5f6d5310a53db1:0x70554943640e47f2!8m2!3d25.1078866!4d55.1652198!16s%2Fg%2F11xvrtm1_q?entry=ttu&g_ep=EgoyMDI1MDkwNy4wIKXMDSoASAFQAw%3D%3D" target="_blank"
                     class="inline-flex items-center space-x-4 text-white | lg:dark:hover:text-grayDark-100 | dark:text-grayDark-200">
                     <svg id="svg-ani-11" class="w-3 h-3 fill-current | 4xl:w-3.5 4xl:h-3.5" viewBox="0 0 11 11"
                         fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -234,8 +234,8 @@
                         </path>
                     </svg>
                     <div class="link text-sm | md:text-base">
-                        ///cutter.banquets.ballooned</div>
-                </a>
+                       Location</div>
+                </a> -->
             </div>
         </div>
     </div>

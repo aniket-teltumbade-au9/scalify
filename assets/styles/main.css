@@ -1,3 +1,13 @@
+/* Headline two-line justified style */
+.scalify-headline {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 3rem;
+    line-height: 1.1;
+    word-break: break-word;
+    white-space: normal;
+}
 /* Remove underline from ticker links */
 .js-heading-418135 a,
 .js-carousel-418135 a {

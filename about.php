@@ -170,8 +170,8 @@ $employeeList = [
                         <div class="px-2 | lg:px-3 | xl:px-4">
                             <h1
                                 class="text-3xl | sm:text-5xl | md:text-6xl | xl:text-8xl | 4xl:text-9xl font-sans-primary tracking-tight text-gray-600  | dark:text-grayDark-100 leading-none text-balance text-center">
-                                Good design <br />
-                                makes life better.
+                                Our Strategy <br />
+                                is Human.
                             </h1>
                         </div>
                     </div>
@@ -179,81 +179,15 @@ $employeeList = [
                         x-bind:class="{'opacity-0' : !active,'opacity-100' : active}">
                         <div class="relative w-350vw h-350vw -ml-125vw || js-arched-image-container-419251-mobile">
                             <div class="w-full h-full relative || js-arched-image-inner-container-419251-mobile">
-                                <div class="absolute top-0 left-1/2 h-1/2 origin-bottom-left w-40vw || js-arched-image-419251-mobile"
-                                    data-index="0">
-                                    <div class="relative overflow-hidden w-full" style="padding-top: 100%;">
-                                        <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                            <source type="image/webp"
-                                                srcset="<?php echo BASE_URL . 'assets/images/about/4717212a-7071-44ed-97ef-5c0ada0211e0.jpeg'; ?>?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142747&amp;s=ac2c8013dee87f79b22c4e0c0aae7dab 400w, <?php echo BASE_URL . 'assets/images/about/4717212a-7071-44ed-97ef-5c0ada0211e0.jpeg'; ?>?w=800&amp;h=800&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142747&amp;s=745440ded43152fa8d2d6d2503427bd5 800w"
-                                                sizes="100vw">
-                                            <img src="<?php echo BASE_URL . 'assets/images/about/4717212a-7071-44ed-97ef-5c0ada0211e0.jpeg'; ?>?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142747&amp;s=ac2c8013dee87f79b22c4e0c0aae7dab"
-                                                srcset="<?php echo BASE_URL . 'assets/images/about/4717212a-7071-44ed-97ef-5c0ada0211e0.jpeg'; ?>?w=400&amp;h=400&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142747&amp;s=a83978cd54ac5aac83baa1c50e6a20c7 400w, <?php echo BASE_URL . 'assets/images/about/4717212a-7071-44ed-97ef-5c0ada0211e0.jpeg'; ?>?w=800&amp;h=800&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142747&amp;s=a733b2624b63c2ca44b8c7b0c792cf78 800w"
-                                                sizes="100vw" alt="Shape April 2022 HR 201"
-                                                class="w-full  w-full h-full object-cover absolute top-0 left-0  rounded-2xl transform-gpu bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl"
-                                                width="800" height="800">
-                                        </picture>
+                                <?php
+                                $aboutImages = glob('assets/images/about/*.{jpg,jpeg,png,webp}', GLOB_BRACE);
+                                foreach ($aboutImages as $index => $img): ?>
+                                    <div class="absolute top-0 left-1/2 h-1/2 origin-bottom-left w-40vw || js-arched-image-419251-mobile" data-index="<?= $index ?>">
+                                        <div class="relative overflow-hidden w-full" style="padding-top: 100%;">
+                                            <img src="<?php echo BASE_URL . $img; ?>" alt="About Image <?= $index ?>" class="w-full h-full object-cover absolute top-0 left-0 rounded-2xl transform-gpu bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl" width="800" height="800">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="absolute top-0 left-1/2 h-1/2 origin-bottom-left w-40vw || js-arched-image-419251-mobile"
-                                    data-index="1">
-                                    <div class="relative overflow-hidden w-full" style="padding-top: 100%;">
-                                        <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                            <source type="image/webp"
-                                                srcset="<?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.25.32.jpeg'; ?>?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142745&amp;s=babedcc3fa45f9af1a08b9a9062682f7 400w, <?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.25.32.jpeg'; ?>?w=800&amp;h=800&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142745&amp;s=d167ecd4b85ced45e9e58854a7e4c7ed 800w"
-                                                sizes="100vw">
-                                            <img src="<?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.25.32.jpeg'; ?>?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142745&amp;s=babedcc3fa45f9af1a08b9a9062682f7"
-                                                srcset="<?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.25.32.jpeg'; ?>?w=400&amp;h=400&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142745&amp;s=733cf1893ea9265b8d35088a31e10d09 400w, <?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.25.32.jpeg'; ?>?w=800&amp;h=800&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142745&amp;s=dcf2a1167184ac55fccce00dc402ce78 800w"
-                                                sizes="100vw" alt="Shape April 2022 HR 200"
-                                                class="w-full  w-full h-full object-cover absolute top-0 left-0  rounded-2xl transform-gpu bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl"
-                                                width="800" height="800">
-                                        </picture>
-                                    </div>
-                                </div>
-                                <div class="absolute top-0 left-1/2 h-1/2 origin-bottom-left w-40vw || js-arched-image-419251-mobile"
-                                    data-index="2">
-                                    <div class="relative overflow-hidden w-full" style="padding-top: 100%;">
-                                        <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                            <source type="image/webp"
-                                                srcset="<?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142276&amp;s=623a91582904eeaaa558600540e49349 400w, <?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=800&amp;h=800&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142276&amp;s=9bf0360d8b4edc0af31e6a4fd9af7908 800w"
-                                                sizes="100vw">
-                                            <img src="<?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142276&amp;s=623a91582904eeaaa558600540e49349"
-                                                srcset="<?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=400&amp;h=400&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142276&amp;s=d0b8e551d87885bfbf16612688bda578 400w, <?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=800&amp;h=800&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142276&amp;s=7241c388a822d4e942a118580760cf67 800w"
-                                                sizes="100vw" alt="Shape April 2022 HR 163"
-                                                class="w-full  w-full h-full object-cover absolute top-0 left-0  rounded-2xl transform-gpu bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl"
-                                                width="800" height="800">
-                                        </picture>
-                                    </div>
-                                </div>
-                                <div class="absolute top-0 left-1/2 h-1/2 origin-bottom-left w-40vw || js-arched-image-419251-mobile"
-                                    data-index="3">
-                                    <div class="relative overflow-hidden w-full" style="padding-top: 100%;">
-                                        <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                            <source type="image/webp"
-                                                srcset="<?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142740&amp;s=b277c4ce6152387dcd4771b708003cf7 400w, <?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=800&amp;h=800&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142740&amp;s=e6ff1880aefadb3d72e403119c962881 800w"
-                                                sizes="100vw">
-                                            <img src="<?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142740&amp;s=b277c4ce6152387dcd4771b708003cf7"
-                                                srcset="<?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=400&amp;h=400&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142740&amp;s=5e0261d18b0e6e66457b204b9c8fd795 400w, <?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=800&amp;h=800&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142740&amp;s=ddeef92cc589754cfd1234a66da6f90c 800w"
-                                                sizes="100vw" alt="Shape April 2022 HR 198"
-                                                class="w-full  w-full h-full object-cover absolute top-0 left-0  rounded-2xl transform-gpu bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl"
-                                                width="800" height="800">
-                                        </picture>
-                                    </div>
-                                </div>
-                                <div class="absolute top-0 left-1/2 h-1/2 origin-bottom-left w-40vw || js-arched-image-419251-mobile"
-                                    data-index="4">
-                                    <div class="relative overflow-hidden w-full" style="padding-top: 100%;">
-                                        <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                            <source type="image/webp"
-                                                srcset="<?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143487&amp;s=19b949fe09dfe3e0161a0a345a83f057 400w, <?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=800&amp;h=800&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143487&amp;s=083c410dd6a37b3a508401c79979d435 800w"
-                                                sizes="100vw">
-                                            <img src="<?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143487&amp;s=19b949fe09dfe3e0161a0a345a83f057"
-                                                srcset="<?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=400&amp;h=400&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143487&amp;s=3999d2aa676d2e2e3a05f639e37652ff 400w, <?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=800&amp;h=800&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143487&amp;s=6d1b202ff3a48ce53ba59977efcc2626 800w"
-                                                sizes="100vw" alt="Shape April 2022 HR 208"
-                                                class="w-full  w-full h-full object-cover absolute top-0 left-0  rounded-2xl transform-gpu bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl"
-                                                width="800" height="800">
-                                        </picture>
-                                    </div>
-                                </div>
+                                <?php endforeach; ?>
                             </div>
                         </div>
                     </div>
@@ -279,18 +213,7 @@ $employeeList = [
                                     <a href="#178"
                                         class="inline-flex relative group outline-none  | focus:outline-none  relative z-20"
                                         style="filter: url(#buttonFilter);">
-                                        <div class="
-w-auto
-inline-flex
-items-center
-justify-center
-relative
-leading-tight
-shadow-none
-overflow-hidden
-rounded-full
-border-default
-bg-primary-600 text-gray-600 py-2 px-5">
+                                        <div class="w-auto inline-flex items-center justify-center relative leading-tight shadow-none overflow-hidden rounded-full border-default bg-primary-600 text-gray-600 py-2 px-5">
                                             <div class="relative inline-flex top-px flex-shrink-0">
                                                 <div>
                                                     Learn about us</div>
@@ -337,159 +260,27 @@ bg-primary-600 text-gray-600 py-2 px-5">
                     <div
                         class="px-2 | sm:px-6 | xl:px-12 | 2xl:px-20 | 3xl:px-40 | 4xl:px-60 w-full flex flex-wrap justify-center relative z-30 -mb-10 | lg:-mb-14">
                         <div class="px-2 | lg:px-3 | xl:px-4">
-                            <h1 class="
-text-3xl | sm:text-5xl | md:text-6xl | xl:text-8xl | 4xl:text-9xl
-font-sans-primary tracking-tight
-text-gray-600  | dark:text-grayDark-100
-leading-none
-text-balance
-text-center
-">Good design <br />
-                                makes life better.</h1>
+                            <h1
+                                class="text-3xl | sm:text-5xl | md:text-6xl | xl:text-8xl | 4xl:text-9xl font-sans-primary tracking-tight text-gray-600  | dark:text-grayDark-100 leading-none text-balancem text-center">
+                                Our Strategy<br />
+                                is Human.</h1>
                         </div>
                     </div>
                     <div class="w-full overflow-hidden pt-5 relative pointer-events-none transition-opacity opacity-0 h-65vw"
-                        x-bind:class="{
-'opacity-0' : !active,
-'opacity-100' : active
-}">
+                        x-bind:class="{'opacity-0' : !active,'opacity-100' : active}">
                         <div class="relative w-250vw h-250vw -ml-75vw || js-arched-image-container-419251-tablet">
                             <div class="w-full h-full relative || js-arched-image-inner-container-419251-tablet">
-                                <div class="absolute top-0 left-1/2 h-1/2 origin-bottom-left w-25vw || js-arched-image-419251-tablet"
-                                    data-index="0">
-                                    <div class="relative overflow-hidden w-full" style="padding-top: 100%;">
-                                        <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                            <source type="image/webp"
-                                                srcset="<?php echo BASE_URL . 'assets/images/about/4717212a-7071-44ed-97ef-5c0ada0211e0.jpeg'; ?>?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142747&amp;s=ac2c8013dee87f79b22c4e0c0aae7dab 400w, <?php echo BASE_URL . 'assets/images/about/4717212a-7071-44ed-97ef-5c0ada0211e0.jpeg'; ?>?w=800&amp;h=800&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142747&amp;s=745440ded43152fa8d2d6d2503427bd5 800w"
-                                                sizes="100vw">
-                                            <img src="<?php echo BASE_URL . 'assets/images/about/4717212a-7071-44ed-97ef-5c0ada0211e0.jpeg'; ?>?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142747&amp;s=ac2c8013dee87f79b22c4e0c0aae7dab"
-                                                srcset="<?php echo BASE_URL . 'assets/images/about/4717212a-7071-44ed-97ef-5c0ada0211e0.jpeg'; ?>?w=400&amp;h=400&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142747&amp;s=a83978cd54ac5aac83baa1c50e6a20c7 400w, <?php echo BASE_URL . 'assets/images/about/4717212a-7071-44ed-97ef-5c0ada0211e0.jpeg'; ?>?w=800&amp;h=800&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142747&amp;s=a733b2624b63c2ca44b8c7b0c792cf78 800w"
-                                                sizes="100vw" alt="Shape April 2022 HR 201"
-                                                class="w-full  w-full h-full object-cover absolute top-0 left-0  rounded-2xl transform-gpu bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl"
-                                                width="800" height="800">
-                                        </picture>
+                                <?php
+                                $aboutImages = glob('assets/images/about/*.{jpg,jpeg,png,webp}', GLOB_BRACE);
+                                foreach ($aboutImages as $index => $img): ?>
+                                    <div class="absolute top-0 left-1/2 h-1/2 origin-bottom-left w-25vw || js-arched-image-419251-tablet" data-index="<?= $index ?>">
+                                        <div class="relative overflow-hidden w-full" style="padding-top: 100%;">
+                                            <picture class="w-full absolute top-0 left-0 w-full h-full ">
+                                              <img src="<?php echo BASE_URL . $img; ?>" alt="About Image <?= $index ?>" class="w-full h-full object-cover absolute top-0 left-0 rounded-2xl transform-gpu bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl" width="800" height="800">
+                                            </picture>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="absolute top-0 left-1/2 h-1/2 origin-bottom-left w-25vw || js-arched-image-419251-tablet"
-                                    data-index="1">
-                                    <div class="relative overflow-hidden w-full" style="padding-top: 100%;">
-                                        <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                            <source type="image/webp"
-                                                srcset="<?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.25.32.jpeg'; ?>?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142745&amp;s=babedcc3fa45f9af1a08b9a9062682f7 400w, <?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.25.32.jpeg'; ?>?w=800&amp;h=800&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142745&amp;s=d167ecd4b85ced45e9e58854a7e4c7ed 800w"
-                                                sizes="100vw">
-                                            <img src="<?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.25.32.jpeg'; ?>?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142745&amp;s=babedcc3fa45f9af1a08b9a9062682f7"
-                                                srcset="<?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.25.32.jpeg'; ?>?w=400&amp;h=400&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142745&amp;s=733cf1893ea9265b8d35088a31e10d09 400w, <?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.25.32.jpeg'; ?>?w=800&amp;h=800&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142745&amp;s=dcf2a1167184ac55fccce00dc402ce78 800w"
-                                                sizes="100vw" alt="Shape April 2022 HR 200"
-                                                class="w-full  w-full h-full object-cover absolute top-0 left-0  rounded-2xl transform-gpu bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl"
-                                                width="800" height="800">
-                                        </picture>
-                                    </div>
-                                </div>
-                                <div class="absolute top-0 left-1/2 h-1/2 origin-bottom-left w-25vw || js-arched-image-419251-tablet"
-                                    data-index="2">
-                                    <div class="relative overflow-hidden w-full" style="padding-top: 100%;">
-                                        <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                            <source type="image/webp"
-                                                srcset="<?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142276&amp;s=623a91582904eeaaa558600540e49349 400w, <?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=800&amp;h=800&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142276&amp;s=9bf0360d8b4edc0af31e6a4fd9af7908 800w"
-                                                sizes="100vw">
-                                            <img src="<?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142276&amp;s=623a91582904eeaaa558600540e49349"
-                                                srcset="<?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=400&amp;h=400&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142276&amp;s=d0b8e551d87885bfbf16612688bda578 400w, <?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=800&amp;h=800&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142276&amp;s=7241c388a822d4e942a118580760cf67 800w"
-                                                sizes="100vw" alt="Shape April 2022 HR 163"
-                                                class="w-full  w-full h-full object-cover absolute top-0 left-0  rounded-2xl transform-gpu bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl"
-                                                width="800" height="800">
-                                        </picture>
-                                    </div>
-                                </div>
-                                <div class="absolute top-0 left-1/2 h-1/2 origin-bottom-left w-25vw || js-arched-image-419251-tablet"
-                                    data-index="3">
-                                    <div class="relative overflow-hidden w-full" style="padding-top: 100%;">
-                                        <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                            <source type="image/webp"
-                                                srcset="<?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142740&amp;s=b277c4ce6152387dcd4771b708003cf7 400w, <?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=800&amp;h=800&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142740&amp;s=e6ff1880aefadb3d72e403119c962881 800w"
-                                                sizes="100vw">
-                                            <img src="<?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142740&amp;s=b277c4ce6152387dcd4771b708003cf7"
-                                                srcset="<?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=400&amp;h=400&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142740&amp;s=5e0261d18b0e6e66457b204b9c8fd795 400w, <?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=800&amp;h=800&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142740&amp;s=ddeef92cc589754cfd1234a66da6f90c 800w"
-                                                sizes="100vw" alt="Shape April 2022 HR 198"
-                                                class="w-full  w-full h-full object-cover absolute top-0 left-0  rounded-2xl transform-gpu bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl"
-                                                width="800" height="800">
-                                        </picture>
-                                    </div>
-                                </div>
-                                <div class="absolute top-0 left-1/2 h-1/2 origin-bottom-left w-25vw || js-arched-image-419251-tablet"
-                                    data-index="4">
-                                    <div class="relative overflow-hidden w-full" style="padding-top: 100%;">
-                                        <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                            <source type="image/webp"
-                                                srcset="<?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143487&amp;s=19b949fe09dfe3e0161a0a345a83f057 400w, <?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=800&amp;h=800&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143487&amp;s=083c410dd6a37b3a508401c79979d435 800w"
-                                                sizes="100vw">
-                                            <img src="<?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143487&amp;s=19b949fe09dfe3e0161a0a345a83f057"
-                                                srcset="<?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=400&amp;h=400&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143487&amp;s=3999d2aa676d2e2e3a05f639e37652ff 400w, <?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=800&amp;h=800&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143487&amp;s=6d1b202ff3a48ce53ba59977efcc2626 800w"
-                                                sizes="100vw" alt="Shape April 2022 HR 208"
-                                                class="w-full  w-full h-full object-cover absolute top-0 left-0  rounded-2xl transform-gpu bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl"
-                                                width="800" height="800">
-                                        </picture>
-                                    </div>
-                                </div>
-                                <div class="absolute top-0 left-1/2 h-1/2 origin-bottom-left w-25vw || js-arched-image-419251-tablet"
-                                    data-index="5">
-                                    <div class="relative overflow-hidden w-full" style="padding-top: 100%;">
-                                        <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                            <source type="image/webp"
-                                                srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Scalify-Studio/Shape-2018-LR-169_200119_175819.jpg?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604326504&amp;s=bf17266e2762cabc752c1a107cfd715b 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/Scalify-Studio/Shape-2018-LR-169_200119_175819.jpg?w=800&amp;h=800&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604326504&amp;s=ecfafac1363d4dc0f34f36fdea6a88d3 800w"
-                                                sizes="100vw">
-                                            <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Scalify-Studio/Shape-2018-LR-169_200119_175819.jpg?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604326504&amp;s=bf17266e2762cabc752c1a107cfd715b"
-                                                srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Scalify-Studio/Shape-2018-LR-169_200119_175819.jpg?w=400&amp;h=400&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604326504&amp;s=1bd00db44f89e71c39091579ba96322d 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/Scalify-Studio/Shape-2018-LR-169_200119_175819.jpg?w=800&amp;h=800&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604326504&amp;s=bab246e9dd834bf1f59ae266cd40dd7a 800w"
-                                                sizes="100vw" alt="Tom on the laptop in the Shape studio"
-                                                class="w-full  w-full h-full object-cover absolute top-0 left-0  rounded-2xl transform-gpu bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl"
-                                                width="800" height="800">
-                                        </picture>
-                                    </div>
-                                </div>
-                                <div class="absolute top-0 left-1/2 h-1/2 origin-bottom-left w-25vw || js-arched-image-419251-tablet"
-                                    data-index="6">
-                                    <div class="relative overflow-hidden w-full" style="padding-top: 100%;">
-                                        <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                            <source type="image/webp"
-                                                srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/Individuals-Black-Wall/Shape-April-2022-HR-101.jpg?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143071&amp;s=3a162be72d42e6e50308ae56a152957e 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/Individuals-Black-Wall/Shape-April-2022-HR-101.jpg?w=800&amp;h=800&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143071&amp;s=00dd25bfb79d75bd6eaf42228484484f 800w"
-                                                sizes="100vw">
-                                            <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/Individuals-Black-Wall/Shape-April-2022-HR-101.jpg?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143071&amp;s=3a162be72d42e6e50308ae56a152957e"
-                                                srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/Individuals-Black-Wall/Shape-April-2022-HR-101.jpg?w=400&amp;h=400&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143071&amp;s=fd1ecec79935bea0e772846c74dda7ad 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/Individuals-Black-Wall/Shape-April-2022-HR-101.jpg?w=800&amp;h=800&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143071&amp;s=aad441cbee1ad44e0cad1996af707e94 800w"
-                                                sizes="100vw" alt="Shape April 2022 HR 101"
-                                                class="w-full  w-full h-full object-cover absolute top-0 left-0  rounded-2xl transform-gpu bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl"
-                                                width="800" height="800">
-                                        </picture>
-                                    </div>
-                                </div>
-                                <div class="absolute top-0 left-1/2 h-1/2 origin-bottom-left w-25vw || js-arched-image-419251-tablet"
-                                    data-index="7">
-                                    <div class="relative overflow-hidden w-full" style="padding-top: 100%;">
-                                        <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                            <source type="image/webp"
-                                                srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/Chillout-Area/Shape-April-2022-HR-175.jpg?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1706011832&amp;s=e19014f3eb901418311caf1ce06e12c5 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/Chillout-Area/Shape-April-2022-HR-175.jpg?w=800&amp;h=800&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1706011832&amp;s=f9d4bc6e87af0f0dc0e3dac3313b1471 800w"
-                                                sizes="100vw">
-                                            <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/Chillout-Area/Shape-April-2022-HR-175.jpg?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1706011832&amp;s=e19014f3eb901418311caf1ce06e12c5"
-                                                srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/Chillout-Area/Shape-April-2022-HR-175.jpg?w=400&amp;h=400&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1706011832&amp;s=10d4106f7d0b7087a8cac102ae91b71b 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/Chillout-Area/Shape-April-2022-HR-175.jpg?w=800&amp;h=800&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1706011832&amp;s=72da9c38f8865f3391bca32f64e34eed 800w"
-                                                sizes="100vw" alt="Shape April 2022 HR 175"
-                                                class="w-full  w-full h-full object-cover absolute top-0 left-0  rounded-2xl transform-gpu bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl"
-                                                width="800" height="800">
-                                        </picture>
-                                    </div>
-                                </div>
-                                <div class="absolute top-0 left-1/2 h-1/2 origin-bottom-left w-25vw || js-arched-image-419251-tablet"
-                                    data-index="8">
-                                    <div class="relative overflow-hidden w-full" style="padding-top: 100%;">
-                                        <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                            <source type="image/webp"
-                                                srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/People-in-Studio/Shape-April-2022-HR-215.jpg?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143498&amp;s=2b69f2b4d69766ef9557bfde462cb117 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/People-in-Studio/Shape-April-2022-HR-215.jpg?w=800&amp;h=800&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143498&amp;s=d9d35528c208fe72345f7718d22e3882 800w"
-                                                sizes="100vw">
-                                            <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/People-in-Studio/Shape-April-2022-HR-215.jpg?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143498&amp;s=2b69f2b4d69766ef9557bfde462cb117"
-                                                srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/People-in-Studio/Shape-April-2022-HR-215.jpg?w=400&amp;h=400&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143498&amp;s=e16d9f97faa966598a2b255aaff25bfe 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/People-in-Studio/Shape-April-2022-HR-215.jpg?w=800&amp;h=800&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143498&amp;s=5db7424f83e52cb4e7d0d93a3f680672 800w"
-                                                sizes="100vw" alt="Shape April 2022 HR 215"
-                                                class="w-full  w-full h-full object-cover absolute top-0 left-0  rounded-2xl transform-gpu bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl"
-                                                width="800" height="800">
-                                        </picture>
-                                    </div>
-                                </div>
+                                <?php endforeach; ?>
                             </div>
                         </div>
                     </div>
@@ -515,18 +306,7 @@ text-center
                                     <a href="#178"
                                         class="inline-flex relative group outline-none  | focus:outline-none  relative z-20"
                                         style="filter: url(#buttonFilter);">
-                                        <div class="
-w-auto
-inline-flex
-items-center
-justify-center
-relative
-leading-tight
-shadow-none
-overflow-hidden
-rounded-full
-border-default
-bg-primary-600 text-gray-600 py-2 px-5">
+                                        <div class="w-auto inline-flex items-center justify-center relative leading-tight shadow-none overflow-hidden rounded-full border-default bg-primary-600 text-gray-600 py-2 px-5">
                                             <div class="relative inline-flex top-px flex-shrink-0">
                                                 <div>
                                                     Learn about us</div>
@@ -573,174 +353,26 @@ bg-primary-600 text-gray-600 py-2 px-5">
                     <div
                         class="px-2 | sm:px-6 | xl:px-12 | 2xl:px-20 | 3xl:px-40 | 4xl:px-60 w-full flex flex-wrap justify-center relative z-30 -mb-10 | lg:-mb-14">
                         <div class="px-2 | lg:px-3 | xl:px-4">
-                            <h1 class="
-text-3xl | sm:text-5xl | md:text-6xl | xl:text-8xl | 4xl:text-9xl
-font-sans-primary tracking-tight
-text-gray-600  | dark:text-grayDark-100
-leading-none
-text-balance
-text-center
-">Good design <br />
-                                makes life better.</h1>
+                            <h1 class="text-3xl | sm:text-5xl | md:text-6xl | xl:text-8xl | 4xl:text-9xl font-sans-primary tracking-tight text-gray-600  | dark:text-grayDark-100 leading-none text-balance text-center">
+                                Our Strategy <br />
+                                is Human.</h1>
                         </div>
                     </div>
                     <div class="w-full overflow-hidden pt-5 relative pointer-events-none transition-opacity opacity-0 h-35vw"
-                        x-bind:class="{
-'opacity-0' : !active,
-'opacity-100' : active
-}">
+                        x-bind:class="{'opacity-0' : !active,'opacity-100' : active}">
                         <div class="relative w-250vw h-250vw -ml-75vw || js-arched-image-container-419251-desktop">
                             <div class="w-full h-full relative || js-arched-image-inner-container-419251-desktop">
-                                <div class="absolute top-0 left-1/2 h-1/2 origin-bottom-left w-20vw || js-arched-image-419251-desktop"
-                                    data-index="0">
-                                    <div class="relative overflow-hidden w-full" style="padding-top: 100%;">
-                                        <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                            <source type="image/webp"
-                                                srcset="<?php echo BASE_URL . 'assets/images/about/4717212a-7071-44ed-97ef-5c0ada0211e0.jpeg'; ?>?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142747&amp;s=ac2c8013dee87f79b22c4e0c0aae7dab 400w, <?php echo BASE_URL . 'assets/images/about/4717212a-7071-44ed-97ef-5c0ada0211e0.jpeg'; ?>?w=800&amp;h=800&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142747&amp;s=745440ded43152fa8d2d6d2503427bd5 800w"
-                                                sizes="100vw">
-                                            <img src="<?php echo BASE_URL . 'assets/images/about/4717212a-7071-44ed-97ef-5c0ada0211e0.jpeg'; ?>?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142747&amp;s=ac2c8013dee87f79b22c4e0c0aae7dab"
-                                                srcset="<?php echo BASE_URL . 'assets/images/about/4717212a-7071-44ed-97ef-5c0ada0211e0.jpeg'; ?>?w=400&amp;h=400&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142747&amp;s=a83978cd54ac5aac83baa1c50e6a20c7 400w, <?php echo BASE_URL . 'assets/images/about/4717212a-7071-44ed-97ef-5c0ada0211e0.jpeg'; ?>?w=800&amp;h=800&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142747&amp;s=a733b2624b63c2ca44b8c7b0c792cf78 800w"
-                                                sizes="100vw" alt="Shape April 2022 HR 201"
-                                                class="w-full  w-full h-full object-cover absolute top-0 left-0  rounded-2xl transform-gpu bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl"
-                                                width="800" height="800">
-                                        </picture>
+                                <?php
+                                $aboutImages = glob('assets/images/about/*.{jpg,jpeg,png,webp}', GLOB_BRACE);
+                                foreach ($aboutImages as $index => $img): ?>
+                                    <div class="absolute top-0 left-1/2 h-1/2 origin-bottom-left w-20vw || js-arched-image-419251-desktop" data-index="<?= $index ?>">
+                                        <div class="relative overflow-hidden w-full" style="padding-top: 100%;">
+                                            <picture class="w-full absolute top-0 left-0 w-full h-full ">
+                                              <img src="<?php echo BASE_URL . $img; ?>" alt="About Image <?= $index ?>" class="w-full h-full object-cover absolute top-0 left-0 rounded-2xl transform-gpu bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl" width="800" height="800">
+                                            </picture>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="absolute top-0 left-1/2 h-1/2 origin-bottom-left w-20vw || js-arched-image-419251-desktop"
-                                    data-index="1">
-                                    <div class="relative overflow-hidden w-full" style="padding-top: 100%;">
-                                        <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                            <source type="image/webp"
-                                                srcset="<?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.25.32.jpeg'; ?>?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142745&amp;s=babedcc3fa45f9af1a08b9a9062682f7 400w, <?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.25.32.jpeg'; ?>?w=800&amp;h=800&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142745&amp;s=d167ecd4b85ced45e9e58854a7e4c7ed 800w"
-                                                sizes="100vw">
-                                            <img src="<?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.25.32.jpeg'; ?>?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142745&amp;s=babedcc3fa45f9af1a08b9a9062682f7"
-                                                srcset="<?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.25.32.jpeg'; ?>?w=400&amp;h=400&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142745&amp;s=733cf1893ea9265b8d35088a31e10d09 400w, <?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.25.32.jpeg'; ?>?w=800&amp;h=800&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142745&amp;s=dcf2a1167184ac55fccce00dc402ce78 800w"
-                                                sizes="100vw" alt="Shape April 2022 HR 200"
-                                                class="w-full  w-full h-full object-cover absolute top-0 left-0  rounded-2xl transform-gpu bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl"
-                                                width="800" height="800">
-                                        </picture>
-                                    </div>
-                                </div>
-                                <div class="absolute top-0 left-1/2 h-1/2 origin-bottom-left w-20vw || js-arched-image-419251-desktop"
-                                    data-index="2">
-                                    <div class="relative overflow-hidden w-full" style="padding-top: 100%;">
-                                        <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                            <source type="image/webp"
-                                                srcset="<?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142276&amp;s=623a91582904eeaaa558600540e49349 400w, <?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=800&amp;h=800&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142276&amp;s=9bf0360d8b4edc0af31e6a4fd9af7908 800w"
-                                                sizes="100vw">
-                                            <img src="<?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142276&amp;s=623a91582904eeaaa558600540e49349"
-                                                srcset="<?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=400&amp;h=400&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142276&amp;s=d0b8e551d87885bfbf16612688bda578 400w, <?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=800&amp;h=800&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142276&amp;s=7241c388a822d4e942a118580760cf67 800w"
-                                                sizes="100vw" alt="Shape April 2022 HR 163"
-                                                class="w-full  w-full h-full object-cover absolute top-0 left-0  rounded-2xl transform-gpu bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl"
-                                                width="800" height="800">
-                                        </picture>
-                                    </div>
-                                </div>
-                                <div class="absolute top-0 left-1/2 h-1/2 origin-bottom-left w-20vw || js-arched-image-419251-desktop"
-                                    data-index="3">
-                                    <div class="relative overflow-hidden w-full" style="padding-top: 100%;">
-                                        <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                            <source type="image/webp"
-                                                srcset="<?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142740&amp;s=b277c4ce6152387dcd4771b708003cf7 400w, <?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=800&amp;h=800&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142740&amp;s=e6ff1880aefadb3d72e403119c962881 800w"
-                                                sizes="100vw">
-                                            <img src="<?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142740&amp;s=b277c4ce6152387dcd4771b708003cf7"
-                                                srcset="<?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=400&amp;h=400&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142740&amp;s=5e0261d18b0e6e66457b204b9c8fd795 400w, <?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=800&amp;h=800&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142740&amp;s=ddeef92cc589754cfd1234a66da6f90c 800w"
-                                                sizes="100vw" alt="Shape April 2022 HR 198"
-                                                class="w-full  w-full h-full object-cover absolute top-0 left-0  rounded-2xl transform-gpu bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl"
-                                                width="800" height="800">
-                                        </picture>
-                                    </div>
-                                </div>
-                                <div class="absolute top-0 left-1/2 h-1/2 origin-bottom-left w-20vw || js-arched-image-419251-desktop"
-                                    data-index="4">
-                                    <div class="relative overflow-hidden w-full" style="padding-top: 100%;">
-                                        <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                            <source type="image/webp"
-                                                srcset="<?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143487&amp;s=19b949fe09dfe3e0161a0a345a83f057 400w, <?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=800&amp;h=800&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143487&amp;s=083c410dd6a37b3a508401c79979d435 800w"
-                                                sizes="100vw">
-                                            <img src="<?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143487&amp;s=19b949fe09dfe3e0161a0a345a83f057"
-                                                srcset="<?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=400&amp;h=400&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143487&amp;s=3999d2aa676d2e2e3a05f639e37652ff 400w, <?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=800&amp;h=800&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143487&amp;s=6d1b202ff3a48ce53ba59977efcc2626 800w"
-                                                sizes="100vw" alt="Shape April 2022 HR 208"
-                                                class="w-full  w-full h-full object-cover absolute top-0 left-0  rounded-2xl transform-gpu bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl"
-                                                width="800" height="800">
-                                        </picture>
-                                    </div>
-                                </div>
-                                <div class="absolute top-0 left-1/2 h-1/2 origin-bottom-left w-20vw || js-arched-image-419251-desktop"
-                                    data-index="5">
-                                    <div class="relative overflow-hidden w-full" style="padding-top: 100%;">
-                                        <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                            <source type="image/webp"
-                                                srcset="<?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.25.32.jpeg'; ?>?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142745&amp;s=babedcc3fa45f9af1a08b9a9062682f7 400w, <?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.25.32.jpeg'; ?>?w=800&amp;h=800&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142745&amp;s=d167ecd4b85ced45e9e58854a7e4c7ed 800w"
-                                                sizes="100vw">
-                                            <img src="<?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.25.32.jpeg'; ?>?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142745&amp;s=babedcc3fa45f9af1a08b9a9062682f7"
-                                                srcset="<?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.25.32.jpeg'; ?>?w=400&amp;h=400&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142745&amp;s=733cf1893ea9265b8d35088a31e10d09 400w, <?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.25.32.jpeg'; ?>?w=800&amp;h=800&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142745&amp;s=dcf2a1167184ac55fccce00dc402ce78 800w"
-                                                sizes="100vw" alt="Shape April 2022 HR 200"
-                                                class="w-full  w-full h-full object-cover absolute top-0 left-0  rounded-2xl transform-gpu bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl"
-                                                width="800" height="800">
-                                        </picture>
-                                    </div>
-                                </div>
-                                <div class="absolute top-0 left-1/2 h-1/2 origin-bottom-left w-20vw || js-arched-image-419251-desktop"
-                                    data-index="6">
-                                    <div class="relative overflow-hidden w-full" style="padding-top: 100%;">
-                                        <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                            <source type="image/webp"
-                                                srcset="<?php echo BASE_URL . 'assets/images/about/4717212a-7071-44ed-97ef-5c0ada0211e0.jpeg'; ?>?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142747&amp;s=ac2c8013dee87f79b22c4e0c0aae7dab 400w, <?php echo BASE_URL . 'assets/images/about/4717212a-7071-44ed-97ef-5c0ada0211e0.jpeg'; ?>?w=800&amp;h=800&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142747&amp;s=745440ded43152fa8d2d6d2503427bd5 800w"
-                                                sizes="100vw">
-                                            <img src="<?php echo BASE_URL . 'assets/images/about/4717212a-7071-44ed-97ef-5c0ada0211e0.jpeg'; ?>?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142747&amp;s=ac2c8013dee87f79b22c4e0c0aae7dab"
-                                                srcset="<?php echo BASE_URL . 'assets/images/about/4717212a-7071-44ed-97ef-5c0ada0211e0.jpeg'; ?>?w=400&amp;h=400&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142747&amp;s=a83978cd54ac5aac83baa1c50e6a20c7 400w, <?php echo BASE_URL . 'assets/images/about/4717212a-7071-44ed-97ef-5c0ada0211e0.jpeg'; ?>?w=800&amp;h=800&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142747&amp;s=a733b2624b63c2ca44b8c7b0c792cf78 800w"
-                                                sizes="100vw" alt="Shape April 2022 HR 201"
-                                                class="w-full  w-full h-full object-cover absolute top-0 left-0  rounded-2xl transform-gpu bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl"
-                                                width="800" height="800">
-                                        </picture>
-                                    </div>
-                                </div>
-                                <div class="absolute top-0 left-1/2 h-1/2 origin-bottom-left w-20vw || js-arched-image-419251-desktop"
-                                    data-index="7">
-                                    <div class="relative overflow-hidden w-full" style="padding-top: 100%;">
-                                        <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                            <source type="image/webp"
-                                                srcset="<?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.25.32.jpeg'; ?>?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142745&amp;s=babedcc3fa45f9af1a08b9a9062682f7 400w, <?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.25.32.jpeg'; ?>?w=800&amp;h=800&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142745&amp;s=d167ecd4b85ced45e9e58854a7e4c7ed 800w"
-                                                sizes="100vw">
-                                            <img src="<?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.25.32.jpeg'; ?>?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142745&amp;s=babedcc3fa45f9af1a08b9a9062682f7"
-                                                srcset="<?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.25.32.jpeg'; ?>?w=400&amp;h=400&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142745&amp;s=733cf1893ea9265b8d35088a31e10d09 400w, <?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.25.32.jpeg'; ?>?w=800&amp;h=800&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142745&amp;s=dcf2a1167184ac55fccce00dc402ce78 800w"
-                                                sizes="100vw" alt="Shape April 2022 HR 200"
-                                                class="w-full  w-full h-full object-cover absolute top-0 left-0  rounded-2xl transform-gpu bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl"
-                                                width="800" height="800">
-                                        </picture>
-                                    </div>
-                                </div>
-                                <div class="absolute top-0 left-1/2 h-1/2 origin-bottom-left w-20vw || js-arched-image-419251-desktop"
-                                    data-index="8">
-                                    <div class="relative overflow-hidden w-full" style="padding-top: 100%;">
-                                        <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                            <source type="image/webp"
-                                                srcset="<?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142276&amp;s=623a91582904eeaaa558600540e49349 400w, <?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=800&amp;h=800&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142276&amp;s=9bf0360d8b4edc0af31e6a4fd9af7908 800w"
-                                                sizes="100vw">
-                                            <img src="<?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142276&amp;s=623a91582904eeaaa558600540e49349"
-                                                srcset="<?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=400&amp;h=400&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142276&amp;s=d0b8e551d87885bfbf16612688bda578 400w, <?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=800&amp;h=800&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142276&amp;s=7241c388a822d4e942a118580760cf67 800w"
-                                                sizes="100vw" alt="Shape April 2022 HR 163"
-                                                class="w-full  w-full h-full object-cover absolute top-0 left-0  rounded-2xl transform-gpu bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl"
-                                                width="800" height="800">
-                                        </picture>
-                                    </div>
-                                </div>
-                                <div class="absolute top-0 left-1/2 h-1/2 origin-bottom-left w-20vw || js-arched-image-419251-desktop"
-                                    data-index="3">
-                                    <div class="relative overflow-hidden w-full" style="padding-top: 100%;">
-                                        <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                            <source type="image/webp"
-                                                srcset="<?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142740&amp;s=b277c4ce6152387dcd4771b708003cf7 400w, <?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=800&amp;h=800&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142740&amp;s=e6ff1880aefadb3d72e403119c962881 800w"
-                                                sizes="100vw">
-                                            <img src="<?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=400&amp;h=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142740&amp;s=b277c4ce6152387dcd4771b708003cf7"
-                                                srcset="<?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=400&amp;h=400&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142740&amp;s=5e0261d18b0e6e66457b204b9c8fd795 400w, <?php echo BASE_URL . 'assets/images/about/WhatsApp Image 2025-09-07 at 22.37.50.jpeg'; ?>?w=800&amp;h=800&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651142740&amp;s=ddeef92cc589754cfd1234a66da6f90c 800w"
-                                                sizes="100vw" alt="Shape April 2022 HR 198"
-                                                class="w-full  w-full h-full object-cover absolute top-0 left-0  rounded-2xl transform-gpu bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl"
-                                                width="800" height="800">
-                                        </picture>
-                                    </div>
-                                </div>
+                                <?php endforeach; ?>
                             </div>
                         </div>
                     </div>
@@ -766,18 +398,7 @@ text-center
                                     <a href="#178"
                                         class="inline-flex relative group outline-none  | focus:outline-none  relative z-20"
                                         style="filter: url(#buttonFilter);">
-                                        <div class="
-w-auto
-inline-flex
-items-center
-justify-center
-relative
-leading-tight
-shadow-none
-overflow-hidden
-rounded-full
-border-default
-bg-primary-600 text-gray-600 py-2 px-5">
+                                        <div class="w-auto inline-flex items-center justify-center relative leading-tight shadow-none overflow-hidden rounded-full border-default bg-primary-600 text-gray-600 py-2 px-5">
                                             <div class="relative inline-flex top-px flex-shrink-0">
                                                 <div>
                                                     Learn about us</div>
@@ -1102,17 +723,18 @@ bg-primary-600 text-gray-600 py-2 px-5">
                         <div class="w-full" id="ourTeam">
                             <div class="w-full || swiper || js-carousel-189">
                                 <div class="ease-linear || swiper-wrapper">
-                                    <?php $pIndex = 0;foreach ($employeeList as $profile) {?>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 | <?php echo $pIndex % 2 === 0 ? "mt:10 lg:mt-16" : ""; ?> || swiper-slide"
-                                        data-swiper-slide-index="<?php echo $pIndex; ?>">
-                                        <div class="w-full || js-profile-card-189">
-                                            <div x-data="profile" class="w-full flex flex-wrap relative group pl-px"
-                                                x-ref="profile" x-init="profileHover('201')">
-                                                <!-- <a href="#" class="w-full h-full absolute top-0 left-0 z-10">
+                                    <?php $pIndex = 0;
+                                    foreach ($employeeList as $profile) { ?>
+                                        <div class="px-2 | lg:px-3 | xl:px-4 | <?php echo $pIndex % 2 === 0 ? "mt:10 lg:mt-16" : ""; ?> || swiper-slide"
+                                            data-swiper-slide-index="<?php echo $pIndex; ?>">
+                                            <div class="w-full || js-profile-card-189">
+                                                <div x-data="profile" class="w-full flex flex-wrap relative group pl-px"
+                                                    x-ref="profile" x-init="profileHover('201')">
+                                                    <!-- <a href="#" class="w-full h-full absolute top-0 left-0 z-10">
                                                     <div class="sr-only">
                                                         Andy's profile</div>
                                                 </a> -->
-                                                <!-- <div
+                                                    <!-- <div
                                                     class="absolute top-3 right-3 z-20 inline-flex items-center space-x-1.5">
                                                     <a href="#"
                                                         class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-primary-600 transition-transform transform || xl:group-hover:rotate-90">
@@ -1126,62 +748,63 @@ bg-primary-600 text-gray-600 py-2 px-5">
                                                         </svg>
                                                     </a>
                                                 </div> -->
-                                                <div class="w-full relative">
-                                                    <div class="absolute top-0 left-0 w-full h-full rounded-2xl overflow-hidden opacity-0 hidden | lg:rounded-3xl xl:flex || js-profile-images-201"
-                                                        x-ref="profileImages"
-                                                        x-bind:class="{'opacity-0' : !hovering,'opacity-100' : hovering,}">
-                                                        <img src="<?php echo BASE_URL . "assets/images/employees/" . $profile['name'] . ".png"; ?>?w=600&amp;q=100&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887804&amp;s=0ab1706115fb5536f8bec13610b3e50c"
-                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                            alt="Andy 4" loading="lazy" />
-                                                    </div>
-                                                    <div class="w-full rounded-2xl overflow-hidden bg-gray-50 | lg:rounded-3xl"
-                                                        x-bind:class="{'xl:opacity-0' : hovering,'opacity-100' : !hovering,}">
-                                                        <div class="relative overflow-hidden w-full"
-                                                            style="padding-top: 133.25%;">
-                                                            <picture
-                                                                class="w-full absolute top-0 left-0 w-full h-full ">
-                                                                <source type="image/webp"
-                                                                    srcset="<?php echo BASE_URL . "assets/images/employees/" . $profile['name'] . ".png"; ?>?w=400&amp;h=533&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050203&amp;s=f4eb0ba70df536ec5c5cc81977e0dca3 400w, <?php echo BASE_URL . "assets/images/employees/" . $profile['name'] . ".png"; ?>?w=800&amp;h=1067&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050203&amp;s=a6beebc09705dd00fdba9961e67df0ff 800w"
-                                                                    sizes="100vw">
-                                                                <img src="<?php echo BASE_URL . "assets/images/employees/" . $profile['name'] . ".png"; ?>?w=400&amp;h=533&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050203&amp;s=f4eb0ba70df536ec5c5cc81977e0dca3"
-                                                                    srcset="<?php echo BASE_URL . "assets/images/employees/" . $profile['name'] . ".png"; ?>?w=400&amp;h=533&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050203&amp;s=0940deace985b06999187e866834bb9d 400w, <?php echo BASE_URL . "assets/images/employees/" . $profile['name'] . ".png"; ?>?w=800&amp;h=1067&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050203&amp;s=056c51c100e34c2f2c94eff64e4a7504 800w"
-                                                                    sizes="100vw" alt="Andy portrait madebyshape"
-                                                                    class="w-full " width="800" height="1067">
-                                                            </picture>
+                                                    <div class="w-full relative">
+                                                        <div class="absolute top-0 left-0 w-full h-full rounded-2xl overflow-hidden opacity-0 hidden | lg:rounded-3xl xl:flex || js-profile-images-201"
+                                                            x-ref="profileImages"
+                                                            x-bind:class="{'opacity-0' : !hovering,'opacity-100' : hovering,}">
+                                                            <img src="<?php echo BASE_URL . "assets/images/employees/" . $profile['name'] . ".png"; ?>?w=600&amp;q=100&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887804&amp;s=0ab1706115fb5536f8bec13610b3e50c"
+                                                                class="w-full h-full object-cover object-center absolute top-0 left-0"
+                                                                alt="Andy 4" loading="lazy" />
+                                                        </div>
+                                                        <div class="w-full rounded-2xl overflow-hidden bg-gray-50 | lg:rounded-3xl"
+                                                            x-bind:class="{'xl:opacity-0' : hovering,'opacity-100' : !hovering,}">
+                                                            <div class="relative overflow-hidden w-full"
+                                                                style="padding-top: 133.25%;">
+                                                                <picture
+                                                                    class="w-full absolute top-0 left-0 w-full h-full ">
+                                                                    <source type="image/webp"
+                                                                        srcset="<?php echo BASE_URL . "assets/images/employees/" . $profile['name'] . ".png"; ?>?w=400&amp;h=533&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050203&amp;s=f4eb0ba70df536ec5c5cc81977e0dca3 400w, <?php echo BASE_URL . "assets/images/employees/" . $profile['name'] . ".png"; ?>?w=800&amp;h=1067&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050203&amp;s=a6beebc09705dd00fdba9961e67df0ff 800w"
+                                                                        sizes="100vw">
+                                                                    <img src="<?php echo BASE_URL . "assets/images/employees/" . $profile['name'] . ".png"; ?>?w=400&amp;h=533&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050203&amp;s=f4eb0ba70df536ec5c5cc81977e0dca3"
+                                                                        srcset="<?php echo BASE_URL . "assets/images/employees/" . $profile['name'] . ".png"; ?>?w=400&amp;h=533&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050203&amp;s=0940deace985b06999187e866834bb9d 400w, <?php echo BASE_URL . "assets/images/employees/" . $profile['name'] . ".png"; ?>?w=800&amp;h=1067&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050203&amp;s=056c51c100e34c2f2c94eff64e4a7504 800w"
+                                                                        sizes="100vw" alt="Andy portrait madebyshape"
+                                                                        class="w-full " width="800" height="1067">
+                                                                </picture>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="w-full absolute bottom-0 left-0 pr-14 z-20">
-                                                    <div
-                                                        class="w-auto relative inline-flex flex-wrap rounded-tr-2xl pt-3 pointer-events-none pr-5 | lg:rounded-tr-3xl lg:pr-8 bg-white | dark:bg-grayDark-600">
-                                                        <svg id="Layer_1"
-                                                            class="w-10 h-10 | lg:w-12 lg:h-12 fill-current absolute -bottom-px right-px transform translate-x-full rotate-180 text-white dark:text-grayDark-600"
-                                                            version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
-                                                            viewBox="0 0 100 100" xml:space="preserve">
-                                                            <path
-                                                                d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
-                                                        </svg><svg id="Layer_1"
-                                                            class="w-10 h-10 | lg:w-12 lg:h-12 fill-current absolute top-px left-0 transform -translate-y-full rotate-180 text-white dark:text-grayDark-600"
-                                                            version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
-                                                            viewBox="0 0 100 100" xml:space="preserve">
-                                                            <path
-                                                                d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
-                                                        </svg>
-                                                        <div class="">
-                                                            <div class="dark:text-white">
-                                                                <?php echo $profile['name']; ?>
-                                                            </div>
-                                                            <div
-                                                                class="font-light text-gray-300 leading-tight text-sm | 4xl:text-base | dark:text-gray-200">
-                                                                <?php echo $profile['Designation']; ?>
+                                                    <div class="w-full absolute bottom-0 left-0 pr-14 z-20">
+                                                        <div
+                                                            class="w-auto relative inline-flex flex-wrap rounded-tr-2xl pt-3 pointer-events-none pr-5 | lg:rounded-tr-3xl lg:pr-8 bg-white | dark:bg-grayDark-600">
+                                                            <svg id="Layer_1"
+                                                                class="w-10 h-10 | lg:w-12 lg:h-12 fill-current absolute -bottom-px right-px transform translate-x-full rotate-180 text-white dark:text-grayDark-600"
+                                                                version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
+                                                                viewBox="0 0 100 100" xml:space="preserve">
+                                                                <path
+                                                                    d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
+                                                            </svg><svg id="Layer_1"
+                                                                class="w-10 h-10 | lg:w-12 lg:h-12 fill-current absolute top-px left-0 transform -translate-y-full rotate-180 text-white dark:text-grayDark-600"
+                                                                version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
+                                                                viewBox="0 0 100 100" xml:space="preserve">
+                                                                <path
+                                                                    d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
+                                                            </svg>
+                                                            <div class="">
+                                                                <div class="dark:text-white">
+                                                                    <?php echo $profile['name']; ?>
+                                                                </div>
+                                                                <div
+                                                                    class="font-light text-gray-300 leading-tight text-sm | 4xl:text-base | dark:text-gray-200">
+                                                                    <?php echo $profile['Designation']; ?>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <?php $pIndex++;}?>
+                                    <?php $pIndex++;
+                                    } ?>
                                 </div>
                             </div>
                         </div>
@@ -2308,10 +1931,10 @@ bg-primary-600 text-gray-600 py-2 px-5">
                                                         style="enable-background: new 0 0 371 150;"
                                                         xml:space="preserve">
                                                         <style type="text/css">
-                                                        .lamggjoxwd-st0 {
-                                                            fill-rule: evenodd;
-                                                            clip-rule: evenodd
-                                                        }
+                                                            .lamggjoxwd-st0 {
+                                                                fill-rule: evenodd;
+                                                                clip-rule: evenodd
+                                                            }
                                                         </style>
                                                         <path class="lamggjoxwd-st0"
                                                             d="M35.8,14.5h299.1v121H35.8V14.5z M97.5,26.2H65l-20.8,97.4h24.6l13.5-67.4h0.3l20.4,67.4h32.4L156,26.2h-24.6  l-13.7,67.6h-0.3L97.5,26.2z M165.6,26.2h26.1l-7.7,37.3h30.9l7.7-37.3h26.1l-20.2,97.4h-26.3l8.7-41.7h-30.7l-8.7,41.7h-26.1  L165.6,26.2z M296,43.7c7.4-0.1,14.7,1.4,21.4,4.5l6.2-19.4c-6.6-3.1-17.8-4.3-29.9-4.3c-21.4,0-43.4,7.6-43.4,32.7  c0,15.7,12.3,20.5,22.9,24.7c8,3.1,15,5.9,15,12.6c0,10-12.3,11.6-20.8,11.6c-8.5,0-18.8-2.2-24-5.6l-6.1,19.8  c9.8,3.1,20,4.8,30.3,5c22.6,0,47.6-7,47.6-33.9c0-17.6-13.3-22.9-24.2-27.2c-7.4-2.9-13.6-5.4-13.6-11  C277.3,45.3,285.7,43.7,296,43.7z">
@@ -2339,10 +1962,10 @@ bg-primary-600 text-gray-600 py-2 px-5">
                                                         style="enable-background: new 0 0 533 292;"
                                                         xml:space="preserve">
                                                         <style type="text/css">
-                                                        .tcmkxnaqvb-st0 {
-                                                            fill-rule: evenodd;
-                                                            clip-rule: evenodd
-                                                        }
+                                                            .tcmkxnaqvb-st0 {
+                                                                fill-rule: evenodd;
+                                                                clip-rule: evenodd
+                                                            }
                                                         </style>
                                                         <path class="tcmkxnaqvb-st0"
                                                             d="M138.1,28.4h218.7v234.5h-2.4H140.6c-2.6,0-2.6,0-2.6-2.6v-0.2c0-76.4,0-152.8,0-229.1c0-0.5,0-1,0.1-1.6v0v0v0  v0v0v0C138.1,29.1,138.1,28.7,138.1,28.4z M292.9,196.1v9.4v9.5c-0.2-0.1-0.4-0.3-0.6-0.4l-0.4-0.3l0,0l0,0  c-0.6-0.4-1.1-0.8-1.6-1.1c-7.5-5.1-17.7-3.3-22.3,4.2c-5.3,8.8-5.7,17.9-0.8,27c5.1,9.5,15.6,11.6,24.3,5.2c0.3-0.2,0.6-0.4,1-0.6  c0.2-0.1,0.4-0.2,0.5-0.3c0.7,3.5,0.7,3.5,4.3,3.5c0,0,0,0,0.1,0h0h0c0,0,0.1,0,0.1,0c1.7,0.2,2.5-0.7,2.6-2.3c0.1-0.7,0.1-1.3,0-2  v0c0-0.1,0-0.3,0-0.4v-38.8c0-0.9,0-1.8,0-2.6v0v0v0c0-2.8,0-5.6-0.1-8.4c0-0.5-0.6-1.5-1-1.5c-1.5-0.1-2.9-0.1-4.5-0.1  C294.1,196.1,293.5,196.1,292.9,196.1z M346.1,233.7c0-0.8,0-1.5,0-2.2c0-1.5,0.1-2.9-0.1-4.3c-0.6-7.5-5.6-13.9-12.5-15.9  c-8.5-2.5-16.2-0.3-21.1,6.3c-4.5,6.1-5.1,13.1-4,20.3c0.9,5.5,3.6,9.9,8.6,12.8c5.5,3.1,11.4,3.7,17.5,1.9  c5.4-1.6,9.2-5.1,10.9-10.6c0.4-1.4,0.1-1.9-1.3-2.2c-3.7-0.8-5.1-0.3-7,3c-1.5,2.6-3.6,4.2-6.4,4.7c-7.6,1.4-14.1-3.6-14.8-11.3  c-0.2-1.7,0.2-2.4,2.1-2.4c4.6,0.1,9.2,0.1,13.9,0.1h0l0,0h0l0,0h0c1.8,0,3.6,0,5.4,0H346.1z M207.3,240.1c0.5,4.7,2.4,8.5,5.5,10.2  c7.3,4.1,14.9,4.7,22.4,0.4c4.8-2.7,6.5-7,5.9-12.2c-0.5-4.7-3.6-7.1-7.8-8.4c-1.5-0.5-3-0.9-4.6-1.4l0,0l0,0l0,0l0,0l0,0h0  c-2.8-0.8-5.7-1.7-8.5-2.6c-1.4-0.5-2.7-1.5-3.8-2.5c-1.6-1.6-1.5-2.8,0-4.4c2.6-2.7,6-3.5,9.6-2.8c3,0.6,4.8,2.9,6.5,5.2l0.1,0.1  c0.4,0.6,1.3,1.2,2,1.1c1.1-0.1,2.2-0.3,3.3-0.5c0.4-0.1,0.9-0.2,1.3-0.3c0.3-4.4-2.9-9-7-9.9c-5.2-1.1-10.4-1.3-15.6-0.5  c-3.5,0.5-6,2.5-7.5,5.7c-2.9,6.6-0.2,12.9,6.6,15.2c2.7,0.9,5.5,1.7,8.3,2.5v0h0c2,0.6,4,1.1,5.9,1.7c1.8,0.6,3.6,1.4,3.8,3.7  c0.2,2.4-0.6,4.4-2.8,5.5c-5.5,2.9-11.9,2.6-15.7-3.8c-0.1-0.2-0.2-0.4-0.3-0.6c-0.2-0.5-0.5-0.9-0.8-1.3c-0.3-0.4-0.8-0.9-1.2-0.9  c-1.4,0.1-2.7,0.3-4.1,0.5h0v0h0h0h0l0,0h0h0l0,0C208.3,239.9,207.8,240,207.3,240.1z M166.1,211.7v2.3v33c0,2.5,0,3.8,0.6,4.4  c0.6,0.6,1.8,0.6,4.3,0.7l0.2,0c1.5,0,1.8-0.5,1.8-1.8l0-0.7c0-5.3-0.1-10.6,0.1-15.8c0.1-3.3,0.3-6.6,0.9-9.8  c1-4.9,5.4-7.9,10.4-7.5c5,0.4,7.3,3.1,7.6,8.9c0,0.5,0,1.1,0,1.6c0,2.3,0,4.6,0,6.9c0,4.6,0,9.2,0.1,13.8c0,0.8,0,1.4,0,2  c0,1.2,0,1.8,0.3,2.2c0.3,0.3,1,0.3,2.3,0.3h0h0h0h0c0.6,0,1.2,0,2.1,0c1.6,0,2.2-0.5,2.2-2.2c-0.1-4.5-0.1-9-0.1-13.5v0v0v0v0l0,0  v0c0-5.4-0.1-10.8-0.2-16.2c-0.1-3.8-2-6.6-5.4-8.1c-6.7-2.8-13.1-2.5-18.9,2.3l-0.8,0.7l-0.4,0.3l-0.6,0.5  C171.6,211,171.6,211,166.1,211.7z M249.9,252.2c0.5,0,1.1,0,1.6,0h0c1.1,0,2.1,0,3.1,0c1.3,0.1,1.7-0.5,1.7-1.8c0-4.1,0-8.3,0-12.4  v0v0c0-1.2,0-2.5,0-3.7c0-1.2,0-2.3,0-3.5l0,0c0-5.8,0-11.6,0-17.4c0-0.6-0.5-1.8-0.8-1.8c-1.4-0.1-2.7-0.1-4.1-0.1  c-0.5,0-0.9,0-1.4,0V252.2z M148.8,211.6V252h6.2v-40.3H148.8z M256.2,203.4c0-0.8,0-1.5,0-2.1v0l0,0l0,0v0l0,0c0-1.4,0-2.7,0-4  c0.1-1.6-1.1-1.7-2-1.4c-0.5,0.2-1.2,0-1.8-0.1c-1.2-0.3-2.4-0.5-2.8,1.4c-0.3,1.3-0.2,2.7-0.1,4.1c0,0.2,0,0.3,0,0.5l0,0.1l0,0.1  c0,0.5,0.5,1.2,0.8,1.3c1.4,0.1,2.8,0.1,4.3,0.1C255.2,203.4,255.7,203.4,256.2,203.4z M155.3,203.2v-6.9h-6.4v6.9H155.3z   M94.7,262.8H51.9V28.7c0.2,0,0.5,0,0.7,0l0,0c0.5,0,0.9-0.1,1.3-0.1c3.9,0,7.7,0,11.6,0h0c9,0,18,0,27.1,0c1.8,0,2.3,0.5,2.3,2.3  c0,63.9,0,127.7,0,191.6v0v0v0v0c0,12.8,0,25.5,0,38.3c0,0.5,0,0.9-0.1,1.5C94.7,262.4,94.7,262.6,94.7,262.8z M408.3,246.6  c3.5-4.3,4-9.5,4.2-15.7c0-0.2,0-0.3,0-0.5c0-0.1,0-0.3,0-0.5v0v0c-0.1-1-0.2-2.4-0.4-3.8c-1.5-9.2-8-15.1-17.7-16.2  c-7.8-0.9-15.4,4.2-18.6,12.2c-1.8,4.6-2,9.4-1.5,14.3c0.8,7.8,5.8,14.2,12.8,16.2C394.5,255,403.7,252.3,408.3,246.6z M381.9,233.6  L381.9,233.6L381.9,233.6c-0.1-0.7-0.1-1.5-0.2-2.2c0.1-0.7,0.1-1.4,0.2-2.1l0,0c0.1-1.6,0.2-3.1,0.5-4.6c0.8-4.5,4.8-7.9,9.7-8.3  c5.1-0.5,9.6,2.2,11.5,7c2.2,5.7,2.1,11.4-0.1,17.1c-1.8,4.7-6.6,7.4-11.6,6.8c-5.3-0.6-8.4-3.5-9.3-9  C382.3,236.8,382.1,235.2,381.9,233.6L381.9,233.6z M447,211.6h6.7c0,0.2,0,0.3,0,0.5l0,0.2c0,0.5,0.1,1,0.1,1.5c0,3.8,0,7.6,0,11.4  v0.1c0,8.3,0,16.5,0,24.8c0,1.7-0.5,2.4-2.1,2.2c0,0-0.1,0-0.1,0c0,0,0,0,0,0c0,0,0,0,0,0c-3.3,0.1-3.3,0.1-3.9-3.2  c0-0.3-0.1-0.5-0.2-0.8c0-0.1-0.1-0.2-0.2-0.4c-0.4,0.3-0.9,0.6-1.3,0.9c-0.9,0.7-1.8,1.4-2.8,2c-5.9,3.7-11.8,3.4-17.7,0.1  c-3-1.7-4.9-4.4-5-7.8c-0.2-7.5-0.2-15-0.2-22.5c0-2.8,0-5.5,0-8.3c0-0.1,0-0.2,0.1-0.4c0-0.1,0.1-0.3,0.2-0.4c0.5,0,0.9,0,1.4,0  l0,0h0l0,0c1.1,0,2.3,0,3.5,0c1.4,0,1.8,0.5,1.8,1.9c-0.1,7.3,0,14.6,0,21.9v0c0,1.5,0,3,0.3,4.4c1.2,6.9,7.7,9.8,13.8,6.2  c3.8-2.3,5.1-5.9,5.2-10c0.2-5.2,0.2-10.3,0.3-15.5c0-2.2,0.1-4.3,0.1-6.5c0-0.5,0-0.9,0-1.4v0v0v0c0-0.2,0-0.4,0-0.6V211.6z   M477.7,216.6c0.5,0,1-0.1,1.6-0.1c0-0.4,0-0.8,0-1.1c0-0.9,0-1.7,0-2.6c0.1-1.3-0.4-1.8-1.7-1.8c-1.1,0-2.3,0-3.5,0h0l0,0  c-0.6,0-1.1,0-1.7,0v-13c-4.2,0.1-6.5,2.2-6.8,6.1c-0.1,1.6-0.2,3.2-0.2,4.8v0l0,0l0,0c0,0.7-0.1,1.3-0.1,2  c-1.3,0.2-2.4,0.3-3.5,0.5l-0.3,0c-0.3,0-0.7,0.1-1,0.2c0,0.4,0,0.7,0,1v0c0,0.7,0,1.2,0,1.8c-0.2,1.8,0.6,2.3,2.3,2.4  c2.8,0,2.8,0.1,2.8,2.9v0c0,0.9,0,1.7,0,2.6l0,3c0,6.6,0,13.1,0.1,19.7c0,2.7,0.6,5.4,3.3,6.6c2.6,1.2,5.3,1.1,8.1,1.1  c1.1,0,2.3,0,3.4,0c-0.1-0.5-0.2-0.9-0.3-1.3l0,0v0c-0.2-0.8-0.4-1.5-0.4-2.2c0-2.4-1.1-3.3-3.5-3.5c-3.1-0.2-3.8-0.9-3.8-4  c-0.1-4.6-0.1-9.1-0.1-13.7c0-3.2,0-6.4,0-9.6c0-1.1,0.5-1.6,1.5-1.6C475.2,216.8,476.4,216.7,477.7,216.6L477.7,216.6L477.7,216.6z   M270.8,231.8c0.3-1.1,0.6-2.1,0.8-3.2v0c0.6-2.4,1.2-4.7,2-6.9c1.4-3.4,4.3-5.2,8-5.4c4-0.2,7.4,1.1,9.3,4.8  c3.4,6.7,3.8,13.6,0.8,20.5c-1.8,4-5.1,5.8-9.3,5.7c-4.1,0-7.2-2-8.7-5.7c-0.9-2.1-1.5-4.4-2.1-6.7h0  C271.3,233.9,271.1,232.9,270.8,231.8z M325.3,216.5c-5.4,0.9-9.6,5.9-9,10.8c0,0,0.1,0,0.1,0.1c0.1,0,0.2,0.1,0.2,0.1  c2.6,0,5.2,0.1,7.8,0.1c4.3,0,8.6,0.1,12.9,0.2c1.6,0,1.4-0.9,1.2-1.8c0-0.1,0-0.1,0-0.2C337.4,219,332.1,215.4,325.3,216.5z">
@@ -4050,8 +3673,8 @@ text-balance
                             <div class="w-full relative ">
                                 <p
                                     class="text-base | xl:text-md text-gray-600 dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7  mb-6">
-                                We create meaningful work for great people, ensuring both our team and clients enjoy the process. 
-                                This approach builds lasting relationships and brings new opportunities through referrals and repeat business.</p>
+                                    We create meaningful work for great people, ensuring both our team and clients enjoy the process.
+                                    This approach builds lasting relationships and brings new opportunities through referrals and repeat business.</p>
                             </div>
                             <div class="w-full relative">
                                 <div class="w-full bg-primary-600 rounded-2xl relative">
@@ -5590,406 +5213,295 @@ pr-8 mb-5 | lg:pr-16
             </div>
         </div>
     </div> -->
-    <?php include './elements/footer.php'; ?>
+        <?php include './elements/footer.php'; ?>
 
-    <script type="application/ld+json">
-    {
-        "@context": "http://schema.org",
-        "@graph": [{
-            "@type": "CreativeWork",
-            "author": {
-                "@id": "https://madebyshape.co.uk/#identity"
-            },
-            "copyrightHolder": {
-                "@id": "https://madebyshape.co.uk/#identity"
-            },
-            "copyrightYear": "2018",
-            "creator": {
-                "@id": "https://madebyshape.co.uk/#creator"
-            },
-            "dateModified": "2024-11-04T07:45:13+00:00",
-            "datePublished": "2018-07-26T15:00:00+01:00",
-            "description": "Scalify are a full service Creative and Digital Design Agency based in Abu Dhabi with an outstanding reputation for quality for Branding & Web Design",
-            "headline": "About Digital Agency Abu Dhabi",
-            "image": {
-                "@type": "ImageObject",
-                "url": "https://made-byshape.transforms.svdcdn.com/production/uploads/images/Open-Graph/madebyshape-home.jpg?w=1200&h=630&q=82&auto=format&fit=crop&dm=1722518913&s=e456c7a65aa7feded9f0be73391573f6"
-            },
-            "inLanguage": "en-gb",
-            "mainEntityOfPage": "https://madebyshape.co.uk/about/",
-            "name": "About Digital Agency Abu Dhabi",
-            "publisher": {
-                "@id": "https://madebyshape.co.uk/#creator"
-            },
-            "url": "https://madebyshape.co.uk/about/"
-        }, {
-            "@id": "https://madebyshape.co.uk/#identity",
-            "@type": "ProfessionalService",
-            "address": {
-                "@type": "PostalAddress",
-                "addressCountry": "United Kingdom",
-                "addressLocality": "Atherton",
-                "addressRegion": "Abbu Dhabi",
-                "postalCode": "00000",
-                "streetAddress": "In5 Tech, Dubai Internet City, Dubai"
-            },
-            "alternateName": "Shape",
-            "description": "An award-winning Web Design Agency in Abbu Dhabi who specialise in Website Design, Craft CMS Web Development, eCommerce and Organic SEO.",
-            "email": "sales@scalify.ae",
-            "founder": "Justin",
-            "foundingDate": "2024-03-01",
-            "foundingLocation": "Abu Dhabi",
-            "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": "53.530291",
-                "longitude": "-2.504812"
-            },
-            "image": {
-                "@type": "ImageObject",
-                "height": "950",
-                "url": "https://assets.madebyshape.co.uk/craft3-uploads/images/logos/Scalify-icon.jpg",
-                "width": "950"
-            },
-            "logo": {
-                "@type": "ImageObject",
-                "height": "60",
-                "url": "https://made-byshape.transforms.svdcdn.com/production/uploads/images/logos/Scalify-icon.jpg?w=600&h=60&q=82&fm=png&fit=clip&dm=1597751408&s=1e444e7b3ed4ee85c39ad329e3875b5c",
-                "width": "60"
-            },
-            "name": "Scalify",
-            "priceRange": "$$",
-            "sameAs": ["https://www.linkedin.com/company/madebyshape/mycompany/",
-                "https://twitter.com/madebyshape", "https://github.com/madebyshape/",
-                "https://instagram.com/madebyshape", "https://www.behance.net/madebyshape"
-            ],
-            "telephone": "01942 894596",
-            "url": "https://madebyshape.co.uk/"
-        }, {
-            "@id": "https://madebyshape.co.uk/#creator",
-            "@type": "ProfessionalService",
-            "address": {
-                "@type": "PostalAddress",
-                "addressCountry": "United Kingdom",
-                "addressLocality": "Atherton",
-                "addressRegion": "Abbu Dhabi",
-                "postalCode": "00000",
-                "streetAddress": "In5 Tech, Dubai Internet City, Dubai"
-            },
-            "alternateName": "Scalify",
-            "description": "An award-winning Web Design Agency based in Abu Dhabi who also offer eCommerce and Organic SEO. We are a Digital Studio with Industry Experience.",
-            "email": "sales@scalify.ae",
-            "founder": "Justin",
-            "foundingDate": "2024-03-01",
-            "foundingLocation": "Abu Dhabi",
-            "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": "53.530258",
-                "longitude": "-2.50471"
-            },
-            "image": {
-                "@type": "ImageObject",
-                "height": "950",
-                "url": "http://madebyshape.madebyshape.io/uploads/images/Scalify-icon.jpg",
-                "width": "950"
-            },
-            "logo": {
-                "@type": "ImageObject",
-                "height": "60",
-                "url": "https://made-byshape.transforms.svdcdn.com/production/uploads/images/Scalify-icon.jpg?w=600&h=60&q=82&fm=png&fit=clip&dm=1597751384&s=2f0ce55335397fde8d8b489cc721e250",
-                "width": "60"
-            },
-            "name": "Scalify",
-            "priceRange": "$$$",
-            "telephone": "01942 894596",
-            "url": "https://madebyshape.co.uk/"
-        }, {
-            "@type": "BreadcrumbList",
-            "description": "Breadcrumbs list",
-            "itemListElement": [{
-                "@type": "ListItem",
-                "item": "https://madebyshape.co.uk/",
-                "name": "Home",
-                "position": 1
-            }, {
-                "@type": "ListItem",
-                "item": "https://madebyshape.co.uk/about/",
-                "name": "About",
-                "position": 2
-            }],
-            "name": "Breadcrumbs"
-        }]
-    }
-    </script>
-    <script src="https://player.vimeo.com/api/player.js"></script>
-    <script>
-    window.SERVD_CSRF_TOKEN_NAME = "CRAFT_CSRF_TOKEN";
+        <script type="application/ld+json">
+            {
+                "@context": "http://schema.org",
+                "@graph": [{
+                    "@type": "CreativeWork",
+                    "author": {
+                        "@id": "https://madebyshape.co.uk/#identity"
+                    },
+                    "copyrightHolder": {
+                        "@id": "https://madebyshape.co.uk/#identity"
+                    },
+                    "copyrightYear": "2018",
+                    "creator": {
+                        "@id": "https://madebyshape.co.uk/#creator"
+                    },
+                    "dateModified": "2024-11-04T07:45:13+00:00",
+                    "datePublished": "2018-07-26T15:00:00+01:00",
+                    "description": "Scalify are a full service Creative and Digital Design Agency based in Abu Dhabi with an outstanding reputation for quality for Branding & Web Design",
+                    "headline": "About Digital Agency Abu Dhabi",
+                    "image": {
+                        "@type": "ImageObject",
+                        "url": "https://made-byshape.transforms.svdcdn.com/production/uploads/images/Open-Graph/madebyshape-home.jpg?w=1200&h=630&q=82&auto=format&fit=crop&dm=1722518913&s=e456c7a65aa7feded9f0be73391573f6"
+                    },
+                    "inLanguage": "en-gb",
+                    "mainEntityOfPage": "https://madebyshape.co.uk/about/",
+                    "name": "About Digital Agency Abu Dhabi",
+                    "publisher": {
+                        "@id": "https://madebyshape.co.uk/#creator"
+                    },
+                    "url": "https://madebyshape.co.uk/about/"
+                }, {
+                    "@id": "https://madebyshape.co.uk/#identity",
+                    "@type": "ProfessionalService",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "addressCountry": "United Kingdom",
+                        "addressLocality": "Atherton",
+                        "addressRegion": "Abbu Dhabi",
+                        "postalCode": "00000",
+                        "streetAddress": "In5 Tech, Dubai Internet City, Dubai"
+                    },
+                    "alternateName": "Shape",
+                    "description": "An award-winning Web Design Agency in Abbu Dhabi who specialise in Website Design, Craft CMS Web Development, eCommerce and Organic SEO.",
+                    "email": "sales@scalify.ae",
+                    "founder": "Justin",
+                    "foundingDate": "2024-03-01",
+                    "foundingLocation": "Abu Dhabi",
+                    "geo": {
+                        "@type": "GeoCoordinates",
+                        "latitude": "53.530291",
+                        "longitude": "-2.504812"
+                    },
+                    "image": {
+                        "@type": "ImageObject",
+                        "height": "950",
+                        "url": "https://assets.madebyshape.co.uk/craft3-uploads/images/logos/Scalify-icon.jpg",
+                        "width": "950"
+                    },
+                    "logo": {
+                        "@type": "ImageObject",
+                        "height": "60",
+                        "url": "https://made-byshape.transforms.svdcdn.com/production/uploads/images/logos/Scalify-icon.jpg?w=600&h=60&q=82&fm=png&fit=clip&dm=1597751408&s=1e444e7b3ed4ee85c39ad329e3875b5c",
+                        "width": "60"
+                    },
+                    "name": "Scalify",
+                    "priceRange": "$$",
+                    "sameAs": ["https://www.linkedin.com/company/madebyshape/mycompany/",
+                        "https://twitter.com/madebyshape", "https://github.com/madebyshape/",
+                        "https://instagram.com/madebyshape", "https://www.behance.net/madebyshape"
+                    ],
+                    "telephone": "01942 894596",
+                    "url": "https://madebyshape.co.uk/"
+                }, {
+                    "@id": "https://madebyshape.co.uk/#creator",
+                    "@type": "ProfessionalService",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "addressCountry": "United Kingdom",
+                        "addressLocality": "Atherton",
+                        "addressRegion": "Abbu Dhabi",
+                        "postalCode": "00000",
+                        "streetAddress": "In5 Tech, Dubai Internet City, Dubai"
+                    },
+                    "alternateName": "Scalify",
+                    "description": "An award-winning Web Design Agency based in Abu Dhabi who also offer eCommerce and Organic SEO. We are a Digital Studio with Industry Experience.",
+                    "email": "sales@scalify.ae",
+                    "founder": "Justin",
+                    "foundingDate": "2024-03-01",
+                    "foundingLocation": "Abu Dhabi",
+                    "geo": {
+                        "@type": "GeoCoordinates",
+                        "latitude": "53.530258",
+                        "longitude": "-2.50471"
+                    },
+                    "image": {
+                        "@type": "ImageObject",
+                        "height": "950",
+                        "url": "http://madebyshape.madebyshape.io/uploads/images/Scalify-icon.jpg",
+                        "width": "950"
+                    },
+                    "logo": {
+                        "@type": "ImageObject",
+                        "height": "60",
+                        "url": "https://made-byshape.transforms.svdcdn.com/production/uploads/images/Scalify-icon.jpg?w=600&h=60&q=82&fm=png&fit=clip&dm=1597751384&s=2f0ce55335397fde8d8b489cc721e250",
+                        "width": "60"
+                    },
+                    "name": "Scalify",
+                    "priceRange": "$$$",
+                    "telephone": "01942 894596",
+                    "url": "https://madebyshape.co.uk/"
+                }, {
+                    "@type": "BreadcrumbList",
+                    "description": "Breadcrumbs list",
+                    "itemListElement": [{
+                        "@type": "ListItem",
+                        "item": "https://madebyshape.co.uk/",
+                        "name": "Home",
+                        "position": 1
+                    }, {
+                        "@type": "ListItem",
+                        "item": "https://madebyshape.co.uk/about/",
+                        "name": "About",
+                        "position": 2
+                    }],
+                    "name": "Breadcrumbs"
+                }]
+            }
+        </script>
+        <script src="https://player.vimeo.com/api/player.js"></script>
+        <script>
+            window.SERVD_CSRF_TOKEN_NAME = "CRAFT_CSRF_TOKEN";
 
-    function injectCSRF() {
-        var inputs = document.getElementsByName(window.SERVD_CSRF_TOKEN_NAME);
-        var len = inputs.length;
-        if (len > 0) {
-            var xhr = new XMLHttpRequest();
-            xhr.onload = function() {
-                if (xhr.status >= 200 && xhr.status <= 299) {
-                    var tokenInfo = JSON.parse(this.responseText);
-                    window.csrfTokenValue = tokenInfo.token;
-                    window.csrfTokenName = tokenInfo.name;
-                    for (var i = 0; i < len; i++) {
-                        inputs[i].setAttribute("value", tokenInfo.token);
-                    }
-                    window.dispatchEvent(new CustomEvent("servd.csrfloaded", {
-                        detail: {
-                            token: tokenInfo.token
-                        }
-                    }));
-                } else {
-                    window.dispatchEvent(new CustomEvent("servd.csrffailed"));
-                }
-
-            };
-            xhr.open("GET", "https://madebyshape.co.uk/index.php/actions/servd-asset-storage/csrf-token/get-token/");
-            xhr.send();
-        }
-    }
-    setTimeout(function() {
-        if (!window.SERVD_MANUAL_CSRF_LOAD) {
-            injectCSRF();
-        }
-    }, 50);
-    document.addEventListener('alpine:init', () => {
-        Alpine.data('cursor', () => ({
-            icon: 'arrow-up-right',
-            x: 0,
-            y: 0,
-            endX: (window.innerWidth / 2),
-            endY: (window.innerHeight / 2),
-            cursorVisible: true,
-            cursorEnlarged: false,
-            cursorHovering: false,
-            cursorDragging: false,
-            cursor: document.querySelector('.js-cursor'),
-            dragCursor: document.querySelector('.js-cursor-drag'),
-            init() {
-
-                _self = this;
-
-                _self.dotSize = _self.cursor.offsetWidth;
-
-                _self.setupEventListeners();
-
-            },
-            setupEventListeners() {
-
-                _self = this;
-
-                // Drag
-
-                document.querySelectorAll('.js-cursor-trigger-drag').forEach((element) => {
-
-                    element.addEventListener('mouseover', function() {
-
-                        var icon = element.getAttribute('data-icon');
-
-                        if (icon) {
-                            _self.icon = icon;
+            function injectCSRF() {
+                var inputs = document.getElementsByName(window.SERVD_CSRF_TOKEN_NAME);
+                var len = inputs.length;
+                if (len > 0) {
+                    var xhr = new XMLHttpRequest();
+                    xhr.onload = function() {
+                        if (xhr.status >= 200 && xhr.status <= 299) {
+                            var tokenInfo = JSON.parse(this.responseText);
+                            window.csrfTokenValue = tokenInfo.token;
+                            window.csrfTokenName = tokenInfo.name;
+                            for (var i = 0; i < len; i++) {
+                                inputs[i].setAttribute("value", tokenInfo.token);
+                            }
+                            window.dispatchEvent(new CustomEvent("servd.csrfloaded", {
+                                detail: {
+                                    token: tokenInfo.token
+                                }
+                            }));
                         } else {
-                            _self.icon = 'arrow-up-right';
+                            window.dispatchEvent(new CustomEvent("servd.csrffailed"));
                         }
 
-                        _self.cursorDragging = true;
-                        _self.cursorEnlarged = true;
-
-                        _self.toggleCursorDrag();
-
-                    });
-
-                    element.addEventListener('mouseout', function() {
-
-                        _self.cursorDragging = false;
-                        _self.cursorEnlarged = false;
-
-                        _self.toggleCursorDrag();
-
-                    });
-
-                });
-
-                // Position
-
-                document.addEventListener('pointermove', function(event) {
-
-                    _self.endX = event.clientX;
-                    _self.endY = event.clientY;
-
-                    _self.cursor.style.top = _self.endY + 'px';
-                    _self.cursor.style.left = _self.endX + 'px';
-
-                });
-
-            },
-            toggleCursorDrag() {
-
-                _self = this;
-
-                if (_self.cursorDragging) {
-
-                    _self.dragCursor.classList.remove('scale-0');
-                    // _self.cursor.classList.remove('opacity-0');
-                    document.body.classList.add('no-cursor');
-
-                } else {
-
-                    _self.dragCursor.classList.add('scale-0');
-                    // _self.cursor.classList.add('opacity-0');
-                    document.body.classList.remove('no-cursor');
-
+                    };
+                    xhr.open("GET", "https://madebyshape.co.uk/index.php/actions/servd-asset-storage/csrf-token/get-token/");
+                    xhr.send();
                 }
+            }
+            setTimeout(function() {
+                if (!window.SERVD_MANUAL_CSRF_LOAD) {
+                    injectCSRF();
+                }
+            }, 50);
+            document.addEventListener('alpine:init', () => {
+                Alpine.data('cursor', () => ({
+                    icon: 'arrow-up-right',
+                    x: 0,
+                    y: 0,
+                    endX: (window.innerWidth / 2),
+                    endY: (window.innerHeight / 2),
+                    cursorVisible: true,
+                    cursorEnlarged: false,
+                    cursorHovering: false,
+                    cursorDragging: false,
+                    cursor: document.querySelector('.js-cursor'),
+                    dragCursor: document.querySelector('.js-cursor-drag'),
+                    init() {
 
-            },
-        }))
-    });
-    document.addEventListener('alpine:init', () => {
-        Alpine.data('modal423709', () => ({
-            visible: false,
-            setupModal(id) {
+                        _self = this;
 
-                // Prevent keys from interferring with the video
+                        _self.dotSize = _self.cursor.offsetWidth;
 
-                navigator.mediaSession.setActionHandler('play', function() {});
-                navigator.mediaSession.setActionHandler('pause', function() {});
-                navigator.mediaSession.setActionHandler('seekbackward', function() {});
-                navigator.mediaSession.setActionHandler('seekforward', function() {});
-                navigator.mediaSession.setActionHandler('previoustrack', function() {});
-                navigator.mediaSession.setActionHandler('nexttrack', function() {});
+                        _self.setupEventListeners();
 
-                // Get video elements
+                    },
+                    setupEventListeners() {
 
-                const video = document.querySelector(`.js-modal-video-${id}`);
-                const videoProgress = document.querySelector(`.js-modal-video-progress-${id}`);
+                        _self = this;
 
-                const videoPlayPause = document.querySelector(`.js-modal-video-play-pause-${id}`);
-                const videoSound = document.querySelector(`.js-modal-video-sound-${id}`);
+                        // Drag
 
-                const videoPlayIcon = document.querySelector(`.js-modal-video-play-icon-${id}`);
-                const videoPauseIcon = document.querySelector(`.js-modal-video-pause-icon-${id}`);
+                        document.querySelectorAll('.js-cursor-trigger-drag').forEach((element) => {
 
-                const videoVolumeOnIcon = document.querySelector(
-                    `.js-modal-video-volume-on-icon-${id}`);
-                const videoVolumeOffIcon = document.querySelector(
-                    `.js-modal-video-volume-off-icon-${id}`);
+                            element.addEventListener('mouseover', function() {
 
-                // Video controls
+                                var icon = element.getAttribute('data-icon');
 
-                if (video) {
+                                if (icon) {
+                                    _self.icon = icon;
+                                } else {
+                                    _self.icon = 'arrow-up-right';
+                                }
 
-                    if (video.tagName == 'IFRAME') {
+                                _self.cursorDragging = true;
+                                _self.cursorEnlarged = true;
 
-                        const player = new Vimeo.Player(video);
+                                _self.toggleCursorDrag();
+
+                            });
+
+                            element.addEventListener('mouseout', function() {
+
+                                _self.cursorDragging = false;
+                                _self.cursorEnlarged = false;
+
+                                _self.toggleCursorDrag();
+
+                            });
+
+                        });
+
+                        // Position
+
+                        document.addEventListener('pointermove', function(event) {
+
+                            _self.endX = event.clientX;
+                            _self.endY = event.clientY;
+
+                            _self.cursor.style.top = _self.endY + 'px';
+                            _self.cursor.style.left = _self.endX + 'px';
+
+                        });
+
+                    },
+                    toggleCursorDrag() {
+
+                        _self = this;
+
+                        if (_self.cursorDragging) {
+
+                            _self.dragCursor.classList.remove('scale-0');
+                            // _self.cursor.classList.remove('opacity-0');
+                            document.body.classList.add('no-cursor');
+
+                        } else {
+
+                            _self.dragCursor.classList.add('scale-0');
+                            // _self.cursor.classList.add('opacity-0');
+                            document.body.classList.remove('no-cursor');
+
+                        }
+
+                    },
+                }))
+            });
+            document.addEventListener('alpine:init', () => {
+                Alpine.data('modal423709', () => ({
+                    visible: false,
+                    setupModal(id) {
+
+                        // Prevent keys from interferring with the video
+
+                        navigator.mediaSession.setActionHandler('play', function() {});
+                        navigator.mediaSession.setActionHandler('pause', function() {});
+                        navigator.mediaSession.setActionHandler('seekbackward', function() {});
+                        navigator.mediaSession.setActionHandler('seekforward', function() {});
+                        navigator.mediaSession.setActionHandler('previoustrack', function() {});
+                        navigator.mediaSession.setActionHandler('nexttrack', function() {});
+
+                        // Get video elements
+
+                        const video = document.querySelector(`.js-modal-video-${id}`);
+                        const videoProgress = document.querySelector(`.js-modal-video-progress-${id}`);
+
+                        const videoPlayPause = document.querySelector(`.js-modal-video-play-pause-${id}`);
+                        const videoSound = document.querySelector(`.js-modal-video-sound-${id}`);
+
+                        const videoPlayIcon = document.querySelector(`.js-modal-video-play-icon-${id}`);
+                        const videoPauseIcon = document.querySelector(`.js-modal-video-pause-icon-${id}`);
+
+                        const videoVolumeOnIcon = document.querySelector(
+                            `.js-modal-video-volume-on-icon-${id}`);
+                        const videoVolumeOffIcon = document.querySelector(
+                            `.js-modal-video-volume-off-icon-${id}`);
 
                         // Video controls
-
-                        videoSound.addEventListener('click', (event) => {
-
-                            player.getVolume().then(function(volume) {
-
-                                if (videoVolumeOnIcon.classList.contains(
-                                        'hidden')) {
-
-                                    player.setVolume(1);
-                                    videoVolumeOnIcon.classList.remove('hidden');
-                                    videoVolumeOffIcon.classList.add('hidden');
-
-                                } else {
-
-                                    player.setVolume(0);
-                                    videoVolumeOnIcon.classList.add('hidden');
-                                    videoVolumeOffIcon.classList.remove('hidden');
-
-                                }
-
-                            });
-
-                            event.preventDefault();
-
-                        });
-
-                        videoPlayPause.addEventListener('click', (event) => {
-
-                            player.getPaused().then(function(paused) {
-
-                                if (paused) {
-
-                                    player.play();
-                                    videoPlayIcon.classList.add('hidden');
-                                    videoPauseIcon.classList.remove('hidden');
-
-                                } else {
-
-                                    player.pause();
-                                    videoPlayIcon.classList.remove('hidden');
-                                    videoPauseIcon.classList.add('hidden');
-
-                                }
-
-                            });
-
-                            event.preventDefault();
-
-                        });
-
-                    } else {
-
-                        videoSound.addEventListener('click', (event) => {
-
-                            if (videoVolumeOnIcon.classList.contains('hidden')) {
-
-                                video.muted = false;
-                                videoVolumeOnIcon.classList.remove('hidden');
-                                videoVolumeOffIcon.classList.add('hidden');
-
-                            } else {
-
-                                video.muted = true;
-                                videoVolumeOnIcon.classList.add('hidden');
-                                videoVolumeOffIcon.classList.remove('hidden');
-
-                            }
-
-                            event.preventDefault();
-
-                        });
-
-                        videoPlayPause.addEventListener('click', (event) => {
-
-                            if (video.paused) {
-
-                                video.play();
-                                videoPlayIcon.classList.add('hidden');
-                                videoPauseIcon.classList.remove('hidden');
-
-                            } else {
-
-                                video.pause();
-                                videoPlayIcon.classList.remove('hidden');
-                                videoPauseIcon.classList.add('hidden');
-
-                            }
-
-                            event.preventDefault();
-
-                        });
-
-                    }
-
-                }
-
-                this.$watch('visible', function(value) {
-
-                    if (value != false) {
-
-                        document.body.classList.add('overflow-hidden');
-
-                        // Video (Vimeo)
 
                         if (video) {
 
@@ -5997,1341 +5509,1341 @@ pr-8 mb-5 | lg:pr-16
 
                                 const player = new Vimeo.Player(video);
 
-                                // Initialise video
+                                // Video controls
 
-                                player.setCurrentTime(0);
-                                player.play();
-                                player.setVolume(1);
+                                videoSound.addEventListener('click', (event) => {
 
-                                // Progress bar
+                                    player.getVolume().then(function(volume) {
 
-                                setInterval(() => {
+                                        if (videoVolumeOnIcon.classList.contains(
+                                                'hidden')) {
 
-                                    if (videoProgress) {
+                                            player.setVolume(1);
+                                            videoVolumeOnIcon.classList.remove('hidden');
+                                            videoVolumeOffIcon.classList.add('hidden');
 
-                                        player.getCurrentTime().then(function(
-                                            seconds) {
+                                        } else {
 
-                                            player.getDuration().then(
-                                                function(duration) {
+                                            player.setVolume(0);
+                                            videoVolumeOnIcon.classList.add('hidden');
+                                            videoVolumeOffIcon.classList.remove('hidden');
 
-                                                    videoProgress.style
-                                                        .width = (
-                                                            seconds /
-                                                            duration) *
-                                                        100 + '%';
+                                        }
 
-                                                });
+                                    });
 
-                                        });
+                                    event.preventDefault();
 
-                                    }
+                                });
 
-                                }, 100);
+                                videoPlayPause.addEventListener('click', (event) => {
+
+                                    player.getPaused().then(function(paused) {
+
+                                        if (paused) {
+
+                                            player.play();
+                                            videoPlayIcon.classList.add('hidden');
+                                            videoPauseIcon.classList.remove('hidden');
+
+                                        } else {
+
+                                            player.pause();
+                                            videoPlayIcon.classList.remove('hidden');
+                                            videoPauseIcon.classList.add('hidden');
+
+                                        }
+
+                                    });
+
+                                    event.preventDefault();
+
+                                });
 
                             } else {
 
-                                // Initialise video
+                                videoSound.addEventListener('click', (event) => {
 
-                                video.currentTime = 0;
-                                video.play();
+                                    if (videoVolumeOnIcon.classList.contains('hidden')) {
 
-                                // Progress bar
+                                        video.muted = false;
+                                        videoVolumeOnIcon.classList.remove('hidden');
+                                        videoVolumeOffIcon.classList.add('hidden');
 
-                                setInterval(() => {
+                                    } else {
 
-                                    if (videoProgress) {
-
-                                        videoProgress.style.width = (video
-                                                .currentTime / video.duration) *
-                                            100 + '%';
+                                        video.muted = true;
+                                        videoVolumeOnIcon.classList.add('hidden');
+                                        videoVolumeOffIcon.classList.remove('hidden');
 
                                     }
 
-                                }, 100);
+                                    event.preventDefault();
+
+                                });
+
+                                videoPlayPause.addEventListener('click', (event) => {
+
+                                    if (video.paused) {
+
+                                        video.play();
+                                        videoPlayIcon.classList.add('hidden');
+                                        videoPauseIcon.classList.remove('hidden');
+
+                                    } else {
+
+                                        video.pause();
+                                        videoPlayIcon.classList.remove('hidden');
+                                        videoPauseIcon.classList.add('hidden');
+
+                                    }
+
+                                    event.preventDefault();
+
+                                });
 
                             }
 
                         }
 
+                        this.$watch('visible', function(value) {
 
-                    } else {
+                            if (value != false) {
 
-                        document.body.classList.remove('overflow-hidden');
-                    }
+                                document.body.classList.add('overflow-hidden');
 
-                });
+                                // Video (Vimeo)
 
-            },
-            closeModal(id) {
+                                if (video) {
 
-                this.visible = false;
+                                    if (video.tagName == 'IFRAME') {
 
-                const video = document.querySelector('.js-modal-video-' + id);
-                const videoProgress = document.querySelector('.js-modal-video-progress-' + id);
+                                        const player = new Vimeo.Player(video);
 
-                if (video) {
+                                        // Initialise video
 
-                    if (video.tagName == 'IFRAME') {
+                                        player.setCurrentTime(0);
+                                        player.play();
+                                        player.setVolume(1);
 
-                        const player = new Vimeo.Player(video);
+                                        // Progress bar
 
-                        player.pause();
+                                        setInterval(() => {
 
+                                            if (videoProgress) {
 
-                    } else {
+                                                player.getCurrentTime().then(function(
+                                                    seconds) {
 
-                        video.pause();
-                        videoProgress.style.width = '0%';
+                                                    player.getDuration().then(
+                                                        function(duration) {
 
-                    }
-                }
+                                                            videoProgress.style
+                                                                .width = (
+                                                                    seconds /
+                                                                    duration) *
+                                                                100 + '%';
 
-            }
-        }))
-    });
-    document.addEventListener('alpine:init', () => {
-        Alpine.data('header', () => ({
-            headerSmall: false,
-            menu: false,
-            headerDirection: 'down',
-            headerPosition: 0,
-            updatedHeaderPosition: 0,
-            hideHeader: false,
-            darkMode: localStorage.darkMode === 'true' ? true : false,
-            updateHeader() {
+                                                        });
 
-                const header = document.querySelector('.js-header');
+                                                });
 
-                if (window.scrollY > 10) {
+                                            }
 
-                    this.headerSmall = true;
+                                        }, 100);
 
-                    this.headerPosition = window.scrollY;
+                                    } else {
 
-                    if (this.headerPosition > this.updatedHeaderPosition) {
+                                        // Initialise video
 
-                        this.headerDirection = 'down';
+                                        video.currentTime = 0;
+                                        video.play();
 
-                    } else {
+                                        // Progress bar
 
-                        this.headerDirection = 'up';
+                                        setInterval(() => {
 
-                    }
+                                            if (videoProgress) {
 
-                    this.updatedHeaderPosition = this.headerPosition;
+                                                videoProgress.style.width = (video
+                                                        .currentTime / video.duration) *
+                                                    100 + '%';
 
-                } else {
+                                            }
 
-                    this.headerSmall = false;
+                                        }, 100);
 
-                }
+                                    }
 
-                let headerWidth = '60rem';
-                let headerWidthWide = '99vw';
+                                }
 
-                ScrollTrigger.matchMedia({
-                    '(min-width: 1024px)': () => {
-
-                        headerWidth = '60rem';
-                        headerWidthWide = '99vw';
-
-                    },
-                    '(max-width: 1023px)': () => {
-
-                        headerWidth = '16rem';
-                        headerWidthWide = '99vw';
-
-                    }
-                });
-
-                if (window.scrollY > 10) {
-
-                    gsap.to(header, {
-                        duration: 0.6,
-                        width: headerWidth,
-                        ease: 'power4.out',
-                    });
-
-                    header.classList.add('header-background');
-
-
-                } else {
-
-                    gsap.to(header, {
-                        duration: 0.6,
-                        width: headerWidthWide,
-                        ease: 'power4.out',
-                    });
-
-                    header.classList.remove('header-background');
-
-                }
-
-            },
-            mobileMenu() {
-
-                const header = document.querySelector('.js-header');
-                const mobileMenu = document.querySelector('.js-mobile-menu');
-
-                let headerWidth = '60rem';
-                let headerWidthWide = '94vw';
-
-                ScrollTrigger.matchMedia({
-                    '(min-width: 1024px)': () => {
-
-                        headerWidth = '60rem';
-                        headerWidthWide = '94vw';
-
-                    },
-                    '(max-width: 1023px)': () => {
-
-                        headerWidth = '16rem';
-                        headerWidthWide = '94vw';
-
-                    }
-                });
-
-                this.$watch('menu', value => {
-
-                    if (value == 'mobileMenu') {
-
-                        document.body.classList.add('overflow-hidden');
-
-                        gsap.to(header, {
-                            duration: 0.4,
-                            width: headerWidthWide,
-                            ease: 'power4.out',
-                        });
-
-                        gsap.to(mobileMenu, {
-                            duration: 0.4,
-                            delay: window.scrollY > 10 ? 0.2 : 0,
-                            height: '27.5rem',
-                            ease: 'power4.out',
-                        });
-
-                        gsap.to(mobileMenu, {
-                            duration: 1,
-                            delay: window.scrollY > 10 ? 0.3 : 0.1,
-                            opacity: 1,
-                            ease: 'power4.out',
-                        });
-
-
-                        header.classList.add('header-background');
-
-                    } else {
-
-                        document.body.classList.remove('overflow-hidden');
-
-                        setTimeout(() => {
-
-                            if (window.scrollY > 10) {
-
-                                header.classList.add('header-background');
 
                             } else {
 
-                                header.classList.remove('header-background');
+                                document.body.classList.remove('overflow-hidden');
+                            }
+
+                        });
+
+                    },
+                    closeModal(id) {
+
+                        this.visible = false;
+
+                        const video = document.querySelector('.js-modal-video-' + id);
+                        const videoProgress = document.querySelector('.js-modal-video-progress-' + id);
+
+                        if (video) {
+
+                            if (video.tagName == 'IFRAME') {
+
+                                const player = new Vimeo.Player(video);
+
+                                player.pause();
+
+
+                            } else {
+
+                                video.pause();
+                                videoProgress.style.width = '0%';
+
+                            }
+                        }
+
+                    }
+                }))
+            });
+            document.addEventListener('alpine:init', () => {
+                Alpine.data('header', () => ({
+                    headerSmall: false,
+                    menu: false,
+                    headerDirection: 'down',
+                    headerPosition: 0,
+                    updatedHeaderPosition: 0,
+                    hideHeader: false,
+                    darkMode: localStorage.darkMode === 'true' ? true : false,
+                    updateHeader() {
+
+                        const header = document.querySelector('.js-header');
+
+                        if (window.scrollY > 10) {
+
+                            this.headerSmall = true;
+
+                            this.headerPosition = window.scrollY;
+
+                            if (this.headerPosition > this.updatedHeaderPosition) {
+
+                                this.headerDirection = 'down';
+
+                            } else {
+
+                                this.headerDirection = 'up';
 
                             }
 
-                        }, 400);
+                            this.updatedHeaderPosition = this.headerPosition;
 
-                        gsap.to(mobileMenu, {
-                            duration: 0.6,
-                            opacity: 0,
-                            ease: 'power4.out',
-                        });
+                        } else {
 
-                        gsap.to(mobileMenu, {
-                            duration: 0.4,
-                            height: '0rem',
-                            delay: 0.2,
-                            ease: 'power4.out',
+                            this.headerSmall = false;
+
+                        }
+
+                        let headerWidth = '60rem';
+                        let headerWidthWide = '99vw';
+
+                        ScrollTrigger.matchMedia({
+                            '(min-width: 1024px)': () => {
+
+                                headerWidth = '60rem';
+                                headerWidthWide = '99vw';
+
+                            },
+                            '(max-width: 1023px)': () => {
+
+                                headerWidth = '16rem';
+                                headerWidthWide = '99vw';
+
+                            }
                         });
 
                         if (window.scrollY > 10) {
 
                             gsap.to(header, {
-                                duration: 0.4,
-                                delay: 0.4,
+                                duration: 0.6,
                                 width: headerWidth,
                                 ease: 'power4.out',
                             });
 
+                            header.classList.add('header-background');
+
+
                         } else {
 
                             gsap.to(header, {
-                                duration: 0.4,
-                                delay: 0.4,
-                                width: '99vw',
+                                duration: 0.6,
+                                width: headerWidthWide,
                                 ease: 'power4.out',
                             });
 
+                            header.classList.remove('header-background');
+
                         }
 
-                    }
+                    },
+                    mobileMenu() {
 
-                });
+                        const header = document.querySelector('.js-header');
+                        const mobileMenu = document.querySelector('.js-mobile-menu');
 
-            }
-        }))
-    });
-    document.addEventListener('alpine:init', () => {
-        Alpine.data('archedImageCarouselMobile', () => ({
-            active: false,
-            confetti(id) {
+                        let headerWidth = '60rem';
+                        let headerWidthWide = '94vw';
 
-                emojisplosion({
-                    emojis: ["\ud83d\udcaf", "\u2728", "\ud83c\udf89", "\ud83c\udf8a",
-                        "\ud83c\udf7e", "\ud83c\udf88", "\ud83d\udca5"
-                    ],
-                    emojiCount: 50,
-                    physics: {
-                        fontSize: 40,
-                        rotationDeceleration: 1.001,
-                        initialVelocities: {
-                            y: {
-                                max: -70,
-                                min: -12,
+                        ScrollTrigger.matchMedia({
+                            '(min-width: 1024px)': () => {
+
+                                headerWidth = '60rem';
+                                headerWidthWide = '94vw';
+
                             },
-                            x: {
-                                max: 30,
-                                min: -30,
+                            '(max-width: 1023px)': () => {
+
+                                headerWidth = '16rem';
+                                headerWidthWide = '94vw';
+
                             }
-                        },
-                    },
-                    position: () => ({
-                        // bottom center of the screen
-                        x: window.innerWidth / 2,
-                        y: window.innerHeight + 100,
-                    }),
-                    process(element) {
-                        element.style.zIndex = 1000;
+                        });
 
-                    },
-                });
+                        this.$watch('menu', value => {
 
-            },
-            rotateArchedImages(id) {
+                            if (value == 'mobileMenu') {
 
-                const container = document.querySelector(`.js-arched-image-container-${id}`);
-                const innerContainer = document.querySelector(
-                    `.js-arched-image-inner-container-${id}`);
-                const images = document.querySelectorAll(`.js-arched-image-${id}`);
+                                document.body.classList.add('overflow-hidden');
 
-                var config = {
-                    duration: 150,
-                    repeatDelay: 8,
-                    rotationMultiply: 18,
-                    rotationOffset: 55
-                }
+                                gsap.to(header, {
+                                    duration: 0.4,
+                                    width: headerWidthWide,
+                                    ease: 'power4.out',
+                                });
 
-                images.forEach((image, index) => {
-                    image.style.transform =
-                        `rotate(${(index * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
-                    image.style.webkitTransform =
-                        `rotate(${(index * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
-                });
+                                gsap.to(mobileMenu, {
+                                    duration: 0.4,
+                                    delay: window.scrollY > 10 ? 0.2 : 0,
+                                    height: '27.5rem',
+                                    ease: 'power4.out',
+                                });
 
-                // Infinite rotation
+                                gsap.to(mobileMenu, {
+                                    duration: 1,
+                                    delay: window.scrollY > 10 ? 0.3 : 0.1,
+                                    opacity: 1,
+                                    ease: 'power4.out',
+                                });
 
-                gsap.to(container, {
-                    duration: config.duration,
-                    rotation: -360,
-                    ease: 'none',
-                    repeat: -1
-                });
 
-                // Rotate inner container
+                                header.classList.add('header-background');
 
-                ScrollTrigger.matchMedia({
-                    '(min-width: 1280px)': () => {
+                            } else {
 
-                        gsap.to(innerContainer, {
-                            scrollTrigger: {
-                                trigger: container,
-                                scrub: true,
-                                start: 'top center',
-                                end: 'bottom bottom'
-                            },
-                            rotation: -40,
-                            ease: 'none',
+                                document.body.classList.remove('overflow-hidden');
+
+                                setTimeout(() => {
+
+                                    if (window.scrollY > 10) {
+
+                                        header.classList.add('header-background');
+
+                                    } else {
+
+                                        header.classList.remove('header-background');
+
+                                    }
+
+                                }, 400);
+
+                                gsap.to(mobileMenu, {
+                                    duration: 0.6,
+                                    opacity: 0,
+                                    ease: 'power4.out',
+                                });
+
+                                gsap.to(mobileMenu, {
+                                    duration: 0.4,
+                                    height: '0rem',
+                                    delay: 0.2,
+                                    ease: 'power4.out',
+                                });
+
+                                if (window.scrollY > 10) {
+
+                                    gsap.to(header, {
+                                        duration: 0.4,
+                                        delay: 0.4,
+                                        width: headerWidth,
+                                        ease: 'power4.out',
+                                    });
+
+                                } else {
+
+                                    gsap.to(header, {
+                                        duration: 0.4,
+                                        delay: 0.4,
+                                        width: '99vw',
+                                        ease: 'power4.out',
+                                    });
+
+                                }
+
+                            }
+
                         });
 
                     }
-                });
+                }))
+            });
+            document.addEventListener('alpine:init', () => {
+                Alpine.data('archedImageCarouselMobile', () => ({
+                    active: false,
+                    confetti(id) {
 
-                // Move first child to end of container
-
-                const interval = new TimelineMax({
-                    repeat: -1,
-                    repeatDelay: config.repeatDelay,
-                }).call(function() {
-
-                    // Get first and last child
-
-                    const firstChild = innerContainer.firstElementChild;
-                    const lastChild = innerContainer.lastElementChild;
-
-                    // Get index of last child
-
-                    const index = parseInt(lastChild.getAttribute('data-index'));
-
-                    // Set index of first child to index of last child + 1
-
-                    firstChild.setAttribute('data-index', index + 1);
-
-                    // Get new index of first child
-
-                    const newIndex = parseInt(firstChild.getAttribute('data-index'));
-
-                    // ${(newIndex * config.rotationMultiply) - config.rotationOffset}deg
-                    // Set rotation of first child with transform rotate and webkit transform rotate
-
-                    firstChild.style.transform =
-                        `rotate(${(newIndex * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
-                    firstChild.style.webkitTransform =
-                        `rotate(${(newIndex * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
-
-                    // Append first child to end of container
-
-                    innerContainer.appendChild(firstChild);
-
-                });
-
-                setTimeout(() => {
-
-                    this.active = true;
-
-                }, 300);
-
-            }
-        }));
-    });
-    document.addEventListener('alpine:init', () => {
-        Alpine.data('archedImageCarouseTablet', () => ({
-            active: false,
-            confetti(id) {
-
-                emojisplosion({
-                    emojis: ["\ud83d\udcaf", "\u2728", "\ud83c\udf89", "\ud83c\udf8a",
-                        "\ud83c\udf7e", "\ud83c\udf88", "\ud83d\udca5"
-                    ],
-                    emojiCount: 50,
-                    physics: {
-                        fontSize: 40,
-                        rotationDeceleration: 1.001,
-                        initialVelocities: {
-                            y: {
-                                max: -70,
-                                min: -12,
+                        emojisplosion({
+                            emojis: ["\ud83d\udcaf", "\u2728", "\ud83c\udf89", "\ud83c\udf8a",
+                                "\ud83c\udf7e", "\ud83c\udf88", "\ud83d\udca5"
+                            ],
+                            emojiCount: 50,
+                            physics: {
+                                fontSize: 40,
+                                rotationDeceleration: 1.001,
+                                initialVelocities: {
+                                    y: {
+                                        max: -70,
+                                        min: -12,
+                                    },
+                                    x: {
+                                        max: 30,
+                                        min: -30,
+                                    }
+                                },
                             },
-                            x: {
-                                max: 30,
-                                min: -30,
-                            }
-                        },
-                    },
-                    position: () => ({
-                        // bottom center of the screen
-                        x: window.innerWidth / 2,
-                        y: window.innerHeight + 100,
-                    }),
-                    process(element) {
-                        element.style.zIndex = 1000;
+                            position: () => ({
+                                // bottom center of the screen
+                                x: window.innerWidth / 2,
+                                y: window.innerHeight + 100,
+                            }),
+                            process(element) {
+                                element.style.zIndex = 1000;
 
-                    },
-                });
-
-            },
-            rotateArchedImages(id) {
-
-                const container = document.querySelector(`.js-arched-image-container-${id}`);
-                const innerContainer = document.querySelector(
-                    `.js-arched-image-inner-container-${id}`);
-                const images = document.querySelectorAll(`.js-arched-image-${id}`);
-
-                var config = {
-                    duration: 200,
-                    repeatDelay: 9.5,
-                    rotationMultiply: 15,
-                    rotationOffset: 55
-                }
-
-                images.forEach((image, index) => {
-                    image.style.transform =
-                        `rotate(${(index * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
-                    image.style.webkitTransform =
-                        `rotate(${(index * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
-                });
-
-                // Infinite rotation
-
-                gsap.to(container, {
-                    duration: config.duration,
-                    rotation: -360,
-                    ease: 'none',
-                    repeat: -1
-                });
-
-                // Rotate inner container
-
-                ScrollTrigger.matchMedia({
-                    '(min-width: 1280px)': () => {
-
-                        gsap.to(innerContainer, {
-                            scrollTrigger: {
-                                trigger: container,
-                                scrub: true,
-                                start: 'top center',
-                                end: 'bottom bottom'
                             },
-                            rotation: -40,
-                            ease: 'none',
                         });
 
-                    }
-                });
-
-                // Move first child to end of container
-
-                const interval = new TimelineMax({
-                    repeat: -1,
-                    repeatDelay: config.repeatDelay,
-                }).call(function() {
-
-                    // Get first and last child
-
-                    const firstChild = innerContainer.firstElementChild;
-                    const lastChild = innerContainer.lastElementChild;
-
-                    // Get index of last child
-
-                    const index = parseInt(lastChild.getAttribute('data-index'));
-
-                    // Set index of first child to index of last child + 1
-
-                    firstChild.setAttribute('data-index', index + 1);
-
-                    // Get new index of first child
-
-                    const newIndex = parseInt(firstChild.getAttribute('data-index'));
-
-                    // ${(newIndex * config.rotationMultiply) - config.rotationOffset}deg
-                    // Set rotation of first child with transform rotate and webkit transform rotate
-
-                    firstChild.style.transform =
-                        `rotate(${(newIndex * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
-                    firstChild.style.webkitTransform =
-                        `rotate(${(newIndex * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
-
-                    // Append first child to end of container
-
-                    innerContainer.appendChild(firstChild);
-
-                });
-
-                setTimeout(() => {
-
-                    this.active = true;
-
-                }, 300);
-
-            }
-        }));
-    });
-    document.addEventListener('alpine:init', () => {
-        Alpine.data('archedImageCarouselDesktop', () => ({
-            active: false,
-            confetti(id) {
-
-                emojisplosion({
-                    emojis: ["\ud83d\udcaf", "\u2728", "\ud83c\udf89", "\ud83c\udf8a",
-                        "\ud83c\udf7e", "\ud83c\udf88", "\ud83d\udca5"
-                    ],
-                    emojiCount: 50,
-                    physics: {
-                        fontSize: 40,
-                        rotationDeceleration: 1.001,
-                        initialVelocities: {
-                            y: {
-                                max: -70,
-                                min: -12,
-                            },
-                            x: {
-                                max: 30,
-                                min: -30,
-                            }
-                        },
                     },
-                    position: () => ({
-                        // bottom center of the screen
-                        x: window.innerWidth / 2,
-                        y: window.innerHeight + 100,
-                    }),
-                    process(element) {
-                        element.style.zIndex = 1000;
+                    rotateArchedImages(id) {
 
-                    },
-                });
+                        const container = document.querySelector(`.js-arched-image-container-${id}`);
+                        const innerContainer = document.querySelector(
+                            `.js-arched-image-inner-container-${id}`);
+                        const images = document.querySelectorAll(`.js-arched-image-${id}`);
 
-            },
-            rotateArchedImages(id) {
+                        var config = {
+                            duration: 150,
+                            repeatDelay: 8,
+                            rotationMultiply: 18,
+                            rotationOffset: 55
+                        }
 
-                const container = document.querySelector(`.js-arched-image-container-${id}`);
-                const innerContainer = document.querySelector(
-                    `.js-arched-image-inner-container-${id}`);
-                const images = document.querySelectorAll(`.js-arched-image-${id}`);
-
-                var config = {
-                    duration: 300,
-                    repeatDelay: 10,
-                    rotationMultiply: 12,
-                    rotationOffset: 55
-                }
-
-                images.forEach((image, index) => {
-                    image.style.transform =
-                        `rotate(${(index * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
-                    image.style.webkitTransform =
-                        `rotate(${(index * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
-                });
-
-                // Infinite rotation
-
-                gsap.to(container, {
-                    duration: config.duration,
-                    rotation: -360,
-                    ease: 'none',
-                    repeat: -1
-                });
-
-                // Rotate inner container
-
-                ScrollTrigger.matchMedia({
-                    '(min-width: 1280px)': () => {
-
-                        gsap.to(innerContainer, {
-                            scrollTrigger: {
-                                trigger: container,
-                                scrub: true,
-                                start: 'top center',
-                                end: 'bottom bottom'
-                            },
-                            rotation: -40,
-                            ease: 'none',
+                        images.forEach((image, index) => {
+                            image.style.transform =
+                                `rotate(${(index * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
+                            image.style.webkitTransform =
+                                `rotate(${(index * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
                         });
 
-                    }
-                });
+                        // Infinite rotation
 
-                // Move first child to end of container
+                        gsap.to(container, {
+                            duration: config.duration,
+                            rotation: -360,
+                            ease: 'none',
+                            repeat: -1
+                        });
 
-                const interval = new TimelineMax({
-                    repeat: -1,
-                    repeatDelay: config.repeatDelay,
-                }).call(function() {
+                        // Rotate inner container
 
-                    // Get first and last child
+                        ScrollTrigger.matchMedia({
+                            '(min-width: 1280px)': () => {
 
-                    const firstChild = innerContainer.firstElementChild;
-                    const lastChild = innerContainer.lastElementChild;
+                                gsap.to(innerContainer, {
+                                    scrollTrigger: {
+                                        trigger: container,
+                                        scrub: true,
+                                        start: 'top center',
+                                        end: 'bottom bottom'
+                                    },
+                                    rotation: -40,
+                                    ease: 'none',
+                                });
 
-                    // Get index of last child
+                            }
+                        });
 
-                    const index = parseInt(lastChild.getAttribute('data-index'));
+                        // Move first child to end of container
 
-                    // Set index of first child to index of last child + 1
+                        const interval = new TimelineMax({
+                            repeat: -1,
+                            repeatDelay: config.repeatDelay,
+                        }).call(function() {
 
-                    firstChild.setAttribute('data-index', index + 1);
+                            // Get first and last child
 
-                    // Get new index of first child
+                            const firstChild = innerContainer.firstElementChild;
+                            const lastChild = innerContainer.lastElementChild;
 
-                    const newIndex = parseInt(firstChild.getAttribute('data-index'));
+                            // Get index of last child
 
-                    // ${(newIndex * config.rotationMultiply) - config.rotationOffset}deg
-                    // Set rotation of first child with transform rotate and webkit transform rotate
+                            const index = parseInt(lastChild.getAttribute('data-index'));
 
-                    firstChild.style.transform =
-                        `rotate(${(newIndex * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
-                    firstChild.style.webkitTransform =
-                        `rotate(${(newIndex * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
+                            // Set index of first child to index of last child + 1
 
-                    // Append first child to end of container
+                            firstChild.setAttribute('data-index', index + 1);
 
-                    innerContainer.appendChild(firstChild);
+                            // Get new index of first child
 
-                });
+                            const newIndex = parseInt(firstChild.getAttribute('data-index'));
 
-                setTimeout(() => {
+                            // ${(newIndex * config.rotationMultiply) - config.rotationOffset}deg
+                            // Set rotation of first child with transform rotate and webkit transform rotate
 
-                    this.active = true;
+                            firstChild.style.transform =
+                                `rotate(${(newIndex * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
+                            firstChild.style.webkitTransform =
+                                `rotate(${(newIndex * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
 
-                }, 300);
+                            // Append first child to end of container
 
-            }
-        }));
-    });
-    document.addEventListener('alpine:init', () => {
-        Alpine.data('videoFile', () => ({
-            playing: true,
-            muted: true,
-            hovering: false,
-            paused: false,
-            initVideoFile(id) {
+                            innerContainer.appendChild(firstChild);
 
-                // Get elements
+                        });
 
-                const video = document.querySelector(`.js-video-${id}`);
-                const videoProgress = document.querySelector(`.js-video-progress-${id}`);
-                const videoTimer = document.querySelector(`.js-video-timer-${id}`);
+                        setTimeout(() => {
 
+                            this.active = true;
 
-                // Set initial state
-
-
-
-                // Set video progress + timer
-
-                setInterval(() => {
-
-                    if (videoProgress) {
-
-                        videoProgress.style.width = (video.currentTime / video.duration) *
-                            100 + '%';
+                        }, 300);
 
                     }
+                }));
+            });
+            document.addEventListener('alpine:init', () => {
+                Alpine.data('archedImageCarouseTablet', () => ({
+                    active: false,
+                    confetti(id) {
 
-                    if (videoTimer) {
+                        emojisplosion({
+                            emojis: ["\ud83d\udcaf", "\u2728", "\ud83c\udf89", "\ud83c\udf8a",
+                                "\ud83c\udf7e", "\ud83c\udf88", "\ud83d\udca5"
+                            ],
+                            emojiCount: 50,
+                            physics: {
+                                fontSize: 40,
+                                rotationDeceleration: 1.001,
+                                initialVelocities: {
+                                    y: {
+                                        max: -70,
+                                        min: -12,
+                                    },
+                                    x: {
+                                        max: 30,
+                                        min: -30,
+                                    }
+                                },
+                            },
+                            position: () => ({
+                                // bottom center of the screen
+                                x: window.innerWidth / 2,
+                                y: window.innerHeight + 100,
+                            }),
+                            process(element) {
+                                element.style.zIndex = 1000;
 
-                        const minutes = Math.floor(video.currentTime / 60);
-                        const seconds = Math.floor(video.currentTime - minutes * 60);
-                        const minuteValue = minutes >= 10 ? minutes : '0' + minutes;
-                        const secondValue = seconds >= 10 ? seconds : '0' + seconds;
+                            },
+                        });
 
-                        videoTimer.innerHTML = minuteValue + ':' + secondValue;
+                    },
+                    rotateArchedImages(id) {
 
-                    }
+                        const container = document.querySelector(`.js-arched-image-container-${id}`);
+                        const innerContainer = document.querySelector(
+                            `.js-arched-image-inner-container-${id}`);
+                        const images = document.querySelectorAll(`.js-arched-image-${id}`);
 
-                }, 10);
-
-                // Check to see if video is playing or muted
-
-                setInterval(() => {
-
-                    if (video.paused) {
-
-                        if (video.muted) {
-                            this.playing = false;
-                            this.paused = false;
-                        } else {
-                            this.playing = false;
-                            this.paused = true;
+                        var config = {
+                            duration: 200,
+                            repeatDelay: 9.5,
+                            rotationMultiply: 15,
+                            rotationOffset: 55
                         }
 
-                    } else {
-                        if (!this.hovering) {
-                            this.playing = true;
+                        images.forEach((image, index) => {
+                            image.style.transform =
+                                `rotate(${(index * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
+                            image.style.webkitTransform =
+                                `rotate(${(index * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
+                        });
+
+                        // Infinite rotation
+
+                        gsap.to(container, {
+                            duration: config.duration,
+                            rotation: -360,
+                            ease: 'none',
+                            repeat: -1
+                        });
+
+                        // Rotate inner container
+
+                        ScrollTrigger.matchMedia({
+                            '(min-width: 1280px)': () => {
+
+                                gsap.to(innerContainer, {
+                                    scrollTrigger: {
+                                        trigger: container,
+                                        scrub: true,
+                                        start: 'top center',
+                                        end: 'bottom bottom'
+                                    },
+                                    rotation: -40,
+                                    ease: 'none',
+                                });
+
+                            }
+                        });
+
+                        // Move first child to end of container
+
+                        const interval = new TimelineMax({
+                            repeat: -1,
+                            repeatDelay: config.repeatDelay,
+                        }).call(function() {
+
+                            // Get first and last child
+
+                            const firstChild = innerContainer.firstElementChild;
+                            const lastChild = innerContainer.lastElementChild;
+
+                            // Get index of last child
+
+                            const index = parseInt(lastChild.getAttribute('data-index'));
+
+                            // Set index of first child to index of last child + 1
+
+                            firstChild.setAttribute('data-index', index + 1);
+
+                            // Get new index of first child
+
+                            const newIndex = parseInt(firstChild.getAttribute('data-index'));
+
+                            // ${(newIndex * config.rotationMultiply) - config.rotationOffset}deg
+                            // Set rotation of first child with transform rotate and webkit transform rotate
+
+                            firstChild.style.transform =
+                                `rotate(${(newIndex * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
+                            firstChild.style.webkitTransform =
+                                `rotate(${(newIndex * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
+
+                            // Append first child to end of container
+
+                            innerContainer.appendChild(firstChild);
+
+                        });
+
+                        setTimeout(() => {
+
+                            this.active = true;
+
+                        }, 300);
+
+                    }
+                }));
+            });
+            document.addEventListener('alpine:init', () => {
+                Alpine.data('archedImageCarouselDesktop', () => ({
+                    active: false,
+                    confetti(id) {
+
+                        emojisplosion({
+                            emojis: ["\ud83d\udcaf", "\u2728", "\ud83c\udf89", "\ud83c\udf8a",
+                                "\ud83c\udf7e", "\ud83c\udf88", "\ud83d\udca5"
+                            ],
+                            emojiCount: 50,
+                            physics: {
+                                fontSize: 40,
+                                rotationDeceleration: 1.001,
+                                initialVelocities: {
+                                    y: {
+                                        max: -70,
+                                        min: -12,
+                                    },
+                                    x: {
+                                        max: 30,
+                                        min: -30,
+                                    }
+                                },
+                            },
+                            position: () => ({
+                                // bottom center of the screen
+                                x: window.innerWidth / 2,
+                                y: window.innerHeight + 100,
+                            }),
+                            process(element) {
+                                element.style.zIndex = 1000;
+
+                            },
+                        });
+
+                    },
+                    rotateArchedImages(id) {
+
+                        const container = document.querySelector(`.js-arched-image-container-${id}`);
+                        const innerContainer = document.querySelector(
+                            `.js-arched-image-inner-container-${id}`);
+                        const images = document.querySelectorAll(`.js-arched-image-${id}`);
+
+                        var config = {
+                            duration: 300,
+                            repeatDelay: 10,
+                            rotationMultiply: 12,
+                            rotationOffset: 55
                         }
+
+                        images.forEach((image, index) => {
+                            image.style.transform =
+                                `rotate(${(index * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
+                            image.style.webkitTransform =
+                                `rotate(${(index * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
+                        });
+
+                        // Infinite rotation
+
+                        gsap.to(container, {
+                            duration: config.duration,
+                            rotation: -360,
+                            ease: 'none',
+                            repeat: -1
+                        });
+
+                        // Rotate inner container
+
+                        ScrollTrigger.matchMedia({
+                            '(min-width: 1280px)': () => {
+
+                                gsap.to(innerContainer, {
+                                    scrollTrigger: {
+                                        trigger: container,
+                                        scrub: true,
+                                        start: 'top center',
+                                        end: 'bottom bottom'
+                                    },
+                                    rotation: -40,
+                                    ease: 'none',
+                                });
+
+                            }
+                        });
+
+                        // Move first child to end of container
+
+                        const interval = new TimelineMax({
+                            repeat: -1,
+                            repeatDelay: config.repeatDelay,
+                        }).call(function() {
+
+                            // Get first and last child
+
+                            const firstChild = innerContainer.firstElementChild;
+                            const lastChild = innerContainer.lastElementChild;
+
+                            // Get index of last child
+
+                            const index = parseInt(lastChild.getAttribute('data-index'));
+
+                            // Set index of first child to index of last child + 1
+
+                            firstChild.setAttribute('data-index', index + 1);
+
+                            // Get new index of first child
+
+                            const newIndex = parseInt(firstChild.getAttribute('data-index'));
+
+                            // ${(newIndex * config.rotationMultiply) - config.rotationOffset}deg
+                            // Set rotation of first child with transform rotate and webkit transform rotate
+
+                            firstChild.style.transform =
+                                `rotate(${(newIndex * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
+                            firstChild.style.webkitTransform =
+                                `rotate(${(newIndex * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
+
+                            // Append first child to end of container
+
+                            innerContainer.appendChild(firstChild);
+
+                        });
+
+                        setTimeout(() => {
+
+                            this.active = true;
+
+                        }, 300);
+
                     }
+                }));
+            });
+            document.addEventListener('alpine:init', () => {
+                Alpine.data('videoFile', () => ({
+                    playing: true,
+                    muted: true,
+                    hovering: false,
+                    paused: false,
+                    initVideoFile(id) {
 
-                    if (video.muted) {
-                        this.muted = true;
-                    } else {
-                        this.muted = false;
-                    }
+                        // Get elements
 
-                }, 100);
+                        const video = document.querySelector(`.js-video-${id}`);
+                        const videoProgress = document.querySelector(`.js-video-progress-${id}`);
+                        const videoTimer = document.querySelector(`.js-video-timer-${id}`);
 
 
-                window.addEventListener('scroll', (e) => {
+                        // Set initial state
 
-                    if (video) {
 
-                        const videoTop = video.getBoundingClientRect().top;
-                        const videoBottom = video.getBoundingClientRect().bottom;
 
-                        if (video.classList.contains('js-video-with-sound')) {
+                        // Set video progress + timer
 
-                            if (videoTop > window.innerHeight || videoBottom < 0) {
+                        setInterval(() => {
+
+                            if (videoProgress) {
+
+                                videoProgress.style.width = (video.currentTime / video.duration) *
+                                    100 + '%';
+
+                            }
+
+                            if (videoTimer) {
+
+                                const minutes = Math.floor(video.currentTime / 60);
+                                const seconds = Math.floor(video.currentTime - minutes * 60);
+                                const minuteValue = minutes >= 10 ? minutes : '0' + minutes;
+                                const secondValue = seconds >= 10 ? seconds : '0' + seconds;
+
+                                videoTimer.innerHTML = minuteValue + ':' + secondValue;
+
+                            }
+
+                        }, 10);
+
+                        // Check to see if video is playing or muted
+
+                        setInterval(() => {
+
+                            if (video.paused) {
+
+                                if (video.muted) {
+                                    this.playing = false;
+                                    this.paused = false;
+                                } else {
+                                    this.playing = false;
+                                    this.paused = true;
+                                }
+
+                            } else {
+                                if (!this.hovering) {
+                                    this.playing = true;
+                                }
+                            }
+
+                            if (video.muted) {
+                                this.muted = true;
+                            } else {
+                                this.muted = false;
+                            }
+
+                        }, 100);
+
+
+                        window.addEventListener('scroll', (e) => {
+
+                            if (video) {
+
+                                const videoTop = video.getBoundingClientRect().top;
+                                const videoBottom = video.getBoundingClientRect().bottom;
+
+                                if (video.classList.contains('js-video-with-sound')) {
+
+                                    if (videoTop > window.innerHeight || videoBottom < 0) {
+                                        video.pause();
+                                        video.muted = true;
+                                    }
+
+                                }
+
+                            }
+
+                        });
+
+
+
+                        video.addEventListener('ended', () => {
+
+                            if (!video.hasAttribute('loop')) {
+
+                                video.currentTime = 0;
+                                video.muted = true;
+                                videoProgress.style.width = 0;
+                                video.pause();
+
+                            }
+
+
+                        });
+
+
+
+                    },
+                    toggleSound(id) {
+
+                        const video = document.querySelector('.js-video-' + id);
+                        const videos = document.querySelectorAll('.js-video');
+
+                        if (this.muted) {
+
+                            videos.forEach(video => {
                                 video.pause();
                                 video.muted = true;
-                            }
+                            });
+
+                            video.play();
+
+                            video.muted = false;
+                            this.muted = false;
+
+                            this.$dispatch('component-cursor', {
+                                icon: 'volume-on'
+                            });
+
+                        } else {
+
+                            video.muted = true;
+                            this.muted = true;
+
+                            this.$dispatch('component-cursor', {
+                                icon: 'volume-off'
+                            });
 
                         }
 
-                    }
 
-                });
-
-
-
-                video.addEventListener('ended', () => {
-
-                    if (!video.hasAttribute('loop')) {
-
-                        video.currentTime = 0;
-                        video.muted = true;
-                        videoProgress.style.width = 0;
-                        video.pause();
-
-                    }
-
-
-                });
-
-
-
-            },
-            toggleSound(id) {
-
-                const video = document.querySelector('.js-video-' + id);
-                const videos = document.querySelectorAll('.js-video');
-
-                if (this.muted) {
-
-                    videos.forEach(video => {
-                        video.pause();
-                        video.muted = true;
-                    });
-
-                    video.play();
-
-                    video.muted = false;
-                    this.muted = false;
-
-                    this.$dispatch('component-cursor', {
-                        icon: 'volume-on'
-                    });
-
-                } else {
-
-                    video.muted = true;
-                    this.muted = true;
-
-                    this.$dispatch('component-cursor', {
-                        icon: 'volume-off'
-                    });
-
-                }
-
-
-            },
-            togglePreview(id, status) {
-
-                this.hovering = status;
-
-                const video = document.querySelector('.js-video-' + id);
-
-                if (this.hovering && this.muted) {
-
-                    video.currentTime = 0;
-                    video.play();
-
-                }
-
-                if (!this.hovering && this.muted) {
-
-                    video.pause();
-                    video.currentTime = 0;
-
-                }
-
-
-            },
-            togglePause(id) {
-
-                const video = document.querySelector('.js-video-' + id);
-                const videos = document.querySelectorAll('.js-video');
-
-                if (this.paused) {
-
-                    videos.forEach(video => {
-                        video.pause();
-                    });
-
-                    video.play();
-                    this.paused = false;
-                    this.playing = true;
-
-                } else {
-
-                    video.pause();
-                    this.paused = true;
-                    this.playing = false;
-
-                }
-
-            },
-            toggleVideo(id) {
-
-                const video = document.querySelector('.js-video-' + id);
-                const videos = document.querySelectorAll('.js-video');
-                const videosWithVolumeControls = document.querySelectorAll(
-                    '.js-video-with-volume-controls');
-                const videosPlaying = document.querySelectorAll('.js-video-playing');
-
-                videosPlaying.forEach(video => {
-                    if (!video.muted && !video.classList.contains('js-video-with-sound')) {
-                        video.muted = true;
-                    } else {
-                        video.pause();
-                        video.muted = true;
-                        video.currentTime = 0;
-                    }
-                });
-
-                if (this.playing) {
-
-                    video.pause();
-                    video.muted = true;
-                    this.playing = false;
-                    this.hovering = false;
-
-                } else {
-
-                    videosWithVolumeControls.forEach(video => {
-                        video.pause();
-                    });
-
-                    video.currentTime = 0;
-                    video.muted = false;
-                    video.play();
-                    this.playing = true;
-                    this.hovering = false;
-
-                }
-
-            }
-        }))
-    });
-    document.addEventListener('alpine:init', () => {
-        Alpine.data('profile', () => ({
-            hovering: false,
-            profileHover(id) {
-
-                const profile = this.$refs.profile;
-                const images = this.$refs.profileImages.querySelectorAll('img');
-
-                let index = 0;
-                let interval;
-
-                function flickThroughImages() {
-
-                    interval = setInterval(() => {
-
-                        images.forEach((image, i) => {
-
-                            if (i == index) {
-                                image.classList.remove('hidden');
-                            } else {
-                                image.classList.add('hidden');
-                            }
-
-                        })
-
-                        index++;
-
-                        if (index >= images.length) {
-                            index = 0;
-                        }
-
-                    }, 200);
-
-                }
-
-                clearInterval(interval);
-                setTimeout(flickThroughImages(), 200);
-
-                profile.addEventListener('mouseenter', () => {
-
-                    this.hovering = true;
-                    clearInterval(interval);
-                    setTimeout(flickThroughImages(), 200);
-
-                    // setTimeout(() => {
-                    //    this.hovering = false;
-                    //    clearInterval(interval);
-                    // }, 1000);
-
-                });
-
-                profile.addEventListener('mouseleave', () => {
-
-                    this.hovering = false;
-                    clearInterval(interval);
-
-                });
-
-            }
-        }))
-    });
-    document.addEventListener('alpine:init', () => {
-        Alpine.data('entriesProfiles', () => ({
-            carousel(id) {
-
-                const profileCards = document.querySelectorAll('.js-profile-card-' + id);
-
-                const carousel = new Swiper('.js-carousel-' + id, {
-                    slidesPerView: 1.6,
-                    loop: true,
-                    speed: 10000,
-                    autoplay: {
-                        delay: 0,
                     },
-                    breakpoints: {
-                        640: {
+                    togglePreview(id, status) {
+
+                        this.hovering = status;
+
+                        const video = document.querySelector('.js-video-' + id);
+
+                        if (this.hovering && this.muted) {
+
+                            video.currentTime = 0;
+                            video.play();
+
+                        }
+
+                        if (!this.hovering && this.muted) {
+
+                            video.pause();
+                            video.currentTime = 0;
+
+                        }
+
+
+                    },
+                    togglePause(id) {
+
+                        const video = document.querySelector('.js-video-' + id);
+                        const videos = document.querySelectorAll('.js-video');
+
+                        if (this.paused) {
+
+                            videos.forEach(video => {
+                                video.pause();
+                            });
+
+                            video.play();
+                            this.paused = false;
+                            this.playing = true;
+
+                        } else {
+
+                            video.pause();
+                            this.paused = true;
+                            this.playing = false;
+
+                        }
+
+                    },
+                    toggleVideo(id) {
+
+                        const video = document.querySelector('.js-video-' + id);
+                        const videos = document.querySelectorAll('.js-video');
+                        const videosWithVolumeControls = document.querySelectorAll(
+                            '.js-video-with-volume-controls');
+                        const videosPlaying = document.querySelectorAll('.js-video-playing');
+
+                        videosPlaying.forEach(video => {
+                            if (!video.muted && !video.classList.contains('js-video-with-sound')) {
+                                video.muted = true;
+                            } else {
+                                video.pause();
+                                video.muted = true;
+                                video.currentTime = 0;
+                            }
+                        });
+
+                        if (this.playing) {
+
+                            video.pause();
+                            video.muted = true;
+                            this.playing = false;
+                            this.hovering = false;
+
+                        } else {
+
+                            videosWithVolumeControls.forEach(video => {
+                                video.pause();
+                            });
+
+                            video.currentTime = 0;
+                            video.muted = false;
+                            video.play();
+                            this.playing = true;
+                            this.hovering = false;
+
+                        }
+
+                    }
+                }))
+            });
+            document.addEventListener('alpine:init', () => {
+                Alpine.data('profile', () => ({
+                    hovering: false,
+                    profileHover(id) {
+
+                        const profile = this.$refs.profile;
+                        const images = this.$refs.profileImages.querySelectorAll('img');
+
+                        let index = 0;
+                        let interval;
+
+                        function flickThroughImages() {
+
+                            interval = setInterval(() => {
+
+                                images.forEach((image, i) => {
+
+                                    if (i == index) {
+                                        image.classList.remove('hidden');
+                                    } else {
+                                        image.classList.add('hidden');
+                                    }
+
+                                })
+
+                                index++;
+
+                                if (index >= images.length) {
+                                    index = 0;
+                                }
+
+                            }, 200);
+
+                        }
+
+                        clearInterval(interval);
+                        setTimeout(flickThroughImages(), 200);
+
+                        profile.addEventListener('mouseenter', () => {
+
+                            this.hovering = true;
+                            clearInterval(interval);
+                            setTimeout(flickThroughImages(), 200);
+
+                            // setTimeout(() => {
+                            //    this.hovering = false;
+                            //    clearInterval(interval);
+                            // }, 1000);
+
+                        });
+
+                        profile.addEventListener('mouseleave', () => {
+
+                            this.hovering = false;
+                            clearInterval(interval);
+
+                        });
+
+                    }
+                }))
+            });
+            document.addEventListener('alpine:init', () => {
+                Alpine.data('entriesProfiles', () => ({
+                    carousel(id) {
+
+                        const profileCards = document.querySelectorAll('.js-profile-card-' + id);
+
+                        const carousel = new Swiper('.js-carousel-' + id, {
+                            slidesPerView: 1.6,
+                            loop: true,
                             speed: 10000,
-                            slidesPerView: 2,
-                        },
-                        768: {
-                            speed: 20000,
-                            slidesPerView: 2.5,
-                        },
-                        1024: {
-                            speed: 20000,
-                            slidesPerView: 3.5,
-                        },
-                        1280: {
-                            speed: 20000,
-                            slidesPerView: 4,
-                        },
-                        2100: {
-                            speed: 20000,
-                            slidesPerView: 5,
-                        },
-                    },
+                            autoplay: {
+                                delay: 0,
+                            },
+                            breakpoints: {
+                                640: {
+                                    speed: 10000,
+                                    slidesPerView: 2,
+                                },
+                                768: {
+                                    speed: 20000,
+                                    slidesPerView: 2.5,
+                                },
+                                1024: {
+                                    speed: 20000,
+                                    slidesPerView: 3.5,
+                                },
+                                1280: {
+                                    speed: 20000,
+                                    slidesPerView: 4,
+                                },
+                                2100: {
+                                    speed: 20000,
+                                    slidesPerView: 5,
+                                },
+                            },
 
-                });
+                        });
 
-            }
-        }));
-    });
-    document.addEventListener('alpine:init', () => {
-        Alpine.data('statistic', () => ({
-            countUp(id) {
-
-                const statistics = document.querySelectorAll(`.js-statistic-${id}`);
-
-                statistics.forEach(statistic => {
-
-                    const character = statistic.dataset.character;
-                    const delay = statistic.dataset.delay;
-
-                    let goToCharacterPosition = statistic.querySelector(
-                            `.js-statistic-${id}-character[data-character="${character}"]`)
-                        .offsetTop;
-                    let goToCharacterWidth = statistic.querySelector(
-                            `.js-statistic-${id}-character[data-character="${character}"]`)
-                        .offsetWidth;
-
-                    this.animate(id, statistic, goToCharacterWidth, goToCharacterPosition);
-
-                    // window.addEventListener('resize', () => {
-
-                    //     goToCharacterWidth = statistic.querySelector(`.js-statistic-${id}-character[data-character="${character}"]`).offsetWidth;
-                    //     goToCharacterPosition = statistic.querySelector(`.js-statistic-${id}-character[data-character="${character}"]`).offsetTop;
-
-                    //     this.animate(id, statistic, goToCharacterWidth, goToCharacterPosition);
-
-                    // });
-
-
-                });
-
-            },
-            animate(id, statistic, goToCharacterWidth, goToCharacterPosition) {
-
-                gsap.to(statistic.querySelectorAll(`.js-statistic-${id}-characters > div`), {
-                    duration: 1.5,
-                    y: -goToCharacterPosition,
-                    ease: 'power4.inOut',
-                    scrollTrigger: {
-                        trigger: statistic,
-                        start: 'top 90%',
                     }
-                });
+                }));
+            });
+            document.addEventListener('alpine:init', () => {
+                Alpine.data('statistic', () => ({
+                    countUp(id) {
 
-                gsap.to(statistic, {
-                    duration: 0.5,
-                    width: goToCharacterWidth,
-                    ease: 'power1.out',
-                    scrollTrigger: {
-                        trigger: statistic,
-                        start: 'top 90%',
+                        const statistics = document.querySelectorAll(`.js-statistic-${id}`);
+
+                        statistics.forEach(statistic => {
+
+                            const character = statistic.dataset.character;
+                            const delay = statistic.dataset.delay;
+
+                            let goToCharacterPosition = statistic.querySelector(
+                                    `.js-statistic-${id}-character[data-character="${character}"]`)
+                                .offsetTop;
+                            let goToCharacterWidth = statistic.querySelector(
+                                    `.js-statistic-${id}-character[data-character="${character}"]`)
+                                .offsetWidth;
+
+                            this.animate(id, statistic, goToCharacterWidth, goToCharacterPosition);
+
+                            // window.addEventListener('resize', () => {
+
+                            //     goToCharacterWidth = statistic.querySelector(`.js-statistic-${id}-character[data-character="${character}"]`).offsetWidth;
+                            //     goToCharacterPosition = statistic.querySelector(`.js-statistic-${id}-character[data-character="${character}"]`).offsetTop;
+
+                            //     this.animate(id, statistic, goToCharacterWidth, goToCharacterPosition);
+
+                            // });
+
+
+                        });
+
+                    },
+                    animate(id, statistic, goToCharacterWidth, goToCharacterPosition) {
+
+                        gsap.to(statistic.querySelectorAll(`.js-statistic-${id}-characters > div`), {
+                            duration: 1.5,
+                            y: -goToCharacterPosition,
+                            ease: 'power4.inOut',
+                            scrollTrigger: {
+                                trigger: statistic,
+                                start: 'top 90%',
+                            }
+                        });
+
+                        gsap.to(statistic, {
+                            duration: 0.5,
+                            width: goToCharacterWidth,
+                            ease: 'power1.out',
+                            scrollTrigger: {
+                                trigger: statistic,
+                                start: 'top 90%',
+                            }
+                        });
+
                     }
-                });
+                }))
+            });
+            document.addEventListener('alpine:init', () => {
+                Alpine.data('statistics', () => ({
+                    isStart: true,
+                    isEnd: false,
+                    carousel(id) {
 
-            }
-        }))
-    });
-    document.addEventListener('alpine:init', () => {
-        Alpine.data('statistics', () => ({
-            isStart: true,
-            isEnd: false,
-            carousel(id) {
-
-                const carousel = new Swiper(`.js-carousel-${id}`, {
-                    slidesPerView: 1,
-                    navigation: {
-                        nextEl: '.js-carousel-next-' + id,
-                        prevEl: '.js-carousel-prev-' + id,
-                    },
-                    breakpoints: {
-                        768: {
-                            slidesPerView: 2,
-                        },
-                        1024: {
-                            slidesPerView: 3,
-                        },
-                        1280: {
-                            slidesPerView: 4,
-                        },
-                    },
-                });
-
-                carousel.on('slideChange', () => {
-                    this.isStart = carousel.isBeginning;
-                    this.isEnd = carousel.isEnd;
-                });
-
-            }
-        }))
-    });
-    document.addEventListener('alpine:init', () => {
-        Alpine.data('logosDoubleCarousel', () => ({
-            carousel(id) {
-
-                const carousels = document.querySelectorAll(`.js-carousel-${id}`);
-
-                carousels.forEach((carousel, index) => {
-
-                    const swiper = new Swiper(carousel, {
-                        slidesPerView: 2,
-                        spaceBetween: 0,
-                        loop: true,
-                        allowTouchMove: false,
-                        autoplay: {
-                            delay: 0,
-                            disableOnInteraction: false,
-                            reverseDirection: index % 2 === 0 ? false : true,
-                        },
-                        speed: 10000,
-                        grabCursor: false,
-                        mousewheelControl: false,
-                        keyboardControl: false,
-                        breakpoints: {
-                            640: {
-                                slidesPerView: 3,
+                        const carousel = new Swiper(`.js-carousel-${id}`, {
+                            slidesPerView: 1,
+                            navigation: {
+                                nextEl: '.js-carousel-next-' + id,
+                                prevEl: '.js-carousel-prev-' + id,
                             },
-                            768: {
-                                slidesPerView: 3.5,
+                            breakpoints: {
+                                768: {
+                                    slidesPerView: 2,
+                                },
+                                1024: {
+                                    slidesPerView: 3,
+                                },
+                                1280: {
+                                    slidesPerView: 4,
+                                },
                             },
-                            1024: {
-                                slidesPerView: 4,
-                            },
-                            1280: {
-                                slidesPerView: 4,
-                            },
-                            1400: {
-                                slidesPerView: 5,
-                            },
-                            2100: {
-                                slidesPerView: 6,
-                            },
-                        }
-                    });
+                        });
 
-                    setTimeout(() => {
+                        carousel.on('slideChange', () => {
+                            this.isStart = carousel.isBeginning;
+                            this.isEnd = carousel.isEnd;
+                        });
 
-                        swiper.update();
-                        swiper.autoplay.start();
+                    }
+                }))
+            });
+            document.addEventListener('alpine:init', () => {
+                Alpine.data('logosDoubleCarousel', () => ({
+                    carousel(id) {
 
-                    }, 1000);
+                        const carousels = document.querySelectorAll(`.js-carousel-${id}`);
 
-                    window.addEventListener('resize', () => {
+                        carousels.forEach((carousel, index) => {
 
-                        clearTimeout(window.resizedFinished);
+                            const swiper = new Swiper(carousel, {
+                                slidesPerView: 2,
+                                spaceBetween: 0,
+                                loop: true,
+                                allowTouchMove: false,
+                                autoplay: {
+                                    delay: 0,
+                                    disableOnInteraction: false,
+                                    reverseDirection: index % 2 === 0 ? false : true,
+                                },
+                                speed: 10000,
+                                grabCursor: false,
+                                mousewheelControl: false,
+                                keyboardControl: false,
+                                breakpoints: {
+                                    640: {
+                                        slidesPerView: 3,
+                                    },
+                                    768: {
+                                        slidesPerView: 3.5,
+                                    },
+                                    1024: {
+                                        slidesPerView: 4,
+                                    },
+                                    1280: {
+                                        slidesPerView: 4,
+                                    },
+                                    1400: {
+                                        slidesPerView: 5,
+                                    },
+                                    2100: {
+                                        slidesPerView: 6,
+                                    },
+                                }
+                            });
 
-                        window.resizedFinished = setTimeout(function() {
+                            setTimeout(() => {
 
-                            swiper.update();
-                            swiper.autoplay.start();
+                                swiper.update();
+                                swiper.autoplay.start();
 
-                        }, 50);
+                            }, 1000);
 
-                    });
+                            window.addEventListener('resize', () => {
 
-                    const logos = carousel.querySelectorAll(`.js-logo-${id}`);
+                                clearTimeout(window.resizedFinished);
 
-                    // ScrollTrigger.matchMedia({
-                    //     '(min-width: 1280px)': () => {
+                                window.resizedFinished = setTimeout(function() {
 
-                    //         gsap.to(logos, {
-                    //             scrollTrigger: {
-                    //                 trigger: logos,
-                    //                 scrub: true,
-                    //                 start: 'top 110%',
-                    //                 end: 'bottom top'
-                    //             },
-                    //             x: index % 2 === 0 ? 100 : -100,
-                    //             ease: 'none',
-                    //         });
+                                    swiper.update();
+                                    swiper.autoplay.start();
 
-                    //     }
-                    // });
+                                }, 50);
+
+                            });
+
+                            const logos = carousel.querySelectorAll(`.js-logo-${id}`);
+
+                            // ScrollTrigger.matchMedia({
+                            //     '(min-width: 1280px)': () => {
+
+                            //         gsap.to(logos, {
+                            //             scrollTrigger: {
+                            //                 trigger: logos,
+                            //                 scrub: true,
+                            //                 start: 'top 110%',
+                            //                 end: 'bottom top'
+                            //             },
+                            //             x: index % 2 === 0 ? 100 : -100,
+                            //             ease: 'none',
+                            //         });
+
+                            //     }
+                            // });
 
 
-                });
+                        });
 
-            }
-        }));
-    });
-    document.addEventListener('alpine:init', () => {
-        Alpine.data('modal428063', () => ({
-            visible: false,
-            setupModal(id) {
+                    }
+                }));
+            });
+            document.addEventListener('alpine:init', () => {
+                Alpine.data('modal428063', () => ({
+                    visible: false,
+                    setupModal(id) {
 
-                // Prevent keys from interferring with the video
+                        // Prevent keys from interferring with the video
 
-                navigator.mediaSession.setActionHandler('play', function() {});
-                navigator.mediaSession.setActionHandler('pause', function() {});
-                navigator.mediaSession.setActionHandler('seekbackward', function() {});
-                navigator.mediaSession.setActionHandler('seekforward', function() {});
-                navigator.mediaSession.setActionHandler('previoustrack', function() {});
-                navigator.mediaSession.setActionHandler('nexttrack', function() {});
+                        navigator.mediaSession.setActionHandler('play', function() {});
+                        navigator.mediaSession.setActionHandler('pause', function() {});
+                        navigator.mediaSession.setActionHandler('seekbackward', function() {});
+                        navigator.mediaSession.setActionHandler('seekforward', function() {});
+                        navigator.mediaSession.setActionHandler('previoustrack', function() {});
+                        navigator.mediaSession.setActionHandler('nexttrack', function() {});
 
-                // Get video elements
+                        // Get video elements
 
-                const video = document.querySelector(`.js-modal-video-${id}`);
-                const videoProgress = document.querySelector(`.js-modal-video-progress-${id}`);
+                        const video = document.querySelector(`.js-modal-video-${id}`);
+                        const videoProgress = document.querySelector(`.js-modal-video-progress-${id}`);
 
-                const videoPlayPause = document.querySelector(`.js-modal-video-play-pause-${id}`);
-                const videoSound = document.querySelector(`.js-modal-video-sound-${id}`);
+                        const videoPlayPause = document.querySelector(`.js-modal-video-play-pause-${id}`);
+                        const videoSound = document.querySelector(`.js-modal-video-sound-${id}`);
 
-                const videoPlayIcon = document.querySelector(`.js-modal-video-play-icon-${id}`);
-                const videoPauseIcon = document.querySelector(`.js-modal-video-pause-icon-${id}`);
+                        const videoPlayIcon = document.querySelector(`.js-modal-video-play-icon-${id}`);
+                        const videoPauseIcon = document.querySelector(`.js-modal-video-pause-icon-${id}`);
 
-                const videoVolumeOnIcon = document.querySelector(
-                    `.js-modal-video-volume-on-icon-${id}`);
-                const videoVolumeOffIcon = document.querySelector(
-                    `.js-modal-video-volume-off-icon-${id}`);
-
-                // Video controls
-
-                if (video) {
-
-                    if (video.tagName == 'IFRAME') {
-
-                        const player = new Vimeo.Player(video);
+                        const videoVolumeOnIcon = document.querySelector(
+                            `.js-modal-video-volume-on-icon-${id}`);
+                        const videoVolumeOffIcon = document.querySelector(
+                            `.js-modal-video-volume-off-icon-${id}`);
 
                         // Video controls
-
-                        videoSound.addEventListener('click', (event) => {
-
-                            player.getVolume().then(function(volume) {
-
-                                if (videoVolumeOnIcon.classList.contains(
-                                        'hidden')) {
-
-                                    player.setVolume(1);
-                                    videoVolumeOnIcon.classList.remove('hidden');
-                                    videoVolumeOffIcon.classList.add('hidden');
-
-                                } else {
-
-                                    player.setVolume(0);
-                                    videoVolumeOnIcon.classList.add('hidden');
-                                    videoVolumeOffIcon.classList.remove('hidden');
-
-                                }
-
-                            });
-
-                            event.preventDefault();
-
-                        });
-
-                        videoPlayPause.addEventListener('click', (event) => {
-
-                            player.getPaused().then(function(paused) {
-
-                                if (paused) {
-
-                                    player.play();
-                                    videoPlayIcon.classList.add('hidden');
-                                    videoPauseIcon.classList.remove('hidden');
-
-                                } else {
-
-                                    player.pause();
-                                    videoPlayIcon.classList.remove('hidden');
-                                    videoPauseIcon.classList.add('hidden');
-
-                                }
-
-                            });
-
-                            event.preventDefault();
-
-                        });
-
-                    } else {
-
-                        videoSound.addEventListener('click', (event) => {
-
-                            if (videoVolumeOnIcon.classList.contains('hidden')) {
-
-                                video.muted = false;
-                                videoVolumeOnIcon.classList.remove('hidden');
-                                videoVolumeOffIcon.classList.add('hidden');
-
-                            } else {
-
-                                video.muted = true;
-                                videoVolumeOnIcon.classList.add('hidden');
-                                videoVolumeOffIcon.classList.remove('hidden');
-
-                            }
-
-                            event.preventDefault();
-
-                        });
-
-                        videoPlayPause.addEventListener('click', (event) => {
-
-                            if (video.paused) {
-
-                                video.play();
-                                videoPlayIcon.classList.add('hidden');
-                                videoPauseIcon.classList.remove('hidden');
-
-                            } else {
-
-                                video.pause();
-                                videoPlayIcon.classList.remove('hidden');
-                                videoPauseIcon.classList.add('hidden');
-
-                            }
-
-                            event.preventDefault();
-
-                        });
-
-                    }
-
-                }
-
-                this.$watch('visible', function(value) {
-
-                    if (value != false) {
-
-                        document.body.classList.add('overflow-hidden');
-
-                        // Video (Vimeo)
 
                         if (video) {
 
@@ -7339,642 +6851,642 @@ pr-8 mb-5 | lg:pr-16
 
                                 const player = new Vimeo.Player(video);
 
-                                // Initialise video
+                                // Video controls
 
-                                player.setCurrentTime(0);
-                                player.play();
-                                player.setVolume(1);
+                                videoSound.addEventListener('click', (event) => {
 
-                                // Progress bar
+                                    player.getVolume().then(function(volume) {
 
-                                setInterval(() => {
+                                        if (videoVolumeOnIcon.classList.contains(
+                                                'hidden')) {
 
-                                    if (videoProgress) {
+                                            player.setVolume(1);
+                                            videoVolumeOnIcon.classList.remove('hidden');
+                                            videoVolumeOffIcon.classList.add('hidden');
 
-                                        player.getCurrentTime().then(function(
-                                            seconds) {
+                                        } else {
 
-                                            player.getDuration().then(
-                                                function(duration) {
+                                            player.setVolume(0);
+                                            videoVolumeOnIcon.classList.add('hidden');
+                                            videoVolumeOffIcon.classList.remove('hidden');
 
-                                                    videoProgress.style
-                                                        .width = (
-                                                            seconds /
-                                                            duration) *
-                                                        100 + '%';
+                                        }
 
-                                                });
+                                    });
 
-                                        });
+                                    event.preventDefault();
 
-                                    }
+                                });
 
-                                }, 100);
+                                videoPlayPause.addEventListener('click', (event) => {
+
+                                    player.getPaused().then(function(paused) {
+
+                                        if (paused) {
+
+                                            player.play();
+                                            videoPlayIcon.classList.add('hidden');
+                                            videoPauseIcon.classList.remove('hidden');
+
+                                        } else {
+
+                                            player.pause();
+                                            videoPlayIcon.classList.remove('hidden');
+                                            videoPauseIcon.classList.add('hidden');
+
+                                        }
+
+                                    });
+
+                                    event.preventDefault();
+
+                                });
 
                             } else {
 
-                                // Initialise video
+                                videoSound.addEventListener('click', (event) => {
 
-                                video.currentTime = 0;
-                                video.play();
+                                    if (videoVolumeOnIcon.classList.contains('hidden')) {
 
-                                // Progress bar
+                                        video.muted = false;
+                                        videoVolumeOnIcon.classList.remove('hidden');
+                                        videoVolumeOffIcon.classList.add('hidden');
 
-                                setInterval(() => {
+                                    } else {
 
-                                    if (videoProgress) {
-
-                                        videoProgress.style.width = (video
-                                                .currentTime / video.duration) *
-                                            100 + '%';
+                                        video.muted = true;
+                                        videoVolumeOnIcon.classList.add('hidden');
+                                        videoVolumeOffIcon.classList.remove('hidden');
 
                                     }
 
-                                }, 100);
+                                    event.preventDefault();
+
+                                });
+
+                                videoPlayPause.addEventListener('click', (event) => {
+
+                                    if (video.paused) {
+
+                                        video.play();
+                                        videoPlayIcon.classList.add('hidden');
+                                        videoPauseIcon.classList.remove('hidden');
+
+                                    } else {
+
+                                        video.pause();
+                                        videoPlayIcon.classList.remove('hidden');
+                                        videoPauseIcon.classList.add('hidden');
+
+                                    }
+
+                                    event.preventDefault();
+
+                                });
 
                             }
 
                         }
 
+                        this.$watch('visible', function(value) {
 
-                    } else {
+                            if (value != false) {
 
-                        document.body.classList.remove('overflow-hidden');
-                    }
+                                document.body.classList.add('overflow-hidden');
 
-                });
+                                // Video (Vimeo)
 
-            },
-            closeModal(id) {
+                                if (video) {
 
-                this.visible = false;
+                                    if (video.tagName == 'IFRAME') {
 
-                const video = document.querySelector('.js-modal-video-' + id);
-                const videoProgress = document.querySelector('.js-modal-video-progress-' + id);
+                                        const player = new Vimeo.Player(video);
 
-                if (video) {
+                                        // Initialise video
 
-                    if (video.tagName == 'IFRAME') {
+                                        player.setCurrentTime(0);
+                                        player.play();
+                                        player.setVolume(1);
 
-                        const player = new Vimeo.Player(video);
+                                        // Progress bar
 
-                        player.pause();
+                                        setInterval(() => {
 
+                                            if (videoProgress) {
 
-                    } else {
+                                                player.getCurrentTime().then(function(
+                                                    seconds) {
 
-                        video.pause();
-                        videoProgress.style.width = '0%';
+                                                    player.getDuration().then(
+                                                        function(duration) {
 
-                    }
-                }
+                                                            videoProgress.style
+                                                                .width = (
+                                                                    seconds /
+                                                                    duration) *
+                                                                100 + '%';
 
-            }
-        }))
-    });
-    document.addEventListener('alpine:init', () => {
-        Alpine.data('featureQuote', () => ({
-            crossBrowserClasses(id) {
+                                                        });
 
-                const isWindows = navigator.platform.indexOf('Win') > -1;
-                const isAndroid = navigator.userAgent.toLowerCase().indexOf("android") > -1;
+                                                });
 
-                const elements = document.querySelectorAll(`.js-cross-browser-${id}`);
+                                            }
 
-                elements.forEach(element => {
+                                        }, 100);
 
-                    if (isWindows) {
+                                    } else {
 
-                        const windowsRemove = element.getAttribute('data-windows-remove')
-                            .split('|');
-                        const windowsAdd = element.getAttribute('data-windows-add').split(
-                            '|');
+                                        // Initialise video
 
-                        element.classList.remove(...windowsRemove);
-                        element.classList.add(...windowsAdd);
+                                        video.currentTime = 0;
+                                        video.play();
 
-                    }
+                                        // Progress bar
 
-                    if (isAndroid) {
+                                        setInterval(() => {
 
-                        const androidRemove = element.getAttribute('data-android-remove')
-                            .split('|');
-                        const androidAdd = element.getAttribute('data-android-add').split(
-                            '|');
+                                            if (videoProgress) {
 
-                        element.classList.remove(...androidRemove);
-                        element.classList.add(...androidAdd);
+                                                videoProgress.style.width = (video
+                                                        .currentTime / video.duration) *
+                                                    100 + '%';
 
-                    }
+                                            }
 
-                });
+                                        }, 100);
 
-            }
-        }))
-    });
-    document.addEventListener('alpine:init', () => {
-        Alpine.data('videoFile', () => ({
-            playing: true,
-            muted: true,
-            hovering: false,
-            paused: false,
-            initVideoFile(id) {
+                                    }
 
-                // Get elements
-
-                const video = document.querySelector(`.js-video-${id}`);
-                const videoProgress = document.querySelector(`.js-video-progress-${id}`);
-                const videoTimer = document.querySelector(`.js-video-timer-${id}`);
+                                }
 
 
-                // Set initial state
+                            } else {
 
-                this.playing = false;
-                this.muted = false;
+                                document.body.classList.remove('overflow-hidden');
+                            }
+
+                        });
+
+                    },
+                    closeModal(id) {
+
+                        this.visible = false;
+
+                        const video = document.querySelector('.js-modal-video-' + id);
+                        const videoProgress = document.querySelector('.js-modal-video-progress-' + id);
+
+                        if (video) {
+
+                            if (video.tagName == 'IFRAME') {
+
+                                const player = new Vimeo.Player(video);
+
+                                player.pause();
 
 
-                // Set video progress + timer
+                            } else {
 
-                setInterval(() => {
+                                video.pause();
+                                videoProgress.style.width = '0%';
 
-                    if (videoProgress) {
-
-                        videoProgress.style.width = (video.currentTime / video.duration) *
-                            100 + '%';
-
-                    }
-
-                    if (videoTimer) {
-
-                        const minutes = Math.floor(video.currentTime / 60);
-                        const seconds = Math.floor(video.currentTime - minutes * 60);
-                        const minuteValue = minutes >= 10 ? minutes : '0' + minutes;
-                        const secondValue = seconds >= 10 ? seconds : '0' + seconds;
-
-                        videoTimer.innerHTML = minuteValue + ':' + secondValue;
-
-                    }
-
-                }, 10);
-
-                // Check to see if video is playing or muted
-
-                setInterval(() => {
-
-                    if (video.paused) {
-
-                        if (video.muted) {
-                            this.playing = false;
-                            this.paused = false;
-                        } else {
-                            this.playing = false;
-                            this.paused = true;
+                            }
                         }
 
-                    } else {
-                        if (!this.hovering) {
-                            this.playing = true;
-                        }
                     }
+                }))
+            });
+            document.addEventListener('alpine:init', () => {
+                Alpine.data('featureQuote', () => ({
+                    crossBrowserClasses(id) {
 
-                    if (video.muted) {
-                        this.muted = true;
-                    } else {
+                        const isWindows = navigator.platform.indexOf('Win') > -1;
+                        const isAndroid = navigator.userAgent.toLowerCase().indexOf("android") > -1;
+
+                        const elements = document.querySelectorAll(`.js-cross-browser-${id}`);
+
+                        elements.forEach(element => {
+
+                            if (isWindows) {
+
+                                const windowsRemove = element.getAttribute('data-windows-remove')
+                                    .split('|');
+                                const windowsAdd = element.getAttribute('data-windows-add').split(
+                                    '|');
+
+                                element.classList.remove(...windowsRemove);
+                                element.classList.add(...windowsAdd);
+
+                            }
+
+                            if (isAndroid) {
+
+                                const androidRemove = element.getAttribute('data-android-remove')
+                                    .split('|');
+                                const androidAdd = element.getAttribute('data-android-add').split(
+                                    '|');
+
+                                element.classList.remove(...androidRemove);
+                                element.classList.add(...androidAdd);
+
+                            }
+
+                        });
+
+                    }
+                }))
+            });
+            document.addEventListener('alpine:init', () => {
+                Alpine.data('videoFile', () => ({
+                    playing: true,
+                    muted: true,
+                    hovering: false,
+                    paused: false,
+                    initVideoFile(id) {
+
+                        // Get elements
+
+                        const video = document.querySelector(`.js-video-${id}`);
+                        const videoProgress = document.querySelector(`.js-video-progress-${id}`);
+                        const videoTimer = document.querySelector(`.js-video-timer-${id}`);
+
+
+                        // Set initial state
+
+                        this.playing = false;
                         this.muted = false;
-                    }
-
-                }, 100);
 
 
-                window.addEventListener('scroll', (e) => {
+                        // Set video progress + timer
 
-                    if (video) {
+                        setInterval(() => {
 
-                        const videoTop = video.getBoundingClientRect().top;
-                        const videoBottom = video.getBoundingClientRect().bottom;
+                            if (videoProgress) {
 
-                        if (video.classList.contains('js-video-with-sound')) {
+                                videoProgress.style.width = (video.currentTime / video.duration) *
+                                    100 + '%';
 
-                            if (videoTop > window.innerHeight || videoBottom < 0) {
+                            }
+
+                            if (videoTimer) {
+
+                                const minutes = Math.floor(video.currentTime / 60);
+                                const seconds = Math.floor(video.currentTime - minutes * 60);
+                                const minuteValue = minutes >= 10 ? minutes : '0' + minutes;
+                                const secondValue = seconds >= 10 ? seconds : '0' + seconds;
+
+                                videoTimer.innerHTML = minuteValue + ':' + secondValue;
+
+                            }
+
+                        }, 10);
+
+                        // Check to see if video is playing or muted
+
+                        setInterval(() => {
+
+                            if (video.paused) {
+
+                                if (video.muted) {
+                                    this.playing = false;
+                                    this.paused = false;
+                                } else {
+                                    this.playing = false;
+                                    this.paused = true;
+                                }
+
+                            } else {
+                                if (!this.hovering) {
+                                    this.playing = true;
+                                }
+                            }
+
+                            if (video.muted) {
+                                this.muted = true;
+                            } else {
+                                this.muted = false;
+                            }
+
+                        }, 100);
+
+
+                        window.addEventListener('scroll', (e) => {
+
+                            if (video) {
+
+                                const videoTop = video.getBoundingClientRect().top;
+                                const videoBottom = video.getBoundingClientRect().bottom;
+
+                                if (video.classList.contains('js-video-with-sound')) {
+
+                                    if (videoTop > window.innerHeight || videoBottom < 0) {
+                                        video.pause();
+                                        video.muted = true;
+                                    }
+
+                                }
+
+                            }
+
+                        });
+
+
+
+                        video.addEventListener('ended', () => {
+
+                            if (!video.hasAttribute('loop')) {
+
+                                video.currentTime = 0;
+                                video.muted = true;
+                                videoProgress.style.width = 0;
+                                video.pause();
+
+                            }
+
+
+                        });
+
+
+
+                    },
+                    toggleSound(id) {
+
+                        const video = document.querySelector('.js-video-' + id);
+                        const videos = document.querySelectorAll('.js-video');
+
+                        if (this.muted) {
+
+                            videos.forEach(video => {
                                 video.pause();
                                 video.muted = true;
+                            });
+
+                            video.play();
+
+                            video.muted = false;
+                            this.muted = false;
+
+                            this.$dispatch('component-cursor', {
+                                icon: 'volume-on'
+                            });
+
+                        } else {
+
+                            video.muted = true;
+                            this.muted = true;
+
+                            this.$dispatch('component-cursor', {
+                                icon: 'volume-off'
+                            });
+
+                        }
+
+
+                    },
+                    togglePreview(id, status) {
+
+                        this.hovering = status;
+
+                        const video = document.querySelector('.js-video-' + id);
+
+                        if (this.hovering && this.muted) {
+
+                            video.currentTime = 0;
+                            video.play();
+
+                        }
+
+                        if (!this.hovering && this.muted) {
+
+                            video.pause();
+                            video.currentTime = 0;
+
+                        }
+
+
+                    },
+                    togglePause(id) {
+
+                        const video = document.querySelector('.js-video-' + id);
+                        const videos = document.querySelectorAll('.js-video');
+
+                        if (this.paused) {
+
+                            videos.forEach(video => {
+                                video.pause();
+                            });
+
+                            video.play();
+                            this.paused = false;
+                            this.playing = true;
+
+                        } else {
+
+                            video.pause();
+                            this.paused = true;
+                            this.playing = false;
+
+                        }
+
+                    },
+                    toggleVideo(id) {
+
+                        const video = document.querySelector('.js-video-' + id);
+                        const videos = document.querySelectorAll('.js-video');
+                        const videosWithVolumeControls = document.querySelectorAll(
+                            '.js-video-with-volume-controls');
+                        const videosPlaying = document.querySelectorAll('.js-video-playing');
+
+                        videosPlaying.forEach(video => {
+                            if (!video.muted && !video.classList.contains('js-video-with-sound')) {
+                                video.muted = true;
+                            } else {
+                                video.pause();
+                                video.muted = true;
+                                video.currentTime = 0;
                             }
+                        });
+
+                        if (this.playing) {
+
+                            video.pause();
+                            video.muted = true;
+                            this.playing = false;
+                            this.hovering = false;
+
+                        } else {
+
+                            videosWithVolumeControls.forEach(video => {
+                                video.pause();
+                            });
+
+                            video.currentTime = 0;
+                            video.muted = false;
+                            video.play();
+                            this.playing = true;
+                            this.hovering = false;
 
                         }
 
                     }
+                }))
+            });
+            document.addEventListener('alpine:init', () => {
+                Alpine.data('videoQuoteColumns', () => ({
+                    isStart: true,
+                    isEnd: false,
+                    carousel(id) {
 
-                });
+                        const carousel = new Swiper(`.js-carousel-${id}`, {
+                            slidesPerView: 1.5,
+                            cssMode: true,
+                            navigation: {
+                                nextEl: '.js-carousel-next-' + id,
+                                prevEl: '.js-carousel-prev-' + id,
+                            },
+                            breakpoints: {
+                                768: {
+                                    slidesPerView: 2.5,
+                                },
+                                960: {
+                                    slidesPerView: 3,
+                                },
+                                1024: {
+                                    slidesPerView: 3,
+                                },
+                                1280: {
+                                    slidesPerView: 4,
+                                },
+                            },
+                        });
 
-
-
-                video.addEventListener('ended', () => {
-
-                    if (!video.hasAttribute('loop')) {
-
-                        video.currentTime = 0;
-                        video.muted = true;
-                        videoProgress.style.width = 0;
-                        video.pause();
+                        carousel.on('slideChange', () => {
+                            this.isStart = carousel.isBeginning;
+                            this.isEnd = carousel.isEnd;
+                        });
 
                     }
+                }))
+            });
+            document.addEventListener('alpine:init', () => {
+                Alpine.data('reviews', () => ({
+                    isStart: true,
+                    isEnd: false,
+                    carousel(id) {
 
+                        const carousel = new Swiper('.js-carousel-' + id, {
+                            slidesPerView: 1.2,
+                            spaceBetween: 0,
+                            navigation: {
+                                nextEl: '.js-carousel-next-' + id,
+                                prevEl: '.js-carousel-prev-' + id,
+                            },
+                            breakpoints: {
+                                640: {
+                                    slidesPerView: 1.4,
+                                },
+                                768: {
+                                    slidesPerView: 1.7,
+                                },
+                                1024: {
+                                    slidesPerView: 1.7,
+                                    slidesOffsetBefore: 30,
+                                },
+                                1280: {
+                                    slidesPerView: 2.3,
+                                    slidesOffsetBefore: 30,
+                                },
+                                2100: {
+                                    slidesPerView: 3.2,
+                                    slidesOffsetBefore: 30,
+                                }
+                            },
+                        });
 
-                });
+                        carousel.on('slideChange', () => {
+                            this.isStart = carousel.isBeginning;
+                            this.isEnd = carousel.isEnd;
+                        });
 
-
-
-            },
-            toggleSound(id) {
-
-                const video = document.querySelector('.js-video-' + id);
-                const videos = document.querySelectorAll('.js-video');
-
-                if (this.muted) {
-
-                    videos.forEach(video => {
-                        video.pause();
-                        video.muted = true;
-                    });
-
-                    video.play();
-
-                    video.muted = false;
-                    this.muted = false;
-
-                    this.$dispatch('component-cursor', {
-                        icon: 'volume-on'
-                    });
-
-                } else {
-
-                    video.muted = true;
-                    this.muted = true;
-
-                    this.$dispatch('component-cursor', {
-                        icon: 'volume-off'
-                    });
-
-                }
-
-
-            },
-            togglePreview(id, status) {
-
-                this.hovering = status;
-
-                const video = document.querySelector('.js-video-' + id);
-
-                if (this.hovering && this.muted) {
-
-                    video.currentTime = 0;
-                    video.play();
-
-                }
-
-                if (!this.hovering && this.muted) {
-
-                    video.pause();
-                    video.currentTime = 0;
-
-                }
-
-
-            },
-            togglePause(id) {
-
-                const video = document.querySelector('.js-video-' + id);
-                const videos = document.querySelectorAll('.js-video');
-
-                if (this.paused) {
-
-                    videos.forEach(video => {
-                        video.pause();
-                    });
-
-                    video.play();
-                    this.paused = false;
-                    this.playing = true;
-
-                } else {
-
-                    video.pause();
-                    this.paused = true;
-                    this.playing = false;
-
-                }
-
-            },
-            toggleVideo(id) {
-
-                const video = document.querySelector('.js-video-' + id);
-                const videos = document.querySelectorAll('.js-video');
-                const videosWithVolumeControls = document.querySelectorAll(
-                    '.js-video-with-volume-controls');
-                const videosPlaying = document.querySelectorAll('.js-video-playing');
-
-                videosPlaying.forEach(video => {
-                    if (!video.muted && !video.classList.contains('js-video-with-sound')) {
-                        video.muted = true;
-                    } else {
-                        video.pause();
-                        video.muted = true;
-                        video.currentTime = 0;
                     }
-                });
+                }));
+            });
+            document.addEventListener('alpine:init', () => {
+                Alpine.data('headingImageCarousel', () => ({
+                    carousel(id) {
 
-                if (this.playing) {
+                        const images = document.querySelectorAll('.js-image-' + id);
 
-                    video.pause();
-                    video.muted = true;
-                    this.playing = false;
-                    this.hovering = false;
-
-                } else {
-
-                    videosWithVolumeControls.forEach(video => {
-                        video.pause();
-                    });
-
-                    video.currentTime = 0;
-                    video.muted = false;
-                    video.play();
-                    this.playing = true;
-                    this.hovering = false;
-
-                }
-
-            }
-        }))
-    });
-    document.addEventListener('alpine:init', () => {
-        Alpine.data('videoQuoteColumns', () => ({
-            isStart: true,
-            isEnd: false,
-            carousel(id) {
-
-                const carousel = new Swiper(`.js-carousel-${id}`, {
-                    slidesPerView: 1.5,
-                    cssMode: true,
-                    navigation: {
-                        nextEl: '.js-carousel-next-' + id,
-                        prevEl: '.js-carousel-prev-' + id,
-                    },
-                    breakpoints: {
-                        768: {
-                            slidesPerView: 2.5,
-                        },
-                        960: {
+                        const carousel = new Swiper('.js-carousel-' + id, {
                             slidesPerView: 3,
-                        },
-                        1024: {
-                            slidesPerView: 3,
-                        },
-                        1280: {
-                            slidesPerView: 4,
-                        },
-                    },
-                });
-
-                carousel.on('slideChange', () => {
-                    this.isStart = carousel.isBeginning;
-                    this.isEnd = carousel.isEnd;
-                });
-
-            }
-        }))
-    });
-    document.addEventListener('alpine:init', () => {
-        Alpine.data('reviews', () => ({
-            isStart: true,
-            isEnd: false,
-            carousel(id) {
-
-                const carousel = new Swiper('.js-carousel-' + id, {
-                    slidesPerView: 1.2,
-                    spaceBetween: 0,
-                    navigation: {
-                        nextEl: '.js-carousel-next-' + id,
-                        prevEl: '.js-carousel-prev-' + id,
-                    },
-                    breakpoints: {
-                        640: {
-                            slidesPerView: 1.4,
-                        },
-                        768: {
-                            slidesPerView: 1.7,
-                        },
-                        1024: {
-                            slidesPerView: 1.7,
-                            slidesOffsetBefore: 30,
-                        },
-                        1280: {
-                            slidesPerView: 2.3,
-                            slidesOffsetBefore: 30,
-                        },
-                        2100: {
-                            slidesPerView: 3.2,
-                            slidesOffsetBefore: 30,
-                        }
-                    },
-                });
-
-                carousel.on('slideChange', () => {
-                    this.isStart = carousel.isBeginning;
-                    this.isEnd = carousel.isEnd;
-                });
-
-            }
-        }));
-    });
-    document.addEventListener('alpine:init', () => {
-        Alpine.data('headingImageCarousel', () => ({
-            carousel(id) {
-
-                const images = document.querySelectorAll('.js-image-' + id);
-
-                const carousel = new Swiper('.js-carousel-' + id, {
-                    slidesPerView: 3,
-                    loop: true,
-                    speed: 10000,
-                    autoplay: {
-                        delay: 0,
-                    },
-                    breakpoints: {
-                        640: {
-                            slidesPerView: 5,
-                        },
-                        1024: {
-                            slidesPerView: 6,
-                        },
-                        1280: {
-                            slidesPerView: 8,
-                        },
-                        2100: {
-                            slidesPerView: 9,
-                        }
-                    },
-
-                });
-
-                window.addEventListener('resize', () => {
-
-                    clearTimeout(window.resizedFinished);
-
-                    window.resizedFinished = setTimeout(function() {
-
-                        carousel.update();
-                        carousel.autoplay.start();
-
-                    }, 50);
-
-                });
-
-            }
-        }));
-    });
-    document.addEventListener('alpine:init', () => {
-        Alpine.data('modal414648', () => ({
-            visible: false,
-            setupModal(id) {
-
-                // Prevent keys from interferring with the video
-
-                navigator.mediaSession.setActionHandler('play', function() {});
-                navigator.mediaSession.setActionHandler('pause', function() {});
-                navigator.mediaSession.setActionHandler('seekbackward', function() {});
-                navigator.mediaSession.setActionHandler('seekforward', function() {});
-                navigator.mediaSession.setActionHandler('previoustrack', function() {});
-                navigator.mediaSession.setActionHandler('nexttrack', function() {});
-
-                // Get video elements
-
-                const video = document.querySelector(`.js-modal-video-${id}`);
-                const videoProgress = document.querySelector(`.js-modal-video-progress-${id}`);
-
-                const videoPlayPause = document.querySelector(`.js-modal-video-play-pause-${id}`);
-                const videoSound = document.querySelector(`.js-modal-video-sound-${id}`);
-
-                const videoPlayIcon = document.querySelector(`.js-modal-video-play-icon-${id}`);
-                const videoPauseIcon = document.querySelector(`.js-modal-video-pause-icon-${id}`);
-
-                const videoVolumeOnIcon = document.querySelector(
-                    `.js-modal-video-volume-on-icon-${id}`);
-                const videoVolumeOffIcon = document.querySelector(
-                    `.js-modal-video-volume-off-icon-${id}`);
-
-                // Video controls
-
-                if (video) {
-
-                    if (video.tagName == 'IFRAME') {
-
-                        const player = new Vimeo.Player(video);
-
-                        // Video controls
-
-                        videoSound.addEventListener('click', (event) => {
-
-                            player.getVolume().then(function(volume) {
-
-                                if (videoVolumeOnIcon.classList.contains(
-                                        'hidden')) {
-
-                                    player.setVolume(1);
-                                    videoVolumeOnIcon.classList.remove('hidden');
-                                    videoVolumeOffIcon.classList.add('hidden');
-
-                                } else {
-
-                                    player.setVolume(0);
-                                    videoVolumeOnIcon.classList.add('hidden');
-                                    videoVolumeOffIcon.classList.remove('hidden');
-
+                            loop: true,
+                            speed: 10000,
+                            autoplay: {
+                                delay: 0,
+                            },
+                            breakpoints: {
+                                640: {
+                                    slidesPerView: 5,
+                                },
+                                1024: {
+                                    slidesPerView: 6,
+                                },
+                                1280: {
+                                    slidesPerView: 8,
+                                },
+                                2100: {
+                                    slidesPerView: 9,
                                 }
-
-                            });
-
-                            event.preventDefault();
+                            },
 
                         });
 
-                        videoPlayPause.addEventListener('click', (event) => {
+                        window.addEventListener('resize', () => {
 
-                            player.getPaused().then(function(paused) {
+                            clearTimeout(window.resizedFinished);
 
-                                if (paused) {
+                            window.resizedFinished = setTimeout(function() {
 
-                                    player.play();
-                                    videoPlayIcon.classList.add('hidden');
-                                    videoPauseIcon.classList.remove('hidden');
+                                carousel.update();
+                                carousel.autoplay.start();
 
-                                } else {
-
-                                    player.pause();
-                                    videoPlayIcon.classList.remove('hidden');
-                                    videoPauseIcon.classList.add('hidden');
-
-                                }
-
-                            });
-
-                            event.preventDefault();
-
-                        });
-
-                    } else {
-
-                        videoSound.addEventListener('click', (event) => {
-
-                            if (videoVolumeOnIcon.classList.contains('hidden')) {
-
-                                video.muted = false;
-                                videoVolumeOnIcon.classList.remove('hidden');
-                                videoVolumeOffIcon.classList.add('hidden');
-
-                            } else {
-
-                                video.muted = true;
-                                videoVolumeOnIcon.classList.add('hidden');
-                                videoVolumeOffIcon.classList.remove('hidden');
-
-                            }
-
-                            event.preventDefault();
-
-                        });
-
-                        videoPlayPause.addEventListener('click', (event) => {
-
-                            if (video.paused) {
-
-                                video.play();
-                                videoPlayIcon.classList.add('hidden');
-                                videoPauseIcon.classList.remove('hidden');
-
-                            } else {
-
-                                video.pause();
-                                videoPlayIcon.classList.remove('hidden');
-                                videoPauseIcon.classList.add('hidden');
-
-                            }
-
-                            event.preventDefault();
+                            }, 50);
 
                         });
 
                     }
+                }));
+            });
+            document.addEventListener('alpine:init', () => {
+                Alpine.data('modal414648', () => ({
+                    visible: false,
+                    setupModal(id) {
 
-                }
+                        // Prevent keys from interferring with the video
 
-                this.$watch('visible', function(value) {
+                        navigator.mediaSession.setActionHandler('play', function() {});
+                        navigator.mediaSession.setActionHandler('pause', function() {});
+                        navigator.mediaSession.setActionHandler('seekbackward', function() {});
+                        navigator.mediaSession.setActionHandler('seekforward', function() {});
+                        navigator.mediaSession.setActionHandler('previoustrack', function() {});
+                        navigator.mediaSession.setActionHandler('nexttrack', function() {});
 
-                    if (value != false) {
+                        // Get video elements
 
-                        document.body.classList.add('overflow-hidden');
+                        const video = document.querySelector(`.js-modal-video-${id}`);
+                        const videoProgress = document.querySelector(`.js-modal-video-progress-${id}`);
 
-                        // Video (Vimeo)
+                        const videoPlayPause = document.querySelector(`.js-modal-video-play-pause-${id}`);
+                        const videoSound = document.querySelector(`.js-modal-video-sound-${id}`);
+
+                        const videoPlayIcon = document.querySelector(`.js-modal-video-play-icon-${id}`);
+                        const videoPauseIcon = document.querySelector(`.js-modal-video-pause-icon-${id}`);
+
+                        const videoVolumeOnIcon = document.querySelector(
+                            `.js-modal-video-volume-on-icon-${id}`);
+                        const videoVolumeOffIcon = document.querySelector(
+                            `.js-modal-video-volume-off-icon-${id}`);
+
+                        // Video controls
 
                         if (video) {
 
@@ -7982,241 +7494,189 @@ pr-8 mb-5 | lg:pr-16
 
                                 const player = new Vimeo.Player(video);
 
-                                // Initialise video
+                                // Video controls
 
-                                player.setCurrentTime(0);
-                                player.play();
-                                player.setVolume(1);
+                                videoSound.addEventListener('click', (event) => {
 
-                                // Progress bar
+                                    player.getVolume().then(function(volume) {
 
-                                setInterval(() => {
+                                        if (videoVolumeOnIcon.classList.contains(
+                                                'hidden')) {
 
-                                    if (videoProgress) {
+                                            player.setVolume(1);
+                                            videoVolumeOnIcon.classList.remove('hidden');
+                                            videoVolumeOffIcon.classList.add('hidden');
 
-                                        player.getCurrentTime().then(function(
-                                            seconds) {
+                                        } else {
 
-                                            player.getDuration().then(
-                                                function(duration) {
+                                            player.setVolume(0);
+                                            videoVolumeOnIcon.classList.add('hidden');
+                                            videoVolumeOffIcon.classList.remove('hidden');
 
-                                                    videoProgress.style
-                                                        .width = (
-                                                            seconds /
-                                                            duration) *
-                                                        100 + '%';
+                                        }
 
-                                                });
+                                    });
 
-                                        });
+                                    event.preventDefault();
 
-                                    }
+                                });
 
-                                }, 100);
+                                videoPlayPause.addEventListener('click', (event) => {
+
+                                    player.getPaused().then(function(paused) {
+
+                                        if (paused) {
+
+                                            player.play();
+                                            videoPlayIcon.classList.add('hidden');
+                                            videoPauseIcon.classList.remove('hidden');
+
+                                        } else {
+
+                                            player.pause();
+                                            videoPlayIcon.classList.remove('hidden');
+                                            videoPauseIcon.classList.add('hidden');
+
+                                        }
+
+                                    });
+
+                                    event.preventDefault();
+
+                                });
 
                             } else {
 
-                                // Initialise video
+                                videoSound.addEventListener('click', (event) => {
 
-                                video.currentTime = 0;
-                                video.play();
+                                    if (videoVolumeOnIcon.classList.contains('hidden')) {
 
-                                // Progress bar
+                                        video.muted = false;
+                                        videoVolumeOnIcon.classList.remove('hidden');
+                                        videoVolumeOffIcon.classList.add('hidden');
 
-                                setInterval(() => {
+                                    } else {
 
-                                    if (videoProgress) {
-
-                                        videoProgress.style.width = (video
-                                                .currentTime / video.duration) *
-                                            100 + '%';
+                                        video.muted = true;
+                                        videoVolumeOnIcon.classList.add('hidden');
+                                        videoVolumeOffIcon.classList.remove('hidden');
 
                                     }
 
-                                }, 100);
+                                    event.preventDefault();
+
+                                });
+
+                                videoPlayPause.addEventListener('click', (event) => {
+
+                                    if (video.paused) {
+
+                                        video.play();
+                                        videoPlayIcon.classList.add('hidden');
+                                        videoPauseIcon.classList.remove('hidden');
+
+                                    } else {
+
+                                        video.pause();
+                                        videoPlayIcon.classList.remove('hidden');
+                                        videoPauseIcon.classList.add('hidden');
+
+                                    }
+
+                                    event.preventDefault();
+
+                                });
 
                             }
 
                         }
 
+                        this.$watch('visible', function(value) {
 
-                    } else {
+                            if (value != false) {
 
-                        document.body.classList.remove('overflow-hidden');
-                    }
+                                document.body.classList.add('overflow-hidden');
 
-                });
+                                // Video (Vimeo)
 
-            },
-            closeModal(id) {
+                                if (video) {
 
-                this.visible = false;
+                                    if (video.tagName == 'IFRAME') {
 
-                const video = document.querySelector('.js-modal-video-' + id);
-                const videoProgress = document.querySelector('.js-modal-video-progress-' + id);
+                                        const player = new Vimeo.Player(video);
 
-                if (video) {
+                                        // Initialise video
 
-                    if (video.tagName == 'IFRAME') {
+                                        player.setCurrentTime(0);
+                                        player.play();
+                                        player.setVolume(1);
 
-                        const player = new Vimeo.Player(video);
+                                        // Progress bar
 
-                        player.pause();
+                                        setInterval(() => {
 
+                                            if (videoProgress) {
 
-                    } else {
+                                                player.getCurrentTime().then(function(
+                                                    seconds) {
 
-                        video.pause();
-                        videoProgress.style.width = '0%';
+                                                    player.getDuration().then(
+                                                        function(duration) {
 
-                    }
-                }
+                                                            videoProgress.style
+                                                                .width = (
+                                                                    seconds /
+                                                                    duration) *
+                                                                100 + '%';
 
-            }
-        }))
-    });
-    document.addEventListener('alpine:init', () => {
-        Alpine.data('modal167022', () => ({
-            visible: false,
-            setupModal(id) {
+                                                        });
 
-                // Prevent keys from interferring with the video
+                                                });
 
-                navigator.mediaSession.setActionHandler('play', function() {});
-                navigator.mediaSession.setActionHandler('pause', function() {});
-                navigator.mediaSession.setActionHandler('seekbackward', function() {});
-                navigator.mediaSession.setActionHandler('seekforward', function() {});
-                navigator.mediaSession.setActionHandler('previoustrack', function() {});
-                navigator.mediaSession.setActionHandler('nexttrack', function() {});
+                                            }
 
-                // Get video elements
+                                        }, 100);
 
-                const video = document.querySelector(`.js-modal-video-${id}`);
-                const videoProgress = document.querySelector(`.js-modal-video-progress-${id}`);
+                                    } else {
 
-                const videoPlayPause = document.querySelector(`.js-modal-video-play-pause-${id}`);
-                const videoSound = document.querySelector(`.js-modal-video-sound-${id}`);
+                                        // Initialise video
 
-                const videoPlayIcon = document.querySelector(`.js-modal-video-play-icon-${id}`);
-                const videoPauseIcon = document.querySelector(`.js-modal-video-pause-icon-${id}`);
+                                        video.currentTime = 0;
+                                        video.play();
 
-                const videoVolumeOnIcon = document.querySelector(
-                    `.js-modal-video-volume-on-icon-${id}`);
-                const videoVolumeOffIcon = document.querySelector(
-                    `.js-modal-video-volume-off-icon-${id}`);
+                                        // Progress bar
 
-                // Video controls
+                                        setInterval(() => {
 
-                if (video) {
+                                            if (videoProgress) {
 
-                    if (video.tagName == 'IFRAME') {
+                                                videoProgress.style.width = (video
+                                                        .currentTime / video.duration) *
+                                                    100 + '%';
 
-                        const player = new Vimeo.Player(video);
+                                            }
 
-                        // Video controls
+                                        }, 100);
 
-                        videoSound.addEventListener('click', (event) => {
-
-                            player.getVolume().then(function(volume) {
-
-                                if (videoVolumeOnIcon.classList.contains(
-                                        'hidden')) {
-
-                                    player.setVolume(1);
-                                    videoVolumeOnIcon.classList.remove('hidden');
-                                    videoVolumeOffIcon.classList.add('hidden');
-
-                                } else {
-
-                                    player.setVolume(0);
-                                    videoVolumeOnIcon.classList.add('hidden');
-                                    videoVolumeOffIcon.classList.remove('hidden');
+                                    }
 
                                 }
 
-                            });
-
-                            event.preventDefault();
-
-                        });
-
-                        videoPlayPause.addEventListener('click', (event) => {
-
-                            player.getPaused().then(function(paused) {
-
-                                if (paused) {
-
-                                    player.play();
-                                    videoPlayIcon.classList.add('hidden');
-                                    videoPauseIcon.classList.remove('hidden');
-
-                                } else {
-
-                                    player.pause();
-                                    videoPlayIcon.classList.remove('hidden');
-                                    videoPauseIcon.classList.add('hidden');
-
-                                }
-
-                            });
-
-                            event.preventDefault();
-
-                        });
-
-                    } else {
-
-                        videoSound.addEventListener('click', (event) => {
-
-                            if (videoVolumeOnIcon.classList.contains('hidden')) {
-
-                                video.muted = false;
-                                videoVolumeOnIcon.classList.remove('hidden');
-                                videoVolumeOffIcon.classList.add('hidden');
 
                             } else {
 
-                                video.muted = true;
-                                videoVolumeOnIcon.classList.add('hidden');
-                                videoVolumeOffIcon.classList.remove('hidden');
-
+                                document.body.classList.remove('overflow-hidden');
                             }
-
-                            event.preventDefault();
 
                         });
 
-                        videoPlayPause.addEventListener('click', (event) => {
+                    },
+                    closeModal(id) {
 
-                            if (video.paused) {
+                        this.visible = false;
 
-                                video.play();
-                                videoPlayIcon.classList.add('hidden');
-                                videoPauseIcon.classList.remove('hidden');
-
-                            } else {
-
-                                video.pause();
-                                videoPlayIcon.classList.remove('hidden');
-                                videoPauseIcon.classList.add('hidden');
-
-                            }
-
-                            event.preventDefault();
-
-                        });
-
-                    }
-
-                }
-
-                this.$watch('visible', function(value) {
-
-                    if (value != false) {
-
-                        document.body.classList.add('overflow-hidden');
-
-                        // Video (Vimeo)
+                        const video = document.querySelector('.js-modal-video-' + id);
+                        const videoProgress = document.querySelector('.js-modal-video-progress-' + id);
 
                         if (video) {
 
@@ -8224,241 +7684,51 @@ pr-8 mb-5 | lg:pr-16
 
                                 const player = new Vimeo.Player(video);
 
-                                // Initialise video
+                                player.pause();
 
-                                player.setCurrentTime(0);
-                                player.play();
-                                player.setVolume(1);
-
-                                // Progress bar
-
-                                setInterval(() => {
-
-                                    if (videoProgress) {
-
-                                        player.getCurrentTime().then(function(
-                                            seconds) {
-
-                                            player.getDuration().then(
-                                                function(duration) {
-
-                                                    videoProgress.style
-                                                        .width = (
-                                                            seconds /
-                                                            duration) *
-                                                        100 + '%';
-
-                                                });
-
-                                        });
-
-                                    }
-
-                                }, 100);
-
-                            } else {
-
-                                // Initialise video
-
-                                video.currentTime = 0;
-                                video.play();
-
-                                // Progress bar
-
-                                setInterval(() => {
-
-                                    if (videoProgress) {
-
-                                        videoProgress.style.width = (video
-                                                .currentTime / video.duration) *
-                                            100 + '%';
-
-                                    }
-
-                                }, 100);
-
-                            }
-
-                        }
-
-
-                    } else {
-
-                        document.body.classList.remove('overflow-hidden');
-                    }
-
-                });
-
-            },
-            closeModal(id) {
-
-                this.visible = false;
-
-                const video = document.querySelector('.js-modal-video-' + id);
-                const videoProgress = document.querySelector('.js-modal-video-progress-' + id);
-
-                if (video) {
-
-                    if (video.tagName == 'IFRAME') {
-
-                        const player = new Vimeo.Player(video);
-
-                        player.pause();
-
-
-                    } else {
-
-                        video.pause();
-                        videoProgress.style.width = '0%';
-
-                    }
-                }
-
-            }
-        }))
-    });
-    document.addEventListener('alpine:init', () => {
-        Alpine.data('modal168396', () => ({
-            visible: false,
-            setupModal(id) {
-
-                // Prevent keys from interferring with the video
-
-                navigator.mediaSession.setActionHandler('play', function() {});
-                navigator.mediaSession.setActionHandler('pause', function() {});
-                navigator.mediaSession.setActionHandler('seekbackward', function() {});
-                navigator.mediaSession.setActionHandler('seekforward', function() {});
-                navigator.mediaSession.setActionHandler('previoustrack', function() {});
-                navigator.mediaSession.setActionHandler('nexttrack', function() {});
-
-                // Get video elements
-
-                const video = document.querySelector(`.js-modal-video-${id}`);
-                const videoProgress = document.querySelector(`.js-modal-video-progress-${id}`);
-
-                const videoPlayPause = document.querySelector(`.js-modal-video-play-pause-${id}`);
-                const videoSound = document.querySelector(`.js-modal-video-sound-${id}`);
-
-                const videoPlayIcon = document.querySelector(`.js-modal-video-play-icon-${id}`);
-                const videoPauseIcon = document.querySelector(`.js-modal-video-pause-icon-${id}`);
-
-                const videoVolumeOnIcon = document.querySelector(
-                    `.js-modal-video-volume-on-icon-${id}`);
-                const videoVolumeOffIcon = document.querySelector(
-                    `.js-modal-video-volume-off-icon-${id}`);
-
-                // Video controls
-
-                if (video) {
-
-                    if (video.tagName == 'IFRAME') {
-
-                        const player = new Vimeo.Player(video);
-
-                        // Video controls
-
-                        videoSound.addEventListener('click', (event) => {
-
-                            player.getVolume().then(function(volume) {
-
-                                if (videoVolumeOnIcon.classList.contains(
-                                        'hidden')) {
-
-                                    player.setVolume(1);
-                                    videoVolumeOnIcon.classList.remove('hidden');
-                                    videoVolumeOffIcon.classList.add('hidden');
-
-                                } else {
-
-                                    player.setVolume(0);
-                                    videoVolumeOnIcon.classList.add('hidden');
-                                    videoVolumeOffIcon.classList.remove('hidden');
-
-                                }
-
-                            });
-
-                            event.preventDefault();
-
-                        });
-
-                        videoPlayPause.addEventListener('click', (event) => {
-
-                            player.getPaused().then(function(paused) {
-
-                                if (paused) {
-
-                                    player.play();
-                                    videoPlayIcon.classList.add('hidden');
-                                    videoPauseIcon.classList.remove('hidden');
-
-                                } else {
-
-                                    player.pause();
-                                    videoPlayIcon.classList.remove('hidden');
-                                    videoPauseIcon.classList.add('hidden');
-
-                                }
-
-                            });
-
-                            event.preventDefault();
-
-                        });
-
-                    } else {
-
-                        videoSound.addEventListener('click', (event) => {
-
-                            if (videoVolumeOnIcon.classList.contains('hidden')) {
-
-                                video.muted = false;
-                                videoVolumeOnIcon.classList.remove('hidden');
-                                videoVolumeOffIcon.classList.add('hidden');
-
-                            } else {
-
-                                video.muted = true;
-                                videoVolumeOnIcon.classList.add('hidden');
-                                videoVolumeOffIcon.classList.remove('hidden');
-
-                            }
-
-                            event.preventDefault();
-
-                        });
-
-                        videoPlayPause.addEventListener('click', (event) => {
-
-                            if (video.paused) {
-
-                                video.play();
-                                videoPlayIcon.classList.add('hidden');
-                                videoPauseIcon.classList.remove('hidden');
 
                             } else {
 
                                 video.pause();
-                                videoPlayIcon.classList.remove('hidden');
-                                videoPauseIcon.classList.add('hidden');
+                                videoProgress.style.width = '0%';
 
                             }
-
-                            event.preventDefault();
-
-                        });
+                        }
 
                     }
+                }))
+            });
+            document.addEventListener('alpine:init', () => {
+                Alpine.data('modal167022', () => ({
+                    visible: false,
+                    setupModal(id) {
 
-                }
+                        // Prevent keys from interferring with the video
 
-                this.$watch('visible', function(value) {
+                        navigator.mediaSession.setActionHandler('play', function() {});
+                        navigator.mediaSession.setActionHandler('pause', function() {});
+                        navigator.mediaSession.setActionHandler('seekbackward', function() {});
+                        navigator.mediaSession.setActionHandler('seekforward', function() {});
+                        navigator.mediaSession.setActionHandler('previoustrack', function() {});
+                        navigator.mediaSession.setActionHandler('nexttrack', function() {});
 
-                    if (value != false) {
+                        // Get video elements
 
-                        document.body.classList.add('overflow-hidden');
+                        const video = document.querySelector(`.js-modal-video-${id}`);
+                        const videoProgress = document.querySelector(`.js-modal-video-progress-${id}`);
 
-                        // Video (Vimeo)
+                        const videoPlayPause = document.querySelector(`.js-modal-video-play-pause-${id}`);
+                        const videoSound = document.querySelector(`.js-modal-video-sound-${id}`);
+
+                        const videoPlayIcon = document.querySelector(`.js-modal-video-play-icon-${id}`);
+                        const videoPauseIcon = document.querySelector(`.js-modal-video-pause-icon-${id}`);
+
+                        const videoVolumeOnIcon = document.querySelector(
+                            `.js-modal-video-volume-on-icon-${id}`);
+                        const videoVolumeOffIcon = document.querySelector(
+                            `.js-modal-video-volume-off-icon-${id}`);
+
+                        // Video controls
 
                         if (video) {
 
@@ -8466,196 +7736,549 @@ pr-8 mb-5 | lg:pr-16
 
                                 const player = new Vimeo.Player(video);
 
-                                // Initialise video
+                                // Video controls
 
-                                player.setCurrentTime(0);
-                                player.play();
-                                player.setVolume(1);
+                                videoSound.addEventListener('click', (event) => {
 
-                                // Progress bar
+                                    player.getVolume().then(function(volume) {
 
-                                setInterval(() => {
+                                        if (videoVolumeOnIcon.classList.contains(
+                                                'hidden')) {
 
-                                    if (videoProgress) {
+                                            player.setVolume(1);
+                                            videoVolumeOnIcon.classList.remove('hidden');
+                                            videoVolumeOffIcon.classList.add('hidden');
 
-                                        player.getCurrentTime().then(function(
-                                            seconds) {
+                                        } else {
 
-                                            player.getDuration().then(
-                                                function(duration) {
+                                            player.setVolume(0);
+                                            videoVolumeOnIcon.classList.add('hidden');
+                                            videoVolumeOffIcon.classList.remove('hidden');
 
-                                                    videoProgress.style
-                                                        .width = (
-                                                            seconds /
-                                                            duration) *
-                                                        100 + '%';
+                                        }
 
-                                                });
+                                    });
 
-                                        });
+                                    event.preventDefault();
 
-                                    }
+                                });
 
-                                }, 100);
+                                videoPlayPause.addEventListener('click', (event) => {
+
+                                    player.getPaused().then(function(paused) {
+
+                                        if (paused) {
+
+                                            player.play();
+                                            videoPlayIcon.classList.add('hidden');
+                                            videoPauseIcon.classList.remove('hidden');
+
+                                        } else {
+
+                                            player.pause();
+                                            videoPlayIcon.classList.remove('hidden');
+                                            videoPauseIcon.classList.add('hidden');
+
+                                        }
+
+                                    });
+
+                                    event.preventDefault();
+
+                                });
 
                             } else {
 
-                                // Initialise video
+                                videoSound.addEventListener('click', (event) => {
 
-                                video.currentTime = 0;
-                                video.play();
+                                    if (videoVolumeOnIcon.classList.contains('hidden')) {
 
-                                // Progress bar
+                                        video.muted = false;
+                                        videoVolumeOnIcon.classList.remove('hidden');
+                                        videoVolumeOffIcon.classList.add('hidden');
 
-                                setInterval(() => {
+                                    } else {
 
-                                    if (videoProgress) {
-
-                                        videoProgress.style.width = (video
-                                                .currentTime / video.duration) *
-                                            100 + '%';
+                                        video.muted = true;
+                                        videoVolumeOnIcon.classList.add('hidden');
+                                        videoVolumeOffIcon.classList.remove('hidden');
 
                                     }
 
-                                }, 100);
+                                    event.preventDefault();
+
+                                });
+
+                                videoPlayPause.addEventListener('click', (event) => {
+
+                                    if (video.paused) {
+
+                                        video.play();
+                                        videoPlayIcon.classList.add('hidden');
+                                        videoPauseIcon.classList.remove('hidden');
+
+                                    } else {
+
+                                        video.pause();
+                                        videoPlayIcon.classList.remove('hidden');
+                                        videoPauseIcon.classList.add('hidden');
+
+                                    }
+
+                                    event.preventDefault();
+
+                                });
 
                             }
 
                         }
 
+                        this.$watch('visible', function(value) {
 
-                    } else {
+                            if (value != false) {
 
-                        document.body.classList.remove('overflow-hidden');
-                    }
+                                document.body.classList.add('overflow-hidden');
 
-                });
+                                // Video (Vimeo)
 
-            },
-            closeModal(id) {
+                                if (video) {
 
-                this.visible = false;
+                                    if (video.tagName == 'IFRAME') {
 
-                const video = document.querySelector('.js-modal-video-' + id);
-                const videoProgress = document.querySelector('.js-modal-video-progress-' + id);
+                                        const player = new Vimeo.Player(video);
 
-                if (video) {
+                                        // Initialise video
 
-                    if (video.tagName == 'IFRAME') {
+                                        player.setCurrentTime(0);
+                                        player.play();
+                                        player.setVolume(1);
 
-                        const player = new Vimeo.Player(video);
+                                        // Progress bar
 
-                        player.pause();
+                                        setInterval(() => {
+
+                                            if (videoProgress) {
+
+                                                player.getCurrentTime().then(function(
+                                                    seconds) {
+
+                                                    player.getDuration().then(
+                                                        function(duration) {
+
+                                                            videoProgress.style
+                                                                .width = (
+                                                                    seconds /
+                                                                    duration) *
+                                                                100 + '%';
+
+                                                        });
+
+                                                });
+
+                                            }
+
+                                        }, 100);
+
+                                    } else {
+
+                                        // Initialise video
+
+                                        video.currentTime = 0;
+                                        video.play();
+
+                                        // Progress bar
+
+                                        setInterval(() => {
+
+                                            if (videoProgress) {
+
+                                                videoProgress.style.width = (video
+                                                        .currentTime / video.duration) *
+                                                    100 + '%';
+
+                                            }
+
+                                        }, 100);
+
+                                    }
+
+                                }
 
 
-                    } else {
+                            } else {
 
-                        video.pause();
-                        videoProgress.style.width = '0%';
+                                document.body.classList.remove('overflow-hidden');
+                            }
 
-                    }
-                }
+                        });
 
-            }
-        }))
-    });
-    document.addEventListener('alpine:init', () => {
-        Alpine.data('pageLinksCarousel', () => ({
-            isStart: true,
-            isEnd: false,
-            carousel(id) {
-
-                const carousel = new Swiper('.js-carousel-' + id, {
-                    slidesPerView: 1.2,
-                    spaceBetween: 0,
-                    navigation: {
-                        nextEl: '.js-carousel-next-' + id,
-                        prevEl: '.js-carousel-prev-' + id,
                     },
-                    breakpoints: {
-                        640: {
-                            slidesPerView: 1.7,
-                        },
-                        1024: {
-                            slidesPerView: 2.2,
-                        },
-                        1800: {
-                            slidesPerView: 2.5,
+                    closeModal(id) {
+
+                        this.visible = false;
+
+                        const video = document.querySelector('.js-modal-video-' + id);
+                        const videoProgress = document.querySelector('.js-modal-video-progress-' + id);
+
+                        if (video) {
+
+                            if (video.tagName == 'IFRAME') {
+
+                                const player = new Vimeo.Player(video);
+
+                                player.pause();
+
+
+                            } else {
+
+                                video.pause();
+                                videoProgress.style.width = '0%';
+
+                            }
                         }
+
+                    }
+                }))
+            });
+            document.addEventListener('alpine:init', () => {
+                Alpine.data('modal168396', () => ({
+                    visible: false,
+                    setupModal(id) {
+
+                        // Prevent keys from interferring with the video
+
+                        navigator.mediaSession.setActionHandler('play', function() {});
+                        navigator.mediaSession.setActionHandler('pause', function() {});
+                        navigator.mediaSession.setActionHandler('seekbackward', function() {});
+                        navigator.mediaSession.setActionHandler('seekforward', function() {});
+                        navigator.mediaSession.setActionHandler('previoustrack', function() {});
+                        navigator.mediaSession.setActionHandler('nexttrack', function() {});
+
+                        // Get video elements
+
+                        const video = document.querySelector(`.js-modal-video-${id}`);
+                        const videoProgress = document.querySelector(`.js-modal-video-progress-${id}`);
+
+                        const videoPlayPause = document.querySelector(`.js-modal-video-play-pause-${id}`);
+                        const videoSound = document.querySelector(`.js-modal-video-sound-${id}`);
+
+                        const videoPlayIcon = document.querySelector(`.js-modal-video-play-icon-${id}`);
+                        const videoPauseIcon = document.querySelector(`.js-modal-video-pause-icon-${id}`);
+
+                        const videoVolumeOnIcon = document.querySelector(
+                            `.js-modal-video-volume-on-icon-${id}`);
+                        const videoVolumeOffIcon = document.querySelector(
+                            `.js-modal-video-volume-off-icon-${id}`);
+
+                        // Video controls
+
+                        if (video) {
+
+                            if (video.tagName == 'IFRAME') {
+
+                                const player = new Vimeo.Player(video);
+
+                                // Video controls
+
+                                videoSound.addEventListener('click', (event) => {
+
+                                    player.getVolume().then(function(volume) {
+
+                                        if (videoVolumeOnIcon.classList.contains(
+                                                'hidden')) {
+
+                                            player.setVolume(1);
+                                            videoVolumeOnIcon.classList.remove('hidden');
+                                            videoVolumeOffIcon.classList.add('hidden');
+
+                                        } else {
+
+                                            player.setVolume(0);
+                                            videoVolumeOnIcon.classList.add('hidden');
+                                            videoVolumeOffIcon.classList.remove('hidden');
+
+                                        }
+
+                                    });
+
+                                    event.preventDefault();
+
+                                });
+
+                                videoPlayPause.addEventListener('click', (event) => {
+
+                                    player.getPaused().then(function(paused) {
+
+                                        if (paused) {
+
+                                            player.play();
+                                            videoPlayIcon.classList.add('hidden');
+                                            videoPauseIcon.classList.remove('hidden');
+
+                                        } else {
+
+                                            player.pause();
+                                            videoPlayIcon.classList.remove('hidden');
+                                            videoPauseIcon.classList.add('hidden');
+
+                                        }
+
+                                    });
+
+                                    event.preventDefault();
+
+                                });
+
+                            } else {
+
+                                videoSound.addEventListener('click', (event) => {
+
+                                    if (videoVolumeOnIcon.classList.contains('hidden')) {
+
+                                        video.muted = false;
+                                        videoVolumeOnIcon.classList.remove('hidden');
+                                        videoVolumeOffIcon.classList.add('hidden');
+
+                                    } else {
+
+                                        video.muted = true;
+                                        videoVolumeOnIcon.classList.add('hidden');
+                                        videoVolumeOffIcon.classList.remove('hidden');
+
+                                    }
+
+                                    event.preventDefault();
+
+                                });
+
+                                videoPlayPause.addEventListener('click', (event) => {
+
+                                    if (video.paused) {
+
+                                        video.play();
+                                        videoPlayIcon.classList.add('hidden');
+                                        videoPauseIcon.classList.remove('hidden');
+
+                                    } else {
+
+                                        video.pause();
+                                        videoPlayIcon.classList.remove('hidden');
+                                        videoPauseIcon.classList.add('hidden');
+
+                                    }
+
+                                    event.preventDefault();
+
+                                });
+
+                            }
+
+                        }
+
+                        this.$watch('visible', function(value) {
+
+                            if (value != false) {
+
+                                document.body.classList.add('overflow-hidden');
+
+                                // Video (Vimeo)
+
+                                if (video) {
+
+                                    if (video.tagName == 'IFRAME') {
+
+                                        const player = new Vimeo.Player(video);
+
+                                        // Initialise video
+
+                                        player.setCurrentTime(0);
+                                        player.play();
+                                        player.setVolume(1);
+
+                                        // Progress bar
+
+                                        setInterval(() => {
+
+                                            if (videoProgress) {
+
+                                                player.getCurrentTime().then(function(
+                                                    seconds) {
+
+                                                    player.getDuration().then(
+                                                        function(duration) {
+
+                                                            videoProgress.style
+                                                                .width = (
+                                                                    seconds /
+                                                                    duration) *
+                                                                100 + '%';
+
+                                                        });
+
+                                                });
+
+                                            }
+
+                                        }, 100);
+
+                                    } else {
+
+                                        // Initialise video
+
+                                        video.currentTime = 0;
+                                        video.play();
+
+                                        // Progress bar
+
+                                        setInterval(() => {
+
+                                            if (videoProgress) {
+
+                                                videoProgress.style.width = (video
+                                                        .currentTime / video.duration) *
+                                                    100 + '%';
+
+                                            }
+
+                                        }, 100);
+
+                                    }
+
+                                }
+
+
+                            } else {
+
+                                document.body.classList.remove('overflow-hidden');
+                            }
+
+                        });
+
                     },
-                });
+                    closeModal(id) {
 
-                carousel.on('slideChange', () => {
-                    this.isStart = carousel.isBeginning;
-                    this.isEnd = carousel.isEnd;
-                });
+                        this.visible = false;
 
-            }
-        }));
-    });
-    document.addEventListener('alpine:init', () => {
-        Alpine.data('app', () => ({
-            viewportHeight: null,
-            gaEvents() {
+                        const video = document.querySelector('.js-modal-video-' + id);
+                        const videoProgress = document.querySelector('.js-modal-video-progress-' + id);
 
-                document.querySelectorAll('a[href^="mailto"]')
-                    .forEach(element => {
+                        if (video) {
 
-                        element.addEventListener('click', (event) => {
-                            window.dataLayer = window.dataLayer || [];
-                            window.dataLayer.push({
-                                'event': 'email_lead'
+                            if (video.tagName == 'IFRAME') {
+
+                                const player = new Vimeo.Player(video);
+
+                                player.pause();
+
+
+                            } else {
+
+                                video.pause();
+                                videoProgress.style.width = '0%';
+
+                            }
+                        }
+
+                    }
+                }))
+            });
+            document.addEventListener('alpine:init', () => {
+                Alpine.data('pageLinksCarousel', () => ({
+                    isStart: true,
+                    isEnd: false,
+                    carousel(id) {
+
+                        const carousel = new Swiper('.js-carousel-' + id, {
+                            slidesPerView: 1.2,
+                            spaceBetween: 0,
+                            navigation: {
+                                nextEl: '.js-carousel-next-' + id,
+                                prevEl: '.js-carousel-prev-' + id,
+                            },
+                            breakpoints: {
+                                640: {
+                                    slidesPerView: 1.7,
+                                },
+                                1024: {
+                                    slidesPerView: 2.2,
+                                },
+                                1800: {
+                                    slidesPerView: 2.5,
+                                }
+                            },
+                        });
+
+                        carousel.on('slideChange', () => {
+                            this.isStart = carousel.isBeginning;
+                            this.isEnd = carousel.isEnd;
+                        });
+
+                    }
+                }));
+            });
+            document.addEventListener('alpine:init', () => {
+                Alpine.data('app', () => ({
+                    viewportHeight: null,
+                    gaEvents() {
+
+                        document.querySelectorAll('a[href^="mailto"]')
+                            .forEach(element => {
+
+                                element.addEventListener('click', (event) => {
+                                    window.dataLayer = window.dataLayer || [];
+                                    window.dataLayer.push({
+                                        'event': 'email_lead'
+                                    });
+                                })
+
                             });
-                        })
 
-                    });
+                        document.querySelectorAll('a[href^="tel:"]')
+                            .forEach(element => {
 
-                document.querySelectorAll('a[href^="tel:"]')
-                    .forEach(element => {
+                                element.addEventListener('click', (event) => {
+                                    window.dataLayer = window.dataLayer || [];
+                                    window.dataLayer.push({
+                                        'event': 'phone_lead'
+                                    });
+                                })
 
-                        element.addEventListener('click', (event) => {
-                            window.dataLayer = window.dataLayer || [];
-                            window.dataLayer.push({
-                                'event': 'phone_lead'
                             });
-                        })
 
-                    });
+                        document.querySelectorAll('.js-social-link')
+                            .forEach(element => {
 
-                document.querySelectorAll('.js-social-link')
-                    .forEach(element => {
+                                element.addEventListener('click', (event) => {
+                                    window.dataLayer = window.dataLayer || [];
+                                    window.dataLayer.push({
+                                        'event': 'social_links'
+                                    });
+                                })
 
-                        element.addEventListener('click', (event) => {
-                            window.dataLayer = window.dataLayer || [];
-                            window.dataLayer.push({
-                                'event': 'social_links'
                             });
-                        })
-
-                    });
 
 
 
 
 
 
-            },
-            baseInit() {
+                    },
+                    baseInit() {
 
-                viewportHeight = window.innerHeight * 0.01;
-                document.documentElement.style.setProperty('--vh', `${viewportHeight}px`);
+                        viewportHeight = window.innerHeight * 0.01;
+                        document.documentElement.style.setProperty('--vh', `${viewportHeight}px`);
 
-                const darkMode = Cookies.get('darkMode');
+                        const darkMode = Cookies.get('darkMode');
 
-                if (darkMode == 'true') {
-                    document.querySelector('html').classList.add('dark');
-                }
+                        if (darkMode == 'true') {
+                            document.querySelector('html').classList.add('dark');
+                        }
 
 
-            }
-        }))
-    });
-    </script>
+                    }
+                }))
+            });
+        </script>
 </body>
 
 </html><!-- Cached by Blitz on 2025-08-19T03:01:04+01:00 -->

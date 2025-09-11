@@ -380,7 +380,7 @@ usort($menuListItems, function ($a, $b) {
                         <div class="inline-flex items-center space-x-2 relative z-20 mb-3 px-3 mt-px | lg:px-6">
                             <div class="bg-gray-600 | dark:bg-grayDark-100 w-1.5 h-1.5 rounded-full"></div>
                             <div class="font-light text-sm | lg:text-base text-gray-600 dark:text-grayDark-100">
-                                Hiya, we’re Scalify</div>
+                                Hi, we’re Scalify</div>
                             <div class="inline-flex animate-waving dela origin-bottom-right">
                                 👋</div>
                         </div>
@@ -556,10 +556,9 @@ usort($menuListItems, function ($a, $b) {
                     <div class="px-2 | lg:px-3 | xl:px-4 flex flex-col items-start space-y-8 w-full | lg:w-11/16">
                         <h2
                             class="text-1xl | md:text-4vw | xl:text-3vw font-sans-primary tracking-tight text-gray-600  | dark:text-grayDark-100 leading-none text-balance lg:indent-48 ">
-                            <p> Strategy without execution is a day dream. Execution without strategy is a nightmare.
-                                ​We are the team that lives and breathes both. Our Dream, Build, Scale
-                                framework is our promise to turn your ambition into a reality.</p>
-                            </p>
+                                                        <div class="scalify-headline">
+                                                            Growth strategists who help brands go from “promising startup” → “category leader.”
+                                                        </div>
                         </h2>
                         <div class="flex flex-wrap">
                             <div class="mr-5 mb-3 w-auto | lg:mr-8">
@@ -665,7 +664,7 @@ usort($menuListItems, function ($a, $b) {
                     </div>
                 </div>
                 <div x-data="logosDoubleCarousel" x-init="carousel(127732)">
-                    <div class="w-full pb-20 | lg:pb-24 | 2xl:pb-32 | 4xl:pb-40 px-2 | lg:px-3 | xl:px-4">
+                    <div class="w-full pb-8 | lg:pb-10 | 2xl:pb-16 | 4xl:pb-20 px-2 | lg:px-3 | xl:px-4">
                         <div class="px-2 | sm:px-6 | xl:px-12 | 2xl:px-20 | 3xl:px-40 | 4xl:px-60">
                             <div
                                 class="w-full py-20 | lg:py-24 | 2xl:py-32 | 4xl:py-40 bg-gray-600 relative overflow-hidden rounded-tl-none rounded-2xl transform-gpu | lg:rounded-tl-none lg:rounded-3xl | dark:bg-grayDark-500">
@@ -674,12 +673,12 @@ usort($menuListItems, function ($a, $b) {
                                         class="bg-white absolute top-0 left-0 rounded-br-2xl w-5/16 h-12 | lg:rounded-br-3xl lg:w-3/16 lg:h-20 | dark:bg-grayDark-600">
                                         <svg id="Layer_1"
                                             class="w-10 h-10 | lg:w-12 lg:h-12 text-white fill-current absolute -top-px right-px transform translate-x-full dark:text-grayDark-600"
-                                            version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
+                                            version="1.1" xmlns="https://www.w3.org/2000/svg" x="0" y="0"
                                             viewBox="0 0 100 100" xml:space="preserve">
                                             <path d="M51.9 0v1.9c-27.6 0-50 22.4-50 50H0V0h51.9z"></path>
                                         </svg><svg id="Layer_1"
                                             class="w-10 h-10 | lg:w-12 lg:h-12 text-white fill-current absolute bottom-px -left-px transform translate-y-full dark:text-grayDark-600"
-                                            version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
+                                            version="1.1" xmlns="https://www.w3.org/2000/svg" x="0" y="0"
                                             viewBox="0 0 100 100" xml:space="preserve">
                                             <path d="M51.9 0v1.9c-27.6 0-50 22.4-50 50H0V0h51.9z"></path>
                                         </svg>
@@ -690,8 +689,8 @@ usort($menuListItems, function ($a, $b) {
                                             <div class="flex flex-col space-y-3 | lg:space-y-5 items-start">
                                                 <div class="inline-flex items-center space-x-2  ">
                                                     <div class="bg-white w-1.5 h-1.5 rounded-full"></div>
-                                                    <div class="font-light text-sm | lg:text-base text-white">
-                                                        Shameful Plug</div>
+                                                    <!-- <div class="font-light text-sm | lg:text-base text-white">
+                                                        Shameful Plug</div> -->
                                                 </div>
                                                 <h2
                                                     class=" text-2xl | md:text-3xl | xl:text-4xl | 4xl:text-5xl font-sans-primary tracking-tight text-white leading-none text-balance max-w-2xl | xl:max-w-3xl ">
@@ -899,7 +898,6 @@ usort($menuListItems, function ($a, $b) {
                         </div>
                     </div>
                 </div>
-
                 <!-- <div class="mx-auto relative w-full | xl:w-15/16" style="--blur: 1; --blurs: 5; max-height: 200px;;">
                     <div class="blur blur--left">
                         <div class="" style="--index: 0"></div>
@@ -961,13 +959,7 @@ usort($menuListItems, function ($a, $b) {
             </div>
         </div>
     </div>
-
-    <!--
-    <h2 class="text-4xl font-sans-primary text-center justify-center text-gray-600 dark:text-gray-100">
-        We Expand Your Digital Presence Globally
-    </h2> -->
     <div class=" w-full pb-10 px-2 | lg:p-16 max-w-full overflow-hidden">
-
         <!-- Start AndySlider.com BODY section -->
         <div id="andyslider">
             <div class="carousel-container w-full relative">
@@ -980,13 +972,9 @@ usort($menuListItems, function ($a, $b) {
             </div>
         </div>
         <!-- End WOWSlider.com BODY section -->
-
     </div>
     </div>
-
-    <div class="h-4 lg:h-5 w-full"></div>
-
-
+    <!-- <div class="h-4 lg:h-5 w-full"></div> -->
     <div class="w-full py-0">
         <div class="px-0">
             <div
