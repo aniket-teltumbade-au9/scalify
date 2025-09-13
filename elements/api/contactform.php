@@ -1,109 +1,190 @@
 <?php
+include "../../config.php";
 /**
  * PHP Endpoint for Contact Form Submission
  *
- * This script processes a multipart/form-data submission from a contact form.
- * It sends two email notifications:
- * 1. To an administrator, with the user's contact details.
- * 2. To the user, acknowledging their submission.
- * It then returns a JSON response indicating the success or failure of the operation.
+ * This script now uses a class-based approach for better structure,
+ * improved security, and enhanced error handling.
  */
 
 // Set the content type for the response to JSON
 header('Content-Type: application/json');
 
-// --- Configuration ---
-// Replace with your actual admin email address
-$adminEmail = 'admin@scalify.uae';
-// Replace with your website or company name
-$websiteName = 'Scalify';
+// Ensure the request method is POST
+if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+    http_response_code(405); // Method Not Allowed
+    echo json_encode(['success' => false, 'message' => 'Invalid request method.']);
+    exit;
+}
 
-// Subject lines for the emails
-$adminSubject = 'New Contact Form Submission from ' . $websiteName;
-$userSubject = 'Thank You for Contacting ' . $websiteName;
+// Check for required configuration constants
+if (!defined('MAIL_API_KEY') || !defined('MAIL_URL')) {
+    http_response_code(500);
+    echo json_encode(['success' => false, 'message' => 'Email API configuration is missing.']);
+    exit;
+}
 
-// --- Input Validation and Sanitization ---
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Collect and sanitize incoming POST data
-    // Using FILTER_SANITIZE_STRING (deprecated in PHP 8.1) or htmlspecialchars is common
-    // For modern PHP, consider htmlspecialchars and custom regex for more strict sanitization based on field type.
-    $submittedFrom = htmlspecialchars($_POST['submittedFrom'] ?? 'N/A');
-    $name = htmlspecialchars($_POST['name'] ?? 'Guest');
-    $emailAddress = filter_var($_POST['emailAddress'] ?? '', FILTER_SANITIZE_EMAIL);
-    $telephone = htmlspecialchars($_POST['telephone'] ?? '');
-    $howDidYouHearAboutUs = htmlspecialchars($_POST['howDidYouHearAboutUs'] ?? 'Not specified');
-    $message = htmlspecialchars($_POST['message'] ?? 'No message provided.');
-    $csrfToken = htmlspecialchars($_POST['CRAFT_CSRF_TOKEN'] ?? ''); // Important for Craft CMS, but can be ignored for simple forms
+class ContactFormHandler
+{
 
-    // Basic validation for essential fields
-    if (empty($name) || empty($emailAddress) || !filter_var($emailAddress, FILTER_VALIDATE_EMAIL)) {
-        echo json_encode(['success' => false, 'message' => 'Invalid or missing name or email address.']);
+    private string $adminEmail;
+    private string $websiteName;
+
+    public function __construct(string $adminEmail, string $websiteName)
+    {
+        $this->adminEmail = $adminEmail;
+        $this->websiteName = $websiteName;
+    }
+
+    /**
+     * Handles the contact form submission.
+     */
+    public function handleSubmission(): void
+    {
+        try {
+            $formData = $this->validateAndSanitize($_POST);
+            $this->sendEmails($formData);
+            $this->respond(true, 'Your message has been sent successfully.');
+        } catch (InvalidArgumentException $e) {
+            http_response_code(400); // Bad Request
+            $this->respond(false, $e->getMessage());
+        } catch (RuntimeException $e) {
+            http_response_code(500); // Internal Server Error
+            error_log("Email sending failed: " . $e->getMessage());
+            $this->respond(false, 'We received your message, but there was an internal issue with email notifications. Please try again or contact us directly.');
+        }
+    }
+
+    /**
+     * Validates and sanitizes the form data.
+     * @param array $data The raw POST data.
+     * @return array The sanitized data.
+     * @throws InvalidArgumentException If validation fails.
+     */
+    private function validateAndSanitize(array $data): array
+    {
+        $name = htmlspecialchars($data['name'] ?? '', ENT_QUOTES, 'UTF-8');
+        $emailAddress = filter_var($data['emailAddress'] ?? '', FILTER_SANITIZE_EMAIL);
+        $message = htmlspecialchars($data['message'] ?? '', ENT_QUOTES, 'UTF-8');
+
+        if (empty($name) || empty($emailAddress) || !filter_var($emailAddress, FILTER_VALIDATE_EMAIL) || empty($message)) {
+            throw new InvalidArgumentException('Invalid or missing name, email address, or message.');
+        }
+
+        return [
+            'submittedFrom' => htmlspecialchars($data['submittedFrom'] ?? 'N/A', ENT_QUOTES, 'UTF-8'),
+            'name' => $name,
+            'emailAddress' => $emailAddress,
+            'telephone' => htmlspecialchars($data['telephone'] ?? '', ENT_QUOTES, 'UTF-8'),
+            'howDidYouHearAboutUs' => htmlspecialchars($data['howDidYouHearAboutUs'] ?? 'Not specified', ENT_QUOTES, 'UTF-8'),
+            'message' => $message,
+            'newsletterSubscription' => isset($data['newsletter']),
+        ];
+    }
+
+    /**
+     * Sends both the admin and user emails.
+     * @param array $formData The sanitized form data.
+     * @throws RuntimeException If email sending fails.
+     */
+    private function sendEmails(array $formData): void
+    {
+        $curl = curl_init();
+        curl_setopt_array($curl, [
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_POST => true,
+            CURLOPT_HTTPHEADER => [
+                'Content-Type: application/json',
+                'Api-Key: ' . MAIL_API_KEY,
+                'Accept: application/json',
+            ],
+            CURLOPT_URL => MAIL_URL,
+        ]);
+
+        $adminPayload = $this->buildAdminEmailPayload($formData);
+        curl_setopt($curl, CURLOPT_POSTFIELDS, $adminPayload);
+        $adminResponse = curl_exec($curl);
+        $adminHttpCode = curl_getinfo($curl, CURLINFO_HTTP_CODE);
+
+        $userPayload = $this->buildUserEmailPayload($formData);
+        curl_setopt($curl, CURLOPT_POSTFIELDS, $userPayload);
+        $userResponse = curl_exec($curl);
+        $userHttpCode = curl_getinfo($curl, CURLINFO_HTTP_CODE);
+
+        curl_close($curl);
+
+        if (!($adminHttpCode >= 200 && $adminHttpCode < 300 && $userHttpCode >= 200 && $userHttpCode < 300)) {
+            $errorMessage = "Admin status: {$adminHttpCode} ({$adminResponse}). User status: {$userHttpCode} ({$userResponse}).";
+            throw new RuntimeException($errorMessage);
+        }
+    }
+
+    /**
+     * Builds the JSON payload for the admin email.
+     * @param array $data The sanitized form data.
+     * @return string The JSON payload.
+     */
+    private function buildAdminEmailPayload(array $data): string
+    {
+        $textContent = "A new message has been received through the contact page:\n\n" .
+            "Submitted From: {$data['submittedFrom']}\n" .
+            "Name: {$data['name']}\n" .
+            "Email: {$data['emailAddress']}\n" .
+            "Telephone: " . (!empty($data['telephone']) ? $data['telephone'] : 'N/A') . "\n" .
+            "How did they hear about us: {$data['howDidYouHearAboutUs']}\n" .
+            "Message:\n{$data['message']}\n" .
+            "Newsletter Subscription: " . ($data['newsletterSubscription'] ? 'Yes' : 'No') . "\n";
+
+        return json_encode([
+            'sender' => ['name' => $this->websiteName, 'email' => $this->adminEmail],
+            'to' => [['email' => $this->adminEmail, 'name' => 'Admin']],
+            'subject' => "New Contact Form Submission from " . $this->websiteName,
+            'textContent' => $textContent,
+        ]);
+    }
+
+    /**
+     * Builds the JSON payload for the user acknowledgment email.
+     * @param array $data The sanitized form data.
+     * @return string The JSON payload.
+     */
+    private function buildUserEmailPayload(array $data): string
+    {
+        $htmlContent = "<html><body>
+            <p>Dear " . htmlspecialchars($data['name']) . ",</p>
+            <p>Thank you for contacting " . htmlspecialchars($this->websiteName) . ". We have received your message and will get back to you shortly.</p>
+            <p>Here's a copy of your message:</p>
+            <div style='border: 1px solid #ccc; padding: 15px; background-color: #f9f9f9; border-radius: 5px;'>
+                <p style='white-space: pre-wrap; margin: 0;'>" . htmlspecialchars($data['message']) . "</p>
+            </div>
+            <br>
+            <p>Sincerely,</p>
+            <p>The Team at " . htmlspecialchars($this->websiteName) . "</p>
+        </body></html>";
+
+        return json_encode([
+            'sender' => ['name' => $this->websiteName, 'email' => $this->adminEmail],
+            'to' => [['email' => $data['emailAddress'], 'name' => $data['name']]],
+            'subject' => "Thank You for Contacting " . $this->websiteName,
+            'htmlContent' => $htmlContent,
+        ]);
+    }
+
+    /**
+     * Sends the final JSON response to the client.
+     * @param bool $success Whether the operation was successful.
+     * @param string $message The message to be sent back.
+     */
+    private function respond(bool $success, string $message): void
+    {
+        echo json_encode(['success' => $success, 'message' => $message]);
         exit;
     }
-
-    // --- Send Email to Admin ---
-    $adminMailBody = "A new message has been received through the contact page:\n\n";
-    $adminMailBody .= "Submitted From: " . $submittedFrom . "\n";
-    $adminMailBody .= "Name: " . $name . "\n";
-    $adminMailBody .= "Email: " . $emailAddress . "\n";
-    $adminMailBody .= "Telephone: " . (!empty($telephone) ? $telephone : 'N/A') . "\n";
-    $adminMailBody .= "How did they hear about us: " . $howDidYouHearAboutUs . "\n";
-    $adminMailBody .= "Message:\n" . $message . "\n";
-
-    // Headers for the admin email
-    $adminHeaders = "From: " . $websiteName . " <no-reply@" . parse_url($_SERVER['HTTP_HOST'], PHP_URL_HOST) . ">\r\n";
-    $adminHeaders .= "Reply-To: " . $name . " <" . $emailAddress . ">\r\n";
-    $adminHeaders .= "X-Mailer: PHP/" . phpversion();
-
-    $adminMailSent = false;
-    try {
-        $adminMailSent = mail($adminEmail, $adminSubject, $adminMailBody, $adminHeaders);
-    } catch (Exception $e) {
-        // Log the error but don't expose it to the user
-        echo json_encode(['success' => false, 'message' => "Failed to send admin email: " . $e->getMessage()]);
-    }
-
-    // --- Send Acknowledgment Email to User ---
-    $userMailBody = "Dear " . $name . ",\n\n";
-    $userMailBody .= "Thank you for contacting " . $websiteName . ". We have received your message and will get back to you shortly.\n\n";
-    $userMailBody .= "Here's a copy of your message:\n";
-    $userMailBody .= "------------------------------------\n";
-    $userMailBody .= $message . "\n";
-    $userMailBody .= "------------------------------------\n\n";
-    $userMailBody .= "Sincerely,\n";
-    $userMailBody .= "The Team at " . $websiteName . "\n";
-
-    // Headers for the user acknowledgment email
-    $userHeaders = "From: " . $websiteName . " <no-reply@" . parse_url($_SERVER['HTTP_HOST'], PHP_URL_HOST) . ">\r\n";
-    $userHeaders .= "Reply-To: " . $adminEmail . "\r\n"; // User can reply to admin
-    $userHeaders .= "X-Mailer: PHP/" . phpversion();
-
-    $userMailSent = false;
-    try {
-        $userMailSent = mail($emailAddress, $userSubject, $userMailBody, $userHeaders);
-    } catch (Exception $e) {
-        // Log the error
-        echo json_encode(['success' => false, 'message' => "Failed to send user acknowledgment email: " . $e->getMessage()]);
-    }
-
-    // --- Response to Client ---
-    if ($adminMailSent && $userMailSent) {
-        echo json_encode(['success' => true, 'message' => 'Your message has been sent successfully.']);
-    } else {
-        // If one or both emails failed, still indicate success to the user
-        // but log the internal error. You might want to adjust this logic
-        // based on how critical each email is.
-        $errorMessage = 'There was an issue sending some emails. Please try again or contact us directly.';
-        if (!$adminMailSent) {
-            echo json_encode(['success' => false, 'message' => "Admin email failed to send for contact from " . $name . " (" . $emailAddress . ")"]);
-        }
-        if (!$userMailSent) {
-            echo json_encode(['success' => false, 'message' => "User acknowledgment email failed to send to " . $name . " (" . $emailAddress . ")"]);
-        }
-        echo json_encode(['success' => true, 'message' => 'Your message was received, but there was an internal issue with email notifications. We will still get back to you!']);
-    }
-
-} else {
-    // If not a POST request, respond with an error
-    echo json_encode(['success' => false, 'message' => 'Invalid request method.']);
 }
+
+// Instantiate and run the handler
+$handler = new ContactFormHandler(
+    adminEmail: 'aniketteltu@gmail.com', // Replace with your admin email
+    websiteName: 'Scalify' // Replace with your website name
+);
+$handler->handleSubmission();

@@ -285,7 +285,7 @@
                 <p
                    class="text-sm md:text-base text-white dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7 mb-6">
                     <strong style="font-size:2rem;color:#F05223;">Ireland Office</strong>
-                    <br /> C/O Cynestx Ireland, 
+                    <br /> C/O Cynestx Ireland,
                     <br />Cullentragh Centre Glenfarne
                     <br />Co Leitrim, Ireland
                 </p>
@@ -369,7 +369,7 @@ function injectCSRF() {
             }
 
         };
-        xhr.open("GET", "https://madebyshape.co.uk/index.php/actions/servd-asset-storage/csrf-token/get-token/");
+        xhr.open("GET", "<?php echo BASE_URL . 'api/csrftoken/'; ?>");
         xhr.send();
     }
 }

@@ -26,7 +26,7 @@ $spaceId = 'z0gmr7sfomjq';
         'opacity-100 pointer-events-auto': show,
         'opacity-0 pointer-events-none': !show,
         }">
-        <a href="./html/contact.html"
+        <a href="<?php echo BASE_URL.'contact';?>"
             class="w-28 h-28 relative bg-primary-600 rounded-full flex items-center justify-center group">
             <div class="text-2xl relative top-0.5">
                 👀</div>

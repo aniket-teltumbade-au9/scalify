@@ -2,8 +2,8 @@ Options +FollowSymLinks -MultiViews
 RewriteEngine On
 
 # Block direct access to specific PHP files
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /+(blogList|blog|service|elements)\.php\ HTTP/
-RewriteRule \.php$ - [F]
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /+(blogList|blog|service).php\ HTTP/
+RewriteRule .php$ - [F]
 
 # Serve actual files and directories directly
 RewriteCond %{REQUEST_FILENAME} -f [OR]
@@ -11,12 +11,15 @@ RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule ^ - [L]
 
 # Exclude common asset extensions from all rewrites
-RewriteCond %{REQUEST_URI} \.(css|js|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|eot|pdf|zip|mp4|webm)$ [NC]
+RewriteCond %{REQUEST_URI} .(css|js|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|eot|pdf|zip|mp4|webm)$ [NC]
 RewriteRule ^ - [L]
 
+RewriteRule ^elements/api/contactForm/?$ elements/api/contactForm.php [L,QSA]
+RewriteRule ^elements/api/csrftoken/?$ elements/api/csrftoken.php [L,QSA]
+
 # Services rewrite rule
-RewriteRule ^services/([^/]+)/([^/]+)/?$ services.php?category=$1&service=$2 [L,QSA]
-RewriteRule ^services/([^/]+)/?$ services.php?category=$1 [L,QSA]
+RewriteRule ^services/([^/]+)/([^/]+)/?$ services.php?category=$1&service=2[L,QSA]
+RewriteRule services/([/]+)/? services.php?category=$1 [L,QSA]
 
 # Blogs rewrite rule
 RewriteRule ^blogs/([^/]+)/?$ blogs.php?slug=$1 [L,QSA]

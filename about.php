@@ -183,11 +183,11 @@ $n = count($logos);
                         <div class="relative w-350vw h-350vw -ml-125vw || js-arched-image-container-419251-mobile">
                             <div class="w-full h-full relative || js-arched-image-inner-container-419251-mobile">
                                 <?php
-                                $aboutImages = glob('assets/images/about/*.{jpg,jpeg,png,webp}', GLOB_BRACE);
-                                foreach ($aboutImages as $index => $img): ?>
-                                    <div class="absolute top-0 left-1/2 h-1/2 origin-bottom-left w-40vw || js-arched-image-419251-mobile" data-index="<?= $index ?>">
+$aboutImages = glob('assets/images/about/*.{jpg,jpeg,png,webp}', GLOB_BRACE);
+foreach ($aboutImages as $index => $img): ?>
+                                    <div class="absolute top-0 left-1/2 h-1/2 origin-bottom-left w-40vw || js-arched-image-419251-mobile" data-index="<?=$index?>">
                                         <div class="relative overflow-hidden w-full" style="padding-top: 100%;">
-                                            <img src="<?php echo BASE_URL . $img; ?>" alt="About Image <?= $index ?>" class="w-full h-full object-cover absolute top-0 left-0 rounded-2xl transform-gpu bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl" width="800" height="800">
+                                            <img src="<?php echo BASE_URL . $img; ?>" alt="About Image <?=$index?>" class="w-full h-full object-cover absolute top-0 left-0 rounded-2xl transform-gpu bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl" width="800" height="800">
                                         </div>
                                     </div>
                                 <?php endforeach; ?>
@@ -274,12 +274,12 @@ $n = count($logos);
                         <div class="relative w-250vw h-250vw -ml-75vw || js-arched-image-container-419251-tablet">
                             <div class="w-full h-full relative || js-arched-image-inner-container-419251-tablet">
                                 <?php
-                                $aboutImages = glob('assets/images/about/*.{jpg,jpeg,png,webp}', GLOB_BRACE);
-                                foreach ($aboutImages as $index => $img): ?>
-                                    <div class="absolute top-0 left-1/2 h-1/2 origin-bottom-left w-25vw || js-arched-image-419251-tablet" data-index="<?= $index ?>">
+$aboutImages = glob('assets/images/about/*.{jpg,jpeg,png,webp}', GLOB_BRACE);
+foreach ($aboutImages as $index => $img): ?>
+                                    <div class="absolute top-0 left-1/2 h-1/2 origin-bottom-left w-25vw || js-arched-image-419251-tablet" data-index="<?=$index?>">
                                         <div class="relative overflow-hidden w-full" style="padding-top: 100%;">
                                             <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                                <img src="<?php echo BASE_URL . $img; ?>" alt="About Image <?= $index ?>" class="w-full h-full object-cover absolute top-0 left-0 rounded-2xl transform-gpu bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl" width="800" height="800">
+                                                <img src="<?php echo BASE_URL . $img; ?>" alt="About Image <?=$index?>" class="w-full h-full object-cover absolute top-0 left-0 rounded-2xl transform-gpu bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl" width="800" height="800">
                                             </picture>
                                         </div>
                                     </div>
@@ -366,12 +366,12 @@ $n = count($logos);
                         <div class="relative w-250vw h-250vw -ml-75vw || js-arched-image-container-419251-desktop">
                             <div class="w-full h-full relative || js-arched-image-inner-container-419251-desktop">
                                 <?php
-                                $aboutImages = glob('assets/images/about/*.{jpg,jpeg,png,webp}', GLOB_BRACE);
-                                foreach ($aboutImages as $index => $img): ?>
-                                    <div class="absolute top-0 left-1/2 h-1/2 origin-bottom-left w-20vw || js-arched-image-419251-desktop" data-index="<?= $index ?>">
+$aboutImages = glob('assets/images/about/*.{jpg,jpeg,png,webp}', GLOB_BRACE);
+foreach ($aboutImages as $index => $img): ?>
+                                    <div class="absolute top-0 left-1/2 h-1/2 origin-bottom-left w-20vw || js-arched-image-419251-desktop" data-index="<?=$index?>">
                                         <div class="relative overflow-hidden w-full" style="padding-top: 100%;">
                                             <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                                <img src="<?php echo BASE_URL . $img; ?>" alt="About Image <?= $index ?>" class="w-full h-full object-cover absolute top-0 left-0 rounded-2xl transform-gpu bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl" width="800" height="800">
+                                                <img src="<?php echo BASE_URL . $img; ?>" alt="About Image <?=$index?>" class="w-full h-full object-cover absolute top-0 left-0 rounded-2xl transform-gpu bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl" width="800" height="800">
                                             </picture>
                                         </div>
                                     </div>
@@ -727,7 +727,7 @@ $n = count($logos);
                             <div class="w-full || swiper || js-carousel-189">
                                 <div class="ease-linear || swiper-wrapper">
                                     <?php $pIndex = 0;
-                                    foreach ($employeeList as $profile) { ?>
+foreach ($employeeList as $profile) {?>
                                         <div class="px-2 | lg:px-3 | xl:px-4 | <?php echo $pIndex % 2 === 0 ? "mt:10 lg:mt-16" : ""; ?> || swiper-slide"
                                             data-swiper-slide-index="<?php echo $pIndex; ?>">
                                             <div class="w-full || js-profile-card-189">
@@ -806,8 +806,7 @@ $n = count($logos);
                                                 </div>
                                             </div>
                                         </div>
-                                    <?php $pIndex++;
-                                    } ?>
+                                    <?php $pIndex++;}?>
                                 </div>
                             </div>
                         </div>
@@ -1872,7 +1871,7 @@ w-full border-b border-solid border-gray-100 pb-5 mb-5 | dark:border-grayDark-30
                                                 </div>
                                             </div>
                                         <?php endforeach;
-                                        foreach ($logos as $index => $logo): ?>
+foreach ($logos as $index => $logo): ?>
 
                                             <div class="px-2 | lg:px-3 xl:px-4 swiper-slide"
                                                 data-swiper-slide-index="<?php echo $index; ?>"
@@ -1887,7 +1886,7 @@ w-full border-b border-solid border-gray-100 pb-5 mb-5 | dark:border-grayDark-30
                                                 </div>
                                             </div>
                                         <?php endforeach;
-                                        foreach (array_slice($logos, 0, 4) as $index => $logo): ?>
+foreach (array_slice($logos, 0, 4) as $index => $logo): ?>
 
 
                                             <div class="px-2 | lg:px-3 xl:px-4 swiper-slide swiper-slide-duplicate"
@@ -1939,7 +1938,7 @@ w-full border-b border-solid border-gray-100 pb-5 mb-5 | dark:border-grayDark-30
                                                 </div>
                                             </div>
                                         <?php endforeach;
-                                        foreach ($logos as $index => $logo): ?>
+foreach ($logos as $index => $logo): ?>
 
                                             <div class="px-2 | lg:px-3 xl:px-4 swiper-slide"
                                                 data-swiper-slide-index="<?php echo $index; ?>"
@@ -1954,7 +1953,7 @@ w-full border-b border-solid border-gray-100 pb-5 mb-5 | dark:border-grayDark-30
                                                 </div>
                                             </div>
                                         <?php endforeach;
-                                        foreach (array_slice($logos, 0, 4) as $index => $logo): ?>
+foreach (array_slice($logos, 0, 4) as $index => $logo): ?>
 
 
                                             <div class="px-2 | lg:px-3 xl:px-4 swiper-slide swiper-slide-duplicate"
@@ -5260,7 +5259,7 @@ pr-8 mb-5 | lg:pr-16
                     }
 
                 };
-                xhr.open("GET", "https://madebyshape.co.uk/index.php/actions/servd-asset-storage/csrf-token/get-token/");
+                xhr.open("GET", "<?php echo BASE_URL . 'api/csrftoken/'; ?>");
                 xhr.send();
             }
         }

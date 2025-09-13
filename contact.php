@@ -219,8 +219,8 @@
                         </div>
                     </div>
                     <div class="px-2 | lg:px-3 | xl:px-4 w-full order-1 mb-10 | lg:mb-0 lg:order-2 lg:w-10/16">
-                        <div x-data="form" x-init="dynamicForm('contact', 'form-421077')">
-                            <form id="form-421077" method="post" onsubmit="(e)=>hSubmit(e)" data-freeform
+                        <div x-data="form" x-init="dynamicForm('api/contactForm', 'form-421077')">
+                            <form id="form-421077" method="post" data-freeform
                                 data-id="5df3c8-form-WagZ98dM5-8gNRQpGyY-B66lyNAbJIvFF5ai62hYm0tDkMd5lCfp35ifibev"
                                 data-handle="contact" data-ajax
                                 data-success-message="Form has been submitted successfully!"
@@ -1052,7 +1052,7 @@
                 }
 
             };
-            xhr.open("GET", "https://madebyshape.co.uk/index.php/actions/servd-asset-storage/csrf-token/get-token/");
+            xhr.open("GET", "<?php echo BASE_URL . 'api/csrftoken/'; ?>");
             xhr.send();
         }
     }
@@ -1792,38 +1792,41 @@
             dynamicForm(handle, id) {
 
                 const form = document.getElementById(id);
+                form.addEventListener('submit', hSubmit);
+                // Remove the onsubmit attribute to avoid conflicts
+                form.removeAttribute('onsubmit');
+                // fetch(
+                //         '<?php echo BASE_URL . "api/contactForm" ?>?form=' + handle
+                //     )
+                //     .then(
+                //         response => {
+                //             console.log(response);
+                //             if (!response.ok) {
+                //                 throw response
+                //             }
+                //             return response.json()
+                //         }
+                //     )
+                //     .then(
+                //         data => {
 
-                fetch(
-                        '<?php echo BASE_URL . "elements/api/contactform" ?>?form=' + handle
-                    )
-                    .then(
-                        response => {
-                            console.log(response);
-                            if (!response.ok) {
-                                throw response
-                            }
-                            return response.json()
-                        }
-                    )
-                    .then(
-                        data => {
+                //             form.querySelector('input[name=' + data.csrf.name + ']').value = data
+                //                 .csrf.value;
 
-                            form.querySelector('input[name=' + data.csrf.name + ']').value = data
-                                .csrf.value;
+                //             form.querySelector('input[name=formHash]').value = data.hash;
 
-                            form.querySelector('input[name=formHash]').value = data.hash;
+                //             form.querySelector('input[name=freeform_payload]').value = data.payload;
 
-                            form.querySelector('input[name=freeform_payload]').value = data.payload;
+                //             honeypot = data.honeypot;
+                //             honeypotInput = form.querySelector(
+                //                 'input[name^="freeform_form_handle"]');
+                //             honeypotInput.setAttribute('id', honeypot.name);
+                //             honeypotInput.setAttribute('name', honeypot.name);
+                //             honeypotInput.value = honeypot.hash;
 
-                            honeypot = data.honeypot;
-                            honeypotInput = form.querySelector(
-                                'input[name^="freeform_form_handle"]');
-                            honeypotInput.setAttribute('id', honeypot.name);
-                            honeypotInput.setAttribute('name', honeypot.name);
-                            honeypotInput.value = honeypot.hash;
+                //         }
+                //     );
 
-                        }
-                    );
             }
         }))
     });
@@ -1836,7 +1839,7 @@
         const formData = new FormData(form);
 
         // Get the form action URL or use current page
-        const actionUrl = <?php echo json_encode(BASE_URL . "elements/api/contactform"); ?>;
+        const actionUrl = <?php echo json_encode(BASE_URL . "elements/api/contactForm"); ?>;
         console.log(actionUrl)
         // Show loading state (optional)
         const submitButton = form.querySelector('button[type="submit"]');
@@ -1887,14 +1890,14 @@
     // To: onsubmit="hSubmit(event)"
 
     // Or better yet, use addEventListener instead:
-    document.addEventListener('DOMContentLoaded', function() {
-        const contactForm = document.getElementById('form-421077');
-        if (contactForm) {
-            contactForm.addEventListener('submit', hSubmit);
-            // Remove the onsubmit attribute to avoid conflicts
-            contactForm.removeAttribute('onsubmit');
-        }
-    });
+    // document.addEventListener('DOMContentLoaded', function() {
+    //     const contactForm = document.getElementById('form-421077');
+    //     if (contactForm) {
+    //         contactForm.addEventListener('submit', hSubmit);
+    //         // Remove the onsubmit attribute to avoid conflicts
+    //         contactForm.removeAttribute('onsubmit');
+    //     }
+    // });
 
     // Enhanced version with better error handling and UI feedback:
     function enhancedSubmit(event) {
