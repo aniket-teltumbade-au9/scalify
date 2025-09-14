@@ -965,6 +965,9 @@ foreach (array_slice($logos, 0, 4) as $index => $logo): ?>
             </div>
         </div>
     </div>
+    <h2 class="text-2xl | md:text-3xl | xl:text-4xl | 4xl:text-5xl font-sans-primary tracking-tight text-gray-600  | dark:text-grayDark-100 leading-none text-balance justify-center text-center">
+        Global Presence
+   </h2>
     <div class=" w-full pb-10 px-2 | lg:p-16 max-w-full overflow-hidden">
         <!-- Start AndySlider.com BODY section -->
         <div id="andyslider">

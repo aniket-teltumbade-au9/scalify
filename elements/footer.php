@@ -268,7 +268,7 @@
                 <p
                     class="text-sm md:text-base text-white dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7 mb-6">
                     <strong style="font-size:2rem;color:#F05223;">India Office</strong>
-                    <br />B/15 New Prince Regency CHS
+                    <br />B/13 New Prince Regency
                     <br />Kanakia, Beverly Park
                     <br />Mumbai,India
                 </p>

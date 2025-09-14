@@ -1,7 +1,7 @@
 <?php
 // Define the base URL
 // empty string on production
-define('PROJECT_SUBFOLDER', '/scalify2');
+define('PROJECT_SUBFOLDER', '/scalify');
 // replace http://localhost with domain url
 define('BASE_URL', 'http://localhost' . PROJECT_SUBFOLDER . '/');
 define('MAIL_URL', 'https://api.brevo.com/v3/smtp/email');

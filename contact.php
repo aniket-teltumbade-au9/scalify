@@ -416,17 +416,16 @@
                         <div class="w-full | lg:w-6/16 lg:py-12">
                             <h2
                                 class="text-2xl | md:text-3xl | xl:text-4xl | 4xl:text-5xl font-sans-primary tracking-tight text-gray-600  | dark:text-grayDark-100 leading-none text-balance mb-3 ">
-                                Our Dubai Address</h2>
+                                Find Us in Dubai</h2>
                             <div class="w-full relative mb-5 | lg:max-w-sm lg:mb-10">
                                 <p
                                     class="text-base | xl:text-md text-gray-600 dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7  mb-6">
-                                    Just a short drive from Dubai city centre, our office is in a very convenient
-                                    location, near two train stations, a motorway, and the east Lancashire road.</p>
+                                    Just a short drive from Downtown Dubai, our office is in a prime location, close to two metro stations, Sheikh Zayed Road, and other key city connections.</p>
                             </div>
                             <div class="w-full flex flex-col space-y-5 mb-10 | md:space-y-0 md:flex-row md:space-x-5">
                                 <div class="flex-1">
                                     <div class="text-gray-400 font-light mb-2 | dark:text-grayDark-100">
-                                        Dubai Office Address</div>
+                                        Dubai Address</div>
                                     <div class="flex space-x-3">
                                         <div class="flex-shrink-0 pt-1.5"><svg
                                                 class="w-3 h-3 text-gray-600 fill-current | dark:text-grayDark-100"
@@ -437,7 +436,7 @@
                                             </svg></div>
                                         <div class="dark:text-grayDark-200">
                                             <p>Scalify<br />In5 Tech,<br />
-                                                Dubai Internet City, <br /> - Dubai <br />- United Arab Emirates
+                                                Dubai Internet City, <br /> - Dubai, UAE
                                             </p>
                                         </div>
                                     </div>

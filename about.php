@@ -7,14 +7,14 @@ $employeeList = [
     ["name" => "Dixter Verano", "Designation" => "Operations Executive"],
     ["name" => "Fazil Iqbal", "Designation" => "Chief Marketing Officer"],
     ["name" => "Gillian Elizabeth", "Designation" => "Lead Designer"],
-    // ["name" => "Harishchandra Ramesh Chadda", "Designation" => "Chief Technical Officer"],
+    ["name" => "Harishchandra Ramesh Chadda", "Designation" => "Chief Technical Officer"],
     // ["name" => "Jovin Fernandes", "Designation" => "Chief Operating Officer"],
     ["name" => "Justin Ebenezer", "Designation" => "Chief People Officer"],
     ["name" => "Mohamed Sahim", "Designation" => "Director of Sales"],
     ["name" => "Partha Chaliha", "Designation" => "Managing Director"],
 ];
 // Add this to populate $logos for the logosDoubleCarousel
-$logos = glob('assets/images/customer-list/*.{jpg,jpeg,png,svg,webp,avif}', GLOB_BRACE);
+$logos = glob('assets/images/customer-list/*');
 $n = count($logos);
 ?>
 
