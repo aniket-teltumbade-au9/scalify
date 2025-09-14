@@ -123,10 +123,10 @@
                         <div class="relative overflow-hidden w-full" style="padding-top: 34.25%;">
                             <picture class="w-full absolute top-0 left-0 w-full h-full ">
                                 <source type="image/webp"
-                                    srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Google-Review-Badge-White.png?w=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1730706461&amp;s=e43683f309f37723bac836d7b338a1e3 400w"
+                                    srcset="<?php echo BASE_URL . 'assets/images/main/'; ?>Google-Review-Badge-White.png?w=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1730706461&amp;s=e43683f309f37723bac836d7b338a1e3 400w"
                                     sizes="100vw">
-                                <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Google-Review-Badge-White.png?w=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1730706461&amp;s=e43683f309f37723bac836d7b338a1e3"
-                                    srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Google-Review-Badge-White.png?w=400&amp;q=100&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1730706461&amp;s=2cdb7bc1f042a0267d2c6835cd76fa68 400w"
+                                <img src="<?php echo BASE_URL . 'assets/images/main/'; ?>Google-Review-Badge-White.png?w=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1730706461&amp;s=e43683f309f37723bac836d7b338a1e3"
+                                    srcset="<?php echo BASE_URL . 'assets/images/main/'; ?>Google-Review-Badge-White.png?w=400&amp;q=100&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1730706461&amp;s=2cdb7bc1f042a0267d2c6835cd76fa68 400w"
                                     sizes="100vw" alt="Google Review Badge White" class=" w-full  " loading="lazy"
                                     width="400" height="137">
                             </picture>
@@ -136,10 +136,10 @@
                         <div class="relative overflow-hidden w-full" style="padding-top: 34.25%;">
                             <picture class="w-full absolute top-0 left-0 w-full h-full ">
                                 <source type="image/webp"
-                                    srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Google-Review-Badge-White.png?w=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1730706461&amp;s=e43683f309f37723bac836d7b338a1e3 400w"
+                                    srcset="<?php echo BASE_URL . 'assets/images/main/'; ?>Google-Review-Badge-White.png?w=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1730706461&amp;s=e43683f309f37723bac836d7b338a1e3 400w"
                                     sizes="100vw">
-                                <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Google-Review-Badge-White.png?w=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1730706461&amp;s=e43683f309f37723bac836d7b338a1e3"
-                                    srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Google-Review-Badge-White.png?w=400&amp;q=100&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1730706461&amp;s=2cdb7bc1f042a0267d2c6835cd76fa68 400w"
+                                <img src="<?php echo BASE_URL . 'assets/images/main/'; ?>Google-Review-Badge-White.png?w=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1730706461&amp;s=e43683f309f37723bac836d7b338a1e3"
+                                    srcset="<?php echo BASE_URL . 'assets/images/main/'; ?>Google-Review-Badge-White.png?w=400&amp;q=100&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1730706461&amp;s=2cdb7bc1f042a0267d2c6835cd76fa68 400w"
                                     sizes="100vw" alt="Google Review Badge White" class=" w-full  " loading="lazy"
                                     width="400" height="137">
                             </picture>

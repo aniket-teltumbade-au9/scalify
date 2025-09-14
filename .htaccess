@@ -18,7 +18,7 @@ RewriteRule ^elements/api/contactForm/?$ elements/api/contactForm.php [L,QSA]
 RewriteRule ^elements/api/csrftoken/?$ elements/api/csrftoken.php [L,QSA]
 
 # Services rewrite rule
-RewriteRule ^services/([^/]+)/([^/]+)/?$ services.php?category=$1&service=2[L,QSA]
+RewriteRule ^services/([^/]+)/([^/]+)/?$ services.php?category=$1&service=$2 [L,QSA]
 RewriteRule services/([/]+)/? services.php?category=$1 [L,QSA]
 
 # Blogs rewrite rule

@@ -93,8 +93,7 @@ if (isset($value)) {?>
                         </div>
                     </div>
                 </div>
-                <div class="pl-4 | md:pl-2"><a href="https://madebyshape.co.uk/about/jason-mayo/"
-                        class="flex items-end space-x-3 | lg:space-x-5">
+                <div class="pl-4 | md:pl-2"><a class="flex items-end space-x-3 | lg:space-x-5">
                         <div class="leading-tight tracking-tight">
                             <div class="text-xs font-light mb-1 | text-gray-600 | dark:text-grayDark-100">
                                 Written by</div>

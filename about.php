@@ -185,11 +185,14 @@ $n = count($logos);
                                 <?php
 $aboutImages = glob('assets/images/about/*.{jpg,jpeg,png,webp}', GLOB_BRACE);
 foreach ($aboutImages as $index => $img): ?>
-                                    <div class="absolute top-0 left-1/2 h-1/2 origin-bottom-left w-40vw || js-arched-image-419251-mobile" data-index="<?=$index?>">
-                                        <div class="relative overflow-hidden w-full" style="padding-top: 100%;">
-                                            <img src="<?php echo BASE_URL . $img; ?>" alt="About Image <?=$index?>" class="w-full h-full object-cover absolute top-0 left-0 rounded-2xl transform-gpu bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl" width="800" height="800">
-                                        </div>
+                                <div class="absolute top-0 left-1/2 h-1/2 origin-bottom-left w-40vw || js-arched-image-419251-mobile"
+                                    data-index="<?=$index?>">
+                                    <div class="relative overflow-hidden w-full" style="padding-top: 100%;">
+                                        <img src="<?php echo BASE_URL . $img; ?>" alt="About Image <?=$index?>"
+                                            class="w-full h-full object-cover absolute top-0 left-0 rounded-2xl transform-gpu bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl"
+                                            width="800" height="800">
                                     </div>
+                                </div>
                                 <?php endforeach; ?>
                             </div>
                         </div>
@@ -216,7 +219,8 @@ foreach ($aboutImages as $index => $img): ?>
                                     <a href="#178"
                                         class="inline-flex relative group outline-none  | focus:outline-none  relative z-20"
                                         style="filter: url(#buttonFilter);">
-                                        <div class="w-auto inline-flex items-center justify-center relative leading-tight shadow-none overflow-hidden rounded-full border-default bg-primary-600 text-gray-600 py-2 px-5">
+                                        <div
+                                            class="w-auto inline-flex items-center justify-center relative leading-tight shadow-none overflow-hidden rounded-full border-default bg-primary-600 text-gray-600 py-2 px-5">
                                             <div class="relative inline-flex top-px flex-shrink-0">
                                                 <div>
                                                     Learn about us</div>
@@ -276,13 +280,16 @@ foreach ($aboutImages as $index => $img): ?>
                                 <?php
 $aboutImages = glob('assets/images/about/*.{jpg,jpeg,png,webp}', GLOB_BRACE);
 foreach ($aboutImages as $index => $img): ?>
-                                    <div class="absolute top-0 left-1/2 h-1/2 origin-bottom-left w-25vw || js-arched-image-419251-tablet" data-index="<?=$index?>">
-                                        <div class="relative overflow-hidden w-full" style="padding-top: 100%;">
-                                            <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                                <img src="<?php echo BASE_URL . $img; ?>" alt="About Image <?=$index?>" class="w-full h-full object-cover absolute top-0 left-0 rounded-2xl transform-gpu bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl" width="800" height="800">
-                                            </picture>
-                                        </div>
+                                <div class="absolute top-0 left-1/2 h-1/2 origin-bottom-left w-25vw || js-arched-image-419251-tablet"
+                                    data-index="<?=$index?>">
+                                    <div class="relative overflow-hidden w-full" style="padding-top: 100%;">
+                                        <picture class="w-full absolute top-0 left-0 w-full h-full ">
+                                            <img src="<?php echo BASE_URL . $img; ?>" alt="About Image <?=$index?>"
+                                                class="w-full h-full object-cover absolute top-0 left-0 rounded-2xl transform-gpu bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl"
+                                                width="800" height="800">
+                                        </picture>
                                     </div>
+                                </div>
                                 <?php endforeach; ?>
                             </div>
                         </div>
@@ -309,7 +316,8 @@ foreach ($aboutImages as $index => $img): ?>
                                     <a href="#178"
                                         class="inline-flex relative group outline-none  | focus:outline-none  relative z-20"
                                         style="filter: url(#buttonFilter);">
-                                        <div class="w-auto inline-flex items-center justify-center relative leading-tight shadow-none overflow-hidden rounded-full border-default bg-primary-600 text-gray-600 py-2 px-5">
+                                        <div
+                                            class="w-auto inline-flex items-center justify-center relative leading-tight shadow-none overflow-hidden rounded-full border-default bg-primary-600 text-gray-600 py-2 px-5">
                                             <div class="relative inline-flex top-px flex-shrink-0">
                                                 <div>
                                                     Learn about us</div>
@@ -356,7 +364,8 @@ foreach ($aboutImages as $index => $img): ?>
                     <div
                         class="px-2 | sm:px-6 | xl:px-12 | 2xl:px-20 | 3xl:px-40 | 4xl:px-60 w-full flex flex-wrap justify-center relative z-30 -mb-10 | lg:-mb-14">
                         <div class="px-2 | lg:px-3 | xl:px-4">
-                            <h1 class="text-3xl | sm:text-5xl | md:text-6xl | xl:text-8xl | 4xl:text-9xl font-sans-primary tracking-tight text-gray-600  | dark:text-grayDark-100 leading-none text-balance text-center">
+                            <h1
+                                class="text-3xl | sm:text-5xl | md:text-6xl | xl:text-8xl | 4xl:text-9xl font-sans-primary tracking-tight text-gray-600  | dark:text-grayDark-100 leading-none text-balance text-center">
                                 Our Strategy <br />
                                 is Human.</h1>
                         </div>
@@ -368,13 +377,16 @@ foreach ($aboutImages as $index => $img): ?>
                                 <?php
 $aboutImages = glob('assets/images/about/*.{jpg,jpeg,png,webp}', GLOB_BRACE);
 foreach ($aboutImages as $index => $img): ?>
-                                    <div class="absolute top-0 left-1/2 h-1/2 origin-bottom-left w-20vw || js-arched-image-419251-desktop" data-index="<?=$index?>">
-                                        <div class="relative overflow-hidden w-full" style="padding-top: 100%;">
-                                            <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                                <img src="<?php echo BASE_URL . $img; ?>" alt="About Image <?=$index?>" class="w-full h-full object-cover absolute top-0 left-0 rounded-2xl transform-gpu bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl" width="800" height="800">
-                                            </picture>
-                                        </div>
+                                <div class="absolute top-0 left-1/2 h-1/2 origin-bottom-left w-20vw || js-arched-image-419251-desktop"
+                                    data-index="<?=$index?>">
+                                    <div class="relative overflow-hidden w-full" style="padding-top: 100%;">
+                                        <picture class="w-full absolute top-0 left-0 w-full h-full ">
+                                            <img src="<?php echo BASE_URL . $img; ?>" alt="About Image <?=$index?>"
+                                                class="w-full h-full object-cover absolute top-0 left-0 rounded-2xl transform-gpu bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl"
+                                                width="800" height="800">
+                                        </picture>
                                     </div>
+                                </div>
                                 <?php endforeach; ?>
                             </div>
                         </div>
@@ -401,7 +413,8 @@ foreach ($aboutImages as $index => $img): ?>
                                     <a href="#178"
                                         class="inline-flex relative group outline-none  | focus:outline-none  relative z-20"
                                         style="filter: url(#buttonFilter);">
-                                        <div class="w-auto inline-flex items-center justify-center relative leading-tight shadow-none overflow-hidden rounded-full border-default bg-primary-600 text-gray-600 py-2 px-5">
+                                        <div
+                                            class="w-auto inline-flex items-center justify-center relative leading-tight shadow-none overflow-hidden rounded-full border-default bg-primary-600 text-gray-600 py-2 px-5">
                                             <div class="relative inline-flex top-px flex-shrink-0">
                                                 <div>
                                                     Learn about us</div>
@@ -465,35 +478,7 @@ foreach ($aboutImages as $index => $img): ?>
                     </div>
                     <div class="px-2 | lg:px-3 | xl:px-4 w-full | lg:w-7/16">
                         <div class="w-full relative  xl:pr-10">
-                            <!-- <p
-                                class="text-base | xl:text-md text-gray-600 dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7  mb-6">
-                                We are an Award-Winning <a href="/branding/" target="_blank" rel="noreferrer noopener"
-                                    class="underline duration-500 bg-transparent rounded-md py-0.5 px-1 | bg-gray-50 xl:hover:bg-primary-600 dark:bg-grayDark-400 dark:text-grayDark-100 xl:dark:hover:bg-primary-600 xl:dark:hover:text-grayDark-600">Branding</a>
-                                and Web Design Agency based in Manchester, UK specialising in <a
-                                    href="https://madebyshape.co.uk/web-design/" target="_blank"
-                                    rel="noreferrer noopener"
-                                    class="underline duration-500 bg-transparent rounded-md py-0.5 px-1 | bg-gray-50 xl:hover:bg-primary-600 dark:bg-grayDark-400 dark:text-grayDark-100 xl:dark:hover:bg-primary-600 xl:dark:hover:text-grayDark-600">Web
-                                    Design</a>, Web Development, <a href="/ecommerce/" target="_blank"
-                                    rel="noreferrer noopener"
-                                    class="underline duration-500 bg-transparent rounded-md py-0.5 px-1 | bg-gray-50 xl:hover:bg-primary-600 dark:bg-grayDark-400 dark:text-grayDark-100 xl:dark:hover:bg-primary-600 xl:dark:hover:text-grayDark-600">eCommerce</a>
-                                and <a href="/search-engine-optimisation-manchester/" target="_blank"
-                                    rel="noreferrer noopener"
-                                    class="underline duration-500 bg-transparent rounded-md py-0.5 px-1 | bg-gray-50 xl:hover:bg-primary-600 dark:bg-grayDark-400 dark:text-grayDark-100 xl:dark:hover:bg-primary-600 xl:dark:hover:text-grayDark-600">Organic
-                                    SEO</a>.<br></p>
-                            <p
-                                class="text-base | xl:text-md text-gray-600 dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7  mb-6">
-                                With over a decade of experience, Shape is an energetic, fresh and vibrant team offering
-                                creative talent, industry knowledge and extremely high standards.</p>
-                            <p
-                                class="text-base | xl:text-md text-gray-600 dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7  mb-6">
-                                We work with ambitious start-up businesses through to large global organisations such as
-                                Blackberry, NHS and L'Occitane so we can tailor our services to suit your needs. Our
-                                preferred content management system of choice is <a
-                                    href="https://madebyshape.co.uk/craft-cms/" target="_blank"
-                                    rel="noreferrer noopener"
-                                    class="underline duration-500 bg-transparent rounded-md py-0.5 px-1 | bg-gray-50 xl:hover:bg-primary-600 dark:bg-grayDark-400 dark:text-grayDark-100 xl:dark:hover:bg-primary-600 xl:dark:hover:text-grayDark-600">Craft
-                                    CMS</a>.
-                            </p> -->
+
                             <p
                                 class="text-base | xl:text-md text-gray-600 dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7  mb-6">
                                 Our team is a unique fusion of high-level e-commerce operations and luxury brand
@@ -584,14 +569,13 @@ foreach ($aboutImages as $index => $img): ?>
                             <div class="w-full relative">
                                 <div class="w-full rounded-2xl overflow-hidden relative z-10 aspect-ratio-4/3 | lg:rounded-3xl lg:aspect-ratio-16/9 || js-cursor-trigger-drag"
                                     data-icon="volume-on" x-on:click="toggleSound('312636')"
-                                    x-bind:data-icon="muted ? 'volume-off' : 'volume-on'"><video muted autoplay preload="auto"
-                                        playsinline loop loading="lazy"
+                                    x-bind:data-icon="muted ? 'volume-off' : 'volume-on'"><video muted autoplay
+                                        preload="auto" playsinline loop loading="lazy"
                                         poster="<?php echo BASE_URL . "aassets/images/vlcsnap-2025-09-07-23h49m03s206.png"; ?>"
                                         controlslist="nodownload nofullscreen noremoteplayback"
                                         class="w-full h-full absolute top-0 left-0 object-cover object-center || js-video js-video-312636"
                                         x-bind:class="{'js-video-volumn-on': !muted,'js-video-playing': playing,}">
-                                        <source
-                                            src="<?php echo BASE_URL . "assets/videos/In5 Dubai.mp4"; ?>"
+                                        <source src="<?php echo BASE_URL . "assets/videos/In5 Dubai.mp4"; ?>"
                                             type="video/mp4">
                                     </video></div>
                                 <div
@@ -728,16 +712,16 @@ foreach ($aboutImages as $index => $img): ?>
                                 <div class="ease-linear || swiper-wrapper">
                                     <?php $pIndex = 0;
 foreach ($employeeList as $profile) {?>
-                                        <div class="px-2 | lg:px-3 | xl:px-4 | <?php echo $pIndex % 2 === 0 ? "mt:10 lg:mt-16" : ""; ?> || swiper-slide"
-                                            data-swiper-slide-index="<?php echo $pIndex; ?>">
-                                            <div class="w-full || js-profile-card-189">
-                                                <div x-data="profile" class="w-full flex flex-wrap relative group pl-px"
-                                                    x-ref="profile" x-init="profileHover('201')">
-                                                    <!-- <a href="#" class="w-full h-full absolute top-0 left-0 z-10">
+                                    <div class="px-2 | lg:px-3 | xl:px-4 | <?php echo $pIndex % 2 === 0 ? "mt:10 lg:mt-16" : ""; ?> || swiper-slide"
+                                        data-swiper-slide-index="<?php echo $pIndex; ?>">
+                                        <div class="w-full || js-profile-card-189">
+                                            <div x-data="profile" class="w-full flex flex-wrap relative group pl-px"
+                                                x-ref="profile" x-init="profileHover('201')">
+                                                <!-- <a href="#" class="w-full h-full absolute top-0 left-0 z-10">
                                                     <div class="sr-only">
                                                         Andy's profile</div>
                                                 </a> -->
-                                                    <!-- <div
+                                                <!-- <div
                                                     class="absolute top-3 right-3 z-20 inline-flex items-center space-x-1.5">
                                                     <a href="#"
                                                         class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-primary-600 transition-transform transform || xl:group-hover:rotate-90">
@@ -751,61 +735,61 @@ foreach ($employeeList as $profile) {?>
                                                         </svg>
                                                     </a>
                                                 </div> -->
-                                                    <div class="w-full relative">
-                                                        <div class="absolute top-0 left-0 w-full h-full rounded-2xl overflow-hidden opacity-0 hidden | lg:rounded-3xl xl:flex || js-profile-images-201"
-                                                            x-ref="profileImages"
-                                                            x-bind:class="{'opacity-0' : !hovering,'opacity-100' : hovering,}">
-                                                            <img src="<?php echo BASE_URL . "assets/images/employees/" . $profile['name'] . ".png"; ?>?w=600&amp;q=100&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887804&amp;s=0ab1706115fb5536f8bec13610b3e50c"
-                                                                class="w-full h-full object-cover object-center absolute top-0 left-0"
-                                                                alt="Andy 4" loading="lazy" />
-                                                        </div>
-                                                        <div class="w-full rounded-2xl overflow-hidden bg-gray-50 | lg:rounded-3xl"
-                                                            x-bind:class="{'xl:opacity-0' : hovering,'opacity-100' : !hovering,}">
-                                                            <div class="relative overflow-hidden w-full"
-                                                                style="padding-top: 133.25%;">
-                                                                <picture
-                                                                    class="w-full absolute top-0 left-0 w-full h-full ">
-                                                                    <source type="image/webp"
-                                                                        srcset="<?php echo BASE_URL . "assets/images/employees/" . $profile['name'] . ".png"; ?>?w=400&amp;h=533&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050203&amp;s=f4eb0ba70df536ec5c5cc81977e0dca3 400w, <?php echo BASE_URL . "assets/images/employees/" . $profile['name'] . ".png"; ?>?w=800&amp;h=1067&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050203&amp;s=a6beebc09705dd00fdba9961e67df0ff 800w"
-                                                                        sizes="100vw">
-                                                                    <img src="<?php echo BASE_URL . "assets/images/employees/" . $profile['name'] . ".png"; ?>?w=400&amp;h=533&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050203&amp;s=f4eb0ba70df536ec5c5cc81977e0dca3"
-                                                                        srcset="<?php echo BASE_URL . "assets/images/employees/" . $profile['name'] . ".png"; ?>?w=400&amp;h=533&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050203&amp;s=0940deace985b06999187e866834bb9d 400w, <?php echo BASE_URL . "assets/images/employees/" . $profile['name'] . ".png"; ?>?w=800&amp;h=1067&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050203&amp;s=056c51c100e34c2f2c94eff64e4a7504 800w"
-                                                                        sizes="100vw" alt="Andy portrait madebyshape"
-                                                                        class="w-full " width="800" height="1067">
-                                                                </picture>
-                                                            </div>
+                                                <div class="w-full relative">
+                                                    <div class="absolute top-0 left-0 w-full h-full rounded-2xl overflow-hidden opacity-0 hidden | lg:rounded-3xl xl:flex || js-profile-images-201"
+                                                        x-ref="profileImages"
+                                                        x-bind:class="{'opacity-0' : !hovering,'opacity-100' : hovering,}">
+                                                        <img src="<?php echo BASE_URL . "assets/images/employees/" . $profile['name'] . ".png"; ?>?w=600&amp;q=100&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887804&amp;s=0ab1706115fb5536f8bec13610b3e50c"
+                                                            class="w-full h-full object-cover object-center absolute top-0 left-0"
+                                                            alt="Andy 4" loading="lazy" />
+                                                    </div>
+                                                    <div class="w-full rounded-2xl overflow-hidden bg-gray-50 | lg:rounded-3xl"
+                                                        x-bind:class="{'xl:opacity-0' : hovering,'opacity-100' : !hovering,}">
+                                                        <div class="relative overflow-hidden w-full"
+                                                            style="padding-top: 133.25%;">
+                                                            <picture
+                                                                class="w-full absolute top-0 left-0 w-full h-full ">
+                                                                <source type="image/webp"
+                                                                    srcset="<?php echo BASE_URL . "assets/images/employees/" . $profile['name'] . ".png"; ?>?w=400&amp;h=533&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050203&amp;s=f4eb0ba70df536ec5c5cc81977e0dca3 400w, <?php echo BASE_URL . "assets/images/employees/" . $profile['name'] . ".png"; ?>?w=800&amp;h=1067&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050203&amp;s=a6beebc09705dd00fdba9961e67df0ff 800w"
+                                                                    sizes="100vw">
+                                                                <img src="<?php echo BASE_URL . "assets/images/employees/" . $profile['name'] . ".png"; ?>?w=400&amp;h=533&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050203&amp;s=f4eb0ba70df536ec5c5cc81977e0dca3"
+                                                                    srcset="<?php echo BASE_URL . "assets/images/employees/" . $profile['name'] . ".png"; ?>?w=400&amp;h=533&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050203&amp;s=0940deace985b06999187e866834bb9d 400w, <?php echo BASE_URL . "assets/images/employees/" . $profile['name'] . ".png"; ?>?w=800&amp;h=1067&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1705050203&amp;s=056c51c100e34c2f2c94eff64e4a7504 800w"
+                                                                    sizes="100vw" alt="profile image" class="w-full "
+                                                                    width="800" height="1067">
+                                                            </picture>
                                                         </div>
                                                     </div>
-                                                    <div class="w-full absolute bottom-0 left-0 pr-14 z-20">
-                                                        <div
-                                                            class="w-auto relative inline-flex flex-wrap rounded-tr-2xl pt-3 pointer-events-none pr-5 | lg:rounded-tr-3xl lg:pr-8 bg-white | dark:bg-grayDark-600">
-                                                            <svg id="Layer_1"
-                                                                class="w-10 h-10 | lg:w-12 lg:h-12 fill-current absolute -bottom-px right-px transform translate-x-full rotate-180 text-white dark:text-grayDark-600"
-                                                                version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
-                                                                viewBox="0 0 100 100" xml:space="preserve">
-                                                                <path
-                                                                    d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
-                                                            </svg><svg id="Layer_1"
-                                                                class="w-10 h-10 | lg:w-12 lg:h-12 fill-current absolute top-px left-0 transform -translate-y-full rotate-180 text-white dark:text-grayDark-600"
-                                                                version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
-                                                                viewBox="0 0 100 100" xml:space="preserve">
-                                                                <path
-                                                                    d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
-                                                            </svg>
-                                                            <div class="">
-                                                                <div class="dark:text-white">
-                                                                    <?php echo $profile['name']; ?>
-                                                                </div>
-                                                                <div
-                                                                    class="font-light text-gray-300 leading-tight text-sm | 4xl:text-base | dark:text-gray-200">
-                                                                    <?php echo $profile['Designation']; ?>
-                                                                </div>
+                                                </div>
+                                                <div class="w-full absolute bottom-0 left-0 pr-14 z-20">
+                                                    <div
+                                                        class="w-auto relative inline-flex flex-wrap rounded-tr-2xl pt-3 pointer-events-none pr-5 | lg:rounded-tr-3xl lg:pr-8 bg-white | dark:bg-grayDark-600">
+                                                        <svg id="Layer_1"
+                                                            class="w-10 h-10 | lg:w-12 lg:h-12 fill-current absolute -bottom-px right-px transform translate-x-full rotate-180 text-white dark:text-grayDark-600"
+                                                            version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
+                                                            viewBox="0 0 100 100" xml:space="preserve">
+                                                            <path
+                                                                d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
+                                                        </svg><svg id="Layer_1"
+                                                            class="w-10 h-10 | lg:w-12 lg:h-12 fill-current absolute top-px left-0 transform -translate-y-full rotate-180 text-white dark:text-grayDark-600"
+                                                            version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
+                                                            viewBox="0 0 100 100" xml:space="preserve">
+                                                            <path
+                                                                d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
+                                                        </svg>
+                                                        <div class="">
+                                                            <div class="dark:text-white">
+                                                                <?php echo $profile['name']; ?>
+                                                            </div>
+                                                            <div
+                                                                class="font-light text-gray-300 leading-tight text-sm | 4xl:text-base | dark:text-gray-200">
+                                                                <?php echo $profile['Designation']; ?>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+                                    </div>
                                     <?php $pIndex++;}?>
                                 </div>
                             </div>
@@ -1234,7 +1218,8 @@ foreach ($employeeList as $profile) {?>
                                 <div class="w-full relative mt-3">
                                     <p
                                         class="text-sm | md:text-base text-gray-600 dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7  mb-6">
-                                        55% of our projects are client referrals, a clear reflection of the trust and satisfaction we build with every partnership.</p>
+                                        55% of our projects are client referrals, a clear reflection of the trust and
+                                        satisfaction we build with every partnership.</p>
                                 </div>
                             </div>
                             <div class="px-2 | lg:px-3 | xl:px-4 w-full || swiper-slide">
@@ -1701,7 +1686,8 @@ w-full border-b border-solid border-gray-100 pb-5 mb-5 | dark:border-grayDark-30
                                 <div class="w-full relative mt-3">
                                     <p
                                         class="text-sm | md:text-base text-gray-600 dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7  mb-6">
-                                        We’re not lying. We love Dubai. The skyline, the food, the vibe—this city never does anything halfway</p>
+                                        We’re not lying. We love Dubai. The skyline, the food, the vibe—this city never
+                                        does anything halfway</p>
                                 </div>
                             </div>
                         </div>
@@ -1748,13 +1734,13 @@ w-full border-b border-solid border-gray-100 pb-5 mb-5 | dark:border-grayDark-30
                                 class="bg-white absolute top-0 left-0 rounded-br-2xl w-5/16 h-12 | lg:rounded-br-3xl lg:w-3/16 lg:h-20 | dark:bg-grayDark-600">
                                 <svg id="Layer_1"
                                     class="w-10 h-10 | lg:w-12 lg:h-12 text-white fill-current absolute -top-px right-px transform translate-x-full dark:text-grayDark-600"
-                                    version="1.1" xmlns="https://www.w3.org/2000/svg" x="0" y="0"
-                                    viewBox="0 0 100 100" xml:space="preserve">
+                                    version="1.1" xmlns="https://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 100 100"
+                                    xml:space="preserve">
                                     <path d="M51.9 0v1.9c-27.6 0-50 22.4-50 50H0V0h51.9z"></path>
                                 </svg><svg id="Layer_1"
                                     class="w-10 h-10 | lg:w-12 lg:h-12 text-white fill-current absolute bottom-px -left-px transform translate-y-full dark:text-grayDark-600"
-                                    version="1.1" xmlns="https://www.w3.org/2000/svg" x="0" y="0"
-                                    viewBox="0 0 100 100" xml:space="preserve">
+                                    version="1.1" xmlns="https://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 100 100"
+                                    xml:space="preserve">
                                     <path d="M51.9 0v1.9c-27.6 0-50 22.4-50 50H0V0h51.9z"></path>
                                 </svg>
                             </div>
@@ -1774,9 +1760,8 @@ w-full border-b border-solid border-gray-100 pb-5 mb-5 | dark:border-grayDark-30
                                         </h2>
                                     </div>
                                     <div class="flex space-x-5 mt-5">
-                                        <div class="relative group inline-flex items-center"
-                                            x-data="{ hover: false }" x-on:mouseenter="hover = true"
-                                            x-on:mouseleave="hover = false">
+                                        <div class="relative group inline-flex items-center" x-data="{ hover: false }"
+                                            x-on:mouseenter="hover = true" x-on:mouseleave="hover = false">
                                             <svg width="0" height="0" class="absolute hidden"
                                                 color-interpolation-filters="sRGB">
                                                 <defs>
@@ -1795,7 +1780,7 @@ w-full border-b border-solid border-gray-100 pb-5 mb-5 | dark:border-grayDark-30
                                                     </filter>
                                                 </defs>
                                             </svg>
-                                            <a href="https://madebyshape.co.uk/contact/"
+                                            <a href="<?php echo BASE_URL . "contact/"; ?>"
                                                 class="inline-flex relative group outline-none  | focus:outline-none "
                                                 style="filter: url(#buttonFilter);">
                                                 <div
@@ -1815,8 +1800,7 @@ w-full border-b border-solid border-gray-100 pb-5 mb-5 | dark:border-grayDark-30
                                                     <div
                                                         class="relative top-0 left-0 transition-transform transform || js-button-arrow-icon-primary ">
                                                         <svg class="w-3 h-3 fill-current"
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                            viewBox="0 0 384 512">
+                                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                                                             <path
                                                                 d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
                                                             </path>
@@ -1825,8 +1809,7 @@ w-full border-b border-solid border-gray-100 pb-5 mb-5 | dark:border-grayDark-30
                                                     <div
                                                         class="absolute top-0 left-0 transition-transform transform translate-y-full -translate-x-full || js-button-arrow-icon-secondary ">
                                                         <svg class="w-3 h-3 fill-current"
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                            viewBox="0 0 384 512">
+                                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                                                             <path
                                                                 d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
                                                             </path>
@@ -1859,47 +1842,45 @@ w-full border-b border-solid border-gray-100 pb-5 mb-5 | dark:border-grayDark-30
                                     <div class="ease-linear || swiper-wrapper"
                                         style="transition-duration: 8000ms; transform: translate3d(-3921.5px, 0px, 0px);">
                                         <?php foreach (array_slice($logos, -4) as $index => $logo): ?>
-                                            <div class="px-2 | lg:px-3 xl:px-4 swiper-slide swiper-slide-duplicate"
-                                                data-swiper-slide-index="<?php echo $n - 4 - $index; ?>"
-                                                style="width: 356.5px;">
-                                                <div
-                                                    class="w-full flex justify-center items-center rounded-xl bg-gray-100 || js-logo-28 ">
-                                                    <div class="relative rounded-xl overflow-hidden">
-                                                        <img src="<?php echo BASE_URL . $logo; ?>"
-                                                            class="w-176 h-40 | lg:w-144 lg:h-50" />
-                                                    </div>
+                                        <div class="px-2 | lg:px-3 xl:px-4 swiper-slide swiper-slide-duplicate"
+                                            data-swiper-slide-index="<?php echo $n - 4 - $index; ?>"
+                                            style="width: 356.5px;">
+                                            <div
+                                                class="w-full flex justify-center items-center rounded-xl bg-gray-100 || js-logo-28 ">
+                                                <div class="relative rounded-xl overflow-hidden">
+                                                    <img src="<?php echo BASE_URL . $logo; ?>"
+                                                        class="w-176 h-40 | lg:w-144 lg:h-50" />
                                                 </div>
                                             </div>
+                                        </div>
                                         <?php endforeach;
 foreach ($logos as $index => $logo): ?>
 
-                                            <div class="px-2 | lg:px-3 xl:px-4 swiper-slide"
-                                                data-swiper-slide-index="<?php echo $index; ?>"
-                                                style="width: 356.5px;">
-                                                <div
-                                                    class="w-full flex justify-center items-center rounded-xl bg-gray-100 || js-logo-28 ">
-                                                    <div class="relative rounded-xl overflow-hidden">
-                                                        <img src="<?php echo BASE_URL . $logo; ?>"
-                                                            class="w-176 h-40 | lg:w-144 lg:h-50" />
+                                        <div class="px-2 | lg:px-3 xl:px-4 swiper-slide"
+                                            data-swiper-slide-index="<?php echo $index; ?>" style="width: 356.5px;">
+                                            <div
+                                                class="w-full flex justify-center items-center rounded-xl bg-gray-100 || js-logo-28 ">
+                                                <div class="relative rounded-xl overflow-hidden">
+                                                    <img src="<?php echo BASE_URL . $logo; ?>"
+                                                        class="w-176 h-40 | lg:w-144 lg:h-50" />
 
-                                                    </div>
                                                 </div>
                                             </div>
+                                        </div>
                                         <?php endforeach;
 foreach (array_slice($logos, 0, 4) as $index => $logo): ?>
 
 
-                                            <div class="px-2 | lg:px-3 xl:px-4 swiper-slide swiper-slide-duplicate"
-                                                data-swiper-slide-index="<?php echo $index; ?>"
-                                                style="width: 356.5px;">
-                                                <div
-                                                    class="w-full flex justify-center items-center rounded-xl bg-gray-100 || js-logo-28 ">
-                                                    <div class="relative rounded-xl overflow-hidden">
-                                                        <img src="<?php echo BASE_URL . $logo; ?>"
-                                                            class="w-176 h-40 | lg:w-144 lg:h-50" />
-                                                    </div>
+                                        <div class="px-2 | lg:px-3 xl:px-4 swiper-slide swiper-slide-duplicate"
+                                            data-swiper-slide-index="<?php echo $index; ?>" style="width: 356.5px;">
+                                            <div
+                                                class="w-full flex justify-center items-center rounded-xl bg-gray-100 || js-logo-28 ">
+                                                <div class="relative rounded-xl overflow-hidden">
+                                                    <img src="<?php echo BASE_URL . $logo; ?>"
+                                                        class="w-176 h-40 | lg:w-144 lg:h-50" />
                                                 </div>
                                             </div>
+                                        </div>
                                         <?php endforeach; ?>
 
                                     </div>
@@ -1926,47 +1907,45 @@ foreach (array_slice($logos, 0, 4) as $index => $logo): ?>
                                     <div class="ease-linear || swiper-wrapper"
                                         style="transition-duration: 8000ms; transform: translate3d(-3921.5px, 0px, 0px);">
                                         <?php foreach (array_slice($logos, -4) as $index => $logo): ?>
-                                            <div class="px-2 | lg:px-3 xl:px-4 swiper-slide swiper-slide-duplicate"
-                                                data-swiper-slide-index="<?php echo $n - 4 - $index; ?>"
-                                                style="width: 356.5px;">
-                                                <div
-                                                    class="w-full flex justify-center items-center rounded-xl bg-gray-100 || js-logo-28 ">
-                                                    <div class="relative rounded-xl overflow-hidden">
-                                                        <img src="<?php echo BASE_URL . $logo; ?>"
-                                                            class="w-176 h-40 | lg:w-144 lg:h-50" />
-                                                    </div>
+                                        <div class="px-2 | lg:px-3 xl:px-4 swiper-slide swiper-slide-duplicate"
+                                            data-swiper-slide-index="<?php echo $n - 4 - $index; ?>"
+                                            style="width: 356.5px;">
+                                            <div
+                                                class="w-full flex justify-center items-center rounded-xl bg-gray-100 || js-logo-28 ">
+                                                <div class="relative rounded-xl overflow-hidden">
+                                                    <img src="<?php echo BASE_URL . $logo; ?>"
+                                                        class="w-176 h-40 | lg:w-144 lg:h-50" />
                                                 </div>
                                             </div>
+                                        </div>
                                         <?php endforeach;
 foreach ($logos as $index => $logo): ?>
 
-                                            <div class="px-2 | lg:px-3 xl:px-4 swiper-slide"
-                                                data-swiper-slide-index="<?php echo $index; ?>"
-                                                style="width: 356.5px;">
-                                                <div
-                                                    class="w-full flex justify-center items-center rounded-xl bg-gray-100 || js-logo-28 ">
-                                                    <div class="relative rounded-xl overflow-hidden">
-                                                        <img src="<?php echo BASE_URL . $logo; ?>"
-                                                            class="w-176 h-40 | lg:w-144 lg:h-50" />
+                                        <div class="px-2 | lg:px-3 xl:px-4 swiper-slide"
+                                            data-swiper-slide-index="<?php echo $index; ?>" style="width: 356.5px;">
+                                            <div
+                                                class="w-full flex justify-center items-center rounded-xl bg-gray-100 || js-logo-28 ">
+                                                <div class="relative rounded-xl overflow-hidden">
+                                                    <img src="<?php echo BASE_URL . $logo; ?>"
+                                                        class="w-176 h-40 | lg:w-144 lg:h-50" />
 
-                                                    </div>
                                                 </div>
                                             </div>
+                                        </div>
                                         <?php endforeach;
 foreach (array_slice($logos, 0, 4) as $index => $logo): ?>
 
 
-                                            <div class="px-2 | lg:px-3 xl:px-4 swiper-slide swiper-slide-duplicate"
-                                                data-swiper-slide-index="<?php echo $index; ?>"
-                                                style="width: 356.5px;">
-                                                <div
-                                                    class="w-full flex justify-center items-center rounded-xl bg-gray-100 || js-logo-28 ">
-                                                    <div class="relative rounded-xl overflow-hidden">
-                                                        <img src="<?php echo BASE_URL . $logo; ?>"
-                                                            class="w-176 h-40 | lg:w-144 lg:h-50" />
-                                                    </div>
+                                        <div class="px-2 | lg:px-3 xl:px-4 swiper-slide swiper-slide-duplicate"
+                                            data-swiper-slide-index="<?php echo $index; ?>" style="width: 356.5px;">
+                                            <div
+                                                class="w-full flex justify-center items-center rounded-xl bg-gray-100 || js-logo-28 ">
+                                                <div class="relative rounded-xl overflow-hidden">
+                                                    <img src="<?php echo BASE_URL . $logo; ?>"
+                                                        class="w-176 h-40 | lg:w-144 lg:h-50" />
                                                 </div>
                                             </div>
+                                        </div>
                                         <?php endforeach; ?>
 
                                     </div>
@@ -2026,8 +2005,7 @@ foreach (array_slice($logos, 0, 4) as $index => $logo): ?>
                                 <svg class="w-3 h-3 fill-current text-white hidden || js-modal-video-play-icon-428063"
                                     width="12" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                                     <path d="M384 256L0 32v448l384-224z" />
-                                </svg><svg
-                                    class="w-3 h-3 fill-current text-white || js-modal-video-pause-icon-428063"
+                                </svg><svg class="w-3 h-3 fill-current text-white || js-modal-video-pause-icon-428063"
                                     width="10" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                                     <path d="M128 64H0v384h128V64zm192 0H192v384h128V64z" />
                                 </svg>
@@ -2150,20 +2128,19 @@ $dispatch('component-modal', { visible: '428063' });
                                 class="absolute bottom-0 right-0 z-30 pl-4 pt-4 flex-shrink-0 rounded-tl-2xl bg-white | lg:rounded-tl-3xl | dark:bg-grayDark-600">
                                 <svg id="Layer_1"
                                     class="w-10 h-10 | lg:w-12 lg:h-12 text-white fill-current absolute -bottom-px left-px transform -translate-x-full rotate-180 dark:text-grayDark-600"
-                                    version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
-                                    viewBox="0 0 100 100" xml:space="preserve">
+                                    version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 100 100"
+                                    xml:space="preserve">
                                     <path d="M51.9 0v1.9c-27.6 0-50 22.4-50 50H0V0h51.9z" />
                                 </svg><svg id="Layer_1"
                                     class="w-10 h-10 | lg:w-12 lg:h-12 text-white fill-current absolute top-px -right-px transform -translate-y-full rotate-180 dark:text-grayDark-600"
-                                    version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
-                                    viewBox="0 0 100 100" xml:space="preserve">
+                                    version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 100 100"
+                                    xml:space="preserve">
                                     <path d="M51.9 0v1.9c-27.6 0-50 22.4-50 50H0V0h51.9z" />
                                 </svg>
                                 <div class="inline-flex flex-col items-start  | lg:flex-row  lg:space-x-6">
                                     <div class="hidden | lg:inline-flex">
-                                        <div class="relative group inline-flex items-center"
-                                            x-data="{ hover: false }" x-on:mouseenter="hover = true"
-                                            x-on:mouseleave="hover = false">
+                                        <div class="relative group inline-flex items-center" x-data="{ hover: false }"
+                                            x-on:mouseenter="hover = true" x-on:mouseleave="hover = false">
                                             <svg width="0" height="0" class="absolute hidden"
                                                 color-interpolation-filters="sRGB">
                                                 <defs>
@@ -2211,16 +2188,14 @@ bg-primary-600 text-gray-600 py-2 px-5">
                                                     <div
                                                         class="relative top-0 left-0 transition-transform transform || js-button-arrow-icon-primary ">
                                                         <svg class="w-3 h-3 fill-current" width="12" height="16"
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                            viewBox="0 0 384 512">
+                                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                                                             <path d="M384 256L0 32v448l384-224z" />
                                                         </svg>
                                                     </div>
                                                     <div
                                                         class="absolute top-0 left-0 transition-transform transform translate-y-full -translate-x-full || js-button-arrow-icon-secondary ">
                                                         <svg class="w-3 h-3 fill-current" width="12" height="16"
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                            viewBox="0 0 384 512">
+                                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                                                             <path d="M384 256L0 32v448l384-224z" />
                                                         </svg>
                                                     </div>
@@ -2234,8 +2209,7 @@ bg-primary-600 text-gray-600 py-2 px-5">
                                             color-interpolation-filters="sRGB">
                                             <defs>
                                                 <filter id="buttonFilter">
-                                                    <feGaussianBlur in="SourceGraphic" stdDeviation="5"
-                                                        result="blur" />
+                                                    <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
                                                     <feColorMatrix in="blur" mode="matrix"
                                                         values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
                                                         result="buttonFilter" />
@@ -2266,20 +2240,19 @@ bg-primary-600 text-gray-600 py-2 px-5">
                                         </a>
                                         <div
                                             class="w-9 h-9 absolute top-0 right-0 flex items-center justify-center z-20 transition-transform transform w-9 h-9 | xl:group-hover:translate-x-3  xl:group-hover:rotate-45 || js-button-arrow">
-                                            <div
-                                                class="relative overflow-hidden text-white | dark:text-grayDark-100">
+                                            <div class="relative overflow-hidden text-white | dark:text-grayDark-100">
                                                 <div
                                                     class="relative top-0 left-0 transition-transform transform || js-button-arrow-icon-primary ">
-                                                    <svg class="w-3 h-3 fill-current"
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                                    <svg class="w-3 h-3 fill-current" xmlns="http://www.w3.org/2000/svg"
+                                                        viewBox="0 0 384 512">
                                                         <path
                                                             d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z" />
                                                     </svg>
                                                 </div>
                                                 <div
                                                     class="absolute top-0 left-0 transition-transform transform translate-y-full -translate-x-full || js-button-arrow-icon-secondary ">
-                                                    <svg class="w-3 h-3 fill-current"
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                                    <svg class="w-3 h-3 fill-current" xmlns="http://www.w3.org/2000/svg"
+                                                        viewBox="0 0 384 512">
                                                         <path
                                                             d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z" />
                                                     </svg>
@@ -2296,527 +2269,6 @@ bg-primary-600 text-gray-600 py-2 px-5">
         </div>
     </div>
     <div id="420757"></div>
-    <!-- <div x-data="videoQuoteColumns" x-init="carousel('420757')">
-            <div class="w-full pb-20 | lg:pb-24 | 2xl:pb-32 | 4xl:pb-40">
-                <div class="pl-2 | sm:pl-6 | xl:pl-12 | 2xl:pl-20 | 3xl:pl-40 | 4xl:pl-60">
-                    <div
-                        class="w-full flex flex-wrap justify-end mb-10 pr-2 | sm:pr-6 | xl:pr-12 | 2xl:pr-20 | 3xl:pr-40 | 4xl:pr-60">
-                        <div
-                            class="px-2 | lg:px-3 | xl:px-4 w-full flex justify-between items-end | lg:w-2/3 | xl:w-8/16">
-                            <div class="flex flex-col space-y-3 | lg:space-y-5 items-start">
-                                <div class="inline-flex items-center space-x-2  ">
-                                    <div class="bg-gray-600 | dark:bg-grayDark-100 w-1.5 h-1.5 rounded-full"></div>
-                                    <div
-                                        class="font-light text-sm | lg:text-base text-gray-600 | dark:text-grayDark-100">
-                                        Hear it from our team</div>
-                                </div>
-                                <h2 class="
-text-2xl | md:text-3xl | xl:text-4xl | 4xl:text-5xl
-font-sans-primary tracking-tight
-text-gray-600  | dark:text-grayDark-100
-leading-none
-text-balance
-max-w-lg | xl:max-w-none
-">Meet the people who will be working on your project</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="w-full | lg:pr-6 | xl:pr-12 | 2xl:pr-20 | 3xl:pr-40 | 4xl:pr-60 || swiper || js-carousel-420757">
-                        <div class="swiper-wrapper">
-                            <div class="px-2 | lg:px-3 | xl:px-4 || swiper-slide">
-                                <div class="w-full">
-                                    <div class="w-full relative">
-                                        <div x-data="videoFile" x-init="initVideoFile('472158')">
-                                            <div class="w-full relative rounded-2xl bg-gray-50 aspect-ratio-9/16  overflow-hidden group transform-gpu | lg:rounded-3xl | dark:bg-grayDark-500"
-                                                x-on:mouseenter="togglePreview('472158', true)"
-                                                x-on:mouseleave="togglePreview('472158', false)">
-                                                <div class="w-full h-full absolute top-0 left-0 z-20 transition duration-1000"
-                                                    x-bind:class="{
-'opacity-0' : playing || hovering || paused,
-}">
-                                                    <picture>
-                                                        <source type="image/webp"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/ella-thumbnail.jpg?w=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1709133886&amp;s=a0a9a5642acca66d227e9a4e3907ecc2 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/ella-thumbnail.jpg?w=800&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1709133886&amp;s=ee7442c29ba5ce516d22c3065874f5b0 800w"
-                                                            sizes="100vw">
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/ella-thumbnail.jpg?w=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1709133886&amp;s=a0a9a5642acca66d227e9a4e3907ecc2"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/ella-thumbnail.jpg?w=400&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1709133886&amp;s=334bf496d9b03bd6915555fa5feb0584 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/ella-thumbnail.jpg?w=800&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1709133886&amp;s=77d68c4e3eb55c2315d745eba83846bc 800w"
-                                                            sizes="100vw" alt="Ella thumbnail"
-                                                            class=" w-full   w-full h-full object-center object-cover"
-                                                            loading="lazy" width="800" height="1422">
-                                                    </picture>
-                                                </div><video
-                                                    src="https://servd-made-byshape.b-cdn.net/production/uploads/videos/Q1-Working-at-Shape-in-3-words-v3.mp4#t=0.001"
-                                                    playsinline webkit-playsinline muted
-                                                    controlslist="nodownload nofullscreen noremoteplayback"
-                                                    class="w-full h-full absolute top-0 left-0 z-10 object-cover object-center pb-px || js-video js-video-with-sound js-video-472158"
-                                                    loading="lazy" x-bind:class="{
-'js-video-volumn-on': !muted && !paused,
-'js-video-playing': playing || paused,
-}"></video>
-                                                <a href="#"
-                                                    class="absolute top-0 left-0 w-full h-full z-30 flex items-center justify-center transition-none group || js-video-controls-472158"
-                                                    x-on:click.prevent="toggleVideo('472158')" x-bind:class="{
-'opacity-0 pointer-events-none' : playing || paused,
-'opacity-100 pointer-events-auto' : !playing && !paused,
-}">
-                                                    <div class="sr-only">
-                                                        Toggle play/pause</div>
-                                                    <div
-                                                        class="absolute top-0 left-0 w-full h-full flex p-3 | lg:p-5 items-center justify-center ">
-                                                        <div
-                                                            class="flex-shrink-0 rounded-full bg-primary-600 flex items-center justify-center transition-transform transform | xl:group-hover:scale-110 w-14 h-14 | md:w-16 md:h-16">
-                                                            <svg class="w-3 h-3 | md:w-4 md:h-4" width="12" height="16"
-                                                                xmlns="http://www.w3.org/2000/svg"
-                                                                viewBox="0 0 384 512">
-                                                                <path d="M384 256L0 32v448l384-224z" />
-                                                            </svg>
-                                                        </div>
-                                                    </div>
-                                                </a><a href="#"
-                                                    class="absolute top-0 left-0 w-full h-full z-30 flex items-center justify-center"
-                                                    x-on:click.prevent="togglePause('472158')" x-bind:class="{
-'opacity-100 pointer-events-auto' : playing || paused,
-'opacity-0 pointer-events-none' : !playing && !paused,
-}">
-                                                    <div class="sr-only">
-                                                        Toggle play/pause</div>
-                                                </a>
-                                                <div class="absolute inline-flex items-center space-x-3 z-40 transition-opacity opacity-0 bottom-6 left-3 | lg:bottom-8 lg:left-4"
-                                                    x-bind:class="{
-'opacity-0 pointer-events-none' : !playing && !paused,
-'opacity-100 pointer-events-auto' : playing || paused,
-}">
-                                                    <a href="#"
-                                                        class="w-10 h-10 bg-gray-600 bg-opacity-70 text-white rounded-full cursor-pointer flex items-center justify-center"
-                                                        x-on:click.prevent="togglePause('472158')">
-                                                        <div class="sr-only">
-                                                            Toggle play/pause</div>
-                                                        <div x-show="paused">
-                                                            <svg class="w-3 h-3 fill-current text-white" width="12"
-                                                                height="16" xmlns="http://www.w3.org/2000/svg"
-                                                                viewBox="0 0 384 512">
-                                                                <path d="M384 256L0 32v448l384-224z" />
-                                                            </svg>
-                                                        </div>
-                                                        <div x-show="!paused">
-                                                            <svg class="w-3 h-3 fill-current text-white" width="10"
-                                                                height="16" xmlns="http://www.w3.org/2000/svg"
-                                                                viewBox="0 0 320 512">
-                                                                <path d="M128 64H0v384h128V64zm192 0H192v384h128V64z" />
-                                                            </svg>
-                                                        </div>
-                                                    </a>
-                                                    <div class="text-white text-sm || js-video-timer-472158"></div>
-                                                </div>
-                                                <div class="absolute bottom-0 left-0 z-20 w-full px-5 pb-4">
-                                                    <div class="h-0.5 w-full bg-white bg-opacity-20 transition-opacity opacity-0"
-                                                        x-bind:class="{
-'opacity-0' : !playing && !paused,
-'opacity-100' : playing || paused,
-}">
-                                                        <div
-                                                            class="h-0.5 bg-primary-600 w-0 transition || js-video-progress-472158">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="w-full relative mt-8">
-                                        <svg class="w-5 h-5 text-gray-600 fill-current absolute top-0 left-0 | dark:text-white"
-                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 11" fill="none">
-                                            <path
-                                                d="M0 6.646C0 3.107 2.531 1.002 4.11.032c.2-.123.416.133.262.312A8.202 8.202 0 002.92 2.777 4.023 4.023 0 110 6.647zm8.955 0c0-3.539 2.531-5.644 4.11-6.613.2-.123.416.132.263.31a8.202 8.202 0 00-1.454 2.434 4.023 4.023 0 11-2.92 3.87z" />
-                                        </svg>
-                                        <h2 class="
-text-lg | md:text-xl | xl:text-1xl | 4xl:text-2xl
-font-sans-primary tracking-tight
-text-gray-600  | dark:text-grayDark-100
-leading-tighter
-indent-10 | lg:indent-14
-">Describe working at Scalify in three words</h2>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="px-2 | lg:px-3 | xl:px-4 || swiper-slide">
-                                <div class="w-full">
-                                    <div class="w-full relative">
-                                        <div x-data="videoFile" x-init="initVideoFile('472159')">
-                                            <div class="w-full relative rounded-2xl bg-gray-50 aspect-ratio-9/16  overflow-hidden group transform-gpu | lg:rounded-3xl | dark:bg-grayDark-500"
-                                                x-on:mouseenter="togglePreview('472159', true)"
-                                                x-on:mouseleave="togglePreview('472159', false)">
-                                                <div class="w-full h-full absolute top-0 left-0 z-20 transition duration-1000"
-                                                    x-bind:class="{
-'opacity-0' : playing || hovering || paused,
-}">
-                                                    <picture>
-                                                        <source type="image/webp"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/tom-thumbnail.jpg?w=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1709131547&amp;s=9e0c3e1a217d3b42a76f7f441d031fac 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/tom-thumbnail.jpg?w=800&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1709131547&amp;s=fcf6fd160a23b1812be92c6c7983b686 800w"
-                                                            sizes="100vw">
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/tom-thumbnail.jpg?w=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1709131547&amp;s=9e0c3e1a217d3b42a76f7f441d031fac"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/tom-thumbnail.jpg?w=400&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1709131547&amp;s=6ad5959e881d63ad72871437e04f2709 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/tom-thumbnail.jpg?w=800&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1709131547&amp;s=ad24e09e417047550dec15a1fb4b912b 800w"
-                                                            sizes="100vw" alt="Tom thumbnail"
-                                                            class=" w-full   w-full h-full object-center object-cover"
-                                                            loading="lazy" width="800" height="1422">
-                                                    </picture>
-                                                </div><video
-                                                    src="https://servd-made-byshape.b-cdn.net/production/uploads/videos/Q2-Which-CMS-do-you-prefer-v2.mp4#t=0.001"
-                                                    playsinline webkit-playsinline muted
-                                                    controlslist="nodownload nofullscreen noremoteplayback"
-                                                    class="w-full h-full absolute top-0 left-0 z-10 object-cover object-center pb-px || js-video js-video-with-sound js-video-472159"
-                                                    loading="lazy" x-bind:class="{
-'js-video-volumn-on': !muted && !paused,
-'js-video-playing': playing || paused,
-}"></video>
-                                                <a href="#"
-                                                    class="absolute top-0 left-0 w-full h-full z-30 flex items-center justify-center transition-none group || js-video-controls-472159"
-                                                    x-on:click.prevent="toggleVideo('472159')" x-bind:class="{
-'opacity-0 pointer-events-none' : playing || paused,
-'opacity-100 pointer-events-auto' : !playing && !paused,
-}">
-                                                    <div class="sr-only">
-                                                        Toggle play/pause</div>
-                                                    <div
-                                                        class="absolute top-0 left-0 w-full h-full flex p-3 | lg:p-5 items-center justify-center ">
-                                                        <div
-                                                            class="flex-shrink-0 rounded-full bg-primary-600 flex items-center justify-center transition-transform transform | xl:group-hover:scale-110 w-14 h-14 | md:w-16 md:h-16">
-                                                            <svg class="w-3 h-3 | md:w-4 md:h-4" width="12" height="16"
-                                                                xmlns="http://www.w3.org/2000/svg"
-                                                                viewBox="0 0 384 512">
-                                                                <path d="M384 256L0 32v448l384-224z" />
-                                                            </svg>
-                                                        </div>
-                                                    </div>
-                                                </a><a href="#"
-                                                    class="absolute top-0 left-0 w-full h-full z-30 flex items-center justify-center"
-                                                    x-on:click.prevent="togglePause('472159')" x-bind:class="{
-'opacity-100 pointer-events-auto' : playing || paused,
-'opacity-0 pointer-events-none' : !playing && !paused,
-}">
-                                                    <div class="sr-only">
-                                                        Toggle play/pause</div>
-                                                </a>
-                                                <div class="absolute inline-flex items-center space-x-3 z-40 transition-opacity opacity-0 bottom-6 left-3 | lg:bottom-8 lg:left-4"
-                                                    x-bind:class="{
-'opacity-0 pointer-events-none' : !playing && !paused,
-'opacity-100 pointer-events-auto' : playing || paused,
-}">
-                                                    <a href="#"
-                                                        class="w-10 h-10 bg-gray-600 bg-opacity-70 text-white rounded-full cursor-pointer flex items-center justify-center"
-                                                        x-on:click.prevent="togglePause('472159')">
-                                                        <div class="sr-only">
-                                                            Toggle play/pause</div>
-                                                        <div x-show="paused">
-                                                            <svg class="w-3 h-3 fill-current text-white" width="12"
-                                                                height="16" xmlns="http://www.w3.org/2000/svg"
-                                                                viewBox="0 0 384 512">
-                                                                <path d="M384 256L0 32v448l384-224z" />
-                                                            </svg>
-                                                        </div>
-                                                        <div x-show="!paused">
-                                                            <svg class="w-3 h-3 fill-current text-white" width="10"
-                                                                height="16" xmlns="http://www.w3.org/2000/svg"
-                                                                viewBox="0 0 320 512">
-                                                                <path d="M128 64H0v384h128V64zm192 0H192v384h128V64z" />
-                                                            </svg>
-                                                        </div>
-                                                    </a>
-                                                    <div class="text-white text-sm || js-video-timer-472159"></div>
-                                                </div>
-                                                <div class="absolute bottom-0 left-0 z-20 w-full px-5 pb-4">
-                                                    <div class="h-0.5 w-full bg-white bg-opacity-20 transition-opacity opacity-0"
-                                                        x-bind:class="{
-'opacity-0' : !playing && !paused,
-'opacity-100' : playing || paused,
-}">
-                                                        <div
-                                                            class="h-0.5 bg-primary-600 w-0 transition || js-video-progress-472159">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="w-full relative mt-8">
-                                        <svg class="w-5 h-5 text-gray-600 fill-current absolute top-0 left-0 | dark:text-white"
-                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 11" fill="none">
-                                            <path
-                                                d="M0 6.646C0 3.107 2.531 1.002 4.11.032c.2-.123.416.133.262.312A8.202 8.202 0 002.92 2.777 4.023 4.023 0 110 6.647zm8.955 0c0-3.539 2.531-5.644 4.11-6.613.2-.123.416.132.263.31a8.202 8.202 0 00-1.454 2.434 4.023 4.023 0 11-2.92 3.87z" />
-                                        </svg>
-                                        <h2 class="
-text-lg | md:text-xl | xl:text-1xl | 4xl:text-2xl
-font-sans-primary tracking-tight
-text-gray-600  | dark:text-grayDark-100
-leading-tighter
-indent-10 | lg:indent-14
-">Which CMS do you prefer? Wordpress or Craft CMS?</h2>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="px-2 | lg:px-3 | xl:px-4 || swiper-slide">
-                                <div class="w-full">
-                                    <div class="w-full relative">
-                                        <div x-data="videoFile" x-init="initVideoFile('472160')">
-                                            <div class="w-full relative rounded-2xl bg-gray-50 aspect-ratio-9/16  overflow-hidden group transform-gpu | lg:rounded-3xl | dark:bg-grayDark-500"
-                                                x-on:mouseenter="togglePreview('472160', true)"
-                                                x-on:mouseleave="togglePreview('472160', false)">
-                                                <div class="w-full h-full absolute top-0 left-0 z-20 transition duration-1000"
-                                                    x-bind:class="{
-'opacity-0' : playing || hovering || paused,
-}">
-                                                    <picture>
-                                                        <source type="image/webp"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/kerry-thumbnail.jpg?w=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1709131499&amp;s=5adebe6e8346d0ad5d26615e68bd78a1 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/kerry-thumbnail.jpg?w=800&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1709131499&amp;s=6ca05dbda5b47a031f4fb01cd1cf822e 800w"
-                                                            sizes="100vw">
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/kerry-thumbnail.jpg?w=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1709131499&amp;s=5adebe6e8346d0ad5d26615e68bd78a1"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/kerry-thumbnail.jpg?w=400&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1709131499&amp;s=943c2bf00e4fb4b8677f5b3dd99e337b 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/kerry-thumbnail.jpg?w=800&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1709131499&amp;s=3a345be5230f4d6215d98e0736c3c6af 800w"
-                                                            sizes="100vw" alt="Kerry thumbnail"
-                                                            class=" w-full   w-full h-full object-center object-cover"
-                                                            loading="lazy" width="800" height="1422">
-                                                    </picture>
-                                                </div><video
-                                                    src="https://servd-made-byshape.b-cdn.net/production/uploads/videos/Q3-Favourite-thing-about-working-at-Shape-v2.mp4#t=0.001"
-                                                    playsinline webkit-playsinline muted
-                                                    controlslist="nodownload nofullscreen noremoteplayback"
-                                                    class="w-full h-full absolute top-0 left-0 z-10 object-cover object-center pb-px || js-video js-video-with-sound js-video-472160"
-                                                    loading="lazy" x-bind:class="{
-'js-video-volumn-on': !muted && !paused,
-'js-video-playing': playing || paused,
-}"></video>
-                                                <a href="#"
-                                                    class="absolute top-0 left-0 w-full h-full z-30 flex items-center justify-center transition-none group || js-video-controls-472160"
-                                                    x-on:click.prevent="toggleVideo('472160')" x-bind:class="{
-'opacity-0 pointer-events-none' : playing || paused,
-'opacity-100 pointer-events-auto' : !playing && !paused,
-}">
-                                                    <div class="sr-only">
-                                                        Toggle play/pause</div>
-                                                    <div
-                                                        class="absolute top-0 left-0 w-full h-full flex p-3 | lg:p-5 items-center justify-center ">
-                                                        <div
-                                                            class="flex-shrink-0 rounded-full bg-primary-600 flex items-center justify-center transition-transform transform | xl:group-hover:scale-110 w-14 h-14 | md:w-16 md:h-16">
-                                                            <svg class="w-3 h-3 | md:w-4 md:h-4" width="12" height="16"
-                                                                xmlns="http://www.w3.org/2000/svg"
-                                                                viewBox="0 0 384 512">
-                                                                <path d="M384 256L0 32v448l384-224z" />
-                                                            </svg>
-                                                        </div>
-                                                    </div>
-                                                </a><a href="#"
-                                                    class="absolute top-0 left-0 w-full h-full z-30 flex items-center justify-center"
-                                                    x-on:click.prevent="togglePause('472160')" x-bind:class="{
-'opacity-100 pointer-events-auto' : playing || paused,
-'opacity-0 pointer-events-none' : !playing && !paused,
-}">
-                                                    <div class="sr-only">
-                                                        Toggle play/pause</div>
-                                                </a>
-                                                <div class="absolute inline-flex items-center space-x-3 z-40 transition-opacity opacity-0 bottom-6 left-3 | lg:bottom-8 lg:left-4"
-                                                    x-bind:class="{
-'opacity-0 pointer-events-none' : !playing && !paused,
-'opacity-100 pointer-events-auto' : playing || paused,
-}">
-                                                    <a href="#"
-                                                        class="w-10 h-10 bg-gray-600 bg-opacity-70 text-white rounded-full cursor-pointer flex items-center justify-center"
-                                                        x-on:click.prevent="togglePause('472160')">
-                                                        <div class="sr-only">
-                                                            Toggle play/pause</div>
-                                                        <div x-show="paused">
-                                                            <svg class="w-3 h-3 fill-current text-white" width="12"
-                                                                height="16" xmlns="http://www.w3.org/2000/svg"
-                                                                viewBox="0 0 384 512">
-                                                                <path d="M384 256L0 32v448l384-224z" />
-                                                            </svg>
-                                                        </div>
-                                                        <div x-show="!paused">
-                                                            <svg class="w-3 h-3 fill-current text-white" width="10"
-                                                                height="16" xmlns="http://www.w3.org/2000/svg"
-                                                                viewBox="0 0 320 512">
-                                                                <path d="M128 64H0v384h128V64zm192 0H192v384h128V64z" />
-                                                            </svg>
-                                                        </div>
-                                                    </a>
-                                                    <div class="text-white text-sm || js-video-timer-472160"></div>
-                                                </div>
-                                                <div class="absolute bottom-0 left-0 z-20 w-full px-5 pb-4">
-                                                    <div class="h-0.5 w-full bg-white bg-opacity-20 transition-opacity opacity-0"
-                                                        x-bind:class="{
-'opacity-0' : !playing && !paused,
-'opacity-100' : playing || paused,
-}">
-                                                        <div
-                                                            class="h-0.5 bg-primary-600 w-0 transition || js-video-progress-472160">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="w-full relative mt-8">
-                                        <svg class="w-5 h-5 text-gray-600 fill-current absolute top-0 left-0 | dark:text-white"
-                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 11" fill="none">
-                                            <path
-                                                d="M0 6.646C0 3.107 2.531 1.002 4.11.032c.2-.123.416.133.262.312A8.202 8.202 0 002.92 2.777 4.023 4.023 0 110 6.647zm8.955 0c0-3.539 2.531-5.644 4.11-6.613.2-.123.416.132.263.31a8.202 8.202 0 00-1.454 2.434 4.023 4.023 0 11-2.92 3.87z" />
-                                        </svg>
-                                        <h2 class="
-text-lg | md:text-xl | xl:text-1xl | 4xl:text-2xl
-font-sans-primary tracking-tight
-text-gray-600  | dark:text-grayDark-100
-leading-tighter
-indent-10 | lg:indent-14
-">What’s your favourite thing about working at Shape?</h2>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="px-2 | lg:px-3 | xl:px-4 || swiper-slide">
-                                <div class="w-full">
-                                    <div class="w-full relative">
-                                        <div x-data="videoFile" x-init="initVideoFile('472161')">
-                                            <div class="w-full relative rounded-2xl bg-gray-50 aspect-ratio-9/16  overflow-hidden group transform-gpu | lg:rounded-3xl | dark:bg-grayDark-500"
-                                                x-on:mouseenter="togglePreview('472161', true)"
-                                                x-on:mouseleave="togglePreview('472161', false)">
-                                                <div class="w-full h-full absolute top-0 left-0 z-20 transition duration-1000"
-                                                    x-bind:class="{
-'opacity-0' : playing || hovering || paused,
-}">
-                                                    <picture>
-                                                        <source type="image/webp"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/mike-thumbnail.jpg?w=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1709131524&amp;s=1be3f6c2947aa365a22558c5e56da729 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/mike-thumbnail.jpg?w=800&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1709131524&amp;s=dc5dd296f092aca4fe444f0fa4dc44b4 800w"
-                                                            sizes="100vw">
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/mike-thumbnail.jpg?w=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1709131524&amp;s=1be3f6c2947aa365a22558c5e56da729"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/mike-thumbnail.jpg?w=400&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1709131524&amp;s=d391b754e60d53201deb9d3594ff6a2d 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/mike-thumbnail.jpg?w=800&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1709131524&amp;s=376c9aef407d109c71d4aea650b3225d 800w"
-                                                            sizes="100vw" alt="Mike thumbnail"
-                                                            class=" w-full   w-full h-full object-center object-cover"
-                                                            loading="lazy" width="800" height="1422">
-                                                    </picture>
-                                                </div><video
-                                                    src="https://servd-made-byshape.b-cdn.net/production/uploads/videos/Q4-Describe-your-perfect-client-to-work-with-v2.mp4#t=0.001"
-                                                    playsinline webkit-playsinline muted
-                                                    controlslist="nodownload nofullscreen noremoteplayback"
-                                                    class="w-full h-full absolute top-0 left-0 z-10 object-cover object-center pb-px || js-video js-video-with-sound js-video-472161"
-                                                    loading="lazy" x-bind:class="{
-'js-video-volumn-on': !muted && !paused,
-'js-video-playing': playing || paused,
-}"></video>
-                                                <a href="#"
-                                                    class="absolute top-0 left-0 w-full h-full z-30 flex items-center justify-center transition-none group || js-video-controls-472161"
-                                                    x-on:click.prevent="toggleVideo('472161')" x-bind:class="{
-'opacity-0 pointer-events-none' : playing || paused,
-'opacity-100 pointer-events-auto' : !playing && !paused,
-}">
-                                                    <div class="sr-only">
-                                                        Toggle play/pause</div>
-                                                    <div
-                                                        class="absolute top-0 left-0 w-full h-full flex p-3 | lg:p-5 items-center justify-center ">
-                                                        <div
-                                                            class="flex-shrink-0 rounded-full bg-primary-600 flex items-center justify-center transition-transform transform | xl:group-hover:scale-110 w-14 h-14 | md:w-16 md:h-16">
-                                                            <svg class="w-3 h-3 | md:w-4 md:h-4" width="12" height="16"
-                                                                xmlns="http://www.w3.org/2000/svg"
-                                                                viewBox="0 0 384 512">
-                                                                <path d="M384 256L0 32v448l384-224z" />
-                                                            </svg>
-                                                        </div>
-                                                    </div>
-                                                </a><a href="#"
-                                                    class="absolute top-0 left-0 w-full h-full z-30 flex items-center justify-center"
-                                                    x-on:click.prevent="togglePause('472161')" x-bind:class="{
-'opacity-100 pointer-events-auto' : playing || paused,
-'opacity-0 pointer-events-none' : !playing && !paused,
-}">
-                                                    <div class="sr-only">
-                                                        Toggle play/pause</div>
-                                                </a>
-                                                <div class="absolute inline-flex items-center space-x-3 z-40 transition-opacity opacity-0 bottom-6 left-3 | lg:bottom-8 lg:left-4"
-                                                    x-bind:class="{
-'opacity-0 pointer-events-none' : !playing && !paused,
-'opacity-100 pointer-events-auto' : playing || paused,
-}">
-                                                    <a href="#"
-                                                        class="w-10 h-10 bg-gray-600 bg-opacity-70 text-white rounded-full cursor-pointer flex items-center justify-center"
-                                                        x-on:click.prevent="togglePause('472161')">
-                                                        <div class="sr-only">
-                                                            Toggle play/pause</div>
-                                                        <div x-show="paused">
-                                                            <svg class="w-3 h-3 fill-current text-white" width="12"
-                                                                height="16" xmlns="http://www.w3.org/2000/svg"
-                                                                viewBox="0 0 384 512">
-                                                                <path d="M384 256L0 32v448l384-224z" />
-                                                            </svg>
-                                                        </div>
-                                                        <div x-show="!paused">
-                                                            <svg class="w-3 h-3 fill-current text-white" width="10"
-                                                                height="16" xmlns="http://www.w3.org/2000/svg"
-                                                                viewBox="0 0 320 512">
-                                                                <path d="M128 64H0v384h128V64zm192 0H192v384h128V64z" />
-                                                            </svg>
-                                                        </div>
-                                                    </a>
-                                                    <div class="text-white text-sm || js-video-timer-472161"></div>
-                                                </div>
-                                                <div class="absolute bottom-0 left-0 z-20 w-full px-5 pb-4">
-                                                    <div class="h-0.5 w-full bg-white bg-opacity-20 transition-opacity opacity-0"
-                                                        x-bind:class="{
-'opacity-0' : !playing && !paused,
-'opacity-100' : playing || paused,
-}">
-                                                        <div
-                                                            class="h-0.5 bg-primary-600 w-0 transition || js-video-progress-472161">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="w-full relative mt-8">
-                                        <svg class="w-5 h-5 text-gray-600 fill-current absolute top-0 left-0 | dark:text-white"
-                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 11" fill="none">
-                                            <path
-                                                d="M0 6.646C0 3.107 2.531 1.002 4.11.032c.2-.123.416.133.262.312A8.202 8.202 0 002.92 2.777 4.023 4.023 0 110 6.647zm8.955 0c0-3.539 2.531-5.644 4.11-6.613.2-.123.416.132.263.31a8.202 8.202 0 00-1.454 2.434 4.023 4.023 0 11-2.92 3.87z" />
-                                        </svg>
-                                        <h2 class="
-text-lg | md:text-xl | xl:text-1xl | 4xl:text-2xl
-font-sans-primary tracking-tight
-text-gray-600  | dark:text-grayDark-100
-leading-tighter
-indent-10 | lg:indent-14
-">Describe your perfect client to work with</h2>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="px-2 | lg:px-3 | xl:px-4 flex justify-center mt-10 | xl:hidden">
-                        <div class="flex items-center space-x-2">
-                            <a href="#"
-                                class="w-10 h-10 rounded-full inline-flex items-center justify-center | bg-gray-100 | xl:hover:bg-primary-600 | dark:bg-grayDark-400 dark:text-grayDark-100 dark:bg-grayDark-400 | lg:dark:hover:bg-grayDark-300 || js-carousel-prev-420757"
-                                x-bind:class="{
-'opacity-30 pointer-events-none' : isStart,
-}">
-                                <div class="sr-only">
-                                    Previous Slide</div><svg class="w-3 h-3 fill-current" width="14" height="16"
-                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                    <path
-                                        d="M25.4 278.6L2.7 256l22.6-22.6 144-144L192 66.7l45.2 45.3-22.6 22.6-89.4 89.4H448v64H125.3l89.4 89.4 22.5 22.6-45.2 45.3-22.6-22.6-144-144z" />
-                                </svg>
-                            </a>
-                            <a href="#"
-                                class="w-10 h-10 rounded-full inline-flex items-center justify-center | bg-gray-100 | xl:hover:bg-primary-600 | dark:bg-grayDark-400 dark:text-grayDark-100 dark:bg-grayDark-400 | lg:dark:hover:bg-grayDark-300 || js-carousel-next-420757"
-                                x-bind:class="{
-'opacity-30 pointer-events-none' : isEnd,
-}">
-                                <div class="sr-only">
-                                    Next Slide</div><svg class="w-3 h-3 fill-current" width="14" height="16"
-                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                    <path
-                                        d="M422.6 278.6l22.7-22.6-22.6-22.6-144-144L256 66.7 210.8 112l22.6 22.6 89.4 89.4H0v64h322.7l-89.4 89.4-22.5 22.6 45.2 45.3 22.6-22.6 144-144z" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
     <div id="345540"></div>
     <div x-data="reviews" x-init="carousel('345540')">
         <div class="w-full pb-20 | lg:pb-24 | 2xl:pb-32 | 4xl:pb-40">
@@ -2829,10 +2281,10 @@ indent-10 | lg:indent-14
                                 <div class="w-56 | dark:hidden">
                                     <picture>
                                         <source type="image/webp"
-                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Google-Review-Badge-Alt-Black.png?w=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1730706291&amp;s=ae6f561a5930b62e50456bae8387eb0b 400w"
+                                            srcset="<?php echo BASE_URL . 'assets/images/main/'; ?>Google-Review-Badge-Alt-Black.png?w=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1730706291&amp;s=ae6f561a5930b62e50456bae8387eb0b 400w"
                                             sizes="100vw">
-                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Google-Review-Badge-Alt-Black.png?w=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1730706291&amp;s=ae6f561a5930b62e50456bae8387eb0b"
-                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Google-Review-Badge-Alt-Black.png?w=400&amp;q=100&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1730706291&amp;s=a7cbafbd25120f69edbdbe67854ac924 400w"
+                                        <img src="<?php echo BASE_URL . 'assets/images/main/'; ?>Google-Review-Badge-Alt-Black.png?w=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1730706291&amp;s=ae6f561a5930b62e50456bae8387eb0b"
+                                            srcset="<?php echo BASE_URL . 'assets/images/main/'; ?>Google-Review-Badge-Alt-Black.png?w=400&amp;q=100&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1730706291&amp;s=a7cbafbd25120f69edbdbe67854ac924 400w"
                                             sizes="100vw" alt="Google Review Badge Alt Black" class=" w-full  "
                                             loading="lazy" width="400" height="35">
                                     </picture>
@@ -2840,10 +2292,10 @@ indent-10 | lg:indent-14
                                 <div class="w-56 hidden | dark:block">
                                     <picture>
                                         <source type="image/webp"
-                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Google-Review-Badge-Alt-White.png?w=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1730706292&amp;s=43c12f508a6e32f13f825ad0387cdb92 400w"
+                                            srcset="<?php echo BASE_URL . 'assets/images/main/'; ?>Google-Review-Badge-Alt-White.png?w=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1730706292&amp;s=43c12f508a6e32f13f825ad0387cdb92 400w"
                                             sizes="100vw">
-                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Google-Review-Badge-Alt-White.png?w=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1730706292&amp;s=43c12f508a6e32f13f825ad0387cdb92"
-                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Google-Review-Badge-Alt-White.png?w=400&amp;q=100&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1730706292&amp;s=2ac84fce753617a910ae39be454f5bfd 400w"
+                                        <img src="<?php echo BASE_URL . 'assets/images/main/'; ?>Google-Review-Badge-Alt-White.png?w=400&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1730706292&amp;s=43c12f508a6e32f13f825ad0387cdb92"
+                                            srcset="<?php echo BASE_URL . 'assets/images/main/'; ?>Google-Review-Badge-Alt-White.png?w=400&amp;q=100&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1730706292&amp;s=2ac84fce753617a910ae39be454f5bfd 400w"
                                             sizes="100vw" alt="Google Review Badge Alt White" class=" w-full  "
                                             loading="lazy" width="400" height="35">
                                     </picture>
@@ -2868,8 +2320,7 @@ sm:max-w-sm | lg:max-w-none
                                                 <feColorMatrix in="blur" mode="matrix"
                                                     values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
                                                     result="buttonFilter" />
-                                                <feComposite in="SourceGraphic" in2="buttonFilter"
-                                                    operator="atop" />
+                                                <feComposite in="SourceGraphic" in2="buttonFilter" operator="atop" />
                                                 <feBlend in="SourceGraphic" in2="buttonFilter" />
                                             </filter>
                                         </defs>
@@ -2949,8 +2400,7 @@ sm:max-w-sm | lg:max-w-none
                                     <div
                                         class="bg-gray-50 rounded-2xl w-full flex flex-col items-start justify-between p-6 | lg:rounded-3xl lg:p-10 | dark:bg-grayDark-500">
                                         <div class="w-full mb-5 | lg:mb-10">
-                                            <div
-                                                class="mb-5 flex space-x-1 text-gray-600 | lg:mb-10 | dark:text-white">
+                                            <div class="mb-5 flex space-x-1 text-gray-600 | lg:mb-10 | dark:text-white">
                                                 <svg class="w-4 h-4 fill-current" width="18" height="16"
                                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
                                                     <path
@@ -3005,8 +2455,7 @@ sm:max-w-sm | lg:max-w-none
                                     <div
                                         class="bg-gray-50 rounded-2xl w-full flex flex-col items-start justify-between p-6 | lg:rounded-3xl lg:p-10 | dark:bg-grayDark-500">
                                         <div class="w-full mb-5 | lg:mb-10">
-                                            <div
-                                                class="mb-5 flex space-x-1 text-gray-600 | lg:mb-10 | dark:text-white">
+                                            <div class="mb-5 flex space-x-1 text-gray-600 | lg:mb-10 | dark:text-white">
                                                 <svg class="w-4 h-4 fill-current" width="18" height="16"
                                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
                                                     <path
@@ -3060,8 +2509,7 @@ sm:max-w-sm | lg:max-w-none
                                     <div
                                         class="bg-gray-50 rounded-2xl w-full flex flex-col items-start justify-between p-6 | lg:rounded-3xl lg:p-10 | dark:bg-grayDark-500">
                                         <div class="w-full mb-5 | lg:mb-10">
-                                            <div
-                                                class="mb-5 flex space-x-1 text-gray-600 | lg:mb-10 | dark:text-white">
+                                            <div class="mb-5 flex space-x-1 text-gray-600 | lg:mb-10 | dark:text-white">
                                                 <svg class="w-4 h-4 fill-current" width="18" height="16"
                                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
                                                     <path
@@ -3115,8 +2563,7 @@ sm:max-w-sm | lg:max-w-none
                                     <div
                                         class="bg-gray-50 rounded-2xl w-full flex flex-col items-start justify-between p-6 | lg:rounded-3xl lg:p-10 | dark:bg-grayDark-500">
                                         <div class="w-full mb-5 | lg:mb-10">
-                                            <div
-                                                class="mb-5 flex space-x-1 text-gray-600 | lg:mb-10 | dark:text-white">
+                                            <div class="mb-5 flex space-x-1 text-gray-600 | lg:mb-10 | dark:text-white">
                                                 <svg class="w-4 h-4 fill-current" width="18" height="16"
                                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
                                                     <path
@@ -3171,8 +2618,7 @@ sm:max-w-sm | lg:max-w-none
                                     <div
                                         class="bg-gray-50 rounded-2xl w-full flex flex-col items-start justify-between p-6 | lg:rounded-3xl lg:p-10 | dark:bg-grayDark-500">
                                         <div class="w-full mb-5 | lg:mb-10">
-                                            <div
-                                                class="mb-5 flex space-x-1 text-gray-600 | lg:mb-10 | dark:text-white">
+                                            <div class="mb-5 flex space-x-1 text-gray-600 | lg:mb-10 | dark:text-white">
                                                 <svg class="w-4 h-4 fill-current" width="18" height="16"
                                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
                                                     <path
@@ -3226,8 +2672,7 @@ sm:max-w-sm | lg:max-w-none
                                     <div
                                         class="bg-gray-50 rounded-2xl w-full flex flex-col items-start justify-between p-6 | lg:rounded-3xl lg:p-10 | dark:bg-grayDark-500">
                                         <div class="w-full mb-5 | lg:mb-10">
-                                            <div
-                                                class="mb-5 flex space-x-1 text-gray-600 | lg:mb-10 | dark:text-white">
+                                            <div class="mb-5 flex space-x-1 text-gray-600 | lg:mb-10 | dark:text-white">
                                                 <svg class="w-4 h-4 fill-current" width="18" height="16"
                                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
                                                     <path
@@ -3282,8 +2727,7 @@ sm:max-w-sm | lg:max-w-none
                                     <div
                                         class="bg-gray-50 rounded-2xl w-full flex flex-col items-start justify-between p-6 | lg:rounded-3xl lg:p-10 | dark:bg-grayDark-500">
                                         <div class="w-full mb-5 | lg:mb-10">
-                                            <div
-                                                class="mb-5 flex space-x-1 text-gray-600 | lg:mb-10 | dark:text-white">
+                                            <div class="mb-5 flex space-x-1 text-gray-600 | lg:mb-10 | dark:text-white">
                                                 <svg class="w-4 h-4 fill-current" width="18" height="16"
                                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
                                                     <path
@@ -3337,8 +2781,7 @@ sm:max-w-sm | lg:max-w-none
                                     <div
                                         class="bg-gray-50 rounded-2xl w-full flex flex-col items-start justify-between p-6 | lg:rounded-3xl lg:p-10 | dark:bg-grayDark-500">
                                         <div class="w-full mb-5 | lg:mb-10">
-                                            <div
-                                                class="mb-5 flex space-x-1 text-gray-600 | lg:mb-10 | dark:text-white">
+                                            <div class="mb-5 flex space-x-1 text-gray-600 | lg:mb-10 | dark:text-white">
                                                 <svg class="w-4 h-4 fill-current" width="18" height="16"
                                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
                                                     <path
@@ -3393,8 +2836,7 @@ sm:max-w-sm | lg:max-w-none
                                     <div
                                         class="bg-gray-50 rounded-2xl w-full flex flex-col items-start justify-between p-6 | lg:rounded-3xl lg:p-10 | dark:bg-grayDark-500">
                                         <div class="w-full mb-5 | lg:mb-10">
-                                            <div
-                                                class="mb-5 flex space-x-1 text-gray-600 | lg:mb-10 | dark:text-white">
+                                            <div class="mb-5 flex space-x-1 text-gray-600 | lg:mb-10 | dark:text-white">
                                                 <svg class="w-4 h-4 fill-current" width="18" height="16"
                                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
                                                     <path
@@ -3449,8 +2891,7 @@ sm:max-w-sm | lg:max-w-none
                                     <div
                                         class="bg-gray-50 rounded-2xl w-full flex flex-col items-start justify-between p-6 | lg:rounded-3xl lg:p-10 | dark:bg-grayDark-500">
                                         <div class="w-full mb-5 | lg:mb-10">
-                                            <div
-                                                class="mb-5 flex space-x-1 text-gray-600 | lg:mb-10 | dark:text-white">
+                                            <div class="mb-5 flex space-x-1 text-gray-600 | lg:mb-10 | dark:text-white">
                                                 <svg class="w-4 h-4 fill-current" width="18" height="16"
                                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
                                                     <path
@@ -3536,8 +2977,8 @@ sm:max-w-sm | lg:max-w-none
                                 <img src="<?php echo BASE_URL . 'assets/images/work_culture.jpeg'; ?>?w=400&amp;h=300&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143449&amp;s=140822e688c006ab145e4d32aa5097a5"
                                     srcset="<?php echo BASE_URL . 'assets/images/work_culture.jpeg'; ?>?w=400&amp;h=300&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143449&amp;s=f9fc8ed3820083e6745a5e2ad8dcc4df 400w, <?php echo BASE_URL . 'assets/images/work_culture.jpeg'; ?>?w=800&amp;h=600&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143449&amp;s=2f5c29358bb8de66d802ee9af5343cda 800w, <?php echo BASE_URL . 'assets/images/work_culture.jpeg'; ?>?w=1200&amp;h=900&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1651143449&amp;s=041f41cc22c90891d62f6383e6330ce5 1200w"
                                     sizes="100vw" alt="Shape April 2022 HR 48"
-                                    class=" w-full   object-cover absolute top-0 left-0 w-full h-full"
-                                    loading="lazy" width="1200" height="900">
+                                    class=" w-full   object-cover absolute top-0 left-0 w-full h-full" loading="lazy"
+                                    width="1200" height="900">
                             </picture>
                         </div>
                     </div>
@@ -3548,8 +2989,7 @@ sm:max-w-sm | lg:max-w-none
                         <div class="flex flex-col space-y-3 | lg:space-y-5 items-start">
                             <div class="inline-flex items-center space-x-2  ">
                                 <div class="bg-gray-600 | dark:bg-grayDark-100 w-1.5 h-1.5 rounded-full"></div>
-                                <div
-                                    class="font-light text-sm | lg:text-base text-gray-600 | dark:text-grayDark-100">
+                                <div class="font-light text-sm | lg:text-base text-gray-600 | dark:text-grayDark-100">
                                     Our Culture</div>
                             </div>
                             <h2 class="
@@ -3563,8 +3003,10 @@ text-balance
                         <div class="w-full relative ">
                             <p
                                 class="text-base | xl:text-md text-gray-600 dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7  mb-6">
-                                We create meaningful work for great people, ensuring both our team and clients enjoy the process.
-                                This approach builds lasting relationships and brings new opportunities through referrals and repeat business.</p>
+                                We create meaningful work for great people, ensuring both our team and clients enjoy the
+                                process.
+                                This approach builds lasting relationships and brings new opportunities through
+                                referrals and repeat business.</p>
                         </div>
                         <div class="w-full relative">
                             <div class="w-full bg-primary-600 rounded-2xl relative">
@@ -3580,9 +3022,9 @@ text-gray-600
 leading-tighter
 text-pretty
 indent-14 p-6
-">The brands that scale don’t get lucky they build systems. Scalify bridges the gap between a great product and a great business.</div>
-                                <div
-                                    class="w-full flex flex-col items-start | lg:flex-row lg:justify-end lg:items-end">
+">The brands that scale don’t get lucky they build systems. Scalify bridges the gap between a great product and a great
+                                    business.</div>
+                                <div class="w-full flex flex-col items-start | lg:flex-row lg:justify-end lg:items-end">
                                     <div class="flex-shrink-0 px-6 pb-4 | lg:flex-1">
                                         <div class="flex items-end space-x-2 | lg:space-x-3">
                                             <!-- <div
@@ -3591,10 +3033,10 @@ indent-14 p-6
                                                         style="padding-top: 100%;">
                                                         <picture class="w-full absolute top-0 left-0 w-full h-full ">
                                                             <source type="image/webp"
-                                                                srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Andy-Scalify.jpg?w=200&amp;h=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704886233&amp;s=ab1df0fc40d6b7fe24aef5df134baec9 200w"
+                                                                srcset="<?php echo BASE_URL . 'assets/images/main/'; ?>Andy-Scalify.jpg?w=200&amp;h=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704886233&amp;s=ab1df0fc40d6b7fe24aef5df134baec9 200w"
                                                                 sizes="100vw">
-                                                            <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Andy-Scalify.jpg?w=200&amp;h=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704886233&amp;s=ab1df0fc40d6b7fe24aef5df134baec9"
-                                                                srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Andy-Scalify.jpg?w=200&amp;h=200&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704886233&amp;s=4b4b1b743a019f0990d313f86541d652 200w"
+                                                            <img src="<?php echo BASE_URL . 'assets/images/main/'; ?>Andy-Scalify.jpg?w=200&amp;h=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704886233&amp;s=ab1df0fc40d6b7fe24aef5df134baec9"
+                                                                srcset="<?php echo BASE_URL . 'assets/images/main/'; ?>Andy-Scalify.jpg?w=200&amp;h=200&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704886233&amp;s=4b4b1b743a019f0990d313f86541d652 200w"
                                                                 sizes="100vw" alt="Andy"
                                                                 class=" w-full   object-cover object-center w-full h-full absolute top-0 left-0"
                                                                 loading="lazy" width="200" height="200">
@@ -3706,8 +3148,7 @@ bg-gray-600 text-white | dark:bg-grayDark-400 dark:text-grayDark-100 py-2 px-5">
                                                 <feColorMatrix in="blur" mode="matrix"
                                                     values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
                                                     result="buttonFilter" />
-                                                <feComposite in="SourceGraphic" in2="buttonFilter"
-                                                    operator="atop" />
+                                                <feComposite in="SourceGraphic" in2="buttonFilter" operator="atop" />
                                                 <feBlend in="SourceGraphic" in2="buttonFilter" />
                                             </filter>
                                         </defs>
@@ -3765,3569 +3206,1439 @@ bg-gray-600 text-white | dark:bg-grayDark-400 dark:text-grayDark-100 py-2 px-5">
             </div>
         </div>
     </div>
-    <!-- <div id="260625"></div> -->
-    <!-- <div x-data="headingImageCarousel" x-init="carousel('260625')">
-            <div class="w-full pb-20 | lg:pb-24 | 2xl:pb-32 | 4xl:pb-40">
-                <div class="px-0">
-                    <div class="w-full flex flex-wrap">
-                        <div
-                            class="px-2 | sm:px-6 | xl:px-12 | 2xl:px-20 | 3xl:px-40 | 4xl:px-60 w-full flex flex-wrap justify-between items-end mb-10">
-                            <div class="px-2 | lg:px-3 | xl:px-4">
-                                <div class="flex flex-col space-y-3 | lg:space-y-5 items-start">
-                                    <div class="inline-flex items-center space-x-2  ">
-                                        <div class="bg-gray-600 | dark:bg-grayDark-100 w-1.5 h-1.5 rounded-full"></div>
-                                        <div
-                                            class="font-light text-sm | lg:text-base text-gray-600 | dark:text-grayDark-100">
-                                            We don't pay for awards</div>
-                                    </div>
-                                    <h2 class="
-text-2xl | md:text-3xl | xl:text-4xl | 4xl:text-5xl
-font-sans-primary tracking-tight
-text-gray-600  | dark:text-grayDark-100
-leading-none
-text-balance
-max-w-md | xl:max-w-2xl
-">We win awards and get recognised for our work</h2>
-                                </div>
-                            </div>
-                            <div class="px-2 | lg:px-3 | xl:px-4 w-full mt-3 | lg:w-auto lg:mt-0">
-                                <div class="relative group inline-flex items-center" x-data="{ hover: false }"
-                                    x-on:mouseenter="hover = true" x-on:mouseleave="hover = false">
-                                    <svg width="0" height="0" class="absolute hidden"
-                                        color-interpolation-filters="sRGB">
-                                        <defs>
-                                            <filter id="buttonFilter">
-                                                <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
-                                                <feColorMatrix in="blur" mode="matrix"
-                                                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
-                                                    result="buttonFilter" />
-                                                <feComposite in="SourceGraphic" in2="buttonFilter" operator="atop" />
-                                                <feBlend in="SourceGraphic" in2="buttonFilter" />
-                                            </filter>
-                                        </defs>
-                                    </svg>
-                                    <a href="<?php echo BASE_URL; ?>contact/"
-                                        class="inline-flex relative group outline-none  | focus:outline-none "
-                                        style="filter: url(#buttonFilter);">
-                                        <div class="
-w-auto
-inline-flex
-items-center
-justify-center
-relative
-leading-tight
-shadow-none
-overflow-hidden
-rounded-full
-border-default
-bg-primary-600 text-gray-600 py-2 px-5">
-                                            <div class="relative inline-flex top-px flex-shrink-0">
-                                                <div>
-                                                    You could be next</div>
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="bg-primary-600 flex-shrink-0 overflow-hidden flex items-center justify-center -ml-1 rounded-full transform transition-transform | w-9 h-9 | xl:group-hover:translate-x-3  xl:group-hover:rotate-45 | js-button-icon">
-                                        </div>
-                                    </a>
-                                    <div
-                                        class="w-9 h-9 absolute top-0 right-0 flex items-center justify-center z-20 transition-transform transform w-9 h-9 | xl:group-hover:translate-x-3  xl:group-hover:rotate-45 || js-button-arrow">
-                                        <div class="relative overflow-hidden text-gray-600">
-                                            <div
-                                                class="relative top-0 left-0 transition-transform transform || js-button-arrow-icon-primary ">
-                                                <svg class="w-3 h-3 fill-current" xmlns="http://www.w3.org/2000/svg"
-                                                    viewBox="0 0 384 512">
-                                                    <path
-                                                        d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z" />
-                                                </svg>
-                                            </div>
-                                            <div
-                                                class="absolute top-0 left-0 transition-transform transform translate-y-full -translate-x-full || js-button-arrow-icon-secondary ">
-                                                <svg class="w-3 h-3 fill-current" xmlns="http://www.w3.org/2000/svg"
-                                                    viewBox="0 0 384 512">
-                                                    <path
-                                                        d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z" />
-                                                </svg>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="w-full">
-                            <div class="w-full || swiper || js-carousel-260625">
-                                <div class="ease-linear || swiper-wrapper">
-                                    <div class="px-2 | lg:px-3 | xl:px-4 || swiper-slide">
-                                        <div class="w-full || js-image-260625">
-                                            <div
-                                                class="w-full rounded-2xl transform-gpu bg-gray-600 px-6 pt-6 | lg:rounded-3xl | dark:bg-grayDark-500">
-                                                <div class="relative overflow-hidden w-full" style="padding-top: 133%;">
-                                                    <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                                        <source type="image/webp"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-area-hm.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1664875085&amp;s=3d7e0ce8728f377cd37450bb7acae920 200w"
-                                                            sizes="100vw">
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-area-hm.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1664875085&amp;s=3d7e0ce8728f377cd37450bb7acae920"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-area-hm.png?w=200&amp;q=100&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1664875085&amp;s=9e061bf1a47a36847aced7648bc4aa49 200w"
-                                                            sizes="100vw" alt="Certificate area hm"
-                                                            class=" w-full   absolute top-0 left-0 w-full h-full object-cover object-center"
-                                                            loading="lazy" width="200" height="266">
-                                                    </picture>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 || swiper-slide">
-                                        <div class="w-full || js-image-260625">
-                                            <div
-                                                class="w-full rounded-2xl transform-gpu bg-gray-600 px-6 pt-6 | lg:rounded-3xl | dark:bg-grayDark-500">
-                                                <div class="relative overflow-hidden w-full"
-                                                    style="padding-top: 132.5%;">
-                                                    <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                                        <source type="image/webp"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-iet-mobile_excellence.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628684934&amp;s=0fa24a4fef47aff3f90763d5e53d1b4e 200w"
-                                                            sizes="100vw">
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-iet-mobile_excellence.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628684934&amp;s=0fa24a4fef47aff3f90763d5e53d1b4e"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-iet-mobile_excellence.png?w=200&amp;q=100&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628684934&amp;s=2d17020456bc4dbb3f8460a9fdb8fb74 200w"
-                                                            sizes="100vw" alt="Certificate iet mobile excellence"
-                                                            class=" w-full   absolute top-0 left-0 w-full h-full object-cover object-center"
-                                                            loading="lazy" width="200" height="265">
-                                                    </picture>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 || swiper-slide">
-                                        <div class="w-full || js-image-260625">
-                                            <div
-                                                class="w-full rounded-2xl transform-gpu bg-gray-600 px-6 pt-6 | lg:rounded-3xl | dark:bg-grayDark-500">
-                                                <div class="relative overflow-hidden w-full"
-                                                    style="padding-top: 133.5%;">
-                                                    <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                                        <source type="image/webp"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-Scalify-jury.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628684945&amp;s=f660d5c267fcc0e06e23447477e0e8a4 200w"
-                                                            sizes="100vw">
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-Scalify-jury.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628684945&amp;s=f660d5c267fcc0e06e23447477e0e8a4"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-Scalify-jury.png?w=200&amp;q=100&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628684945&amp;s=45155d0d89f436d6537d915ef14ae84d 200w"
-                                                            sizes="100vw" alt="Certificate Made By Shape jury"
-                                                            class=" w-full   absolute top-0 left-0 w-full h-full object-cover object-center"
-                                                            loading="lazy" width="200" height="267">
-                                                    </picture>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 || swiper-slide">
-                                        <div class="w-full || js-image-260625">
-                                            <div
-                                                class="w-full rounded-2xl transform-gpu bg-gray-600 px-6 pt-6 | lg:rounded-3xl | dark:bg-grayDark-500">
-                                                <div class="relative overflow-hidden w-full"
-                                                    style="padding-top: 132.5%;">
-                                                    <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                                        <source type="image/webp"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/cssda-special-kudos-Scalify.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628685021&amp;s=95486a98b0208532d78ff40f9792c6d0 200w"
-                                                            sizes="100vw">
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/cssda-special-kudos-Scalify.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628685021&amp;s=95486a98b0208532d78ff40f9792c6d0"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/cssda-special-kudos-Scalify.png?w=200&amp;q=100&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628685021&amp;s=5dfb998df32f2dfb58a9a8f070b4daa5 200w"
-                                                            sizes="100vw" alt="Cssda special kudos Made By Shape"
-                                                            class=" w-full   absolute top-0 left-0 w-full h-full object-cover object-center"
-                                                            loading="lazy" width="200" height="265">
-                                                    </picture>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 || swiper-slide">
-                                        <div class="w-full || js-image-260625">
-                                            <div
-                                                class="w-full rounded-2xl transform-gpu bg-gray-600 px-6 pt-6 | lg:rounded-3xl | dark:bg-grayDark-500">
-                                                <div class="relative overflow-hidden w-full" style="padding-top: 131%;">
-                                                    <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                                        <source type="image/webp"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/THIS-IS-DIGITAL.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1672932174&amp;s=8e516c91b9a796c18fa8a95552879352 200w"
-                                                            sizes="100vw">
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/THIS-IS-DIGITAL.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1672932174&amp;s=8e516c91b9a796c18fa8a95552879352"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/THIS-IS-DIGITAL.png?w=200&amp;q=100&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1672932174&amp;s=2a7282b5be89d52b3c85a0ff7766210d 200w"
-                                                            sizes="100vw" alt="THIS IS DIGITAL"
-                                                            class=" w-full   absolute top-0 left-0 w-full h-full object-cover object-center"
-                                                            loading="lazy" width="200" height="262">
-                                                    </picture>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 || swiper-slide">
-                                        <div class="w-full || js-image-260625">
-                                            <div
-                                                class="w-full rounded-2xl transform-gpu bg-gray-600 px-6 pt-6 | lg:rounded-3xl | dark:bg-grayDark-500">
-                                                <div class="relative overflow-hidden w-full"
-                                                    style="padding-top: 132.5%;">
-                                                    <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                                        <source type="image/webp"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-iet-hm.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628684931&amp;s=57de9c3684152e0066037bb11ce9fa6c 200w"
-                                                            sizes="100vw">
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-iet-hm.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628684931&amp;s=57de9c3684152e0066037bb11ce9fa6c"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-iet-hm.png?w=200&amp;q=100&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628684931&amp;s=774d329f9ef9f2a1899c9254eacf25f4 200w"
-                                                            sizes="100vw" alt="Certificate iet hm"
-                                                            class=" w-full   absolute top-0 left-0 w-full h-full object-cover object-center"
-                                                            loading="lazy" width="200" height="265">
-                                                    </picture>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 || swiper-slide">
-                                        <div class="w-full || js-image-260625">
-                                            <div
-                                                class="w-full rounded-2xl transform-gpu bg-gray-600 px-6 pt-6 | lg:rounded-3xl | dark:bg-grayDark-500">
-                                                <div class="relative overflow-hidden w-full"
-                                                    style="padding-top: 132.5%;">
-                                                    <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                                        <source type="image/webp"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-shape-christmas-sotd.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628684966&amp;s=f5d57ea451a266efe10dd359b2ca879b 200w"
-                                                            sizes="100vw">
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-shape-christmas-sotd.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628684966&amp;s=f5d57ea451a266efe10dd359b2ca879b"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-shape-christmas-sotd.png?w=200&amp;q=100&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628684966&amp;s=f354d654d9d0ad72a70ad9f348426c52 200w"
-                                                            sizes="100vw" alt="Certificate shape christmas sotd"
-                                                            class=" w-full   absolute top-0 left-0 w-full h-full object-cover object-center"
-                                                            loading="lazy" width="200" height="265">
-                                                    </picture>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 || swiper-slide">
-                                        <div class="w-full || js-image-260625">
-                                            <div
-                                                class="w-full rounded-2xl transform-gpu bg-gray-600 px-6 pt-6 | lg:rounded-3xl | dark:bg-grayDark-500">
-                                                <div class="relative overflow-hidden w-full"
-                                                    style="padding-top: 132.5%;">
-                                                    <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                                        <source type="image/webp"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/cssda-ux-Scalify.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628685026&amp;s=1996548ee4a621921c0498239f69e6a7 200w"
-                                                            sizes="100vw">
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/cssda-ux-Scalify.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628685026&amp;s=1996548ee4a621921c0498239f69e6a7"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/cssda-ux-Scalify.png?w=200&amp;q=100&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628685026&amp;s=852ec6efb35e67ca36e67e720c80c1bf 200w"
-                                                            sizes="100vw" alt="Cssda ux Made By Shape"
-                                                            class=" w-full   absolute top-0 left-0 w-full h-full object-cover object-center"
-                                                            loading="lazy" width="200" height="265">
-                                                    </picture>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 || swiper-slide">
-                                        <div class="w-full || js-image-260625">
-                                            <div
-                                                class="w-full rounded-2xl transform-gpu bg-gray-600 px-6 pt-6 | lg:rounded-3xl | dark:bg-grayDark-500">
-                                                <div class="relative overflow-hidden w-full" style="padding-top: 133%;">
-                                                    <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                                        <source type="image/webp"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-this-is-digital-hm.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1664875084&amp;s=e4dbae6219a476d22b6eea20b20133f2 200w"
-                                                            sizes="100vw">
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-this-is-digital-hm.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1664875084&amp;s=e4dbae6219a476d22b6eea20b20133f2"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-this-is-digital-hm.png?w=200&amp;q=100&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1664875084&amp;s=5390ed0e11efd2eddb1a1b24839034cf 200w"
-                                                            sizes="100vw" alt="Certificate this is digital hm"
-                                                            class=" w-full   absolute top-0 left-0 w-full h-full object-cover object-center"
-                                                            loading="lazy" width="200" height="266">
-                                                    </picture>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 || swiper-slide">
-                                        <div class="w-full || js-image-260625">
-                                            <div
-                                                class="w-full rounded-2xl transform-gpu bg-gray-600 px-6 pt-6 | lg:rounded-3xl | dark:bg-grayDark-500">
-                                                <div class="relative overflow-hidden w-full" style="padding-top: 133%;">
-                                                    <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                                        <source type="image/webp"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-three-little-words-mobile_excellence.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1664875094&amp;s=e2eacbccaa6bdbb5c8ba720620e97a9d 200w"
-                                                            sizes="100vw">
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-three-little-words-mobile_excellence.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1664875094&amp;s=e2eacbccaa6bdbb5c8ba720620e97a9d"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-three-little-words-mobile_excellence.png?w=200&amp;q=100&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1664875094&amp;s=133f9ab21f186f79709534da9031094c 200w"
-                                                            sizes="100vw"
-                                                            alt="Certificate three little words mobile excellence"
-                                                            class=" w-full   absolute top-0 left-0 w-full h-full object-cover object-center"
-                                                            loading="lazy" width="200" height="266">
-                                                    </picture>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 || swiper-slide">
-                                        <div class="w-full || js-image-260625">
-                                            <div
-                                                class="w-full rounded-2xl transform-gpu bg-gray-600 px-6 pt-6 | lg:rounded-3xl | dark:bg-grayDark-500">
-                                                <div class="relative overflow-hidden w-full"
-                                                    style="padding-top: 129.5%;">
-                                                    <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                                        <source type="image/webp"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/Made-By-Shape-site.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1672932146&amp;s=e2ff0d3d55f369e9e422f6b537387326 200w"
-                                                            sizes="100vw">
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/Made-By-Shape-site.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1672932146&amp;s=e2ff0d3d55f369e9e422f6b537387326"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/Made-By-Shape-site.png?w=200&amp;q=100&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1672932146&amp;s=bcedf9fd29052fe3ecbd1cc9ee546ee8 200w"
-                                                            sizes="100vw" alt="Made By Shape site"
-                                                            class=" w-full   absolute top-0 left-0 w-full h-full object-cover object-center"
-                                                            loading="lazy" width="200" height="259">
-                                                    </picture>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 || swiper-slide">
-                                        <div class="w-full || js-image-260625">
-                                            <div
-                                                class="w-full rounded-2xl transform-gpu bg-gray-600 px-6 pt-6 | lg:rounded-3xl | dark:bg-grayDark-500">
-                                                <div class="relative overflow-hidden w-full"
-                                                    style="padding-top: 132.5%;">
-                                                    <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                                        <source type="image/webp"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-madebyshape-1-hm.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628684937&amp;s=8d49ddfb779b342fb8cd7a1050c741c6 200w"
-                                                            sizes="100vw">
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-madebyshape-1-hm.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628684937&amp;s=8d49ddfb779b342fb8cd7a1050c741c6"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-madebyshape-1-hm.png?w=200&amp;q=100&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628684937&amp;s=bf4624afa6a59946d6db73a41c293fbb 200w"
-                                                            sizes="100vw" alt="Certificate madebyshape 1 hm"
-                                                            class=" w-full   absolute top-0 left-0 w-full h-full object-cover object-center"
-                                                            loading="lazy" width="200" height="265">
-                                                    </picture>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 || swiper-slide">
-                                        <div class="w-full || js-image-260625">
-                                            <div
-                                                class="w-full rounded-2xl transform-gpu bg-gray-600 px-6 pt-6 | lg:rounded-3xl | dark:bg-grayDark-500">
-                                                <div class="relative overflow-hidden w-full"
-                                                    style="padding-top: 132.5%;">
-                                                    <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                                        <source type="image/webp"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-mysa-skincare-mobile_excellence.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628684951&amp;s=284b7133ff623e9391666c8491bc94fb 200w"
-                                                            sizes="100vw">
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-mysa-skincare-mobile_excellence.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628684951&amp;s=284b7133ff623e9391666c8491bc94fb"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-mysa-skincare-mobile_excellence.png?w=200&amp;q=100&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628684951&amp;s=fc02b36c68025b39c7d9952ef1129a4b 200w"
-                                                            sizes="100vw"
-                                                            alt="Certificate mysa skincare mobile excellence"
-                                                            class=" w-full   absolute top-0 left-0 w-full h-full object-cover object-center"
-                                                            loading="lazy" width="200" height="265">
-                                                    </picture>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 || swiper-slide">
-                                        <div class="w-full || js-image-260625">
-                                            <div
-                                                class="w-full rounded-2xl transform-gpu bg-gray-600 px-6 pt-6 | lg:rounded-3xl | dark:bg-grayDark-500">
-                                                <div class="relative overflow-hidden w-full"
-                                                    style="padding-top: 132.5%;">
-                                                    <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                                        <source type="image/webp"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-riley-studio-hm.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628684957&amp;s=f3698c741b0a3a324d1dd41a587cb120 200w"
-                                                            sizes="100vw">
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-riley-studio-hm.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628684957&amp;s=f3698c741b0a3a324d1dd41a587cb120"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-riley-studio-hm.png?w=200&amp;q=100&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628684957&amp;s=03e4507c0068b68c81bf5c03c62a572e 200w"
-                                                            sizes="100vw" alt="Certificate riley studio hm"
-                                                            class=" w-full   absolute top-0 left-0 w-full h-full object-cover object-center"
-                                                            loading="lazy" width="200" height="265">
-                                                    </picture>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 || swiper-slide">
-                                        <div class="w-full || js-image-260625">
-                                            <div
-                                                class="w-full rounded-2xl transform-gpu bg-gray-600 px-6 pt-6 | lg:rounded-3xl | dark:bg-grayDark-500">
-                                                <div class="relative overflow-hidden w-full"
-                                                    style="padding-top: 132.5%;">
-                                                    <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                                        <source type="image/webp"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/cssda-ui-Scalify.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628685024&amp;s=2d3c3024b23451c24cd0ea2366113216 200w"
-                                                            sizes="100vw">
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/cssda-ui-Scalify.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628685024&amp;s=2d3c3024b23451c24cd0ea2366113216"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/cssda-ui-Scalify.png?w=200&amp;q=100&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628685024&amp;s=8a905764fc82e492d333f209a5599c06 200w"
-                                                            sizes="100vw" alt="Cssda ui Made By Shape"
-                                                            class=" w-full   absolute top-0 left-0 w-full h-full object-cover object-center"
-                                                            loading="lazy" width="200" height="265">
-                                                    </picture>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 || swiper-slide">
-                                        <div class="w-full || js-image-260625">
-                                            <div
-                                                class="w-full rounded-2xl transform-gpu bg-gray-600 px-6 pt-6 | lg:rounded-3xl | dark:bg-grayDark-500">
-                                                <div class="relative overflow-hidden w-full"
-                                                    style="padding-top: 132.5%;">
-                                                    <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                                        <source type="image/webp"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-riley-studio-mobile_excellence.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628684960&amp;s=9f988f61deaed4ba68a4a1564d5d1cb3 200w"
-                                                            sizes="100vw">
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-riley-studio-mobile_excellence.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628684960&amp;s=9f988f61deaed4ba68a4a1564d5d1cb3"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-riley-studio-mobile_excellence.png?w=200&amp;q=100&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628684960&amp;s=fd0c4dafa322fd70524cbc9bee5a39b2 200w"
-                                                            sizes="100vw"
-                                                            alt="Certificate riley studio mobile excellence"
-                                                            class=" w-full   absolute top-0 left-0 w-full h-full object-cover object-center"
-                                                            loading="lazy" width="200" height="265">
-                                                    </picture>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 || swiper-slide">
-                                        <div class="w-full || js-image-260625">
-                                            <div
-                                                class="w-full rounded-2xl transform-gpu bg-gray-600 px-6 pt-6 | lg:rounded-3xl | dark:bg-grayDark-500">
-                                                <div class="relative overflow-hidden w-full"
-                                                    style="padding-top: 132.5%;">
-                                                    <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                                        <source type="image/webp"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-boys-by-girls-hm.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628684911&amp;s=4a435ab7a47ae9f9374e8eed568c1c71 200w"
-                                                            sizes="100vw">
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-boys-by-girls-hm.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628684911&amp;s=4a435ab7a47ae9f9374e8eed568c1c71"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-boys-by-girls-hm.png?w=200&amp;q=100&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628684911&amp;s=31402d3d628f9ac70e783c2a92561b18 200w"
-                                                            sizes="100vw" alt="Certificate boys by girls hm"
-                                                            class=" w-full   absolute top-0 left-0 w-full h-full object-cover object-center"
-                                                            loading="lazy" width="200" height="265">
-                                                    </picture>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 || swiper-slide">
-                                        <div class="w-full || js-image-260625">
-                                            <div
-                                                class="w-full rounded-2xl transform-gpu bg-gray-600 px-6 pt-6 | lg:rounded-3xl | dark:bg-grayDark-500">
-                                                <div class="relative overflow-hidden w-full"
-                                                    style="padding-top: 132.5%;">
-                                                    <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                                        <source type="image/webp"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-njorun-active-hm.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628684954&amp;s=d58bb0beaec69f6726d97a20d4f2a55b 200w"
-                                                            sizes="100vw">
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-njorun-active-hm.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628684954&amp;s=d58bb0beaec69f6726d97a20d4f2a55b"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-njorun-active-hm.png?w=200&amp;q=100&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628684954&amp;s=43826cdbfc39e6d969898350b8eed053 200w"
-                                                            sizes="100vw" alt="Certificate njorun active hm"
-                                                            class=" w-full   absolute top-0 left-0 w-full h-full object-cover object-center"
-                                                            loading="lazy" width="200" height="265">
-                                                    </picture>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 || swiper-slide">
-                                        <div class="w-full || js-image-260625">
-                                            <div
-                                                class="w-full rounded-2xl transform-gpu bg-gray-600 px-6 pt-6 | lg:rounded-3xl | dark:bg-grayDark-500">
-                                                <div class="relative overflow-hidden w-full"
-                                                    style="padding-top: 132.5%;">
-                                                    <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                                        <source type="image/webp"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-co-co-mobile_excellence.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628684920&amp;s=e626e5a33bc43cabbd1dcbe0a43b6b0a 200w"
-                                                            sizes="100vw">
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-co-co-mobile_excellence.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628684920&amp;s=e626e5a33bc43cabbd1dcbe0a43b6b0a"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-co-co-mobile_excellence.png?w=200&amp;q=100&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628684920&amp;s=db8903d59fc3c46b7dc0a5903bbaf2fa 200w"
-                                                            sizes="100vw" alt="Certificate co co mobile excellence"
-                                                            class=" w-full   absolute top-0 left-0 w-full h-full object-cover object-center"
-                                                            loading="lazy" width="200" height="265">
-                                                    </picture>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 || swiper-slide">
-                                        <div class="w-full || js-image-260625">
-                                            <div
-                                                class="w-full rounded-2xl transform-gpu bg-gray-600 px-6 pt-6 | lg:rounded-3xl | dark:bg-grayDark-500">
-                                                <div class="relative overflow-hidden w-full" style="padding-top: 133%;">
-                                                    <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                                        <source type="image/webp"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-three-little-words-hm.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1664875104&amp;s=7c8b5120fa1a6828f40c6b1591f2df7b 200w"
-                                                            sizes="100vw">
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-three-little-words-hm.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1664875104&amp;s=7c8b5120fa1a6828f40c6b1591f2df7b"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-three-little-words-hm.png?w=200&amp;q=100&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1664875104&amp;s=626dc13849c714e58e8c695cb75d3127 200w"
-                                                            sizes="100vw" alt="Certificate three little words hm"
-                                                            class=" w-full   absolute top-0 left-0 w-full h-full object-cover object-center"
-                                                            loading="lazy" width="200" height="266">
-                                                    </picture>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 || swiper-slide">
-                                        <div class="w-full || js-image-260625">
-                                            <div
-                                                class="w-full rounded-2xl transform-gpu bg-gray-600 px-6 pt-6 | lg:rounded-3xl | dark:bg-grayDark-500">
-                                                <div class="relative overflow-hidden w-full"
-                                                    style="padding-top: 132.5%;">
-                                                    <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                                        <source type="image/webp"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-shape-design-studio-sotd.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628684969&amp;s=8da9051dab0de9adfcf8d6b2aead731e 200w"
-                                                            sizes="100vw">
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-shape-design-studio-sotd.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628684969&amp;s=8da9051dab0de9adfcf8d6b2aead731e"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-shape-design-studio-sotd.png?w=200&amp;q=100&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628684969&amp;s=3774be4727bb94b32a83ea02557cdc06 200w"
-                                                            sizes="100vw" alt="Certificate shape design studio sotd"
-                                                            class=" w-full   absolute top-0 left-0 w-full h-full object-cover object-center"
-                                                            loading="lazy" width="200" height="265">
-                                                    </picture>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 || swiper-slide">
-                                        <div class="w-full || js-image-260625">
-                                            <div
-                                                class="w-full rounded-2xl transform-gpu bg-gray-600 px-6 pt-6 | lg:rounded-3xl | dark:bg-grayDark-500">
-                                                <div class="relative overflow-hidden w-full"
-                                                    style="padding-top: 132.5%;">
-                                                    <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                                        <source type="image/webp"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-hex-test-hm.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628684924&amp;s=633a8a8a2670f3260857324ae3acef4d 200w"
-                                                            sizes="100vw">
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-hex-test-hm.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628684924&amp;s=633a8a8a2670f3260857324ae3acef4d"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-hex-test-hm.png?w=200&amp;q=100&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628684924&amp;s=416933f35223b5c085b94b51c6028568 200w"
-                                                            sizes="100vw" alt="Certificate hex test hm"
-                                                            class=" w-full   absolute top-0 left-0 w-full h-full object-cover object-center"
-                                                            loading="lazy" width="200" height="265">
-                                                    </picture>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 || swiper-slide">
-                                        <div class="w-full || js-image-260625">
-                                            <div
-                                                class="w-full rounded-2xl transform-gpu bg-gray-600 px-6 pt-6 | lg:rounded-3xl | dark:bg-grayDark-500">
-                                                <div class="relative overflow-hidden w-full"
-                                                    style="padding-top: 132.5%;">
-                                                    <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                                        <source type="image/webp"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-madebyshape-1-mobile_excellence.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628684940&amp;s=5faeac8e3ddf402e798cb81deebabce5 200w"
-                                                            sizes="100vw">
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-madebyshape-1-mobile_excellence.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628684940&amp;s=5faeac8e3ddf402e798cb81deebabce5"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-madebyshape-1-mobile_excellence.png?w=200&amp;q=100&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628684940&amp;s=e6be3aa850e10e377de831f01b566efc 200w"
-                                                            sizes="100vw"
-                                                            alt="Certificate madebyshape 1 mobile excellence"
-                                                            class=" w-full   absolute top-0 left-0 w-full h-full object-cover object-center"
-                                                            loading="lazy" width="200" height="265">
-                                                    </picture>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 || swiper-slide">
-                                        <div class="w-full || js-image-260625">
-                                            <div
-                                                class="w-full rounded-2xl transform-gpu bg-gray-600 px-6 pt-6 | lg:rounded-3xl | dark:bg-grayDark-500">
-                                                <div class="relative overflow-hidden w-full" style="padding-top: 133%;">
-                                                    <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                                        <source type="image/webp"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-alphabet-hm.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1664875086&amp;s=1d5065a626ddf4dd0bb0a958cab65b32 200w"
-                                                            sizes="100vw">
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-alphabet-hm.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1664875086&amp;s=1d5065a626ddf4dd0bb0a958cab65b32"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-alphabet-hm.png?w=200&amp;q=100&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1664875086&amp;s=4f8f70619e440804aa2473deb2fc13e6 200w"
-                                                            sizes="100vw" alt="Certificate alphabet hm"
-                                                            class=" w-full   absolute top-0 left-0 w-full h-full object-cover object-center"
-                                                            loading="lazy" width="200" height="266">
-                                                    </picture>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 || swiper-slide">
-                                        <div class="w-full || js-image-260625">
-                                            <div
-                                                class="w-full rounded-2xl transform-gpu bg-gray-600 px-6 pt-6 | lg:rounded-3xl | dark:bg-grayDark-500">
-                                                <div class="relative overflow-hidden w-full"
-                                                    style="padding-top: 132.5%;">
-                                                    <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                                        <source type="image/webp"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-hex-test-mobile_excellence.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628684928&amp;s=24de62a987b16ec81a1c66c003b058cf 200w"
-                                                            sizes="100vw">
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-hex-test-mobile_excellence.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628684928&amp;s=24de62a987b16ec81a1c66c003b058cf"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-hex-test-mobile_excellence.png?w=200&amp;q=100&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628684928&amp;s=cc3920bae5e4af45cadd59550d12b962 200w"
-                                                            sizes="100vw" alt="Certificate hex test mobile excellence"
-                                                            class=" w-full   absolute top-0 left-0 w-full h-full object-cover object-center"
-                                                            loading="lazy" width="200" height="265">
-                                                    </picture>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 || swiper-slide">
-                                        <div class="w-full || js-image-260625">
-                                            <div
-                                                class="w-full rounded-2xl transform-gpu bg-gray-600 px-6 pt-6 | lg:rounded-3xl | dark:bg-grayDark-500">
-                                                <div class="relative overflow-hidden w-full"
-                                                    style="padding-top: 132.5%;">
-                                                    <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                                        <source type="image/webp"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-madebyshape-hm.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628684942&amp;s=b192f1e2e3c47210f1ae4ff34c0dc5d3 200w"
-                                                            sizes="100vw">
-                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-madebyshape-hm.png?w=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628684942&amp;s=b192f1e2e3c47210f1ae4ff34c0dc5d3"
-                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Awards/certificate-madebyshape-hm.png?w=200&amp;q=100&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1628684942&amp;s=01bceb6a939f2c95d36cad76fe84229a 200w"
-                                                            sizes="100vw" alt="Certificate madebyshape hm"
-                                                            class=" w-full   absolute top-0 left-0 w-full h-full object-cover object-center"
-                                                            loading="lazy" width="200" height="265">
-                                                    </picture>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-    <!-- <div id="195"></div>
-        <div x-data="pageLinksCarousel" x-init="carousel('195')">
-            <div class="w-full pb-20 | lg:pb-24 | 2xl:pb-32 | 4xl:pb-40">
-                <div class="pl-2 | sm:pl-6 | xl:pl-12 | 2xl:pl-20 | 3xl:pl-40 | 4xl:pl-60">
-                    <div class="w-full flex flex-wrap justify-between">
-                        <div
-                            class="px-2 | lg:px-3 | xl:px-4 inline-flex flex-row items-end justify-between w-full mb-10 | md:pr-6 | lg:pr-0 lg:flex-col lg:items-start lg:justify-between lg:w-4/16 lg:mb-0 | 4xl:w-3/16">
-                            <div class="flex flex-col space-y-3 | lg:space-y-5 items-start">
-                                <div class="inline-flex items-center space-x-2  ">
-                                    <div class="bg-gray-600 | dark:bg-grayDark-100 w-1.5 h-1.5 rounded-full"></div>
-                                    <div
-                                        class="font-light text-sm | lg:text-base text-gray-600 | dark:text-grayDark-100">
-                                        Blog</div>
-                                </div>
-                                <h2 class="
-text-2xl | md:text-3xl | xl:text-4xl | 4xl:text-5xl
-font-sans-primary tracking-tight
-text-gray-600  | dark:text-grayDark-100
-leading-none
-text-balance
-max-w-xs | lg:max-w-sm
-">Latest from
-                                    our studio</h2>
-                                <div class="relative group inline-flex items-center" x-data="{ hover: false }"
-                                    x-on:mouseenter="hover = true" x-on:mouseleave="hover = false">
-                                    <svg width="0" height="0" class="absolute hidden"
-                                        color-interpolation-filters="sRGB">
-                                        <defs>
-                                            <filter id="buttonFilter">
-                                                <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
-                                                <feColorMatrix in="blur" mode="matrix"
-                                                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
-                                                    result="buttonFilter" />
-                                                <feComposite in="SourceGraphic" in2="buttonFilter" operator="atop" />
-                                                <feBlend in="SourceGraphic" in2="buttonFilter" />
-                                            </filter>
-                                        </defs>
-                                    </svg>
-                                    <a href="/web-design-blog/"
-                                        class="inline-flex relative group outline-none  | focus:outline-none "
-                                        style="filter: url(#buttonFilter);">
-                                        <div class="
-w-auto
-inline-flex
-items-center
-justify-center
-relative
-leading-tight
-shadow-none
-overflow-hidden
-rounded-full
-border-default
-bg-primary-600 text-gray-600 py-2 px-5">
-                                            <div class="relative inline-flex top-px flex-shrink-0">
-                                                <div>
-                                                    View the Blog</div>
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="bg-primary-600 flex-shrink-0 overflow-hidden flex items-center justify-center -ml-1 rounded-full transform transition-transform | w-9 h-9 | xl:group-hover:translate-x-3  xl:group-hover:rotate-45 | js-button-icon">
-                                        </div>
-                                    </a>
-                                    <div
-                                        class="w-9 h-9 absolute top-0 right-0 flex items-center justify-center z-20 transition-transform transform w-9 h-9 | xl:group-hover:translate-x-3  xl:group-hover:rotate-45 || js-button-arrow">
-                                        <div class="relative overflow-hidden text-gray-600">
-                                            <div
-                                                class="relative top-0 left-0 transition-transform transform || js-button-arrow-icon-primary ">
-                                                <svg class="w-3 h-3 fill-current" xmlns="http://www.w3.org/2000/svg"
-                                                    viewBox="0 0 384 512">
-                                                    <path
-                                                        d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z" />
-                                                </svg>
-                                            </div>
-                                            <div
-                                                class="absolute top-0 left-0 transition-transform transform translate-y-full -translate-x-full || js-button-arrow-icon-secondary ">
-                                                <svg class="w-3 h-3 fill-current" xmlns="http://www.w3.org/2000/svg"
-                                                    viewBox="0 0 384 512">
-                                                    <path
-                                                        d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z" />
-                                                </svg>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex items-center space-x-2">
-                                <a href="#"
-                                    class="w-10 h-10 rounded-full inline-flex items-center justify-center | bg-gray-100 | xl:hover:bg-primary-600 | dark:bg-grayDark-400 dark:text-grayDark-100 dark:bg-grayDark-400 | lg:dark:hover:bg-grayDark-300 || js-carousel-prev-195"
-                                    x-bind:class="{
-'opacity-30 pointer-events-none' : isStart,
-}">
-                                    <div class="sr-only">
-                                        Previous Slide</div><svg class="w-3 h-3 fill-current" width="14" height="16"
-                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                        <path
-                                            d="M25.4 278.6L2.7 256l22.6-22.6 144-144L192 66.7l45.2 45.3-22.6 22.6-89.4 89.4H448v64H125.3l89.4 89.4 22.5 22.6-45.2 45.3-22.6-22.6-144-144z" />
-                                    </svg>
-                                </a>
-                                <a href="#"
-                                    class="w-10 h-10 rounded-full inline-flex items-center justify-center | bg-gray-100 | xl:hover:bg-primary-600 | dark:bg-grayDark-400 dark:text-grayDark-100 dark:bg-grayDark-400 | lg:dark:hover:bg-grayDark-300 || js-carousel-next-195"
-                                    x-bind:class="{
-'opacity-30 pointer-events-none' : isEnd,
-}">
-                                    <div class="sr-only">
-                                        Next Slide</div><svg class="w-3 h-3 fill-current" width="14" height="16"
-                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                        <path
-                                            d="M422.6 278.6l22.7-22.6-22.6-22.6-144-144L256 66.7 210.8 112l22.6 22.6 89.4 89.4H0v64h322.7l-89.4 89.4-22.5 22.6 45.2 45.3 22.6-22.6 144-144z" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="w-full | lg:w-12/16">
-                            <div class="w-full || swiper || js-carousel-195">
-                                <div class="swiper-wrapper">
-                                    <div class="px-2 | lg:px-3 | xl:px-4 || swiper-slide">
-                                        <div class="w-full"><a
-                                                href="https://madebyshape.co.uk/web-design-blog/our-culture-our-value-our-studio/"
-                                                class="flex flex-col items-start group relative || js-cursor-trigger-drag">
-                                                <div class="w-full relative mb-5 pl-px">
-                                                    <div
-                                                        class="w-full relative overflow-hidden rounded-2xl rounded-bl-lg | lg:rounded-bl-2xl lg:rounded-3xl">
-                                                        <div
-                                                            class="absolute bottom-0 left-0 z-20 bg-white rounded-tr-2xl flex transition-transform transform duration-400 pr-2 pt-2 | lg:pr-3 lg:pt-3 | xl:translate-y-full xl:-translate-x-full lg:rounded-tr-3xl | xl:group-hover:translate-x-0 xl:group-hover:translate-y-0 | dark:bg-grayDark-600">
-                                                            <svg id="Layer_1"
-                                                                class="w-10 h-10 | lg:w-12 lg:h-12 text-white fill-current absolute top-px -left-px transform -translate-y-full rotate-180 dark:text-grayDark-600"
-                                                                version="1.1" xmlns="http://www.w3.org/2000/svg" x="0"
-                                                                y="0" viewBox="0 0 100 100" xml:space="preserve">
-                                                                <path
-                                                                    d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
-                                                            </svg><svg id="Layer_1"
-                                                                class="w-10 h-10 | lg:w-12 lg:h-12 text-white fill-current absolute -bottom-px right-px transform translate-x-full rotate-180 dark:text-grayDark-600"
-                                                                version="1.1" xmlns="http://www.w3.org/2000/svg" x="0"
-                                                                y="0" viewBox="0 0 100 100" xml:space="preserve">
-                                                                <path
-                                                                    d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
-                                                            </svg>
-                                                            <div
-                                                                class="rounded-xl transform-gpu overflow-hidden relative w-12 h-12 bg-gray-50 | lg:rounded-2xl | dark:bg-grayDark-400 | lg:w-16 lg:h-16">
-                                                                <div class="relative overflow-hidden w-full"
-                                                                    style="padding-top: 100%;">
-                                                                    <picture
-                                                                        class="w-full absolute top-0 left-0 w-full h-full ">
-                                                                        <source type="image/webp"
-                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/square/Natasia-Scalify.jpg?w=200&amp;h=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887831&amp;s=a5a3a13d003684dc2756d9db436a4788 200w"
-                                                                            sizes="100vw">
-                                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/square/Natasia-Scalify.jpg?w=200&amp;h=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887831&amp;s=a5a3a13d003684dc2756d9db436a4788"
-                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/square/Natasia-Scalify.jpg?w=200&amp;h=200&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887831&amp;s=a1d3888cd94d82bc9484b634af3db1ca 200w"
-                                                                            sizes="100vw" alt="Natasia Made By Shape"
-                                                                            class=" w-full   w-full h-full object-cover absolute top-0 left-0"
-                                                                            loading="lazy" width="200" height="200">
-                                                                    </picture>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div
-                                                            class="w-full relative z-10 transform-gpu rounded-2xl overflow-hidden pl-px bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl">
-                                                            <div
-                                                                class="w-full transform scale-110 transition-transform | xl:group-hover:-translate-y-2.5">
-                                                                <div class="w-full aspect-ratio-16/9 relative">
-                                                                    <picture>
-                                                                        <source type="image/webp"
-                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Scalify-Studio/Shape-2018-LR-94.jpg?w=400&amp;h=225&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604392524&amp;s=606a767bd8af87c33b90c6ad1a8c3ecb 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/Scalify-Studio/Shape-2018-LR-94.jpg?w=800&amp;h=450&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604392524&amp;s=4e92a49ab4b59c23bde2a3af3b4da237 800w"
-                                                                            sizes="100vw">
-                                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Scalify-Studio/Shape-2018-LR-94.jpg?w=400&amp;h=225&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604392524&amp;s=606a767bd8af87c33b90c6ad1a8c3ecb"
-                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Scalify-Studio/Shape-2018-LR-94.jpg?w=400&amp;h=225&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604392524&amp;s=75a0f01886c1b5f32d33725b31f94e89 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/Scalify-Studio/Shape-2018-LR-94.jpg?w=800&amp;h=450&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604392524&amp;s=e0d187142e1945e8a1c81a2e76618b64 800w"
-                                                                            sizes="100vw"
-                                                                            alt="Close up of the Scalify team looking at wireframes"
-                                                                            class=" w-full   w-full h-full object-cover absolute top-0 left-0"
-                                                                            loading="lazy" width="800" height="450">
-                                                                    </picture>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="inline-flex items-center space-x-2 mb-1 ">
-                                                    <div
-                                                        class="bg-gray-600 | dark:bg-grayDark-200 w-1.5 h-1.5 rounded-full">
-                                                    </div>
-                                                    <div
-                                                        class="font-light text-sm | lg:text-base text-gray-600 | dark:text-grayDark-200">
-                                                        6 min read</div>
-                                                </div>
-                                                <div class="
-text-lg | md:text-xl | xl:text-1xl | 4xl:text-2xl
-font-sans-primary tracking-tight
-text-gray-600  | dark:text-grayDark-100
-leading-tighter
-text-pretty
-pr-8 mb-5 | lg:pr-16
-">Our Culture, Our Value & Our Studio</div>
-                                                <div
-                                                    class="font-light line-clamp-2 text-balance text-base | lg:text-md | dark:text-grayDark-200">
-                                                    <p>
-                                                        In our own words, how important culture, values and studio
-                                                        environment is to us as a web design agency at Scalify</p>
-                                                </div>
-                                            </a></div>
-                                    </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 || swiper-slide">
-                                        <div class="w-full"><a
-                                                href="https://madebyshape.co.uk/web-design-blog/why-havent-we-upscaled-our-web-design-business/"
-                                                class="flex flex-col items-start group relative || js-cursor-trigger-drag">
-                                                <div class="w-full relative mb-5 pl-px">
-                                                    <div
-                                                        class="w-full relative overflow-hidden rounded-2xl rounded-bl-lg | lg:rounded-bl-2xl lg:rounded-3xl">
-                                                        <div
-                                                            class="absolute bottom-0 left-0 z-20 bg-white rounded-tr-2xl flex transition-transform transform duration-400 pr-2 pt-2 | lg:pr-3 lg:pt-3 | xl:translate-y-full xl:-translate-x-full lg:rounded-tr-3xl | xl:group-hover:translate-x-0 xl:group-hover:translate-y-0 | dark:bg-grayDark-600">
-                                                            <svg id="Layer_1"
-                                                                class="w-10 h-10 | lg:w-12 lg:h-12 text-white fill-current absolute top-px -left-px transform -translate-y-full rotate-180 dark:text-grayDark-600"
-                                                                version="1.1" xmlns="http://www.w3.org/2000/svg" x="0"
-                                                                y="0" viewBox="0 0 100 100" xml:space="preserve">
-                                                                <path
-                                                                    d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
-                                                            </svg><svg id="Layer_1"
-                                                                class="w-10 h-10 | lg:w-12 lg:h-12 text-white fill-current absolute -bottom-px right-px transform translate-x-full rotate-180 dark:text-grayDark-600"
-                                                                version="1.1" xmlns="http://www.w3.org/2000/svg" x="0"
-                                                                y="0" viewBox="0 0 100 100" xml:space="preserve">
-                                                                <path
-                                                                    d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
-                                                            </svg>
-                                                            <div
-                                                                class="rounded-xl transform-gpu overflow-hidden relative w-12 h-12 bg-gray-50 | lg:rounded-2xl | dark:bg-grayDark-400 | lg:w-16 lg:h-16">
-                                                                <div class="relative overflow-hidden w-full"
-                                                                    style="padding-top: 100%;">
-                                                                    <picture
-                                                                        class="w-full absolute top-0 left-0 w-full h-full ">
-                                                                        <source type="image/webp"
-                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/square/Andy-Scalify.jpg?w=200&amp;h=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887838&amp;s=ae4d9ca6a39b5c1b2fab75687820c86f 200w"
-                                                                            sizes="100vw">
-                                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/square/Andy-Scalify.jpg?w=200&amp;h=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887838&amp;s=ae4d9ca6a39b5c1b2fab75687820c86f"
-                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/square/Andy-Scalify.jpg?w=200&amp;h=200&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887838&amp;s=186a3ce2c2c7dd9479ba03c14cd293b4 200w"
-                                                                            sizes="100vw" alt="Andy Made By Shape"
-                                                                            class=" w-full   w-full h-full object-cover absolute top-0 left-0"
-                                                                            loading="lazy" width="200" height="200">
-                                                                    </picture>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div
-                                                            class="w-full relative z-10 transform-gpu rounded-2xl overflow-hidden pl-px bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl">
-                                                            <div
-                                                                class="w-full transform scale-110 transition-transform | xl:group-hover:-translate-y-2.5">
-                                                                <div class="w-full aspect-ratio-16/9 relative">
-                                                                    <picture>
-                                                                        <source type="image/webp"
-                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Scalify-Studio/Shape-2018-LR-112.jpg?w=400&amp;h=225&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604312568&amp;s=543d9374980ef2d48faa922f1094e279 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/Scalify-Studio/Shape-2018-LR-112.jpg?w=800&amp;h=450&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604312568&amp;s=aebfb985f5cdf11a3507bf900a56376d 800w"
-                                                                            sizes="100vw">
-                                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Scalify-Studio/Shape-2018-LR-112.jpg?w=400&amp;h=225&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604312568&amp;s=543d9374980ef2d48faa922f1094e279"
-                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Scalify-Studio/Shape-2018-LR-112.jpg?w=400&amp;h=225&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604312568&amp;s=a4abade421f88ef20f5d402974a67516 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/Scalify-Studio/Shape-2018-LR-112.jpg?w=800&amp;h=450&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604312568&amp;s=03c3ea039bb99f246de4a774fa1ab6c3 800w"
-                                                                            sizes="100vw"
-                                                                            alt="Andy smiles during a team meeting at the Scalify studio"
-                                                                            class=" w-full   w-full h-full object-cover absolute top-0 left-0"
-                                                                            loading="lazy" width="800" height="450">
-                                                                    </picture>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="inline-flex items-center space-x-2 mb-1 ">
-                                                    <div
-                                                        class="bg-gray-600 | dark:bg-grayDark-200 w-1.5 h-1.5 rounded-full">
-                                                    </div>
-                                                    <div
-                                                        class="font-light text-sm | lg:text-base text-gray-600 | dark:text-grayDark-200">
-                                                        10 min read</div>
-                                                </div>
-                                                <div class="
-text-lg | md:text-xl | xl:text-1xl | 4xl:text-2xl
-font-sans-primary tracking-tight
-text-gray-600  | dark:text-grayDark-100
-leading-tighter
-text-pretty
-pr-8 mb-5 | lg:pr-16
-">Why haven’t we upscaled our web design business?</div>
-                                                <div
-                                                    class="font-light line-clamp-2 text-balance text-base | lg:text-md | dark:text-grayDark-200">
-                                                    <p>
-                                                        Co-Founder of Scalify, Andy Golpys, explains why we
-                                                        haven&#039;t turned our digital agency of 10 staff into 30.</p>
-                                                </div>
-                                            </a></div>
-                                    </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 || swiper-slide">
-                                        <div class="w-full"><a
-                                                href="https://madebyshape.co.uk/web-design-blog/why-i-chose-to-work-for-a-small-design-agency/"
-                                                class="flex flex-col items-start group relative || js-cursor-trigger-drag">
-                                                <div class="w-full relative mb-5 pl-px">
-                                                    <div
-                                                        class="w-full relative overflow-hidden rounded-2xl rounded-bl-lg | lg:rounded-bl-2xl lg:rounded-3xl">
-                                                        <div
-                                                            class="absolute bottom-0 left-0 z-20 bg-white rounded-tr-2xl flex transition-transform transform duration-400 pr-2 pt-2 | lg:pr-3 lg:pt-3 | xl:translate-y-full xl:-translate-x-full lg:rounded-tr-3xl | xl:group-hover:translate-x-0 xl:group-hover:translate-y-0 | dark:bg-grayDark-600">
-                                                            <svg id="Layer_1"
-                                                                class="w-10 h-10 | lg:w-12 lg:h-12 text-white fill-current absolute top-px -left-px transform -translate-y-full rotate-180 dark:text-grayDark-600"
-                                                                version="1.1" xmlns="http://www.w3.org/2000/svg" x="0"
-                                                                y="0" viewBox="0 0 100 100" xml:space="preserve">
-                                                                <path
-                                                                    d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
-                                                            </svg><svg id="Layer_1"
-                                                                class="w-10 h-10 | lg:w-12 lg:h-12 text-white fill-current absolute -bottom-px right-px transform translate-x-full rotate-180 dark:text-grayDark-600"
-                                                                version="1.1" xmlns="http://www.w3.org/2000/svg" x="0"
-                                                                y="0" viewBox="0 0 100 100" xml:space="preserve">
-                                                                <path
-                                                                    d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
-                                                            </svg>
-                                                            <div
-                                                                class="rounded-xl transform-gpu overflow-hidden relative w-12 h-12 bg-gray-50 | lg:rounded-2xl | dark:bg-grayDark-400 | lg:w-16 lg:h-16">
-                                                                <div class="relative overflow-hidden w-full"
-                                                                    style="padding-top: 100%;">
-                                                                    <picture
-                                                                        class="w-full absolute top-0 left-0 w-full h-full ">
-                                                                        <source type="image/webp"
-                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Ella-Scalify.jpg?w=200&amp;h=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704886333&amp;s=a42cb88c7f143d46b7fc7fa41b71ce4b 200w"
-                                                                            sizes="100vw">
-                                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Ella-Scalify.jpg?w=200&amp;h=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704886333&amp;s=a42cb88c7f143d46b7fc7fa41b71ce4b"
-                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/Ella-Scalify.jpg?w=200&amp;h=200&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704886333&amp;s=0c036c7406eb9a79bd9b4f886d7b5e1e 200w"
-                                                                            sizes="100vw" alt="Ellaprofikle"
-                                                                            class=" w-full   w-full h-full object-cover absolute top-0 left-0"
-                                                                            loading="lazy" width="200" height="200">
-                                                                    </picture>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div
-                                                            class="w-full relative z-10 transform-gpu rounded-2xl overflow-hidden pl-px bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl">
-                                                            <div
-                                                                class="w-full transform scale-110 transition-transform | xl:group-hover:-translate-y-2.5">
-                                                                <div class="w-full aspect-ratio-16/9 relative">
-                                                                    <picture>
-                                                                        <source type="image/webp"
-                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/blog/Ella-Small-Agency.jpg?w=400&amp;h=225&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1652349998&amp;s=c63e5ad175f8450c8ccbd4f8fe61e6b7 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/blog/Ella-Small-Agency.jpg?w=800&amp;h=450&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1652349998&amp;s=9156e9d6dfa47dfa7725b32e830e6017 800w"
-                                                                            sizes="100vw">
-                                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/blog/Ella-Small-Agency.jpg?w=400&amp;h=225&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1652349998&amp;s=c63e5ad175f8450c8ccbd4f8fe61e6b7"
-                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/blog/Ella-Small-Agency.jpg?w=400&amp;h=225&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1652349998&amp;s=2aad094b077e615c94e80f5797f20b9e 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/blog/Ella-Small-Agency.jpg?w=800&amp;h=450&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1652349998&amp;s=33783a31a09c57eeb47e369af1fe7e0a 800w"
-                                                                            sizes="100vw" alt="Ella Small Agency"
-                                                                            class=" w-full   w-full h-full object-cover absolute top-0 left-0"
-                                                                            loading="lazy" width="800" height="450">
-                                                                    </picture>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="inline-flex items-center space-x-2 mb-1 ">
-                                                    <div
-                                                        class="bg-gray-600 | dark:bg-grayDark-200 w-1.5 h-1.5 rounded-full">
-                                                    </div>
-                                                    <div
-                                                        class="font-light text-sm | lg:text-base text-gray-600 | dark:text-grayDark-200">
-                                                        3 min read</div>
-                                                </div>
-                                                <div class="
-text-lg | md:text-xl | xl:text-1xl | 4xl:text-2xl
-font-sans-primary tracking-tight
-text-gray-600  | dark:text-grayDark-100
-leading-tighter
-text-pretty
-pr-8 mb-5 | lg:pr-16
-">Why I chose to work for a small design agency</div>
-                                                <div
-                                                    class="font-light line-clamp-2 text-balance text-base | lg:text-md | dark:text-grayDark-200">
-                                                    <p>
-                                                        The size of the business you work for should be well-considered
-                                                        when looking for a job in design. Here&#039;s why I chose to
-                                                        work for a small design agency...</p>
-                                                </div>
-                                            </a></div>
-                                    </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 || swiper-slide">
-                                        <div class="w-full"><a
-                                                href="https://madebyshape.co.uk/web-design-blog/why-our-studio-just-outside-of-manchester-works-for-us/"
-                                                class="flex flex-col items-start group relative || js-cursor-trigger-drag">
-                                                <div class="w-full relative mb-5 pl-px">
-                                                    <div
-                                                        class="w-full relative overflow-hidden rounded-2xl rounded-bl-lg | lg:rounded-bl-2xl lg:rounded-3xl">
-                                                        <div
-                                                            class="absolute bottom-0 left-0 z-20 bg-white rounded-tr-2xl flex transition-transform transform duration-400 pr-2 pt-2 | lg:pr-3 lg:pt-3 | xl:translate-y-full xl:-translate-x-full lg:rounded-tr-3xl | xl:group-hover:translate-x-0 xl:group-hover:translate-y-0 | dark:bg-grayDark-600">
-                                                            <svg id="Layer_1"
-                                                                class="w-10 h-10 | lg:w-12 lg:h-12 text-white fill-current absolute top-px -left-px transform -translate-y-full rotate-180 dark:text-grayDark-600"
-                                                                version="1.1" xmlns="http://www.w3.org/2000/svg" x="0"
-                                                                y="0" viewBox="0 0 100 100" xml:space="preserve">
-                                                                <path
-                                                                    d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
-                                                            </svg><svg id="Layer_1"
-                                                                class="w-10 h-10 | lg:w-12 lg:h-12 text-white fill-current absolute -bottom-px right-px transform translate-x-full rotate-180 dark:text-grayDark-600"
-                                                                version="1.1" xmlns="http://www.w3.org/2000/svg" x="0"
-                                                                y="0" viewBox="0 0 100 100" xml:space="preserve">
-                                                                <path
-                                                                    d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
-                                                            </svg>
-                                                            <div
-                                                                class="rounded-xl transform-gpu overflow-hidden relative w-12 h-12 bg-gray-50 | lg:rounded-2xl | dark:bg-grayDark-400 | lg:w-16 lg:h-16">
-                                                                <div class="relative overflow-hidden w-full"
-                                                                    style="padding-top: 100%;">
-                                                                    <picture
-                                                                        class="w-full absolute top-0 left-0 w-full h-full ">
-                                                                        <source type="image/webp"
-                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/square/Andy-Scalify.jpg?w=200&amp;h=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887838&amp;s=ae4d9ca6a39b5c1b2fab75687820c86f 200w"
-                                                                            sizes="100vw">
-                                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/square/Andy-Scalify.jpg?w=200&amp;h=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887838&amp;s=ae4d9ca6a39b5c1b2fab75687820c86f"
-                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/square/Andy-Scalify.jpg?w=200&amp;h=200&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887838&amp;s=186a3ce2c2c7dd9479ba03c14cd293b4 200w"
-                                                                            sizes="100vw" alt="Andy Made By Shape"
-                                                                            class=" w-full   w-full h-full object-cover absolute top-0 left-0"
-                                                                            loading="lazy" width="200" height="200">
-                                                                    </picture>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div
-                                                            class="w-full relative z-10 transform-gpu rounded-2xl overflow-hidden pl-px bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl">
-                                                            <div
-                                                                class="w-full transform scale-110 transition-transform | xl:group-hover:-translate-y-2.5">
-                                                                <div class="w-full aspect-ratio-16/9 relative">
-                                                                    <picture>
-                                                                        <source type="image/webp"
-                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images-archive/web-design-manchester-21.jpg?w=400&amp;h=225&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604416875&amp;s=e66445929ca13b68057a02d326b310bc 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images-archive/web-design-manchester-21.jpg?w=800&amp;h=450&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604416875&amp;s=f0ddced4223436b85bc6fad2056f7dd3 800w"
-                                                                            sizes="100vw">
-                                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images-archive/web-design-manchester-21.jpg?w=400&amp;h=225&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604416875&amp;s=e66445929ca13b68057a02d326b310bc"
-                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images-archive/web-design-manchester-21.jpg?w=400&amp;h=225&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604416875&amp;s=c719aad3d38141ba1d2d7bfc136d5e1e 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images-archive/web-design-manchester-21.jpg?w=800&amp;h=450&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1604416875&amp;s=38b197257b21bc411c103ee065be4bd9 800w"
-                                                                            sizes="100vw"
-                                                                            alt="Scalify letter S on a desk"
-                                                                            class=" w-full   w-full h-full object-cover absolute top-0 left-0"
-                                                                            loading="lazy" width="800" height="450">
-                                                                    </picture>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="inline-flex items-center space-x-2 mb-1 ">
-                                                    <div
-                                                        class="bg-gray-600 | dark:bg-grayDark-200 w-1.5 h-1.5 rounded-full">
-                                                    </div>
-                                                    <div
-                                                        class="font-light text-sm | lg:text-base text-gray-600 | dark:text-grayDark-200">
-                                                        4 min read</div>
-                                                </div>
-                                                <div class="
-text-lg | md:text-xl | xl:text-1xl | 4xl:text-2xl
-font-sans-primary tracking-tight
-text-gray-600  | dark:text-grayDark-100
-leading-tighter
-text-pretty
-pr-8 mb-5 | lg:pr-16
-">Why our studio just outside of Manchester works for us</div>
-                                                <div
-                                                    class="font-light line-clamp-2 text-balance text-base | lg:text-md | dark:text-grayDark-200">
-                                                    <p>
-                                                        Hi, I&#039;m Andy Golpys, Co-Founder here at
-                                                        Scalify.&amp;nbsp;I started my web career 18 years ago as a
-                                                        freelancer, whilst at University. I produced w...</p>
-                                                </div>
-                                            </a></div>
-                                    </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 || swiper-slide">
-                                        <div class="w-full"><a
-                                                href="https://madebyshape.co.uk/web-design-blog/joe-buckley-why-i-chose-shape/"
-                                                class="flex flex-col items-start group relative || js-cursor-trigger-drag">
-                                                <div class="w-full relative mb-5 pl-px">
-                                                    <div
-                                                        class="w-full relative overflow-hidden rounded-2xl rounded-bl-lg | lg:rounded-bl-2xl lg:rounded-3xl">
-                                                        <div
-                                                            class="absolute bottom-0 left-0 z-20 bg-white rounded-tr-2xl flex transition-transform transform duration-400 pr-2 pt-2 | lg:pr-3 lg:pt-3 | xl:translate-y-full xl:-translate-x-full lg:rounded-tr-3xl | xl:group-hover:translate-x-0 xl:group-hover:translate-y-0 | dark:bg-grayDark-600">
-                                                            <svg id="Layer_1"
-                                                                class="w-10 h-10 | lg:w-12 lg:h-12 text-white fill-current absolute top-px -left-px transform -translate-y-full rotate-180 dark:text-grayDark-600"
-                                                                version="1.1" xmlns="http://www.w3.org/2000/svg" x="0"
-                                                                y="0" viewBox="0 0 100 100" xml:space="preserve">
-                                                                <path
-                                                                    d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
-                                                            </svg><svg id="Layer_1"
-                                                                class="w-10 h-10 | lg:w-12 lg:h-12 text-white fill-current absolute -bottom-px right-px transform translate-x-full rotate-180 dark:text-grayDark-600"
-                                                                version="1.1" xmlns="http://www.w3.org/2000/svg" x="0"
-                                                                y="0" viewBox="0 0 100 100" xml:space="preserve">
-                                                                <path
-                                                                    d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
-                                                            </svg>
-                                                            <div
-                                                                class="rounded-xl transform-gpu overflow-hidden relative w-12 h-12 bg-gray-50 | lg:rounded-2xl | dark:bg-grayDark-400 | lg:w-16 lg:h-16">
-                                                                <div class="relative overflow-hidden w-full"
-                                                                    style="padding-top: 100%;">
-                                                                    <picture
-                                                                        class="w-full absolute top-0 left-0 w-full h-full ">
-                                                                        <source type="image/webp"
-                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/square/Joe-Scalify.jpg?w=200&amp;h=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887835&amp;s=904218bcb9e5773fa64f8c7fe6cb8b27 200w"
-                                                                            sizes="100vw">
-                                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/square/Joe-Scalify.jpg?w=200&amp;h=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887835&amp;s=904218bcb9e5773fa64f8c7fe6cb8b27"
-                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/square/Joe-Scalify.jpg?w=200&amp;h=200&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887835&amp;s=19ce105e2ac78c169dc19b104d01f098 200w"
-                                                                            sizes="100vw" alt="Joe Made By Shape"
-                                                                            class=" w-full   w-full h-full object-cover absolute top-0 left-0"
-                                                                            loading="lazy" width="200" height="200">
-                                                                    </picture>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div
-                                                            class="w-full relative z-10 transform-gpu rounded-2xl overflow-hidden pl-px bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl">
-                                                            <div
-                                                                class="w-full transform scale-110 transition-transform | xl:group-hover:-translate-y-2.5">
-                                                                <div class="w-full aspect-ratio-16/9 relative">
-                                                                    <picture>
-                                                                        <source type="image/webp"
-                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/Joe-Buckley-Studio/Shape.-May-2022-HR-37.jpg?w=400&amp;h=225&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1652341641&amp;s=0cb77a7e7c00601e1edc07f3dfd0787c 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/Joe-Buckley-Studio/Shape.-May-2022-HR-37.jpg?w=800&amp;h=450&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1652341641&amp;s=4e8597f5a100fd70b02e27b8e9106f9a 800w"
-                                                                            sizes="100vw">
-                                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/Joe-Buckley-Studio/Shape.-May-2022-HR-37.jpg?w=400&amp;h=225&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1652341641&amp;s=0cb77a7e7c00601e1edc07f3dfd0787c"
-                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/Joe-Buckley-Studio/Shape.-May-2022-HR-37.jpg?w=400&amp;h=225&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1652341641&amp;s=c6767fffda969cedd47a5b4e420a300f 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/India-2022/Joe-Buckley-Studio/Shape.-May-2022-HR-37.jpg?w=800&amp;h=450&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1652341641&amp;s=7d0423fd89fbf28677c6c380adc859c0 800w"
-                                                                            sizes="100vw" alt="Shape May 2022 HR 37"
-                                                                            class=" w-full   w-full h-full object-cover absolute top-0 left-0"
-                                                                            loading="lazy" width="800" height="450">
-                                                                    </picture>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="inline-flex items-center space-x-2 mb-1 ">
-                                                    <div
-                                                        class="bg-gray-600 | dark:bg-grayDark-200 w-1.5 h-1.5 rounded-full">
-                                                    </div>
-                                                    <div
-                                                        class="font-light text-sm | lg:text-base text-gray-600 | dark:text-grayDark-200">
-                                                        2 min read</div>
-                                                </div>
-                                                <div class="
-text-lg | md:text-xl | xl:text-1xl | 4xl:text-2xl
-font-sans-primary tracking-tight
-text-gray-600  | dark:text-grayDark-100
-leading-tighter
-text-pretty
-pr-8 mb-5 | lg:pr-16
-">Joe Buckley, why I chose Shape</div>
-                                                <div
-                                                    class="font-light line-clamp-2 text-balance text-base | lg:text-md | dark:text-grayDark-200">
-                                                    <p>
-                                                        I’m the newest addition to the team here at Shape,&amp;nbsp;if
-                                                        you want to get to know me better, go and take a read of my
-                                                        profile.
-                                                        ...</p>
-                                                </div>
-                                            </a></div>
-                                    </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 || swiper-slide">
-                                        <div class="w-full"><a
-                                                href="https://madebyshape.co.uk/web-design-blog/our-workation-to-whalley-via-airbnb/"
-                                                class="flex flex-col items-start group relative || js-cursor-trigger-drag">
-                                                <div class="w-full relative mb-5 pl-px">
-                                                    <div
-                                                        class="w-full relative overflow-hidden rounded-2xl rounded-bl-lg | lg:rounded-bl-2xl lg:rounded-3xl">
-                                                        <div
-                                                            class="absolute bottom-0 left-0 z-20 bg-white rounded-tr-2xl flex transition-transform transform duration-400 pr-2 pt-2 | lg:pr-3 lg:pt-3 | xl:translate-y-full xl:-translate-x-full lg:rounded-tr-3xl | xl:group-hover:translate-x-0 xl:group-hover:translate-y-0 | dark:bg-grayDark-600">
-                                                            <svg id="Layer_1"
-                                                                class="w-10 h-10 | lg:w-12 lg:h-12 text-white fill-current absolute top-px -left-px transform -translate-y-full rotate-180 dark:text-grayDark-600"
-                                                                version="1.1" xmlns="http://www.w3.org/2000/svg" x="0"
-                                                                y="0" viewBox="0 0 100 100" xml:space="preserve">
-                                                                <path
-                                                                    d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
-                                                            </svg><svg id="Layer_1"
-                                                                class="w-10 h-10 | lg:w-12 lg:h-12 text-white fill-current absolute -bottom-px right-px transform translate-x-full rotate-180 dark:text-grayDark-600"
-                                                                version="1.1" xmlns="http://www.w3.org/2000/svg" x="0"
-                                                                y="0" viewBox="0 0 100 100" xml:space="preserve">
-                                                                <path
-                                                                    d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
-                                                            </svg>
-                                                            <div
-                                                                class="rounded-xl transform-gpu overflow-hidden relative w-12 h-12 bg-gray-50 | lg:rounded-2xl | dark:bg-grayDark-400 | lg:w-16 lg:h-16">
-                                                                <div class="relative overflow-hidden w-full"
-                                                                    style="padding-top: 100%;">
-                                                                    <picture
-                                                                        class="w-full absolute top-0 left-0 w-full h-full ">
-                                                                        <source type="image/webp"
-                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/square/Andy-Scalify.jpg?w=200&amp;h=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887838&amp;s=ae4d9ca6a39b5c1b2fab75687820c86f 200w"
-                                                                            sizes="100vw">
-                                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/square/Andy-Scalify.jpg?w=200&amp;h=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887838&amp;s=ae4d9ca6a39b5c1b2fab75687820c86f"
-                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/square/Andy-Scalify.jpg?w=200&amp;h=200&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887838&amp;s=186a3ce2c2c7dd9479ba03c14cd293b4 200w"
-                                                                            sizes="100vw" alt="Andy Made By Shape"
-                                                                            class=" w-full   w-full h-full object-cover absolute top-0 left-0"
-                                                                            loading="lazy" width="200" height="200">
-                                                                    </picture>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div
-                                                            class="w-full relative z-10 transform-gpu rounded-2xl overflow-hidden pl-px bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl">
-                                                            <div
-                                                                class="w-full transform scale-110 transition-transform | xl:group-hover:-translate-y-2.5">
-                                                                <div class="w-full aspect-ratio-16/9 relative">
-                                                                    <picture>
-                                                                        <source type="image/webp"
-                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/4O2A8466.jpg?w=400&amp;h=225&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1683018512&amp;s=568a84b0df3ded05fac36e31d682c97d 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/4O2A8466.jpg?w=800&amp;h=450&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1683018512&amp;s=7c5082a4258c86a5b06d2e46bd739387 800w"
-                                                                            sizes="100vw">
-                                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/4O2A8466.jpg?w=400&amp;h=225&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1683018512&amp;s=568a84b0df3ded05fac36e31d682c97d"
-                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/4O2A8466.jpg?w=400&amp;h=225&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1683018512&amp;s=f817b90de33e7914240a23e9c6fbfa08 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/4O2A8466.jpg?w=800&amp;h=450&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1683018512&amp;s=edef792d31235a30a2594ce931649513 800w"
-                                                                            sizes="100vw" alt="4 O2 A8466"
-                                                                            class=" w-full   w-full h-full object-cover absolute top-0 left-0"
-                                                                            loading="lazy" width="800" height="450">
-                                                                    </picture>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="inline-flex items-center space-x-2 mb-1 ">
-                                                    <div
-                                                        class="bg-gray-600 | dark:bg-grayDark-200 w-1.5 h-1.5 rounded-full">
-                                                    </div>
-                                                    <div
-                                                        class="font-light text-sm | lg:text-base text-gray-600 | dark:text-grayDark-200">
-                                                        8 min read</div>
-                                                </div>
-                                                <div class="
-text-lg | md:text-xl | xl:text-1xl | 4xl:text-2xl
-font-sans-primary tracking-tight
-text-gray-600  | dark:text-grayDark-100
-leading-tighter
-text-pretty
-pr-8 mb-5 | lg:pr-16
-">Our workation to Whalley via Airbnb</div>
-                                                <div
-                                                    class="font-light line-clamp-2 text-balance text-base | lg:text-md | dark:text-grayDark-200">
-                                                    <p>
-                                                        We hired an Airbnb in Whalley for the whole team to work
-                                                        together, and it was fantastic. In this blog
-                                                        post&amp;nbsp;I&#039;ll explain why we did it, how it...</p>
-                                                </div>
-                                            </a></div>
-                                    </div>
-                                    <div class="px-2 | lg:px-3 | xl:px-4 || swiper-slide">
-                                        <div class="w-full"><a
-                                                href="https://madebyshape.co.uk/web-design-blog/celebrating-13-years-the-agency/"
-                                                class="flex flex-col items-start group relative || js-cursor-trigger-drag">
-                                                <div class="w-full relative mb-5 pl-px">
-                                                    <div
-                                                        class="w-full relative overflow-hidden rounded-2xl rounded-bl-lg | lg:rounded-bl-2xl lg:rounded-3xl">
-                                                        <div
-                                                            class="absolute bottom-0 left-0 z-20 bg-white rounded-tr-2xl flex transition-transform transform duration-400 pr-2 pt-2 | lg:pr-3 lg:pt-3 | xl:translate-y-full xl:-translate-x-full lg:rounded-tr-3xl | xl:group-hover:translate-x-0 xl:group-hover:translate-y-0 | dark:bg-grayDark-600">
-                                                            <svg id="Layer_1"
-                                                                class="w-10 h-10 | lg:w-12 lg:h-12 text-white fill-current absolute top-px -left-px transform -translate-y-full rotate-180 dark:text-grayDark-600"
-                                                                version="1.1" xmlns="http://www.w3.org/2000/svg" x="0"
-                                                                y="0" viewBox="0 0 100 100" xml:space="preserve">
-                                                                <path
-                                                                    d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
-                                                            </svg><svg id="Layer_1"
-                                                                class="w-10 h-10 | lg:w-12 lg:h-12 text-white fill-current absolute -bottom-px right-px transform translate-x-full rotate-180 dark:text-grayDark-600"
-                                                                version="1.1" xmlns="http://www.w3.org/2000/svg" x="0"
-                                                                y="0" viewBox="0 0 100 100" xml:space="preserve">
-                                                                <path
-                                                                    d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
-                                                            </svg>
-                                                            <div
-                                                                class="rounded-xl transform-gpu overflow-hidden relative w-12 h-12 bg-gray-50 | lg:rounded-2xl | dark:bg-grayDark-400 | lg:w-16 lg:h-16">
-                                                                <div class="relative overflow-hidden w-full"
-                                                                    style="padding-top: 100%;">
-                                                                    <picture
-                                                                        class="w-full absolute top-0 left-0 w-full h-full ">
-                                                                        <source type="image/webp"
-                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/square/Andy-Scalify.jpg?w=200&amp;h=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887838&amp;s=ae4d9ca6a39b5c1b2fab75687820c86f 200w"
-                                                                            sizes="100vw">
-                                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/square/Andy-Scalify.jpg?w=200&amp;h=200&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887838&amp;s=ae4d9ca6a39b5c1b2fab75687820c86f"
-                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/profile-images-2024/square/Andy-Scalify.jpg?w=200&amp;h=200&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1704887838&amp;s=186a3ce2c2c7dd9479ba03c14cd293b4 200w"
-                                                                            sizes="100vw" alt="Andy Made By Shape"
-                                                                            class=" w-full   w-full h-full object-cover absolute top-0 left-0"
-                                                                            loading="lazy" width="200" height="200">
-                                                                    </picture>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div
-                                                            class="w-full relative z-10 transform-gpu rounded-2xl overflow-hidden pl-px bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl">
-                                                            <div
-                                                                class="w-full transform scale-110 transition-transform | xl:group-hover:-translate-y-2.5">
-                                                                <div class="w-full aspect-ratio-16/9 relative">
-                                                                    <picture>
-                                                                        <source type="image/webp"
-                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/blog/Celebrating-10-years-poem/celebrating-13-years-the-agency-thumb.jpg?w=400&amp;h=225&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1684484293&amp;s=1f0d1d29c91deea034236be366abcc8e 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/blog/Celebrating-10-years-poem/celebrating-13-years-the-agency-thumb.jpg?w=800&amp;h=450&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1684484293&amp;s=16b00c41f1cfd01a217b5639e92f6b11 800w"
-                                                                            sizes="100vw">
-                                                                        <img src="https://made-byshape.transforms.svdcdn.com/production/uploads/images/blog/Celebrating-10-years-poem/celebrating-13-years-the-agency-thumb.jpg?w=400&amp;h=225&amp;q=80&amp;fm=webp&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1684484293&amp;s=1f0d1d29c91deea034236be366abcc8e"
-                                                                            srcset="https://made-byshape.transforms.svdcdn.com/production/uploads/images/blog/Celebrating-10-years-poem/celebrating-13-years-the-agency-thumb.jpg?w=400&amp;h=225&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1684484293&amp;s=a44f86d73dd466debb1211d7f87630dc 400w, https://made-byshape.transforms.svdcdn.com/production/uploads/images/blog/Celebrating-10-years-poem/celebrating-13-years-the-agency-thumb.jpg?w=800&amp;h=450&amp;q=95&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5&amp;dm=1684484293&amp;s=46106631d16f2ae5b54faaf1c49ea22e 800w"
-                                                                            sizes="100vw"
-                                                                            alt="Celebrating 13 years the agency thumb"
-                                                                            class=" w-full   w-full h-full object-cover absolute top-0 left-0"
-                                                                            loading="lazy" width="800" height="450">
-                                                                    </picture>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="inline-flex items-center space-x-2 mb-1 ">
-                                                    <div
-                                                        class="bg-gray-600 | dark:bg-grayDark-200 w-1.5 h-1.5 rounded-full">
-                                                    </div>
-                                                    <div
-                                                        class="font-light text-sm | lg:text-base text-gray-600 | dark:text-grayDark-200">
-                                                        8 min read</div>
-                                                </div>
-                                                <div class="
-text-lg | md:text-xl | xl:text-1xl | 4xl:text-2xl
-font-sans-primary tracking-tight
-text-gray-600  | dark:text-grayDark-100
-leading-tighter
-text-pretty
-pr-8 mb-5 | lg:pr-16
-">Celebrating 13 years: The Agency</div>
-                                                <div
-                                                    class="font-light line-clamp-2 text-balance text-base | lg:text-md | dark:text-grayDark-200">
-                                                    <p>
-                                                        We started Scalify in 2010. In this article we look back at
-                                                        how the Agency was created.</p>
-                                                </div>
-                                            </a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
     <?php include './elements/footer.php'; ?>
 
-    <script type="application/ld+json">
-        {
-            "@context": "http://schema.org",
-            "@graph": [{
-                "@type": "CreativeWork",
-                "author": {
-                    "@id": "https://madebyshape.co.uk/#identity"
-                },
-                "copyrightHolder": {
-                    "@id": "https://madebyshape.co.uk/#identity"
-                },
-                "copyrightYear": "2018",
-                "creator": {
-                    "@id": "https://madebyshape.co.uk/#creator"
-                },
-                "dateModified": "2024-11-04T07:45:13+00:00",
-                "datePublished": "2018-07-26T15:00:00+01:00",
-                "description": "Scalify are a full service Creative and Digital Design Agency based in Abu Dhabi with an outstanding reputation for quality for Branding & Web Design",
-                "headline": "About Digital Agency Abu Dhabi",
-                "image": {
-                    "@type": "ImageObject",
-                    "url": "https://made-byshape.transforms.svdcdn.com/production/uploads/images/Open-Graph/madebyshape-home.jpg?w=1200&h=630&q=82&auto=format&fit=crop&dm=1722518913&s=e456c7a65aa7feded9f0be73391573f6"
-                },
-                "inLanguage": "en-gb",
-                "mainEntityOfPage": "https://madebyshape.co.uk/about/",
-                "name": "About Digital Agency Abu Dhabi",
-                "publisher": {
-                    "@id": "https://madebyshape.co.uk/#creator"
-                },
-                "url": "https://madebyshape.co.uk/about/"
-            }, {
-                "@id": "https://madebyshape.co.uk/#identity",
-                "@type": "ProfessionalService",
-                "address": {
-                    "@type": "PostalAddress",
-                    "addressCountry": "United Kingdom",
-                    "addressLocality": "Atherton",
-                    "addressRegion": "Abbu Dhabi",
-                    "postalCode": "00000",
-                    "streetAddress": "In5 Tech, Dubai Internet City, Dubai"
-                },
-                "alternateName": "Shape",
-                "description": "An award-winning Web Design Agency in Abbu Dhabi who specialise in Website Design, Craft CMS Web Development, eCommerce and Organic SEO.",
-                "email": "sales@scalify.ae",
-                "founder": "Justin",
-                "foundingDate": "2024-03-01",
-                "foundingLocation": "Abu Dhabi",
-                "geo": {
-                    "@type": "GeoCoordinates",
-                    "latitude": "53.530291",
-                    "longitude": "-2.504812"
-                },
-                "image": {
-                    "@type": "ImageObject",
-                    "height": "950",
-                    "url": "https://assets.madebyshape.co.uk/craft3-uploads/images/logos/Scalify-icon.jpg",
-                    "width": "950"
-                },
-                "logo": {
-                    "@type": "ImageObject",
-                    "height": "60",
-                    "url": "https://made-byshape.transforms.svdcdn.com/production/uploads/images/logos/Scalify-icon.jpg?w=600&h=60&q=82&fm=png&fit=clip&dm=1597751408&s=1e444e7b3ed4ee85c39ad329e3875b5c",
-                    "width": "60"
-                },
-                "name": "Scalify",
-                "priceRange": "$$",
-                "sameAs": ["https://www.linkedin.com/company/madebyshape/mycompany/",
-                    "https://twitter.com/madebyshape", "https://github.com/madebyshape/",
-                    "https://instagram.com/madebyshape", "https://www.behance.net/madebyshape"
-                ],
-                "telephone": "01942 894596",
-                "url": "https://madebyshape.co.uk/"
-            }, {
-                "@id": "https://madebyshape.co.uk/#creator",
-                "@type": "ProfessionalService",
-                "address": {
-                    "@type": "PostalAddress",
-                    "addressCountry": "United Kingdom",
-                    "addressLocality": "Atherton",
-                    "addressRegion": "Abbu Dhabi",
-                    "postalCode": "00000",
-                    "streetAddress": "In5 Tech, Dubai Internet City, Dubai"
-                },
-                "alternateName": "Scalify",
-                "description": "An award-winning Web Design Agency based in Abu Dhabi who also offer eCommerce and Organic SEO. We are a Digital Studio with Industry Experience.",
-                "email": "sales@scalify.ae",
-                "founder": "Justin",
-                "foundingDate": "2024-03-01",
-                "foundingLocation": "Abu Dhabi",
-                "geo": {
-                    "@type": "GeoCoordinates",
-                    "latitude": "53.530258",
-                    "longitude": "-2.50471"
-                },
-                "image": {
-                    "@type": "ImageObject",
-                    "height": "950",
-                    "url": "http://madebyshape.madebyshape.io/uploads/images/Scalify-icon.jpg",
-                    "width": "950"
-                },
-                "logo": {
-                    "@type": "ImageObject",
-                    "height": "60",
-                    "url": "https://made-byshape.transforms.svdcdn.com/production/uploads/images/Scalify-icon.jpg?w=600&h=60&q=82&fm=png&fit=clip&dm=1597751384&s=2f0ce55335397fde8d8b489cc721e250",
-                    "width": "60"
-                },
-                "name": "Scalify",
-                "priceRange": "$$$",
-                "telephone": "01942 894596",
-                "url": "https://madebyshape.co.uk/"
-            }, {
-                "@type": "BreadcrumbList",
-                "description": "Breadcrumbs list",
-                "itemListElement": [{
-                    "@type": "ListItem",
-                    "item": "https://madebyshape.co.uk/",
-                    "name": "Home",
-                    "position": 1
-                }, {
-                    "@type": "ListItem",
-                    "item": "https://madebyshape.co.uk/about/",
-                    "name": "About",
-                    "position": 2
-                }],
-                "name": "Breadcrumbs"
-            }]
-        }
-    </script>
     <script src="https://player.vimeo.com/api/player.js"></script>
     <script>
-        window.SERVD_CSRF_TOKEN_NAME = "CRAFT_CSRF_TOKEN";
+    window.SERVD_CSRF_TOKEN_NAME = "CRAFT_CSRF_TOKEN";
 
-        function injectCSRF() {
-            var inputs = document.getElementsByName(window.SERVD_CSRF_TOKEN_NAME);
-            var len = inputs.length;
-            if (len > 0) {
-                var xhr = new XMLHttpRequest();
-                xhr.onload = function() {
-                    if (xhr.status >= 200 && xhr.status <= 299) {
-                        var tokenInfo = JSON.parse(this.responseText);
-                        window.csrfTokenValue = tokenInfo.token;
-                        window.csrfTokenName = tokenInfo.name;
-                        for (var i = 0; i < len; i++) {
-                            inputs[i].setAttribute("value", tokenInfo.token);
+    function injectCSRF() {
+        var inputs = document.getElementsByName(window.SERVD_CSRF_TOKEN_NAME);
+        var len = inputs.length;
+        if (len > 0) {
+            var xhr = new XMLHttpRequest();
+            xhr.onload = function() {
+                if (xhr.status >= 200 && xhr.status <= 299) {
+                    var tokenInfo = JSON.parse(this.responseText);
+                    window.csrfTokenValue = tokenInfo.token;
+                    window.csrfTokenName = tokenInfo.name;
+                    for (var i = 0; i < len; i++) {
+                        inputs[i].setAttribute("value", tokenInfo.token);
+                    }
+                    window.dispatchEvent(new CustomEvent("servd.csrfloaded", {
+                        detail: {
+                            token: tokenInfo.token
                         }
-                        window.dispatchEvent(new CustomEvent("servd.csrfloaded", {
-                            detail: {
-                                token: tokenInfo.token
-                            }
-                        }));
-                    } else {
-                        window.dispatchEvent(new CustomEvent("servd.csrffailed"));
-                    }
+                    }));
+                } else {
+                    window.dispatchEvent(new CustomEvent("servd.csrffailed"));
+                }
 
-                };
-                xhr.open("GET", "<?php echo BASE_URL . 'api/csrftoken/'; ?>");
-                xhr.send();
-            }
+            };
+            xhr.open("GET", "<?php echo BASE_URL . 'api/csrftoken/'; ?>");
+            xhr.send();
         }
-        setTimeout(function() {
-            if (!window.SERVD_MANUAL_CSRF_LOAD) {
-                injectCSRF();
-            }
-        }, 50);
-        document.addEventListener('alpine:init', () => {
-            Alpine.data('cursor', () => ({
-                icon: 'arrow-up-right',
-                x: 0,
-                y: 0,
-                endX: (window.innerWidth / 2),
-                endY: (window.innerHeight / 2),
-                cursorVisible: true,
-                cursorEnlarged: false,
-                cursorHovering: false,
-                cursorDragging: false,
-                cursor: document.querySelector('.js-cursor'),
-                dragCursor: document.querySelector('.js-cursor-drag'),
-                init() {
-
-                    _self = this;
-
-                    _self.dotSize = _self.cursor.offsetWidth;
-
-                    _self.setupEventListeners();
-
-                },
-                setupEventListeners() {
-
-                    _self = this;
-
-                    // Drag
-
-                    document.querySelectorAll('.js-cursor-trigger-drag').forEach((element) => {
-
-                        element.addEventListener('mouseover', function() {
-
-                            var icon = element.getAttribute('data-icon');
-
-                            if (icon) {
-                                _self.icon = icon;
-                            } else {
-                                _self.icon = 'arrow-up-right';
-                            }
-
-                            _self.cursorDragging = true;
-                            _self.cursorEnlarged = true;
-
-                            _self.toggleCursorDrag();
-
-                        });
-
-                        element.addEventListener('mouseout', function() {
-
-                            _self.cursorDragging = false;
-                            _self.cursorEnlarged = false;
-
-                            _self.toggleCursorDrag();
-
-                        });
-
-                    });
-
-                    // Position
-
-                    document.addEventListener('pointermove', function(event) {
-
-                        _self.endX = event.clientX;
-                        _self.endY = event.clientY;
-
-                        _self.cursor.style.top = _self.endY + 'px';
-                        _self.cursor.style.left = _self.endX + 'px';
-
-                    });
-
-                },
-                toggleCursorDrag() {
-
-                    _self = this;
-
-                    if (_self.cursorDragging) {
-
-                        _self.dragCursor.classList.remove('scale-0');
-                        // _self.cursor.classList.remove('opacity-0');
-                        document.body.classList.add('no-cursor');
-
-                    } else {
-
-                        _self.dragCursor.classList.add('scale-0');
-                        // _self.cursor.classList.add('opacity-0');
-                        document.body.classList.remove('no-cursor');
-
-                    }
-
-                },
-            }))
-        });
-        document.addEventListener('alpine:init', () => {
-            Alpine.data('modal423709', () => ({
-                visible: false,
-                setupModal(id) {
-
-                    // Prevent keys from interferring with the video
-
-                    navigator.mediaSession.setActionHandler('play', function() {});
-                    navigator.mediaSession.setActionHandler('pause', function() {});
-                    navigator.mediaSession.setActionHandler('seekbackward', function() {});
-                    navigator.mediaSession.setActionHandler('seekforward', function() {});
-                    navigator.mediaSession.setActionHandler('previoustrack', function() {});
-                    navigator.mediaSession.setActionHandler('nexttrack', function() {});
-
-                    // Get video elements
-
-                    const video = document.querySelector(`.js-modal-video-${id}`);
-                    const videoProgress = document.querySelector(`.js-modal-video-progress-${id}`);
-
-                    const videoPlayPause = document.querySelector(`.js-modal-video-play-pause-${id}`);
-                    const videoSound = document.querySelector(`.js-modal-video-sound-${id}`);
-
-                    const videoPlayIcon = document.querySelector(`.js-modal-video-play-icon-${id}`);
-                    const videoPauseIcon = document.querySelector(`.js-modal-video-pause-icon-${id}`);
-
-                    const videoVolumeOnIcon = document.querySelector(
-                        `.js-modal-video-volume-on-icon-${id}`);
-                    const videoVolumeOffIcon = document.querySelector(
-                        `.js-modal-video-volume-off-icon-${id}`);
-
-                    // Video controls
-
-                    if (video) {
-
-                        if (video.tagName == 'IFRAME') {
-
-                            const player = new Vimeo.Player(video);
-
-                            // Video controls
-
-                            videoSound.addEventListener('click', (event) => {
-
-                                player.getVolume().then(function(volume) {
-
-                                    if (videoVolumeOnIcon.classList.contains(
-                                            'hidden')) {
-
-                                        player.setVolume(1);
-                                        videoVolumeOnIcon.classList.remove('hidden');
-                                        videoVolumeOffIcon.classList.add('hidden');
-
-                                    } else {
-
-                                        player.setVolume(0);
-                                        videoVolumeOnIcon.classList.add('hidden');
-                                        videoVolumeOffIcon.classList.remove('hidden');
-
-                                    }
-
-                                });
-
-                                event.preventDefault();
-
-                            });
-
-                            videoPlayPause.addEventListener('click', (event) => {
-
-                                player.getPaused().then(function(paused) {
-
-                                    if (paused) {
-
-                                        player.play();
-                                        videoPlayIcon.classList.add('hidden');
-                                        videoPauseIcon.classList.remove('hidden');
-
-                                    } else {
-
-                                        player.pause();
-                                        videoPlayIcon.classList.remove('hidden');
-                                        videoPauseIcon.classList.add('hidden');
-
-                                    }
-
-                                });
-
-                                event.preventDefault();
-
-                            });
-
+    }
+    setTimeout(function() {
+        if (!window.SERVD_MANUAL_CSRF_LOAD) {
+            injectCSRF();
+        }
+    }, 50);
+    document.addEventListener('alpine:init', () => {
+        Alpine.data('cursor', () => ({
+            icon: 'arrow-up-right',
+            x: 0,
+            y: 0,
+            endX: (window.innerWidth / 2),
+            endY: (window.innerHeight / 2),
+            cursorVisible: true,
+            cursorEnlarged: false,
+            cursorHovering: false,
+            cursorDragging: false,
+            cursor: document.querySelector('.js-cursor'),
+            dragCursor: document.querySelector('.js-cursor-drag'),
+            init() {
+
+                _self = this;
+
+                _self.dotSize = _self.cursor.offsetWidth;
+
+                _self.setupEventListeners();
+
+            },
+            setupEventListeners() {
+
+                _self = this;
+
+                // Drag
+
+                document.querySelectorAll('.js-cursor-trigger-drag').forEach((element) => {
+
+                    element.addEventListener('mouseover', function() {
+
+                        var icon = element.getAttribute('data-icon');
+
+                        if (icon) {
+                            _self.icon = icon;
                         } else {
+                            _self.icon = 'arrow-up-right';
+                        }
 
-                            videoSound.addEventListener('click', (event) => {
+                        _self.cursorDragging = true;
+                        _self.cursorEnlarged = true;
 
-                                if (videoVolumeOnIcon.classList.contains('hidden')) {
+                        _self.toggleCursorDrag();
 
-                                    video.muted = false;
+                    });
+
+                    element.addEventListener('mouseout', function() {
+
+                        _self.cursorDragging = false;
+                        _self.cursorEnlarged = false;
+
+                        _self.toggleCursorDrag();
+
+                    });
+
+                });
+
+                // Position
+
+                document.addEventListener('pointermove', function(event) {
+
+                    _self.endX = event.clientX;
+                    _self.endY = event.clientY;
+
+                    _self.cursor.style.top = _self.endY + 'px';
+                    _self.cursor.style.left = _self.endX + 'px';
+
+                });
+
+            },
+            toggleCursorDrag() {
+
+                _self = this;
+
+                if (_self.cursorDragging) {
+
+                    _self.dragCursor.classList.remove('scale-0');
+                    // _self.cursor.classList.remove('opacity-0');
+                    document.body.classList.add('no-cursor');
+
+                } else {
+
+                    _self.dragCursor.classList.add('scale-0');
+                    // _self.cursor.classList.add('opacity-0');
+                    document.body.classList.remove('no-cursor');
+
+                }
+
+            },
+        }))
+    });
+    document.addEventListener('alpine:init', () => {
+        Alpine.data('modal423709', () => ({
+            visible: false,
+            setupModal(id) {
+
+                // Prevent keys from interferring with the video
+
+                navigator.mediaSession.setActionHandler('play', function() {});
+                navigator.mediaSession.setActionHandler('pause', function() {});
+                navigator.mediaSession.setActionHandler('seekbackward', function() {});
+                navigator.mediaSession.setActionHandler('seekforward', function() {});
+                navigator.mediaSession.setActionHandler('previoustrack', function() {});
+                navigator.mediaSession.setActionHandler('nexttrack', function() {});
+
+                // Get video elements
+
+                const video = document.querySelector(`.js-modal-video-${id}`);
+                const videoProgress = document.querySelector(`.js-modal-video-progress-${id}`);
+
+                const videoPlayPause = document.querySelector(`.js-modal-video-play-pause-${id}`);
+                const videoSound = document.querySelector(`.js-modal-video-sound-${id}`);
+
+                const videoPlayIcon = document.querySelector(`.js-modal-video-play-icon-${id}`);
+                const videoPauseIcon = document.querySelector(`.js-modal-video-pause-icon-${id}`);
+
+                const videoVolumeOnIcon = document.querySelector(
+                    `.js-modal-video-volume-on-icon-${id}`);
+                const videoVolumeOffIcon = document.querySelector(
+                    `.js-modal-video-volume-off-icon-${id}`);
+
+                // Video controls
+
+                if (video) {
+
+                    if (video.tagName == 'IFRAME') {
+
+                        const player = new Vimeo.Player(video);
+
+                        // Video controls
+
+                        videoSound.addEventListener('click', (event) => {
+
+                            player.getVolume().then(function(volume) {
+
+                                if (videoVolumeOnIcon.classList.contains(
+                                        'hidden')) {
+
+                                    player.setVolume(1);
                                     videoVolumeOnIcon.classList.remove('hidden');
                                     videoVolumeOffIcon.classList.add('hidden');
 
                                 } else {
 
-                                    video.muted = true;
+                                    player.setVolume(0);
                                     videoVolumeOnIcon.classList.add('hidden');
                                     videoVolumeOffIcon.classList.remove('hidden');
 
                                 }
 
-                                event.preventDefault();
-
                             });
 
-                            videoPlayPause.addEventListener('click', (event) => {
+                            event.preventDefault();
 
-                                if (video.paused) {
+                        });
 
-                                    video.play();
+                        videoPlayPause.addEventListener('click', (event) => {
+
+                            player.getPaused().then(function(paused) {
+
+                                if (paused) {
+
+                                    player.play();
                                     videoPlayIcon.classList.add('hidden');
                                     videoPauseIcon.classList.remove('hidden');
 
                                 } else {
 
-                                    video.pause();
+                                    player.pause();
                                     videoPlayIcon.classList.remove('hidden');
                                     videoPauseIcon.classList.add('hidden');
 
                                 }
 
-                                event.preventDefault();
-
                             });
 
-                        }
+                            event.preventDefault();
 
-                    }
+                        });
 
-                    this.$watch('visible', function(value) {
+                    } else {
 
-                        if (value != false) {
+                        videoSound.addEventListener('click', (event) => {
 
-                            document.body.classList.add('overflow-hidden');
+                            if (videoVolumeOnIcon.classList.contains('hidden')) {
 
-                            // Video (Vimeo)
+                                video.muted = false;
+                                videoVolumeOnIcon.classList.remove('hidden');
+                                videoVolumeOffIcon.classList.add('hidden');
 
-                            if (video) {
+                            } else {
 
-                                if (video.tagName == 'IFRAME') {
-
-                                    const player = new Vimeo.Player(video);
-
-                                    // Initialise video
-
-                                    player.setCurrentTime(0);
-                                    player.play();
-                                    player.setVolume(1);
-
-                                    // Progress bar
-
-                                    setInterval(() => {
-
-                                        if (videoProgress) {
-
-                                            player.getCurrentTime().then(function(
-                                                seconds) {
-
-                                                player.getDuration().then(
-                                                    function(duration) {
-
-                                                        videoProgress.style
-                                                            .width = (
-                                                                seconds /
-                                                                duration) *
-                                                            100 + '%';
-
-                                                    });
-
-                                            });
-
-                                        }
-
-                                    }, 100);
-
-                                } else {
-
-                                    // Initialise video
-
-                                    video.currentTime = 0;
-                                    video.play();
-
-                                    // Progress bar
-
-                                    setInterval(() => {
-
-                                        if (videoProgress) {
-
-                                            videoProgress.style.width = (video
-                                                    .currentTime / video.duration) *
-                                                100 + '%';
-
-                                        }
-
-                                    }, 100);
-
-                                }
+                                video.muted = true;
+                                videoVolumeOnIcon.classList.add('hidden');
+                                videoVolumeOffIcon.classList.remove('hidden');
 
                             }
 
+                            event.preventDefault();
 
-                        } else {
+                        });
 
-                            document.body.classList.remove('overflow-hidden');
-                        }
+                        videoPlayPause.addEventListener('click', (event) => {
 
-                    });
+                            if (video.paused) {
 
-                },
-                closeModal(id) {
+                                video.play();
+                                videoPlayIcon.classList.add('hidden');
+                                videoPauseIcon.classList.remove('hidden');
 
-                    this.visible = false;
+                            } else {
 
-                    const video = document.querySelector('.js-modal-video-' + id);
-                    const videoProgress = document.querySelector('.js-modal-video-progress-' + id);
+                                video.pause();
+                                videoPlayIcon.classList.remove('hidden');
+                                videoPauseIcon.classList.add('hidden');
 
-                    if (video) {
+                            }
 
-                        if (video.tagName == 'IFRAME') {
+                            event.preventDefault();
 
-                            const player = new Vimeo.Player(video);
+                        });
 
-                            player.pause();
-
-
-                        } else {
-
-                            video.pause();
-                            videoProgress.style.width = '0%';
-
-                        }
                     }
 
                 }
-            }))
-        });
-        document.addEventListener('alpine:init', () => {
-            Alpine.data('header', () => ({
-                headerSmall: false,
-                menu: false,
-                headerDirection: 'down',
-                headerPosition: 0,
-                updatedHeaderPosition: 0,
-                hideHeader: false,
-                darkMode: localStorage.darkMode === 'true' ? true : false,
-                updateHeader() {
 
-                    const header = document.querySelector('.js-header');
+                this.$watch('visible', function(value) {
 
-                    if (window.scrollY > 10) {
+                    if (value != false) {
 
-                        this.headerSmall = true;
+                        document.body.classList.add('overflow-hidden');
 
-                        this.headerPosition = window.scrollY;
+                        // Video (Vimeo)
 
-                        if (this.headerPosition > this.updatedHeaderPosition) {
+                        if (video) {
 
-                            this.headerDirection = 'down';
+                            if (video.tagName == 'IFRAME') {
 
-                        } else {
+                                const player = new Vimeo.Player(video);
 
-                            this.headerDirection = 'up';
+                                // Initialise video
+
+                                player.setCurrentTime(0);
+                                player.play();
+                                player.setVolume(1);
+
+                                // Progress bar
+
+                                setInterval(() => {
+
+                                    if (videoProgress) {
+
+                                        player.getCurrentTime().then(function(
+                                            seconds) {
+
+                                            player.getDuration().then(
+                                                function(duration) {
+
+                                                    videoProgress.style
+                                                        .width = (
+                                                            seconds /
+                                                            duration) *
+                                                        100 + '%';
+
+                                                });
+
+                                        });
+
+                                    }
+
+                                }, 100);
+
+                            } else {
+
+                                // Initialise video
+
+                                video.currentTime = 0;
+                                video.play();
+
+                                // Progress bar
+
+                                setInterval(() => {
+
+                                    if (videoProgress) {
+
+                                        videoProgress.style.width = (video
+                                                .currentTime / video.duration) *
+                                            100 + '%';
+
+                                    }
+
+                                }, 100);
+
+                            }
 
                         }
 
-                        this.updatedHeaderPosition = this.headerPosition;
 
                     } else {
 
-                        this.headerSmall = false;
+                        document.body.classList.remove('overflow-hidden');
+                    }
+
+                });
+
+            },
+            closeModal(id) {
+
+                this.visible = false;
+
+                const video = document.querySelector('.js-modal-video-' + id);
+                const videoProgress = document.querySelector('.js-modal-video-progress-' + id);
+
+                if (video) {
+
+                    if (video.tagName == 'IFRAME') {
+
+                        const player = new Vimeo.Player(video);
+
+                        player.pause();
+
+
+                    } else {
+
+                        video.pause();
+                        videoProgress.style.width = '0%';
+
+                    }
+                }
+
+            }
+        }))
+    });
+    document.addEventListener('alpine:init', () => {
+        Alpine.data('header', () => ({
+            headerSmall: false,
+            menu: false,
+            headerDirection: 'down',
+            headerPosition: 0,
+            updatedHeaderPosition: 0,
+            hideHeader: false,
+            darkMode: localStorage.darkMode === 'true' ? true : false,
+            updateHeader() {
+
+                const header = document.querySelector('.js-header');
+
+                if (window.scrollY > 10) {
+
+                    this.headerSmall = true;
+
+                    this.headerPosition = window.scrollY;
+
+                    if (this.headerPosition > this.updatedHeaderPosition) {
+
+                        this.headerDirection = 'down';
+
+                    } else {
+
+                        this.headerDirection = 'up';
 
                     }
 
-                    let headerWidth = '60rem';
-                    let headerWidthWide = '99vw';
+                    this.updatedHeaderPosition = this.headerPosition;
 
-                    ScrollTrigger.matchMedia({
-                        '(min-width: 1024px)': () => {
+                } else {
 
-                            headerWidth = '60rem';
-                            headerWidthWide = '99vw';
+                    this.headerSmall = false;
 
-                        },
-                        '(max-width: 1023px)': () => {
+                }
 
-                            headerWidth = '16rem';
-                            headerWidthWide = '99vw';
+                let headerWidth = '60rem';
+                let headerWidthWide = '99vw';
 
-                        }
+                ScrollTrigger.matchMedia({
+                    '(min-width: 1024px)': () => {
+
+                        headerWidth = '60rem';
+                        headerWidthWide = '99vw';
+
+                    },
+                    '(max-width: 1023px)': () => {
+
+                        headerWidth = '16rem';
+                        headerWidthWide = '99vw';
+
+                    }
+                });
+
+                if (window.scrollY > 10) {
+
+                    gsap.to(header, {
+                        duration: 0.6,
+                        width: headerWidth,
+                        ease: 'power4.out',
                     });
 
-                    if (window.scrollY > 10) {
+                    header.classList.add('header-background');
+
+
+                } else {
+
+                    gsap.to(header, {
+                        duration: 0.6,
+                        width: headerWidthWide,
+                        ease: 'power4.out',
+                    });
+
+                    header.classList.remove('header-background');
+
+                }
+
+            },
+            mobileMenu() {
+
+                const header = document.querySelector('.js-header');
+                const mobileMenu = document.querySelector('.js-mobile-menu');
+
+                let headerWidth = '60rem';
+                let headerWidthWide = '94vw';
+
+                ScrollTrigger.matchMedia({
+                    '(min-width: 1024px)': () => {
+
+                        headerWidth = '60rem';
+                        headerWidthWide = '94vw';
+
+                    },
+                    '(max-width: 1023px)': () => {
+
+                        headerWidth = '16rem';
+                        headerWidthWide = '94vw';
+
+                    }
+                });
+
+                this.$watch('menu', value => {
+
+                    if (value == 'mobileMenu') {
+
+                        document.body.classList.add('overflow-hidden');
 
                         gsap.to(header, {
-                            duration: 0.6,
-                            width: headerWidth,
-                            ease: 'power4.out',
-                        });
-
-                        header.classList.add('header-background');
-
-
-                    } else {
-
-                        gsap.to(header, {
-                            duration: 0.6,
+                            duration: 0.4,
                             width: headerWidthWide,
                             ease: 'power4.out',
                         });
 
-                        header.classList.remove('header-background');
-
-                    }
-
-                },
-                mobileMenu() {
-
-                    const header = document.querySelector('.js-header');
-                    const mobileMenu = document.querySelector('.js-mobile-menu');
-
-                    let headerWidth = '60rem';
-                    let headerWidthWide = '94vw';
-
-                    ScrollTrigger.matchMedia({
-                        '(min-width: 1024px)': () => {
-
-                            headerWidth = '60rem';
-                            headerWidthWide = '94vw';
-
-                        },
-                        '(max-width: 1023px)': () => {
-
-                            headerWidth = '16rem';
-                            headerWidthWide = '94vw';
-
-                        }
-                    });
-
-                    this.$watch('menu', value => {
-
-                        if (value == 'mobileMenu') {
-
-                            document.body.classList.add('overflow-hidden');
-
-                            gsap.to(header, {
-                                duration: 0.4,
-                                width: headerWidthWide,
-                                ease: 'power4.out',
-                            });
-
-                            gsap.to(mobileMenu, {
-                                duration: 0.4,
-                                delay: window.scrollY > 10 ? 0.2 : 0,
-                                height: '27.5rem',
-                                ease: 'power4.out',
-                            });
-
-                            gsap.to(mobileMenu, {
-                                duration: 1,
-                                delay: window.scrollY > 10 ? 0.3 : 0.1,
-                                opacity: 1,
-                                ease: 'power4.out',
-                            });
-
-
-                            header.classList.add('header-background');
-
-                        } else {
-
-                            document.body.classList.remove('overflow-hidden');
-
-                            setTimeout(() => {
-
-                                if (window.scrollY > 10) {
-
-                                    header.classList.add('header-background');
-
-                                } else {
-
-                                    header.classList.remove('header-background');
-
-                                }
-
-                            }, 400);
-
-                            gsap.to(mobileMenu, {
-                                duration: 0.6,
-                                opacity: 0,
-                                ease: 'power4.out',
-                            });
-
-                            gsap.to(mobileMenu, {
-                                duration: 0.4,
-                                height: '0rem',
-                                delay: 0.2,
-                                ease: 'power4.out',
-                            });
-
-                            if (window.scrollY > 10) {
-
-                                gsap.to(header, {
-                                    duration: 0.4,
-                                    delay: 0.4,
-                                    width: headerWidth,
-                                    ease: 'power4.out',
-                                });
-
-                            } else {
-
-                                gsap.to(header, {
-                                    duration: 0.4,
-                                    delay: 0.4,
-                                    width: '99vw',
-                                    ease: 'power4.out',
-                                });
-
-                            }
-
-                        }
-
-                    });
-
-                }
-            }))
-        });
-        document.addEventListener('alpine:init', () => {
-            Alpine.data('archedImageCarouselMobile', () => ({
-                active: false,
-                confetti(id) {
-
-                    emojisplosion({
-                        emojis: ["\ud83d\udcaf", "\u2728", "\ud83c\udf89", "\ud83c\udf8a",
-                            "\ud83c\udf7e", "\ud83c\udf88", "\ud83d\udca5"
-                        ],
-                        emojiCount: 50,
-                        physics: {
-                            fontSize: 40,
-                            rotationDeceleration: 1.001,
-                            initialVelocities: {
-                                y: {
-                                    max: -70,
-                                    min: -12,
-                                },
-                                x: {
-                                    max: 30,
-                                    min: -30,
-                                }
-                            },
-                        },
-                        position: () => ({
-                            // bottom center of the screen
-                            x: window.innerWidth / 2,
-                            y: window.innerHeight + 100,
-                        }),
-                        process(element) {
-                            element.style.zIndex = 1000;
-
-                        },
-                    });
-
-                },
-                rotateArchedImages(id) {
-
-                    const container = document.querySelector(`.js-arched-image-container-${id}`);
-                    const innerContainer = document.querySelector(
-                        `.js-arched-image-inner-container-${id}`);
-                    const images = document.querySelectorAll(`.js-arched-image-${id}`);
-
-                    var config = {
-                        duration: 150,
-                        repeatDelay: 8,
-                        rotationMultiply: 18,
-                        rotationOffset: 55
-                    }
-
-                    images.forEach((image, index) => {
-                        image.style.transform =
-                            `rotate(${(index * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
-                        image.style.webkitTransform =
-                            `rotate(${(index * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
-                    });
-
-                    // Infinite rotation
-
-                    gsap.to(container, {
-                        duration: config.duration,
-                        rotation: -360,
-                        ease: 'none',
-                        repeat: -1
-                    });
-
-                    // Rotate inner container
-
-                    ScrollTrigger.matchMedia({
-                        '(min-width: 1280px)': () => {
-
-                            gsap.to(innerContainer, {
-                                scrollTrigger: {
-                                    trigger: container,
-                                    scrub: true,
-                                    start: 'top center',
-                                    end: 'bottom bottom'
-                                },
-                                rotation: -40,
-                                ease: 'none',
-                            });
-
-                        }
-                    });
-
-                    // Move first child to end of container
-
-                    const interval = new TimelineMax({
-                        repeat: -1,
-                        repeatDelay: config.repeatDelay,
-                    }).call(function() {
-
-                        // Get first and last child
-
-                        const firstChild = innerContainer.firstElementChild;
-                        const lastChild = innerContainer.lastElementChild;
-
-                        // Get index of last child
-
-                        const index = parseInt(lastChild.getAttribute('data-index'));
-
-                        // Set index of first child to index of last child + 1
-
-                        firstChild.setAttribute('data-index', index + 1);
-
-                        // Get new index of first child
-
-                        const newIndex = parseInt(firstChild.getAttribute('data-index'));
-
-                        // ${(newIndex * config.rotationMultiply) - config.rotationOffset}deg
-                        // Set rotation of first child with transform rotate and webkit transform rotate
-
-                        firstChild.style.transform =
-                            `rotate(${(newIndex * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
-                        firstChild.style.webkitTransform =
-                            `rotate(${(newIndex * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
-
-                        // Append first child to end of container
-
-                        innerContainer.appendChild(firstChild);
-
-                    });
-
-                    setTimeout(() => {
-
-                        this.active = true;
-
-                    }, 300);
-
-                }
-            }));
-        });
-        document.addEventListener('alpine:init', () => {
-            Alpine.data('archedImageCarouseTablet', () => ({
-                active: false,
-                confetti(id) {
-
-                    emojisplosion({
-                        emojis: ["\ud83d\udcaf", "\u2728", "\ud83c\udf89", "\ud83c\udf8a",
-                            "\ud83c\udf7e", "\ud83c\udf88", "\ud83d\udca5"
-                        ],
-                        emojiCount: 50,
-                        physics: {
-                            fontSize: 40,
-                            rotationDeceleration: 1.001,
-                            initialVelocities: {
-                                y: {
-                                    max: -70,
-                                    min: -12,
-                                },
-                                x: {
-                                    max: 30,
-                                    min: -30,
-                                }
-                            },
-                        },
-                        position: () => ({
-                            // bottom center of the screen
-                            x: window.innerWidth / 2,
-                            y: window.innerHeight + 100,
-                        }),
-                        process(element) {
-                            element.style.zIndex = 1000;
-
-                        },
-                    });
-
-                },
-                rotateArchedImages(id) {
-
-                    const container = document.querySelector(`.js-arched-image-container-${id}`);
-                    const innerContainer = document.querySelector(
-                        `.js-arched-image-inner-container-${id}`);
-                    const images = document.querySelectorAll(`.js-arched-image-${id}`);
-
-                    var config = {
-                        duration: 200,
-                        repeatDelay: 9.5,
-                        rotationMultiply: 15,
-                        rotationOffset: 55
-                    }
-
-                    images.forEach((image, index) => {
-                        image.style.transform =
-                            `rotate(${(index * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
-                        image.style.webkitTransform =
-                            `rotate(${(index * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
-                    });
-
-                    // Infinite rotation
-
-                    gsap.to(container, {
-                        duration: config.duration,
-                        rotation: -360,
-                        ease: 'none',
-                        repeat: -1
-                    });
-
-                    // Rotate inner container
-
-                    ScrollTrigger.matchMedia({
-                        '(min-width: 1280px)': () => {
-
-                            gsap.to(innerContainer, {
-                                scrollTrigger: {
-                                    trigger: container,
-                                    scrub: true,
-                                    start: 'top center',
-                                    end: 'bottom bottom'
-                                },
-                                rotation: -40,
-                                ease: 'none',
-                            });
-
-                        }
-                    });
-
-                    // Move first child to end of container
-
-                    const interval = new TimelineMax({
-                        repeat: -1,
-                        repeatDelay: config.repeatDelay,
-                    }).call(function() {
-
-                        // Get first and last child
-
-                        const firstChild = innerContainer.firstElementChild;
-                        const lastChild = innerContainer.lastElementChild;
-
-                        // Get index of last child
-
-                        const index = parseInt(lastChild.getAttribute('data-index'));
-
-                        // Set index of first child to index of last child + 1
-
-                        firstChild.setAttribute('data-index', index + 1);
-
-                        // Get new index of first child
-
-                        const newIndex = parseInt(firstChild.getAttribute('data-index'));
-
-                        // ${(newIndex * config.rotationMultiply) - config.rotationOffset}deg
-                        // Set rotation of first child with transform rotate and webkit transform rotate
-
-                        firstChild.style.transform =
-                            `rotate(${(newIndex * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
-                        firstChild.style.webkitTransform =
-                            `rotate(${(newIndex * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
-
-                        // Append first child to end of container
-
-                        innerContainer.appendChild(firstChild);
-
-                    });
-
-                    setTimeout(() => {
-
-                        this.active = true;
-
-                    }, 300);
-
-                }
-            }));
-        });
-        document.addEventListener('alpine:init', () => {
-            Alpine.data('archedImageCarouselDesktop', () => ({
-                active: false,
-                confetti(id) {
-
-                    emojisplosion({
-                        emojis: ["\ud83d\udcaf", "\u2728", "\ud83c\udf89", "\ud83c\udf8a",
-                            "\ud83c\udf7e", "\ud83c\udf88", "\ud83d\udca5"
-                        ],
-                        emojiCount: 50,
-                        physics: {
-                            fontSize: 40,
-                            rotationDeceleration: 1.001,
-                            initialVelocities: {
-                                y: {
-                                    max: -70,
-                                    min: -12,
-                                },
-                                x: {
-                                    max: 30,
-                                    min: -30,
-                                }
-                            },
-                        },
-                        position: () => ({
-                            // bottom center of the screen
-                            x: window.innerWidth / 2,
-                            y: window.innerHeight + 100,
-                        }),
-                        process(element) {
-                            element.style.zIndex = 1000;
-
-                        },
-                    });
-
-                },
-                rotateArchedImages(id) {
-
-                    const container = document.querySelector(`.js-arched-image-container-${id}`);
-                    const innerContainer = document.querySelector(
-                        `.js-arched-image-inner-container-${id}`);
-                    const images = document.querySelectorAll(`.js-arched-image-${id}`);
-
-                    var config = {
-                        duration: 300,
-                        repeatDelay: 10,
-                        rotationMultiply: 12,
-                        rotationOffset: 55
-                    }
-
-                    images.forEach((image, index) => {
-                        image.style.transform =
-                            `rotate(${(index * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
-                        image.style.webkitTransform =
-                            `rotate(${(index * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
-                    });
-
-                    // Infinite rotation
-
-                    gsap.to(container, {
-                        duration: config.duration,
-                        rotation: -360,
-                        ease: 'none',
-                        repeat: -1
-                    });
-
-                    // Rotate inner container
-
-                    ScrollTrigger.matchMedia({
-                        '(min-width: 1280px)': () => {
-
-                            gsap.to(innerContainer, {
-                                scrollTrigger: {
-                                    trigger: container,
-                                    scrub: true,
-                                    start: 'top center',
-                                    end: 'bottom bottom'
-                                },
-                                rotation: -40,
-                                ease: 'none',
-                            });
-
-                        }
-                    });
-
-                    // Move first child to end of container
-
-                    const interval = new TimelineMax({
-                        repeat: -1,
-                        repeatDelay: config.repeatDelay,
-                    }).call(function() {
-
-                        // Get first and last child
-
-                        const firstChild = innerContainer.firstElementChild;
-                        const lastChild = innerContainer.lastElementChild;
-
-                        // Get index of last child
-
-                        const index = parseInt(lastChild.getAttribute('data-index'));
-
-                        // Set index of first child to index of last child + 1
-
-                        firstChild.setAttribute('data-index', index + 1);
-
-                        // Get new index of first child
-
-                        const newIndex = parseInt(firstChild.getAttribute('data-index'));
-
-                        // ${(newIndex * config.rotationMultiply) - config.rotationOffset}deg
-                        // Set rotation of first child with transform rotate and webkit transform rotate
-
-                        firstChild.style.transform =
-                            `rotate(${(newIndex * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
-                        firstChild.style.webkitTransform =
-                            `rotate(${(newIndex * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
-
-                        // Append first child to end of container
-
-                        innerContainer.appendChild(firstChild);
-
-                    });
-
-                    setTimeout(() => {
-
-                        this.active = true;
-
-                    }, 300);
-
-                }
-            }));
-        });
-        document.addEventListener('alpine:init', () => {
-            Alpine.data('videoFile', () => ({
-                playing: true,
-                muted: true,
-                hovering: false,
-                paused: false,
-                initVideoFile(id) {
-
-                    // Get elements
-
-                    const video = document.querySelector(`.js-video-${id}`);
-                    const videoProgress = document.querySelector(`.js-video-progress-${id}`);
-                    const videoTimer = document.querySelector(`.js-video-timer-${id}`);
-
-
-                    // Set initial state
-
-
-
-                    // Set video progress + timer
-
-                    setInterval(() => {
-
-                        if (videoProgress) {
-
-                            videoProgress.style.width = (video.currentTime / video.duration) *
-                                100 + '%';
-
-                        }
-
-                        if (videoTimer) {
-
-                            const minutes = Math.floor(video.currentTime / 60);
-                            const seconds = Math.floor(video.currentTime - minutes * 60);
-                            const minuteValue = minutes >= 10 ? minutes : '0' + minutes;
-                            const secondValue = seconds >= 10 ? seconds : '0' + seconds;
-
-                            videoTimer.innerHTML = minuteValue + ':' + secondValue;
-
-                        }
-
-                    }, 10);
-
-                    // Check to see if video is playing or muted
-
-                    setInterval(() => {
-
-                        if (video.paused) {
-
-                            if (video.muted) {
-                                this.playing = false;
-                                this.paused = false;
-                            } else {
-                                this.playing = false;
-                                this.paused = true;
-                            }
-
-                        } else {
-                            if (!this.hovering) {
-                                this.playing = true;
-                            }
-                        }
-
-                        if (video.muted) {
-                            this.muted = true;
-                        } else {
-                            this.muted = false;
-                        }
-
-                    }, 100);
-
-
-                    window.addEventListener('scroll', (e) => {
-
-                        if (video) {
-
-                            const videoTop = video.getBoundingClientRect().top;
-                            const videoBottom = video.getBoundingClientRect().bottom;
-
-                            if (video.classList.contains('js-video-with-sound')) {
-
-                                if (videoTop > window.innerHeight || videoBottom < 0) {
-                                    video.pause();
-                                    video.muted = true;
-                                }
-
-                            }
-
-                        }
-
-                    });
-
-
-
-                    video.addEventListener('ended', () => {
-
-                        if (!video.hasAttribute('loop')) {
-
-                            video.currentTime = 0;
-                            video.muted = true;
-                            videoProgress.style.width = 0;
-                            video.pause();
-
-                        }
-
-
-                    });
-
-
-
-                },
-                toggleSound(id) {
-
-                    const video = document.querySelector('.js-video-' + id);
-                    const videos = document.querySelectorAll('.js-video');
-
-                    if (this.muted) {
-
-                        videos.forEach(video => {
-                            video.pause();
-                            video.muted = true;
+                        gsap.to(mobileMenu, {
+                            duration: 0.4,
+                            delay: window.scrollY > 10 ? 0.2 : 0,
+                            height: '27.5rem',
+                            ease: 'power4.out',
                         });
 
-                        video.play();
-
-                        video.muted = false;
-                        this.muted = false;
-
-                        this.$dispatch('component-cursor', {
-                            icon: 'volume-on'
+                        gsap.to(mobileMenu, {
+                            duration: 1,
+                            delay: window.scrollY > 10 ? 0.3 : 0.1,
+                            opacity: 1,
+                            ease: 'power4.out',
                         });
+
+
+                        header.classList.add('header-background');
 
                     } else {
 
-                        video.muted = true;
-                        this.muted = true;
-
-                        this.$dispatch('component-cursor', {
-                            icon: 'volume-off'
-                        });
-
-                    }
-
-
-                },
-                togglePreview(id, status) {
-
-                    this.hovering = status;
-
-                    const video = document.querySelector('.js-video-' + id);
-
-                    if (this.hovering && this.muted) {
-
-                        video.currentTime = 0;
-                        video.play();
-
-                    }
-
-                    if (!this.hovering && this.muted) {
-
-                        video.pause();
-                        video.currentTime = 0;
-
-                    }
-
-
-                },
-                togglePause(id) {
-
-                    const video = document.querySelector('.js-video-' + id);
-                    const videos = document.querySelectorAll('.js-video');
-
-                    if (this.paused) {
-
-                        videos.forEach(video => {
-                            video.pause();
-                        });
-
-                        video.play();
-                        this.paused = false;
-                        this.playing = true;
-
-                    } else {
-
-                        video.pause();
-                        this.paused = true;
-                        this.playing = false;
-
-                    }
-
-                },
-                toggleVideo(id) {
-
-                    const video = document.querySelector('.js-video-' + id);
-                    const videos = document.querySelectorAll('.js-video');
-                    const videosWithVolumeControls = document.querySelectorAll(
-                        '.js-video-with-volume-controls');
-                    const videosPlaying = document.querySelectorAll('.js-video-playing');
-
-                    videosPlaying.forEach(video => {
-                        if (!video.muted && !video.classList.contains('js-video-with-sound')) {
-                            video.muted = true;
-                        } else {
-                            video.pause();
-                            video.muted = true;
-                            video.currentTime = 0;
-                        }
-                    });
-
-                    if (this.playing) {
-
-                        video.pause();
-                        video.muted = true;
-                        this.playing = false;
-                        this.hovering = false;
-
-                    } else {
-
-                        videosWithVolumeControls.forEach(video => {
-                            video.pause();
-                        });
-
-                        video.currentTime = 0;
-                        video.muted = false;
-                        video.play();
-                        this.playing = true;
-                        this.hovering = false;
-
-                    }
-
-                }
-            }))
-        });
-        document.addEventListener('alpine:init', () => {
-            Alpine.data('profile', () => ({
-                hovering: false,
-                profileHover(id) {
-
-                    const profile = this.$refs.profile;
-                    const images = this.$refs.profileImages.querySelectorAll('img');
-
-                    let index = 0;
-                    let interval;
-
-                    function flickThroughImages() {
-
-                        interval = setInterval(() => {
-
-                            images.forEach((image, i) => {
-
-                                if (i == index) {
-                                    image.classList.remove('hidden');
-                                } else {
-                                    image.classList.add('hidden');
-                                }
-
-                            })
-
-                            index++;
-
-                            if (index >= images.length) {
-                                index = 0;
-                            }
-
-                        }, 200);
-
-                    }
-
-                    clearInterval(interval);
-                    setTimeout(flickThroughImages(), 200);
-
-                    profile.addEventListener('mouseenter', () => {
-
-                        this.hovering = true;
-                        clearInterval(interval);
-                        setTimeout(flickThroughImages(), 200);
-
-                        // setTimeout(() => {
-                        //    this.hovering = false;
-                        //    clearInterval(interval);
-                        // }, 1000);
-
-                    });
-
-                    profile.addEventListener('mouseleave', () => {
-
-                        this.hovering = false;
-                        clearInterval(interval);
-
-                    });
-
-                }
-            }))
-        });
-        document.addEventListener('alpine:init', () => {
-            Alpine.data('entriesProfiles', () => ({
-                carousel(id) {
-
-                    const profileCards = document.querySelectorAll('.js-profile-card-' + id);
-
-                    const carousel = new Swiper('.js-carousel-' + id, {
-                        slidesPerView: 1.6,
-                        loop: true,
-                        speed: 10000,
-                        autoplay: {
-                            delay: 0,
-                        },
-                        breakpoints: {
-                            640: {
-                                speed: 10000,
-                                slidesPerView: 2,
-                            },
-                            768: {
-                                speed: 20000,
-                                slidesPerView: 2.5,
-                            },
-                            1024: {
-                                speed: 20000,
-                                slidesPerView: 3.5,
-                            },
-                            1280: {
-                                speed: 20000,
-                                slidesPerView: 4,
-                            },
-                            2100: {
-                                speed: 20000,
-                                slidesPerView: 5,
-                            },
-                        },
-
-                    });
-
-                }
-            }));
-        });
-        document.addEventListener('alpine:init', () => {
-            Alpine.data('statistic', () => ({
-                countUp(id) {
-
-                    const statistics = document.querySelectorAll(`.js-statistic-${id}`);
-
-                    statistics.forEach(statistic => {
-
-                        const character = statistic.dataset.character;
-                        const delay = statistic.dataset.delay;
-
-                        let goToCharacterPosition = statistic.querySelector(
-                                `.js-statistic-${id}-character[data-character="${character}"]`)
-                            .offsetTop;
-                        let goToCharacterWidth = statistic.querySelector(
-                                `.js-statistic-${id}-character[data-character="${character}"]`)
-                            .offsetWidth;
-
-                        this.animate(id, statistic, goToCharacterWidth, goToCharacterPosition);
-
-                        // window.addEventListener('resize', () => {
-
-                        //     goToCharacterWidth = statistic.querySelector(`.js-statistic-${id}-character[data-character="${character}"]`).offsetWidth;
-                        //     goToCharacterPosition = statistic.querySelector(`.js-statistic-${id}-character[data-character="${character}"]`).offsetTop;
-
-                        //     this.animate(id, statistic, goToCharacterWidth, goToCharacterPosition);
-
-                        // });
-
-
-                    });
-
-                },
-                animate(id, statistic, goToCharacterWidth, goToCharacterPosition) {
-
-                    gsap.to(statistic.querySelectorAll(`.js-statistic-${id}-characters > div`), {
-                        duration: 1.5,
-                        y: -goToCharacterPosition,
-                        ease: 'power4.inOut',
-                        scrollTrigger: {
-                            trigger: statistic,
-                            start: 'top 90%',
-                        }
-                    });
-
-                    gsap.to(statistic, {
-                        duration: 0.5,
-                        width: goToCharacterWidth,
-                        ease: 'power1.out',
-                        scrollTrigger: {
-                            trigger: statistic,
-                            start: 'top 90%',
-                        }
-                    });
-
-                }
-            }))
-        });
-        document.addEventListener('alpine:init', () => {
-            Alpine.data('statistics', () => ({
-                isStart: true,
-                isEnd: false,
-                carousel(id) {
-
-                    const carousel = new Swiper(`.js-carousel-${id}`, {
-                        slidesPerView: 1,
-                        navigation: {
-                            nextEl: '.js-carousel-next-' + id,
-                            prevEl: '.js-carousel-prev-' + id,
-                        },
-                        breakpoints: {
-                            768: {
-                                slidesPerView: 2,
-                            },
-                            1024: {
-                                slidesPerView: 3,
-                            },
-                            1280: {
-                                slidesPerView: 4,
-                            },
-                        },
-                    });
-
-                    carousel.on('slideChange', () => {
-                        this.isStart = carousel.isBeginning;
-                        this.isEnd = carousel.isEnd;
-                    });
-
-                }
-            }))
-        });
-        document.addEventListener('alpine:init', () => {
-            Alpine.data('logosDoubleCarousel', () => ({
-                carousel(id) {
-
-                    const carousels = document.querySelectorAll(`.js-carousel-${id}`);
-
-                    carousels.forEach((carousel, index) => {
-
-                        const swiper = new Swiper(carousel, {
-                            slidesPerView: 2,
-                            spaceBetween: 0,
-                            loop: true,
-                            allowTouchMove: false,
-                            autoplay: {
-                                delay: 0,
-                                disableOnInteraction: false,
-                                reverseDirection: index % 2 === 0 ? false : true,
-                            },
-                            speed: 10000,
-                            grabCursor: false,
-                            mousewheelControl: false,
-                            keyboardControl: false,
-                            breakpoints: {
-                                640: {
-                                    slidesPerView: 3,
-                                },
-                                768: {
-                                    slidesPerView: 3.5,
-                                },
-                                1024: {
-                                    slidesPerView: 4,
-                                },
-                                1280: {
-                                    slidesPerView: 4,
-                                },
-                                1400: {
-                                    slidesPerView: 5,
-                                },
-                                2100: {
-                                    slidesPerView: 6,
-                                },
-                            }
-                        });
+                        document.body.classList.remove('overflow-hidden');
 
                         setTimeout(() => {
 
-                            swiper.update();
-                            swiper.autoplay.start();
+                            if (window.scrollY > 10) {
 
-                        }, 1000);
+                                header.classList.add('header-background');
 
-                        window.addEventListener('resize', () => {
+                            } else {
 
-                            clearTimeout(window.resizedFinished);
+                                header.classList.remove('header-background');
 
-                            window.resizedFinished = setTimeout(function() {
+                            }
 
-                                swiper.update();
-                                swiper.autoplay.start();
+                        }, 400);
 
-                            }, 50);
-
+                        gsap.to(mobileMenu, {
+                            duration: 0.6,
+                            opacity: 0,
+                            ease: 'power4.out',
                         });
 
-                        const logos = carousel.querySelectorAll(`.js-logo-${id}`);
+                        gsap.to(mobileMenu, {
+                            duration: 0.4,
+                            height: '0rem',
+                            delay: 0.2,
+                            ease: 'power4.out',
+                        });
 
-                        // ScrollTrigger.matchMedia({
-                        //     '(min-width: 1280px)': () => {
+                        if (window.scrollY > 10) {
 
-                        //         gsap.to(logos, {
-                        //             scrollTrigger: {
-                        //                 trigger: logos,
-                        //                 scrub: true,
-                        //                 start: 'top 110%',
-                        //                 end: 'bottom top'
-                        //             },
-                        //             x: index % 2 === 0 ? 100 : -100,
-                        //             ease: 'none',
-                        //         });
-
-                        //     }
-                        // });
-
-
-                    });
-
-                }
-            }));
-        });
-        document.addEventListener('alpine:init', () => {
-            Alpine.data('modal428063', () => ({
-                visible: false,
-                setupModal(id) {
-
-                    // Prevent keys from interferring with the video
-
-                    navigator.mediaSession.setActionHandler('play', function() {});
-                    navigator.mediaSession.setActionHandler('pause', function() {});
-                    navigator.mediaSession.setActionHandler('seekbackward', function() {});
-                    navigator.mediaSession.setActionHandler('seekforward', function() {});
-                    navigator.mediaSession.setActionHandler('previoustrack', function() {});
-                    navigator.mediaSession.setActionHandler('nexttrack', function() {});
-
-                    // Get video elements
-
-                    const video = document.querySelector(`.js-modal-video-${id}`);
-                    const videoProgress = document.querySelector(`.js-modal-video-progress-${id}`);
-
-                    const videoPlayPause = document.querySelector(`.js-modal-video-play-pause-${id}`);
-                    const videoSound = document.querySelector(`.js-modal-video-sound-${id}`);
-
-                    const videoPlayIcon = document.querySelector(`.js-modal-video-play-icon-${id}`);
-                    const videoPauseIcon = document.querySelector(`.js-modal-video-pause-icon-${id}`);
-
-                    const videoVolumeOnIcon = document.querySelector(
-                        `.js-modal-video-volume-on-icon-${id}`);
-                    const videoVolumeOffIcon = document.querySelector(
-                        `.js-modal-video-volume-off-icon-${id}`);
-
-                    // Video controls
-
-                    if (video) {
-
-                        if (video.tagName == 'IFRAME') {
-
-                            const player = new Vimeo.Player(video);
-
-                            // Video controls
-
-                            videoSound.addEventListener('click', (event) => {
-
-                                player.getVolume().then(function(volume) {
-
-                                    if (videoVolumeOnIcon.classList.contains(
-                                            'hidden')) {
-
-                                        player.setVolume(1);
-                                        videoVolumeOnIcon.classList.remove('hidden');
-                                        videoVolumeOffIcon.classList.add('hidden');
-
-                                    } else {
-
-                                        player.setVolume(0);
-                                        videoVolumeOnIcon.classList.add('hidden');
-                                        videoVolumeOffIcon.classList.remove('hidden');
-
-                                    }
-
-                                });
-
-                                event.preventDefault();
-
-                            });
-
-                            videoPlayPause.addEventListener('click', (event) => {
-
-                                player.getPaused().then(function(paused) {
-
-                                    if (paused) {
-
-                                        player.play();
-                                        videoPlayIcon.classList.add('hidden');
-                                        videoPauseIcon.classList.remove('hidden');
-
-                                    } else {
-
-                                        player.pause();
-                                        videoPlayIcon.classList.remove('hidden');
-                                        videoPauseIcon.classList.add('hidden');
-
-                                    }
-
-                                });
-
-                                event.preventDefault();
-
+                            gsap.to(header, {
+                                duration: 0.4,
+                                delay: 0.4,
+                                width: headerWidth,
+                                ease: 'power4.out',
                             });
 
                         } else {
 
-                            videoSound.addEventListener('click', (event) => {
-
-                                if (videoVolumeOnIcon.classList.contains('hidden')) {
-
-                                    video.muted = false;
-                                    videoVolumeOnIcon.classList.remove('hidden');
-                                    videoVolumeOffIcon.classList.add('hidden');
-
-                                } else {
-
-                                    video.muted = true;
-                                    videoVolumeOnIcon.classList.add('hidden');
-                                    videoVolumeOffIcon.classList.remove('hidden');
-
-                                }
-
-                                event.preventDefault();
-
-                            });
-
-                            videoPlayPause.addEventListener('click', (event) => {
-
-                                if (video.paused) {
-
-                                    video.play();
-                                    videoPlayIcon.classList.add('hidden');
-                                    videoPauseIcon.classList.remove('hidden');
-
-                                } else {
-
-                                    video.pause();
-                                    videoPlayIcon.classList.remove('hidden');
-                                    videoPauseIcon.classList.add('hidden');
-
-                                }
-
-                                event.preventDefault();
-
+                            gsap.to(header, {
+                                duration: 0.4,
+                                delay: 0.4,
+                                width: '99vw',
+                                ease: 'power4.out',
                             });
 
                         }
 
                     }
 
-                    this.$watch('visible', function(value) {
+                });
 
-                        if (value != false) {
+            }
+        }))
+    });
+    document.addEventListener('alpine:init', () => {
+        Alpine.data('archedImageCarouselMobile', () => ({
+            active: false,
+            confetti(id) {
 
-                            document.body.classList.add('overflow-hidden');
-
-                            // Video (Vimeo)
-
-                            if (video) {
-
-                                if (video.tagName == 'IFRAME') {
-
-                                    const player = new Vimeo.Player(video);
-
-                                    // Initialise video
-
-                                    player.setCurrentTime(0);
-                                    player.play();
-                                    player.setVolume(1);
-
-                                    // Progress bar
-
-                                    setInterval(() => {
-
-                                        if (videoProgress) {
-
-                                            player.getCurrentTime().then(function(
-                                                seconds) {
-
-                                                player.getDuration().then(
-                                                    function(duration) {
-
-                                                        videoProgress.style
-                                                            .width = (
-                                                                seconds /
-                                                                duration) *
-                                                            100 + '%';
-
-                                                    });
-
-                                            });
-
-                                        }
-
-                                    }, 100);
-
-                                } else {
-
-                                    // Initialise video
-
-                                    video.currentTime = 0;
-                                    video.play();
-
-                                    // Progress bar
-
-                                    setInterval(() => {
-
-                                        if (videoProgress) {
-
-                                            videoProgress.style.width = (video
-                                                    .currentTime / video.duration) *
-                                                100 + '%';
-
-                                        }
-
-                                    }, 100);
-
-                                }
-
+                emojisplosion({
+                    emojis: ["\ud83d\udcaf", "\u2728", "\ud83c\udf89", "\ud83c\udf8a",
+                        "\ud83c\udf7e", "\ud83c\udf88", "\ud83d\udca5"
+                    ],
+                    emojiCount: 50,
+                    physics: {
+                        fontSize: 40,
+                        rotationDeceleration: 1.001,
+                        initialVelocities: {
+                            y: {
+                                max: -70,
+                                min: -12,
+                            },
+                            x: {
+                                max: 30,
+                                min: -30,
                             }
+                        },
+                    },
+                    position: () => ({
+                        // bottom center of the screen
+                        x: window.innerWidth / 2,
+                        y: window.innerHeight + 100,
+                    }),
+                    process(element) {
+                        element.style.zIndex = 1000;
+
+                    },
+                });
+
+            },
+            rotateArchedImages(id) {
+
+                const container = document.querySelector(`.js-arched-image-container-${id}`);
+                const innerContainer = document.querySelector(
+                    `.js-arched-image-inner-container-${id}`);
+                const images = document.querySelectorAll(`.js-arched-image-${id}`);
+
+                var config = {
+                    duration: 150,
+                    repeatDelay: 8,
+                    rotationMultiply: 18,
+                    rotationOffset: 55
+                }
+
+                images.forEach((image, index) => {
+                    image.style.transform =
+                        `rotate(${(index * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
+                    image.style.webkitTransform =
+                        `rotate(${(index * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
+                });
+
+                // Infinite rotation
+
+                gsap.to(container, {
+                    duration: config.duration,
+                    rotation: -360,
+                    ease: 'none',
+                    repeat: -1
+                });
+
+                // Rotate inner container
+
+                ScrollTrigger.matchMedia({
+                    '(min-width: 1280px)': () => {
+
+                        gsap.to(innerContainer, {
+                            scrollTrigger: {
+                                trigger: container,
+                                scrub: true,
+                                start: 'top center',
+                                end: 'bottom bottom'
+                            },
+                            rotation: -40,
+                            ease: 'none',
+                        });
+
+                    }
+                });
+
+                // Move first child to end of container
+
+                const interval = new TimelineMax({
+                    repeat: -1,
+                    repeatDelay: config.repeatDelay,
+                }).call(function() {
+
+                    // Get first and last child
+
+                    const firstChild = innerContainer.firstElementChild;
+                    const lastChild = innerContainer.lastElementChild;
+
+                    // Get index of last child
+
+                    const index = parseInt(lastChild.getAttribute('data-index'));
+
+                    // Set index of first child to index of last child + 1
+
+                    firstChild.setAttribute('data-index', index + 1);
+
+                    // Get new index of first child
+
+                    const newIndex = parseInt(firstChild.getAttribute('data-index'));
+
+                    // ${(newIndex * config.rotationMultiply) - config.rotationOffset}deg
+                    // Set rotation of first child with transform rotate and webkit transform rotate
+
+                    firstChild.style.transform =
+                        `rotate(${(newIndex * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
+                    firstChild.style.webkitTransform =
+                        `rotate(${(newIndex * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
+
+                    // Append first child to end of container
+
+                    innerContainer.appendChild(firstChild);
+
+                });
+
+                setTimeout(() => {
+
+                    this.active = true;
+
+                }, 300);
+
+            }
+        }));
+    });
+    document.addEventListener('alpine:init', () => {
+        Alpine.data('archedImageCarouseTablet', () => ({
+            active: false,
+            confetti(id) {
+
+                emojisplosion({
+                    emojis: ["\ud83d\udcaf", "\u2728", "\ud83c\udf89", "\ud83c\udf8a",
+                        "\ud83c\udf7e", "\ud83c\udf88", "\ud83d\udca5"
+                    ],
+                    emojiCount: 50,
+                    physics: {
+                        fontSize: 40,
+                        rotationDeceleration: 1.001,
+                        initialVelocities: {
+                            y: {
+                                max: -70,
+                                min: -12,
+                            },
+                            x: {
+                                max: 30,
+                                min: -30,
+                            }
+                        },
+                    },
+                    position: () => ({
+                        // bottom center of the screen
+                        x: window.innerWidth / 2,
+                        y: window.innerHeight + 100,
+                    }),
+                    process(element) {
+                        element.style.zIndex = 1000;
+
+                    },
+                });
+
+            },
+            rotateArchedImages(id) {
+
+                const container = document.querySelector(`.js-arched-image-container-${id}`);
+                const innerContainer = document.querySelector(
+                    `.js-arched-image-inner-container-${id}`);
+                const images = document.querySelectorAll(`.js-arched-image-${id}`);
+
+                var config = {
+                    duration: 200,
+                    repeatDelay: 9.5,
+                    rotationMultiply: 15,
+                    rotationOffset: 55
+                }
+
+                images.forEach((image, index) => {
+                    image.style.transform =
+                        `rotate(${(index * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
+                    image.style.webkitTransform =
+                        `rotate(${(index * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
+                });
+
+                // Infinite rotation
+
+                gsap.to(container, {
+                    duration: config.duration,
+                    rotation: -360,
+                    ease: 'none',
+                    repeat: -1
+                });
+
+                // Rotate inner container
+
+                ScrollTrigger.matchMedia({
+                    '(min-width: 1280px)': () => {
+
+                        gsap.to(innerContainer, {
+                            scrollTrigger: {
+                                trigger: container,
+                                scrub: true,
+                                start: 'top center',
+                                end: 'bottom bottom'
+                            },
+                            rotation: -40,
+                            ease: 'none',
+                        });
+
+                    }
+                });
+
+                // Move first child to end of container
+
+                const interval = new TimelineMax({
+                    repeat: -1,
+                    repeatDelay: config.repeatDelay,
+                }).call(function() {
+
+                    // Get first and last child
+
+                    const firstChild = innerContainer.firstElementChild;
+                    const lastChild = innerContainer.lastElementChild;
+
+                    // Get index of last child
+
+                    const index = parseInt(lastChild.getAttribute('data-index'));
+
+                    // Set index of first child to index of last child + 1
+
+                    firstChild.setAttribute('data-index', index + 1);
+
+                    // Get new index of first child
+
+                    const newIndex = parseInt(firstChild.getAttribute('data-index'));
+
+                    // ${(newIndex * config.rotationMultiply) - config.rotationOffset}deg
+                    // Set rotation of first child with transform rotate and webkit transform rotate
+
+                    firstChild.style.transform =
+                        `rotate(${(newIndex * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
+                    firstChild.style.webkitTransform =
+                        `rotate(${(newIndex * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
+
+                    // Append first child to end of container
+
+                    innerContainer.appendChild(firstChild);
+
+                });
+
+                setTimeout(() => {
+
+                    this.active = true;
+
+                }, 300);
+
+            }
+        }));
+    });
+    document.addEventListener('alpine:init', () => {
+        Alpine.data('archedImageCarouselDesktop', () => ({
+            active: false,
+            confetti(id) {
+
+                emojisplosion({
+                    emojis: ["\ud83d\udcaf", "\u2728", "\ud83c\udf89", "\ud83c\udf8a",
+                        "\ud83c\udf7e", "\ud83c\udf88", "\ud83d\udca5"
+                    ],
+                    emojiCount: 50,
+                    physics: {
+                        fontSize: 40,
+                        rotationDeceleration: 1.001,
+                        initialVelocities: {
+                            y: {
+                                max: -70,
+                                min: -12,
+                            },
+                            x: {
+                                max: 30,
+                                min: -30,
+                            }
+                        },
+                    },
+                    position: () => ({
+                        // bottom center of the screen
+                        x: window.innerWidth / 2,
+                        y: window.innerHeight + 100,
+                    }),
+                    process(element) {
+                        element.style.zIndex = 1000;
+
+                    },
+                });
+
+            },
+            rotateArchedImages(id) {
+
+                const container = document.querySelector(`.js-arched-image-container-${id}`);
+                const innerContainer = document.querySelector(
+                    `.js-arched-image-inner-container-${id}`);
+                const images = document.querySelectorAll(`.js-arched-image-${id}`);
+
+                var config = {
+                    duration: 300,
+                    repeatDelay: 10,
+                    rotationMultiply: 12,
+                    rotationOffset: 55
+                }
+
+                images.forEach((image, index) => {
+                    image.style.transform =
+                        `rotate(${(index * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
+                    image.style.webkitTransform =
+                        `rotate(${(index * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
+                });
+
+                // Infinite rotation
+
+                gsap.to(container, {
+                    duration: config.duration,
+                    rotation: -360,
+                    ease: 'none',
+                    repeat: -1
+                });
+
+                // Rotate inner container
+
+                ScrollTrigger.matchMedia({
+                    '(min-width: 1280px)': () => {
+
+                        gsap.to(innerContainer, {
+                            scrollTrigger: {
+                                trigger: container,
+                                scrub: true,
+                                start: 'top center',
+                                end: 'bottom bottom'
+                            },
+                            rotation: -40,
+                            ease: 'none',
+                        });
+
+                    }
+                });
+
+                // Move first child to end of container
+
+                const interval = new TimelineMax({
+                    repeat: -1,
+                    repeatDelay: config.repeatDelay,
+                }).call(function() {
+
+                    // Get first and last child
+
+                    const firstChild = innerContainer.firstElementChild;
+                    const lastChild = innerContainer.lastElementChild;
+
+                    // Get index of last child
+
+                    const index = parseInt(lastChild.getAttribute('data-index'));
+
+                    // Set index of first child to index of last child + 1
+
+                    firstChild.setAttribute('data-index', index + 1);
+
+                    // Get new index of first child
+
+                    const newIndex = parseInt(firstChild.getAttribute('data-index'));
+
+                    // ${(newIndex * config.rotationMultiply) - config.rotationOffset}deg
+                    // Set rotation of first child with transform rotate and webkit transform rotate
+
+                    firstChild.style.transform =
+                        `rotate(${(newIndex * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
+                    firstChild.style.webkitTransform =
+                        `rotate(${(newIndex * config.rotationMultiply) - config.rotationOffset}deg) translateX(-50%)`;
+
+                    // Append first child to end of container
+
+                    innerContainer.appendChild(firstChild);
+
+                });
+
+                setTimeout(() => {
+
+                    this.active = true;
+
+                }, 300);
+
+            }
+        }));
+    });
+    document.addEventListener('alpine:init', () => {
+        Alpine.data('videoFile', () => ({
+            playing: true,
+            muted: true,
+            hovering: false,
+            paused: false,
+            initVideoFile(id) {
+
+                // Get elements
+
+                const video = document.querySelector(`.js-video-${id}`);
+                const videoProgress = document.querySelector(`.js-video-progress-${id}`);
+                const videoTimer = document.querySelector(`.js-video-timer-${id}`);
 
 
-                        } else {
-
-                            document.body.classList.remove('overflow-hidden');
-                        }
-
-                    });
-
-                },
-                closeModal(id) {
-
-                    this.visible = false;
-
-                    const video = document.querySelector('.js-modal-video-' + id);
-                    const videoProgress = document.querySelector('.js-modal-video-progress-' + id);
-
-                    if (video) {
-
-                        if (video.tagName == 'IFRAME') {
-
-                            const player = new Vimeo.Player(video);
-
-                            player.pause();
+                // Set initial state
 
 
-                        } else {
 
-                            video.pause();
-                            videoProgress.style.width = '0%';
+                // Set video progress + timer
 
-                        }
+                setInterval(() => {
+
+                    if (videoProgress) {
+
+                        videoProgress.style.width = (video.currentTime / video.duration) *
+                            100 + '%';
+
                     }
 
-                }
-            }))
-        });
-        document.addEventListener('alpine:init', () => {
-            Alpine.data('featureQuote', () => ({
-                crossBrowserClasses(id) {
+                    if (videoTimer) {
 
-                    const isWindows = navigator.platform.indexOf('Win') > -1;
-                    const isAndroid = navigator.userAgent.toLowerCase().indexOf("android") > -1;
+                        const minutes = Math.floor(video.currentTime / 60);
+                        const seconds = Math.floor(video.currentTime - minutes * 60);
+                        const minuteValue = minutes >= 10 ? minutes : '0' + minutes;
+                        const secondValue = seconds >= 10 ? seconds : '0' + seconds;
 
-                    const elements = document.querySelectorAll(`.js-cross-browser-${id}`);
+                        videoTimer.innerHTML = minuteValue + ':' + secondValue;
 
-                    elements.forEach(element => {
+                    }
 
-                        if (isWindows) {
+                }, 10);
 
-                            const windowsRemove = element.getAttribute('data-windows-remove')
-                                .split('|');
-                            const windowsAdd = element.getAttribute('data-windows-add').split(
-                                '|');
+                // Check to see if video is playing or muted
 
-                            element.classList.remove(...windowsRemove);
-                            element.classList.add(...windowsAdd);
+                setInterval(() => {
 
-                        }
-
-                        if (isAndroid) {
-
-                            const androidRemove = element.getAttribute('data-android-remove')
-                                .split('|');
-                            const androidAdd = element.getAttribute('data-android-add').split(
-                                '|');
-
-                            element.classList.remove(...androidRemove);
-                            element.classList.add(...androidAdd);
-
-                        }
-
-                    });
-
-                }
-            }))
-        });
-        document.addEventListener('alpine:init', () => {
-            Alpine.data('videoFile', () => ({
-                playing: true,
-                muted: true,
-                hovering: false,
-                paused: false,
-                initVideoFile(id) {
-
-                    // Get elements
-
-                    const video = document.querySelector(`.js-video-${id}`);
-                    const videoProgress = document.querySelector(`.js-video-progress-${id}`);
-                    const videoTimer = document.querySelector(`.js-video-timer-${id}`);
-
-
-                    // Set initial state
-
-                    this.playing = false;
-                    this.muted = false;
-
-
-                    // Set video progress + timer
-
-                    setInterval(() => {
-
-                        if (videoProgress) {
-
-                            videoProgress.style.width = (video.currentTime / video.duration) *
-                                100 + '%';
-
-                        }
-
-                        if (videoTimer) {
-
-                            const minutes = Math.floor(video.currentTime / 60);
-                            const seconds = Math.floor(video.currentTime - minutes * 60);
-                            const minuteValue = minutes >= 10 ? minutes : '0' + minutes;
-                            const secondValue = seconds >= 10 ? seconds : '0' + seconds;
-
-                            videoTimer.innerHTML = minuteValue + ':' + secondValue;
-
-                        }
-
-                    }, 10);
-
-                    // Check to see if video is playing or muted
-
-                    setInterval(() => {
-
-                        if (video.paused) {
-
-                            if (video.muted) {
-                                this.playing = false;
-                                this.paused = false;
-                            } else {
-                                this.playing = false;
-                                this.paused = true;
-                            }
-
-                        } else {
-                            if (!this.hovering) {
-                                this.playing = true;
-                            }
-                        }
+                    if (video.paused) {
 
                         if (video.muted) {
-                            this.muted = true;
+                            this.playing = false;
+                            this.paused = false;
                         } else {
-                            this.muted = false;
+                            this.playing = false;
+                            this.paused = true;
                         }
 
-                    }, 100);
+                    } else {
+                        if (!this.hovering) {
+                            this.playing = true;
+                        }
+                    }
+
+                    if (video.muted) {
+                        this.muted = true;
+                    } else {
+                        this.muted = false;
+                    }
+
+                }, 100);
 
 
-                    window.addEventListener('scroll', (e) => {
+                window.addEventListener('scroll', (e) => {
 
-                        if (video) {
+                    if (video) {
 
-                            const videoTop = video.getBoundingClientRect().top;
-                            const videoBottom = video.getBoundingClientRect().bottom;
+                        const videoTop = video.getBoundingClientRect().top;
+                        const videoBottom = video.getBoundingClientRect().bottom;
 
-                            if (video.classList.contains('js-video-with-sound')) {
+                        if (video.classList.contains('js-video-with-sound')) {
 
-                                if (videoTop > window.innerHeight || videoBottom < 0) {
-                                    video.pause();
-                                    video.muted = true;
-                                }
-
+                            if (videoTop > window.innerHeight || videoBottom < 0) {
+                                video.pause();
+                                video.muted = true;
                             }
 
                         }
 
-                    });
+                    }
+
+                });
 
 
 
-                    video.addEventListener('ended', () => {
+                video.addEventListener('ended', () => {
 
-                        if (!video.hasAttribute('loop')) {
+                    if (!video.hasAttribute('loop')) {
 
-                            video.currentTime = 0;
-                            video.muted = true;
-                            videoProgress.style.width = 0;
-                            video.pause();
-
-                        }
-
-
-                    });
-
-
-
-                },
-                toggleSound(id) {
-
-                    const video = document.querySelector('.js-video-' + id);
-                    const videos = document.querySelectorAll('.js-video');
-
-                    if (this.muted) {
-
-                        videos.forEach(video => {
-                            video.pause();
-                            video.muted = true;
-                        });
-
-                        video.play();
-
-                        video.muted = false;
-                        this.muted = false;
-
-                        this.$dispatch('component-cursor', {
-                            icon: 'volume-on'
-                        });
-
-                    } else {
-
+                        video.currentTime = 0;
                         video.muted = true;
-                        this.muted = true;
-
-                        this.$dispatch('component-cursor', {
-                            icon: 'volume-off'
-                        });
-
-                    }
-
-
-                },
-                togglePreview(id, status) {
-
-                    this.hovering = status;
-
-                    const video = document.querySelector('.js-video-' + id);
-
-                    if (this.hovering && this.muted) {
-
-                        video.currentTime = 0;
-                        video.play();
-
-                    }
-
-                    if (!this.hovering && this.muted) {
-
+                        videoProgress.style.width = 0;
                         video.pause();
-                        video.currentTime = 0;
 
                     }
 
 
-                },
-                togglePause(id) {
+                });
 
-                    const video = document.querySelector('.js-video-' + id);
-                    const videos = document.querySelectorAll('.js-video');
 
-                    if (this.paused) {
 
-                        videos.forEach(video => {
-                            video.pause();
-                        });
+            },
+            toggleSound(id) {
 
-                        video.play();
-                        this.paused = false;
-                        this.playing = true;
+                const video = document.querySelector('.js-video-' + id);
+                const videos = document.querySelectorAll('.js-video');
 
-                    } else {
+                if (this.muted) {
 
-                        video.pause();
-                        this.paused = true;
-                        this.playing = false;
-
-                    }
-
-                },
-                toggleVideo(id) {
-
-                    const video = document.querySelector('.js-video-' + id);
-                    const videos = document.querySelectorAll('.js-video');
-                    const videosWithVolumeControls = document.querySelectorAll(
-                        '.js-video-with-volume-controls');
-                    const videosPlaying = document.querySelectorAll('.js-video-playing');
-
-                    videosPlaying.forEach(video => {
-                        if (!video.muted && !video.classList.contains('js-video-with-sound')) {
-                            video.muted = true;
-                        } else {
-                            video.pause();
-                            video.muted = true;
-                            video.currentTime = 0;
-                        }
-                    });
-
-                    if (this.playing) {
-
+                    videos.forEach(video => {
                         video.pause();
                         video.muted = true;
-                        this.playing = false;
-                        this.hovering = false;
+                    });
 
-                    } else {
+                    video.play();
 
-                        videosWithVolumeControls.forEach(video => {
-                            video.pause();
-                        });
+                    video.muted = false;
+                    this.muted = false;
 
-                        video.currentTime = 0;
-                        video.muted = false;
-                        video.play();
-                        this.playing = true;
-                        this.hovering = false;
+                    this.$dispatch('component-cursor', {
+                        icon: 'volume-on'
+                    });
 
-                    }
+                } else {
+
+                    video.muted = true;
+                    this.muted = true;
+
+                    this.$dispatch('component-cursor', {
+                        icon: 'volume-off'
+                    });
 
                 }
-            }))
-        });
-        document.addEventListener('alpine:init', () => {
-            Alpine.data('videoQuoteColumns', () => ({
-                isStart: true,
-                isEnd: false,
-                carousel(id) {
 
-                    const carousel = new Swiper(`.js-carousel-${id}`, {
-                        slidesPerView: 1.5,
-                        cssMode: true,
-                        navigation: {
-                            nextEl: '.js-carousel-next-' + id,
-                            prevEl: '.js-carousel-prev-' + id,
+
+            },
+            togglePreview(id, status) {
+
+                this.hovering = status;
+
+                const video = document.querySelector('.js-video-' + id);
+
+                if (this.hovering && this.muted) {
+
+                    video.currentTime = 0;
+                    video.play();
+
+                }
+
+                if (!this.hovering && this.muted) {
+
+                    video.pause();
+                    video.currentTime = 0;
+
+                }
+
+
+            },
+            togglePause(id) {
+
+                const video = document.querySelector('.js-video-' + id);
+                const videos = document.querySelectorAll('.js-video');
+
+                if (this.paused) {
+
+                    videos.forEach(video => {
+                        video.pause();
+                    });
+
+                    video.play();
+                    this.paused = false;
+                    this.playing = true;
+
+                } else {
+
+                    video.pause();
+                    this.paused = true;
+                    this.playing = false;
+
+                }
+
+            },
+            toggleVideo(id) {
+
+                const video = document.querySelector('.js-video-' + id);
+                const videos = document.querySelectorAll('.js-video');
+                const videosWithVolumeControls = document.querySelectorAll(
+                    '.js-video-with-volume-controls');
+                const videosPlaying = document.querySelectorAll('.js-video-playing');
+
+                videosPlaying.forEach(video => {
+                    if (!video.muted && !video.classList.contains('js-video-with-sound')) {
+                        video.muted = true;
+                    } else {
+                        video.pause();
+                        video.muted = true;
+                        video.currentTime = 0;
+                    }
+                });
+
+                if (this.playing) {
+
+                    video.pause();
+                    video.muted = true;
+                    this.playing = false;
+                    this.hovering = false;
+
+                } else {
+
+                    videosWithVolumeControls.forEach(video => {
+                        video.pause();
+                    });
+
+                    video.currentTime = 0;
+                    video.muted = false;
+                    video.play();
+                    this.playing = true;
+                    this.hovering = false;
+
+                }
+
+            }
+        }))
+    });
+    document.addEventListener('alpine:init', () => {
+        Alpine.data('profile', () => ({
+            hovering: false,
+            profileHover(id) {
+
+                const profile = this.$refs.profile;
+                const images = this.$refs.profileImages.querySelectorAll('img');
+
+                let index = 0;
+                let interval;
+
+                function flickThroughImages() {
+
+                    interval = setInterval(() => {
+
+                        images.forEach((image, i) => {
+
+                            if (i == index) {
+                                image.classList.remove('hidden');
+                            } else {
+                                image.classList.add('hidden');
+                            }
+
+                        })
+
+                        index++;
+
+                        if (index >= images.length) {
+                            index = 0;
+                        }
+
+                    }, 200);
+
+                }
+
+                clearInterval(interval);
+                setTimeout(flickThroughImages(), 200);
+
+                profile.addEventListener('mouseenter', () => {
+
+                    this.hovering = true;
+                    clearInterval(interval);
+                    setTimeout(flickThroughImages(), 200);
+
+                    // setTimeout(() => {
+                    //    this.hovering = false;
+                    //    clearInterval(interval);
+                    // }, 1000);
+
+                });
+
+                profile.addEventListener('mouseleave', () => {
+
+                    this.hovering = false;
+                    clearInterval(interval);
+
+                });
+
+            }
+        }))
+    });
+    document.addEventListener('alpine:init', () => {
+        Alpine.data('entriesProfiles', () => ({
+            carousel(id) {
+
+                const profileCards = document.querySelectorAll('.js-profile-card-' + id);
+
+                const carousel = new Swiper('.js-carousel-' + id, {
+                    slidesPerView: 1.6,
+                    loop: true,
+                    speed: 10000,
+                    autoplay: {
+                        delay: 0,
+                    },
+                    breakpoints: {
+                        640: {
+                            speed: 10000,
+                            slidesPerView: 2,
                         },
+                        768: {
+                            speed: 20000,
+                            slidesPerView: 2.5,
+                        },
+                        1024: {
+                            speed: 20000,
+                            slidesPerView: 3.5,
+                        },
+                        1280: {
+                            speed: 20000,
+                            slidesPerView: 4,
+                        },
+                        2100: {
+                            speed: 20000,
+                            slidesPerView: 5,
+                        },
+                    },
+
+                });
+
+            }
+        }));
+    });
+    document.addEventListener('alpine:init', () => {
+        Alpine.data('statistic', () => ({
+            countUp(id) {
+
+                const statistics = document.querySelectorAll(`.js-statistic-${id}`);
+
+                statistics.forEach(statistic => {
+
+                    const character = statistic.dataset.character;
+                    const delay = statistic.dataset.delay;
+
+                    let goToCharacterPosition = statistic.querySelector(
+                            `.js-statistic-${id}-character[data-character="${character}"]`)
+                        .offsetTop;
+                    let goToCharacterWidth = statistic.querySelector(
+                            `.js-statistic-${id}-character[data-character="${character}"]`)
+                        .offsetWidth;
+
+                    this.animate(id, statistic, goToCharacterWidth, goToCharacterPosition);
+
+                    // window.addEventListener('resize', () => {
+
+                    //     goToCharacterWidth = statistic.querySelector(`.js-statistic-${id}-character[data-character="${character}"]`).offsetWidth;
+                    //     goToCharacterPosition = statistic.querySelector(`.js-statistic-${id}-character[data-character="${character}"]`).offsetTop;
+
+                    //     this.animate(id, statistic, goToCharacterWidth, goToCharacterPosition);
+
+                    // });
+
+
+                });
+
+            },
+            animate(id, statistic, goToCharacterWidth, goToCharacterPosition) {
+
+                gsap.to(statistic.querySelectorAll(`.js-statistic-${id}-characters > div`), {
+                    duration: 1.5,
+                    y: -goToCharacterPosition,
+                    ease: 'power4.inOut',
+                    scrollTrigger: {
+                        trigger: statistic,
+                        start: 'top 90%',
+                    }
+                });
+
+                gsap.to(statistic, {
+                    duration: 0.5,
+                    width: goToCharacterWidth,
+                    ease: 'power1.out',
+                    scrollTrigger: {
+                        trigger: statistic,
+                        start: 'top 90%',
+                    }
+                });
+
+            }
+        }))
+    });
+    document.addEventListener('alpine:init', () => {
+        Alpine.data('statistics', () => ({
+            isStart: true,
+            isEnd: false,
+            carousel(id) {
+
+                const carousel = new Swiper(`.js-carousel-${id}`, {
+                    slidesPerView: 1,
+                    navigation: {
+                        nextEl: '.js-carousel-next-' + id,
+                        prevEl: '.js-carousel-prev-' + id,
+                    },
+                    breakpoints: {
+                        768: {
+                            slidesPerView: 2,
+                        },
+                        1024: {
+                            slidesPerView: 3,
+                        },
+                        1280: {
+                            slidesPerView: 4,
+                        },
+                    },
+                });
+
+                carousel.on('slideChange', () => {
+                    this.isStart = carousel.isBeginning;
+                    this.isEnd = carousel.isEnd;
+                });
+
+            }
+        }))
+    });
+    document.addEventListener('alpine:init', () => {
+        Alpine.data('logosDoubleCarousel', () => ({
+            carousel(id) {
+
+                const carousels = document.querySelectorAll(`.js-carousel-${id}`);
+
+                carousels.forEach((carousel, index) => {
+
+                    const swiper = new Swiper(carousel, {
+                        slidesPerView: 2,
+                        spaceBetween: 0,
+                        loop: true,
+                        allowTouchMove: false,
+                        autoplay: {
+                            delay: 0,
+                            disableOnInteraction: false,
+                            reverseDirection: index % 2 === 0 ? false : true,
+                        },
+                        speed: 10000,
+                        grabCursor: false,
+                        mousewheelControl: false,
+                        keyboardControl: false,
                         breakpoints: {
-                            768: {
-                                slidesPerView: 2.5,
-                            },
-                            960: {
+                            640: {
                                 slidesPerView: 3,
+                            },
+                            768: {
+                                slidesPerView: 3.5,
                             },
                             1024: {
-                                slidesPerView: 3,
+                                slidesPerView: 4,
                             },
                             1280: {
                                 slidesPerView: 4,
                             },
-                        },
-                    });
-
-                    carousel.on('slideChange', () => {
-                        this.isStart = carousel.isBeginning;
-                        this.isEnd = carousel.isEnd;
-                    });
-
-                }
-            }))
-        });
-        document.addEventListener('alpine:init', () => {
-            Alpine.data('reviews', () => ({
-                isStart: true,
-                isEnd: false,
-                carousel(id) {
-
-                    const carousel = new Swiper('.js-carousel-' + id, {
-                        slidesPerView: 1.2,
-                        spaceBetween: 0,
-                        navigation: {
-                            nextEl: '.js-carousel-next-' + id,
-                            prevEl: '.js-carousel-prev-' + id,
-                        },
-                        breakpoints: {
-                            640: {
-                                slidesPerView: 1.4,
-                            },
-                            768: {
-                                slidesPerView: 1.7,
-                            },
-                            1024: {
-                                slidesPerView: 1.7,
-                                slidesOffsetBefore: 30,
-                            },
-                            1280: {
-                                slidesPerView: 2.3,
-                                slidesOffsetBefore: 30,
-                            },
-                            2100: {
-                                slidesPerView: 3.2,
-                                slidesOffsetBefore: 30,
-                            }
-                        },
-                    });
-
-                    carousel.on('slideChange', () => {
-                        this.isStart = carousel.isBeginning;
-                        this.isEnd = carousel.isEnd;
-                    });
-
-                }
-            }));
-        });
-        document.addEventListener('alpine:init', () => {
-            Alpine.data('headingImageCarousel', () => ({
-                carousel(id) {
-
-                    const images = document.querySelectorAll('.js-image-' + id);
-
-                    const carousel = new Swiper('.js-carousel-' + id, {
-                        slidesPerView: 3,
-                        loop: true,
-                        speed: 10000,
-                        autoplay: {
-                            delay: 0,
-                        },
-                        breakpoints: {
-                            640: {
+                            1400: {
                                 slidesPerView: 5,
                             },
-                            1024: {
+                            2100: {
                                 slidesPerView: 6,
                             },
-                            1280: {
-                                slidesPerView: 8,
-                            },
-                            2100: {
-                                slidesPerView: 9,
-                            }
-                        },
-
+                        }
                     });
+
+                    setTimeout(() => {
+
+                        swiper.update();
+                        swiper.autoplay.start();
+
+                    }, 1000);
 
                     window.addEventListener('resize', () => {
 
@@ -7335,838 +4646,1503 @@ pr-8 mb-5 | lg:pr-16
 
                         window.resizedFinished = setTimeout(function() {
 
-                            carousel.update();
-                            carousel.autoplay.start();
+                            swiper.update();
+                            swiper.autoplay.start();
 
                         }, 50);
 
                     });
 
-                }
-            }));
-        });
-        document.addEventListener('alpine:init', () => {
-            Alpine.data('modal414648', () => ({
-                visible: false,
-                setupModal(id) {
+                    const logos = carousel.querySelectorAll(`.js-logo-${id}`);
 
-                    // Prevent keys from interferring with the video
+                    // ScrollTrigger.matchMedia({
+                    //     '(min-width: 1280px)': () => {
 
-                    navigator.mediaSession.setActionHandler('play', function() {});
-                    navigator.mediaSession.setActionHandler('pause', function() {});
-                    navigator.mediaSession.setActionHandler('seekbackward', function() {});
-                    navigator.mediaSession.setActionHandler('seekforward', function() {});
-                    navigator.mediaSession.setActionHandler('previoustrack', function() {});
-                    navigator.mediaSession.setActionHandler('nexttrack', function() {});
+                    //         gsap.to(logos, {
+                    //             scrollTrigger: {
+                    //                 trigger: logos,
+                    //                 scrub: true,
+                    //                 start: 'top 110%',
+                    //                 end: 'bottom top'
+                    //             },
+                    //             x: index % 2 === 0 ? 100 : -100,
+                    //             ease: 'none',
+                    //         });
 
-                    // Get video elements
+                    //     }
+                    // });
 
-                    const video = document.querySelector(`.js-modal-video-${id}`);
-                    const videoProgress = document.querySelector(`.js-modal-video-progress-${id}`);
 
-                    const videoPlayPause = document.querySelector(`.js-modal-video-play-pause-${id}`);
-                    const videoSound = document.querySelector(`.js-modal-video-sound-${id}`);
+                });
 
-                    const videoPlayIcon = document.querySelector(`.js-modal-video-play-icon-${id}`);
-                    const videoPauseIcon = document.querySelector(`.js-modal-video-pause-icon-${id}`);
+            }
+        }));
+    });
+    document.addEventListener('alpine:init', () => {
+        Alpine.data('modal428063', () => ({
+            visible: false,
+            setupModal(id) {
 
-                    const videoVolumeOnIcon = document.querySelector(
-                        `.js-modal-video-volume-on-icon-${id}`);
-                    const videoVolumeOffIcon = document.querySelector(
-                        `.js-modal-video-volume-off-icon-${id}`);
+                // Prevent keys from interferring with the video
 
-                    // Video controls
+                navigator.mediaSession.setActionHandler('play', function() {});
+                navigator.mediaSession.setActionHandler('pause', function() {});
+                navigator.mediaSession.setActionHandler('seekbackward', function() {});
+                navigator.mediaSession.setActionHandler('seekforward', function() {});
+                navigator.mediaSession.setActionHandler('previoustrack', function() {});
+                navigator.mediaSession.setActionHandler('nexttrack', function() {});
 
-                    if (video) {
+                // Get video elements
 
-                        if (video.tagName == 'IFRAME') {
+                const video = document.querySelector(`.js-modal-video-${id}`);
+                const videoProgress = document.querySelector(`.js-modal-video-progress-${id}`);
 
-                            const player = new Vimeo.Player(video);
+                const videoPlayPause = document.querySelector(`.js-modal-video-play-pause-${id}`);
+                const videoSound = document.querySelector(`.js-modal-video-sound-${id}`);
 
-                            // Video controls
+                const videoPlayIcon = document.querySelector(`.js-modal-video-play-icon-${id}`);
+                const videoPauseIcon = document.querySelector(`.js-modal-video-pause-icon-${id}`);
 
-                            videoSound.addEventListener('click', (event) => {
+                const videoVolumeOnIcon = document.querySelector(
+                    `.js-modal-video-volume-on-icon-${id}`);
+                const videoVolumeOffIcon = document.querySelector(
+                    `.js-modal-video-volume-off-icon-${id}`);
 
-                                player.getVolume().then(function(volume) {
+                // Video controls
 
-                                    if (videoVolumeOnIcon.classList.contains(
-                                            'hidden')) {
+                if (video) {
 
-                                        player.setVolume(1);
-                                        videoVolumeOnIcon.classList.remove('hidden');
-                                        videoVolumeOffIcon.classList.add('hidden');
+                    if (video.tagName == 'IFRAME') {
 
-                                    } else {
+                        const player = new Vimeo.Player(video);
 
-                                        player.setVolume(0);
-                                        videoVolumeOnIcon.classList.add('hidden');
-                                        videoVolumeOffIcon.classList.remove('hidden');
+                        // Video controls
 
-                                    }
+                        videoSound.addEventListener('click', (event) => {
 
-                                });
+                            player.getVolume().then(function(volume) {
 
-                                event.preventDefault();
+                                if (videoVolumeOnIcon.classList.contains(
+                                        'hidden')) {
 
-                            });
-
-                            videoPlayPause.addEventListener('click', (event) => {
-
-                                player.getPaused().then(function(paused) {
-
-                                    if (paused) {
-
-                                        player.play();
-                                        videoPlayIcon.classList.add('hidden');
-                                        videoPauseIcon.classList.remove('hidden');
-
-                                    } else {
-
-                                        player.pause();
-                                        videoPlayIcon.classList.remove('hidden');
-                                        videoPauseIcon.classList.add('hidden');
-
-                                    }
-
-                                });
-
-                                event.preventDefault();
-
-                            });
-
-                        } else {
-
-                            videoSound.addEventListener('click', (event) => {
-
-                                if (videoVolumeOnIcon.classList.contains('hidden')) {
-
-                                    video.muted = false;
+                                    player.setVolume(1);
                                     videoVolumeOnIcon.classList.remove('hidden');
                                     videoVolumeOffIcon.classList.add('hidden');
 
                                 } else {
 
-                                    video.muted = true;
+                                    player.setVolume(0);
                                     videoVolumeOnIcon.classList.add('hidden');
                                     videoVolumeOffIcon.classList.remove('hidden');
 
                                 }
 
-                                event.preventDefault();
-
                             });
 
-                            videoPlayPause.addEventListener('click', (event) => {
+                            event.preventDefault();
 
-                                if (video.paused) {
+                        });
 
-                                    video.play();
+                        videoPlayPause.addEventListener('click', (event) => {
+
+                            player.getPaused().then(function(paused) {
+
+                                if (paused) {
+
+                                    player.play();
                                     videoPlayIcon.classList.add('hidden');
                                     videoPauseIcon.classList.remove('hidden');
 
                                 } else {
 
-                                    video.pause();
+                                    player.pause();
                                     videoPlayIcon.classList.remove('hidden');
                                     videoPauseIcon.classList.add('hidden');
 
                                 }
 
-                                event.preventDefault();
-
                             });
 
-                        }
+                            event.preventDefault();
 
-                    }
+                        });
 
-                    this.$watch('visible', function(value) {
+                    } else {
 
-                        if (value != false) {
+                        videoSound.addEventListener('click', (event) => {
 
-                            document.body.classList.add('overflow-hidden');
+                            if (videoVolumeOnIcon.classList.contains('hidden')) {
 
-                            // Video (Vimeo)
+                                video.muted = false;
+                                videoVolumeOnIcon.classList.remove('hidden');
+                                videoVolumeOffIcon.classList.add('hidden');
 
-                            if (video) {
+                            } else {
 
-                                if (video.tagName == 'IFRAME') {
-
-                                    const player = new Vimeo.Player(video);
-
-                                    // Initialise video
-
-                                    player.setCurrentTime(0);
-                                    player.play();
-                                    player.setVolume(1);
-
-                                    // Progress bar
-
-                                    setInterval(() => {
-
-                                        if (videoProgress) {
-
-                                            player.getCurrentTime().then(function(
-                                                seconds) {
-
-                                                player.getDuration().then(
-                                                    function(duration) {
-
-                                                        videoProgress.style
-                                                            .width = (
-                                                                seconds /
-                                                                duration) *
-                                                            100 + '%';
-
-                                                    });
-
-                                            });
-
-                                        }
-
-                                    }, 100);
-
-                                } else {
-
-                                    // Initialise video
-
-                                    video.currentTime = 0;
-                                    video.play();
-
-                                    // Progress bar
-
-                                    setInterval(() => {
-
-                                        if (videoProgress) {
-
-                                            videoProgress.style.width = (video
-                                                    .currentTime / video.duration) *
-                                                100 + '%';
-
-                                        }
-
-                                    }, 100);
-
-                                }
+                                video.muted = true;
+                                videoVolumeOnIcon.classList.add('hidden');
+                                videoVolumeOffIcon.classList.remove('hidden');
 
                             }
 
+                            event.preventDefault();
 
-                        } else {
+                        });
 
-                            document.body.classList.remove('overflow-hidden');
-                        }
+                        videoPlayPause.addEventListener('click', (event) => {
 
-                    });
+                            if (video.paused) {
 
-                },
-                closeModal(id) {
+                                video.play();
+                                videoPlayIcon.classList.add('hidden');
+                                videoPauseIcon.classList.remove('hidden');
 
-                    this.visible = false;
+                            } else {
 
-                    const video = document.querySelector('.js-modal-video-' + id);
-                    const videoProgress = document.querySelector('.js-modal-video-progress-' + id);
-
-                    if (video) {
-
-                        if (video.tagName == 'IFRAME') {
-
-                            const player = new Vimeo.Player(video);
-
-                            player.pause();
-
-
-                        } else {
-
-                            video.pause();
-                            videoProgress.style.width = '0%';
-
-                        }
-                    }
-
-                }
-            }))
-        });
-        document.addEventListener('alpine:init', () => {
-            Alpine.data('modal167022', () => ({
-                visible: false,
-                setupModal(id) {
-
-                    // Prevent keys from interferring with the video
-
-                    navigator.mediaSession.setActionHandler('play', function() {});
-                    navigator.mediaSession.setActionHandler('pause', function() {});
-                    navigator.mediaSession.setActionHandler('seekbackward', function() {});
-                    navigator.mediaSession.setActionHandler('seekforward', function() {});
-                    navigator.mediaSession.setActionHandler('previoustrack', function() {});
-                    navigator.mediaSession.setActionHandler('nexttrack', function() {});
-
-                    // Get video elements
-
-                    const video = document.querySelector(`.js-modal-video-${id}`);
-                    const videoProgress = document.querySelector(`.js-modal-video-progress-${id}`);
-
-                    const videoPlayPause = document.querySelector(`.js-modal-video-play-pause-${id}`);
-                    const videoSound = document.querySelector(`.js-modal-video-sound-${id}`);
-
-                    const videoPlayIcon = document.querySelector(`.js-modal-video-play-icon-${id}`);
-                    const videoPauseIcon = document.querySelector(`.js-modal-video-pause-icon-${id}`);
-
-                    const videoVolumeOnIcon = document.querySelector(
-                        `.js-modal-video-volume-on-icon-${id}`);
-                    const videoVolumeOffIcon = document.querySelector(
-                        `.js-modal-video-volume-off-icon-${id}`);
-
-                    // Video controls
-
-                    if (video) {
-
-                        if (video.tagName == 'IFRAME') {
-
-                            const player = new Vimeo.Player(video);
-
-                            // Video controls
-
-                            videoSound.addEventListener('click', (event) => {
-
-                                player.getVolume().then(function(volume) {
-
-                                    if (videoVolumeOnIcon.classList.contains(
-                                            'hidden')) {
-
-                                        player.setVolume(1);
-                                        videoVolumeOnIcon.classList.remove('hidden');
-                                        videoVolumeOffIcon.classList.add('hidden');
-
-                                    } else {
-
-                                        player.setVolume(0);
-                                        videoVolumeOnIcon.classList.add('hidden');
-                                        videoVolumeOffIcon.classList.remove('hidden');
-
-                                    }
-
-                                });
-
-                                event.preventDefault();
-
-                            });
-
-                            videoPlayPause.addEventListener('click', (event) => {
-
-                                player.getPaused().then(function(paused) {
-
-                                    if (paused) {
-
-                                        player.play();
-                                        videoPlayIcon.classList.add('hidden');
-                                        videoPauseIcon.classList.remove('hidden');
-
-                                    } else {
-
-                                        player.pause();
-                                        videoPlayIcon.classList.remove('hidden');
-                                        videoPauseIcon.classList.add('hidden');
-
-                                    }
-
-                                });
-
-                                event.preventDefault();
-
-                            });
-
-                        } else {
-
-                            videoSound.addEventListener('click', (event) => {
-
-                                if (videoVolumeOnIcon.classList.contains('hidden')) {
-
-                                    video.muted = false;
-                                    videoVolumeOnIcon.classList.remove('hidden');
-                                    videoVolumeOffIcon.classList.add('hidden');
-
-                                } else {
-
-                                    video.muted = true;
-                                    videoVolumeOnIcon.classList.add('hidden');
-                                    videoVolumeOffIcon.classList.remove('hidden');
-
-                                }
-
-                                event.preventDefault();
-
-                            });
-
-                            videoPlayPause.addEventListener('click', (event) => {
-
-                                if (video.paused) {
-
-                                    video.play();
-                                    videoPlayIcon.classList.add('hidden');
-                                    videoPauseIcon.classList.remove('hidden');
-
-                                } else {
-
-                                    video.pause();
-                                    videoPlayIcon.classList.remove('hidden');
-                                    videoPauseIcon.classList.add('hidden');
-
-                                }
-
-                                event.preventDefault();
-
-                            });
-
-                        }
-
-                    }
-
-                    this.$watch('visible', function(value) {
-
-                        if (value != false) {
-
-                            document.body.classList.add('overflow-hidden');
-
-                            // Video (Vimeo)
-
-                            if (video) {
-
-                                if (video.tagName == 'IFRAME') {
-
-                                    const player = new Vimeo.Player(video);
-
-                                    // Initialise video
-
-                                    player.setCurrentTime(0);
-                                    player.play();
-                                    player.setVolume(1);
-
-                                    // Progress bar
-
-                                    setInterval(() => {
-
-                                        if (videoProgress) {
-
-                                            player.getCurrentTime().then(function(
-                                                seconds) {
-
-                                                player.getDuration().then(
-                                                    function(duration) {
-
-                                                        videoProgress.style
-                                                            .width = (
-                                                                seconds /
-                                                                duration) *
-                                                            100 + '%';
-
-                                                    });
-
-                                            });
-
-                                        }
-
-                                    }, 100);
-
-                                } else {
-
-                                    // Initialise video
-
-                                    video.currentTime = 0;
-                                    video.play();
-
-                                    // Progress bar
-
-                                    setInterval(() => {
-
-                                        if (videoProgress) {
-
-                                            videoProgress.style.width = (video
-                                                    .currentTime / video.duration) *
-                                                100 + '%';
-
-                                        }
-
-                                    }, 100);
-
-                                }
+                                video.pause();
+                                videoPlayIcon.classList.remove('hidden');
+                                videoPauseIcon.classList.add('hidden');
 
                             }
 
+                            event.preventDefault();
 
-                        } else {
+                        });
 
-                            document.body.classList.remove('overflow-hidden');
-                        }
-
-                    });
-
-                },
-                closeModal(id) {
-
-                    this.visible = false;
-
-                    const video = document.querySelector('.js-modal-video-' + id);
-                    const videoProgress = document.querySelector('.js-modal-video-progress-' + id);
-
-                    if (video) {
-
-                        if (video.tagName == 'IFRAME') {
-
-                            const player = new Vimeo.Player(video);
-
-                            player.pause();
-
-
-                        } else {
-
-                            video.pause();
-                            videoProgress.style.width = '0%';
-
-                        }
                     }
 
                 }
-            }))
-        });
-        document.addEventListener('alpine:init', () => {
-            Alpine.data('modal168396', () => ({
-                visible: false,
-                setupModal(id) {
 
-                    // Prevent keys from interferring with the video
+                this.$watch('visible', function(value) {
 
-                    navigator.mediaSession.setActionHandler('play', function() {});
-                    navigator.mediaSession.setActionHandler('pause', function() {});
-                    navigator.mediaSession.setActionHandler('seekbackward', function() {});
-                    navigator.mediaSession.setActionHandler('seekforward', function() {});
-                    navigator.mediaSession.setActionHandler('previoustrack', function() {});
-                    navigator.mediaSession.setActionHandler('nexttrack', function() {});
+                    if (value != false) {
 
-                    // Get video elements
+                        document.body.classList.add('overflow-hidden');
 
-                    const video = document.querySelector(`.js-modal-video-${id}`);
-                    const videoProgress = document.querySelector(`.js-modal-video-progress-${id}`);
+                        // Video (Vimeo)
 
-                    const videoPlayPause = document.querySelector(`.js-modal-video-play-pause-${id}`);
-                    const videoSound = document.querySelector(`.js-modal-video-sound-${id}`);
+                        if (video) {
 
-                    const videoPlayIcon = document.querySelector(`.js-modal-video-play-icon-${id}`);
-                    const videoPauseIcon = document.querySelector(`.js-modal-video-pause-icon-${id}`);
+                            if (video.tagName == 'IFRAME') {
 
-                    const videoVolumeOnIcon = document.querySelector(
-                        `.js-modal-video-volume-on-icon-${id}`);
-                    const videoVolumeOffIcon = document.querySelector(
-                        `.js-modal-video-volume-off-icon-${id}`);
+                                const player = new Vimeo.Player(video);
 
-                    // Video controls
+                                // Initialise video
 
-                    if (video) {
+                                player.setCurrentTime(0);
+                                player.play();
+                                player.setVolume(1);
 
-                        if (video.tagName == 'IFRAME') {
+                                // Progress bar
 
-                            const player = new Vimeo.Player(video);
+                                setInterval(() => {
 
-                            // Video controls
+                                    if (videoProgress) {
 
-                            videoSound.addEventListener('click', (event) => {
+                                        player.getCurrentTime().then(function(
+                                            seconds) {
 
-                                player.getVolume().then(function(volume) {
+                                            player.getDuration().then(
+                                                function(duration) {
 
-                                    if (videoVolumeOnIcon.classList.contains(
-                                            'hidden')) {
+                                                    videoProgress.style
+                                                        .width = (
+                                                            seconds /
+                                                            duration) *
+                                                        100 + '%';
 
-                                        player.setVolume(1);
-                                        videoVolumeOnIcon.classList.remove('hidden');
-                                        videoVolumeOffIcon.classList.add('hidden');
+                                                });
 
-                                    } else {
-
-                                        player.setVolume(0);
-                                        videoVolumeOnIcon.classList.add('hidden');
-                                        videoVolumeOffIcon.classList.remove('hidden');
+                                        });
 
                                     }
 
-                                });
+                                }, 100);
 
-                                event.preventDefault();
+                            } else {
 
-                            });
+                                // Initialise video
 
-                            videoPlayPause.addEventListener('click', (event) => {
+                                video.currentTime = 0;
+                                video.play();
 
-                                player.getPaused().then(function(paused) {
+                                // Progress bar
 
-                                    if (paused) {
+                                setInterval(() => {
 
-                                        player.play();
-                                        videoPlayIcon.classList.add('hidden');
-                                        videoPauseIcon.classList.remove('hidden');
+                                    if (videoProgress) {
 
-                                    } else {
-
-                                        player.pause();
-                                        videoPlayIcon.classList.remove('hidden');
-                                        videoPauseIcon.classList.add('hidden');
+                                        videoProgress.style.width = (video
+                                                .currentTime / video.duration) *
+                                            100 + '%';
 
                                     }
 
-                                });
-
-                                event.preventDefault();
-
-                            });
-
-                        } else {
-
-                            videoSound.addEventListener('click', (event) => {
-
-                                if (videoVolumeOnIcon.classList.contains('hidden')) {
-
-                                    video.muted = false;
-                                    videoVolumeOnIcon.classList.remove('hidden');
-                                    videoVolumeOffIcon.classList.add('hidden');
-
-                                } else {
-
-                                    video.muted = true;
-                                    videoVolumeOnIcon.classList.add('hidden');
-                                    videoVolumeOffIcon.classList.remove('hidden');
-
-                                }
-
-                                event.preventDefault();
-
-                            });
-
-                            videoPlayPause.addEventListener('click', (event) => {
-
-                                if (video.paused) {
-
-                                    video.play();
-                                    videoPlayIcon.classList.add('hidden');
-                                    videoPauseIcon.classList.remove('hidden');
-
-                                } else {
-
-                                    video.pause();
-                                    videoPlayIcon.classList.remove('hidden');
-                                    videoPauseIcon.classList.add('hidden');
-
-                                }
-
-                                event.preventDefault();
-
-                            });
-
-                        }
-
-                    }
-
-                    this.$watch('visible', function(value) {
-
-                        if (value != false) {
-
-                            document.body.classList.add('overflow-hidden');
-
-                            // Video (Vimeo)
-
-                            if (video) {
-
-                                if (video.tagName == 'IFRAME') {
-
-                                    const player = new Vimeo.Player(video);
-
-                                    // Initialise video
-
-                                    player.setCurrentTime(0);
-                                    player.play();
-                                    player.setVolume(1);
-
-                                    // Progress bar
-
-                                    setInterval(() => {
-
-                                        if (videoProgress) {
-
-                                            player.getCurrentTime().then(function(
-                                                seconds) {
-
-                                                player.getDuration().then(
-                                                    function(duration) {
-
-                                                        videoProgress.style
-                                                            .width = (
-                                                                seconds /
-                                                                duration) *
-                                                            100 + '%';
-
-                                                    });
-
-                                            });
-
-                                        }
-
-                                    }, 100);
-
-                                } else {
-
-                                    // Initialise video
-
-                                    video.currentTime = 0;
-                                    video.play();
-
-                                    // Progress bar
-
-                                    setInterval(() => {
-
-                                        if (videoProgress) {
-
-                                            videoProgress.style.width = (video
-                                                    .currentTime / video.duration) *
-                                                100 + '%';
-
-                                        }
-
-                                    }, 100);
-
-                                }
+                                }, 100);
 
                             }
 
-
-                        } else {
-
-                            document.body.classList.remove('overflow-hidden');
                         }
 
-                    });
 
-                },
-                closeModal(id) {
+                    } else {
 
-                    this.visible = false;
+                        document.body.classList.remove('overflow-hidden');
+                    }
 
-                    const video = document.querySelector('.js-modal-video-' + id);
-                    const videoProgress = document.querySelector('.js-modal-video-progress-' + id);
+                });
 
-                    if (video) {
+            },
+            closeModal(id) {
 
-                        if (video.tagName == 'IFRAME') {
+                this.visible = false;
 
-                            const player = new Vimeo.Player(video);
+                const video = document.querySelector('.js-modal-video-' + id);
+                const videoProgress = document.querySelector('.js-modal-video-progress-' + id);
 
-                            player.pause();
+                if (video) {
+
+                    if (video.tagName == 'IFRAME') {
+
+                        const player = new Vimeo.Player(video);
+
+                        player.pause();
 
 
+                    } else {
+
+                        video.pause();
+                        videoProgress.style.width = '0%';
+
+                    }
+                }
+
+            }
+        }))
+    });
+    document.addEventListener('alpine:init', () => {
+        Alpine.data('featureQuote', () => ({
+            crossBrowserClasses(id) {
+
+                const isWindows = navigator.platform.indexOf('Win') > -1;
+                const isAndroid = navigator.userAgent.toLowerCase().indexOf("android") > -1;
+
+                const elements = document.querySelectorAll(`.js-cross-browser-${id}`);
+
+                elements.forEach(element => {
+
+                    if (isWindows) {
+
+                        const windowsRemove = element.getAttribute('data-windows-remove')
+                            .split('|');
+                        const windowsAdd = element.getAttribute('data-windows-add').split(
+                            '|');
+
+                        element.classList.remove(...windowsRemove);
+                        element.classList.add(...windowsAdd);
+
+                    }
+
+                    if (isAndroid) {
+
+                        const androidRemove = element.getAttribute('data-android-remove')
+                            .split('|');
+                        const androidAdd = element.getAttribute('data-android-add').split(
+                            '|');
+
+                        element.classList.remove(...androidRemove);
+                        element.classList.add(...androidAdd);
+
+                    }
+
+                });
+
+            }
+        }))
+    });
+    document.addEventListener('alpine:init', () => {
+        Alpine.data('videoFile', () => ({
+            playing: true,
+            muted: true,
+            hovering: false,
+            paused: false,
+            initVideoFile(id) {
+
+                // Get elements
+
+                const video = document.querySelector(`.js-video-${id}`);
+                const videoProgress = document.querySelector(`.js-video-progress-${id}`);
+                const videoTimer = document.querySelector(`.js-video-timer-${id}`);
+
+
+                // Set initial state
+
+                this.playing = false;
+                this.muted = false;
+
+
+                // Set video progress + timer
+
+                setInterval(() => {
+
+                    if (videoProgress) {
+
+                        videoProgress.style.width = (video.currentTime / video.duration) *
+                            100 + '%';
+
+                    }
+
+                    if (videoTimer) {
+
+                        const minutes = Math.floor(video.currentTime / 60);
+                        const seconds = Math.floor(video.currentTime - minutes * 60);
+                        const minuteValue = minutes >= 10 ? minutes : '0' + minutes;
+                        const secondValue = seconds >= 10 ? seconds : '0' + seconds;
+
+                        videoTimer.innerHTML = minuteValue + ':' + secondValue;
+
+                    }
+
+                }, 10);
+
+                // Check to see if video is playing or muted
+
+                setInterval(() => {
+
+                    if (video.paused) {
+
+                        if (video.muted) {
+                            this.playing = false;
+                            this.paused = false;
                         } else {
+                            this.playing = false;
+                            this.paused = true;
+                        }
 
-                            video.pause();
-                            videoProgress.style.width = '0%';
-
+                    } else {
+                        if (!this.hovering) {
+                            this.playing = true;
                         }
                     }
 
-                }
-            }))
-        });
-        document.addEventListener('alpine:init', () => {
-            Alpine.data('pageLinksCarousel', () => ({
-                isStart: true,
-                isEnd: false,
-                carousel(id) {
+                    if (video.muted) {
+                        this.muted = true;
+                    } else {
+                        this.muted = false;
+                    }
 
-                    const carousel = new Swiper('.js-carousel-' + id, {
-                        slidesPerView: 1.2,
-                        spaceBetween: 0,
-                        navigation: {
-                            nextEl: '.js-carousel-next-' + id,
-                            prevEl: '.js-carousel-prev-' + id,
+                }, 100);
+
+
+                window.addEventListener('scroll', (e) => {
+
+                    if (video) {
+
+                        const videoTop = video.getBoundingClientRect().top;
+                        const videoBottom = video.getBoundingClientRect().bottom;
+
+                        if (video.classList.contains('js-video-with-sound')) {
+
+                            if (videoTop > window.innerHeight || videoBottom < 0) {
+                                video.pause();
+                                video.muted = true;
+                            }
+
+                        }
+
+                    }
+
+                });
+
+
+
+                video.addEventListener('ended', () => {
+
+                    if (!video.hasAttribute('loop')) {
+
+                        video.currentTime = 0;
+                        video.muted = true;
+                        videoProgress.style.width = 0;
+                        video.pause();
+
+                    }
+
+
+                });
+
+
+
+            },
+            toggleSound(id) {
+
+                const video = document.querySelector('.js-video-' + id);
+                const videos = document.querySelectorAll('.js-video');
+
+                if (this.muted) {
+
+                    videos.forEach(video => {
+                        video.pause();
+                        video.muted = true;
+                    });
+
+                    video.play();
+
+                    video.muted = false;
+                    this.muted = false;
+
+                    this.$dispatch('component-cursor', {
+                        icon: 'volume-on'
+                    });
+
+                } else {
+
+                    video.muted = true;
+                    this.muted = true;
+
+                    this.$dispatch('component-cursor', {
+                        icon: 'volume-off'
+                    });
+
+                }
+
+
+            },
+            togglePreview(id, status) {
+
+                this.hovering = status;
+
+                const video = document.querySelector('.js-video-' + id);
+
+                if (this.hovering && this.muted) {
+
+                    video.currentTime = 0;
+                    video.play();
+
+                }
+
+                if (!this.hovering && this.muted) {
+
+                    video.pause();
+                    video.currentTime = 0;
+
+                }
+
+
+            },
+            togglePause(id) {
+
+                const video = document.querySelector('.js-video-' + id);
+                const videos = document.querySelectorAll('.js-video');
+
+                if (this.paused) {
+
+                    videos.forEach(video => {
+                        video.pause();
+                    });
+
+                    video.play();
+                    this.paused = false;
+                    this.playing = true;
+
+                } else {
+
+                    video.pause();
+                    this.paused = true;
+                    this.playing = false;
+
+                }
+
+            },
+            toggleVideo(id) {
+
+                const video = document.querySelector('.js-video-' + id);
+                const videos = document.querySelectorAll('.js-video');
+                const videosWithVolumeControls = document.querySelectorAll(
+                    '.js-video-with-volume-controls');
+                const videosPlaying = document.querySelectorAll('.js-video-playing');
+
+                videosPlaying.forEach(video => {
+                    if (!video.muted && !video.classList.contains('js-video-with-sound')) {
+                        video.muted = true;
+                    } else {
+                        video.pause();
+                        video.muted = true;
+                        video.currentTime = 0;
+                    }
+                });
+
+                if (this.playing) {
+
+                    video.pause();
+                    video.muted = true;
+                    this.playing = false;
+                    this.hovering = false;
+
+                } else {
+
+                    videosWithVolumeControls.forEach(video => {
+                        video.pause();
+                    });
+
+                    video.currentTime = 0;
+                    video.muted = false;
+                    video.play();
+                    this.playing = true;
+                    this.hovering = false;
+
+                }
+
+            }
+        }))
+    });
+    document.addEventListener('alpine:init', () => {
+        Alpine.data('videoQuoteColumns', () => ({
+            isStart: true,
+            isEnd: false,
+            carousel(id) {
+
+                const carousel = new Swiper(`.js-carousel-${id}`, {
+                    slidesPerView: 1.5,
+                    cssMode: true,
+                    navigation: {
+                        nextEl: '.js-carousel-next-' + id,
+                        prevEl: '.js-carousel-prev-' + id,
+                    },
+                    breakpoints: {
+                        768: {
+                            slidesPerView: 2.5,
                         },
-                        breakpoints: {
-                            640: {
-                                slidesPerView: 1.7,
-                            },
-                            1024: {
-                                slidesPerView: 2.2,
-                            },
-                            1800: {
-                                slidesPerView: 2.5,
-                            }
+                        960: {
+                            slidesPerView: 3,
                         },
-                    });
+                        1024: {
+                            slidesPerView: 3,
+                        },
+                        1280: {
+                            slidesPerView: 4,
+                        },
+                    },
+                });
 
-                    carousel.on('slideChange', () => {
-                        this.isStart = carousel.isBeginning;
-                        this.isEnd = carousel.isEnd;
-                    });
+                carousel.on('slideChange', () => {
+                    this.isStart = carousel.isBeginning;
+                    this.isEnd = carousel.isEnd;
+                });
 
-                }
-            }));
-        });
-        document.addEventListener('alpine:init', () => {
-            Alpine.data('app', () => ({
-                viewportHeight: null,
-                gaEvents() {
+            }
+        }))
+    });
+    document.addEventListener('alpine:init', () => {
+        Alpine.data('reviews', () => ({
+            isStart: true,
+            isEnd: false,
+            carousel(id) {
 
-                    document.querySelectorAll('a[href^="mailto"]')
-                        .forEach(element => {
+                const carousel = new Swiper('.js-carousel-' + id, {
+                    slidesPerView: 1.2,
+                    spaceBetween: 0,
+                    navigation: {
+                        nextEl: '.js-carousel-next-' + id,
+                        prevEl: '.js-carousel-prev-' + id,
+                    },
+                    breakpoints: {
+                        640: {
+                            slidesPerView: 1.4,
+                        },
+                        768: {
+                            slidesPerView: 1.7,
+                        },
+                        1024: {
+                            slidesPerView: 1.7,
+                            slidesOffsetBefore: 30,
+                        },
+                        1280: {
+                            slidesPerView: 2.3,
+                            slidesOffsetBefore: 30,
+                        },
+                        2100: {
+                            slidesPerView: 3.2,
+                            slidesOffsetBefore: 30,
+                        }
+                    },
+                });
 
-                            element.addEventListener('click', (event) => {
-                                window.dataLayer = window.dataLayer || [];
-                                window.dataLayer.push({
-                                    'event': 'email_lead'
-                                });
-                            })
+                carousel.on('slideChange', () => {
+                    this.isStart = carousel.isBeginning;
+                    this.isEnd = carousel.isEnd;
+                });
+
+            }
+        }));
+    });
+    document.addEventListener('alpine:init', () => {
+        Alpine.data('headingImageCarousel', () => ({
+            carousel(id) {
+
+                const images = document.querySelectorAll('.js-image-' + id);
+
+                const carousel = new Swiper('.js-carousel-' + id, {
+                    slidesPerView: 3,
+                    loop: true,
+                    speed: 10000,
+                    autoplay: {
+                        delay: 0,
+                    },
+                    breakpoints: {
+                        640: {
+                            slidesPerView: 5,
+                        },
+                        1024: {
+                            slidesPerView: 6,
+                        },
+                        1280: {
+                            slidesPerView: 8,
+                        },
+                        2100: {
+                            slidesPerView: 9,
+                        }
+                    },
+
+                });
+
+                window.addEventListener('resize', () => {
+
+                    clearTimeout(window.resizedFinished);
+
+                    window.resizedFinished = setTimeout(function() {
+
+                        carousel.update();
+                        carousel.autoplay.start();
+
+                    }, 50);
+
+                });
+
+            }
+        }));
+    });
+    document.addEventListener('alpine:init', () => {
+        Alpine.data('modal414648', () => ({
+            visible: false,
+            setupModal(id) {
+
+                // Prevent keys from interferring with the video
+
+                navigator.mediaSession.setActionHandler('play', function() {});
+                navigator.mediaSession.setActionHandler('pause', function() {});
+                navigator.mediaSession.setActionHandler('seekbackward', function() {});
+                navigator.mediaSession.setActionHandler('seekforward', function() {});
+                navigator.mediaSession.setActionHandler('previoustrack', function() {});
+                navigator.mediaSession.setActionHandler('nexttrack', function() {});
+
+                // Get video elements
+
+                const video = document.querySelector(`.js-modal-video-${id}`);
+                const videoProgress = document.querySelector(`.js-modal-video-progress-${id}`);
+
+                const videoPlayPause = document.querySelector(`.js-modal-video-play-pause-${id}`);
+                const videoSound = document.querySelector(`.js-modal-video-sound-${id}`);
+
+                const videoPlayIcon = document.querySelector(`.js-modal-video-play-icon-${id}`);
+                const videoPauseIcon = document.querySelector(`.js-modal-video-pause-icon-${id}`);
+
+                const videoVolumeOnIcon = document.querySelector(
+                    `.js-modal-video-volume-on-icon-${id}`);
+                const videoVolumeOffIcon = document.querySelector(
+                    `.js-modal-video-volume-off-icon-${id}`);
+
+                // Video controls
+
+                if (video) {
+
+                    if (video.tagName == 'IFRAME') {
+
+                        const player = new Vimeo.Player(video);
+
+                        // Video controls
+
+                        videoSound.addEventListener('click', (event) => {
+
+                            player.getVolume().then(function(volume) {
+
+                                if (videoVolumeOnIcon.classList.contains(
+                                        'hidden')) {
+
+                                    player.setVolume(1);
+                                    videoVolumeOnIcon.classList.remove('hidden');
+                                    videoVolumeOffIcon.classList.add('hidden');
+
+                                } else {
+
+                                    player.setVolume(0);
+                                    videoVolumeOnIcon.classList.add('hidden');
+                                    videoVolumeOffIcon.classList.remove('hidden');
+
+                                }
+
+                            });
+
+                            event.preventDefault();
 
                         });
 
-                    document.querySelectorAll('a[href^="tel:"]')
-                        .forEach(element => {
+                        videoPlayPause.addEventListener('click', (event) => {
 
-                            element.addEventListener('click', (event) => {
-                                window.dataLayer = window.dataLayer || [];
-                                window.dataLayer.push({
-                                    'event': 'phone_lead'
-                                });
-                            })
+                            player.getPaused().then(function(paused) {
+
+                                if (paused) {
+
+                                    player.play();
+                                    videoPlayIcon.classList.add('hidden');
+                                    videoPauseIcon.classList.remove('hidden');
+
+                                } else {
+
+                                    player.pause();
+                                    videoPlayIcon.classList.remove('hidden');
+                                    videoPauseIcon.classList.add('hidden');
+
+                                }
+
+                            });
+
+                            event.preventDefault();
 
                         });
 
-                    document.querySelectorAll('.js-social-link')
-                        .forEach(element => {
+                    } else {
 
-                            element.addEventListener('click', (event) => {
-                                window.dataLayer = window.dataLayer || [];
-                                window.dataLayer.push({
-                                    'event': 'social_links'
-                                });
-                            })
+                        videoSound.addEventListener('click', (event) => {
+
+                            if (videoVolumeOnIcon.classList.contains('hidden')) {
+
+                                video.muted = false;
+                                videoVolumeOnIcon.classList.remove('hidden');
+                                videoVolumeOffIcon.classList.add('hidden');
+
+                            } else {
+
+                                video.muted = true;
+                                videoVolumeOnIcon.classList.add('hidden');
+                                videoVolumeOffIcon.classList.remove('hidden');
+
+                            }
+
+                            event.preventDefault();
 
                         });
 
+                        videoPlayPause.addEventListener('click', (event) => {
 
+                            if (video.paused) {
 
+                                video.play();
+                                videoPlayIcon.classList.add('hidden');
+                                videoPauseIcon.classList.remove('hidden');
 
+                            } else {
 
+                                video.pause();
+                                videoPlayIcon.classList.remove('hidden');
+                                videoPauseIcon.classList.add('hidden');
 
-                },
-                baseInit() {
+                            }
 
-                    viewportHeight = window.innerHeight * 0.01;
-                    document.documentElement.style.setProperty('--vh', `${viewportHeight}px`);
+                            event.preventDefault();
 
-                    const darkMode = Cookies.get('darkMode');
+                        });
 
-                    if (darkMode == 'true') {
-                        document.querySelector('html').classList.add('dark');
                     }
 
+                }
+
+                this.$watch('visible', function(value) {
+
+                    if (value != false) {
+
+                        document.body.classList.add('overflow-hidden');
+
+                        // Video (Vimeo)
+
+                        if (video) {
+
+                            if (video.tagName == 'IFRAME') {
+
+                                const player = new Vimeo.Player(video);
+
+                                // Initialise video
+
+                                player.setCurrentTime(0);
+                                player.play();
+                                player.setVolume(1);
+
+                                // Progress bar
+
+                                setInterval(() => {
+
+                                    if (videoProgress) {
+
+                                        player.getCurrentTime().then(function(
+                                            seconds) {
+
+                                            player.getDuration().then(
+                                                function(duration) {
+
+                                                    videoProgress.style
+                                                        .width = (
+                                                            seconds /
+                                                            duration) *
+                                                        100 + '%';
+
+                                                });
+
+                                        });
+
+                                    }
+
+                                }, 100);
+
+                            } else {
+
+                                // Initialise video
+
+                                video.currentTime = 0;
+                                video.play();
+
+                                // Progress bar
+
+                                setInterval(() => {
+
+                                    if (videoProgress) {
+
+                                        videoProgress.style.width = (video
+                                                .currentTime / video.duration) *
+                                            100 + '%';
+
+                                    }
+
+                                }, 100);
+
+                            }
+
+                        }
+
+
+                    } else {
+
+                        document.body.classList.remove('overflow-hidden');
+                    }
+
+                });
+
+            },
+            closeModal(id) {
+
+                this.visible = false;
+
+                const video = document.querySelector('.js-modal-video-' + id);
+                const videoProgress = document.querySelector('.js-modal-video-progress-' + id);
+
+                if (video) {
+
+                    if (video.tagName == 'IFRAME') {
+
+                        const player = new Vimeo.Player(video);
+
+                        player.pause();
+
+
+                    } else {
+
+                        video.pause();
+                        videoProgress.style.width = '0%';
+
+                    }
+                }
+
+            }
+        }))
+    });
+    document.addEventListener('alpine:init', () => {
+        Alpine.data('modal167022', () => ({
+            visible: false,
+            setupModal(id) {
+
+                // Prevent keys from interferring with the video
+
+                navigator.mediaSession.setActionHandler('play', function() {});
+                navigator.mediaSession.setActionHandler('pause', function() {});
+                navigator.mediaSession.setActionHandler('seekbackward', function() {});
+                navigator.mediaSession.setActionHandler('seekforward', function() {});
+                navigator.mediaSession.setActionHandler('previoustrack', function() {});
+                navigator.mediaSession.setActionHandler('nexttrack', function() {});
+
+                // Get video elements
+
+                const video = document.querySelector(`.js-modal-video-${id}`);
+                const videoProgress = document.querySelector(`.js-modal-video-progress-${id}`);
+
+                const videoPlayPause = document.querySelector(`.js-modal-video-play-pause-${id}`);
+                const videoSound = document.querySelector(`.js-modal-video-sound-${id}`);
+
+                const videoPlayIcon = document.querySelector(`.js-modal-video-play-icon-${id}`);
+                const videoPauseIcon = document.querySelector(`.js-modal-video-pause-icon-${id}`);
+
+                const videoVolumeOnIcon = document.querySelector(
+                    `.js-modal-video-volume-on-icon-${id}`);
+                const videoVolumeOffIcon = document.querySelector(
+                    `.js-modal-video-volume-off-icon-${id}`);
+
+                // Video controls
+
+                if (video) {
+
+                    if (video.tagName == 'IFRAME') {
+
+                        const player = new Vimeo.Player(video);
+
+                        // Video controls
+
+                        videoSound.addEventListener('click', (event) => {
+
+                            player.getVolume().then(function(volume) {
+
+                                if (videoVolumeOnIcon.classList.contains(
+                                        'hidden')) {
+
+                                    player.setVolume(1);
+                                    videoVolumeOnIcon.classList.remove('hidden');
+                                    videoVolumeOffIcon.classList.add('hidden');
+
+                                } else {
+
+                                    player.setVolume(0);
+                                    videoVolumeOnIcon.classList.add('hidden');
+                                    videoVolumeOffIcon.classList.remove('hidden');
+
+                                }
+
+                            });
+
+                            event.preventDefault();
+
+                        });
+
+                        videoPlayPause.addEventListener('click', (event) => {
+
+                            player.getPaused().then(function(paused) {
+
+                                if (paused) {
+
+                                    player.play();
+                                    videoPlayIcon.classList.add('hidden');
+                                    videoPauseIcon.classList.remove('hidden');
+
+                                } else {
+
+                                    player.pause();
+                                    videoPlayIcon.classList.remove('hidden');
+                                    videoPauseIcon.classList.add('hidden');
+
+                                }
+
+                            });
+
+                            event.preventDefault();
+
+                        });
+
+                    } else {
+
+                        videoSound.addEventListener('click', (event) => {
+
+                            if (videoVolumeOnIcon.classList.contains('hidden')) {
+
+                                video.muted = false;
+                                videoVolumeOnIcon.classList.remove('hidden');
+                                videoVolumeOffIcon.classList.add('hidden');
+
+                            } else {
+
+                                video.muted = true;
+                                videoVolumeOnIcon.classList.add('hidden');
+                                videoVolumeOffIcon.classList.remove('hidden');
+
+                            }
+
+                            event.preventDefault();
+
+                        });
+
+                        videoPlayPause.addEventListener('click', (event) => {
+
+                            if (video.paused) {
+
+                                video.play();
+                                videoPlayIcon.classList.add('hidden');
+                                videoPauseIcon.classList.remove('hidden');
+
+                            } else {
+
+                                video.pause();
+                                videoPlayIcon.classList.remove('hidden');
+                                videoPauseIcon.classList.add('hidden');
+
+                            }
+
+                            event.preventDefault();
+
+                        });
+
+                    }
 
                 }
-            }))
-        });
+
+                this.$watch('visible', function(value) {
+
+                    if (value != false) {
+
+                        document.body.classList.add('overflow-hidden');
+
+                        // Video (Vimeo)
+
+                        if (video) {
+
+                            if (video.tagName == 'IFRAME') {
+
+                                const player = new Vimeo.Player(video);
+
+                                // Initialise video
+
+                                player.setCurrentTime(0);
+                                player.play();
+                                player.setVolume(1);
+
+                                // Progress bar
+
+                                setInterval(() => {
+
+                                    if (videoProgress) {
+
+                                        player.getCurrentTime().then(function(
+                                            seconds) {
+
+                                            player.getDuration().then(
+                                                function(duration) {
+
+                                                    videoProgress.style
+                                                        .width = (
+                                                            seconds /
+                                                            duration) *
+                                                        100 + '%';
+
+                                                });
+
+                                        });
+
+                                    }
+
+                                }, 100);
+
+                            } else {
+
+                                // Initialise video
+
+                                video.currentTime = 0;
+                                video.play();
+
+                                // Progress bar
+
+                                setInterval(() => {
+
+                                    if (videoProgress) {
+
+                                        videoProgress.style.width = (video
+                                                .currentTime / video.duration) *
+                                            100 + '%';
+
+                                    }
+
+                                }, 100);
+
+                            }
+
+                        }
+
+
+                    } else {
+
+                        document.body.classList.remove('overflow-hidden');
+                    }
+
+                });
+
+            },
+            closeModal(id) {
+
+                this.visible = false;
+
+                const video = document.querySelector('.js-modal-video-' + id);
+                const videoProgress = document.querySelector('.js-modal-video-progress-' + id);
+
+                if (video) {
+
+                    if (video.tagName == 'IFRAME') {
+
+                        const player = new Vimeo.Player(video);
+
+                        player.pause();
+
+
+                    } else {
+
+                        video.pause();
+                        videoProgress.style.width = '0%';
+
+                    }
+                }
+
+            }
+        }))
+    });
+    document.addEventListener('alpine:init', () => {
+        Alpine.data('modal168396', () => ({
+            visible: false,
+            setupModal(id) {
+
+                // Prevent keys from interferring with the video
+
+                navigator.mediaSession.setActionHandler('play', function() {});
+                navigator.mediaSession.setActionHandler('pause', function() {});
+                navigator.mediaSession.setActionHandler('seekbackward', function() {});
+                navigator.mediaSession.setActionHandler('seekforward', function() {});
+                navigator.mediaSession.setActionHandler('previoustrack', function() {});
+                navigator.mediaSession.setActionHandler('nexttrack', function() {});
+
+                // Get video elements
+
+                const video = document.querySelector(`.js-modal-video-${id}`);
+                const videoProgress = document.querySelector(`.js-modal-video-progress-${id}`);
+
+                const videoPlayPause = document.querySelector(`.js-modal-video-play-pause-${id}`);
+                const videoSound = document.querySelector(`.js-modal-video-sound-${id}`);
+
+                const videoPlayIcon = document.querySelector(`.js-modal-video-play-icon-${id}`);
+                const videoPauseIcon = document.querySelector(`.js-modal-video-pause-icon-${id}`);
+
+                const videoVolumeOnIcon = document.querySelector(
+                    `.js-modal-video-volume-on-icon-${id}`);
+                const videoVolumeOffIcon = document.querySelector(
+                    `.js-modal-video-volume-off-icon-${id}`);
+
+                // Video controls
+
+                if (video) {
+
+                    if (video.tagName == 'IFRAME') {
+
+                        const player = new Vimeo.Player(video);
+
+                        // Video controls
+
+                        videoSound.addEventListener('click', (event) => {
+
+                            player.getVolume().then(function(volume) {
+
+                                if (videoVolumeOnIcon.classList.contains(
+                                        'hidden')) {
+
+                                    player.setVolume(1);
+                                    videoVolumeOnIcon.classList.remove('hidden');
+                                    videoVolumeOffIcon.classList.add('hidden');
+
+                                } else {
+
+                                    player.setVolume(0);
+                                    videoVolumeOnIcon.classList.add('hidden');
+                                    videoVolumeOffIcon.classList.remove('hidden');
+
+                                }
+
+                            });
+
+                            event.preventDefault();
+
+                        });
+
+                        videoPlayPause.addEventListener('click', (event) => {
+
+                            player.getPaused().then(function(paused) {
+
+                                if (paused) {
+
+                                    player.play();
+                                    videoPlayIcon.classList.add('hidden');
+                                    videoPauseIcon.classList.remove('hidden');
+
+                                } else {
+
+                                    player.pause();
+                                    videoPlayIcon.classList.remove('hidden');
+                                    videoPauseIcon.classList.add('hidden');
+
+                                }
+
+                            });
+
+                            event.preventDefault();
+
+                        });
+
+                    } else {
+
+                        videoSound.addEventListener('click', (event) => {
+
+                            if (videoVolumeOnIcon.classList.contains('hidden')) {
+
+                                video.muted = false;
+                                videoVolumeOnIcon.classList.remove('hidden');
+                                videoVolumeOffIcon.classList.add('hidden');
+
+                            } else {
+
+                                video.muted = true;
+                                videoVolumeOnIcon.classList.add('hidden');
+                                videoVolumeOffIcon.classList.remove('hidden');
+
+                            }
+
+                            event.preventDefault();
+
+                        });
+
+                        videoPlayPause.addEventListener('click', (event) => {
+
+                            if (video.paused) {
+
+                                video.play();
+                                videoPlayIcon.classList.add('hidden');
+                                videoPauseIcon.classList.remove('hidden');
+
+                            } else {
+
+                                video.pause();
+                                videoPlayIcon.classList.remove('hidden');
+                                videoPauseIcon.classList.add('hidden');
+
+                            }
+
+                            event.preventDefault();
+
+                        });
+
+                    }
+
+                }
+
+                this.$watch('visible', function(value) {
+
+                    if (value != false) {
+
+                        document.body.classList.add('overflow-hidden');
+
+                        // Video (Vimeo)
+
+                        if (video) {
+
+                            if (video.tagName == 'IFRAME') {
+
+                                const player = new Vimeo.Player(video);
+
+                                // Initialise video
+
+                                player.setCurrentTime(0);
+                                player.play();
+                                player.setVolume(1);
+
+                                // Progress bar
+
+                                setInterval(() => {
+
+                                    if (videoProgress) {
+
+                                        player.getCurrentTime().then(function(
+                                            seconds) {
+
+                                            player.getDuration().then(
+                                                function(duration) {
+
+                                                    videoProgress.style
+                                                        .width = (
+                                                            seconds /
+                                                            duration) *
+                                                        100 + '%';
+
+                                                });
+
+                                        });
+
+                                    }
+
+                                }, 100);
+
+                            } else {
+
+                                // Initialise video
+
+                                video.currentTime = 0;
+                                video.play();
+
+                                // Progress bar
+
+                                setInterval(() => {
+
+                                    if (videoProgress) {
+
+                                        videoProgress.style.width = (video
+                                                .currentTime / video.duration) *
+                                            100 + '%';
+
+                                    }
+
+                                }, 100);
+
+                            }
+
+                        }
+
+
+                    } else {
+
+                        document.body.classList.remove('overflow-hidden');
+                    }
+
+                });
+
+            },
+            closeModal(id) {
+
+                this.visible = false;
+
+                const video = document.querySelector('.js-modal-video-' + id);
+                const videoProgress = document.querySelector('.js-modal-video-progress-' + id);
+
+                if (video) {
+
+                    if (video.tagName == 'IFRAME') {
+
+                        const player = new Vimeo.Player(video);
+
+                        player.pause();
+
+
+                    } else {
+
+                        video.pause();
+                        videoProgress.style.width = '0%';
+
+                    }
+                }
+
+            }
+        }))
+    });
+    document.addEventListener('alpine:init', () => {
+        Alpine.data('pageLinksCarousel', () => ({
+            isStart: true,
+            isEnd: false,
+            carousel(id) {
+
+                const carousel = new Swiper('.js-carousel-' + id, {
+                    slidesPerView: 1.2,
+                    spaceBetween: 0,
+                    navigation: {
+                        nextEl: '.js-carousel-next-' + id,
+                        prevEl: '.js-carousel-prev-' + id,
+                    },
+                    breakpoints: {
+                        640: {
+                            slidesPerView: 1.7,
+                        },
+                        1024: {
+                            slidesPerView: 2.2,
+                        },
+                        1800: {
+                            slidesPerView: 2.5,
+                        }
+                    },
+                });
+
+                carousel.on('slideChange', () => {
+                    this.isStart = carousel.isBeginning;
+                    this.isEnd = carousel.isEnd;
+                });
+
+            }
+        }));
+    });
+    document.addEventListener('alpine:init', () => {
+        Alpine.data('app', () => ({
+            viewportHeight: null,
+            gaEvents() {
+
+                document.querySelectorAll('a[href^="mailto"]')
+                    .forEach(element => {
+
+                        element.addEventListener('click', (event) => {
+                            window.dataLayer = window.dataLayer || [];
+                            window.dataLayer.push({
+                                'event': 'email_lead'
+                            });
+                        })
+
+                    });
+
+                document.querySelectorAll('a[href^="tel:"]')
+                    .forEach(element => {
+
+                        element.addEventListener('click', (event) => {
+                            window.dataLayer = window.dataLayer || [];
+                            window.dataLayer.push({
+                                'event': 'phone_lead'
+                            });
+                        })
+
+                    });
+
+                document.querySelectorAll('.js-social-link')
+                    .forEach(element => {
+
+                        element.addEventListener('click', (event) => {
+                            window.dataLayer = window.dataLayer || [];
+                            window.dataLayer.push({
+                                'event': 'social_links'
+                            });
+                        })
+
+                    });
+
+
+
+
+
+
+            },
+            baseInit() {
+
+                viewportHeight = window.innerHeight * 0.01;
+                document.documentElement.style.setProperty('--vh', `${viewportHeight}px`);
+
+                const darkMode = Cookies.get('darkMode');
+
+                if (darkMode == 'true') {
+                    document.querySelector('html').classList.add('dark');
+                }
+
+
+            }
+        }))
+    });
     </script>
 </body>
 

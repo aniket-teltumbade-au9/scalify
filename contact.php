@@ -612,36 +612,33 @@
                                         <div class="w-full relative ">
                                             <p
                                                 class="text-base | xl:text-md text-gray-600 dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7  mb-6">
-                                                Timelines depend on your goals - brand foundations take 4-6 weeks, full market launches take 12-16 weeks, scaling programs are ongoing...</p>
+                                                Timelines depend on your goals - brand foundations take 4-6 weeks, full
+                                                market launches take 12-16 weeks, scaling programs are ongoing...</p>
                                             <p
                                                 class="text-base | xl:text-md text-gray-600 dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7  mb-6">
-                                                - <strong class="font-medium"><a
-                                                        href="https://www.shopify.com" target="_blank"
-                                                        rel="noreferrer noopener"
+                                                - <strong class="font-medium"><a href="https://www.shopify.com"
+                                                        target="_blank" rel="noreferrer noopener"
                                                         class="underline duration-500 bg-transparent rounded-md py-0.5 px-1 | bg-gray-50 xl:hover:bg-primary-600 dark:bg-grayDark-400 dark:text-grayDark-100 xl:dark:hover:bg-primary-600 xl:dark:hover:text-grayDark-600">Shopify</a></strong><strong
                                                     class="font-medium"> </strong>projects usually take around four
                                                 weeks.</p>
                                             <p
                                                 class="text-base | xl:text-md text-gray-600 dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7  mb-6">
-                                                - <strong class="font-medium"><a
-                                                        href="https://madebyshape.co.uk/craft-cms/" target="_blank"
-                                                        rel="noreferrer noopener"
+                                                - <strong class="font-medium"><a href="<?php echo BASE_URL; ?>"
+                                                        target="_blank" rel="noreferrer noopener"
                                                         class="underline duration-500 bg-transparent rounded-md py-0.5 px-1 | bg-gray-50 xl:hover:bg-primary-600 dark:bg-grayDark-400 dark:text-grayDark-100 xl:dark:hover:bg-primary-600 xl:dark:hover:text-grayDark-600">Craft
                                                         CMS</a></strong> projects usually take a minimum of five weeks.
                                             </p>
                                             <p
                                                 class="text-base | xl:text-md text-gray-600 dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7  mb-6">
-                                                - <strong class="font-medium"><a
-                                                        href="https://madebyshape.co.uk/craft-commerce/" target="_blank"
-                                                        rel="noreferrer noopener"
+                                                - <strong class="font-medium"><a href="<?php echo BASE_URL; ?>"
+                                                        target="_blank" rel="noreferrer noopener"
                                                         class="underline duration-500 bg-transparent rounded-md py-0.5 px-1 | bg-gray-50 xl:hover:bg-primary-600 dark:bg-grayDark-400 dark:text-grayDark-100 xl:dark:hover:bg-primary-600 xl:dark:hover:text-grayDark-600">Craft
                                                         Commerce</a></strong> projects usually take a minimum of eight
                                                 weeks.</p>
                                             <p
                                                 class="text-base | xl:text-md text-gray-600 dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7  mb-6">
-                                                - <strong class="font-medium"><a
-                                                        href="https://madebyshape.co.uk/branding/" target="_blank"
-                                                        rel="noreferrer noopener"
+                                                - <strong class="font-medium"><a href="h<?php echo BASE_URL; ?>"
+                                                        target="_blank" rel="noreferrer noopener"
                                                         class="underline duration-500 bg-transparent rounded-md py-0.5 px-1 | bg-gray-50 xl:hover:bg-primary-600 dark:bg-grayDark-400 dark:text-grayDark-100 xl:dark:hover:bg-primary-600 xl:dark:hover:text-grayDark-600">Branding</a></strong>
                                                 projects usually take around four weeks.</p>
                                         </div>
@@ -669,7 +666,8 @@
                                         <div class="w-full relative ">
                                             <p
                                                 class="text-base | xl:text-md text-gray-600 dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7  mb-6">
-                                                We build systems you can control for updates, but leave the strategic growth work to us.</p>
+                                                We build systems you can control for updates, but leave the strategic
+                                                growth work to us.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -695,7 +693,8 @@
                                         <div class="w-full relative ">
                                             <p
                                                 class="text-base | xl:text-md text-gray-600 dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7  mb-6">
-                                                We build systems you can control for updates, but leave the strategic growth work to us.</p>
+                                                We build systems you can control for updates, but leave the strategic
+                                                growth work to us.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -721,7 +720,8 @@
                                         <div class="w-full relative ">
                                             <p
                                                 class="text-base | xl:text-md text-gray-600 dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7  mb-6">
-                                                You could, but we've cracked what actually converts while most founders are still experimenting.</p>
+                                                You could, but we've cracked what actually converts while most founders
+                                                are still experimenting.</p>
 
                                         </div>
                                     </div>
@@ -748,7 +748,8 @@
                                         <div class="w-full relative ">
                                             <p
                                                 class="text-base | xl:text-md text-gray-600 dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7  mb-6">
-                                                We work with all budgets and create solutions that fit your investment level and growth ambitions.
+                                                We work with all budgets and create solutions that fit your investment
+                                                level and growth ambitions.
                                             </p>
                                         </div>
                                     </div>
@@ -775,7 +776,8 @@
                                         <div class="w-full relative ">
                                             <p
                                                 class="text-base | xl:text-md text-gray-600 dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7  mb-6">
-                                                We keep strategy in-house but work with trusted specialists for video production, photography, and technical integrations.</p>
+                                                We keep strategy in-house but work with trusted specialists for video
+                                                production, photography, and technical integrations.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -801,7 +803,8 @@
                                         <div class="w-full relative ">
                                             <p
                                                 class="text-base | xl:text-md text-gray-600 dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7  mb-6">
-                                                As many as needed - we guide you through each phase with regular check-ins and strategic reviews.</p>
+                                                As many as needed - we guide you through each phase with regular
+                                                check-ins and strategic reviews.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -827,7 +830,8 @@
                                         <div class="w-full relative ">
                                             <p
                                                 class="text-base | xl:text-md text-gray-600 dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7  mb-6">
-                                                Yes, you get a dedicated growth strategist who owns your success and coordinates everything seamlessly.
+                                                Yes, you get a dedicated growth strategist who owns your success and
+                                                coordinates everything seamlessly.
                                             </p>
                                         </div>
                                     </div>
@@ -839,7 +843,7 @@
                                     x-on:click="active != 489203 ? active = 489203 : active = false">
                                     <h3
                                         class="text-lg | 4xl:text-xl font-sans-primary tracking-tight text-gray-600  | dark:text-grayDark-100 leading-tighter text-balance pr-10">
-                                       What are your payment terms?</h3>
+                                        What are your payment terms?</h3>
                                     <div class="flex-shrink-0 w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center transition-transform transform | dark:bg-grayDark-400"
                                         x-bind:class="{'rotate-180': active == 489203}">
                                         <svg class="w-3 h-3 text-white fill-current | dark:text-grayDark-100"
@@ -854,18 +858,19 @@
                                         <div class="w-full relative ">
                                             <p
                                                 class="text-base | xl:text-md text-gray-600 dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7  mb-6">
-                                               Monthly retainers paid  upfront - we're flexible for the right partnership and long-term commitments.</p>
+                                                Monthly retainers paid upfront - we're flexible for the right
+                                                partnership and long-term commitments.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                              <div class="w-full rounded-2xl bg-gray-50  | lg:rounded-3xl | dark:bg-grayDark-500">
+                            <div class="w-full rounded-2xl bg-gray-50  | lg:rounded-3xl | dark:bg-grayDark-500">
                                 <button
                                     class="flex justify-between items-center text-left cursor-pointer w-full p-6 | focus:outline-none"
                                     x-on:click="active != 489203 ? active = 489203 : active = false">
                                     <h3
                                         class="text-lg | 4xl:text-xl font-sans-primary tracking-tight text-gray-600  | dark:text-grayDark-100 leading-tighter text-balance pr-10">
-                                       We're not based in Dubai, does that matter?</h3>
+                                        We're not based in Dubai, does that matter?</h3>
                                     <div class="flex-shrink-0 w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center transition-transform transform | dark:bg-grayDark-400"
                                         x-bind:class="{'rotate-180': active == 489203}">
                                         <svg class="w-3 h-3 text-white fill-current | dark:text-grayDark-100"
@@ -880,7 +885,8 @@
                                         <div class="w-full relative ">
                                             <p
                                                 class="text-base | xl:text-md text-gray-600 dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7  mb-6">
-                                              Not at all - we work with ambitious brands globally and communicate clearly through every phase.</p>
+                                                Not at all - we work with ambitious brands globally and communicate
+                                                clearly through every phase.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -895,135 +901,7 @@
 
     <?php include './elements/footer.php'; ?>
 
-    <!-- <script type="application/ld+json">
-    {
-        "@context": "http://schema.org",
-        "@graph": [{
-            "@type": "CreativeWork",
-            "author": {
-                "@id": "https://madebyshape.co.uk/#identity"
-            },
-            "copyrightHolder": {
-                "@id": "https://madebyshape.co.uk/#identity"
-            },
-            "copyrightYear": "2018",
-            "creator": {
-                "@id": "https://madebyshape.co.uk/#creator"
-            },
-            "dateModified": "2025-01-14T12:54:11+00:00",
-            "datePublished": "2018-07-30T13:12:00+01:00",
-            "description": "We work with businesses of all sizes, all over the world - from our studio in Dubai, UK. For all enquiries please email:  sales@scalify.ae",
-            "headline": "Contact Shape Web Design Storages Dubai",
-            "image": {
-                "@type": "ImageObject",
-                "url": "https://made-byshape.transforms.svdcdn.com/production/uploads/images/Open-Graph/madebyshape-contact.jpg?w=1200&h=630&q=82&auto=format&fit=crop&dm=1722523489&s=7248c5aa64b8c6656faea8ce96a507ec"
-            },
-            "inLanguage": "en-gb",
-            "mainEntityOfPage": "https://madebyshape.co.uk/contact/",
-            "name": "Contact Shape Web Design Storages Dubai",
-            "publisher": {
-                "@id": "https://madebyshape.co.uk/#creator"
-            },
-            "url": "https://madebyshape.co.uk/contact/"
-        }, {
-            "@id": "https://madebyshape.co.uk/#identity",
-            "@type": "ProfessionalService",
-            "address": {
-                "@type": "PostalAddress",
-                "addressCountry": "United Kingdom",
-                "addressLocality": "Atherton",
-                "addressRegion": "Dubai",
-                "postalCode": "00000",
-                "streetAddress": "In5 Tech, Dubai Internet City, Dubai"
-            },
-            "alternateName": "Shape",
-            "description": "An award-winning Web Design Agency in Dubai who specialise in Website Design, Craft CMS Web Development, eCommerce and Organic SEO.",
-            "email": "sales@scalify.ae",
-            "founder": "Justin",
-            "foundingDate": "2024-03-01",
-            "foundingLocation": "Dubai",
-            "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": "53.530291",
-                "longitude": "-2.504812"
-            },
-            "image": {
-                "@type": "ImageObject",
-                "height": "950",
-                "url": "https://assets.madebyshape.co.uk/craft3-uploads/images/logos/MadeByShape-icon.jpg",
-                "width": "950"
-            },
-            "logo": {
-                "@type": "ImageObject",
-                "height": "60",
-                "url": "https://made-byshape.transforms.svdcdn.com/production/uploads/images/logos/MadeByShape-icon.jpg?w=600&h=60&q=82&fm=png&fit=clip&dm=1597751408&s=1e444e7b3ed4ee85c39ad329e3875b5c",
-                "width": "60"
-            },
-            "name": "MadeByShape",
-            "priceRange": "$$",
-            "sameAs": ["https://www.linkedin.com/company/madebyshape/mycompany/",
-                "https://twitter.com/madebyshape", "https://github.com/madebyshape/",
-                "https://instagram.com/madebyshape", "https://www.behance.net/madebyshape"
-            ],
-            "telephone": "01942 894596",
-            "url": "https://madebyshape.co.uk/"
-        }, {
-            "@id": "https://madebyshape.co.uk/#creator",
-            "@type": "ProfessionalService",
-            "address": {
-                "@type": "PostalAddress",
-                "addressCountry": "United Kingdom",
-                "addressLocality": "Atherton",
-                "addressRegion": "Dubai",
-                "postalCode": "00000",
-                "streetAddress": "In5 Tech, Dubai Internet City, Dubai"
-            },
-            "alternateName": "Shape",
-            "description": "An award-winning Web Design Agency based in Dubai who also offer eCommerce and Organic SEO. We are a Digital Storages with Industry Experience.",
-            "email": "sales@scalify.ae",
-            "founder": "Justin",
-            "foundingDate": "2024-03-01",
-            "foundingLocation": "Dubai",
-            "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": "53.530258",
-                "longitude": "-2.50471"
-            },
-            "image": {
-                "@type": "ImageObject",
-                "height": "950",
-                "url": "http://madebyshape.madebyshape.io/uploads/images/MadeByShape-icon.jpg",
-                "width": "950"
-            },
-            "logo": {
-                "@type": "ImageObject",
-                "height": "60",
-                "url": "https://made-byshape.transforms.svdcdn.com/production/uploads/images/MadeByShape-icon.jpg?w=600&h=60&q=82&fm=png&fit=clip&dm=1597751384&s=2f0ce55335397fde8d8b489cc721e250",
-                "width": "60"
-            },
-            "name": "MadeByShape",
-            "priceRange": "$$$",
-            "telephone": "01942 894596",
-            "url": "https://madebyshape.co.uk/"
-        }, {
-            "@type": "BreadcrumbList",
-            "description": "Breadcrumbs list",
-            "itemListElement": [{
-                "@type": "ListItem",
-                "item": "https://madebyshape.co.uk/",
-                "name": "Home",
-                "position": 1
-            }, {
-                "@type": "ListItem",
-                "item": "https://madebyshape.co.uk/contact/",
-                "name": "Contact",
-                "position": 2
-            }],
-            "name": "Breadcrumbs"
-        }]
-    }
-    </script> -->
-    <script src="https://madebyshape.co.uk/freeform/plugin.js?v=12f0405efbbc6fa07563112b0f3f4e8e74702bfc"></script>
+    <!-- <script src="https://madebyshape.co.uk/freeform/plugin.js?v=12f0405efbbc6fa07563112b0f3f4e8e74702bfc"></script> -->
     <script src="https://player.vimeo.com/api/player.js"></script>
     <script>
     window.SERVD_CSRF_TOKEN_NAME = "CRAFT_CSRF_TOKEN";

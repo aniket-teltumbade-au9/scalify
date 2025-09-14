@@ -325,10 +325,10 @@ usort($menuListItems, function ($a, $b) {
                                 </svg>
                                 <picture>
                                     <source type="image/webp"
-                                        srcset="https://made-byShape.transforms.svdcdn.com/production/uploads/images/India-2022/Individuals-Black-Wall/Shape-April-2022-HR-186.jpg?w=200&h=200&q=80&fm=webp&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5&dm=1651143173&s=be043bcd94bb13283574b35d1df6ee93 200w"
+                                        srcset="<?php echo BASE_URL . 'assets/images/main/'; ?>India-2022/Individuals-Black-Wall/Shape-April-2022-HR-186.jpg?w=200&h=200&q=80&fm=webp&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5&dm=1651143173&s=be043bcd94bb13283574b35d1df6ee93 200w"
                                         sizes="100vw">
                                     <img src="./images/Scalify-April-2022-HR-186.jpg"
-                                        srcset="https://made-byShape.transforms.svdcdn.com/production/uploads/images/India-2022/Individuals-Black-Wall/Shape-April-2022-HR-186.jpg?w=200&h=200&q=95&auto=format&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5&dm=1651143173&s=c31b97c2e5ac1293be90453dc40a496a 200w"
+                                        srcset="<?php echo BASE_URL . 'assets/images/main/'; ?>India-2022/Individuals-Black-Wall/Shape-April-2022-HR-186.jpg?w=200&h=200&q=95&auto=format&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5&dm=1651143173&s=c31b97c2e5ac1293be90453dc40a496a 200w"
                                         sizes="100vw" alt="Scalify April 2022 HR 186"
                                         class="w-full absolute top-0 left-0 h-full object-cover z-0" loading="lazy"
                                         width="200" height="200">
@@ -495,45 +495,6 @@ usort($menuListItems, function ($a, $b) {
                                     </div>
                                 </div>
                             </div>
-                            <!-- <div class="hidden | lg:inline-flex">
-                                <div class="relative group inline-flex items-center" x-data="{ hover: false }"
-                                    x-on:mouseenter="hover = true" x-on:mouseleave="hover = false">
-                                    <a href="./html/meet-the-team.html"
-                                        class="inline-flex relative group outline-none link | focus:outline-none">
-                                        <div
-                                            class="w-auto inline-flex items-center justify-center relative leading-tight shadow-none overflow-hidden rounded-full border-default text-gray-600 | dark:text-grayDark-100 py-1 mt-1 pr-3">
-                                            <div class="relative inline-flex top-px flex-shrink-0">
-                                                <div>
-                                                    View Our Work</div>
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="text-gray-600 | dark:text-grayDark-100 flex-shrink-0 overflow-hidden flex items-center justify-center -ml-1 rounded-full transform transition-transform mt-1 js-button-icon">
-                                        </div>
-                                    </a>
-                                    <div
-                                        class="mt-1 flex items-center justify-center z-20 transition-transform transform || js-button-arrow">
-                                        <div class="relative overflow-hidden text-gray-600 | dark:text-grayDark-100">
-                                            <div
-                                                class="relative top-0 left-0 transition-transform transform || js-button-arrow-icon-primary xl:group-hover:translate-x-full xl:group-hover:-translate-y-full">
-                                                <svg class="w-3 h-3 fill-current" xmlns="http://www.w3.org/2000/svg"
-                                                    viewBox="0 0 384 512">
-                                                    <path
-                                                        d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z" />
-                                                </svg>
-                                            </div>
-                                            <div
-                                                class="absolute top-0 left-0 transition-transform transform translate-y-full -translate-x-full || js-button-arrow-icon-secondary xl:group-hover:translate-x-0 xl:group-hover:translate-y-0">
-                                                <svg class="w-3 h-3 fill-current" xmlns="http://www.w3.org/2000/svg"
-                                                    viewBox="0 0 384 512">
-                                                    <path
-                                                        d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z" />
-                                                </svg>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -556,9 +517,9 @@ usort($menuListItems, function ($a, $b) {
                     <div class="px-2 | lg:px-3 | xl:px-4 flex flex-col items-start space-y-8 w-full | lg:w-11/16">
                         <h2
                             class="text-1xl | md:text-4vw | xl:text-3vw font-sans-primary tracking-tight text-gray-600  | dark:text-grayDark-100 leading-none text-balance lg:indent-48 ">
-                            <div class="scalify-headline">
+                            <p>
                                 Growth strategists who help brands go from “promising startup” → “category leader.”
-                            </div>
+                            </p>
                         </h2>
                         <div class="flex flex-wrap">
                             <div class="mr-5 mb-3 w-auto | lg:mr-8">
@@ -720,7 +681,7 @@ usort($menuListItems, function ($a, $b) {
                                                             </filter>
                                                         </defs>
                                                     </svg>
-                                                    <a href="https://madebyshape.co.uk/contact/"
+                                                    <a href="<?php echo BASE_URL . "contact/"; ?>"
                                                         class="inline-flex relative group outline-none  | focus:outline-none "
                                                         style="filter: url(#buttonFilter);">
                                                         <div

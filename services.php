@@ -13,6 +13,7 @@ include './elements/header.php';
 
 if (isset($_GET['service'])) {
     $service_param = $_GET['service'];
+    echo "<script>console.log('$service_param')</script>";
     // Sanitize the route parameter
     $service_param = strtolower(trim($service_param));
     $service_param = preg_replace('/[^a-z0-9-_]/', '', $service_param);
@@ -45,7 +46,7 @@ if (isset($_GET['service'])) {
                 'short_description' => 'Budgeting and financial planning to optimize operational costs.',
             ],
         ],
-        'image' => 'default-hero.jpg',
+        'image' => 'vision.jpeg',
         'tagline_long' => 'Find the perfect solution for your business needs.',
     ];
 
@@ -167,14 +168,12 @@ if (isset($_GET['service'])) {
                     <div
                         class="w-full relative z-10 overflow-hidden rounded-2xl transform-gpu bg-gray-50 | dark:bg-grayDark-500 | lg:rounded-3xl h-screen-fix-70">
                         <picture>
-                                <?php if (!empty($current_service['image'])): ?>
-                                    <img 
-                                        src="<?php echo BASE_URL . 'assets/images/services/' . htmlspecialchars($current_service['image']); ?>" 
-                                        alt="<?php echo htmlspecialchars($current_service['name']); ?>" 
-                                        class="w-full absolute top-0 left-0 w-full h-full object-cover rounded-2xl"
-                                        loading="lazy"
-                                    >
-                                <?php endif; ?>
+                            <?php if (!empty($current_service['image'])): ?>
+                            <img src="<?php echo BASE_URL . 'assets/images/services/' . htmlspecialchars($current_service['image']); ?>"
+                                alt="<?php echo htmlspecialchars($current_service['name']); ?>"
+                                class="w-full absolute top-0 left-0 w-full h-full object-cover rounded-2xl"
+                                loading="lazy">
+                            <?php endif; ?>
                         </picture>
                     </div>
                 </div>
@@ -294,129 +293,6 @@ if (isset($_GET['service'])) {
 include './elements/footer.php';
 ?>
 
-    <script type="application/ld+json">
-    {
-        "@context": "http://schema.org",
-        "@graph": [{
-            "@type": "CreativeWork",
-            "author": {
-                "@id": "https://scalify.ae/#identity"
-            },
-            "copyrightHolder": {
-                "@id": "https://scalify.ae/#identity"
-            },
-            "copyrightYear": "2024",
-            "creator": {
-                "@id": "https://scalify.ae/#creator"
-            },
-            "dateModified": "2025-08-07T10:56:56+01:00",
-            "datePublished": "2025-07-25T14:08:00+01:00",
-            "description": "Growth strategists who help brands go from “promising startup” → “category leader”.",
-            "headline": "We Turn Digital-First Brands Into Omnichannel Powerhouses",
-            "image": {
-                "@type": "ImageObject",
-                "url": "https://cdn.jsdelivr.net/gh/vinaykm2912/scalifyVideos@main/images/saclifylogo.jpeg"
-            },
-            "inLanguage": "en-gb",
-            "mainEntityOfPage": "https://scalify.ae/",
-            "name": "Growth strategists | Business Step-up Agency",
-            "publisher": {
-                "@id": "https://scalify.ae/#creator"
-            },
-            "url": "https://scalify.ae/"
-        }, {
-            "@id": "https://scalify.ae/#identity",
-            "@type": "ProfessionalService",
-            "address": {
-                "@type": "PostalAddress",
-                "addressCountry": "United Arab Emirates",
-                "addressLocality": "Dubai",
-                "addressRegion": "Dubai",
-                "postalCode": "00000",
-                "streetAddress": "In5 Tech, Dubai Internet City, Dubai"
-            },
-            "alternateName": "Scalify",
-            "description": ""Growth strategists who help brands go from “promising startup” → “category leader”.",
-            "email": "hello@scalify.ae",
-            "founder": "Andy Golpys",
-            "foundingDate": "2010-03-01",
-            "foundingLocation": "Dubai",
-            "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": "53.530291",
-                "longitude": "-2.504812"
-            },
-            "image": {
-                "@type": "ImageObject",
-                "height": "950",
-                "url": "https://assets.scalify.ae/craft3-uploads/images/logos/Scalify-icon.jpg",
-                "width": "950"
-            },
-            "logo": {
-                "@type": "ImageObject",
-                "height": "60",
-                "url": "https://cdn.jsdelivr.net/gh/vinaykm2912/scalifyVideos@main/images/saclifylogo.jpeg",
-                "width": "60"
-            },
-            "name": "Scalify",
-            "priceRange": "$$",
-            "sameAs": ["https://www.linkedin.com/company/scalifyuae/mycompany",
-                "https://twitter.com/madebyScalify", "https://github.com/madebyScalify/",
-                "https://instagram.com/madebyScalify", "https://www.behance.net/madebyScalify"
-            ],
-            "telephone": "01942 894596",
-            "url": "https://scalify.ae/"
-        }, {
-            "@id": "https://scalify.ae/#creator",
-            "@type": "ProfessionalService",
-            "address": {
-                "@type": "PostalAddress",
-                "addressCountry": "United Arab Emirates",
-                "addressLocality": "Dubai",
-                "addressRegion": "Dubai",
-                "postalCode": "00000",
-                "streetAddress": "In5 Tech, Dubai Internet City, Dubai"
-            },
-            "alternateName": "Scalify",
-            "description": ""Growth strategists who help brands go from “promising startup” → “category leader”.",
-            "email": "hello@scalify.ae",
-            "founder": "Justin",
-            "foundingDate": "2010-03-01",
-            "foundingLocation": "Dubai",
-            "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": "53.530258",
-                "longitude": "-2.50471"
-            },
-            "image": {
-                "@type": "ImageObject",
-                "height": "950",
-                "url": "https://cdn.jsdelivr.net/gh/vinaykm2912/scalifyVideos@main/images/saclifylogo.jpeg",
-                "width": "950"
-            },
-            "logo": {
-                "@type": "ImageObject",
-                "height": "60",
-                "url": "https://cdn.jsdelivr.net/gh/vinaykm2912/scalifyVideos@main/images/saclifylogo.jpeg",
-                "width": "60"
-            },
-            "name": "Scalify",
-            "priceRange": "$$$",
-            "telephone": "97 15443 51608",
-            "url": "https://scalify.ae/"
-        }, {
-            "@type": "BreadcrumbList",
-            "description": "Breadcrumbs list",
-            "itemListElement": [{
-                "@type": "ListItem",
-                "item": "https://scalify.ae/",
-                "name": "Home",
-                "position": 1
-            }],
-            "name": "Breadcrumbs"
-        }]
-    }
-    </script>
     <script src="./scripts/player.js"></script>
     <iframe allow="join-ad-interest-group" data-tagging-id="AW-1011547503" data-load-time="1755098995722" height="0"
         width="0"
