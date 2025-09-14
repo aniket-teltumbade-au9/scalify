@@ -335,7 +335,8 @@
                                     <div class="flex flex-col | md:flex-row md:items-center">
                                         <div class="mb-4 md:px-2 w-full | md:w-full">
                                             <div class="text-sm text-gray-400 | dark:text-grayDark-200">
-                                                By submitting this form I accept the <a href="/privacy-policy">Privacy
+                                                By submitting this form I accept the <a
+                                                    href="<?php echo BASE_URL; ?>privacy-policy">Privacy
                                                     Policy</a> of this site.</div>
                                         </div>
                                     </div>
@@ -420,7 +421,8 @@
                             <div class="w-full relative mb-5 | lg:max-w-sm lg:mb-10">
                                 <p
                                     class="text-base | xl:text-md text-gray-600 dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7  mb-6">
-                                    Just a short drive from Downtown Dubai, our office is in a prime location, close to two metro stations, Sheikh Zayed Road, and other key city connections.</p>
+                                    Just a short drive from Downtown Dubai, our office is in a prime location, close to
+                                    two metro stations, Sheikh Zayed Road, and other key city connections.</p>
                             </div>
                             <div class="w-full flex flex-col space-y-5 mb-10 | md:space-y-0 md:flex-row md:space-x-5">
                                 <div class="flex-1">

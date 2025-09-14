@@ -283,7 +283,7 @@
             </svg>
             <a href="https://maps.app.goo.gl/stt2tKX3cTVJFMMm6" class="w-full relative ">
                 <p
-                   class="text-sm md:text-base text-white dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7 mb-6">
+                    class="text-sm md:text-base text-white dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7 mb-6">
                     <strong style="font-size:2rem;color:#F05223;">Ireland Office</strong>
                     <br /> C/O Cynestx Ireland,
                     <br />Cullentragh Centre Glenfarne
@@ -328,7 +328,7 @@
                 All Rights Reserved</div>
             <div class="mx-2 | lg:mx-5">
                 |</div>
-            <a href="https://scalify.co.uk/privacy-policy/"
+            <a href="<?php echo BASE_URL; ?>privacy-policy/"
                 class="link | xl:hover:text-white | lg:dark:hover:text-grayDark-100">
                 Privacy Policy
                 <span class="hidden | lg:inline">
